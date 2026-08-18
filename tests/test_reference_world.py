@@ -86,6 +86,76 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
         self.assertEqual(census["admissionPolicy"]["censusClosure"], "NOT_ALLOWED_IN_V0")
 
 
+    def test_round1_census_is_multi_view_open_and_non_admitting(self) -> None:
+        round1 = json.loads((ROOT / "reference/foundational-census-round1-20260819.json").read_text())
+        self.assertEqual(round1["state"], "OPEN_NOT_EXHAUSTIVE")
+        self.assertEqual(round1["truthRole"], "NON_AUTHORITATIVE_MULTI_VIEW_CENSUS")
+        self.assertEqual(round1["closure"], "NOT_CLAIMED")
+        self.assertGreaterEqual(len(round1["sources"]), 5)
+        self.assertGreaterEqual(len(round1["candidates"]), 30)
+        self.assertTrue(all(c["admission"] == "CENSUS_ONLY_NOT_CANONICAL_ROOT" for c in round1["candidates"]))
+
+    def test_round1_forbids_majority_vote_absence_and_broad_parent_ontology(self) -> None:
+        round1 = json.loads((ROOT / "reference/foundational-census-round1-20260819.json").read_text())
+        forbidden = " | ".join(round1["method"]["forbidden"])
+        self.assertIn("Majority vote", forbidden)
+        self.assertIn("Absence", forbidden)
+        self.assertIn("broad parent", forbidden)
+        allowed = set(round1["method"]["signalSemantics"])
+        for candidate in round1["candidates"]:
+            self.assertTrue(set(candidate["sourceSignals"]).issubset(set(round1["sources"])))
+            self.assertTrue(set(candidate["sourceSignals"].values()).issubset(allowed))
+
+    def test_round1_expands_far_beyond_original_six_seeds(self) -> None:
+        round1 = json.loads((ROOT / "reference/foundational-census-round1-20260819.json").read_text())
+        names = {c["candidate"] for c in round1["candidates"]}
+        required = {
+            "Statistics and probability",
+            "Logic",
+            "Computer and information sciences",
+            "Astronomy and astrophysics",
+            "Earth science / geoscience",
+            "Atmospheric science and meteorology",
+            "Oceanography",
+            "Neuroscience",
+            "Cognitive science",
+            "Linguistics",
+            "History",
+            "Measurement, metrology and standards",
+        }
+        self.assertTrue(required.issubset(names), required - names)
+
+    def test_round1_preserves_known_classification_pressure_zones(self) -> None:
+        round1 = json.loads((ROOT / "reference/foundational-census-round1-20260819.json").read_text())
+        by_name = {c["candidate"]: c for c in round1["candidates"]}
+        for name in ("Neuroscience", "Cognitive science", "Physical geography"):
+            self.assertIn("DIVERGENT", set(by_name[name]["sourceSignals"].values()), name)
+        self.assertIn("FOUNDATIONAL", by_name["Engineering science and technology"]["provisionalRole"])
+        self.assertIn("APPLIED_PROFESSIONAL", by_name["Medicine and health sciences"]["provisionalRole"])
+
+    def test_round1_does_not_prematurely_admit_later_social_political_roots(self) -> None:
+        round1 = json.loads((ROOT / "reference/foundational-census-round1-20260819.json").read_text())
+        names = {c["candidate"] for c in round1["candidates"]}
+        for later in ("Political science", "Law", "Public administration", "Governance"):
+            self.assertNotIn(later, names)
+
+
+    def test_round1_probe_families_are_nonexclusive_and_not_roots(self) -> None:
+        topo = json.loads((ROOT / "reference/foundational-census-round1-families-20260819.json").read_text())
+        self.assertEqual(topo["truthRole"], "NON_AUTHORITATIVE_PROBE_TOPOLOGY")
+        self.assertIn("MUST NOT", topo["rootSemantics"])
+        self.assertEqual(topo["closure"], "NOT_CLAIMED")
+        memberships = {}
+        for family in topo["families"]:
+            self.assertEqual(family["status"], "PROVISIONAL_NONEXCLUSIVE")
+            for member in family["members"]:
+                memberships.setdefault(member, 0)
+                memberships[member] += 1
+        self.assertGreaterEqual(sum(1 for count in memberships.values() if count > 1), 10)
+        for expected in ("Neuroscience", "Philosophy", "Information theory", "Geophysics"):
+            self.assertGreater(memberships.get(expected, 0), 1, expected)
+
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,141 @@
+{
+  "closure": "NOT_CLAIMED",
+  "families": [
+    {
+      "familyRef": "probe-family:formal-inferential-computational",
+      "label": "Formal, inferential and computational foundations",
+      "members": [
+        "Mathematics",
+        "Statistics and probability",
+        "Logic",
+        "Computer and information sciences",
+        "Information theory",
+        "Systems and dynamical theory"
+      ],
+      "status": "PROVISIONAL_NONEXCLUSIVE"
+    },
+    {
+      "familyRef": "probe-family:physical-material",
+      "label": "Physical and material foundations",
+      "members": [
+        "Physics",
+        "Chemistry",
+        "Materials science",
+        "Geophysics",
+        "Geochemistry"
+      ],
+      "status": "PROVISIONAL_NONEXCLUSIVE"
+    },
+    {
+      "familyRef": "probe-family:space-earth-environment",
+      "label": "Space, Earth, ocean and atmosphere",
+      "members": [
+        "Astronomy and astrophysics",
+        "Cosmology",
+        "Earth science / geoscience",
+        "Geology",
+        "Geophysics",
+        "Geochemistry",
+        "Atmospheric science and meteorology",
+        "Oceanography",
+        "Physical geography",
+        "Climate science"
+      ],
+      "status": "PROVISIONAL_NONEXCLUSIVE"
+    },
+    {
+      "familyRef": "probe-family:life-organization",
+      "label": "Life and biological organization",
+      "members": [
+        "Biology",
+        "Molecular biology and biochemistry",
+        "Genetics and genomics",
+        "Evolutionary biology",
+        "Ecology",
+        "Neuroscience"
+      ],
+      "status": "PROVISIONAL_NONEXCLUSIVE"
+    },
+    {
+      "familyRef": "probe-family:mind-cognition-language",
+      "label": "Mind, cognition and language",
+      "members": [
+        "Neuroscience",
+        "Psychology",
+        "Cognitive science",
+        "Linguistics",
+        "Philosophy"
+      ],
+      "status": "PROVISIONAL_NONEXCLUSIVE"
+    },
+    {
+      "familyRef": "probe-family:engineering-intervention",
+      "label": "Engineering, design and intervention",
+      "members": [
+        "Engineering science and technology",
+        "Materials science",
+        "Systems and dynamical theory",
+        "Computer and information sciences",
+        "Measurement, metrology and standards"
+      ],
+      "status": "PROVISIONAL_NONEXCLUSIVE"
+    },
+    {
+      "familyRef": "probe-family:biomedical-health",
+      "label": "Biomedical and health boundary",
+      "members": [
+        "Basic biomedical sciences",
+        "Medicine and health sciences",
+        "Neuroscience",
+        "Molecular biology and biochemistry"
+      ],
+      "status": "PROVISIONAL_NONEXCLUSIVE"
+    },
+    {
+      "familyRef": "probe-family:agriculture-ecological-intervention",
+      "label": "Agricultural and ecological intervention boundary",
+      "members": [
+        "Agricultural sciences",
+        "Ecology",
+        "Biology"
+      ],
+      "status": "PROVISIONAL_NONEXCLUSIVE"
+    },
+    {
+      "familyRef": "probe-family:historical-symbolic",
+      "label": "Historical, symbolic and interpretive foundations",
+      "members": [
+        "Philosophy",
+        "Linguistics",
+        "History",
+        "Religious studies",
+        "Library and information science"
+      ],
+      "status": "PROVISIONAL_NONEXCLUSIVE"
+    },
+    {
+      "familyRef": "probe-family:methodological-epistemic-infrastructure",
+      "label": "Methodological and epistemic infrastructure",
+      "members": [
+        "Logic",
+        "Statistics and probability",
+        "Measurement, metrology and standards",
+        "Library and information science",
+        "Information theory",
+        "Philosophy"
+      ],
+      "status": "PROVISIONAL_NONEXCLUSIVE"
+    }
+  ],
+  "kind": "ordivon.foundational-census-provisional-family-topology",
+  "rootSemantics": "NONE. Families are overlapping analysis views and MUST NOT be interpreted as canonical roots.",
+  "roundId": "foundational-census:round1:2026-08-19",
+  "rules": [
+    "Membership is non-exclusive.",
+    "Family count is not foundational root count.",
+    "A candidate may belong to zero, one or many families in later rounds.",
+    "Family topology exists to expose classification pressure and missing axes, not to settle ontology."
+  ],
+  "schemaVersion": 1,
+  "truthRole": "NON_AUTHORITATIVE_PROBE_TOPOLOGY"
+}

@@ -1,0 +1,547 @@
+{
+  "candidates": [
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Mathematics",
+      "provisionalRole": "FOUNDATIONAL_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "NAMED",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "NAMED",
+        "unesco-st-1978": "NAMED"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Statistics and probability",
+      "provisionalRole": "FOUNDATIONAL_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "NAMED",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "BROAD"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Logic",
+      "provisionalRole": "FOUNDATIONAL_BRIDGE_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "BROAD"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Computer and information sciences",
+      "provisionalRole": "FOUNDATIONAL_BRIDGE_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "SEPARATE",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "NAMED"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Information theory",
+      "provisionalRole": "BRIDGE_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "BROAD"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Systems and dynamical theory",
+      "provisionalRole": "BRIDGE_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "NAMED"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Physics",
+      "provisionalRole": "FOUNDATIONAL_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "NAMED",
+        "unesco-st-1978": "NAMED"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Astronomy and astrophysics",
+      "provisionalRole": "FOUNDATIONAL_OR_MAJOR_SUBSPACE_UNRESOLVED",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "BROAD",
+        "unesco-st-1978": "NAMED"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Cosmology",
+      "provisionalRole": "FOUNDATIONAL_OR_MAJOR_SUBSPACE_UNRESOLVED",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "BROAD",
+        "unesco-st-1978": "BROAD"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Chemistry",
+      "provisionalRole": "FOUNDATIONAL_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "NAMED",
+        "unesco-st-1978": "NAMED"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Materials science",
+      "provisionalRole": "BRIDGE_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "BROAD",
+        "unesco-st-1978": "BROAD"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Earth science / geoscience",
+      "provisionalRole": "FOUNDATIONAL_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "NAMED"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Geology",
+      "provisionalRole": "FOUNDATIONAL_OR_MAJOR_SUBSPACE_UNRESOLVED",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "NAMED",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "NAMED"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Geophysics",
+      "provisionalRole": "BRIDGE_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "NAMED"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Geochemistry",
+      "provisionalRole": "BRIDGE_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "BROAD"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Atmospheric science and meteorology",
+      "provisionalRole": "FOUNDATIONAL_OR_MAJOR_SUBSPACE_UNRESOLVED",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "NAMED"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Oceanography",
+      "provisionalRole": "FOUNDATIONAL_OR_MAJOR_SUBSPACE_UNRESOLVED",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "BROAD"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Physical geography",
+      "provisionalRole": "BRIDGE_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "DIVERGENT",
+        "lcc-2026": "SEPARATE",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "NAMED"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Climate science",
+      "provisionalRole": "BRIDGE_OR_MAJOR_SUBSPACE_UNRESOLVED",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "BROAD"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Biology",
+      "provisionalRole": "FOUNDATIONAL_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "NAMED",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "NAMED",
+        "unesco-st-1978": "NAMED"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Molecular biology and biochemistry",
+      "provisionalRole": "FOUNDATIONAL_SUBSPACE_OR_BRIDGE",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "BROAD",
+        "unesco-st-1978": "NAMED"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Genetics and genomics",
+      "provisionalRole": "FOUNDATIONAL_SUBSPACE_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "BROAD",
+        "unesco-st-1978": "BROAD"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Evolutionary biology",
+      "provisionalRole": "FOUNDATIONAL_SUBSPACE_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "BROAD",
+        "unesco-st-1978": "BROAD"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Ecology",
+      "provisionalRole": "FOUNDATIONAL_SUBSPACE_OR_BRIDGE",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "BROAD",
+        "unesco-st-1978": "BROAD"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Neuroscience",
+      "provisionalRole": "FOUNDATIONAL_BRIDGE_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "DIVERGENT",
+        "lcc-2026": "DIVERGENT",
+        "oecd-ford-2015": "DIVERGENT",
+        "unesco-basic-2026": "BROAD",
+        "unesco-st-1978": "BROAD"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Medicine and health sciences",
+      "provisionalRole": "APPLIED_PROFESSIONAL_WITH_FOUNDATIONAL_CORE",
+      "sourceSignals": {
+        "isced-f-2013": "SEPARATE",
+        "lcc-2026": "SEPARATE",
+        "oecd-ford-2015": "SEPARATE",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "SEPARATE"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Basic biomedical sciences",
+      "provisionalRole": "FOUNDATIONAL_BOUNDARY_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "BROAD"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Agricultural sciences",
+      "provisionalRole": "APPLIED_PROFESSIONAL_WITH_FOUNDATIONAL_CORE",
+      "sourceSignals": {
+        "isced-f-2013": "SEPARATE",
+        "lcc-2026": "SEPARATE",
+        "oecd-ford-2015": "SEPARATE",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "SEPARATE"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Engineering science and technology",
+      "provisionalRole": "FOUNDATIONAL_INTERVENTION_DOMAIN",
+      "sourceSignals": {
+        "isced-f-2013": "SEPARATE",
+        "lcc-2026": "SEPARATE",
+        "oecd-ford-2015": "SEPARATE",
+        "unesco-basic-2026": "NAMED",
+        "unesco-st-1978": "SEPARATE"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Philosophy",
+      "provisionalRole": "FOUNDATIONAL_HUMAN_CONCEPTUAL_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "SEPARATE",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "NAMED"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Psychology",
+      "provisionalRole": "FOUNDATIONAL_OR_SOCIAL_BOUNDARY_UNRESOLVED",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "SEPARATE",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "NAMED"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Cognitive science",
+      "provisionalRole": "FOUNDATIONAL_BRIDGE_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "DIVERGENT",
+        "lcc-2026": "DIVERGENT",
+        "oecd-ford-2015": "DIVERGENT",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "DIVERGENT"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Linguistics",
+      "provisionalRole": "FOUNDATIONAL_OR_HUMANITIES_SOCIAL_BOUNDARY",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "SEPARATE",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "NAMED"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "History",
+      "provisionalRole": "FOUNDATIONAL_HISTORICAL_SYMBOLIC_BOUNDARY",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "SEPARATE",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "NAMED"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Religious studies",
+      "provisionalRole": "HUMANITIES_BOUNDARY_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "SEPARATE",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "NAMED"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Library and information science",
+      "provisionalRole": "KNOWLEDGE_ORGANIZATION_BRIDGE_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "BROAD",
+        "lcc-2026": "SEPARATE",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "BROAD"
+      }
+    },
+    {
+      "admission": "CENSUS_ONLY_NOT_CANONICAL_ROOT",
+      "candidate": "Measurement, metrology and standards",
+      "provisionalRole": "METHODOLOGICAL_FOUNDATION_CANDIDATE",
+      "sourceSignals": {
+        "isced-f-2013": "ABSENT_SCOPE",
+        "lcc-2026": "BROAD",
+        "oecd-ford-2015": "BROAD",
+        "unesco-basic-2026": "ABSENT_SCOPE",
+        "unesco-st-1978": "NAMED"
+      }
+    }
+  ],
+  "closure": "NOT_CLAIMED",
+  "findings": [
+    {
+      "claim": "The external systems classify different things: policy priorities, R&D statistics, education fields and library holdings. Their disagreement is expected and informative.",
+      "findingId": "FCR1-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Several spaces recur strongly across views: mathematics, physics, chemistry, biology, engineering/technology, earth/geoscience, medicine/health and agriculture; recurrence does not by itself determine foundational root status.",
+      "findingId": "FCR1-2",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Formal/computational spaces are fragmented by institutional views: mathematics/statistics, computer-information sciences, logic, information and systems appear at different levels, supporting a multi-node formal/abstract family rather than one Computer Science bucket.",
+      "findingId": "FCR1-3",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Earth/ocean/atmosphere is too large to remain an incidental child of generic physics or geography; source views repeatedly expose geology/geophysics/meteorology/physical geography or separate geography classes.",
+      "findingId": "FCR1-4",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Mind/language domains are classification-pressure zones: psychology, linguistics, cognitive science and neuroscience cut across natural, medical, social, humanities and library views.",
+      "findingId": "FCR1-5",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Methodological foundations such as measurement/metrology can be central to knowledge production while being underrepresented as academic root disciplines; the Atlas census therefore needs a methodological-axis view in addition to discipline views.",
+      "findingId": "FCR1-6",
+      "standing": "PROVISIONAL_SUPPORTED"
+    }
+  ],
+  "kind": "ordivon.foundational-knowledge-space-census-round1",
+  "method": {
+    "forbidden": [
+      "Majority vote creates ontology truth",
+      "Absence means nonexistent",
+      "Institutional category equals foundational root",
+      "A broad parent mapping proves subclass semantics"
+    ],
+    "principle": "Compare heterogeneous classification views without majority-vote ontology.",
+    "signalSemantics": {
+      "ABSENT_SCOPE": "Not named by this source view or outside its intended scope; never evidence of nonexistence.",
+      "BROAD": "Representable under a broader source field/class; source does not settle root status.",
+      "DIVERGENT": "Placement cuts across materially different source fields/classes.",
+      "NAMED": "Explicitly named by the source view at a relevant level.",
+      "SEPARATE": "Represented as a distinct major/top-level class or field in the source view."
+    }
+  },
+  "next": "Round 2 should normalize identities and test candidate roles by family before admitting new canonical reference roots.",
+  "roundId": "foundational-census:round1:2026-08-19",
+  "schemaVersion": 1,
+  "sources": {
+    "isced-f-2013": {
+      "note": "Education/study-field partition; comparison view, not ontology authority.",
+      "observed": "2026-08-19",
+      "title": "ISCED Fields of Education and Training 2013",
+      "url": "https://uis.unesco.org/en/files/isced-fields-education-and-training-2013-en-pdf",
+      "viewType": "EDUCATION_FIELD_CLASSIFICATION"
+    },
+    "lcc-2026": {
+      "note": "Broad knowledge-organization system covering philosophy/psychology/religion, history, geography/anthropology, science, medicine, agriculture, technology, language/literature, library/information resources, etc.",
+      "observed": "2026-08-19",
+      "title": "Library of Congress Classification Outline",
+      "url": "https://www.loc.gov/aba/cataloging/classification/lcco/",
+      "viewType": "LIBRARY_KNOWLEDGE_ORGANIZATION"
+    },
+    "oecd-ford-2015": {
+      "note": "Current Frascati edition; broad FORD partition used for R&D statistics.",
+      "observed": "2026-08-19",
+      "title": "OECD Frascati Manual 2015 / Fields of Research and Development",
+      "url": "https://www.oecd.org/en/publications/frascati-manual-2015_9789264239012-en.html",
+      "viewType": "R_AND_D_STATISTICS"
+    },
+    "unesco-basic-2026": {
+      "note": "Narrow policy framing naming physics, chemistry, biology, mathematics and engineering; not treated as exhaustive.",
+      "observed": "2026-08-19",
+      "title": "UNESCO Basic sciences",
+      "url": "https://www.unesco.org/en/basic-sciences",
+      "viewType": "SCIENCE_POLICY_PROGRAM"
+    },
+    "unesco-st-1978": {
+      "note": "Broad S&T fields including named natural sciences, engineering/technology, medical, agricultural, social sciences and humanities.",
+      "observed": "2026-08-19",
+      "title": "UNESCO Recommendation concerning International Standardization of Statistics on Science and Technology",
+      "url": "https://www.unesco.org/en/legal-affairs/recommendation-concerning-international-standardization-statistics-science-and-technology",
+      "viewType": "SCIENCE_TECHNOLOGY_STATISTICS"
+    },
+    "wikidata-membership-2026": {
+      "note": "Constrains P31/P279/P361 semantics; not a discipline census by itself.",
+      "observed": "2026-08-19",
+      "title": "Wikidata basic membership properties",
+      "url": "https://www.wikidata.org/wiki/Help:Basic_membership_properties/en",
+      "viewType": "KNOWLEDGE_GRAPH_RELATION_SEMANTICS"
+    }
+  },
+  "state": "OPEN_NOT_EXHAUSTIVE",
+  "truthRole": "NON_AUTHORITATIVE_MULTI_VIEW_CENSUS"
+}

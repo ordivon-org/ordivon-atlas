@@ -1,0 +1,102 @@
+{
+  "acceptedFindings": [
+    {
+      "claim": "The external systems classify different things: policy priorities, R&D statistics, education fields and library holdings. Their disagreement is expected and informative.",
+      "findingId": "FCR1-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Several spaces recur strongly across views: mathematics, physics, chemistry, biology, engineering/technology, earth/geoscience, medicine/health and agriculture; recurrence does not by itself determine foundational root status.",
+      "findingId": "FCR1-2",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Formal/computational spaces are fragmented by institutional views: mathematics/statistics, computer-information sciences, logic, information and systems appear at different levels, supporting a multi-node formal/abstract family rather than one Computer Science bucket.",
+      "findingId": "FCR1-3",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Earth/ocean/atmosphere is too large to remain an incidental child of generic physics or geography; source views repeatedly expose geology/geophysics/meteorology/physical geography or separate geography classes.",
+      "findingId": "FCR1-4",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Mind/language domains are classification-pressure zones: psychology, linguistics, cognitive science and neuroscience cut across natural, medical, social, humanities and library views.",
+      "findingId": "FCR1-5",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Methodological foundations such as measurement/metrology can be central to knowledge production while being underrepresented as academic root disciplines; the Atlas census therefore needs a methodological-axis view in addition to discipline views.",
+      "findingId": "FCR1-6",
+      "standing": "PROVISIONAL_SUPPORTED"
+    }
+  ],
+  "closure": "ROUND1_COMPLETE_BUT_FOUNDATIONAL_CENSUS_OPEN",
+  "counts": {
+    "candidateSpaces": 37,
+    "findings": 6,
+    "probeFamilyViews": 10,
+    "sourceViews": 6
+  },
+  "date": "2026-08-19",
+  "inputs": [
+    {
+      "role": "narrow policy framing; not exhaustive",
+      "title": "UNESCO Basic sciences",
+      "url": "https://www.unesco.org/en/basic-sciences"
+    },
+    {
+      "role": "historical broad field enumeration",
+      "title": "UNESCO 1978 S&T statistics recommendation",
+      "url": "https://www.unesco.org/en/legal-affairs/recommendation-concerning-international-standardization-statistics-science-and-technology"
+    },
+    {
+      "role": "R&D field classification",
+      "title": "OECD Frascati Manual 2015 / FORD",
+      "url": "https://www.oecd.org/en/publications/frascati-manual-2015_9789264239012-en.html"
+    },
+    {
+      "role": "current operational summary of six FORD broad knowledge domains",
+      "title": "UNESCO UIS FORD glossary",
+      "url": "https://uis.unesco.org/en/glossary-term/fields-research-and-development-ford"
+    },
+    {
+      "role": "education/study-field classification",
+      "title": "ISCED-F 2013",
+      "url": "https://uis.unesco.org/en/files/isced-fields-education-and-training-2013-en-pdf"
+    },
+    {
+      "role": "library knowledge-organization view",
+      "title": "Library of Congress Classification Outline",
+      "url": "https://www.loc.gov/aba/cataloging/classification/lcco/"
+    },
+    {
+      "role": "relation-semantics guardrail, not census authority",
+      "title": "Wikidata Basic membership properties",
+      "url": "https://www.wikidata.org/wiki/Help:Basic_membership_properties/en"
+    }
+  ],
+  "kind": "ordivon.foundational-knowledge-space-census-round1-acceptance",
+  "negativeControls": [
+    "No majority-vote ontology.",
+    "No ABSENT_SCOPE => nonexistence inference.",
+    "No BROAD parent mapping => subclass inference.",
+    "No provisional family => canonical root inference.",
+    "No social/political/legal/governance root admission in Round 1.",
+    "No Ordivon coverage scoring before reference-space stabilization."
+  ],
+  "next": "Round 2 identity/topology normalization: review each candidate family for ROOT / MAJOR_SUBSPACE / BRIDGE / METHODOLOGICAL_AXIS / APPLIED_BOUNDARY / LATER_WAVE roles using deeper domain-specific sources.",
+  "outputs": {
+    "matrix": "reference/foundational-census-round1-20260819.json",
+    "matrixHuman": "reference/foundational-census-round1-20260819.md",
+    "probeFamilies": "reference/foundational-census-round1-families-20260819.json",
+    "probeFamiliesHuman": "reference/foundational-census-round1-families-20260819.md"
+  },
+  "schemaVersion": 1,
+  "state": "ROUND1_COMPLETE_CENSUS_OPEN",
+  "truthRole": "HISTORICAL_RESEARCH_EVIDENCE",
+  "verification": {
+    "fullDeterministicSuiteJob": "job-01a015a7-1259-7bb3-9b2c-fd316e9c8045",
+    "result": "51 tests OK; 28 pre-existing gated tests skipped; 23 deterministic tests executed."
+  }
+}
