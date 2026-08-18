@@ -1,0 +1,284 @@
+{
+  "bootstrapExecutionPolicy": {
+    "allowedInputs": [
+      "generated/atlas.json",
+      "config/sources.json",
+      "owner Git objects at generated sourceTransportRevision"
+    ],
+    "bootstrapUsedAtExecution": false,
+    "forbiddenInputs": [
+      "Ordivon Host task reads",
+      "legacy consolidation capsule reads",
+      "manual/bootstrap registry rows as current authority"
+    ]
+  },
+  "closure": [
+    {
+      "ownerResearchRef": "research-owner:network",
+      "scope": "NDF0-NDF5",
+      "status": "ESTABLISHED"
+    },
+    {
+      "ownerResearchRef": "research-owner:network",
+      "scope": "WHOLE_DOMAIN_EXHAUSTIVE",
+      "status": "NOT_CLAIMED"
+    },
+    {
+      "ownerResearchRef": "research-owner:runtime",
+      "scope": "RF0-RF16",
+      "status": "ESTABLISHED"
+    },
+    {
+      "ownerResearchRef": "research-owner:runtime",
+      "scope": "EF0-EF26",
+      "status": "ESTABLISHED"
+    },
+    {
+      "ownerResearchRef": "research-owner:runtime",
+      "scope": "WHOLE_DOMAIN_EXHAUSTIVE",
+      "status": "UNKNOWN"
+    },
+    {
+      "ownerResearchRef": "research-owner:host",
+      "scope": "HDF0-HDF43",
+      "status": "ESTABLISHED"
+    },
+    {
+      "ownerResearchRef": "research-owner:host",
+      "scope": "PRIMITIVE_UNIVERSAL_CENTRAL_HOST",
+      "status": "FALSIFIED"
+    },
+    {
+      "ownerResearchRef": "research-owner:host",
+      "scope": "GENERIC_COORDINATION_INDEPENDENT_OWNER",
+      "status": "FALSIFIED"
+    },
+    {
+      "ownerResearchRef": "research-owner:game",
+      "scope": "GDF0-GDF3",
+      "status": "ESTABLISHED"
+    },
+    {
+      "ownerResearchRef": "research-owner:game",
+      "scope": "STRONG_FRESH_COVERAGE_CURRENT_EVIDENCE_HORIZON",
+      "status": "ESTABLISHED"
+    },
+    {
+      "ownerResearchRef": "research-owner:game",
+      "scope": "ABSOLUTE_WHOLE_GAME",
+      "status": "NOT_CLAIMED"
+    }
+  ],
+  "collisionAssertions": [
+    {
+      "displayAlias": "GDF3",
+      "distinctResultRefs": [
+        "result:game:gdf3-authoritative-case-determination-current",
+        "result:game:gdf3-game-feel-historical-cancelled"
+      ],
+      "requiredDifferentStanding": true
+    }
+  ],
+  "date": "2026-08-18",
+  "historicalRetention": "REQUIRED",
+  "kind": "ordivon.atlas-bootstrap-parity-spec",
+  "legacyReconciliationSources": [
+    {
+      "checkpointDigest": "sha256:eb5a02fbf4cb61cb2cba9f5c11c1e43daf000bc981548fdc121f9534f7821e17",
+      "ownerResearchRef": "research-owner:network",
+      "revision": 3,
+      "taskId": "task:network-research-core-consolidation-branch-20260818"
+    },
+    {
+      "checkpointDigest": "sha256:660ed4327e532d3b58c0433b31da7cb809435342924531cd97bd50c0abb32f44",
+      "ownerResearchRef": "research-owner:runtime",
+      "revision": 3,
+      "taskId": "task:runtime-research-core-consolidation-branch-20260818"
+    },
+    {
+      "checkpointDigest": "sha256:73879efb7f0ed71878b2218250fb5e0bcb66f49845720eae5a93b479fcf06a7c",
+      "ownerResearchRef": "research-owner:host",
+      "revision": 3,
+      "taskId": "task:host-research-core-consolidation-branch-20260818"
+    },
+    {
+      "checkpointDigest": "sha256:fcf678cf79ff93387dd3b53065925cb1bd176f451d7834312541ffbbd045bd2d",
+      "ownerResearchRef": "research-owner:game",
+      "revision": 3,
+      "taskId": "task:game-research-core-consolidation-branch-20260818"
+    }
+  ],
+  "lineageContains": {
+    "research-owner:game": [
+      "Current semantic Foundation registry is exactly GDF0-GDF3; GDF4 is not admitted",
+      "C1 GameInstance Constitution / Participation Lifecycle is the sole strong fresh Game-owned survivor",
+      "Historical Game Feel / Feedback / Sensorimotor Coupling GDF3 at commit 042e34d is cancelled/noncanonical"
+    ],
+    "research-owner:host": [
+      "HDF0-HDF43 remain frozen; HDF44 is not admitted",
+      "HDF40 closes the universal/central Host-native ontology/service boundary",
+      "Generic Coordination / Coordination Plane independent semantic ownership remains not admitted"
+    ],
+    "research-owner:network": [
+      "NDF0 controlled repair from Communicability to InterLocusCapability",
+      "NDF1 dependent scope repair",
+      "NDF6 remains NOT_ADMITTED"
+    ],
+    "research-owner:runtime": [
+      "EF27 is historical superseded evidence and its effective work was merged into EF26"
+    ]
+  },
+  "recovery": {
+    "research-owner:game": {
+      "locator": "research/README.md",
+      "targetRole": "OWNER_RESEARCH_CORPUS"
+    },
+    "research-owner:host": {
+      "locator": "research/README.md",
+      "targetRole": "OWNER_RESEARCH_CORPUS"
+    },
+    "research-owner:network": {
+      "locator": "owners/network/README.md",
+      "targetRole": "OWNER_RESEARCH_CORPUS"
+    },
+    "research-owner:runtime": {
+      "locator": "research/README.md",
+      "targetRole": "OWNER_RESEARCH_CORPUS"
+    }
+  },
+  "results": {
+    "result:game:absolute-whole-game-closure-not-claimed": {
+      "standing": [
+        "CURRENT"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:game:c1-strong-survivor-unadmitted": {
+      "standing": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "verdict": "SUPPORTED_IN_SCOPE"
+    },
+    "result:game:gdf0-gdf3-current-frozen": {
+      "standing": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:game:gdf3-authoritative-case-determination-current": {
+      "standing": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:game:gdf3-game-feel-historical-cancelled": {
+      "standing": [
+        "ABANDONED",
+        "HISTORICAL_PRESERVED"
+      ],
+      "verdict": "UNDERDETERMINED"
+    },
+    "result:game:gdf4-not-admitted": {
+      "standing": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:game:gpr8-not-admitted": {
+      "standing": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:host:generic-coordination-owner-not-admitted": {
+      "standing": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "verdict": "FALSIFIED_IN_SCOPE"
+    },
+    "result:host:hdf0-hdf43-current-frozen": {
+      "standing": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:host:hdf44-not-admitted": {
+      "standing": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:host:primitive-universal-host-falsified": {
+      "standing": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "verdict": "FALSIFIED_IN_SCOPE"
+    },
+    "result:network:ndf0-ndf5-current-frozen": {
+      "standing": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:network:ndf6-not-admitted": {
+      "standing": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:network:whole-domain-exhaustive-closure-not-established": {
+      "standing": [
+        "CURRENT"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:runtime:ef0-ef26-frozen": {
+      "standing": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:runtime:ef27-historical-superseded": {
+      "standing": [
+        "HISTORICAL_PRESERVED",
+        "SUPERSEDED",
+        "WITHDRAWN"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:runtime:rf0-rf16-frozen": {
+      "standing": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:runtime:whole-domain-exhaustive-closure-unknown": {
+      "standing": [
+        "CURRENT"
+      ],
+      "verdict": "UNDERDETERMINED"
+    }
+  },
+  "retirementScope": "LIVE_NAVIGATION_ROLE_ONLY_FOR_FOUR_COVERED_OWNERS",
+  "schemaVersion": 1,
+  "scopeOwners": [
+    "research-owner:network",
+    "research-owner:runtime",
+    "research-owner:host",
+    "research-owner:game"
+  ],
+  "truthRole": "historical-reconciliation-spec"
+}

@@ -1,0 +1,127 @@
+{
+  "atlasBaselineCommit": "06139455905912f2eaf31b089578555e3c3258f0",
+  "bootstrapDiscovery": {
+    "boundedGlobalSearchJob": "job-01a01522-13eb-7020-87ce-036e30b365ed",
+    "centralManualAtlasFileFound": false,
+    "disposition": "Do not invent a missing central table. Treat the exact completed consolidation capsules above as historical bootstrap/reconciliation evidence.",
+    "sharedResearchCorpusIsAtlas": false
+  },
+  "classification": {
+    "authorityRecoveryFailure": false,
+    "bootstrapAccessDuringDestructiveTest": false,
+    "closureParityPassed": true,
+    "collisionParityPassed": true,
+    "negativeHistoryParityPassed": true,
+    "productionServiceRequired": false,
+    "recoveryParityPassed": true,
+    "representationalFailure": false,
+    "semanticParityPassed": true
+  },
+  "collisionProof": {
+    "alias": "GDF3",
+    "currentResultRef": "result:game:gdf3-authoritative-case-determination-current",
+    "historicalResultRef": "result:game:gdf3-game-feel-historical-cancelled",
+    "identitiesRemainDistinct": true,
+    "userFacingAliasIndexStillUsefulLater": true
+  },
+  "currentRecoveryProof": {
+    "allLocatorsResolvedAtExactSourceTransportRevision": true,
+    "allTargetRole": "OWNER_RESEARCH_CORPUS",
+    "anyTaskOrHandoffLocator": false
+  },
+  "date": "2026-08-18",
+  "destructiveProof": {
+    "allowedInputs": [
+      "generated/atlas.json",
+      "config/sources.json",
+      "owner Git objects at generated sourceTransportRevision"
+    ],
+    "deterministicSuiteJob": "job-01a01527-7f37-7092-ba0a-47bac2605b08",
+    "deterministicSuiteResult": "9 PASS; 7 bootstrap-retirement tests + 5 live tests gated/skipped by default",
+    "hostTaskReadsDuringProof": false,
+    "paritySpec": "evidence/BOOTSTRAP-FOUR-OWNER-PARITY-SPEC-20260818.json",
+    "retirementProofJob": "job-01a01527-a935-7e81-9a88-cee9b6384b72",
+    "retirementProofResult": "7/7 PASS",
+    "testModule": "tests/test_bootstrap_retirement.py"
+  },
+  "generatedProjectionAtProof": {
+    "allOwnersCurrentToSource": true,
+    "allProjectedResultsExplicitlyClassified": true,
+    "authorityHistoryRows": 9,
+    "closureRows": 14,
+    "negativeAndLineageRows": 16,
+    "owners": 4,
+    "results": 23
+  },
+  "kind": "ordivon.atlas-bootstrap-firstlookup-retirement-acceptance-evidence",
+  "legacyReconciliationSources": [
+    {
+      "checkpointDigest": "sha256:eb5a02fbf4cb61cb2cba9f5c11c1e43daf000bc981548fdc121f9534f7821e17",
+      "owner": "Network",
+      "revision": 3,
+      "taskId": "task:network-research-core-consolidation-branch-20260818"
+    },
+    {
+      "checkpointDigest": "sha256:660ed4327e532d3b58c0433b31da7cb809435342924531cd97bd50c0abb32f44",
+      "owner": "Runtime",
+      "revision": 3,
+      "taskId": "task:runtime-research-core-consolidation-branch-20260818"
+    },
+    {
+      "checkpointDigest": "sha256:73879efb7f0ed71878b2218250fb5e0bcb66f49845720eae5a93b479fcf06a7c",
+      "owner": "Host",
+      "revision": 3,
+      "taskId": "task:host-research-core-consolidation-branch-20260818"
+    },
+    {
+      "checkpointDigest": "sha256:fcf678cf79ff93387dd3b53065925cb1bd176f451d7834312541ffbbd045bd2d",
+      "owner": "Game",
+      "revision": 3,
+      "taskId": "task:game-research-core-consolidation-branch-20260818"
+    }
+  ],
+  "nonAuthorityNotice": "Retiring a legacy first-lookup role does not change owner semantic authority or delete historical evidence. Generated Atlas remains a source-fenced projection; owner publications/corpora remain authority.",
+  "recoveredHighControlFacts": {
+    "Game": [
+      "GDF0-GDF3 CURRENT+FROZEN",
+      "GDF4/GPR8 CURRENT+NOT_ADMITTED",
+      "C1 CURRENT+NOT_ADMITTED/SUPPORTED_IN_SCOPE",
+      "canonical GDF3 distinct from historical cancelled Game Feel GDF3",
+      "Absolute WholeGameClosure NOT_CLAIMED",
+      "owner-native recovery"
+    ],
+    "Host": [
+      "HDF0-HDF43 CURRENT+FROZEN",
+      "HDF44 CURRENT+NOT_ADMITTED",
+      "Primitive/Universal Host FALSIFIED_IN_SCOPE",
+      "Generic Coordination owner CURRENT+NOT_ADMITTED/FALSIFIED_IN_SCOPE",
+      "owner-native recovery"
+    ],
+    "Network": [
+      "NDF0-NDF5 CURRENT+FROZEN",
+      "NDF6 CURRENT+NOT_ADMITTED",
+      "NDF0 Communicability→InterLocusCapability repair lineage",
+      "NDF1 dependent repair",
+      "whole-domain exhaustive closure NOT_CLAIMED",
+      "owner-native recovery"
+    ],
+    "Runtime": [
+      "RF0-RF16 CURRENT+FROZEN",
+      "EF0-EF26 CURRENT+FROZEN",
+      "EF27 HISTORICAL_PRESERVED+SUPERSEDED+WITHDRAWN",
+      "whole-domain exhaustive closure UNKNOWN",
+      "owner-native recovery"
+    ]
+  },
+  "retirementDisposition": {
+    "coveredOwnerBootstrapLiveNavigationRole": "RETIRED",
+    "historicalBootstrapSnapshots": "PRESERVE",
+    "legacyConsolidationCapsules": "PRESERVE_AS_HISTORICAL_RECONCILIATION_EVIDENCE",
+    "manualCentralTableDeleted": false,
+    "physicalDeletionPerformed": false,
+    "uncoveredOwners": "OUT_OF_SCOPE_NOT_RETIRED"
+  },
+  "schemaVersion": 1,
+  "scope": "Network + Runtime + Host + Game only",
+  "truthRole": "historical-test-evidence"
+}
