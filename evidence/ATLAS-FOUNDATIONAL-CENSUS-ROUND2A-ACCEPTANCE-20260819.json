@@ -1,0 +1,73 @@
+{
+  "acceptedFindings": [
+    {
+      "claim": "Logic is better represented as a cross-domain foundational/methodological axis than as an ordinary child of mathematics.",
+      "id": "FCR2A-1",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Computation and information require distinct but overlapping identities; neither should be collapsed into software engineering or communications.",
+      "id": "FCR2A-2",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Astronomy deserves first-class major-domain representation, while cosmology is currently better modeled as a physics↔astronomy major bridge/subspace.",
+      "id": "FCR2A-3",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Earth science/geoscience deserves first-class major-domain representation; atmosphere, ocean and geology are major subspaces, while climate is a cross-system bridge.",
+      "id": "FCR2A-4",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Cognitive science is an interdisciplinary bridge-domain discipline, not a subclass of psychology; neuroscience and linguistics also require first-class identities with multi-domain placement.",
+      "id": "FCR2A-5",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Measurement/metrology is a cross-domain methodological/epistemic axis and must not be forced under a single object-domain.",
+      "id": "FCR2A-6",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "closure": "ROUND2A_COMPLETE_GLOBAL_CENSUS_OPEN",
+  "counts": {
+    "findings": 6,
+    "normalizedSpaces": 16,
+    "relations": 12,
+    "sources": 12
+  },
+  "date": "2026-08-19",
+  "kind": "ordivon.foundational-census-round2a-acceptance",
+  "negativeControls": [
+    "All Round2A canonical root admissions remain NOT_ADMITTED.",
+    "Identity normalization does not imply root admission.",
+    "Major-domain candidate does not imply canonical root.",
+    "Cognitive science is not reduced to psychology.",
+    "Astronomy is not flattened into physics.",
+    "Earth science is not flattened into physics/geography.",
+    "Climate remains cross-system bridge.",
+    "Measurement/metrology remains methodological/epistemic axis."
+  ],
+  "next": "Round2B: Physical/Material, Life, Engineering/Intervention, Historical/Symbolic, Biomedical/Agricultural boundary normalization.",
+  "outputs": {
+    "human": "reference/foundational-census-round2a-normalization-20260819.md",
+    "normalization": "reference/foundational-census-round2a-normalization-20260819.json"
+  },
+  "schemaVersion": 1,
+  "scope": [
+    "Logic–Computation–Information",
+    "Space–Earth–Environment",
+    "Mind–Cognition–Language",
+    "Measurement–Metrology"
+  ],
+  "state": "ROUND2A_COMPLETE_GLOBAL_CENSUS_OPEN",
+  "truthRole": "HISTORICAL_RESEARCH_EVIDENCE",
+  "verification": {
+    "fullDeterministicSuite": "job-01a015ba-3cab-7a30-9576-e6c535795fc4",
+    "fullResult": "57 tests OK; 28 pre-existing gated tests skipped; 29 deterministic tests executed.",
+    "result": "20/20 reference tests PASS",
+    "round2aDestructiveSuite": "job-01a015ba-1498-72a0-9b13-400175438e22"
+  }
+}

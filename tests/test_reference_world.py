@@ -156,6 +156,61 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
             self.assertGreater(memberships.get(expected, 0), 1, expected)
 
 
+    def test_round2a_normalization_separates_identity_role_and_root_admission(self) -> None:
+        r2 = json.loads((ROOT / "reference/foundational-census-round2a-normalization-20260819.json").read_text())
+        self.assertEqual(r2["truthRole"], "NON_AUTHORITATIVE_REFERENCE_NORMALIZATION")
+        self.assertEqual(r2["state"], "ROUND2A_COMPLETE_CENSUS_OPEN")
+        self.assertEqual(r2["closure"], "ROUND2A_COMPLETE_GLOBAL_CENSUS_OPEN")
+        self.assertTrue(all(s["rootAdmission"] == "NOT_ADMITTED" for s in r2["normalizedSpaces"]))
+        self.assertTrue(all(s["identityStatus"] == "PROVISIONALLY_NORMALIZED" for s in r2["normalizedSpaces"]))
+        self.assertIn("MAJOR_DOMAIN_CANDIDATE != CANONICAL_ROOT", r2["policies"]["negativeRule"])
+
+    def test_round2a_pressure_zones_preserve_multi_domain_topology(self) -> None:
+        r2 = json.loads((ROOT / "reference/foundational-census-round2a-normalization-20260819.json").read_text())
+        by = {s["spaceRef"]: s for s in r2["normalizedSpaces"]}
+        for ref in ("norm:logic", "norm:information-theory", "norm:cognitive-science", "norm:neuroscience", "norm:linguistics", "norm:measurement"):
+            self.assertGreaterEqual(len(by[ref]["placements"]), 2, ref)
+        self.assertIn("METHODOLOGICAL_AXIS", by["norm:logic"]["roleClasses"])
+        self.assertIn("BRIDGE_DOMAIN", by["norm:cognitive-science"]["roleClasses"])
+        self.assertIn("METHODOLOGICAL_AXIS", by["norm:measurement"]["roleClasses"])
+
+    def test_round2a_cognitive_science_is_not_reduced_to_psychology(self) -> None:
+        r2 = json.loads((ROOT / "reference/foundational-census-round2a-normalization-20260819.json").read_text())
+        by = {s["spaceRef"]: s for s in r2["normalizedSpaces"]}
+        cog = by["norm:cognitive-science"]
+        self.assertIn("psychology", cog["placements"])
+        self.assertIn("neuroscience", cog["placements"])
+        self.assertIn("linguistics", cog["placements"])
+        self.assertIn("artificial-intelligence", cog["placements"])
+        self.assertNotEqual(cog["placements"], ["psychology"])
+
+    def test_round2a_metrology_is_cross_domain_method_axis(self) -> None:
+        r2 = json.loads((ROOT / "reference/foundational-census-round2a-normalization-20260819.json").read_text())
+        by = {s["spaceRef"]: s for s in r2["normalizedSpaces"]}
+        met = by["norm:measurement"]
+        self.assertIn("METHODOLOGICAL_AXIS", met["roleClasses"])
+        self.assertIn("EPISTEMIC_INFRASTRUCTURE", met["roleClasses"])
+        for domain in ("physics", "chemistry", "biology", "engineering"):
+            self.assertIn(domain, met["placements"])
+        self.assertEqual(met["rootAdmission"], "NOT_ADMITTED")
+
+    def test_round2a_space_earth_roles_do_not_flatten_to_physics(self) -> None:
+        r2 = json.loads((ROOT / "reference/foundational-census-round2a-normalization-20260819.json").read_text())
+        by = {s["spaceRef"]: s for s in r2["normalizedSpaces"]}
+        self.assertIn("MAJOR_DOMAIN_CANDIDATE", by["norm:astronomy"]["roleClasses"])
+        self.assertIn("MAJOR_DOMAIN_CANDIDATE", by["norm:earth-science"]["roleClasses"])
+        self.assertIn("MAJOR_SUBSPACE", by["norm:cosmology"]["roleClasses"])
+        self.assertNotIn("MAJOR_DOMAIN_CANDIDATE", by["norm:cosmology"]["roleClasses"])
+        self.assertIn("BRIDGE_DOMAIN", by["norm:climate-science"]["roleClasses"])
+
+    def test_round2a_relations_reference_existing_normalized_spaces(self) -> None:
+        r2 = json.loads((ROOT / "reference/foundational-census-round2a-normalization-20260819.json").read_text())
+        refs = {s["spaceRef"] for s in r2["normalizedSpaces"]}
+        for rel in r2["relations"]:
+            self.assertIn(rel["from"], refs)
+            self.assertIn(rel["to"], refs)
+
+
 
 if __name__ == "__main__":
     unittest.main()

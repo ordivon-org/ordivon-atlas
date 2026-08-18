@@ -1,0 +1,503 @@
+{
+  "closure": "ROUND2A_COMPLETE_GLOBAL_CENSUS_OPEN",
+  "findings": [
+    {
+      "claim": "Logic is better represented as a cross-domain foundational/methodological axis than as an ordinary child of mathematics.",
+      "id": "FCR2A-1",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Computation and information require distinct but overlapping identities; neither should be collapsed into software engineering or communications.",
+      "id": "FCR2A-2",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Astronomy deserves first-class major-domain representation, while cosmology is currently better modeled as a physics↔astronomy major bridge/subspace.",
+      "id": "FCR2A-3",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Earth science/geoscience deserves first-class major-domain representation; atmosphere, ocean and geology are major subspaces, while climate is a cross-system bridge.",
+      "id": "FCR2A-4",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Cognitive science is an interdisciplinary bridge-domain discipline, not a subclass of psychology; neuroscience and linguistics also require first-class identities with multi-domain placement.",
+      "id": "FCR2A-5",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Measurement/metrology is a cross-domain methodological/epistemic axis and must not be forced under a single object-domain.",
+      "id": "FCR2A-6",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.foundational-census-round2a-normalization",
+  "next": "Round2B should normalize Physical/Material, Life, Engineering/Intervention, Historical/Symbolic and biomedical/agricultural boundary candidates.",
+  "normalizedSpaces": [
+    {
+      "evidence": [
+        "ams-msc-logic"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Logic",
+      "placements": [
+        "formal-inferential",
+        "mathematics",
+        "philosophy",
+        "computation"
+      ],
+      "rationale": "MSC treats mathematical logic and foundations as a major mathematical class whose internal structure includes philosophical logic, general logic, computability, set theory and proof theory. This supports one logic identity spanning multiple domains rather than a mathematics-only child.",
+      "roleClasses": [
+        "FOUNDATIONAL_BRIDGE",
+        "METHODOLOGICAL_AXIS"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:logic"
+    },
+    {
+      "evidence": [
+        "ams-msc-logic",
+        "acm-ccs"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Computation and computing",
+      "placements": [
+        "formal-inferential",
+        "engineering-intervention",
+        "information"
+      ],
+      "rationale": "Computability appears inside mathematical logic while ACM maintains a broad taxonomy for the computing field; computation therefore crosses formal theory and technological realization.",
+      "roleClasses": [
+        "FOUNDATIONAL_DOMAIN_CANDIDATE",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:computation"
+    },
+    {
+      "evidence": [
+        "ieee-itsoc"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Information theory",
+      "placements": [
+        "formal-inferential",
+        "computation",
+        "communication",
+        "statistics"
+      ],
+      "rationale": "IEEE defines information theory around mathematical underpinnings of information processing, transmission, storage and use, with coding, complexity, cryptography, learning and stochastic processes. It is broader than a communications-engineering subfield but not yet justified as a standalone root.",
+      "roleClasses": [
+        "FOUNDATIONAL_BRIDGE",
+        "METHODOLOGICAL_AXIS"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:information-theory"
+    },
+    {
+      "evidence": [
+        "iau-divisions",
+        "iau-commissions"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Astronomy and astrophysics",
+      "placements": [
+        "space-cosmic",
+        "physics",
+        "planetary"
+      ],
+      "rationale": "IAU organizes astronomy through nine divisions ranging from Fundamental Astronomy through planetary, stellar, interstellar, high-energy and galaxies/cosmology, demonstrating a first-class domain topology that should not be collapsed to one physics subnode.",
+      "roleClasses": [
+        "MAJOR_DOMAIN_CANDIDATE",
+        "PHYSICAL_SPACE_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:astronomy"
+    },
+    {
+      "evidence": [
+        "iau-divisions"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Cosmology",
+      "placements": [
+        "astronomy",
+        "physics",
+        "space-cosmic"
+      ],
+      "rationale": "IAU places Galaxies and Cosmology within a dedicated division while high-energy/fundamental physics is separately represented; cosmology is therefore best treated as a major cross-boundary subspace, not a root by default.",
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "PHYSICS_ASTRONOMY_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:cosmology"
+    },
+    {
+      "evidence": [
+        "agu-sections"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Earth science / geoscience",
+      "placements": [
+        "earth-environment",
+        "physical-material",
+        "planetary"
+      ],
+      "rationale": "AGU explicitly spans Earth and space sciences and maintains many sections across atmosphere, biogeosciences, cryosphere, surface processes, geodesy and geomagnetism, supporting a first-class geoscience system domain.",
+      "roleClasses": [
+        "MAJOR_DOMAIN_CANDIDATE",
+        "SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:earth-science"
+    },
+    {
+      "evidence": [
+        "agu-sections"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Geology",
+      "placements": [
+        "earth-science"
+      ],
+      "rationale": "Geology is substantial but current evidence is consistent with major subspace status inside a broader geoscience/Earth-system region.",
+      "roleClasses": [
+        "MAJOR_SUBSPACE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:geology"
+    },
+    {
+      "evidence": [
+        "agu-sections"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Geophysics",
+      "placements": [
+        "earth-science",
+        "physics"
+      ],
+      "rationale": "AGU section structure exposes multiple explicitly physical Earth domains, supporting a physics↔Earth bridge identity rather than exclusive parentage.",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_SUBSPACE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:geophysics"
+    },
+    {
+      "evidence": [
+        "agu-sections"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Atmospheric science and meteorology",
+      "placements": [
+        "earth-science",
+        "climate",
+        "physics"
+      ],
+      "rationale": "Atmospheric Sciences is an explicit AGU section and participates in broader Earth-system interactions; treat as major subspace with system-domain character.",
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:atmospheric-science"
+    },
+    {
+      "evidence": [
+        "agu-sections"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Oceanography",
+      "placements": [
+        "earth-science",
+        "climate",
+        "biology",
+        "chemistry",
+        "physics"
+      ],
+      "rationale": "Ocean science is inherently physical, chemical, biological and Earth-systemic; exclusive placement under one natural science would lose its topology.",
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:oceanography"
+    },
+    {
+      "evidence": [
+        "agu-sections"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Climate science",
+      "placements": [
+        "atmosphere",
+        "ocean",
+        "cryosphere",
+        "biosphere",
+        "earth-science"
+      ],
+      "rationale": "Climate cuts across atmospheric, oceanic, cryospheric, biogeochemical and surface-process regions and should be represented as a system bridge rather than a single-parent branch.",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:climate-science"
+    },
+    {
+      "evidence": [
+        "cogsci-society"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Cognitive science",
+      "placements": [
+        "mind-cognition",
+        "psychology",
+        "neuroscience",
+        "linguistics",
+        "artificial-intelligence",
+        "philosophy",
+        "anthropology",
+        "education"
+      ],
+      "rationale": "The Cognitive Science Society explicitly promotes cognitive science as a discipline and names AI, linguistics, anthropology, psychology, neuroscience, philosophy and education as contributing areas. It must not be modeled as a psychology subclass.",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_DOMAIN_CANDIDATE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:cognitive-science"
+    },
+    {
+      "evidence": [
+        "apa-cognitive",
+        "cogsci-society"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Psychology",
+      "placements": [
+        "mind-cognition",
+        "behavior",
+        "social-boundary"
+      ],
+      "rationale": "Psychology contains cognition-focused empirical science but also extends beyond cognition; current evidence supports an independent major domain identity, not reduction to cognitive science or social science.",
+      "roleClasses": [
+        "MAJOR_DOMAIN_CANDIDATE",
+        "EMPIRICAL_MIND_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:psychology"
+    },
+    {
+      "evidence": [
+        "cogsci-society",
+        "apa-cognitive"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Neuroscience",
+      "placements": [
+        "biology",
+        "medicine",
+        "mind-cognition",
+        "psychology"
+      ],
+      "rationale": "Neuroscience connects biological mechanisms, medical contexts and cognitive/psychological phenomena; preserve bridge status rather than force a single parent.",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_DOMAIN_CANDIDATE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:neuroscience"
+    },
+    {
+      "evidence": [
+        "lsa-proceedings",
+        "cogsci-society"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Linguistics",
+      "placements": [
+        "language",
+        "mind-cognition",
+        "social-boundary",
+        "formal-inferential",
+        "computation"
+      ],
+      "rationale": "LSA describes its mission as advancing the scientific study of language and publishes across semantics, pragmatics, phonology, syntax and related interfaces; cognitive science independently treats linguistics as a contributing field. Linguistics therefore warrants first-class identity with multiple bridges.",
+      "roleClasses": [
+        "MAJOR_DOMAIN_CANDIDATE",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:linguistics"
+    },
+    {
+      "evidence": [
+        "bipm-vim-metrology",
+        "bipm-vim-info"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Measurement and metrology",
+      "placements": [
+        "methodology",
+        "physics",
+        "chemistry",
+        "biology",
+        "engineering",
+        "social-measurement-boundary"
+      ],
+      "rationale": "VIM defines metrology as the science of measurement and its application, including all theoretical and practical aspects regardless of uncertainty or field. This is a cross-domain methodological axis, not an ordinary physics or engineering child.",
+      "roleClasses": [
+        "METHODOLOGICAL_AXIS",
+        "EPISTEMIC_INFRASTRUCTURE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:measurement"
+    }
+  ],
+  "policies": {
+    "identityVsRole": "Identity normalization and role classification are separate.",
+    "multiRole": "A space may have multiple roleClasses and placements.",
+    "negativeRule": "MAJOR_DOMAIN_CANDIDATE != CANONICAL_ROOT.",
+    "rootAdmission": "All Round2A spaces remain NOT_ADMITTED as canonical roots.",
+    "sourceAuthority": "Professional/domain classification structures inform topology but do not mint Ordivon ontology truth."
+  },
+  "relations": [
+    {
+      "from": "norm:logic",
+      "to": "norm:computation",
+      "type": "OVERLAPS"
+    },
+    {
+      "from": "norm:information-theory",
+      "to": "norm:computation",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:astronomy",
+      "to": "norm:cosmology",
+      "type": "CONTAINS_MAJOR_SUBSPACE"
+    },
+    {
+      "from": "norm:earth-science",
+      "to": "norm:geology",
+      "type": "CONTAINS_MAJOR_SUBSPACE"
+    },
+    {
+      "from": "norm:earth-science",
+      "to": "norm:atmospheric-science",
+      "type": "CONTAINS_MAJOR_SUBSPACE"
+    },
+    {
+      "from": "norm:earth-science",
+      "to": "norm:oceanography",
+      "type": "CONTAINS_MAJOR_SUBSPACE"
+    },
+    {
+      "from": "norm:geophysics",
+      "to": "norm:earth-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:climate-science",
+      "to": "norm:atmospheric-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:climate-science",
+      "to": "norm:oceanography",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:cognitive-science",
+      "to": "norm:psychology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:cognitive-science",
+      "to": "norm:neuroscience",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:cognitive-science",
+      "to": "norm:linguistics",
+      "type": "BRIDGES"
+    }
+  ],
+  "roundId": "foundational-census:round2a:2026-08-19",
+  "schemaVersion": 1,
+  "scope": [
+    "Logic–Computation–Information",
+    "Space–Earth–Environment",
+    "Mind–Cognition–Language",
+    "Measurement–Metrology"
+  ],
+  "sources": {
+    "acm-ccs": {
+      "role": "DOMAIN_TAXONOMY",
+      "title": "ACM Computing Classification System",
+      "url": "https://www.acm.org/publications/computing-classification-system"
+    },
+    "agu-sections": {
+      "role": "DOMAIN_TOPOLOGY_EVIDENCE",
+      "title": "AGU Sections",
+      "url": "https://www.agu.org/learn-about-agu/about-agu/governance/sections"
+    },
+    "ams-msc-logic": {
+      "role": "DOMAIN_SUBSPACE_EVIDENCE",
+      "title": "MSC2020 03-XX Mathematical logic and foundations",
+      "url": "https://mathscinet.ams.org/mathscinet/msc/msc2020.html?t=03-XX"
+    },
+    "ams-msc2020": {
+      "role": "DOMAIN_CLASSIFICATION",
+      "title": "2020 Mathematics Subject Classification",
+      "url": "https://mathscinet.ams.org/msc/msc.html"
+    },
+    "apa-cognitive": {
+      "role": "DOMAIN_SCOPE_EVIDENCE",
+      "title": "APA Brain Science and Cognitive Psychology",
+      "url": "https://www.apa.org/action/science/brain-science"
+    },
+    "bipm-vim-info": {
+      "role": "SOURCE_AUTHORITY_CONTEXT",
+      "title": "JCGM VIM3 information",
+      "url": "https://jcgm.bipm.org/vim/en/info.html"
+    },
+    "bipm-vim-metrology": {
+      "role": "METHOD_AXIS_DEFINITION",
+      "title": "JCGM VIM3: metrology",
+      "url": "https://jcgm.bipm.org/vim/en/2.2.html"
+    },
+    "cogsci-society": {
+      "role": "INTERDISCIPLINARY_DOMAIN_EVIDENCE",
+      "title": "Cognitive Science Society",
+      "url": "https://cognitivesciencesociety.org/about/"
+    },
+    "iau-commissions": {
+      "role": "DOMAIN_SUBSPACE_EVIDENCE",
+      "title": "IAU Commissions",
+      "url": "https://iau.org/Iau/Science/Commissions.aspx"
+    },
+    "iau-divisions": {
+      "role": "DOMAIN_TOPOLOGY_EVIDENCE",
+      "title": "IAU Scientific Divisions",
+      "url": "https://www.iau.org/IAU/Iau/Science/Divisions.aspx"
+    },
+    "ieee-itsoc": {
+      "role": "DOMAIN_SCOPE_EVIDENCE",
+      "title": "IEEE Information Theory Society",
+      "url": "https://www.itsoc.org/about/about-itsoc"
+    },
+    "lsa-proceedings": {
+      "role": "DOMAIN_SCOPE_EVIDENCE",
+      "title": "Linguistic Society of America Proceedings",
+      "url": "https://journals.linguisticsociety.org/proceedings/"
+    }
+  },
+  "state": "ROUND2A_COMPLETE_CENSUS_OPEN",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_NORMALIZATION"
+}
