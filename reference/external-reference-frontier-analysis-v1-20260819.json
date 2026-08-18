@@ -1,0 +1,1417 @@
+{
+  "analysisId": "external-reference-frontier:v1:2026-08-19",
+  "counts": {
+    "allAnchorsDirectlyMappedMajorRegions": 2,
+    "currentOwnerAuthorityInputs": 10,
+    "excludedOwnerCurrentnessCases": 2,
+    "mappedNeighborNoLiftFrontiers": 15,
+    "mappedUniqueIdentities": 23,
+    "mappingRows": 25,
+    "normalizedIdentities": 120,
+    "oneMappedNeighborUnmapped": 15,
+    "outOfPilotScopeOwnerCases": 1,
+    "ownerExternalMappingWeakCases": 1,
+    "relations": 256,
+    "unmappedIdentities": 97,
+    "unmappedMajorRegionAnchors": 22,
+    "zeroDirectTouchMajorRegions": 2,
+    "zeroMappedNeighborUnmapped": 67
+  },
+  "deepUnmappedDiagnostics": [
+    {
+      "externalRef": "norm:geography",
+      "graphDegreeDiagnostic": 10,
+      "label": "Geography",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:earth-planetary-space",
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "externalRef": "norm:area-regional-studies",
+      "graphDegreeDiagnostic": 6,
+      "label": "Area and regional studies",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive",
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "externalRef": "norm:materials",
+      "graphDegreeDiagnostic": 4,
+      "label": "Materials science and engineering",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:physical-material",
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "externalRef": "norm:aesthetics",
+      "graphDegreeDiagnostic": 3,
+      "label": "Aesthetics",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:philosophical-conceptual",
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "externalRef": "norm:biochemistry",
+      "graphDegreeDiagnostic": 3,
+      "label": "Biochemistry",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:physical-material",
+        "navigation-region:life"
+      ]
+    },
+    {
+      "externalRef": "norm:control-engineering",
+      "graphDegreeDiagnostic": 2,
+      "label": "Control engineering",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:computation-computer-systems",
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "externalRef": "norm:engineering",
+      "graphDegreeDiagnostic": 15,
+      "label": "Engineering",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "externalRef": "norm:political-science",
+      "graphDegreeDiagnostic": 13,
+      "label": "Political science",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "externalRef": "norm:economics",
+      "graphDegreeDiagnostic": 12,
+      "label": "Economics",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "externalRef": "norm:earth-science",
+      "graphDegreeDiagnostic": 9,
+      "label": "Earth science / geoscience",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "externalRef": "norm:public-policy",
+      "graphDegreeDiagnostic": 9,
+      "label": "Public policy research",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "externalRef": "norm:development-studies",
+      "graphDegreeDiagnostic": 7,
+      "label": "Development studies",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "externalRef": "norm:international-studies-relations",
+      "graphDegreeDiagnostic": 7,
+      "label": "International studies and international relations",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "externalRef": "norm:archaeology",
+      "graphDegreeDiagnostic": 6,
+      "label": "Archaeology",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "externalRef": "norm:art-history",
+      "graphDegreeDiagnostic": 6,
+      "label": "Art history and visual/material culture studies",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "externalRef": "norm:demography",
+      "graphDegreeDiagnostic": 6,
+      "label": "Demography and population studies",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "externalRef": "norm:folklore-studies",
+      "graphDegreeDiagnostic": 6,
+      "label": "Folklore studies",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "externalRef": "norm:heritage-studies",
+      "graphDegreeDiagnostic": 6,
+      "label": "Heritage studies",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "externalRef": "norm:human-geography",
+      "graphDegreeDiagnostic": 6,
+      "label": "Human geography",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "externalRef": "norm:urban-studies",
+      "graphDegreeDiagnostic": 6,
+      "label": "Urban studies and urban affairs",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "externalRef": "norm:chemistry",
+      "graphDegreeDiagnostic": 5,
+      "label": "Chemistry",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:physical-material"
+      ]
+    },
+    {
+      "externalRef": "norm:public-administration",
+      "graphDegreeDiagnostic": 4,
+      "label": "Public administration",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "externalRef": "norm:social-policy",
+      "graphDegreeDiagnostic": 4,
+      "label": "Social policy",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "externalRef": "norm:statistics",
+      "graphDegreeDiagnostic": 4,
+      "label": "Statistics",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:formal-inferential"
+      ]
+    },
+    {
+      "externalRef": "norm:systems-theory-control",
+      "graphDegreeDiagnostic": 3,
+      "label": "Systems theory and control",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:formal-inferential"
+      ]
+    },
+    {
+      "externalRef": "norm:astronomy",
+      "graphDegreeDiagnostic": 2,
+      "label": "Astronomy and astrophysics",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "externalRef": "norm:atmospheric-science",
+      "graphDegreeDiagnostic": 2,
+      "label": "Atmospheric science and meteorology",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "externalRef": "norm:bioengineering",
+      "graphDegreeDiagnostic": 2,
+      "label": "Bioengineering",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "externalRef": "norm:chemical-engineering",
+      "graphDegreeDiagnostic": 2,
+      "label": "Chemical engineering",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "externalRef": "norm:chemical-physics",
+      "graphDegreeDiagnostic": 2,
+      "label": "Chemical physics",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:physical-material"
+      ]
+    },
+    {
+      "externalRef": "norm:climate-science",
+      "graphDegreeDiagnostic": 2,
+      "label": "Climate science",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "externalRef": "norm:dynamical-systems",
+      "graphDegreeDiagnostic": 2,
+      "label": "Dynamical systems and ergodic theory",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:formal-inferential"
+      ]
+    },
+    {
+      "externalRef": "norm:environmental-engineering",
+      "graphDegreeDiagnostic": 2,
+      "label": "Environmental engineering",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "externalRef": "norm:geochemistry",
+      "graphDegreeDiagnostic": 2,
+      "label": "Geochemistry",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "externalRef": "norm:mathematics",
+      "graphDegreeDiagnostic": 2,
+      "label": "Mathematics",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:formal-inferential"
+      ]
+    },
+    {
+      "externalRef": "norm:microbiology",
+      "graphDegreeDiagnostic": 2,
+      "label": "Microbiology / microbial sciences",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:life"
+      ]
+    },
+    {
+      "externalRef": "norm:oceanography",
+      "graphDegreeDiagnostic": 2,
+      "label": "Oceanography",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "externalRef": "norm:physical-geography",
+      "graphDegreeDiagnostic": 2,
+      "label": "Physical geography",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "externalRef": "norm:physics",
+      "graphDegreeDiagnostic": 2,
+      "label": "Physics",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:physical-material"
+      ]
+    },
+    {
+      "externalRef": "norm:planetary-science",
+      "graphDegreeDiagnostic": 2,
+      "label": "Planetary science",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "externalRef": "norm:probability",
+      "graphDegreeDiagnostic": 2,
+      "label": "Probability theory and stochastic processes",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:formal-inferential"
+      ]
+    },
+    {
+      "externalRef": "norm:systems-engineering",
+      "graphDegreeDiagnostic": 2,
+      "label": "Systems engineering",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "externalRef": "norm:civil-structural-engineering",
+      "graphDegreeDiagnostic": 1,
+      "label": "Civil and structural engineering",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "externalRef": "norm:classics",
+      "graphDegreeDiagnostic": 1,
+      "label": "Classics / Classical studies",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "externalRef": "norm:condensed-matter",
+      "graphDegreeDiagnostic": 1,
+      "label": "Condensed matter physics",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:physical-material"
+      ]
+    },
+    {
+      "externalRef": "norm:cosmology",
+      "graphDegreeDiagnostic": 1,
+      "label": "Cosmology",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "externalRef": "norm:ecology",
+      "graphDegreeDiagnostic": 1,
+      "label": "Ecology",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:life"
+      ]
+    },
+    {
+      "externalRef": "norm:electrical-electronic-engineering",
+      "graphDegreeDiagnostic": 1,
+      "label": "Electrical and electronic engineering",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "externalRef": "norm:energy-engineering",
+      "graphDegreeDiagnostic": 1,
+      "label": "Energy engineering",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "externalRef": "norm:geology",
+      "graphDegreeDiagnostic": 1,
+      "label": "Geology",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "externalRef": "norm:geophysics",
+      "graphDegreeDiagnostic": 1,
+      "label": "Geophysics",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "externalRef": "norm:mechanical-engineering",
+      "graphDegreeDiagnostic": 1,
+      "label": "Mechanical engineering",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "externalRef": "norm:molecular-cellular-biology",
+      "graphDegreeDiagnostic": 1,
+      "label": "Molecular and cellular biosciences",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:life"
+      ]
+    },
+    {
+      "externalRef": "norm:organismal-biology",
+      "graphDegreeDiagnostic": 1,
+      "label": "Organismal biology",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:life"
+      ]
+    },
+    {
+      "externalRef": "norm:manufacturing",
+      "graphDegreeDiagnostic": 0,
+      "label": "Manufacturing",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "externalRef": "norm:religious-studies",
+      "graphDegreeDiagnostic": 0,
+      "label": "Religious studies",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "externalRef": "norm:food-science",
+      "graphDegreeDiagnostic": 3,
+      "label": "Food science",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": []
+    },
+    {
+      "externalRef": "norm:basic-biomedical-science",
+      "graphDegreeDiagnostic": 2,
+      "label": "Basic biomedical sciences",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": []
+    },
+    {
+      "externalRef": "norm:information-science",
+      "graphDegreeDiagnostic": 2,
+      "label": "Information science",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": []
+    },
+    {
+      "externalRef": "norm:soil-science",
+      "graphDegreeDiagnostic": 2,
+      "label": "Soil science",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": []
+    },
+    {
+      "externalRef": "norm:agriculture",
+      "graphDegreeDiagnostic": 1,
+      "label": "Agricultural sciences and systems",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": []
+    },
+    {
+      "externalRef": "norm:analytical-chemistry",
+      "graphDegreeDiagnostic": 1,
+      "label": "Analytical chemistry",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": []
+    },
+    {
+      "externalRef": "norm:librarianship",
+      "graphDegreeDiagnostic": 1,
+      "label": "Librarianship and library studies",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": []
+    },
+    {
+      "externalRef": "norm:measurement",
+      "graphDegreeDiagnostic": 1,
+      "label": "Measurement and metrology",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": []
+    },
+    {
+      "externalRef": "norm:medicine-health",
+      "graphDegreeDiagnostic": 1,
+      "label": "Medicine and health sciences",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": []
+    },
+    {
+      "externalRef": "norm:biological-research-infrastructure",
+      "graphDegreeDiagnostic": 0,
+      "label": "Biological research infrastructure",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": []
+    },
+    {
+      "externalRef": "norm:polymer-science",
+      "graphDegreeDiagnostic": 0,
+      "label": "Polymer science",
+      "mappedNeighborCount": 0,
+      "mappedNeighborRefs": [],
+      "regionRefs": []
+    }
+  ],
+  "findings": [
+    {
+      "claim": "The current ten-owner crosswalk contains 25 mapping rows but only 23 distinct mapped external identities; 97 identities remain unmapped under the current authority surface.",
+      "id": "EFA1-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Twenty-two current MajorRegion anchors have no direct identity mapping, but anchor non-mapping is a navigation diagnostic and cannot be interpreted as region-level coverage absence.",
+      "id": "EFA1-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Physical & Material and Earth/Planetary/Space Systems currently contain zero directly mapped member identities, making them the clearest current-owner-set blank clusters without establishing whole-Ordivon untouchedness.",
+      "id": "EFA1-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Computation/Computer Systems and Mind/Cognition/Language are the only MajorRegions whose three navigation anchors each have at least one direct identity-level mapping; this still does not create region coverage truth.",
+      "id": "EFA1-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Mapped-neighbor/no-lift frontiers reveal a useful distinction between adjacency and field coverage: broad identities such as Philosophy, Biology and Software Engineering remain correctly unmapped despite mapped subspaces/neighbors.",
+      "id": "EFA1-5",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Finance and Harness are authority-limited unknowns, not untouched domains; Host is external-mapping-weak, and Game is out-of-current-pilot-scope. These states must remain separate from identity unmappedness.",
+      "id": "EFA1-6",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "After bounded breadth saturation, the highest-information next work is frontier classification quality and owner-authority unlocks rather than further catalog expansion.",
+      "id": "EFA1-7",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "highInformationFrontierClasses": [
+    {
+      "admissionRule": "Requires owner-native direct scope evidence; graph adjacency alone cannot lift.",
+      "class": "BROAD_PARENT_NON_LIFTING",
+      "examples": [
+        "norm:philosophy",
+        "norm:biology",
+        "norm:foundations-programming-languages",
+        "norm:software-engineering",
+        "norm:sociology"
+      ],
+      "question": "Where subspace/neighbor mappings are strong, does any owner actually investigate the broader identity, or is non-lifting the correct final state?"
+    },
+    {
+      "admissionRule": "Do not infer untouchedness from current crosswalk alone; inspect owner topology and future research questions separately.",
+      "class": "ZERO_DIRECT_TOUCH_DOMAIN_CLUSTER",
+      "examples": [
+        "navigation-region:physical-material",
+        "navigation-region:earth-planetary-space"
+      ],
+      "question": "Do these domain clusters represent genuine Ordivon exploration gaps, or merely absence of a corresponding current semantic owner?"
+    },
+    {
+      "admissionRule": "Anchor status is navigation importance only, not automatic research priority.",
+      "class": "UNMAPPED_NAVIGATION_ANCHOR",
+      "count": 22,
+      "question": "Which high-level navigation anchors remain without any direct identity mapping, and which are intentionally broad abstractions rather than research targets?"
+    },
+    {
+      "admissionRule": "Publish owner authority first; never infer coverage from local repo names or old conversations.",
+      "class": "OWNER_AUTHORITY_UNLOCK",
+      "examples": [
+        "Finance",
+        "Harness"
+      ],
+      "question": "What current coverage picture changes once mature but unpublished/actively moving owners become source-fenced?"
+    },
+    {
+      "admissionRule": "Novelty remains forbidden until residual irreducibility survives broader external comparison.",
+      "class": "OWNER_EXTERNAL_MAPPING_WEAK",
+      "examples": [
+        "research-owner:host"
+      ],
+      "question": "Does repeated external comparison eventually find an adequate coordinate, or does irreducible residue survive enough tests to justify novelty candidacy?"
+    }
+  ],
+  "kind": "ordivon.external-reference-frontier-analysis",
+  "laws": [
+    "UNMAPPED_IDENTITY != ORDIVON_UNTOUCHED",
+    "MAPPED_NEIGHBOR != COVERAGE",
+    "MAPPED_SUBSPACE != PARENT_FIELD_COVERAGE",
+    "UNMAPPED_ANCHOR != REGION_UNCOVERED_TRUTH",
+    "REGION_MEMBER_COUNTS != REGION_COVERAGE_SCORE",
+    "ABSENT_OWNER_PUBLICATION != ABSENT_RESEARCH",
+    "OWNER_EXTERNAL_MAPPING_WEAK != EXTERNAL_REFERENCE_ABSENCE",
+    "OUT_OF_PILOT_SCOPE != UNTOUCHED",
+    "GRAPH_DEGREE != IMPORTANCE",
+    "FRONTIER_DIAGNOSTIC != RESEARCH_ROADMAP"
+  ],
+  "mappedIdentityRefs": [
+    "norm:affective-science",
+    "norm:cognitive-science",
+    "norm:communication-studies",
+    "norm:computation",
+    "norm:consciousness-science",
+    "norm:developmental-science",
+    "norm:ethics-value-theory",
+    "norm:evolutionary-biology",
+    "norm:formal-methods",
+    "norm:formal-semantics",
+    "norm:genetics",
+    "norm:human-computer-interaction",
+    "norm:linguistics",
+    "norm:media-studies",
+    "norm:metaphysics",
+    "norm:networking-communication",
+    "norm:neuroscience",
+    "norm:operating-systems",
+    "norm:philosophy-of-science",
+    "norm:physiology",
+    "norm:psychology",
+    "norm:semiotics",
+    "norm:systems-fundamentals"
+  ],
+  "mappedNeighborNoLiftFrontiers": [
+    {
+      "externalRef": "norm:philosophy",
+      "graphDegreeDiagnostic": 8,
+      "label": "Philosophy",
+      "mappedNeighborCount": 4,
+      "mappedNeighborRefs": [
+        "norm:ethics-value-theory",
+        "norm:metaphysics",
+        "norm:philosophy-of-science",
+        "norm:semiotics"
+      ],
+      "regionRefs": [
+        "navigation-region:philosophical-conceptual"
+      ]
+    },
+    {
+      "externalRef": "norm:science-technology-studies",
+      "graphDegreeDiagnostic": 6,
+      "label": "Science and technology studies",
+      "mappedNeighborCount": 3,
+      "mappedNeighborRefs": [
+        "norm:computation",
+        "norm:media-studies",
+        "norm:philosophy-of-science"
+      ],
+      "regionRefs": [
+        "navigation-region:philosophical-conceptual",
+        "navigation-region:engineering-design",
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "externalRef": "norm:anthropology",
+      "graphDegreeDiagnostic": 16,
+      "label": "Anthropology",
+      "mappedNeighborCount": 3,
+      "mappedNeighborRefs": [
+        "norm:communication-studies",
+        "norm:linguistics",
+        "norm:media-studies"
+      ],
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive",
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "externalRef": "norm:software-engineering",
+      "graphDegreeDiagnostic": 4,
+      "label": "Software engineering",
+      "mappedNeighborCount": 3,
+      "mappedNeighborRefs": [
+        "norm:computation",
+        "norm:formal-methods",
+        "norm:operating-systems"
+      ],
+      "regionRefs": [
+        "navigation-region:computation-computer-systems",
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "externalRef": "norm:sociology",
+      "graphDegreeDiagnostic": 21,
+      "label": "Sociology",
+      "mappedNeighborCount": 3,
+      "mappedNeighborRefs": [
+        "norm:communication-studies",
+        "norm:media-studies",
+        "norm:psychology"
+      ],
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "externalRef": "norm:biology",
+      "graphDegreeDiagnostic": 13,
+      "label": "Biology",
+      "mappedNeighborCount": 3,
+      "mappedNeighborRefs": [
+        "norm:evolutionary-biology",
+        "norm:genetics",
+        "norm:physiology"
+      ],
+      "regionRefs": [
+        "navigation-region:life"
+      ]
+    },
+    {
+      "externalRef": "norm:foundations-programming-languages",
+      "graphDegreeDiagnostic": 4,
+      "label": "Foundations of programming languages",
+      "mappedNeighborCount": 3,
+      "mappedNeighborRefs": [
+        "norm:computation",
+        "norm:formal-methods",
+        "norm:formal-semantics"
+      ],
+      "regionRefs": [
+        "navigation-region:computation-computer-systems"
+      ]
+    },
+    {
+      "externalRef": "norm:parallel-distributed-computing",
+      "graphDegreeDiagnostic": 3,
+      "label": "Parallel and distributed computing",
+      "mappedNeighborCount": 3,
+      "mappedNeighborRefs": [
+        "norm:computation",
+        "norm:networking-communication",
+        "norm:systems-fundamentals"
+      ],
+      "regionRefs": [
+        "navigation-region:computation-computer-systems"
+      ]
+    },
+    {
+      "externalRef": "norm:computer-engineering",
+      "graphDegreeDiagnostic": 3,
+      "label": "Computer engineering",
+      "mappedNeighborCount": 2,
+      "mappedNeighborRefs": [
+        "norm:computation",
+        "norm:networking-communication"
+      ],
+      "regionRefs": [
+        "navigation-region:computation-computer-systems",
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "externalRef": "norm:logic",
+      "graphDegreeDiagnostic": 3,
+      "label": "Logic",
+      "mappedNeighborCount": 2,
+      "mappedNeighborRefs": [
+        "norm:computation",
+        "norm:formal-semantics"
+      ],
+      "regionRefs": [
+        "navigation-region:formal-inferential",
+        "navigation-region:philosophical-conceptual"
+      ]
+    },
+    {
+      "externalRef": "norm:philosophy-of-mind",
+      "graphDegreeDiagnostic": 3,
+      "label": "Philosophy of mind and cognition",
+      "mappedNeighborCount": 2,
+      "mappedNeighborRefs": [
+        "norm:cognitive-science",
+        "norm:consciousness-science"
+      ],
+      "regionRefs": [
+        "navigation-region:philosophical-conceptual",
+        "navigation-region:mind-language"
+      ]
+    },
+    {
+      "externalRef": "norm:performance-studies",
+      "graphDegreeDiagnostic": 5,
+      "label": "Performance studies",
+      "mappedNeighborCount": 2,
+      "mappedNeighborRefs": [
+        "norm:communication-studies",
+        "norm:media-studies"
+      ],
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "externalRef": "norm:education-research",
+      "graphDegreeDiagnostic": 4,
+      "label": "Education research",
+      "mappedNeighborCount": 2,
+      "mappedNeighborRefs": [
+        "norm:developmental-science",
+        "norm:psychology"
+      ],
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "externalRef": "norm:museology",
+      "graphDegreeDiagnostic": 4,
+      "label": "Museology and museum studies",
+      "mappedNeighborCount": 2,
+      "mappedNeighborRefs": [
+        "norm:communication-studies",
+        "norm:media-studies"
+      ],
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "externalRef": "norm:genomics",
+      "graphDegreeDiagnostic": 2,
+      "label": "Genomics",
+      "mappedNeighborCount": 2,
+      "mappedNeighborRefs": [
+        "norm:computation",
+        "norm:genetics"
+      ],
+      "regionRefs": [
+        "navigation-region:life"
+      ]
+    }
+  ],
+  "next": "Dogfood frontier diagnostics with destructive anti-lifting tests, then compare Finance publication readiness versus external zero-touch clusters. Do not turn this analysis into a scalar coverage score or automatic roadmap.",
+  "ownerFrontiers": [
+    {
+      "adjacentExternalRefs": [
+        "norm:parallel-distributed-computing",
+        "norm:systems-fundamentals",
+        "norm:software-engineering",
+        "norm:information-science"
+      ],
+      "meaning": "Mature current owner semantics exist, but current external coordinates remain adjacent rather than directly equivalent. Do not score as unmapped identity coverage failure.",
+      "ownerResearchRef": "research-owner:host",
+      "state": "EXTERNAL_MAPPING_WEAK_NOVELTY_NOT_ESTABLISHED"
+    },
+    {
+      "meaning": "Current Game research exists but current External Reference map has no admitted direct Game/Play coordinate; absence is not untouched research.",
+      "ownerResearchRef": "research-owner:game",
+      "state": "OUT_OF_FOUNDATIONAL_PILOT_SCOPE"
+    },
+    {
+      "meaning": "Mature local research exists, but Finance lacks current Atlas owner publication/transport authority. No identity-level Finance coverage claim is permitted yet.",
+      "owner": "Finance",
+      "state": "OWNER_CURRENTNESS_EXCLUDED"
+    },
+    {
+      "meaning": "Harness research is actively advancing and no settled current Atlas owner publication is admitted. No identity-level Harness coverage claim is permitted yet.",
+      "owner": "Harness",
+      "state": "OWNER_CURRENTNESS_EXCLUDED_ACTIVE_RESEARCH"
+    }
+  ],
+  "regionDiagnostics": [
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:mathematics",
+        "norm:logic",
+        "norm:statistics"
+      ],
+      "anchorTouchState": "ONE_OR_MORE_ANCHORS_UNMAPPED",
+      "label": "Formal & Inferential Structures",
+      "mappedMemberCount": 2,
+      "mappedMemberRefs": [
+        "norm:formal-semantics",
+        "norm:formal-methods"
+      ],
+      "memberCount": 9,
+      "regionRef": "navigation-region:formal-inferential",
+      "unmappedAnchorRefs": [
+        "norm:mathematics",
+        "norm:logic",
+        "norm:statistics"
+      ],
+      "unmappedMemberCount": 7
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:computation",
+        "norm:operating-systems",
+        "norm:networking-communication"
+      ],
+      "anchorTouchState": "ALL_ANCHORS_HAVE_DIRECT_IDENTITY_MAPPING",
+      "label": "Computation & Computer Systems",
+      "mappedMemberCount": 7,
+      "mappedMemberRefs": [
+        "norm:computation",
+        "norm:operating-systems",
+        "norm:networking-communication",
+        "norm:systems-fundamentals",
+        "norm:formal-semantics",
+        "norm:formal-methods",
+        "norm:human-computer-interaction"
+      ],
+      "memberCount": 13,
+      "regionRef": "navigation-region:computation-computer-systems",
+      "unmappedAnchorRefs": [],
+      "unmappedMemberCount": 6
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:philosophy",
+        "norm:metaphysics",
+        "norm:epistemology"
+      ],
+      "anchorTouchState": "ONE_OR_MORE_ANCHORS_UNMAPPED",
+      "label": "Philosophical & Conceptual Inquiry",
+      "mappedMemberCount": 4,
+      "mappedMemberRefs": [
+        "norm:metaphysics",
+        "norm:ethics-value-theory",
+        "norm:philosophy-of-science",
+        "norm:semiotics"
+      ],
+      "memberCount": 11,
+      "regionRef": "navigation-region:philosophical-conceptual",
+      "unmappedAnchorRefs": [
+        "norm:philosophy",
+        "norm:epistemology"
+      ],
+      "unmappedMemberCount": 7
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:physics",
+        "norm:chemistry",
+        "norm:materials"
+      ],
+      "anchorTouchState": "ONE_OR_MORE_ANCHORS_UNMAPPED",
+      "label": "Physical & Material",
+      "mappedMemberCount": 0,
+      "mappedMemberRefs": [],
+      "memberCount": 6,
+      "regionRef": "navigation-region:physical-material",
+      "unmappedAnchorRefs": [
+        "norm:physics",
+        "norm:chemistry",
+        "norm:materials"
+      ],
+      "unmappedMemberCount": 6
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:earth-science",
+        "norm:planetary-science",
+        "norm:astronomy"
+      ],
+      "anchorTouchState": "ONE_OR_MORE_ANCHORS_UNMAPPED",
+      "label": "Earth, Planetary & Space Systems",
+      "mappedMemberCount": 0,
+      "mappedMemberRefs": [],
+      "memberCount": 12,
+      "regionRef": "navigation-region:earth-planetary-space",
+      "unmappedAnchorRefs": [
+        "norm:earth-science",
+        "norm:planetary-science",
+        "norm:astronomy"
+      ],
+      "unmappedMemberCount": 12
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:biology",
+        "norm:genetics",
+        "norm:ecology"
+      ],
+      "anchorTouchState": "ONE_OR_MORE_ANCHORS_UNMAPPED",
+      "label": "Life & Biological Organization",
+      "mappedMemberCount": 5,
+      "mappedMemberRefs": [
+        "norm:genetics",
+        "norm:evolutionary-biology",
+        "norm:physiology",
+        "norm:neuroscience",
+        "norm:developmental-science"
+      ],
+      "memberCount": 13,
+      "regionRef": "navigation-region:life",
+      "unmappedAnchorRefs": [
+        "norm:biology",
+        "norm:ecology"
+      ],
+      "unmappedMemberCount": 8
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:cognitive-science",
+        "norm:psychology",
+        "norm:linguistics"
+      ],
+      "anchorTouchState": "ALL_ANCHORS_HAVE_DIRECT_IDENTITY_MAPPING",
+      "label": "Mind, Cognition & Language",
+      "mappedMemberCount": 8,
+      "mappedMemberRefs": [
+        "norm:cognitive-science",
+        "norm:psychology",
+        "norm:neuroscience",
+        "norm:linguistics",
+        "norm:consciousness-science",
+        "norm:affective-science",
+        "norm:developmental-science",
+        "norm:semiotics"
+      ],
+      "memberCount": 9,
+      "regionRef": "navigation-region:mind-language",
+      "unmappedAnchorRefs": [],
+      "unmappedMemberCount": 1
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:engineering",
+        "norm:design",
+        "norm:systems-engineering"
+      ],
+      "anchorTouchState": "ONE_OR_MORE_ANCHORS_UNMAPPED",
+      "label": "Engineering, Design & Realization",
+      "mappedMemberCount": 2,
+      "mappedMemberRefs": [
+        "norm:formal-methods",
+        "norm:human-computer-interaction"
+      ],
+      "memberCount": 18,
+      "regionRef": "navigation-region:engineering-design",
+      "unmappedAnchorRefs": [
+        "norm:engineering",
+        "norm:design",
+        "norm:systems-engineering"
+      ],
+      "unmappedMemberCount": 16
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:history",
+        "norm:cultural-studies",
+        "norm:literary-studies"
+      ],
+      "anchorTouchState": "ONE_OR_MORE_ANCHORS_UNMAPPED",
+      "label": "Historical, Cultural & Interpretive",
+      "mappedMemberCount": 2,
+      "mappedMemberRefs": [
+        "norm:media-studies",
+        "norm:semiotics"
+      ],
+      "memberCount": 19,
+      "regionRef": "navigation-region:historical-cultural-interpretive",
+      "unmappedAnchorRefs": [
+        "norm:history",
+        "norm:cultural-studies",
+        "norm:literary-studies"
+      ],
+      "unmappedMemberCount": 17
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:sociology",
+        "norm:economics",
+        "norm:political-science"
+      ],
+      "anchorTouchState": "ONE_OR_MORE_ANCHORS_UNMAPPED",
+      "label": "Social, Institutional & Collective Systems",
+      "mappedMemberCount": 4,
+      "mappedMemberRefs": [
+        "norm:communication-studies",
+        "norm:media-studies",
+        "norm:psychology",
+        "norm:developmental-science"
+      ],
+      "memberCount": 25,
+      "regionRef": "navigation-region:social-institutional-collective",
+      "unmappedAnchorRefs": [
+        "norm:sociology",
+        "norm:economics",
+        "norm:political-science"
+      ],
+      "unmappedMemberCount": 21
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceFence": {
+    "crosswalk": "reference/coverage-crosswalk-foundational-pilot-v0-7-20260819.json",
+    "externalReferenceBranchRevision": "6f6d7cdfe1aac997e71e1e0af1d6a2f96c682c91",
+    "majorRegions": "reference/canonical-major-regions-v0-8-20260819.json",
+    "ownerSnapshot": "reference/coverage-crosswalk-owner-authority-snapshot-v0-5-20260819.json",
+    "wholeAudit": "reference/foundational-whole-topology-audit-v10-round5c-saturation-20260819.json"
+  },
+  "state": "FRONTIER_BASELINE_ESTABLISHED_AFTER_BOUNDED_BREADTH_SATURATION",
+  "truthRole": "NON_AUTHORITATIVE_FRONTIER_DIAGNOSTIC",
+  "unmappedMajorRegionAnchors": [
+    {
+      "externalRef": "norm:mathematics",
+      "label": "Mathematics",
+      "regionLabel": "Formal & Inferential Structures",
+      "regionRef": "navigation-region:formal-inferential"
+    },
+    {
+      "externalRef": "norm:logic",
+      "label": "Logic",
+      "regionLabel": "Formal & Inferential Structures",
+      "regionRef": "navigation-region:formal-inferential"
+    },
+    {
+      "externalRef": "norm:statistics",
+      "label": "Statistics",
+      "regionLabel": "Formal & Inferential Structures",
+      "regionRef": "navigation-region:formal-inferential"
+    },
+    {
+      "externalRef": "norm:philosophy",
+      "label": "Philosophy",
+      "regionLabel": "Philosophical & Conceptual Inquiry",
+      "regionRef": "navigation-region:philosophical-conceptual"
+    },
+    {
+      "externalRef": "norm:epistemology",
+      "label": "Epistemology",
+      "regionLabel": "Philosophical & Conceptual Inquiry",
+      "regionRef": "navigation-region:philosophical-conceptual"
+    },
+    {
+      "externalRef": "norm:physics",
+      "label": "Physics",
+      "regionLabel": "Physical & Material",
+      "regionRef": "navigation-region:physical-material"
+    },
+    {
+      "externalRef": "norm:chemistry",
+      "label": "Chemistry",
+      "regionLabel": "Physical & Material",
+      "regionRef": "navigation-region:physical-material"
+    },
+    {
+      "externalRef": "norm:materials",
+      "label": "Materials science and engineering",
+      "regionLabel": "Physical & Material",
+      "regionRef": "navigation-region:physical-material"
+    },
+    {
+      "externalRef": "norm:earth-science",
+      "label": "Earth science / geoscience",
+      "regionLabel": "Earth, Planetary & Space Systems",
+      "regionRef": "navigation-region:earth-planetary-space"
+    },
+    {
+      "externalRef": "norm:planetary-science",
+      "label": "Planetary science",
+      "regionLabel": "Earth, Planetary & Space Systems",
+      "regionRef": "navigation-region:earth-planetary-space"
+    },
+    {
+      "externalRef": "norm:astronomy",
+      "label": "Astronomy and astrophysics",
+      "regionLabel": "Earth, Planetary & Space Systems",
+      "regionRef": "navigation-region:earth-planetary-space"
+    },
+    {
+      "externalRef": "norm:biology",
+      "label": "Biology",
+      "regionLabel": "Life & Biological Organization",
+      "regionRef": "navigation-region:life"
+    },
+    {
+      "externalRef": "norm:ecology",
+      "label": "Ecology",
+      "regionLabel": "Life & Biological Organization",
+      "regionRef": "navigation-region:life"
+    },
+    {
+      "externalRef": "norm:engineering",
+      "label": "Engineering",
+      "regionLabel": "Engineering, Design & Realization",
+      "regionRef": "navigation-region:engineering-design"
+    },
+    {
+      "externalRef": "norm:design",
+      "label": "Design",
+      "regionLabel": "Engineering, Design & Realization",
+      "regionRef": "navigation-region:engineering-design"
+    },
+    {
+      "externalRef": "norm:systems-engineering",
+      "label": "Systems engineering",
+      "regionLabel": "Engineering, Design & Realization",
+      "regionRef": "navigation-region:engineering-design"
+    },
+    {
+      "externalRef": "norm:history",
+      "label": "History",
+      "regionLabel": "Historical, Cultural & Interpretive",
+      "regionRef": "navigation-region:historical-cultural-interpretive"
+    },
+    {
+      "externalRef": "norm:cultural-studies",
+      "label": "Cultural studies",
+      "regionLabel": "Historical, Cultural & Interpretive",
+      "regionRef": "navigation-region:historical-cultural-interpretive"
+    },
+    {
+      "externalRef": "norm:literary-studies",
+      "label": "Literary studies and comparative literature",
+      "regionLabel": "Historical, Cultural & Interpretive",
+      "regionRef": "navigation-region:historical-cultural-interpretive"
+    },
+    {
+      "externalRef": "norm:sociology",
+      "label": "Sociology",
+      "regionLabel": "Social, Institutional & Collective Systems",
+      "regionRef": "navigation-region:social-institutional-collective"
+    },
+    {
+      "externalRef": "norm:economics",
+      "label": "Economics",
+      "regionLabel": "Social, Institutional & Collective Systems",
+      "regionRef": "navigation-region:social-institutional-collective"
+    },
+    {
+      "externalRef": "norm:political-science",
+      "label": "Political science",
+      "regionLabel": "Social, Institutional & Collective Systems",
+      "regionRef": "navigation-region:social-institutional-collective"
+    }
+  ]
+}

@@ -1337,6 +1337,61 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
         self.assertEqual(a["globalScalarCoverage"], "FORBIDDEN")
 
 
+    def test_frontier_v1_counts_match_saturated_reference_graph(self) -> None:
+        a = json.loads((ROOT / "reference/external-reference-frontier-analysis-v1-20260819.json").read_text())
+        c = a["counts"]
+        self.assertEqual(c["normalizedIdentities"], 120)
+        self.assertEqual(c["relations"], 256)
+        self.assertEqual(c["currentOwnerAuthorityInputs"], 10)
+        self.assertEqual(c["mappingRows"], 25)
+        self.assertEqual(c["mappedUniqueIdentities"], 23)
+        self.assertEqual(c["unmappedIdentities"], 97)
+        self.assertEqual(c["unmappedMajorRegionAnchors"], 22)
+        self.assertEqual(c["zeroDirectTouchMajorRegions"], 2)
+
+    def test_frontier_v1_forbids_unmapped_to_untouched_lifting(self) -> None:
+        a = json.loads((ROOT / "reference/external-reference-frontier-analysis-v1-20260819.json").read_text())
+        self.assertIn("UNMAPPED_IDENTITY != ORDIVON_UNTOUCHED", a["laws"])
+        self.assertIn("ABSENT_OWNER_PUBLICATION != ABSENT_RESEARCH", a["laws"])
+        self.assertIn("UNMAPPED_ANCHOR != REGION_UNCOVERED_TRUTH", a["laws"])
+        self.assertIn("FRONTIER_DIAGNOSTIC != RESEARCH_ROADMAP", a["laws"])
+
+    def test_frontier_v1_region_diagnostics_never_mint_region_coverage(self) -> None:
+        a = json.loads((ROOT / "reference/external-reference-frontier-analysis-v1-20260819.json").read_text())
+        self.assertEqual(len(a["regionDiagnostics"]), 10)
+        for r in a["regionDiagnostics"]:
+            self.assertEqual(r["aggregateCoverageTruth"], "FORBIDDEN")
+        zero = {r["regionRef"] for r in a["regionDiagnostics"] if r["mappedMemberCount"] == 0}
+        self.assertEqual(zero, {"navigation-region:physical-material", "navigation-region:earth-planetary-space"})
+
+    def test_frontier_v1_anchor_touch_is_navigation_diagnostic_only(self) -> None:
+        a = json.loads((ROOT / "reference/external-reference-frontier-analysis-v1-20260819.json").read_text())
+        all_mapped = {r["regionRef"] for r in a["regionDiagnostics"] if r["anchorTouchState"] == "ALL_ANCHORS_HAVE_DIRECT_IDENTITY_MAPPING"}
+        self.assertEqual(all_mapped, {"navigation-region:computation-computer-systems", "navigation-region:mind-language"})
+        self.assertEqual(len(a["unmappedMajorRegionAnchors"]), 22)
+
+    def test_frontier_v1_no_lift_examples_remain_unmapped(self) -> None:
+        a = json.loads((ROOT / "reference/external-reference-frontier-analysis-v1-20260819.json").read_text())
+        refs = {x["externalRef"] for x in a["mappedNeighborNoLiftFrontiers"]}
+        for ref in ("norm:philosophy", "norm:biology", "norm:foundations-programming-languages", "norm:software-engineering", "norm:sociology"):
+            self.assertIn(ref, refs)
+        self.assertIn("MAPPED_SUBSPACE != PARENT_FIELD_COVERAGE", a["laws"])
+        self.assertIn("MAPPED_NEIGHBOR != COVERAGE", a["laws"])
+
+    def test_frontier_v1_owner_states_separate_weak_scope_and_publication_absence(self) -> None:
+        a = json.loads((ROOT / "reference/external-reference-frontier-analysis-v1-20260819.json").read_text())
+        rows = {(x.get("ownerResearchRef") or x.get("owner")): x for x in a["ownerFrontiers"]}
+        self.assertEqual(rows["research-owner:host"]["state"], "EXTERNAL_MAPPING_WEAK_NOVELTY_NOT_ESTABLISHED")
+        self.assertEqual(rows["research-owner:game"]["state"], "OUT_OF_FOUNDATIONAL_PILOT_SCOPE")
+        self.assertEqual(rows["Finance"]["state"], "OWNER_CURRENTNESS_EXCLUDED")
+        self.assertEqual(rows["Harness"]["state"], "OWNER_CURRENTNESS_EXCLUDED_ACTIVE_RESEARCH")
+
+    def test_frontier_v1_graph_degree_cannot_rank_importance(self) -> None:
+        a = json.loads((ROOT / "reference/external-reference-frontier-analysis-v1-20260819.json").read_text())
+        self.assertIn("GRAPH_DEGREE != IMPORTANCE", a["laws"])
+        self.assertEqual(a["state"], "FRONTIER_BASELINE_ESTABLISHED_AFTER_BOUNDED_BREADTH_SATURATION")
+
+
 
 if __name__ == "__main__":
     unittest.main()

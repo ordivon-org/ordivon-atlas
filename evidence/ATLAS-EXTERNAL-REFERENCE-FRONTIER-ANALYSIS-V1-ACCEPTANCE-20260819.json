@@ -1,0 +1,91 @@
+{
+  "analysis": "reference/external-reference-frontier-analysis-v1-20260819.json",
+  "closure": "FRONTIER_BASELINE_ACCEPTED_NO_SCALAR_NO_AUTOMATIC_ROADMAP",
+  "controls": [
+    "Unmapped identity is never lifted to Ordivon untouched.",
+    "Mapped neighbors/subspaces never lift coverage to a broad parent identity.",
+    "MajorRegion mapped-member/anchor diagnostics never become region coverage truth.",
+    "Graph degree is diagnostic only and cannot rank importance or priority.",
+    "Finance/Harness publication absence remains authority-limited unknown, not research absence.",
+    "Host weak external mapping remains distinct from external identity unmappedness and novelty.",
+    "Game out-of-pilot scope remains distinct from untouchedness.",
+    "Physical/Material and Earth/Planetary/Space zero-direct-touch status is explicitly current-owner-set-only, not whole-Ordivon absence."
+  ],
+  "counts": {
+    "allAnchorsDirectlyMappedMajorRegions": 2,
+    "currentOwnerAuthorityInputs": 10,
+    "excludedOwnerCurrentnessCases": 2,
+    "mappedNeighborNoLiftFrontiers": 15,
+    "mappedUniqueIdentities": 23,
+    "mappingRows": 25,
+    "normalizedIdentities": 120,
+    "oneMappedNeighborUnmapped": 15,
+    "outOfPilotScopeOwnerCases": 1,
+    "ownerExternalMappingWeakCases": 1,
+    "relations": 256,
+    "unmappedIdentities": 97,
+    "unmappedMajorRegionAnchors": 22,
+    "zeroDirectTouchMajorRegions": 2,
+    "zeroMappedNeighborUnmapped": 67
+  },
+  "date": "2026-08-19",
+  "findings": [
+    {
+      "claim": "The current ten-owner crosswalk contains 25 mapping rows but only 23 distinct mapped external identities; 97 identities remain unmapped under the current authority surface.",
+      "id": "EFA1-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Twenty-two current MajorRegion anchors have no direct identity mapping, but anchor non-mapping is a navigation diagnostic and cannot be interpreted as region-level coverage absence.",
+      "id": "EFA1-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Physical & Material and Earth/Planetary/Space Systems currently contain zero directly mapped member identities, making them the clearest current-owner-set blank clusters without establishing whole-Ordivon untouchedness.",
+      "id": "EFA1-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Computation/Computer Systems and Mind/Cognition/Language are the only MajorRegions whose three navigation anchors each have at least one direct identity-level mapping; this still does not create region coverage truth.",
+      "id": "EFA1-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Mapped-neighbor/no-lift frontiers reveal a useful distinction between adjacency and field coverage: broad identities such as Philosophy, Biology and Software Engineering remain correctly unmapped despite mapped subspaces/neighbors.",
+      "id": "EFA1-5",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Finance and Harness are authority-limited unknowns, not untouched domains; Host is external-mapping-weak, and Game is out-of-current-pilot-scope. These states must remain separate from identity unmappedness.",
+      "id": "EFA1-6",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "After bounded breadth saturation, the highest-information next work is frontier classification quality and owner-authority unlocks rather than further catalog expansion.",
+      "id": "EFA1-7",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.external-reference-frontier-analysis-v1-acceptance",
+  "laws": [
+    "UNMAPPED_IDENTITY != ORDIVON_UNTOUCHED",
+    "MAPPED_NEIGHBOR != COVERAGE",
+    "MAPPED_SUBSPACE != PARENT_FIELD_COVERAGE",
+    "UNMAPPED_ANCHOR != REGION_UNCOVERED_TRUTH",
+    "REGION_MEMBER_COUNTS != REGION_COVERAGE_SCORE",
+    "ABSENT_OWNER_PUBLICATION != ABSENT_RESEARCH",
+    "OWNER_EXTERNAL_MAPPING_WEAK != EXTERNAL_REFERENCE_ABSENCE",
+    "OUT_OF_PILOT_SCOPE != UNTOUCHED",
+    "GRAPH_DEGREE != IMPORTANCE",
+    "FRONTIER_DIAGNOSTIC != RESEARCH_ROADMAP"
+  ],
+  "schemaVersion": 1,
+  "state": "FRONTIER_BASELINE_ESTABLISHED_AFTER_BOUNDED_BREADTH_SATURATION",
+  "truthRole": "HISTORICAL_FRONTIER_DIAGNOSTIC_EVIDENCE",
+  "verification": {
+    "fullSuiteJob": "job-01a01694-b2a1-70b3-b762-ad347974c8a3",
+    "fullSuiteResult": "168 tests OK; 28 gated skips; 140 deterministic tests executed",
+    "referenceSuiteJob": "job-01a01694-89fe-7d93-9417-820e497be7d1",
+    "referenceSuiteResult": "131/131 PASS"
+  }
+}
