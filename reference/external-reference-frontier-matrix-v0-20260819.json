@@ -1,0 +1,2697 @@
+{
+  "contractRef": "reference/external-reference-frontier-state-contract-v0-20260819.json",
+  "counts": {
+    "currentMappings": 25,
+    "identities": 120,
+    "majorRegionAnchors": 30,
+    "mappedIdentities": 23,
+    "mappedMajorRegionAnchors": 8,
+    "noDirectMappingCurrentPilot": 97,
+    "unmappedCrossRegionMembers": 12,
+    "unmappedMajorRegionAnchors": 22,
+    "unmappedNoRegionMembers": 11,
+    "unmappedSingleRegionMembers": 52
+  },
+  "crosswalkRef": "reference/coverage-crosswalk-foundational-pilot-v0-7-20260819.json",
+  "date": "2026-08-19",
+  "globalScalarCoverage": "FORBIDDEN",
+  "kind": "ordivon.external-reference-frontier-matrix",
+  "majorRegionRef": "reference/canonical-major-regions-v0-8-20260819.json",
+  "matrixId": "external-reference-frontier:v0:2026-08-19",
+  "ownerSnapshotRef": "reference/coverage-crosswalk-owner-authority-snapshot-v0-5-20260819.json",
+  "priorityCounts": {
+    "CURRENTLY_MAPPED": 23,
+    "NAVIGATION_FRONTIER_A": 22,
+    "NAVIGATION_FRONTIER_B": 12,
+    "NAVIGATION_FRONTIER_C": 52,
+    "TOPOLOGY_REOPEN_CANDIDATE": 11
+  },
+  "referenceGraphRef": "reference/foundational-whole-topology-audit-v10-round5c-saturation-20260819.json",
+  "rows": [
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:aesthetics",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Aesthetics",
+      "majorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive",
+        "navigation-region:philosophical-conceptual"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_B",
+      "roleClasses": [
+        "CONCEPTUAL_ART_BRIDGE",
+        "HUMAN_EXPERIENCE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:affective-science",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Affective science",
+      "majorRegionRefs": [
+        "navigation-region:mind-language"
+      ],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->affective-science"
+      ],
+      "mappingRelations": [
+        "DIRECT_PARTIAL_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "CROSS_CUTTING_MIND_BEHAVIOR_DOMAIN",
+        "AFFECT_EMOTION_PROCESS_DOMAIN",
+        "BIO_BEHAVIOR_TRANSLATIONAL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:agriculture",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Agricultural sciences and systems",
+      "majorRegionRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_NO_REGION_MEMBER",
+      "priorityClass": "TOPOLOGY_REOPEN_CANDIDATE",
+      "roleClasses": [
+        "APPLIED_INTERVENTION_SYSTEM_DOMAIN",
+        "EARTH_LIFE_ENGINEERING_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:analytical-chemistry",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Analytical chemistry",
+      "majorRegionRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_NO_REGION_MEMBER",
+      "priorityClass": "TOPOLOGY_REOPEN_CANDIDATE",
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "METHODOLOGICAL_AXIS"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:anthropology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Anthropology",
+      "majorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive",
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_B",
+      "roleClasses": [
+        "HUMAN_BIOCULTURAL_DOMAIN",
+        "CROSS_TEMPORAL_HUMAN_DOMAIN",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:archaeology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Archaeology",
+      "majorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MATERIAL_PAST_EVIDENCE_DOMAIN",
+        "HISTORICAL_SCIENTIFIC_BRIDGE",
+        "HUMAN_ENVIRONMENT_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:area-regional-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Area and regional studies",
+      "majorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive",
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_B",
+      "roleClasses": [
+        "REGIONALLY_BOUNDED_INTERDISCIPLINARY_DOMAIN",
+        "AREA_KNOWLEDGE_INTEGRATION_MODE",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:art-history",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Art history and visual/material culture studies",
+      "majorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "HISTORICAL_VISUAL_MATERIAL_CULTURE_DOMAIN",
+        "INTERPRETIVE_DOMAIN",
+        "HERITAGE_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:earth-planetary-space"
+      ],
+      "externalRef": "norm:astronomy",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Astronomy and astrophysics",
+      "majorRegionRefs": [
+        "navigation-region:earth-planetary-space"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "MAJOR_DOMAIN_CANDIDATE",
+        "PHYSICAL_SPACE_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:atmospheric-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Atmospheric science and meteorology",
+      "majorRegionRefs": [
+        "navigation-region:earth-planetary-space"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:basic-biomedical-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Basic biomedical sciences",
+      "majorRegionRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_NO_REGION_MEMBER",
+      "priorityClass": "TOPOLOGY_REOPEN_CANDIDATE",
+      "roleClasses": [
+        "FOUNDATIONAL_BRIDGE",
+        "TRANSLATIONAL_SOURCE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:biochemistry",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Biochemistry",
+      "majorRegionRefs": [
+        "navigation-region:life",
+        "navigation-region:physical-material"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_B",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_LIFE_CHEMISTRY_SUBSPACE",
+        "MOLECULAR_TRANSFORMATION_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:bioengineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Bioengineering",
+      "majorRegionRefs": [
+        "navigation-region:engineering-design"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "APPLIED_INTERVENTION_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:biological-research-infrastructure",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Biological research infrastructure",
+      "majorRegionRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_NO_REGION_MEMBER",
+      "priorityClass": "TOPOLOGY_REOPEN_CANDIDATE",
+      "roleClasses": [
+        "EPISTEMIC_INFRASTRUCTURE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:life"
+      ],
+      "externalRef": "norm:biology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Biology",
+      "majorRegionRefs": [
+        "navigation-region:life"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "FOUNDATIONAL_DOMAIN_CANDIDATE",
+        "MULTISCALE_LIFE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:chemical-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Chemical engineering",
+      "majorRegionRefs": [
+        "navigation-region:engineering-design"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MAJOR_ENGINEERING_SUBSPACE",
+        "PROCESS_INTERVENTION_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:chemical-physics",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Chemical physics",
+      "majorRegionRefs": [
+        "navigation-region:physical-material"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_SUBSPACE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:physical-material"
+      ],
+      "externalRef": "norm:chemistry",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Chemistry",
+      "majorRegionRefs": [
+        "navigation-region:physical-material"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "FOUNDATIONAL_DOMAIN_CANDIDATE",
+        "COMPOSITION_TRANSFORMATION_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:civil-structural-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Civil and structural engineering",
+      "majorRegionRefs": [
+        "navigation-region:engineering-design"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MAJOR_ENGINEERING_SUBSPACE",
+        "BUILT_ENVIRONMENT_INTERVENTION_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:classics",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Classics / Classical studies",
+      "majorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "COMPOSITE_HISTORICAL_SYMBOLIC_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:climate-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Climate science",
+      "majorRegionRefs": [
+        "navigation-region:earth-planetary-space"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:mind-language"
+      ],
+      "externalRef": "norm:cognitive-science",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Cognitive science",
+      "majorRegionRefs": [
+        "navigation-region:mind-language"
+      ],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->cognitive-science"
+      ],
+      "mappingRelations": [
+        "BRIDGE_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_ANCHOR",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_DOMAIN_CANDIDATE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:communication-studies",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Communication studies",
+      "majorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [
+        "research-owner:media"
+      ],
+      "mappingRefs": [
+        "crosswalk:media->communication-studies"
+      ],
+      "mappingRelations": [
+        "BRIDGE_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "MAJOR_COMMUNICATION_DOMAIN",
+        "INTERDISCIPLINARY_SOCIAL_COMMUNICATION_DOMAIN",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:computation-computer-systems"
+      ],
+      "externalRef": "norm:computation",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Computation and computing",
+      "majorRegionRefs": [
+        "navigation-region:computation-computer-systems"
+      ],
+      "mappedOwners": [
+        "research-owner:computational-possibility"
+      ],
+      "mappingRefs": [
+        "crosswalk:cp->computation"
+      ],
+      "mappingRelations": [
+        "DIRECT_PARTIAL_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_ANCHOR",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "FOUNDATIONAL_DOMAIN_CANDIDATE",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:computer-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Computer engineering",
+      "majorRegionRefs": [
+        "navigation-region:computation-computer-systems",
+        "navigation-region:engineering-design"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_B",
+      "roleClasses": [
+        "MAJOR_ENGINEERING_SUBSPACE",
+        "HARDWARE_SOFTWARE_REALIZATION_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:condensed-matter",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Condensed matter physics",
+      "majorRegionRefs": [
+        "navigation-region:physical-material"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "MATERIALS_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:consciousness-science",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Consciousness science",
+      "majorRegionRefs": [
+        "navigation-region:mind-language"
+      ],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->consciousness-science"
+      ],
+      "mappingRelations": [
+        "DIRECT_PARTIAL_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "CROSS_CUTTING_MIND_DOMAIN",
+        "SUBJECTIVE_EXPERIENCE_RESEARCH_DOMAIN",
+        "NEUROSCIENCE_PHILOSOPHY_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:control-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Control engineering",
+      "majorRegionRefs": [
+        "navigation-region:computation-computer-systems",
+        "navigation-region:engineering-design"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_B",
+      "roleClasses": [
+        "APPLIED_METHOD_AXIS",
+        "ENGINEERING_SUBSPACE",
+        "SYSTEMS_CONTROL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:cosmology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Cosmology",
+      "majorRegionRefs": [
+        "navigation-region:earth-planetary-space"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "PHYSICS_ASTRONOMY_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:criminology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Criminology and criminal justice studies",
+      "majorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "CRIME_DEVIANCE_CRIMINAL_JUSTICE_DOMAIN",
+        "SOCIAL_LEGAL_BRIDGE",
+        "APPLIED_EMPIRICAL_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ],
+      "externalRef": "norm:cultural-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Cultural studies",
+      "majorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "CULTURE_POWER_INTERPRETIVE_DOMAIN",
+        "INTERDISCIPLINARY_CULTURAL_ANALYSIS_DOMAIN",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:demography",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Demography and population studies",
+      "majorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "POPULATION_SCIENCE_DOMAIN",
+        "QUANTITATIVE_SOCIAL_DOMAIN",
+        "LIFE_SOCIAL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:engineering-design"
+      ],
+      "externalRef": "norm:design",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Design",
+      "majorRegionRefs": [
+        "navigation-region:engineering-design"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "METHODOLOGICAL_AXIS",
+        "CREATIVE_INTERVENTION_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:development-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Development studies",
+      "majorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "GLOBAL_DEVELOPMENT_DOMAIN",
+        "APPLIED_INTERDISCIPLINARY_SOCIAL_DOMAIN",
+        "INEQUALITY_ENVIRONMENT_INSTITUTION_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:developmental-biology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Developmental biology",
+      "majorRegionRefs": [
+        "navigation-region:life"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "PROCESS_AXIS",
+        "MAJOR_LIFE_SUBSPACE",
+        "MULTISCALE_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:developmental-science",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Developmental science (human development)",
+      "majorRegionRefs": [
+        "navigation-region:life",
+        "navigation-region:mind-language",
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->developmental-science"
+      ],
+      "mappingRelations": [
+        "BRIDGE_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_CROSS_REGION_MEMBER",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "HUMAN_DEVELOPMENT_DOMAIN",
+        "DEVELOPMENTAL_PROCESS_DOMAIN",
+        "PSYCHOLOGY_BIOLOGY_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:dynamical-systems",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Dynamical systems and ergodic theory",
+      "majorRegionRefs": [
+        "navigation-region:formal-inferential"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "PROCESS_STRUCTURE_AXIS",
+        "MAJOR_FORMAL_SUBSPACE",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:earth-planetary-space"
+      ],
+      "externalRef": "norm:earth-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Earth science / geoscience",
+      "majorRegionRefs": [
+        "navigation-region:earth-planetary-space"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "MAJOR_DOMAIN_CANDIDATE",
+        "SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:life"
+      ],
+      "externalRef": "norm:ecology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Ecology",
+      "majorRegionRefs": [
+        "navigation-region:life"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "SYSTEM_DOMAIN",
+        "MAJOR_SUBSPACE",
+        "EARTH_LIFE_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "externalRef": "norm:economics",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Economics",
+      "majorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "MAJOR_SOCIAL_FORMAL_EMPIRICAL_DOMAIN",
+        "ALLOCATION_PRODUCTION_DISTRIBUTION_DOMAIN",
+        "INSTITUTIONAL_SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:education-research",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Education research",
+      "majorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "LEARNING_EDUCATION_RESEARCH_DOMAIN",
+        "INSTITUTIONAL_HUMAN_DEVELOPMENT_BRIDGE",
+        "APPLIED_SOCIAL_RESEARCH_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:electrical-electronic-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Electrical and electronic engineering",
+      "majorRegionRefs": [
+        "navigation-region:engineering-design"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MAJOR_ENGINEERING_SUBSPACE",
+        "DEVICE_SYSTEM_REALIZATION_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:energy-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Energy engineering",
+      "majorRegionRefs": [
+        "navigation-region:engineering-design"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "APPLIED_INTERVENTION_DOMAIN",
+        "PHYSICAL_MATERIAL_ENGINEERING_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:engineering-design"
+      ],
+      "externalRef": "norm:engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Engineering",
+      "majorRegionRefs": [
+        "navigation-region:engineering-design"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "INTERVENTION_DOMAIN_CANDIDATE",
+        "DESIGN_REALIZATION_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:environmental-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Environmental engineering",
+      "majorRegionRefs": [
+        "navigation-region:engineering-design"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "APPLIED_INTERVENTION_DOMAIN",
+        "EARTH_LIFE_CHEMISTRY_ENGINEERING_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:philosophical-conceptual"
+      ],
+      "externalRef": "norm:epistemology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Epistemology",
+      "majorRegionRefs": [
+        "navigation-region:philosophical-conceptual"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "MAJOR_PHILOSOPHICAL_SUBSPACE",
+        "KNOWLEDGE_EVIDENCE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:ethics-value-theory",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Ethics and value theory",
+      "majorRegionRefs": [
+        "navigation-region:philosophical-conceptual"
+      ],
+      "mappedOwners": [
+        "research-owner:ordivon-normative"
+      ],
+      "mappingRefs": [
+        "crosswalk:normative->ethics-value-theory"
+      ],
+      "mappingRelations": [
+        "BRIDGE_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "MAJOR_PHILOSOPHICAL_SUBSPACE",
+        "NORMATIVE_VALUE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:evolutionary-biology",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Evolutionary biology",
+      "majorRegionRefs": [
+        "navigation-region:life"
+      ],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->evolutionary-biology"
+      ],
+      "mappingRelations": [
+        "BRIDGE_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "PROCESS_AXIS",
+        "MAJOR_SUBSPACE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:folklore-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Folklore studies",
+      "majorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "EXPRESSIVE_TRADITION_DOMAIN",
+        "CULTURAL_ETHNOGRAPHIC_DOMAIN",
+        "HISTORY_ANTHROPOLOGY_ART_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:food-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Food science",
+      "majorRegionRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_NO_REGION_MEMBER",
+      "priorityClass": "TOPOLOGY_REOPEN_CANDIDATE",
+      "roleClasses": [
+        "APPLIED_TRANSLATIONAL_DOMAIN",
+        "COMPOSITE_DOMAIN",
+        "BIO_CHEM_MICROBIO_ENGINEERING_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:formal-methods",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Formal methods",
+      "majorRegionRefs": [
+        "navigation-region:computation-computer-systems",
+        "navigation-region:engineering-design",
+        "navigation-region:formal-inferential"
+      ],
+      "mappedOwners": [
+        "research-owner:semantics-of-computational-descriptions"
+      ],
+      "mappingRefs": [
+        "crosswalk:scd->formal-methods"
+      ],
+      "mappingRelations": [
+        "BRIDGE_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_CROSS_REGION_MEMBER",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "CROSS_CUTTING_COMPUTING_METHOD_DOMAIN",
+        "SPECIFICATION_VERIFICATION_AXIS",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:formal-semantics",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Formal semantics",
+      "majorRegionRefs": [
+        "navigation-region:computation-computer-systems",
+        "navigation-region:formal-inferential"
+      ],
+      "mappedOwners": [
+        "research-owner:semantics-of-computational-descriptions"
+      ],
+      "mappingRefs": [
+        "crosswalk:scd->formal-semantics"
+      ],
+      "mappingRelations": [
+        "BRIDGE_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_CROSS_REGION_MEMBER",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "FORMAL_COMPUTING_SUBSPACE",
+        "SEMANTIC_MODELING_AXIS",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:foundations-programming-languages",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Foundations of programming languages",
+      "majorRegionRefs": [
+        "navigation-region:computation-computer-systems"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MAJOR_COMPUTING_SUBSPACE",
+        "FORMAL_SOFTWARE_SEMANTICS_DOMAIN",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:gender-sexuality-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Women’s, gender, and sexuality studies",
+      "majorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive",
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_B",
+      "roleClasses": [
+        "GENDER_SEXUALITY_POWER_DOMAIN",
+        "INTERSECTIONAL_INTERDISCIPLINARY_DOMAIN",
+        "CRITICAL_INTERPRETIVE_SOCIAL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:life"
+      ],
+      "externalRef": "norm:genetics",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Genetics",
+      "majorRegionRefs": [
+        "navigation-region:life"
+      ],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->genetics"
+      ],
+      "mappingRelations": [
+        "BRIDGE_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_ANCHOR",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "INHERITANCE_PROCESS_DOMAIN",
+        "BIOLOGICAL_INFORMATION_AXIS",
+        "MAJOR_LIFE_SUBSPACE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:genomics",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Genomics",
+      "majorRegionRefs": [
+        "navigation-region:life"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "DATA_INTENSIVE_LIFE_DOMAIN",
+        "MAJOR_LIFE_SUBSPACE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:geochemistry",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Geochemistry",
+      "majorRegionRefs": [
+        "navigation-region:earth-planetary-space"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "EARTH_SYSTEM_SUBSPACE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:geography",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Geography",
+      "majorRegionRefs": [
+        "navigation-region:earth-planetary-space",
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_B",
+      "roleClasses": [
+        "MAJOR_SPATIAL_DOMAIN",
+        "EARTH_HUMAN_BRIDGE",
+        "INTEGRATIVE_PLACE_SPACE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:geology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Geology",
+      "majorRegionRefs": [
+        "navigation-region:earth-planetary-space"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MAJOR_SUBSPACE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:geophysics",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Geophysics",
+      "majorRegionRefs": [
+        "navigation-region:earth-planetary-space"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_SUBSPACE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:heritage-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Heritage studies",
+      "majorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "HERITAGE_MEMORY_PUBLIC_HISTORY_DOMAIN",
+        "APPLIED_INTERPRETIVE_DOMAIN",
+        "INSTITUTIONAL_COMMUNITY_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ],
+      "externalRef": "norm:history",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "History",
+      "majorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "HISTORICAL_INTERPRETIVE_DOMAIN_CANDIDATE",
+        "TEMPORAL_EVIDENCE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:human-computer-interaction",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Human-computer interaction",
+      "majorRegionRefs": [
+        "navigation-region:computation-computer-systems",
+        "navigation-region:engineering-design"
+      ],
+      "mappedOwners": [
+        "research-owner:media"
+      ],
+      "mappingRefs": [
+        "crosswalk:media->human-computer-interaction"
+      ],
+      "mappingRelations": [
+        "BRIDGE_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_CROSS_REGION_MEMBER",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "INTERDISCIPLINARY_COMPUTING_INTERACTION_DOMAIN",
+        "DESIGN_INTERVENTION_BRIDGE",
+        "HUMAN_TECHNOLOGY_SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:human-geography",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Human geography",
+      "majorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MAJOR_GEOGRAPHY_SUBSPACE",
+        "HUMAN_SPATIAL_DOMAIN",
+        "SOCIAL_ENVIRONMENTAL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:information-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Information science",
+      "majorRegionRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_NO_REGION_MEMBER",
+      "priorityClass": "TOPOLOGY_REOPEN_CANDIDATE",
+      "roleClasses": [
+        "MAJOR_DOMAIN_CANDIDATE",
+        "KNOWLEDGE_ORGANIZATION_BRIDGE",
+        "APPLIED_INFORMATION_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:information-theory",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Information theory",
+      "majorRegionRefs": [
+        "navigation-region:computation-computer-systems",
+        "navigation-region:formal-inferential"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_B",
+      "roleClasses": [
+        "FOUNDATIONAL_BRIDGE",
+        "METHODOLOGICAL_AXIS"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:international-studies-relations",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "International studies and international relations",
+      "majorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "INTERNATIONAL_TRANSNATIONAL_SYSTEM_DOMAIN",
+        "POLITICAL_SOCIAL_BRIDGE",
+        "INTERDISCIPLINARY_GLOBAL_AFFAIRS_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:legal-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Legal science and legal studies",
+      "majorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "NORMATIVE_INSTITUTIONAL_DOMAIN",
+        "ACADEMIC_PROFESSIONAL_DOMAIN",
+        "LEGAL_SYSTEM_INTERPRETIVE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:librarianship",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Librarianship and library studies",
+      "majorRegionRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_NO_REGION_MEMBER",
+      "priorityClass": "TOPOLOGY_REOPEN_CANDIDATE",
+      "roleClasses": [
+        "APPLIED_PROFESSIONAL_DOMAIN",
+        "EPISTEMIC_INFRASTRUCTURE",
+        "INFORMATION_ACCESS_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:mind-language"
+      ],
+      "externalRef": "norm:linguistics",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Linguistics",
+      "majorRegionRefs": [
+        "navigation-region:mind-language"
+      ],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->linguistics"
+      ],
+      "mappingRelations": [
+        "BRIDGE_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_ANCHOR",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "MAJOR_DOMAIN_CANDIDATE",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ],
+      "externalRef": "norm:literary-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Literary studies and comparative literature",
+      "majorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "LITERARY_INTERPRETIVE_DOMAIN",
+        "COMPARATIVE_TRANSNATIONAL_DOMAIN",
+        "TEXT_MEDIA_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:formal-inferential"
+      ],
+      "externalRef": "norm:logic",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Logic",
+      "majorRegionRefs": [
+        "navigation-region:formal-inferential",
+        "navigation-region:philosophical-conceptual"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "FOUNDATIONAL_BRIDGE",
+        "METHODOLOGICAL_AXIS"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:management-organization-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Management and organization studies",
+      "majorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MANAGEMENT_ORGANIZATION_SCIENCE_DOMAIN",
+        "ORGANIZATIONAL_INSTITUTIONAL_DOMAIN",
+        "APPLIED_SOCIAL_SCIENCE_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:manufacturing",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Manufacturing",
+      "majorRegionRefs": [
+        "navigation-region:engineering-design"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "REALIZATION_DOMAIN",
+        "APPLIED_ENGINEERING_SUBSPACE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:physical-material"
+      ],
+      "externalRef": "norm:materials",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Materials science and engineering",
+      "majorRegionRefs": [
+        "navigation-region:engineering-design",
+        "navigation-region:physical-material"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_DOMAIN_CANDIDATE",
+        "INTERVENTION_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:formal-inferential"
+      ],
+      "externalRef": "norm:mathematics",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Mathematics",
+      "majorRegionRefs": [
+        "navigation-region:formal-inferential"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "FOUNDATIONAL_FORMAL_DOMAIN_CANDIDATE",
+        "ABSTRACT_STRUCTURE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:measurement",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Measurement and metrology",
+      "majorRegionRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_NO_REGION_MEMBER",
+      "priorityClass": "TOPOLOGY_REOPEN_CANDIDATE",
+      "roleClasses": [
+        "METHODOLOGICAL_AXIS",
+        "EPISTEMIC_INFRASTRUCTURE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:mechanical-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Mechanical engineering",
+      "majorRegionRefs": [
+        "navigation-region:engineering-design"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MAJOR_ENGINEERING_SUBSPACE",
+        "REALIZATION_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:media-studies",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Media studies",
+      "majorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive",
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [
+        "research-owner:media"
+      ],
+      "mappingRefs": [
+        "crosswalk:media->media-studies"
+      ],
+      "mappingRelations": [
+        "BRIDGE_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_CROSS_REGION_MEMBER",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "MEDIA_CULTURAL_INTERPRETIVE_DOMAIN",
+        "REPRESENTATION_CIRCULATION_DOMAIN",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:medicine-health",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Medicine and health sciences",
+      "majorRegionRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_NO_REGION_MEMBER",
+      "priorityClass": "TOPOLOGY_REOPEN_CANDIDATE",
+      "roleClasses": [
+        "APPLIED_PROFESSIONAL_DOMAIN",
+        "TRANSLATIONAL_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:philosophical-conceptual"
+      ],
+      "externalRef": "norm:metaphysics",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Metaphysics",
+      "majorRegionRefs": [
+        "navigation-region:philosophical-conceptual"
+      ],
+      "mappedOwners": [
+        "research-owner:world"
+      ],
+      "mappingRefs": [
+        "crosswalk:world->metaphysics"
+      ],
+      "mappingRelations": [
+        "DIRECT_PARTIAL_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_ANCHOR",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "MAJOR_PHILOSOPHICAL_SUBSPACE",
+        "REALITY_CONCEPT_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:microbiology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Microbiology / microbial sciences",
+      "majorRegionRefs": [
+        "navigation-region:life"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MAJOR_LIFE_SUBSPACE",
+        "OBJECT_REGIME_DOMAIN",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:molecular-cellular-biology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Molecular and cellular biosciences",
+      "majorRegionRefs": [
+        "navigation-region:life"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "LOWER_SCALE_LIFE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:museology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Museology and museum studies",
+      "majorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MUSEUM_THEORY_PRACTICE_DOMAIN",
+        "HERITAGE_INSTITUTION_DOMAIN",
+        "APPLIED_INTERPRETIVE_PROFESSIONAL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:musicology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Musicology and music studies",
+      "majorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MUSIC_RESEARCH_DOMAIN",
+        "HISTORICAL_CULTURAL_ANALYTIC_DOMAIN",
+        "ART_SCIENCE_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:computation-computer-systems"
+      ],
+      "externalRef": "norm:networking-communication",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Networking and communication",
+      "majorRegionRefs": [
+        "navigation-region:computation-computer-systems"
+      ],
+      "mappedOwners": [
+        "research-owner:network"
+      ],
+      "mappingRefs": [
+        "crosswalk:network->networking-communication"
+      ],
+      "mappingRelations": [
+        "DIRECT_PARTIAL_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_ANCHOR",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "MAJOR_COMPUTING_SUBSPACE",
+        "COMMUNICATION_SYSTEM_DOMAIN",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:neuroscience",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Neuroscience",
+      "majorRegionRefs": [
+        "navigation-region:life",
+        "navigation-region:mind-language"
+      ],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->neuroscience"
+      ],
+      "mappingRelations": [
+        "BRIDGE_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_CROSS_REGION_MEMBER",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_DOMAIN_CANDIDATE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:oceanography",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Oceanography",
+      "majorRegionRefs": [
+        "navigation-region:earth-planetary-space"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:computation-computer-systems"
+      ],
+      "externalRef": "norm:operating-systems",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Operating systems",
+      "majorRegionRefs": [
+        "navigation-region:computation-computer-systems"
+      ],
+      "mappedOwners": [
+        "research-owner:runtime"
+      ],
+      "mappingRefs": [
+        "crosswalk:runtime->operating-systems"
+      ],
+      "mappingRelations": [
+        "BRIDGE_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_ANCHOR",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "MAJOR_COMPUTING_SUBSPACE",
+        "EXECUTION_RESOURCE_SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:organismal-biology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Organismal biology",
+      "majorRegionRefs": [
+        "navigation-region:life"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:parallel-distributed-computing",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Parallel and distributed computing",
+      "majorRegionRefs": [
+        "navigation-region:computation-computer-systems"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MAJOR_COMPUTING_SUBSPACE",
+        "COORDINATION_EXECUTION_DOMAIN",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:performance-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Performance studies",
+      "majorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "PERFORMANCE_PRACTICE_INTERPRETIVE_DOMAIN",
+        "EMBODIED_CULTURAL_DOMAIN",
+        "ART_SOCIAL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:philology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Philology",
+      "majorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "HISTORICAL_LANGUAGE_DOMAIN",
+        "TEXTUAL_METHOD_AXIS",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:philosophical-conceptual"
+      ],
+      "externalRef": "norm:philosophy",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Philosophy",
+      "majorRegionRefs": [
+        "navigation-region:philosophical-conceptual"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "FOUNDATIONAL_CONCEPTUAL_DOMAIN_CANDIDATE",
+        "METHODOLOGICAL_REFLECTIVE_AXIS"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:philosophy-of-language",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Philosophy of language",
+      "majorRegionRefs": [
+        "navigation-region:philosophical-conceptual"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "MAJOR_PHILOSOPHICAL_SUBSPACE",
+        "PHILOSOPHY_LANGUAGE_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:philosophy-of-mind",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Philosophy of mind and cognition",
+      "majorRegionRefs": [
+        "navigation-region:mind-language",
+        "navigation-region:philosophical-conceptual"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_B",
+      "roleClasses": [
+        "MAJOR_PHILOSOPHICAL_SUBSPACE",
+        "CONCEPTUAL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:philosophy-of-science",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Philosophy of science",
+      "majorRegionRefs": [
+        "navigation-region:philosophical-conceptual"
+      ],
+      "mappedOwners": [
+        "research-owner:world"
+      ],
+      "mappingRefs": [
+        "crosswalk:world->philosophy-of-science"
+      ],
+      "mappingRelations": [
+        "BRIDGE_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "MAJOR_PHILOSOPHICAL_SUBSPACE",
+        "PHILOSOPHY_SCIENCE_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:physical-geography",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Physical geography",
+      "majorRegionRefs": [
+        "navigation-region:earth-planetary-space"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_GEOGRAPHIC_SUBDOMAIN",
+        "EARTH_HUMAN_INTERFACE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:physical-material"
+      ],
+      "externalRef": "norm:physics",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Physics",
+      "majorRegionRefs": [
+        "navigation-region:physical-material"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "FOUNDATIONAL_DOMAIN_CANDIDATE",
+        "OBJECT_REGIME_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:physiology",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Physiology",
+      "majorRegionRefs": [
+        "navigation-region:life"
+      ],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->physiology"
+      ],
+      "mappingRelations": [
+        "BRIDGE_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "FUNCTION_AXIS",
+        "MAJOR_LIFE_SUBSPACE",
+        "SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:earth-planetary-space"
+      ],
+      "externalRef": "norm:planetary-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Planetary science",
+      "majorRegionRefs": [
+        "navigation-region:earth-planetary-space"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "MAJOR_DOMAIN_CANDIDATE",
+        "BRIDGE_DOMAIN",
+        "COMPARATIVE_SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "externalRef": "norm:political-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Political science",
+      "majorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "MAJOR_SOCIAL_INSTITUTIONAL_DOMAIN",
+        "POWER_GOVERNANCE_POLITICAL_SYSTEM_DOMAIN",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:polymer-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Polymer science",
+      "majorRegionRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_NO_REGION_MEMBER",
+      "priorityClass": "TOPOLOGY_REOPEN_CANDIDATE",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_SUBSPACE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:probability",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Probability theory and stochastic processes",
+      "majorRegionRefs": [
+        "navigation-region:formal-inferential"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "FOUNDATIONAL_FORMAL_SUBDOMAIN",
+        "STOCHASTIC_PROCESS_DOMAIN",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:mind-language"
+      ],
+      "externalRef": "norm:psychology",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Psychology",
+      "majorRegionRefs": [
+        "navigation-region:mind-language",
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->psychology"
+      ],
+      "mappingRelations": [
+        "DIRECT_PARTIAL_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_ANCHOR",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "MAJOR_DOMAIN_CANDIDATE",
+        "EMPIRICAL_MIND_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:public-administration",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Public administration",
+      "majorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "PUBLIC_ADMINISTRATION_INSTITUTIONAL_DOMAIN",
+        "GOVERNANCE_ORGANIZATION_APPLIED_DOMAIN",
+        "ACADEMIC_PROFESSIONAL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:public-policy",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Public policy research",
+      "majorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "PUBLIC_POLICY_RESEARCH_DOMAIN",
+        "CROSS_INSTITUTIONAL_INTERVENTION_DOMAIN",
+        "APPLIED_SOCIAL_RESEARCH_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:religious-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Religious studies",
+      "majorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "HISTORICAL_SYMBOLIC_DOMAIN",
+        "COMPARATIVE_HUMAN_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:science-technology-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Science and technology studies",
+      "majorRegionRefs": [
+        "navigation-region:engineering-design",
+        "navigation-region:philosophical-conceptual",
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_B",
+      "roleClasses": [
+        "SCIENCE_TECHNOLOGY_SOCIETY_DOMAIN",
+        "KNOWLEDGE_PRACTICE_INSTITUTION_BRIDGE",
+        "INTERDISCIPLINARY_REFLEXIVE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:semiotics",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Semiotics",
+      "majorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive",
+        "navigation-region:mind-language",
+        "navigation-region:philosophical-conceptual"
+      ],
+      "mappedOwners": [
+        "research-owner:media"
+      ],
+      "mappingRefs": [
+        "crosswalk:media->semiotics"
+      ],
+      "mappingRelations": [
+        "BRIDGE_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_CROSS_REGION_MEMBER",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "SIGNIFICATION_MEANING_AXIS",
+        "INTERPRETIVE_FORMAL_BRIDGE",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:social-policy",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Social policy",
+      "majorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "SOCIAL_WELFARE_POLICY_DOMAIN",
+        "APPLIED_INTERDISCIPLINARY_DOMAIN",
+        "DISTRIBUTION_WELLBEING_INSTITUTIONAL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:social-work",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Social work",
+      "majorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "PROFESSIONAL_APPLIED_RESEARCH_DOMAIN",
+        "HUMAN_SERVICES_SOCIAL_JUSTICE_DOMAIN",
+        "PRACTICE_RESEARCH_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "externalRef": "norm:sociology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Sociology",
+      "majorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "MAJOR_SOCIAL_DOMAIN",
+        "SOCIAL_STRUCTURE_RELATION_DOMAIN",
+        "EMPIRICAL_INTERPRETIVE_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:software-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Software engineering",
+      "majorRegionRefs": [
+        "navigation-region:computation-computer-systems",
+        "navigation-region:engineering-design"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_B",
+      "roleClasses": [
+        "APPLIED_INTERVENTION_DOMAIN",
+        "COMPUTATION_ENGINEERING_BRIDGE",
+        "MAJOR_ENGINEERING_SUBSPACE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:soil-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Soil science",
+      "majorRegionRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_NO_REGION_MEMBER",
+      "priorityClass": "TOPOLOGY_REOPEN_CANDIDATE",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_ENVIRONMENTAL_SUBSPACE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:formal-inferential"
+      ],
+      "externalRef": "norm:statistics",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Statistics",
+      "majorRegionRefs": [
+        "navigation-region:formal-inferential"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "INFERENTIAL_METHOD_AXIS",
+        "MAJOR_FORMAL_DOMAIN_CANDIDATE",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [
+        "navigation-region:engineering-design"
+      ],
+      "externalRef": "norm:systems-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Systems engineering",
+      "majorRegionRefs": [
+        "navigation-region:engineering-design"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "priorityClass": "NAVIGATION_FRONTIER_A",
+      "roleClasses": [
+        "INTEGRATIVE_METHOD_AXIS",
+        "INTERVENTION_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:systems-fundamentals",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Computer systems fundamentals",
+      "majorRegionRefs": [
+        "navigation-region:computation-computer-systems"
+      ],
+      "mappedOwners": [
+        "research-owner:runtime"
+      ],
+      "mappingRefs": [
+        "crosswalk:runtime->systems-fundamentals"
+      ],
+      "mappingRelations": [
+        "BRIDGE_COVERAGE"
+      ],
+      "navigationOverlay": "MAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "CURRENTLY_MAPPED",
+      "roleClasses": [
+        "FOUNDATIONAL_COMPUTING_SYSTEM_AXIS",
+        "INTEGRATIVE_SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:systems-theory-control",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Systems theory and control",
+      "majorRegionRefs": [
+        "navigation-region:formal-inferential"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "FORMAL_SYSTEM_AXIS",
+        "BRIDGE_DOMAIN",
+        "CONTROL_METHOD_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    },
+    {
+      "anchorOfRegionRefs": [],
+      "externalRef": "norm:urban-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "interpretationNotice": "Fact/priority are bounded to current ten-owner crosswalk and current navigation projections; neither is a whole-Ordivon or whole-knowledge claim.",
+      "label": "Urban studies and urban affairs",
+      "majorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "mappingRelations": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "priorityClass": "NAVIGATION_FRONTIER_C",
+      "roleClasses": [
+        "URBAN_SYSTEM_DOMAIN",
+        "INTERDISCIPLINARY_SPATIAL_SOCIAL_DOMAIN",
+        "APPLIED_POLICY_DESIGN_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED"
+    }
+  ],
+  "schemaVersion": 1,
+  "state": "TEN_OWNER_120_IDENTITY_FRONTIER_MATRIX_MATERIALIZED",
+  "truthRole": "NON_AUTHORITATIVE_SOURCE_FENCED_FRONTIER_PROJECTION",
+  "wholeOrdivonUntouchedClaim": "NOT_AUTHORIZED"
+}

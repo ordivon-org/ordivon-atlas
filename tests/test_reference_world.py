@@ -1392,6 +1392,113 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
         self.assertEqual(a["state"], "FRONTIER_BASELINE_ESTABLISHED_AFTER_BOUNDED_BREADTH_SATURATION")
 
 
+    def test_frontier_state_contract_separates_fact_navigation_and_owner_states(self) -> None:
+        c = json.loads((ROOT / "reference/external-reference-frontier-state-contract-v0-20260819.json").read_text())
+        self.assertEqual(c["truthRole"], "NON_AUTHORITATIVE_FRONTIER_ANALYSIS_CONTRACT")
+        self.assertEqual(set(c["identityFactStates"]), {"MAPPED_CURRENT_OWNER", "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT"})
+        self.assertIn("UNMAPPED_MAJOR_REGION_ANCHOR", c["navigationPriorityOverlays"])
+        self.assertIn("PUBLICATION_UNAVAILABLE", c["ownerFrontierStates"])
+        self.assertIn("FRONTIER_PRIORITY != RESEARCH_VALUE_SCORE", c["laws"])
+        self.assertIn("GLOBAL_SCALAR_COVERAGE_FORBIDDEN", c["laws"])
+
+    def test_frontier_matrix_v0_is_exact_over_120_identities(self) -> None:
+        m = json.loads((ROOT / "reference/external-reference-frontier-matrix-v0-20260819.json").read_text())
+        self.assertEqual(len(m["rows"]), 120)
+        self.assertEqual(m["counts"]["mappedIdentities"], 23)
+        self.assertEqual(m["counts"]["noDirectMappingCurrentPilot"], 97)
+        self.assertEqual(m["counts"]["unmappedMajorRegionAnchors"], 22)
+        self.assertEqual(m["counts"]["unmappedNoRegionMembers"], 11)
+        self.assertEqual(m["globalScalarCoverage"], "FORBIDDEN")
+        self.assertEqual(len({r["externalRef"] for r in m["rows"]}), 120)
+
+    def test_unassigned_identity_audit_repairs_navigation_without_reopen(self) -> None:
+        a = json.loads((ROOT / "reference/external-reference-unassigned-identity-disposition-audit-v0-20260819.json").read_text())
+        self.assertEqual(a["counts"], {"addToExistingRegions": 11, "breadthReopenTriggered": 0, "newMajorRegionRequired": 0, "remainRegionNeutral": 0, "unassignedIdentities": 11})
+        self.assertTrue(all(r["disposition"] == "ADD_TO_EXISTING_REGIONS" for r in a["rows"]))
+        self.assertTrue(all(r["regions"] for r in a["rows"]))
+        self.assertIn("UNASSIGNED_IDENTITY != NEW_MAJOR_REGION", a["laws"])
+        self.assertIn("NAVIGATION_MEMBERSHIP != COVERAGE", a["laws"])
+
+    def test_major_regions_v09_repairs_navigation_debt_without_anchor_or_region_growth(self) -> None:
+        old = json.loads((ROOT / "reference/canonical-major-regions-v0-8-20260819.json").read_text())
+        new = json.loads((ROOT / "reference/canonical-major-regions-v0-9-20260819.json").read_text())
+        self.assertEqual(len(old["regions"]), len(new["regions"]), 10)
+        old_by = {r["regionRef"]: r for r in old["regions"]}
+        new_by = {r["regionRef"]: r for r in new["regions"]}
+        self.assertEqual(set(old_by), set(new_by))
+        for ref in old_by:
+            self.assertEqual(old_by[ref]["anchorRefs"], new_by[ref]["anchorRefs"])
+            self.assertEqual(new_by[ref]["closureClaim"], "NONE")
+            self.assertEqual(new_by[ref]["membershipSemantics"], "NON_EXCLUSIVE")
+        self.assertEqual(new["navigationRepairRef"], "reference/external-reference-unassigned-identity-disposition-audit-v0-20260819.json")
+
+    def test_crosswalk_v08_reprojection_adds_zero_mappings_and_removes_stale_untouched_field(self) -> None:
+        old = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-7-20260819.json").read_text())
+        new = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-8-20260819.json").read_text())
+        self.assertEqual(len(old["mappings"]), len(new["mappings"]), 25)
+        self.assertEqual(old["mappings"], new["mappings"])
+        self.assertNotIn("explicitUntouchedIdentityCandidates", new)
+        self.assertEqual(new["legacyUntouchedCandidateFieldDisposition"]["status"], "REMOVED_FROM_CURRENT_PROJECTION_AS_SEMANTICALLY_STALE")
+        self.assertIn("!= ORDIVON_UNTOUCHED", new["currentFrontierSemantics"])
+        self.assertEqual(new["globalScalarCoverage"], "FORBIDDEN")
+
+    def test_frontier_matrix_v01_eliminates_no_region_debt_without_changing_mapping_facts(self) -> None:
+        old = json.loads((ROOT / "reference/external-reference-frontier-matrix-v0-20260819.json").read_text())
+        new = json.loads((ROOT / "reference/external-reference-frontier-matrix-v0-1-20260819.json").read_text())
+        self.assertEqual(len(old["rows"]), len(new["rows"]), 120)
+        self.assertEqual(old["counts"]["mappedIdentities"], new["counts"]["mappedIdentities"], 23)
+        self.assertEqual(old["counts"]["noDirectMappingCurrentPilot"], new["counts"]["noDirectMappingCurrentPilot"], 97)
+        self.assertEqual(old["counts"]["unmappedMajorRegionAnchors"], new["counts"]["unmappedMajorRegionAnchors"], 22)
+        self.assertEqual(old["counts"]["unmappedNoRegionMembers"], 11)
+        self.assertEqual(new["counts"]["unmappedNoRegionMembers"], 0)
+        facts_old = {r["externalRef"]: (r["factState"], tuple(r["mappedOwners"]), tuple(r["mappingRefs"])) for r in old["rows"]}
+        facts_new = {r["externalRef"]: (r["factState"], tuple(r["mappedOwners"]), tuple(r["mappingRefs"])) for r in new["rows"]}
+        self.assertEqual(facts_old, facts_new)
+
+    def test_frontier_priority_v01_is_nonscalar_inspection_overlay_not_research_value(self) -> None:
+        p = json.loads((ROOT / "reference/external-reference-frontier-priority-v0-1-20260819.json").read_text())
+        self.assertEqual(p["globalScalarPriority"], "FORBIDDEN")
+        self.assertEqual(p["classes"]["CURRENTLY_MAPPED_COUNT"], 23)
+        self.assertEqual(len(p["classes"]["NAVIGATION_FRONTIER_A"]), 22)
+        self.assertEqual(len(p["classes"]["NAVIGATION_FRONTIER_B"]), 20)
+        self.assertEqual(p["classes"]["NAVIGATION_FRONTIER_C_COUNT"], 55)
+        self.assertIn("PRIORITY_CLASS != EPISTEMIC_IMPORTANCE", p["laws"])
+        self.assertIn("NO_CURRENT_MAPPING != ABSENCE_OF_ORDIVON_RESEARCH", p["laws"])
+        self.assertTrue(all(r["aggregateCoverageTruth"] == "FORBIDDEN" for r in p["regionPostures"]))
+
+    def test_owner_frontier_status_separates_mapping_weak_out_of_scope_and_publication_unavailable(self) -> None:
+        o = json.loads((ROOT / "reference/external-reference-owner-frontier-status-v0-20260819.json").read_text())
+        by = {r["ownerResearchRef"]: r for r in o["rows"]}
+        self.assertEqual(len(by), 12)
+        self.assertEqual(by["research-owner:host"]["frontierState"], "CURRENT_EXTERNAL_MAPPING_WEAK")
+        self.assertEqual(by["research-owner:host"]["noveltyStanding"], "NOVELTY_NOT_ESTABLISHED")
+        self.assertEqual(by["research-owner:game"]["frontierState"], "CURRENT_OUT_OF_BOUNDED_REFERENCE_SCOPE")
+        self.assertEqual(by["research-owner:finance"]["frontierState"], "PUBLICATION_UNAVAILABLE")
+        self.assertEqual(by["research-owner:harness"]["frontierState"], "PUBLICATION_UNAVAILABLE")
+        self.assertIn("PUBLICATION_UNAVAILABLE != UNTOUCHED", o["laws"])
+
+
+    def test_whole_audit_v11_establishes_frontier_state_without_reopening_breadth(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v11-frontier-state-20260819.json").read_text())
+        c = a["counts"]
+        self.assertEqual(a["state"], "FRONTIER_STATE_MODEL_ESTABLISHED_BREADTH_PAUSE_MAINTAINED")
+        self.assertEqual(c["normalizedSpaces"], 120)
+        self.assertEqual(c["relations"], 256)
+        self.assertEqual(c["canonicalMajorRegionProjections"], 10)
+        self.assertEqual(c["crosswalkMappings"], 25)
+        self.assertEqual(c["mappedUniqueIdentities"], 23)
+        self.assertEqual(c["noDirectMappingCurrentPilot"], 97)
+        self.assertEqual((c["navigationFrontierA"], c["navigationFrontierB"], c["navigationFrontierC"]), (22, 20, 55))
+        self.assertEqual(c["unassignedBeforeRepair"], 11)
+        self.assertEqual(c["unassignedAfterRepair"], 0)
+        self.assertEqual(c["newMajorRegionsFromFrontierRepair"], 0)
+        self.assertEqual(c["newCoverageMappingsFromFrontierRepair"], 0)
+        self.assertEqual(a["breadthPosture"], "PAUSED_BY_BOUNDED_SATURATION_OPEN_WORLD_REOPENABLE")
+        self.assertEqual(a["coveragePosture"], "IDENTITY_LEVEL_SOURCE_FENCED_NO_SCALAR")
+        self.assertEqual(a["frontierPosture"], "RULE_BASED_NONSCALAR_INSPECTION_ONLY")
+        self.assertIn("NAVIGATION_OVERLAY != RESEARCH_VALUE", a["laws"])
+
+
 
 if __name__ == "__main__":
     unittest.main()

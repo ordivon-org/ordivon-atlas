@@ -1,0 +1,182 @@
+{
+  "counts": {
+    "addToExistingRegions": 11,
+    "breadthReopenTriggered": 0,
+    "newMajorRegionRequired": 0,
+    "remainRegionNeutral": 0,
+    "unassignedIdentities": 11
+  },
+  "date": "2026-08-19",
+  "finding": "All eleven previously unassigned identities can be navigated through existing regions without changing identity standing, anchors, owner coverage, or high-level region count. Their prior unassignment was navigation debt, not evidence for a missing eleventh region.",
+  "kind": "ordivon.external-reference-unassigned-identity-disposition-audit",
+  "laws": [
+    "UNASSIGNED_IDENTITY != NEW_MAJOR_REGION",
+    "PROFESSIONAL_APPLIED_DOMAIN_CAN_BE_REGION_MEMBER_WITHOUT_ROOT_STATUS",
+    "METHOD_AXIS_CAN_CROSS_MULTIPLE_REGIONS",
+    "NAVIGATION_MEMBERSHIP != COVERAGE",
+    "FRONTIER_AUDIT_CAN_REPAIR_PROJECTION_WITHOUT_CHANGING_IDENTITY_TRUTH",
+    "BREADTH_REOPEN_REQUIRES_STRUCTURAL_PRESSURE"
+  ],
+  "matrixRef": "reference/external-reference-frontier-matrix-v0-20260819.json",
+  "rows": [
+    {
+      "disposition": "ADD_TO_EXISTING_REGIONS",
+      "externalRef": "norm:agriculture",
+      "label": "Agricultural sciences and systems",
+      "reason": "Applied Earth/Life/Engineering bridge; region membership is navigation only.",
+      "regions": [
+        "navigation-region:life",
+        "navigation-region:earth-planetary-space",
+        "navigation-region:engineering-design"
+      ],
+      "roleClasses": [
+        "APPLIED_INTERVENTION_SYSTEM_DOMAIN",
+        "EARTH_LIFE_ENGINEERING_BRIDGE"
+      ]
+    },
+    {
+      "disposition": "ADD_TO_EXISTING_REGIONS",
+      "externalRef": "norm:analytical-chemistry",
+      "label": "Analytical chemistry",
+      "reason": "Major chemistry subspace/method axis; Physical & Material is sufficient navigation.",
+      "regions": [
+        "navigation-region:physical-material"
+      ],
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "METHODOLOGICAL_AXIS"
+      ]
+    },
+    {
+      "disposition": "ADD_TO_EXISTING_REGIONS",
+      "externalRef": "norm:basic-biomedical-science",
+      "label": "Basic biomedical sciences",
+      "reason": "Foundational life↔medicine translational source domain; Life navigation is appropriate without Medicine root admission.",
+      "regions": [
+        "navigation-region:life"
+      ],
+      "roleClasses": [
+        "FOUNDATIONAL_BRIDGE",
+        "TRANSLATIONAL_SOURCE_DOMAIN"
+      ]
+    },
+    {
+      "disposition": "ADD_TO_EXISTING_REGIONS",
+      "externalRef": "norm:biological-research-infrastructure",
+      "label": "Biological research infrastructure",
+      "reason": "Biological epistemic infrastructure; navigation member, not semantic Life subdiscipline.",
+      "regions": [
+        "navigation-region:life"
+      ],
+      "roleClasses": [
+        "EPISTEMIC_INFRASTRUCTURE"
+      ]
+    },
+    {
+      "disposition": "ADD_TO_EXISTING_REGIONS",
+      "externalRef": "norm:food-science",
+      "label": "Food science",
+      "reason": "Explicit bio/chem/microbio/engineering composite.",
+      "regions": [
+        "navigation-region:life",
+        "navigation-region:physical-material",
+        "navigation-region:engineering-design"
+      ],
+      "roleClasses": [
+        "APPLIED_TRANSLATIONAL_DOMAIN",
+        "COMPOSITE_DOMAIN",
+        "BIO_CHEM_MICROBIO_ENGINEERING_BRIDGE"
+      ]
+    },
+    {
+      "disposition": "ADD_TO_EXISTING_REGIONS",
+      "externalRef": "norm:information-science",
+      "label": "Information science",
+      "reason": "Knowledge-organization/applied-information bridge spans computing/information systems and social/institutional information practice.",
+      "regions": [
+        "navigation-region:computation-computer-systems",
+        "navigation-region:social-institutional-collective"
+      ],
+      "roleClasses": [
+        "MAJOR_DOMAIN_CANDIDATE",
+        "KNOWLEDGE_ORGANIZATION_BRIDGE",
+        "APPLIED_INFORMATION_DOMAIN"
+      ]
+    },
+    {
+      "disposition": "ADD_TO_EXISTING_REGIONS",
+      "externalRef": "norm:librarianship",
+      "label": "Librarianship and library studies",
+      "reason": "Applied information-access/professional infrastructure with cultural/institutional navigation relevance.",
+      "regions": [
+        "navigation-region:historical-cultural-interpretive",
+        "navigation-region:social-institutional-collective"
+      ],
+      "roleClasses": [
+        "APPLIED_PROFESSIONAL_DOMAIN",
+        "EPISTEMIC_INFRASTRUCTURE",
+        "INFORMATION_ACCESS_DOMAIN"
+      ]
+    },
+    {
+      "disposition": "ADD_TO_EXISTING_REGIONS",
+      "externalRef": "norm:measurement",
+      "label": "Measurement and metrology",
+      "reason": "Cross-domain methodological/epistemic infrastructure; explicit cross-membership avoids inventing a standalone region.",
+      "regions": [
+        "navigation-region:formal-inferential",
+        "navigation-region:physical-material",
+        "navigation-region:engineering-design"
+      ],
+      "roleClasses": [
+        "METHODOLOGICAL_AXIS",
+        "EPISTEMIC_INFRASTRUCTURE"
+      ]
+    },
+    {
+      "disposition": "ADD_TO_EXISTING_REGIONS",
+      "externalRef": "norm:medicine-health",
+      "label": "Medicine and health sciences",
+      "reason": "Applied professional/translation domain grounded in life science and embedded in health institutions; navigation does not imply whole Medicine coverage.",
+      "regions": [
+        "navigation-region:life",
+        "navigation-region:social-institutional-collective"
+      ],
+      "roleClasses": [
+        "APPLIED_PROFESSIONAL_DOMAIN",
+        "TRANSLATIONAL_DOMAIN"
+      ]
+    },
+    {
+      "disposition": "ADD_TO_EXISTING_REGIONS",
+      "externalRef": "norm:polymer-science",
+      "label": "Polymer science",
+      "reason": "Material chemistry/engineering bridge.",
+      "regions": [
+        "navigation-region:physical-material",
+        "navigation-region:engineering-design"
+      ],
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_SUBSPACE"
+      ]
+    },
+    {
+      "disposition": "ADD_TO_EXISTING_REGIONS",
+      "externalRef": "norm:soil-science",
+      "label": "Soil science",
+      "reason": "Environmental Earth↔Life bridge.",
+      "regions": [
+        "navigation-region:earth-planetary-space",
+        "navigation-region:life"
+      ],
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_ENVIRONMENTAL_SUBSPACE"
+      ]
+    }
+  ],
+  "schemaVersion": 1,
+  "state": "ELEVEN_UNASSIGNED_IDENTITIES_RESOLVED_WITH_EXISTING_REGIONS_NO_REOPEN",
+  "truthRole": "NON_AUTHORITATIVE_NAVIGATION_REPAIR_AUDIT"
+}

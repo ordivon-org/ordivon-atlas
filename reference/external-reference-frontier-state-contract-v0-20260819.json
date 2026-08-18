@@ -1,0 +1,58 @@
+{
+  "contractId": "external-reference-frontier:v0",
+  "date": "2026-08-19",
+  "forbiddenInferences": [
+    "Do not call all unmapped identities untouched.",
+    "Do not infer Finance→Economics or Harness→Computing coverage while those owners are not current Atlas publications.",
+    "Do not infer Host novelty from weak external mapping.",
+    "Do not turn anchor status or region count into ontology centrality.",
+    "Do not aggregate frontier classes into a percentage of human knowledge."
+  ],
+  "identityFactStates": {
+    "MAPPED_CURRENT_OWNER": "At least one source-fenced current owner has an explicit DIRECT_PARTIAL_COVERAGE or BRIDGE_COVERAGE mapping to this ReferenceIdentity.",
+    "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT": "No current mapping in the exact ten-owner crosswalk addresses this ReferenceIdentity. This is a pilot-state fact only and does not mean Ordivon never researched the area."
+  },
+  "kind": "ordivon.external-reference-frontier-state-contract",
+  "laws": [
+    "NO_CURRENT_MAPPING != ORDIVON_UNTOUCHED",
+    "NO_CURRENT_MAPPING != NO_HISTORICAL_RESEARCH",
+    "NO_CURRENT_MAPPING != NOVELTY",
+    "MAPPED != WHOLE_FIELD_COVERED",
+    "BRIDGE_COVERAGE != DIRECT_FIELD_EQUIVALENCE",
+    "MAJOR_REGION_ANCHOR != SEMANTIC_IMPORTANCE_SCORE",
+    "REGION_MEMBERSHIP != COVERAGE",
+    "GRAPH_DEGREE_CANNOT_SELF_AUTHORIZE_PRIORITY",
+    "OWNER_PUBLICATION_UNAVAILABLE != IDENTITY_UNTOUCHED",
+    "FRONTIER_PRIORITY != RESEARCH_VALUE_SCORE",
+    "GLOBAL_SCALAR_COVERAGE_FORBIDDEN"
+  ],
+  "mappingRelationFacets": [
+    "DIRECT_PARTIAL_COVERAGE",
+    "BRIDGE_COVERAGE"
+  ],
+  "navigationPriorityOverlays": {
+    "MAPPED_ANCHOR": "Mapped identity that is also a current MajorRegion anchor.",
+    "MAPPED_CROSS_REGION_MEMBER": "Mapped identity visible in two or more current MajorRegions.",
+    "MAPPED_SINGLE_REGION_MEMBER": "Mapped identity visible in one current MajorRegion.",
+    "UNMAPPED_CROSS_REGION_MEMBER": "Identity belongs to two or more current MajorRegion projections and has no current mapping. Cross-boundary navigation frontier.",
+    "UNMAPPED_MAJOR_REGION_ANCHOR": "Identity is an anchor of at least one current MajorRegion and has no current mapping. High navigation-frontier value; not semantic importance or ontology centrality.",
+    "UNMAPPED_NO_REGION_MEMBER": "Identity is normalized but currently belongs to no MajorRegion. This would be a topology-pressure signal, not automatically a coverage priority.",
+    "UNMAPPED_SINGLE_REGION_MEMBER": "Identity belongs to exactly one current MajorRegion and has no current mapping."
+  },
+  "ownerFrontierStates": {
+    "CURRENT_EXTERNAL_MAPPING_WEAK": "Current owner has mature research but no adequate direct external coordinate; adjacency does not count as coverage.",
+    "CURRENT_MAPPED": "Current owner has at least one identity mapping.",
+    "CURRENT_OUT_OF_BOUNDED_REFERENCE_SCOPE": "Current owner is valid/current but current bounded Reference World does not yet contain a directly relevant identity mapping.",
+    "NOVELTY_NOT_ESTABLISHED": "Novelty is explicitly not admitted; may coexist with mapped or weak-mapping states.",
+    "PUBLICATION_UNAVAILABLE": "Known Ordivon research owner/corpus is not a current Atlas owner source, so coverage absence must not be inferred."
+  },
+  "priorityClasses": {
+    "CURRENTLY_MAPPED": "Identity has current source-fenced mapping; inspect scope/depth rather than treating as frontier absence.",
+    "NAVIGATION_FRONTIER_A": "Unmapped MajorRegion anchor. Highest structural navigation inspection class.",
+    "NAVIGATION_FRONTIER_B": "Unmapped cross-region identity. High cross-boundary inspection class.",
+    "NAVIGATION_FRONTIER_C": "Unmapped single-region identity. Ordinary bounded frontier class.",
+    "TOPOLOGY_REOPEN_CANDIDATE": "Normalized identity with no MajorRegion placement; invokes saturation reopen logic only if a high-value cluster emerges."
+  },
+  "schemaVersion": 1,
+  "truthRole": "NON_AUTHORITATIVE_FRONTIER_ANALYSIS_CONTRACT"
+}

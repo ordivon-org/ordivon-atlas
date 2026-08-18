@@ -1,0 +1,47 @@
+{
+  "artifacts": [
+    "reference/external-reference-frontier-state-contract-v0-20260819.json",
+    "reference/external-reference-frontier-matrix-v0-20260819.json",
+    "reference/external-reference-unassigned-identity-disposition-audit-v0-20260819.json",
+    "reference/canonical-major-regions-v0-9-20260819.json",
+    "reference/coverage-crosswalk-foundational-pilot-v0-8-20260819.json",
+    "reference/external-reference-frontier-matrix-v0-1-20260819.json",
+    "reference/external-reference-frontier-priority-v0-1-20260819.json",
+    "reference/external-reference-owner-frontier-status-v0-20260819.json"
+  ],
+  "closure": "FRONTIER_V0_1_ACCEPTED_BREADTH_REOPEN_NOT_TRIGGERED",
+  "controls": [
+    "NO_CURRENT_MAPPING != ORDIVON_UNTOUCHED",
+    "FRONTIER_PRIORITY != RESEARCH_VALUE_SCORE",
+    "Navigation repair changes no coverage mapping",
+    "MajorRegion anchors remain unchanged",
+    "Global scalar coverage and priority remain forbidden",
+    "Finance/Harness publication absence remains distinct from untouchedness",
+    "Host weak mapping remains distinct from novelty"
+  ],
+  "counts": {
+    "identities": 120,
+    "majorRegions": 10,
+    "mappedIdentities": 23,
+    "mappingRows": 25,
+    "navigationFrontierA": 22,
+    "navigationFrontierB": 20,
+    "navigationFrontierC": 55,
+    "noDirectMappingCurrentPilot": 97,
+    "noRegionAfterRepair": 0,
+    "noRegionBeforeRepair": 11,
+    "ownerFrontierRows": 12,
+    "unassignedDispositionRows": 11
+  },
+  "date": "2026-08-19",
+  "kind": "ordivon.external-reference-frontier-state-v0-1-acceptance",
+  "schemaVersion": 1,
+  "state": "FRONTIER_FACT_NAVIGATION_OWNER_STATE_SEPARATION_ACCEPTED",
+  "truthRole": "HISTORICAL_FRONTIER_STATE_DOGFOOD_EVIDENCE",
+  "verification": {
+    "fullSuiteJob": "job-01a01698-d0c4-7740-b96f-e87e869ab4f0",
+    "fullSuiteResult": "177 tests OK; 28 gated skips; 149 deterministic tests executed",
+    "referenceSuiteJob": "job-01a01698-a0c5-7440-b13c-6da722b932ae",
+    "referenceSuiteResult": "140/140 PASS"
+  }
+}

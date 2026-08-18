@@ -1,0 +1,676 @@
+{
+  "classes": {
+    "CURRENTLY_MAPPED_COUNT": 23,
+    "NAVIGATION_FRONTIER_A": [
+      {
+        "externalRef": "norm:astronomy",
+        "label": "Astronomy and astrophysics",
+        "regions": [
+          "navigation-region:earth-planetary-space"
+        ]
+      },
+      {
+        "externalRef": "norm:biology",
+        "label": "Biology",
+        "regions": [
+          "navigation-region:life"
+        ]
+      },
+      {
+        "externalRef": "norm:chemistry",
+        "label": "Chemistry",
+        "regions": [
+          "navigation-region:physical-material"
+        ]
+      },
+      {
+        "externalRef": "norm:cultural-studies",
+        "label": "Cultural studies",
+        "regions": [
+          "navigation-region:historical-cultural-interpretive"
+        ]
+      },
+      {
+        "externalRef": "norm:design",
+        "label": "Design",
+        "regions": [
+          "navigation-region:engineering-design"
+        ]
+      },
+      {
+        "externalRef": "norm:earth-science",
+        "label": "Earth science / geoscience",
+        "regions": [
+          "navigation-region:earth-planetary-space"
+        ]
+      },
+      {
+        "externalRef": "norm:ecology",
+        "label": "Ecology",
+        "regions": [
+          "navigation-region:life"
+        ]
+      },
+      {
+        "externalRef": "norm:economics",
+        "label": "Economics",
+        "regions": [
+          "navigation-region:social-institutional-collective"
+        ]
+      },
+      {
+        "externalRef": "norm:engineering",
+        "label": "Engineering",
+        "regions": [
+          "navigation-region:engineering-design"
+        ]
+      },
+      {
+        "externalRef": "norm:epistemology",
+        "label": "Epistemology",
+        "regions": [
+          "navigation-region:philosophical-conceptual"
+        ]
+      },
+      {
+        "externalRef": "norm:history",
+        "label": "History",
+        "regions": [
+          "navigation-region:historical-cultural-interpretive"
+        ]
+      },
+      {
+        "externalRef": "norm:literary-studies",
+        "label": "Literary studies and comparative literature",
+        "regions": [
+          "navigation-region:historical-cultural-interpretive"
+        ]
+      },
+      {
+        "externalRef": "norm:logic",
+        "label": "Logic",
+        "regions": [
+          "navigation-region:formal-inferential",
+          "navigation-region:philosophical-conceptual"
+        ]
+      },
+      {
+        "externalRef": "norm:materials",
+        "label": "Materials science and engineering",
+        "regions": [
+          "navigation-region:engineering-design",
+          "navigation-region:physical-material"
+        ]
+      },
+      {
+        "externalRef": "norm:mathematics",
+        "label": "Mathematics",
+        "regions": [
+          "navigation-region:formal-inferential"
+        ]
+      },
+      {
+        "externalRef": "norm:philosophy",
+        "label": "Philosophy",
+        "regions": [
+          "navigation-region:philosophical-conceptual"
+        ]
+      },
+      {
+        "externalRef": "norm:physics",
+        "label": "Physics",
+        "regions": [
+          "navigation-region:physical-material"
+        ]
+      },
+      {
+        "externalRef": "norm:planetary-science",
+        "label": "Planetary science",
+        "regions": [
+          "navigation-region:earth-planetary-space"
+        ]
+      },
+      {
+        "externalRef": "norm:political-science",
+        "label": "Political science",
+        "regions": [
+          "navigation-region:social-institutional-collective"
+        ]
+      },
+      {
+        "externalRef": "norm:sociology",
+        "label": "Sociology",
+        "regions": [
+          "navigation-region:social-institutional-collective"
+        ]
+      },
+      {
+        "externalRef": "norm:statistics",
+        "label": "Statistics",
+        "regions": [
+          "navigation-region:formal-inferential"
+        ]
+      },
+      {
+        "externalRef": "norm:systems-engineering",
+        "label": "Systems engineering",
+        "regions": [
+          "navigation-region:engineering-design"
+        ]
+      }
+    ],
+    "NAVIGATION_FRONTIER_B": [
+      {
+        "externalRef": "norm:aesthetics",
+        "label": "Aesthetics",
+        "regions": [
+          "navigation-region:historical-cultural-interpretive",
+          "navigation-region:philosophical-conceptual"
+        ]
+      },
+      {
+        "externalRef": "norm:agriculture",
+        "label": "Agricultural sciences and systems",
+        "regions": [
+          "navigation-region:earth-planetary-space",
+          "navigation-region:engineering-design",
+          "navigation-region:life"
+        ]
+      },
+      {
+        "externalRef": "norm:anthropology",
+        "label": "Anthropology",
+        "regions": [
+          "navigation-region:historical-cultural-interpretive",
+          "navigation-region:social-institutional-collective"
+        ]
+      },
+      {
+        "externalRef": "norm:area-regional-studies",
+        "label": "Area and regional studies",
+        "regions": [
+          "navigation-region:historical-cultural-interpretive",
+          "navigation-region:social-institutional-collective"
+        ]
+      },
+      {
+        "externalRef": "norm:biochemistry",
+        "label": "Biochemistry",
+        "regions": [
+          "navigation-region:life",
+          "navigation-region:physical-material"
+        ]
+      },
+      {
+        "externalRef": "norm:computer-engineering",
+        "label": "Computer engineering",
+        "regions": [
+          "navigation-region:computation-computer-systems",
+          "navigation-region:engineering-design"
+        ]
+      },
+      {
+        "externalRef": "norm:control-engineering",
+        "label": "Control engineering",
+        "regions": [
+          "navigation-region:computation-computer-systems",
+          "navigation-region:engineering-design"
+        ]
+      },
+      {
+        "externalRef": "norm:food-science",
+        "label": "Food science",
+        "regions": [
+          "navigation-region:engineering-design",
+          "navigation-region:life",
+          "navigation-region:physical-material"
+        ]
+      },
+      {
+        "externalRef": "norm:gender-sexuality-studies",
+        "label": "Women’s, gender, and sexuality studies",
+        "regions": [
+          "navigation-region:historical-cultural-interpretive",
+          "navigation-region:social-institutional-collective"
+        ]
+      },
+      {
+        "externalRef": "norm:geography",
+        "label": "Geography",
+        "regions": [
+          "navigation-region:earth-planetary-space",
+          "navigation-region:social-institutional-collective"
+        ]
+      },
+      {
+        "externalRef": "norm:information-science",
+        "label": "Information science",
+        "regions": [
+          "navigation-region:computation-computer-systems",
+          "navigation-region:social-institutional-collective"
+        ]
+      },
+      {
+        "externalRef": "norm:information-theory",
+        "label": "Information theory",
+        "regions": [
+          "navigation-region:computation-computer-systems",
+          "navigation-region:formal-inferential"
+        ]
+      },
+      {
+        "externalRef": "norm:librarianship",
+        "label": "Librarianship and library studies",
+        "regions": [
+          "navigation-region:historical-cultural-interpretive",
+          "navigation-region:social-institutional-collective"
+        ]
+      },
+      {
+        "externalRef": "norm:measurement",
+        "label": "Measurement and metrology",
+        "regions": [
+          "navigation-region:engineering-design",
+          "navigation-region:formal-inferential",
+          "navigation-region:physical-material"
+        ]
+      },
+      {
+        "externalRef": "norm:medicine-health",
+        "label": "Medicine and health sciences",
+        "regions": [
+          "navigation-region:life",
+          "navigation-region:social-institutional-collective"
+        ]
+      },
+      {
+        "externalRef": "norm:philosophy-of-mind",
+        "label": "Philosophy of mind and cognition",
+        "regions": [
+          "navigation-region:mind-language",
+          "navigation-region:philosophical-conceptual"
+        ]
+      },
+      {
+        "externalRef": "norm:polymer-science",
+        "label": "Polymer science",
+        "regions": [
+          "navigation-region:engineering-design",
+          "navigation-region:physical-material"
+        ]
+      },
+      {
+        "externalRef": "norm:science-technology-studies",
+        "label": "Science and technology studies",
+        "regions": [
+          "navigation-region:engineering-design",
+          "navigation-region:philosophical-conceptual",
+          "navigation-region:social-institutional-collective"
+        ]
+      },
+      {
+        "externalRef": "norm:software-engineering",
+        "label": "Software engineering",
+        "regions": [
+          "navigation-region:computation-computer-systems",
+          "navigation-region:engineering-design"
+        ]
+      },
+      {
+        "externalRef": "norm:soil-science",
+        "label": "Soil science",
+        "regions": [
+          "navigation-region:earth-planetary-space",
+          "navigation-region:life"
+        ]
+      }
+    ],
+    "NAVIGATION_FRONTIER_C_COUNT": 55
+  },
+  "date": "2026-08-19",
+  "globalScalarPriority": "FORBIDDEN",
+  "kind": "ordivon.external-reference-frontier-priority-projection",
+  "laws": [
+    "PRIORITY_CLASS != EPISTEMIC_IMPORTANCE",
+    "ANCHOR_GAP != WHOLE_FIELD_UNTOUCHED",
+    "CROSS_REGION_GAP != NOVELTY",
+    "REGION_POSTURE != COVERAGE_SCORE",
+    "NO_CURRENT_MAPPING != ABSENCE_OF_ORDIVON_RESEARCH"
+  ],
+  "matrixRef": "reference/external-reference-frontier-matrix-v0-1-20260819.json",
+  "regionPostures": [
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:logic",
+        "norm:mathematics",
+        "norm:statistics"
+      ],
+      "frontierARefs": [
+        "norm:logic",
+        "norm:mathematics",
+        "norm:statistics"
+      ],
+      "frontierBRefs": [
+        "norm:information-theory",
+        "norm:measurement"
+      ],
+      "frontierPosture": "ANCHOR_GAP_WITH_MAPPED_BRIDGES_OR_SUBSPACES",
+      "label": "Formal & Inferential Structures",
+      "mappedAnchorRefs": [],
+      "mappedMemberRefs": [
+        "norm:formal-methods",
+        "norm:formal-semantics"
+      ],
+      "regionRef": "navigation-region:formal-inferential",
+      "unmappedAnchorRefs": [
+        "norm:logic",
+        "norm:mathematics",
+        "norm:statistics"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:computation",
+        "norm:networking-communication",
+        "norm:operating-systems"
+      ],
+      "frontierARefs": [],
+      "frontierBRefs": [
+        "norm:computer-engineering",
+        "norm:control-engineering",
+        "norm:information-science",
+        "norm:information-theory",
+        "norm:software-engineering"
+      ],
+      "frontierPosture": "ALL_ANCHORS_SOURCE_FENCED_MAPPED",
+      "label": "Computation & Computer Systems",
+      "mappedAnchorRefs": [
+        "norm:computation",
+        "norm:networking-communication",
+        "norm:operating-systems"
+      ],
+      "mappedMemberRefs": [
+        "norm:computation",
+        "norm:formal-methods",
+        "norm:formal-semantics",
+        "norm:human-computer-interaction",
+        "norm:networking-communication",
+        "norm:operating-systems",
+        "norm:systems-fundamentals"
+      ],
+      "regionRef": "navigation-region:computation-computer-systems",
+      "unmappedAnchorRefs": []
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:epistemology",
+        "norm:metaphysics",
+        "norm:philosophy"
+      ],
+      "frontierARefs": [
+        "norm:epistemology",
+        "norm:logic",
+        "norm:philosophy"
+      ],
+      "frontierBRefs": [
+        "norm:aesthetics",
+        "norm:philosophy-of-mind",
+        "norm:science-technology-studies"
+      ],
+      "frontierPosture": "PARTIAL_ANCHOR_MAPPING",
+      "label": "Philosophical & Conceptual Inquiry",
+      "mappedAnchorRefs": [
+        "norm:metaphysics"
+      ],
+      "mappedMemberRefs": [
+        "norm:ethics-value-theory",
+        "norm:metaphysics",
+        "norm:philosophy-of-science",
+        "norm:semiotics"
+      ],
+      "regionRef": "navigation-region:philosophical-conceptual",
+      "unmappedAnchorRefs": [
+        "norm:epistemology",
+        "norm:philosophy"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:chemistry",
+        "norm:materials",
+        "norm:physics"
+      ],
+      "frontierARefs": [
+        "norm:chemistry",
+        "norm:materials",
+        "norm:physics"
+      ],
+      "frontierBRefs": [
+        "norm:biochemistry",
+        "norm:food-science",
+        "norm:measurement",
+        "norm:polymer-science"
+      ],
+      "frontierPosture": "NO_CURRENT_MAPPING_IN_REGION",
+      "label": "Physical & Material",
+      "mappedAnchorRefs": [],
+      "mappedMemberRefs": [],
+      "regionRef": "navigation-region:physical-material",
+      "unmappedAnchorRefs": [
+        "norm:chemistry",
+        "norm:materials",
+        "norm:physics"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:astronomy",
+        "norm:earth-science",
+        "norm:planetary-science"
+      ],
+      "frontierARefs": [
+        "norm:astronomy",
+        "norm:earth-science",
+        "norm:planetary-science"
+      ],
+      "frontierBRefs": [
+        "norm:agriculture",
+        "norm:geography",
+        "norm:soil-science"
+      ],
+      "frontierPosture": "NO_CURRENT_MAPPING_IN_REGION",
+      "label": "Earth, Planetary & Space Systems",
+      "mappedAnchorRefs": [],
+      "mappedMemberRefs": [],
+      "regionRef": "navigation-region:earth-planetary-space",
+      "unmappedAnchorRefs": [
+        "norm:astronomy",
+        "norm:earth-science",
+        "norm:planetary-science"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:biology",
+        "norm:ecology",
+        "norm:genetics"
+      ],
+      "frontierARefs": [
+        "norm:biology",
+        "norm:ecology"
+      ],
+      "frontierBRefs": [
+        "norm:agriculture",
+        "norm:biochemistry",
+        "norm:food-science",
+        "norm:medicine-health",
+        "norm:soil-science"
+      ],
+      "frontierPosture": "PARTIAL_ANCHOR_MAPPING",
+      "label": "Life & Biological Organization",
+      "mappedAnchorRefs": [
+        "norm:genetics"
+      ],
+      "mappedMemberRefs": [
+        "norm:developmental-science",
+        "norm:evolutionary-biology",
+        "norm:genetics",
+        "norm:neuroscience",
+        "norm:physiology"
+      ],
+      "regionRef": "navigation-region:life",
+      "unmappedAnchorRefs": [
+        "norm:biology",
+        "norm:ecology"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:cognitive-science",
+        "norm:linguistics",
+        "norm:psychology"
+      ],
+      "frontierARefs": [],
+      "frontierBRefs": [
+        "norm:philosophy-of-mind"
+      ],
+      "frontierPosture": "ALL_ANCHORS_SOURCE_FENCED_MAPPED",
+      "label": "Mind, Cognition & Language",
+      "mappedAnchorRefs": [
+        "norm:cognitive-science",
+        "norm:linguistics",
+        "norm:psychology"
+      ],
+      "mappedMemberRefs": [
+        "norm:affective-science",
+        "norm:cognitive-science",
+        "norm:consciousness-science",
+        "norm:developmental-science",
+        "norm:linguistics",
+        "norm:neuroscience",
+        "norm:psychology",
+        "norm:semiotics"
+      ],
+      "regionRef": "navigation-region:mind-language",
+      "unmappedAnchorRefs": []
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:design",
+        "norm:engineering",
+        "norm:systems-engineering"
+      ],
+      "frontierARefs": [
+        "norm:design",
+        "norm:engineering",
+        "norm:materials",
+        "norm:systems-engineering"
+      ],
+      "frontierBRefs": [
+        "norm:agriculture",
+        "norm:computer-engineering",
+        "norm:control-engineering",
+        "norm:food-science",
+        "norm:measurement",
+        "norm:polymer-science",
+        "norm:science-technology-studies",
+        "norm:software-engineering"
+      ],
+      "frontierPosture": "ANCHOR_GAP_WITH_MAPPED_BRIDGES_OR_SUBSPACES",
+      "label": "Engineering, Design & Realization",
+      "mappedAnchorRefs": [],
+      "mappedMemberRefs": [
+        "norm:formal-methods",
+        "norm:human-computer-interaction"
+      ],
+      "regionRef": "navigation-region:engineering-design",
+      "unmappedAnchorRefs": [
+        "norm:design",
+        "norm:engineering",
+        "norm:systems-engineering"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:cultural-studies",
+        "norm:history",
+        "norm:literary-studies"
+      ],
+      "frontierARefs": [
+        "norm:cultural-studies",
+        "norm:history",
+        "norm:literary-studies"
+      ],
+      "frontierBRefs": [
+        "norm:aesthetics",
+        "norm:anthropology",
+        "norm:area-regional-studies",
+        "norm:gender-sexuality-studies",
+        "norm:librarianship"
+      ],
+      "frontierPosture": "ANCHOR_GAP_WITH_MAPPED_BRIDGES_OR_SUBSPACES",
+      "label": "Historical, Cultural & Interpretive",
+      "mappedAnchorRefs": [],
+      "mappedMemberRefs": [
+        "norm:media-studies",
+        "norm:semiotics"
+      ],
+      "regionRef": "navigation-region:historical-cultural-interpretive",
+      "unmappedAnchorRefs": [
+        "norm:cultural-studies",
+        "norm:history",
+        "norm:literary-studies"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:economics",
+        "norm:political-science",
+        "norm:sociology"
+      ],
+      "frontierARefs": [
+        "norm:economics",
+        "norm:political-science",
+        "norm:sociology"
+      ],
+      "frontierBRefs": [
+        "norm:anthropology",
+        "norm:area-regional-studies",
+        "norm:gender-sexuality-studies",
+        "norm:geography",
+        "norm:information-science",
+        "norm:librarianship",
+        "norm:medicine-health",
+        "norm:science-technology-studies"
+      ],
+      "frontierPosture": "ANCHOR_GAP_WITH_MAPPED_BRIDGES_OR_SUBSPACES",
+      "label": "Social, Institutional & Collective Systems",
+      "mappedAnchorRefs": [],
+      "mappedMemberRefs": [
+        "norm:communication-studies",
+        "norm:developmental-science",
+        "norm:media-studies",
+        "norm:psychology"
+      ],
+      "regionRef": "navigation-region:social-institutional-collective",
+      "unmappedAnchorRefs": [
+        "norm:economics",
+        "norm:political-science",
+        "norm:sociology"
+      ]
+    }
+  ],
+  "schemaVersion": 2,
+  "state": "RULE_BASED_NONSCALAR_FRONTIER_PRIORITY_AFTER_NAVIGATION_REPAIR",
+  "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PRIORITY_PROJECTION"
+}
