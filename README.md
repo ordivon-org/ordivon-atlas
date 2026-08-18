@@ -38,6 +38,12 @@ When a source is unhealthy and a prior source-fenced projection exists, Atlas re
 
 Result standing, epistemic verdict, evidence scope, and structural role are projected from authority-qualified statements targeting the exact `ResultRef`. Atlas does not inherit a closeout-wide status onto every result. If an owner publication lacks explicit result classification, the result remains discoverable with `classificationHealth=UNKNOWN` rather than receiving fabricated standing.
 
+## Curated synthesis
+
+[`synthesis/`](synthesis/) is a Git-durable, manually curated **non-authoritative cross-owner synthesis layer**. It exists to preserve high-value conceptual compression, Human-facing explanation, and prior-result/anti-rediscovery guidance that would otherwise remain trapped in conversations or be repeatedly re-derived.
+
+Synthesis entries do not replace owner-current publications and must be repaired or marked stale when their source owners materially advance.
+
 ## Generated views
 
 `ordivon-atlas refresh` produces:
