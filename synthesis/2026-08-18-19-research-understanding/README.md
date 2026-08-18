@@ -19,6 +19,19 @@ This collection does **not** canonize the conversation transcript. It extracts o
 - [`human-ordivon-learning-map.md`](human-ordivon-learning-map.md) — Human Core / Working Knowledge / Retrievable Knowledge / Machine Memory model.
 - [`anti-rediscovery.md`](anti-rediscovery.md) — prior-result lookup and duplicate-research guard.
 
+## Process-lineage companion
+
+The conversation that produced this collection is also represented, at a different truth role, in:
+
+[`../research-process-lineage/episodes/2026-08-18-19-research-understanding-and-anti-rediscovery.md`](../research-process-lineage/episodes/2026-08-18-19-research-understanding-and-anti-rediscovery.md)
+
+The distinction is intentional:
+
+- this directory preserves **what was learned/compressed**;
+- `research-process-lineage/` preserves **why the durable synthesis layer became necessary, what alternatives were rejected, and what new process-memory gap remained after assimilation**.
+
+Neither is owner semantic authority.
+
 ## Durable upstreams already known
 
 Substantial parts of this synthesis are already represented in durable sources, especially:
