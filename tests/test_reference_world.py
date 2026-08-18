@@ -954,6 +954,110 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
         self.assertIn("THREE_OWNER_REPLICATION != CONSTITUTION", a["laws"])
 
 
+    def test_round5a_adds_eight_nonroot_social_cultural_boundary_identities(self) -> None:
+        r = json.loads((ROOT / "reference/external-reference-round5a-social-cultural-normalization-20260819.json").read_text())
+        by = {x["spaceRef"]: x for x in r["normalizedSpaces"]}
+        self.assertEqual(set(by), {
+            "norm:anthropology", "norm:archaeology", "norm:sociology", "norm:education-research",
+            "norm:geography", "norm:economics", "norm:political-science", "norm:legal-science",
+        })
+        self.assertEqual(len(r["relations"]), 28)
+        for x in by.values():
+            self.assertEqual(x["rootAdmission"], "NOT_ADMITTED")
+            self.assertGreaterEqual(len(x["placements"]), 7)
+            self.assertGreaterEqual(len(x["roleClasses"]), 3)
+
+    def test_round5a_broad_classification_does_not_mint_ontology(self) -> None:
+        r = json.loads((ROOT / "reference/external-reference-round5a-social-cultural-normalization-20260819.json").read_text())
+        self.assertIn("NOT_ONTOLOGY", " ".join(x["role"] for x in r["broadRecallSources"].values()))
+        self.assertIn("BROAD_CLASSIFICATION_VIEW != ONTOLOGY_TRUTH", r["laws"])
+        self.assertIn("SOCIAL_SCIENCES_BUCKET != CANONICAL_ROOT", r["laws"])
+
+    def test_round5a_preserves_cross_natural_social_identity_boundaries(self) -> None:
+        r = json.loads((ROOT / "reference/external-reference-round5a-social-cultural-normalization-20260819.json").read_text())
+        by = {x["spaceRef"]: x for x in r["normalizedSpaces"]}
+        anth = by["norm:anthropology"]
+        geo = by["norm:geography"]
+        for p in ("human-biology", "archaeology", "culture", "linguistics", "society"):
+            self.assertIn(p, anth["placements"])
+        for p in ("earth-environment", "human-environment", "physical-geography", "society"):
+            self.assertIn(p, geo["placements"])
+        self.assertIn("ANTHROPOLOGY != SOCIOLOGY_SUBSPACE", r["laws"])
+        self.assertIn("GEOGRAPHY != EARTH_SCIENCE_CHILD", r["laws"])
+
+    def test_round5a_preserves_ordivon_owner_firewalls(self) -> None:
+        r = json.loads((ROOT / "reference/external-reference-round5a-social-cultural-normalization-20260819.json").read_text())
+        self.assertIn("ECONOMICS != ORDIVON_FINANCE", r["laws"])
+        self.assertIn("POLITICAL_SCIENCE != GENERIC_GOVERNANCE_OWNER", r["laws"])
+        self.assertIn("LEGAL_SCIENCE != ORDIVON_NORMATIVE", r["laws"])
+        refs = {x["spaceRef"] for x in r["normalizedSpaces"]}
+        self.assertFalse(any("ordivon" in x for x in refs))
+
+    def test_round5a_archaeology_is_explicit_and_relations_resolve(self) -> None:
+        r = json.loads((ROOT / "reference/external-reference-round5a-social-cultural-normalization-20260819.json").read_text())
+        self.assertIn("norm:archaeology", {x["spaceRef"] for x in r["normalizedSpaces"]})
+        paths = [
+            "reference/foundational-census-round2a-normalization-20260819.json",
+            "reference/foundational-census-round2b-normalization-20260819.json",
+            "reference/foundational-census-round2c-residual-normalization-20260819.json",
+            "reference/foundational-census-round3a-breadth-normalization-20260819.json",
+            "reference/foundational-reference-round4a-crosswalk-induced-repair-20260819.json",
+            "reference/foundational-reference-round4b-scd-crosswalk-repair-20260819.json",
+            "reference/foundational-reference-round4c-human-crosswalk-repair-20260819.json",
+            "reference/foundational-reference-round4d-media-crosswalk-repair-20260819.json",
+            "reference/external-reference-round5a-social-cultural-normalization-20260819.json",
+        ]
+        rounds = [json.loads((ROOT / p).read_text()) for p in paths]
+        refs = {x["spaceRef"] for rr in rounds for x in rr["normalizedSpaces"]}
+        for rel in rounds[-1]["relations"]:
+            self.assertIn(rel["from"], refs, rel)
+            self.assertIn(rel["to"], refs, rel)
+
+    def test_round5a_navigation_candidates_are_useful_but_not_admitted(self) -> None:
+        d = json.loads((ROOT / "reference/social-cultural-major-region-pre-admission-dogfood-20260819.json").read_text())
+        self.assertEqual(d["state"], "TWO_CANDIDATES_NAVIGATION_USEFUL_BUT_BREADTH_UNSTABLE_NO_ADMISSION")
+        self.assertEqual(d["admittedRegions"], [])
+        self.assertEqual(len(d["deferredRegions"]), 2)
+        for c in d["candidates"]:
+            self.assertEqual(c["gateResults"]["G2_NAVIGATION_DELETION_HARM"], "PASS_BOUNDED_FIXTURES")
+            self.assertEqual(c["gateResults"]["G7_STABILITY"], "DEFERRED_BREADTH_PERTURBATION_GAPS")
+            self.assertEqual(c["admission"], "DEFERRED")
+            self.assertGreaterEqual(len(c["knownBreadthGaps"]), 4)
+            self.assertTrue(all(x["result"] == "PASS" for x in c["navigationFixtures"]))
+
+    def test_round5a_navigation_deletion_harm_does_not_override_stability(self) -> None:
+        d = json.loads((ROOT / "reference/social-cultural-major-region-pre-admission-dogfood-20260819.json").read_text())
+        self.assertIn("NAVIGATION_DELETION_HARM_PASS != STABILITY_PASS", d["laws"])
+        self.assertIn("KNOWN_BREADTH_GAP_BLOCKS_MAJOR_REGION_ADMISSION", d["laws"])
+        self.assertIn("IDENTITY_MAY_REMAIN_UNASSIGNED", d["laws"])
+
+    def test_major_regions_v06_preserve_eight_regions_and_defer_social_cultural_candidates(self) -> None:
+        nav = json.loads((ROOT / "reference/canonical-major-regions-v0-6-20260819.json").read_text())
+        self.assertEqual(len(nav["regions"]), 8)
+        self.assertEqual(len(nav["deferredNavigationPressure"]), 2)
+        self.assertEqual({x["candidateRef"] for x in nav["deferredNavigationPressure"]}, {
+            "candidate-region:historical-cultural-interpretive",
+            "candidate-region:social-institutional-collective",
+        })
+        self.assertTrue(all("DEFERRED" in x["status"] for x in nav["deferredNavigationPressure"]))
+        self.assertEqual(nav["coverageCrosswalk"], "IDENTITY_LEVEL_ONLY")
+
+    def test_whole_audit_v8_tracks_round5a_without_region_promotion(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v8-social-cultural-precensus-20260819.json").read_text())
+        self.assertEqual(a["counts"]["normalizedSpaces"], 98)
+        self.assertEqual(a["counts"]["relations"], 148)
+        self.assertEqual(a["counts"]["multiPlacementSpaces"], 95)
+        self.assertEqual(a["counts"]["multiRoleSpaces"], 95)
+        self.assertEqual(a["counts"]["round5aNewIdentities"], 8)
+        self.assertEqual(a["counts"]["round5aNewRelations"], 28)
+        self.assertEqual(a["counts"]["socialCulturalNavigationCandidates"], 2)
+        self.assertEqual(a["counts"]["round5aNewMajorRegionAdmissions"], 0)
+        self.assertEqual(a["counts"]["explicitRound5bBreadthResiduals"], 10)
+        self.assertEqual(a["counts"]["identityLabelCollisions"], 0)
+        self.assertEqual(a["counts"]["brokenRelations"], 0)
+        self.assertEqual(a["globalScalarCoverage"], "FORBIDDEN")
+
+
 
 if __name__ == "__main__":
     unittest.main()

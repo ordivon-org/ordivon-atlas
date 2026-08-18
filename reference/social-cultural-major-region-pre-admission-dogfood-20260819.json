@@ -1,0 +1,201 @@
+{
+  "admittedRegions": [],
+  "candidates": [
+    {
+      "admission": "DEFERRED",
+      "anchorRefs": [
+        "norm:history",
+        "norm:archaeology",
+        "norm:religious-studies"
+      ],
+      "candidateRef": "candidate-region:historical-cultural-interpretive",
+      "gateResults": {
+        "G1_REFERENCE_SUPPORT": "PASS",
+        "G2_NAVIGATION_DELETION_HARM": "PASS_BOUNDED_FIXTURES",
+        "G3_SCOPE_COHERENCE": "PROVISIONAL_PASS",
+        "G4_TOPOLOGY_PRESERVATION": "PASS_NONEXCLUSIVE",
+        "G5_NON_AUTHORITY": "PASS_BY_CONTRACT",
+        "G6_OPEN_WORLD": "PASS_BY_CONTRACT",
+        "G7_STABILITY": "DEFERRED_BREADTH_PERTURBATION_GAPS"
+      },
+      "knownBreadthGaps": [
+        "Cultural studies",
+        "Literary studies / comparative literature",
+        "Art history / visual studies",
+        "Heritage / museum studies"
+      ],
+      "label": "Historical, Cultural & Interpretive",
+      "memberRefs": [
+        "norm:history",
+        "norm:archaeology",
+        "norm:classics",
+        "norm:philology",
+        "norm:religious-studies",
+        "norm:media-studies",
+        "norm:semiotics",
+        "norm:anthropology",
+        "norm:aesthetics"
+      ],
+      "missingRefs": [],
+      "navigationFixtures": [
+        {
+          "candidateRef": "candidate-region:historical-cultural-interpretive",
+          "deletionCostIncrease": 3,
+          "fixture": "R5A-HCI-1",
+          "missingFromCandidate": [],
+          "queryRefs": [
+            "norm:history",
+            "norm:archaeology",
+            "norm:classics",
+            "norm:philology"
+          ],
+          "result": "PASS",
+          "withRegionEntryCost": 1,
+          "withoutRegionRawIdentityEntryCost": 4
+        },
+        {
+          "candidateRef": "candidate-region:historical-cultural-interpretive",
+          "deletionCostIncrease": 3,
+          "fixture": "R5A-HCI-2",
+          "missingFromCandidate": [],
+          "queryRefs": [
+            "norm:history",
+            "norm:religious-studies",
+            "norm:media-studies",
+            "norm:semiotics"
+          ],
+          "result": "PASS",
+          "withRegionEntryCost": 1,
+          "withoutRegionRawIdentityEntryCost": 4
+        }
+      ]
+    },
+    {
+      "admission": "DEFERRED",
+      "anchorRefs": [
+        "norm:sociology",
+        "norm:economics",
+        "norm:political-science"
+      ],
+      "candidateRef": "candidate-region:social-institutional-collective",
+      "gateResults": {
+        "G1_REFERENCE_SUPPORT": "PASS",
+        "G2_NAVIGATION_DELETION_HARM": "PASS_BOUNDED_FIXTURES",
+        "G3_SCOPE_COHERENCE": "PROVISIONAL_PASS",
+        "G4_TOPOLOGY_PRESERVATION": "PASS_NONEXCLUSIVE",
+        "G5_NON_AUTHORITY": "PASS_BY_CONTRACT",
+        "G6_OPEN_WORLD": "PASS_BY_CONTRACT",
+        "G7_STABILITY": "DEFERRED_BREADTH_PERTURBATION_GAPS"
+      },
+      "knownBreadthGaps": [
+        "Demography / population studies",
+        "Public administration / public policy",
+        "Business / management studies",
+        "Criminology / criminal justice studies",
+        "Social policy / social work",
+        "Human geography as explicit Geography subspace"
+      ],
+      "label": "Social, Institutional & Collective Systems",
+      "memberRefs": [
+        "norm:sociology",
+        "norm:anthropology",
+        "norm:communication-studies",
+        "norm:media-studies",
+        "norm:education-research",
+        "norm:economics",
+        "norm:political-science",
+        "norm:legal-science",
+        "norm:geography",
+        "norm:psychology",
+        "norm:developmental-science"
+      ],
+      "missingRefs": [],
+      "navigationFixtures": [
+        {
+          "candidateRef": "candidate-region:social-institutional-collective",
+          "deletionCostIncrease": 3,
+          "fixture": "R5A-SIC-1",
+          "missingFromCandidate": [],
+          "queryRefs": [
+            "norm:sociology",
+            "norm:economics",
+            "norm:political-science",
+            "norm:legal-science"
+          ],
+          "result": "PASS",
+          "withRegionEntryCost": 1,
+          "withoutRegionRawIdentityEntryCost": 4
+        },
+        {
+          "candidateRef": "candidate-region:social-institutional-collective",
+          "deletionCostIncrease": 3,
+          "fixture": "R5A-SIC-2",
+          "missingFromCandidate": [],
+          "queryRefs": [
+            "norm:anthropology",
+            "norm:sociology",
+            "norm:education-research",
+            "norm:communication-studies"
+          ],
+          "result": "PASS",
+          "withRegionEntryCost": 1,
+          "withoutRegionRawIdentityEntryCost": 4
+        },
+        {
+          "candidateRef": "candidate-region:social-institutional-collective",
+          "deletionCostIncrease": 3,
+          "fixture": "R5A-SIC-3",
+          "missingFromCandidate": [],
+          "queryRefs": [
+            "norm:geography",
+            "norm:sociology",
+            "norm:economics",
+            "norm:political-science"
+          ],
+          "result": "PASS",
+          "withRegionEntryCost": 1,
+          "withoutRegionRawIdentityEntryCost": 4
+        }
+      ]
+    }
+  ],
+  "date": "2026-08-19",
+  "deferredRegions": [
+    "candidate-region:historical-cultural-interpretive",
+    "candidate-region:social-institutional-collective"
+  ],
+  "findings": [
+    {
+      "claim": "Both Historical/Cultural/Interpretive and Social/Institutional/Collective candidates produce bounded navigation compression across current normalized identities.",
+      "id": "R5A-D1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Neither candidate is stable enough for MajorRegion admission because nearby large disciplines remain deliberately unnormalized in the bounded pre-census.",
+      "id": "R5A-D2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Geography and Anthropology are important counterexamples to a natural-vs-social root split because each spans material/biological/environmental and human/social/cultural spaces.",
+      "id": "R5A-D3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Economics, Political Science and Legal Science can be admitted as external identities without admitting Ordivon Finance, Governance or Normative authority mappings.",
+      "id": "R5A-D4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.social-cultural-major-region-pre-admission-dogfood",
+  "laws": [
+    "NAVIGATION_DELETION_HARM_PASS != STABILITY_PASS",
+    "KNOWN_BREADTH_GAP_BLOCKS_MAJOR_REGION_ADMISSION",
+    "SOCIAL_SCIENCE_CATEGORY_NAME != NAVIGATION_REGION",
+    "IDENTITY_MAY_REMAIN_UNASSIGNED",
+    "NONEXCLUSIVE_MEMBERSHIP_REQUIRED"
+  ],
+  "next": "Run Round5B breadth normalization for the explicit residual pressure set before reconsidering either social/cultural MajorRegion.",
+  "schemaVersion": 1,
+  "state": "TWO_CANDIDATES_NAVIGATION_USEFUL_BUT_BREADTH_UNSTABLE_NO_ADMISSION",
+  "truthRole": "NON_AUTHORITATIVE_NAVIGATION_DOGFOOD"
+}

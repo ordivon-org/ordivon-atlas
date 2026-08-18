@@ -1,0 +1,91 @@
+{
+  "closure": "ROUND5A_SOCIAL_CULTURAL_PRE_CENSUS_ACCEPTED_NO_MAJOR_REGION_ADMISSION",
+  "controls": [
+    "No Social Sciences root or new MajorRegion is admitted.",
+    "OECD broad R&D classification is recall/navigation evidence only, not ontology authority.",
+    "Anthropology and Geography remain cross-natural/social identities.",
+    "Education Research is not reduced to Psychology.",
+    "Economics does not map Ordivon Finance while Finance durable transport is blocked.",
+    "Political Science does not inherit generic governance owner truth.",
+    "Legal Science does not inherit Ordivon Normative authority.",
+    "Both navigation candidates pass bounded deletion-harm but remain deferred because explicit breadth gaps block stability.",
+    "Known identities may remain without a current MajorRegion.",
+    "Open-world census remains reopenable."
+  ],
+  "counts": {
+    "navigationCandidates": 2,
+    "newIdentities": 8,
+    "newMajorRegionAdmissions": 0,
+    "newRelations": 28,
+    "round5bBreadthResiduals": 10,
+    "wholeGraphIdentities": 98,
+    "wholeGraphRelations": 148
+  },
+  "date": "2026-08-19",
+  "findings": [
+    {
+      "claim": "Both Historical/Cultural/Interpretive and Social/Institutional/Collective candidates produce bounded navigation compression across current normalized identities.",
+      "id": "R5A-D1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Neither candidate is stable enough for MajorRegion admission because nearby large disciplines remain deliberately unnormalized in the bounded pre-census.",
+      "id": "R5A-D2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Geography and Anthropology are important counterexamples to a natural-vs-social root split because each spans material/biological/environmental and human/social/cultural spaces.",
+      "id": "R5A-D3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Economics, Political Science and Legal Science can be admitted as external identities without admitting Ordivon Finance, Governance or Normative authority mappings.",
+      "id": "R5A-D4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Round5A adds eight externally supported social/cultural boundary identities without admitting a Social Sciences root or new MajorRegion.",
+      "id": "FTA8-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The bounded graph now contains 98 identities and 148 relations with zero identity-label collisions or broken relations.",
+      "id": "FTA8-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Two high-level navigation candidates show real deletion-harm benefit but both fail stability because explicit nearby breadth gaps remain.",
+      "id": "FTA8-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Anthropology and Geography falsify a clean natural-vs-social partition by requiring multi-domain placements spanning biological/material/environmental and human/social/cultural inquiry.",
+      "id": "FTA8-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Economics, Political Science and Legal Science are now external coordinates only; no Ordivon Finance/Normative/Governance coverage or authority is inferred.",
+      "id": "FTA8-5",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Round5B should normalize the explicit residual pressure set before any social/cultural MajorRegion admission, preserving open-world growth rather than rushing hierarchy.",
+      "id": "FTA8-6",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.external-reference-round5a-social-cultural-acceptance",
+  "majorRegions": "reference/canonical-major-regions-v0-6-20260819.json",
+  "navigationDogfood": "reference/social-cultural-major-region-pre-admission-dogfood-20260819.json",
+  "normalization": "reference/external-reference-round5a-social-cultural-normalization-20260819.json",
+  "schemaVersion": 1,
+  "state": "SOCIAL_CULTURAL_PRE_CENSUS_NORMALIZED_NAVIGATION_UNADMITTED",
+  "truthRole": "HISTORICAL_REFERENCE_NORMALIZATION_EVIDENCE",
+  "verification": {
+    "fullSuiteJob": "job-01a01675-68ac-7830-9af1-5aeddc2b6e64",
+    "fullSuiteResult": "141 tests OK; 28 gated skips; 113 deterministic tests executed",
+    "referenceSuiteJob": "job-01a01675-3d11-7ca3-a22d-81cbcea6642d",
+    "referenceSuiteResult": "104/104 PASS"
+  },
+  "wholeAudit": "reference/foundational-whole-topology-audit-v8-social-cultural-precensus-20260819.json"
+}

@@ -1,0 +1,74 @@
+{
+  "auditId": "foundational-topology-audit:v8-social-cultural-precensus:2026-08-19",
+  "brokenRelations": [],
+  "counts": {
+    "brokenRelations": 0,
+    "canonicalMajorRegionProjections": 8,
+    "crosswalkMappings": 25,
+    "currentOwnerAuthorityInputs": 10,
+    "explicitRound5bBreadthResiduals": 10,
+    "identityLabelCollisions": 0,
+    "multiPlacementSpaces": 95,
+    "multiRoleSpaces": 95,
+    "normalizedSpaces": 98,
+    "relations": 148,
+    "round5aNewIdentities": 8,
+    "round5aNewMajorRegionAdmissions": 0,
+    "round5aNewRelations": 28,
+    "socialCulturalNavigationCandidates": 2
+  },
+  "coverageReadiness": "CURRENT_TEN_OWNER_CROSSWALK_PRESERVED_SOCIAL_CULTURAL_COVERAGE_NOT_STARTED",
+  "findings": [
+    {
+      "claim": "Round5A adds eight externally supported social/cultural boundary identities without admitting a Social Sciences root or new MajorRegion.",
+      "id": "FTA8-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The bounded graph now contains 98 identities and 148 relations with zero identity-label collisions or broken relations.",
+      "id": "FTA8-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Two high-level navigation candidates show real deletion-harm benefit but both fail stability because explicit nearby breadth gaps remain.",
+      "id": "FTA8-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Anthropology and Geography falsify a clean natural-vs-social partition by requiring multi-domain placements spanning biological/material/environmental and human/social/cultural inquiry.",
+      "id": "FTA8-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Economics, Political Science and Legal Science are now external coordinates only; no Ordivon Finance/Normative/Governance coverage or authority is inferred.",
+      "id": "FTA8-5",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Round5B should normalize the explicit residual pressure set before any social/cultural MajorRegion admission, preserving open-world growth rather than rushing hierarchy.",
+      "id": "FTA8-6",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "globalScalarCoverage": "FORBIDDEN",
+  "identityCollisions": {},
+  "kind": "ordivon.whole-foundational-topology-audit",
+  "laws": [
+    "SOCIAL_CULTURAL_IDENTITY_ADMISSION != SOCIAL_SCIENCE_ROOT",
+    "KNOWN_IDENTITY_MAY_HAVE_NO_MAJOR_REGION",
+    "BROAD_CLASSIFICATION_VIEW != ONTOLOGY_TRUTH",
+    "NAVIGATION_USEFULNESS != STABILITY",
+    "ECONOMICS != ORDIVON_FINANCE",
+    "LEGAL_SCIENCE != ORDIVON_NORMATIVE",
+    "POLITICAL_SCIENCE != GENERIC_GOVERNANCE_OWNER",
+    "ANTHROPOLOGY_AND_GEOGRAPHY_CROSS_NATURAL_SOCIAL_BOUNDARY"
+  ],
+  "majorRegionRef": "reference/canonical-major-regions-v0-6-20260819.json",
+  "navigationDogfoodRef": "reference/social-cultural-major-region-pre-admission-dogfood-20260819.json",
+  "next": "Round5B breadth normalization of cultural/literary/art/heritage plus demography/public administration/business/criminology/social-policy/human-geography pressure; then repeat MajorRegion admission dogfood.",
+  "openWorld": true,
+  "round5aRef": "reference/external-reference-round5a-social-cultural-normalization-20260819.json",
+  "schemaVersion": 8,
+  "state": "ROUND5A_SOCIAL_CULTURAL_IDENTITIES_NORMALIZED_MAJOR_REGIONS_DEFERRED",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_AUDIT"
+}

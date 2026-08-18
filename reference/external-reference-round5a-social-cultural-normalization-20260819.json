@@ -1,0 +1,471 @@
+{
+  "breadthResidualPressure": {
+    "historicalCultural": [
+      "Cultural studies",
+      "Literary studies / comparative literature",
+      "Art history / visual studies",
+      "Heritage / museum studies"
+    ],
+    "socialInstitutional": [
+      "Demography / population studies",
+      "Public administration / public policy",
+      "Business / management studies",
+      "Criminology / criminal justice studies",
+      "Social policy / social work",
+      "Human geography as explicit Geography subspace"
+    ]
+  },
+  "broadClassificationInterpretation": "OECD Frascati is used only to show that social sciences/humanities are stable cross-field R&D classification spaces. It does not determine identity, parentage, roots or navigation admission.",
+  "broadRecallSources": {
+    "oecd-frascati-2015": {
+      "role": "CROSS_FIELD_RND_CLASSIFICATION_VIEW_NOT_ONTOLOGY",
+      "title": "OECD Frascati Manual 2015",
+      "url": "https://www.oecd.org/en/publications/frascati-manual-2015_9789264239012-en.html"
+    },
+    "oecd-frascati-development": {
+      "role": "CURRENT_RND_CLASSIFICATION_CONTEXT_NOT_ONTOLOGY",
+      "title": "OECD Continuing development of the Frascati Manual",
+      "url": "https://www.oecd.org/en/about/projects/frascati-manual-development.html"
+    }
+  },
+  "closure": "ROUND5A_EIGHT_IDENTITIES_NORMALIZED_NAVIGATION_CANDIDATES_REQUIRE_DOGFOOD",
+  "disciplineSources": {
+    "aaa-anthropology": {
+      "role": "ANTHROPOLOGY_DOMAIN_TOPOLOGY",
+      "title": "American Anthropological Association — What is Anthropology?",
+      "url": "https://americananthro.org/practice-teach/what-is-anthropology/"
+    },
+    "aaa-purpose": {
+      "role": "ANTHROPOLOGY_SCIENCE_SCOPE",
+      "title": "American Anthropological Association — Statement of Purpose",
+      "url": "https://americananthro.org/about/statement-of-purpose/"
+    },
+    "aera-about": {
+      "role": "EDUCATION_RESEARCH_DISCIPLINE_PROFESSION_SCOPE",
+      "title": "American Educational Research Association — About",
+      "url": "https://www.aera.net/About-AERA/What-Is-AERA"
+    },
+    "aera-education-research": {
+      "role": "EDUCATION_RESEARCH_FIELD_SCOPE",
+      "title": "American Educational Research Association — What is Education Research?",
+      "url": "https://www.aera.net/About-AERA/What-is-Education-Research"
+    },
+    "aia-mission": {
+      "role": "ARCHAEOLOGY_FIELD_SCOPE",
+      "title": "Archaeological Institute of America — Mission",
+      "url": "https://www.archaeological.org/about/mission/"
+    },
+    "ials-legal-science": {
+      "role": "LEGAL_SCIENCE_FIELD_SCOPE",
+      "title": "International Association of Legal Science — About",
+      "url": "https://aisj-ials.net/"
+    },
+    "ials-statutes": {
+      "role": "LEGAL_SCIENCE_COMPARATIVE_METHOD_SCOPE",
+      "title": "International Association of Legal Science — Statutes",
+      "url": "https://aisj-ials.net/statutes/"
+    },
+    "iea-conduct": {
+      "role": "ECONOMICS_KNOWLEDGE_FIELD_SCOPE",
+      "title": "International Economic Association — Code of Conduct / mission",
+      "url": "https://www.iea-world.org/code-of-conduct/"
+    },
+    "igu-about": {
+      "role": "GEOGRAPHY_DISCIPLINE_SCOPE",
+      "title": "International Geographical Union — What is the IGU?",
+      "url": "https://igu-online.org/about-us/"
+    },
+    "ipsa-mission": {
+      "role": "POLITICAL_SCIENCE_DISCIPLINE_SCOPE",
+      "title": "International Political Science Association — Constitution & Mission Statements",
+      "url": "https://www.ipsa.org/organization/mission-statement"
+    },
+    "isa-about": {
+      "role": "SOCIOLOGY_SCIENTIFIC_FIELD_SCOPE",
+      "title": "International Sociological Association — About",
+      "url": "https://www.isa-sociology.org/about-isa"
+    },
+    "isa-statutes": {
+      "role": "SOCIOLOGY_KNOWLEDGE_SCOPE",
+      "title": "International Sociological Association — Statutes",
+      "url": "https://www.isa-sociology.org/about-isa/governance/statutes"
+    },
+    "uispp-about": {
+      "role": "ARCHAEOLOGY_PREHISTORY_MULTIDISCIPLINARY_TOPOLOGY",
+      "title": "International Union of Prehistoric and Protohistoric Sciences — About",
+      "url": "https://uispp.net/about"
+    }
+  },
+  "kind": "ordivon.external-reference-round5a-social-cultural-normalization",
+  "laws": [
+    "BROAD_CLASSIFICATION_VIEW != ONTOLOGY_TRUTH",
+    "SOCIAL_SCIENCES_BUCKET != CANONICAL_ROOT",
+    "ANTHROPOLOGY != SOCIOLOGY_SUBSPACE",
+    "GEOGRAPHY != EARTH_SCIENCE_CHILD",
+    "EDUCATION_RESEARCH != PSYCHOLOGY_CHILD",
+    "ECONOMICS != ORDIVON_FINANCE",
+    "POLITICAL_SCIENCE != GENERIC_GOVERNANCE_OWNER",
+    "LEGAL_SCIENCE != ORDIVON_NORMATIVE",
+    "IDENTITY_ADMISSION != MAJOR_REGION_ADMISSION",
+    "OPEN_WORLD_CENSUS_REMAINS_REOPENABLE"
+  ],
+  "normalizedSpaces": [
+    {
+      "evidence": [
+        "aaa-anthropology",
+        "aaa-purpose"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Anthropology",
+      "placements": [
+        "human-biology",
+        "archaeology",
+        "culture",
+        "linguistics",
+        "society",
+        "history",
+        "human-diversity"
+      ],
+      "rationale": "AAA explicitly presents anthropology as a broad science of humankind spanning biological, archaeological, cultural/ethnological and linguistic inquiry. It must not be reduced to Sociology or humanities-only classification.",
+      "roleClasses": [
+        "HUMAN_BIOCULTURAL_DOMAIN",
+        "CROSS_TEMPORAL_HUMAN_DOMAIN",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:anthropology"
+    },
+    {
+      "evidence": [
+        "aia-mission",
+        "uispp-about"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Archaeology",
+      "placements": [
+        "human-past",
+        "material-record",
+        "history",
+        "anthropology",
+        "geography",
+        "earth-material-methods",
+        "heritage-boundary"
+      ],
+      "rationale": "AIA defines archaeological inquiry around the material record of the human past; UISPP independently shows archaeology embedded in a strongly multidisciplinary prehistoric/protohistoric research ecology including anthropology, earth/life sciences, geography and history.",
+      "roleClasses": [
+        "MATERIAL_PAST_EVIDENCE_DOMAIN",
+        "HISTORICAL_SCIENTIFIC_BRIDGE",
+        "HUMAN_ENVIRONMENT_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:archaeology"
+    },
+    {
+      "evidence": [
+        "isa-about",
+        "isa-statutes"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Sociology",
+      "placements": [
+        "society",
+        "social-relations",
+        "groups",
+        "institutions",
+        "culture",
+        "communication",
+        "psychology-boundary",
+        "politics-boundary",
+        "economics-boundary"
+      ],
+      "rationale": "ISA is a scientific association explicitly devoted to advancing sociological knowledge. Sociology is therefore a first-class social domain, but not a universal container for Anthropology, Political Science, Communication or Economics.",
+      "roleClasses": [
+        "MAJOR_SOCIAL_DOMAIN",
+        "SOCIAL_STRUCTURE_RELATION_DOMAIN",
+        "EMPIRICAL_INTERPRETIVE_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:sociology"
+    },
+    {
+      "evidence": [
+        "aera-education-research",
+        "aera-about"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Education research",
+      "placements": [
+        "education",
+        "learning",
+        "development",
+        "psychology",
+        "sociology",
+        "organizations",
+        "institutions",
+        "measurement-methods",
+        "policy-boundary"
+      ],
+      "rationale": "AERA explicitly defines education research as a scientific field studying education and learning processes plus human attributes, interactions, organizations and institutions shaping outcomes. It is not reducible to Psychology or policy practice.",
+      "roleClasses": [
+        "LEARNING_EDUCATION_RESEARCH_DOMAIN",
+        "INSTITUTIONAL_HUMAN_DEVELOPMENT_BRIDGE",
+        "APPLIED_SOCIAL_RESEARCH_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:education-research"
+    },
+    {
+      "evidence": [
+        "igu-about"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Geography",
+      "placements": [
+        "space-place",
+        "earth-environment",
+        "human-environment",
+        "physical-geography",
+        "society",
+        "culture-boundary",
+        "economics-boundary",
+        "politics-boundary"
+      ],
+      "rationale": "IGU explicitly describes itself as devoted to development of the discipline Geography. Existing Physical Geography is only one subspace; umbrella Geography must preserve Earth↔human spatial integration rather than be reduced to Earth Science or social science.",
+      "roleClasses": [
+        "MAJOR_SPATIAL_DOMAIN",
+        "EARTH_HUMAN_BRIDGE",
+        "INTEGRATIVE_PLACE_SPACE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:geography"
+    },
+    {
+      "evidence": [
+        "iea-conduct"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Economics",
+      "placements": [
+        "economy",
+        "allocation",
+        "production-distribution",
+        "institutions",
+        "markets",
+        "statistics",
+        "mathematics-boundary",
+        "policy-boundary",
+        "finance-boundary"
+      ],
+      "rationale": "IEA explicitly promotes advancement of knowledge on economics and economic research. Economics is an external knowledge domain distinct from Ordivon Finance: Finance may later map to bounded economics/finance interfaces only after durable Finance authority exists.",
+      "roleClasses": [
+        "MAJOR_SOCIAL_FORMAL_EMPIRICAL_DOMAIN",
+        "ALLOCATION_PRODUCTION_DISTRIBUTION_DOMAIN",
+        "INSTITUTIONAL_SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:economics"
+    },
+    {
+      "evidence": [
+        "ipsa-mission"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Political science",
+      "placements": [
+        "politics",
+        "power",
+        "governance",
+        "institutions",
+        "law-boundary",
+        "sociology",
+        "history",
+        "economics-boundary"
+      ],
+      "rationale": "IPSA explicitly supports development and intellectual advancement of political science as a global discipline. Political Science remains distinct from generic governance semantics, Sociology, Law and Ordivon owner authority.",
+      "roleClasses": [
+        "MAJOR_SOCIAL_INSTITUTIONAL_DOMAIN",
+        "POWER_GOVERNANCE_POLITICAL_SYSTEM_DOMAIN",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:political-science"
+    },
+    {
+      "aliases": [
+        "Law as an academic field",
+        "Legal studies"
+      ],
+      "evidence": [
+        "ials-legal-science",
+        "ials-statutes"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Legal science and legal studies",
+      "placements": [
+        "law",
+        "legal-systems",
+        "institutions",
+        "normativity-boundary",
+        "political-science",
+        "history",
+        "comparative-method",
+        "professional-practice"
+      ],
+      "rationale": "The International Association of Legal Science explicitly exists to develop legal science worldwide and uses comparative legal method. Preserve an academic/professional legal knowledge identity while keeping it distinct from generic normativity and Ordivon Normative owner truth.",
+      "roleClasses": [
+        "NORMATIVE_INSTITUTIONAL_DOMAIN",
+        "ACADEMIC_PROFESSIONAL_DOMAIN",
+        "LEGAL_SYSTEM_INTERPRETIVE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:legal-science"
+    }
+  ],
+  "relations": [
+    {
+      "from": "norm:anthropology",
+      "to": "norm:biology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:anthropology",
+      "to": "norm:archaeology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:anthropology",
+      "to": "norm:linguistics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:anthropology",
+      "to": "norm:history",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:anthropology",
+      "to": "norm:sociology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:archaeology",
+      "to": "norm:history",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:archaeology",
+      "to": "norm:classics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:archaeology",
+      "to": "norm:geography",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:sociology",
+      "to": "norm:psychology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:sociology",
+      "to": "norm:communication-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:sociology",
+      "to": "norm:media-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:education-research",
+      "to": "norm:developmental-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:education-research",
+      "to": "norm:psychology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:education-research",
+      "to": "norm:sociology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:geography",
+      "to": "norm:physical-geography",
+      "type": "CONTAINS_MAJOR_SUBSPACE"
+    },
+    {
+      "from": "norm:geography",
+      "to": "norm:earth-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:geography",
+      "to": "norm:sociology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:geography",
+      "to": "norm:anthropology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:economics",
+      "to": "norm:statistics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:economics",
+      "to": "norm:sociology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:economics",
+      "to": "norm:political-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:political-science",
+      "to": "norm:sociology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:political-science",
+      "to": "norm:history",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:political-science",
+      "to": "norm:legal-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:legal-science",
+      "to": "norm:ethics-value-theory",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:legal-science",
+      "to": "norm:history",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:communication-studies",
+      "to": "norm:anthropology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:media-studies",
+      "to": "norm:anthropology",
+      "type": "BRIDGES"
+    }
+  ],
+  "roundId": "external-reference:round5a-social-cultural:2026-08-19",
+  "schemaVersion": 1,
+  "scope": "Bounded social/cultural pre-census triggered by Media v0.5 deferred navigation pressure. This is not a complete social-science/humanities ontology.",
+  "state": "SOCIAL_CULTURAL_PRE_CENSUS_NORMALIZED_NAVIGATION_UNADMITTED",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_NORMALIZATION"
+}
