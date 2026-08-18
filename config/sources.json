@@ -77,6 +77,17 @@
         "git@github.com:zycxfyh/ordivon-computing.git"
       ],
       "repo": "/root/projects/ordivon-computing"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:semantics-of-computational-descriptions",
+      "corpusRoot": "research/core/semantics-of-computational-descriptions",
+      "ownerResearchRef": "research-owner:semantics-of-computational-descriptions",
+      "ref": "refs/heads/research/scd-applied-dogfood-20260818",
+      "remote": "https://github.com/zycxfyh/ordivon-computing.git",
+      "remoteFallbacks": [
+        "git@github.com:zycxfyh/ordivon-computing.git"
+      ],
+      "repo": "/root/projects/ordivon-computing"
     }
   ]
 }

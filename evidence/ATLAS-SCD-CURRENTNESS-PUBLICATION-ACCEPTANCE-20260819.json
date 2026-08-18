@@ -1,0 +1,72 @@
+{
+  "atlasBaseRevision": "e5c9c2b4c09f6f906496fdcf31d01747398e16db",
+  "closure": "SCD_OWNER_PUBLICATION_ATLAS_PARITY_AND_EIGHT_OWNER_LIVE_REGRESSION_ACCEPTED_PENDING_MAINLINE_INTEGRATION",
+  "computationalPossibility": {
+    "authorityRef": "authority:ordivon:research-owner:computational-possibility",
+    "authorityVersionRef": "sha256:5e12e043b14b57894cc0fffa85ed23821c36d491868c38555a0072cff4e263f9",
+    "ownerResearchRef": "research-owner:computational-possibility",
+    "sourceTransportRevision": "ad1bd73d91fa1a2d2a59cac4726b74ac171c457d"
+  },
+  "controls": [
+    "SCD result classifications are explicit per ResultRef.",
+    "SCDF2/4/5 remain OPEN without FROZEN/FAILED promotion.",
+    "SCDF1/3/6/7/8/9/10 remain the exact frozen set.",
+    "Foundation0=NONE and WholeSExhaustiveComplete=UNKNOWN remain intact.",
+    "ResearchOrderSCDF=UNKNOWN remains intact.",
+    "G1-G4 independent formal-gap hypotheses are FALSIFIED_IN_SCOPE/REJECTED; SCD Foundations are not inferred falsified.",
+    "G5 remains NOT_ADMITTED.",
+    "A1-A8 consumer dogfood remains bounded evidence and does not promote Foundation standing.",
+    "SCD and Computational Possibility share a repository but have distinct authority/currentness fences.",
+    "Strong all-owner live regression exposed and repaired pre-existing stale acceptance constants; the failures were source-advance expectation debt, not SCD regressions."
+  ],
+  "date": "2026-08-19",
+  "kind": "ordivon.atlas-scd-currentness-publication-acceptance",
+  "refreshJobId": "job-01a0160a-cf70-7592-a656-d25d05a722c7",
+  "refreshResult": "fullyCurrent=true; owners=8; unhealthy=0",
+  "scd": {
+    "authorityRef": "authority:ordivon:research-owner:semantics-of-computational-descriptions",
+    "authorityVersionRef": "sha256:3319f37f081908e545c708f79e489c3b2a1c54cb03453fa2ebe32bc6e72cbd4f",
+    "closureCount": 17,
+    "currentRecovery": {
+      "authorityRef": "authority:ordivon:research-owner:semantics-of-computational-descriptions",
+      "authorityVersionRef": "sha256:3319f37f081908e545c708f79e489c3b2a1c54cb03453fa2ebe32bc6e72cbd4f",
+      "locator": "research/core/semantics-of-computational-descriptions/README.md",
+      "ownerResearchRef": "research-owner:semantics-of-computational-descriptions",
+      "projectionCurrentness": "CURRENT_TO_SOURCE",
+      "retainedFromPreviousProjection": false,
+      "sourceTransportRevision": "a35ee399fa0cf3dd24869d50f78ca05850ece0c4",
+      "targetRole": "OWNER_RESEARCH_CORPUS"
+    },
+    "historyPublicationCount": 1,
+    "negativeLineageCount": 14,
+    "ownerResearchRef": "research-owner:semantics-of-computational-descriptions",
+    "resultCount": 16,
+    "sourceTransportRevision": "a35ee399fa0cf3dd24869d50f78ca05850ece0c4"
+  },
+  "schemaVersion": 1,
+  "sharedRepoProof": {
+    "distinctAuthorityRefs": true,
+    "distinctAuthorityVersionRefs": true,
+    "distinctSemanticOwners": true,
+    "distinctTransportRefs": true,
+    "samePhysicalRepo": "/root/projects/ordivon-computing"
+  },
+  "state": "SCD_EIGHTH_OWNER_CURRENT_TO_SOURCE",
+  "truthRole": "HISTORICAL_PUBLICATION_ASSIMILATION_EVIDENCE",
+  "verification": {
+    "allLiveRegressionAfterRepair": "12/12 PASS",
+    "allLiveRegressionAfterRepairJob": "job-01a0160e-954e-7c82-9954-50131af896a4",
+    "allLiveRegressionInitial": "FAILED 3 pre-existing stale expectations: Runtime current authority and shared Network/Normative transport/current Normative authority had advanced legitimately; all 5 SCD live tests passed.",
+    "allLiveRegressionInitialJob": "job-01a0160c-dccb-7c52-87e9-a005dcf8f5cb",
+    "eightOwnerRefresh": "fullyCurrent=true; owners=8; unhealthy=0",
+    "eightOwnerRefreshJob": "job-01a0160a-cf70-7592-a656-d25d05a722c7",
+    "fullDeterministic": "45 tests OK; 33 gated skips; 12 deterministic tests executed",
+    "fullDeterministicAfterLiveRepair": "45 tests OK; 33 gated skips; 12 deterministic tests executed",
+    "fullDeterministicAfterLiveRepairJob": "job-01a01610-0a87-7281-9ece-7e9b4935b48b",
+    "fullDeterministicJob": "job-01a0160c-a216-7083-9401-41546d29e3ad",
+    "ownerPublicationValidation": "PASS; 16 resultRefs / 70 statements / 3 closeouts",
+    "ownerPublicationValidationJob": "job-01a01609-ac8d-7bd0-8168-657fb081ee6a",
+    "scdTargetedLive": "8/8 PASS (3 deterministic registry + 5 SCD live parity)",
+    "scdTargetedLiveJob": "job-01a0160c-337f-7e93-804f-2a296ad21e02"
+  }
+}
