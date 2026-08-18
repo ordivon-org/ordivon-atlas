@@ -1,0 +1,57 @@
+{
+  "closure": "ROUND5B_BOUNDED_SOCIAL_CULTURAL_BREADTH_ACCEPTED",
+  "controls": [
+    "Round5A residual pressure is not treated as predefined identity.",
+    "Heritage Studies and Museology remain distinct.",
+    "Public Administration and Public Policy remain distinct.",
+    "Social Policy and Social Work remain distinct.",
+    "Human Geography remains a subspace of Geography rather than all Geography.",
+    "All thirteen spaces remain NOT_ADMITTED roots.",
+    "Open-world edge additions remain explicitly possible."
+  ],
+  "counts": {
+    "evidenceDrivenSplits": 3,
+    "futureEdgePerturbations": 9,
+    "normalizedIdentities": 13,
+    "relations": 54,
+    "round5aResidualPressures": 10
+  },
+  "date": "2026-08-19",
+  "kind": "ordivon.external-reference-round5b-social-cultural-acceptance",
+  "normalization": "reference/external-reference-round5b-social-cultural-breadth-normalization-20260819.json",
+  "residualSplits": [
+    {
+      "reason": "IIAS and IPPA independently organize public administration and public policy as distinct scientific/research fields.",
+      "round5aResidual": "Public administration / public policy",
+      "round5bIdentities": [
+        "norm:public-administration",
+        "norm:public-policy"
+      ]
+    },
+    {
+      "reason": "Social Policy is an interdisciplinary applied academic subject; Social Work is independently a discipline/profession with a research-practice-education nexus.",
+      "round5aResidual": "Social policy / social work",
+      "round5bIdentities": [
+        "norm:social-policy",
+        "norm:social-work"
+      ]
+    },
+    {
+      "reason": "Critical Heritage Studies and Museology have distinct international research organizations and theoretical objects despite strong overlap.",
+      "round5aResidual": "Heritage / museum studies",
+      "round5bIdentities": [
+        "norm:heritage-studies",
+        "norm:museology"
+      ]
+    }
+  ],
+  "schemaVersion": 1,
+  "state": "ROUND5B_BOUNDED_SOCIAL_CULTURAL_BREADTH_NORMALIZED",
+  "truthRole": "HISTORICAL_REFERENCE_NORMALIZATION_EVIDENCE",
+  "verification": {
+    "fullSuiteJob": "job-01a0167b-e11e-78f1-bfbb-90152b49a20b",
+    "fullSuiteResult": "151 tests OK; 28 gated skips; 123 deterministic tests executed",
+    "referenceSuiteJob": "job-01a0167b-a928-7c30-9153-72cf8d9a0982",
+    "referenceSuiteResult": "114/114 PASS"
+  }
+}

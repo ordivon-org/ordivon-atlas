@@ -1,0 +1,735 @@
+{
+  "closure": "ROUND5B_THIRTEEN_IDENTITIES_NORMALIZED_READY_FOR_MAJOR_REGION_REDOGFOOD",
+  "futureEdgePerturbations": [
+    "Area studies",
+    "Musicology / music studies",
+    "Theatre and performance studies",
+    "International relations",
+    "Development studies",
+    "Urban studies",
+    "Gender/sexuality studies",
+    "Science and technology studies",
+    "Folklore studies"
+  ],
+  "kind": "ordivon.external-reference-round5b-social-cultural-breadth-normalization",
+  "laws": [
+    "ROUND5A_RESIDUAL != ROUND5B_IDENTITY",
+    "SLASH_JOINED_RESIDUAL_MAY_SPLIT",
+    "HERITAGE_STUDIES != MUSEOLOGY",
+    "PUBLIC_ADMINISTRATION != PUBLIC_POLICY",
+    "SOCIAL_POLICY != SOCIAL_WORK",
+    "HUMAN_GEOGRAPHY != ALL_GEOGRAPHY",
+    "MANAGEMENT_SCIENCE != BUSINESS_FIRM_ONTOLOGY",
+    "CRIMINOLOGY != LEGAL_SCIENCE",
+    "IDENTITY_NORMALIZATION != MAJOR_REGION_ADMISSION",
+    "OPEN_WORLD_CENSUS_REMAINS_REOPENABLE"
+  ],
+  "normalizedSpaces": [
+    {
+      "evidence": [
+        "acs-cultural-studies"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Cultural studies",
+      "placements": [
+        "culture",
+        "media-studies",
+        "sociology",
+        "anthropology",
+        "literature",
+        "politics-boundary",
+        "power",
+        "identity"
+      ],
+      "rationale": "ACS defines cultural studies as inter/trans-disciplinary study of cultural practices in relation to social relations and organization of power. It is a first-class interpretive/social bridge rather than a synonym for Media Studies or Sociology.",
+      "roleClasses": [
+        "CULTURE_POWER_INTERPRETIVE_DOMAIN",
+        "INTERDISCIPLINARY_CULTURAL_ANALYSIS_DOMAIN",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:cultural-studies"
+    },
+    {
+      "evidence": [
+        "icla-statutes"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Literary studies and comparative literature",
+      "placements": [
+        "literature",
+        "philology",
+        "language",
+        "culture",
+        "history",
+        "media",
+        "aesthetics",
+        "comparative-study"
+      ],
+      "rationale": "ICLA explicitly fosters literary study across languages, national traditions, cultures, disciplines, genres, historical periods and media. Preserve a broad comparative literary identity beyond Philology.",
+      "roleClasses": [
+        "LITERARY_INTERPRETIVE_DOMAIN",
+        "COMPARATIVE_TRANSNATIONAL_DOMAIN",
+        "TEXT_MEDIA_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:literary-studies"
+    },
+    {
+      "evidence": [
+        "ciha-about",
+        "ciha-statutes"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Art history and visual/material culture studies",
+      "placements": [
+        "art",
+        "visual-culture",
+        "material-culture",
+        "history",
+        "aesthetics",
+        "heritage",
+        "museology",
+        "culture"
+      ],
+      "rationale": "CIHA explicitly develops historical/methodological study of artistic production and, in its statutes, art/visual/material culture across history and world regions. Preserve Art History as an interpretive historical/material domain.",
+      "roleClasses": [
+        "HISTORICAL_VISUAL_MATERIAL_CULTURE_DOMAIN",
+        "INTERPRETIVE_DOMAIN",
+        "HERITAGE_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:art-history"
+    },
+    {
+      "evidence": [
+        "achs"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Heritage studies",
+      "placements": [
+        "heritage",
+        "history",
+        "archaeology",
+        "museology",
+        "memory",
+        "community",
+        "identity",
+        "politics-boundary",
+        "tourism-planning-boundary"
+      ],
+      "rationale": "ACHS explicitly promotes heritage as a broad interdisciplinary area of critical enquiry involving representation, identity, community, decolonization, sustainability and power. Heritage Studies is related to but not identical with Museology.",
+      "roleClasses": [
+        "HERITAGE_MEMORY_PUBLIC_HISTORY_DOMAIN",
+        "APPLIED_INTERPRETIVE_DOMAIN",
+        "INSTITUTIONAL_COMMUNITY_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:heritage-studies"
+    },
+    {
+      "evidence": [
+        "icofom"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Museology and museum studies",
+      "placements": [
+        "museums",
+        "heritage",
+        "collections",
+        "public-history",
+        "material-culture",
+        "communication",
+        "institutions",
+        "professional-practice"
+      ],
+      "rationale": "ICOFOM explicitly researches and disseminates the theoretical basis of museology and describes it as study/theory/philosophy of the museum field and its ethics, practice and functions. It is an independent field, not merely a Heritage Studies synonym.",
+      "roleClasses": [
+        "MUSEUM_THEORY_PRACTICE_DOMAIN",
+        "HERITAGE_INSTITUTION_DOMAIN",
+        "APPLIED_INTERPRETIVE_PROFESSIONAL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:museology"
+    },
+    {
+      "evidence": [
+        "iussp"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Demography and population studies",
+      "placements": [
+        "population",
+        "statistics",
+        "sociology",
+        "economics",
+        "geography",
+        "migration",
+        "family",
+        "health-boundary"
+      ],
+      "rationale": "IUSSP mission is explicitly the scientific study of population. Demography is a quantitative population domain that bridges social, geographic, health and economic inquiry without reducing to Statistics.",
+      "roleClasses": [
+        "POPULATION_SCIENCE_DOMAIN",
+        "QUANTITATIVE_SOCIAL_DOMAIN",
+        "LIFE_SOCIAL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:demography"
+    },
+    {
+      "evidence": [
+        "iias"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Public administration",
+      "placements": [
+        "public-organizations",
+        "administration",
+        "political-science",
+        "management",
+        "legal-science",
+        "public-policy",
+        "governance",
+        "institutions"
+      ],
+      "rationale": "IIAS is an international scientific-purpose organization centered on public administration/governance solutions and administrative science. Public Administration is not identical with Public Policy or Political Science.",
+      "roleClasses": [
+        "PUBLIC_ADMINISTRATION_INSTITUTIONAL_DOMAIN",
+        "GOVERNANCE_ORGANIZATION_APPLIED_DOMAIN",
+        "ACADEMIC_PROFESSIONAL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:public-administration"
+    },
+    {
+      "evidence": [
+        "ippa"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Public policy research",
+      "placements": [
+        "political-science",
+        "public-administration",
+        "economics",
+        "sociology",
+        "legal-science",
+        "social-policy",
+        "education-boundary",
+        "health-boundary",
+        "policy-analysis"
+      ],
+      "rationale": "IPPA explicitly promotes scientific research and international development of Public Policy as a field, supporting methods and communities distinct from public administration itself.",
+      "roleClasses": [
+        "PUBLIC_POLICY_RESEARCH_DOMAIN",
+        "CROSS_INSTITUTIONAL_INTERVENTION_DOMAIN",
+        "APPLIED_SOCIAL_RESEARCH_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:public-policy"
+    },
+    {
+      "evidence": [
+        "aom"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Management and organization studies",
+      "placements": [
+        "management",
+        "organizations",
+        "strategy",
+        "work",
+        "sociology",
+        "psychology",
+        "economics",
+        "public-administration",
+        "professional-practice"
+      ],
+      "rationale": "AOM explicitly organizes global scholarship in management and organization science spanning people, organizations, strategy, theory and practice. Preserve it as a research domain rather than a business-profession-only category.",
+      "roleClasses": [
+        "MANAGEMENT_ORGANIZATION_SCIENCE_DOMAIN",
+        "ORGANIZATIONAL_INSTITUTIONAL_DOMAIN",
+        "APPLIED_SOCIAL_SCIENCE_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:management-organization-studies"
+    },
+    {
+      "evidence": [
+        "isc"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Criminology and criminal justice studies",
+      "placements": [
+        "crime",
+        "deviance",
+        "criminal-justice",
+        "sociology",
+        "psychology",
+        "legal-science",
+        "public-policy",
+        "institutions"
+      ],
+      "rationale": "ISC explicitly advances criminology as study/research/teaching around crime, victimization and criminal justice systems. It bridges social and legal inquiry without reducing to Law or Sociology.",
+      "roleClasses": [
+        "CRIME_DEVIANCE_CRIMINAL_JUSTICE_DOMAIN",
+        "SOCIAL_LEGAL_BRIDGE",
+        "APPLIED_EMPIRICAL_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:criminology"
+    },
+    {
+      "evidence": [
+        "spa"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Social policy",
+      "placements": [
+        "social-welfare",
+        "wellbeing",
+        "public-policy",
+        "sociology",
+        "economics",
+        "legal-science",
+        "public-administration",
+        "social-work"
+      ],
+      "rationale": "SPA defines Social Policy as an interdisciplinary applied academic subject concerning human needs, social justice and individual/collective wellbeing, including resource/opportunity distribution by states, families, firms and organizations.",
+      "roleClasses": [
+        "SOCIAL_WELFARE_POLICY_DOMAIN",
+        "APPLIED_INTERDISCIPLINARY_DOMAIN",
+        "DISTRIBUTION_WELLBEING_INSTITUTIONAL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:social-policy"
+    },
+    {
+      "evidence": [
+        "iassw"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Social work",
+      "placements": [
+        "social-work",
+        "community",
+        "social-policy",
+        "sociology",
+        "psychology",
+        "education",
+        "health-boundary",
+        "institutions",
+        "professional-practice"
+      ],
+      "rationale": "IASSW explicitly describes social work as a discipline and profession with a research-practice-education nexus. Social Work is not reducible to Social Policy or generic human services.",
+      "roleClasses": [
+        "PROFESSIONAL_APPLIED_RESEARCH_DOMAIN",
+        "HUMAN_SERVICES_SOCIAL_JUSTICE_DOMAIN",
+        "PRACTICE_RESEARCH_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:social-work"
+    },
+    {
+      "evidence": [
+        "rgs-geography"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Human geography",
+      "placements": [
+        "geography",
+        "place-space",
+        "culture",
+        "society",
+        "economy",
+        "politics",
+        "environment",
+        "inequality",
+        "human-environment"
+      ],
+      "rationale": "RGS explicitly distinguishes human geography as understanding dynamics of cultures, societies and economies while Geography bridges social and natural sciences. Human Geography is a major subspace of Geography, not a separate social root.",
+      "roleClasses": [
+        "MAJOR_GEOGRAPHY_SUBSPACE",
+        "HUMAN_SPATIAL_DOMAIN",
+        "SOCIAL_ENVIRONMENTAL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:human-geography"
+    }
+  ],
+  "relations": [
+    {
+      "from": "norm:cultural-studies",
+      "to": "norm:media-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:cultural-studies",
+      "to": "norm:sociology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:cultural-studies",
+      "to": "norm:anthropology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:cultural-studies",
+      "to": "norm:political-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:literary-studies",
+      "to": "norm:philology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:literary-studies",
+      "to": "norm:linguistics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:literary-studies",
+      "to": "norm:cultural-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:literary-studies",
+      "to": "norm:history",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:art-history",
+      "to": "norm:history",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:art-history",
+      "to": "norm:aesthetics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:art-history",
+      "to": "norm:archaeology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:art-history",
+      "to": "norm:heritage-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:heritage-studies",
+      "to": "norm:history",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:heritage-studies",
+      "to": "norm:archaeology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:heritage-studies",
+      "to": "norm:museology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:heritage-studies",
+      "to": "norm:anthropology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:museology",
+      "to": "norm:heritage-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:museology",
+      "to": "norm:media-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:museology",
+      "to": "norm:communication-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:museology",
+      "to": "norm:art-history",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:demography",
+      "to": "norm:statistics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:demography",
+      "to": "norm:sociology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:demography",
+      "to": "norm:economics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:demography",
+      "to": "norm:geography",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:public-administration",
+      "to": "norm:political-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:public-administration",
+      "to": "norm:management-organization-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:public-administration",
+      "to": "norm:legal-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:public-administration",
+      "to": "norm:public-policy",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:public-policy",
+      "to": "norm:political-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:public-policy",
+      "to": "norm:economics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:public-policy",
+      "to": "norm:sociology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:public-policy",
+      "to": "norm:legal-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:public-policy",
+      "to": "norm:social-policy",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:management-organization-studies",
+      "to": "norm:sociology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:management-organization-studies",
+      "to": "norm:psychology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:management-organization-studies",
+      "to": "norm:economics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:management-organization-studies",
+      "to": "norm:public-administration",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:criminology",
+      "to": "norm:sociology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:criminology",
+      "to": "norm:psychology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:criminology",
+      "to": "norm:legal-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:criminology",
+      "to": "norm:public-policy",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:social-policy",
+      "to": "norm:sociology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:social-policy",
+      "to": "norm:economics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:social-policy",
+      "to": "norm:public-policy",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:social-policy",
+      "to": "norm:social-work",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:social-work",
+      "to": "norm:sociology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:social-work",
+      "to": "norm:psychology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:social-work",
+      "to": "norm:social-policy",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:social-work",
+      "to": "norm:education-research",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:human-geography",
+      "to": "norm:geography",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:human-geography",
+      "to": "norm:sociology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:human-geography",
+      "to": "norm:economics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:human-geography",
+      "to": "norm:political-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:human-geography",
+      "to": "norm:anthropology",
+      "type": "BRIDGES"
+    }
+  ],
+  "residualSplits": [
+    {
+      "reason": "IIAS and IPPA independently organize public administration and public policy as distinct scientific/research fields.",
+      "round5aResidual": "Public administration / public policy",
+      "round5bIdentities": [
+        "norm:public-administration",
+        "norm:public-policy"
+      ]
+    },
+    {
+      "reason": "Social Policy is an interdisciplinary applied academic subject; Social Work is independently a discipline/profession with a research-practice-education nexus.",
+      "round5aResidual": "Social policy / social work",
+      "round5bIdentities": [
+        "norm:social-policy",
+        "norm:social-work"
+      ]
+    },
+    {
+      "reason": "Critical Heritage Studies and Museology have distinct international research organizations and theoretical objects despite strong overlap.",
+      "round5aResidual": "Heritage / museum studies",
+      "round5bIdentities": [
+        "norm:heritage-studies",
+        "norm:museology"
+      ]
+    }
+  ],
+  "roundId": "external-reference:round5b-social-cultural:2026-08-19",
+  "schemaVersion": 1,
+  "sources": {
+    "achs": {
+      "role": "HERITAGE_STUDIES_INTERDISCIPLINARY_SCOPE",
+      "title": "Association of Critical Heritage Studies",
+      "url": "https://www.criticalheritagestudies.org/"
+    },
+    "acs-cultural-studies": {
+      "role": "CULTURAL_STUDIES_FIELD_SCOPE",
+      "title": "Association for Cultural Studies — About / Rules",
+      "url": "https://www.cultstud.org/wordpress/about/"
+    },
+    "aom": {
+      "role": "MANAGEMENT_ORGANIZATION_SCIENCE_SCOPE",
+      "title": "Academy of Management — About",
+      "url": "https://www.aom.org/about-aom/"
+    },
+    "ciha-about": {
+      "role": "ART_HISTORY_FIELD_SCOPE",
+      "title": "International Committee for Art History — About",
+      "url": "https://www.ciha.org/about"
+    },
+    "ciha-statutes": {
+      "role": "ART_VISUAL_MATERIAL_CULTURE_SCOPE",
+      "title": "International Committee for Art History — Statutes",
+      "url": "https://www.ciha.org/statutes"
+    },
+    "iassw": {
+      "role": "SOCIAL_WORK_DISCIPLINE_PROFESSION_RESEARCH_SCOPE",
+      "title": "International Association of Schools of Social Work — Statement on Social Work Research",
+      "url": "https://www.iassw-aiets.org/iassw-statement-on-social-work-research/"
+    },
+    "icla-statutes": {
+      "role": "COMPARATIVE_LITERARY_STUDIES_SCOPE",
+      "title": "International Comparative Literature Association — Statutes",
+      "url": "https://www.ailc-icla.org/about-the-icla/statutes/"
+    },
+    "icofom": {
+      "role": "MUSEOLOGY_FIELD_SCOPE",
+      "title": "ICOM International Committee for Museology — About",
+      "url": "https://icofom.mini.icom.museum/welcome/welcome-to-icofom/"
+    },
+    "iias": {
+      "role": "PUBLIC_ADMINISTRATION_SCIENTIFIC_SCOPE",
+      "title": "International Institute of Administrative Sciences — Mission",
+      "url": "https://iias-iisa.org/mission-and-objectives/"
+    },
+    "ippa": {
+      "role": "PUBLIC_POLICY_RESEARCH_FIELD_SCOPE",
+      "title": "International Public Policy Association — About",
+      "url": "https://www.ippapublicpolicy.org/about-us"
+    },
+    "isc": {
+      "role": "CRIMINOLOGY_FIELD_SCOPE",
+      "title": "International Society of Criminology — Home",
+      "url": "https://intercrim.com/"
+    },
+    "iussp": {
+      "role": "DEMOGRAPHY_POPULATION_SCIENCE_SCOPE",
+      "title": "International Union for the Scientific Study of Population — Mission",
+      "url": "https://iussp.org/en/mission"
+    },
+    "rgs-geography": {
+      "role": "HUMAN_GEOGRAPHY_SUBSPACE_SCOPE",
+      "title": "Royal Geographical Society — What is Geography?",
+      "url": "https://www.rgs.org/about-us/what-is-geography"
+    },
+    "spa": {
+      "role": "SOCIAL_POLICY_ACADEMIC_FIELD_SCOPE",
+      "title": "Social Policy Association — What is Social Policy?",
+      "url": "https://social-policy.org.uk/what-is-social-policy/"
+    }
+  },
+  "state": "ROUND5B_BOUNDED_SOCIAL_CULTURAL_BREADTH_NORMALIZED",
+  "trigger": "Round5A deferred both navigation candidates because ten explicit breadth residual pressures remained. External verification split three slash-joined residuals into independent identities, yielding thirteen normalized spaces.",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_NORMALIZATION"
+}

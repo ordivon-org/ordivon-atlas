@@ -1,0 +1,353 @@
+{
+  "admittedRegions": [
+    "candidate-region:historical-cultural-interpretive",
+    "candidate-region:social-institutional-collective"
+  ],
+  "candidates": [
+    {
+      "admission": "ADMITTED_NAVIGATION_PROJECTION_V1",
+      "anchorRefs": [
+        "norm:history",
+        "norm:cultural-studies",
+        "norm:literary-studies"
+      ],
+      "candidateRef": "candidate-region:historical-cultural-interpretive",
+      "futureEdgePerturbationFixtures": [
+        {
+          "addedIdentity": "Area studies",
+          "anchorSetUnchanged": true,
+          "candidateStillMultiIdentity": true,
+          "result": "PASS"
+        },
+        {
+          "addedIdentity": "Musicology / music studies",
+          "anchorSetUnchanged": true,
+          "candidateStillMultiIdentity": true,
+          "result": "PASS"
+        },
+        {
+          "addedIdentity": "Theatre and performance studies",
+          "anchorSetUnchanged": true,
+          "candidateStillMultiIdentity": true,
+          "result": "PASS"
+        },
+        {
+          "addedIdentity": "International relations",
+          "anchorSetUnchanged": true,
+          "candidateStillMultiIdentity": true,
+          "result": "PASS"
+        },
+        {
+          "addedIdentity": "Development studies",
+          "anchorSetUnchanged": true,
+          "candidateStillMultiIdentity": true,
+          "result": "PASS"
+        },
+        {
+          "addedIdentity": "Urban studies",
+          "anchorSetUnchanged": true,
+          "candidateStillMultiIdentity": true,
+          "result": "PASS"
+        },
+        {
+          "addedIdentity": "Gender/sexuality studies",
+          "anchorSetUnchanged": true,
+          "candidateStillMultiIdentity": true,
+          "result": "PASS"
+        },
+        {
+          "addedIdentity": "Science and technology studies",
+          "anchorSetUnchanged": true,
+          "candidateStillMultiIdentity": true,
+          "result": "PASS"
+        },
+        {
+          "addedIdentity": "Folklore studies",
+          "anchorSetUnchanged": true,
+          "candidateStillMultiIdentity": true,
+          "result": "PASS"
+        }
+      ],
+      "gateResults": {
+        "G1_REFERENCE_SUPPORT": "PASS",
+        "G2_NAVIGATION_DELETION_HARM": "PASS_BOUNDED_FIXTURES",
+        "G3_SCOPE_COHERENCE": "PASS_BOUNDED",
+        "G4_TOPOLOGY_PRESERVATION": "PASS_NONEXCLUSIVE",
+        "G5_NON_AUTHORITY": "PASS_BY_CONTRACT",
+        "G6_OPEN_WORLD": "PASS_BY_CONTRACT",
+        "G7_STABILITY": "PASS_BOUNDED_PERTURBATION"
+      },
+      "label": "Historical, Cultural & Interpretive",
+      "memberRefs": [
+        "norm:history",
+        "norm:archaeology",
+        "norm:classics",
+        "norm:philology",
+        "norm:religious-studies",
+        "norm:cultural-studies",
+        "norm:literary-studies",
+        "norm:art-history",
+        "norm:heritage-studies",
+        "norm:museology",
+        "norm:media-studies",
+        "norm:semiotics",
+        "norm:anthropology",
+        "norm:aesthetics"
+      ],
+      "missingRefs": [],
+      "navigationFixtures": [
+        {
+          "candidateRef": "candidate-region:historical-cultural-interpretive",
+          "deletionCostIncrease": 3,
+          "fixture": "R5B-HCI-1",
+          "missingFromCandidate": [],
+          "queryRefs": [
+            "norm:history",
+            "norm:archaeology",
+            "norm:cultural-studies",
+            "norm:literary-studies"
+          ],
+          "result": "PASS",
+          "withRegionEntryCost": 1,
+          "withoutRegionRawIdentityEntryCost": 4
+        },
+        {
+          "candidateRef": "candidate-region:historical-cultural-interpretive",
+          "deletionCostIncrease": 3,
+          "fixture": "R5B-HCI-2",
+          "missingFromCandidate": [],
+          "queryRefs": [
+            "norm:art-history",
+            "norm:heritage-studies",
+            "norm:museology",
+            "norm:media-studies"
+          ],
+          "result": "PASS",
+          "withRegionEntryCost": 1,
+          "withoutRegionRawIdentityEntryCost": 4
+        },
+        {
+          "candidateRef": "candidate-region:historical-cultural-interpretive",
+          "deletionCostIncrease": 3,
+          "fixture": "R5B-HCI-3",
+          "missingFromCandidate": [],
+          "queryRefs": [
+            "norm:religious-studies",
+            "norm:philology",
+            "norm:semiotics",
+            "norm:anthropology"
+          ],
+          "result": "PASS",
+          "withRegionEntryCost": 1,
+          "withoutRegionRawIdentityEntryCost": 4
+        }
+      ]
+    },
+    {
+      "admission": "ADMITTED_NAVIGATION_PROJECTION_V1",
+      "anchorRefs": [
+        "norm:sociology",
+        "norm:economics",
+        "norm:political-science"
+      ],
+      "candidateRef": "candidate-region:social-institutional-collective",
+      "futureEdgePerturbationFixtures": [
+        {
+          "addedIdentity": "Area studies",
+          "anchorSetUnchanged": true,
+          "candidateStillMultiIdentity": true,
+          "result": "PASS"
+        },
+        {
+          "addedIdentity": "Musicology / music studies",
+          "anchorSetUnchanged": true,
+          "candidateStillMultiIdentity": true,
+          "result": "PASS"
+        },
+        {
+          "addedIdentity": "Theatre and performance studies",
+          "anchorSetUnchanged": true,
+          "candidateStillMultiIdentity": true,
+          "result": "PASS"
+        },
+        {
+          "addedIdentity": "International relations",
+          "anchorSetUnchanged": true,
+          "candidateStillMultiIdentity": true,
+          "result": "PASS"
+        },
+        {
+          "addedIdentity": "Development studies",
+          "anchorSetUnchanged": true,
+          "candidateStillMultiIdentity": true,
+          "result": "PASS"
+        },
+        {
+          "addedIdentity": "Urban studies",
+          "anchorSetUnchanged": true,
+          "candidateStillMultiIdentity": true,
+          "result": "PASS"
+        },
+        {
+          "addedIdentity": "Gender/sexuality studies",
+          "anchorSetUnchanged": true,
+          "candidateStillMultiIdentity": true,
+          "result": "PASS"
+        },
+        {
+          "addedIdentity": "Science and technology studies",
+          "anchorSetUnchanged": true,
+          "candidateStillMultiIdentity": true,
+          "result": "PASS"
+        },
+        {
+          "addedIdentity": "Folklore studies",
+          "anchorSetUnchanged": true,
+          "candidateStillMultiIdentity": true,
+          "result": "PASS"
+        }
+      ],
+      "gateResults": {
+        "G1_REFERENCE_SUPPORT": "PASS",
+        "G2_NAVIGATION_DELETION_HARM": "PASS_BOUNDED_FIXTURES",
+        "G3_SCOPE_COHERENCE": "PASS_BOUNDED",
+        "G4_TOPOLOGY_PRESERVATION": "PASS_NONEXCLUSIVE",
+        "G5_NON_AUTHORITY": "PASS_BY_CONTRACT",
+        "G6_OPEN_WORLD": "PASS_BY_CONTRACT",
+        "G7_STABILITY": "PASS_BOUNDED_PERTURBATION"
+      },
+      "label": "Social, Institutional & Collective Systems",
+      "memberRefs": [
+        "norm:sociology",
+        "norm:anthropology",
+        "norm:communication-studies",
+        "norm:media-studies",
+        "norm:education-research",
+        "norm:economics",
+        "norm:political-science",
+        "norm:legal-science",
+        "norm:geography",
+        "norm:human-geography",
+        "norm:psychology",
+        "norm:developmental-science",
+        "norm:demography",
+        "norm:public-administration",
+        "norm:public-policy",
+        "norm:management-organization-studies",
+        "norm:criminology",
+        "norm:social-policy",
+        "norm:social-work"
+      ],
+      "missingRefs": [],
+      "navigationFixtures": [
+        {
+          "candidateRef": "candidate-region:social-institutional-collective",
+          "deletionCostIncrease": 3,
+          "fixture": "R5B-SIC-1",
+          "missingFromCandidate": [],
+          "queryRefs": [
+            "norm:sociology",
+            "norm:economics",
+            "norm:political-science",
+            "norm:legal-science"
+          ],
+          "result": "PASS",
+          "withRegionEntryCost": 1,
+          "withoutRegionRawIdentityEntryCost": 4
+        },
+        {
+          "candidateRef": "candidate-region:social-institutional-collective",
+          "deletionCostIncrease": 3,
+          "fixture": "R5B-SIC-2",
+          "missingFromCandidate": [],
+          "queryRefs": [
+            "norm:demography",
+            "norm:human-geography",
+            "norm:anthropology",
+            "norm:sociology"
+          ],
+          "result": "PASS",
+          "withRegionEntryCost": 1,
+          "withoutRegionRawIdentityEntryCost": 4
+        },
+        {
+          "candidateRef": "candidate-region:social-institutional-collective",
+          "deletionCostIncrease": 3,
+          "fixture": "R5B-SIC-3",
+          "missingFromCandidate": [],
+          "queryRefs": [
+            "norm:public-administration",
+            "norm:public-policy",
+            "norm:management-organization-studies",
+            "norm:social-policy"
+          ],
+          "result": "PASS",
+          "withRegionEntryCost": 1,
+          "withoutRegionRawIdentityEntryCost": 4
+        },
+        {
+          "candidateRef": "candidate-region:social-institutional-collective",
+          "deletionCostIncrease": 3,
+          "fixture": "R5B-SIC-4",
+          "missingFromCandidate": [],
+          "queryRefs": [
+            "norm:criminology",
+            "norm:social-work",
+            "norm:education-research",
+            "norm:communication-studies"
+          ],
+          "result": "PASS",
+          "withRegionEntryCost": 1,
+          "withoutRegionRawIdentityEntryCost": 4
+        }
+      ]
+    }
+  ],
+  "date": "2026-08-19",
+  "deferredRegions": [],
+  "findings": [
+    {
+      "claim": "After thirteen residual identities are normalized, both social/cultural navigation candidates pass bounded deletion-harm and perturbation stability while remaining non-exclusive/open-world.",
+      "id": "R5B-D1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Historical, Cultural & Interpretive can be admitted as a navigation projection without treating Culture, Humanities or History as a semantic root.",
+      "id": "R5B-D2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Social, Institutional & Collective Systems can be admitted as a navigation projection without treating Social Sciences as a semantic root or collapsing Economics, Law, Politics, Management or Social Work.",
+      "id": "R5B-D3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Future edge additions such as International Relations, Development Studies, Musicology or STS do not delete the navigation function of either candidate in bounded perturbation fixtures.",
+      "id": "R5B-D4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "futureEdgePerturbations": [
+    "Area studies",
+    "Musicology / music studies",
+    "Theatre and performance studies",
+    "International relations",
+    "Development studies",
+    "Urban studies",
+    "Gender/sexuality studies",
+    "Science and technology studies",
+    "Folklore studies"
+  ],
+  "kind": "ordivon.social-cultural-major-region-round5b-admission-dogfood",
+  "laws": [
+    "MAJOR_REGION_ADMISSION_IS_VERSIONED_NAVIGATION_ONLY",
+    "FUTURE_EDGE_ADDITION_DOES_NOT_REQUIRE_ONTOLOGY_CLOSURE",
+    "NONEXCLUSIVE_MEMBERSHIP_REQUIRED",
+    "SOCIAL_CULTURAL_REGION != SOCIAL_SCIENCE_ROOT",
+    "HISTORICAL_CULTURAL_REGION != HUMANITIES_ROOT",
+    "REGION_COVERAGE_TRUTH_FORBIDDEN"
+  ],
+  "schemaVersion": 1,
+  "state": "TWO_SOCIAL_CULTURAL_NAVIGATION_PROJECTIONS_ADMITTED_AFTER_ROUND5B",
+  "truthRole": "NON_AUTHORITATIVE_NAVIGATION_DOGFOOD"
+}

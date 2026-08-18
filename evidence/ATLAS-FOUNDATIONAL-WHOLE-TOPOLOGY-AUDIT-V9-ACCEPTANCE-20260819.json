@@ -1,0 +1,82 @@
+{
+  "audit": "reference/foundational-whole-topology-audit-v9-social-cultural-round5b-20260819.json",
+  "closure": "REFERENCE_V0_7_SOCIAL_CULTURAL_NAVIGATION_STABLE_OPEN_WORLD",
+  "controls": [
+    "Graph integrity remains zero-collision/zero-broken after Round5B.",
+    "13 identities emerged from 10 residual pressures through evidence-driven splitting.",
+    "MajorRegion count increased 8→10 while crosswalk mappings remained 25.",
+    "Geography remains cross-visible between Earth and Social navigation; Human Geography remains a social-spatial subspace.",
+    "Future edge perturbation is compatible with open-world additions and does not imply exhaustive closure.",
+    "Finance/Economics coverage remains unclaimed while Finance durable transport is blocked."
+  ],
+  "counts": {
+    "brokenRelations": 0,
+    "canonicalMajorRegionProjections": 10,
+    "crosswalkMappings": 25,
+    "crosswalkNewMappingsRound5b": 0,
+    "currentOwnerAuthorityInputs": 10,
+    "identityLabelCollisions": 0,
+    "multiPlacementSpaces": 108,
+    "multiRoleSpaces": 108,
+    "normalizedSpaces": 111,
+    "relations": 202,
+    "round5bNewIdentities": 13,
+    "round5bNewMajorRegionAdmissions": 2,
+    "round5bNewRelations": 54,
+    "round5bResidualSplits": 3
+  },
+  "date": "2026-08-19",
+  "findings": [
+    {
+      "claim": "Round5B turns ten Round5A residual pressures into thirteen externally verified identities after three evidence-driven splits.",
+      "id": "FTA9-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The bounded graph now contains 111 normalized identities and 202 relations with zero label collision or broken relation.",
+      "id": "FTA9-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Historical/Cultural/Interpretive and Social/Institutional/Collective Systems both pass bounded deletion-harm and future-edge perturbation dogfood and are admitted as non-authoritative navigation projections.",
+      "id": "FTA9-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "MajorRegion count rises from 8 to 10 without adding any owner coverage mapping, demonstrating navigation growth independent of semantic/coverage authority.",
+      "id": "FTA9-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Geography is now explicitly cross-visible: umbrella Geography remains a bridge between Earth and Social regions while Human Geography is a major social-spatial subspace.",
+      "id": "FTA9-5",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Further Area/Performance/International-Relations/Development/STS/Gender/Urban/Folklore identities can be added open-world without destabilizing the newly admitted bounded navigation regions in current perturbation fixtures.",
+      "id": "FTA9-6",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.whole-foundational-topology-audit-v9-acceptance",
+  "laws": [
+    "RESIDUAL_PRESSURE != PREDEFINED_IDENTITY",
+    "SLASH_JOINED_RESIDUAL_MAY_SPLIT",
+    "MAJOR_REGION_IS_NAVIGATION_PROJECTION_ONLY",
+    "SOCIAL_INSTITUTIONAL_REGION != SOCIAL_SCIENCE_ROOT",
+    "HISTORICAL_CULTURAL_REGION != HUMANITIES_ROOT",
+    "NEW_REGION != NEW_COVERAGE",
+    "REGION_VIEW_DOES_NOT_OWN_COVERAGE",
+    "FUTURE_EDGE_ADDITION != CLOSURE_FAILURE",
+    "OPEN_WORLD_REMAINS_REOPENABLE"
+  ],
+  "schemaVersion": 1,
+  "state": "ROUND5B_SOCIAL_CULTURAL_BREADTH_NORMALIZED_TWO_NAVIGATION_REGIONS_ADMITTED",
+  "truthRole": "HISTORICAL_RESEARCH_EVIDENCE",
+  "verification": {
+    "fullSuiteJob": "job-01a0167b-e11e-78f1-bfbb-90152b49a20b",
+    "fullSuiteResult": "151 tests OK; 28 gated skips; 123 deterministic tests executed",
+    "referenceSuiteJob": "job-01a0167b-a928-7c30-9153-72cf8d9a0982",
+    "referenceSuiteResult": "114/114 PASS"
+  }
+}

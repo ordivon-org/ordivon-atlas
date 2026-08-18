@@ -1058,6 +1058,144 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
         self.assertEqual(a["globalScalarCoverage"], "FORBIDDEN")
 
 
+    def test_round5b_turns_ten_residual_pressures_into_thirteen_nonroot_identities(self) -> None:
+        r = json.loads((ROOT / "reference/external-reference-round5b-social-cultural-breadth-normalization-20260819.json").read_text())
+        refs = {x["spaceRef"] for x in r["normalizedSpaces"]}
+        self.assertEqual(len(refs), 13)
+        self.assertEqual(len(r["relations"]), 54)
+        expected = {
+            "norm:cultural-studies", "norm:literary-studies", "norm:art-history", "norm:heritage-studies",
+            "norm:museology", "norm:demography", "norm:public-administration", "norm:public-policy",
+            "norm:management-organization-studies", "norm:criminology", "norm:social-policy",
+            "norm:social-work", "norm:human-geography",
+        }
+        self.assertEqual(refs, expected)
+        self.assertTrue(all(x["rootAdmission"] == "NOT_ADMITTED" for x in r["normalizedSpaces"]))
+        self.assertEqual(len(r["residualSplits"]), 3)
+        self.assertIn("ROUND5A_RESIDUAL != ROUND5B_IDENTITY", r["laws"])
+        self.assertIn("SLASH_JOINED_RESIDUAL_MAY_SPLIT", r["laws"])
+
+    def test_round5b_evidence_driven_splits_remain_distinct(self) -> None:
+        r = json.loads((ROOT / "reference/external-reference-round5b-social-cultural-breadth-normalization-20260819.json").read_text())
+        by = {x["spaceRef"]: x for x in r["normalizedSpaces"]}
+        for a, b, law in (
+            ("norm:heritage-studies", "norm:museology", "HERITAGE_STUDIES != MUSEOLOGY"),
+            ("norm:public-administration", "norm:public-policy", "PUBLIC_ADMINISTRATION != PUBLIC_POLICY"),
+            ("norm:social-policy", "norm:social-work", "SOCIAL_POLICY != SOCIAL_WORK"),
+        ):
+            self.assertIn(a, by); self.assertIn(b, by)
+            self.assertNotEqual(by[a]["label"], by[b]["label"])
+            self.assertIn(law, r["laws"])
+        splits = {x["round5aResidual"]: set(x["round5bIdentities"]) for x in r["residualSplits"]}
+        self.assertEqual(splits["Heritage / museum studies"], {"norm:heritage-studies", "norm:museology"})
+        self.assertEqual(splits["Public administration / public policy"], {"norm:public-administration", "norm:public-policy"})
+        self.assertEqual(splits["Social policy / social work"], {"norm:social-policy", "norm:social-work"})
+
+    def test_round5b_human_geography_is_subspace_of_geography_not_all_geography(self) -> None:
+        r = json.loads((ROOT / "reference/external-reference-round5b-social-cultural-breadth-normalization-20260819.json").read_text())
+        by = {x["spaceRef"]: x for x in r["normalizedSpaces"]}
+        hg = by["norm:human-geography"]
+        self.assertIn("MAJOR_GEOGRAPHY_SUBSPACE", hg["roleClasses"])
+        self.assertIn("HUMAN_SPATIAL_DOMAIN", hg["roleClasses"])
+        self.assertIn("HUMAN_GEOGRAPHY != ALL_GEOGRAPHY", r["laws"])
+        self.assertIn({"from":"norm:human-geography","type":"MAJOR_SUBSPACE_OF","to":"norm:geography"}, r["relations"])
+
+    def test_round5b_relations_resolve_across_all_normalized_rounds(self) -> None:
+        paths = [
+            "reference/foundational-census-round2a-normalization-20260819.json",
+            "reference/foundational-census-round2b-normalization-20260819.json",
+            "reference/foundational-census-round2c-residual-normalization-20260819.json",
+            "reference/foundational-census-round3a-breadth-normalization-20260819.json",
+            "reference/foundational-reference-round4a-crosswalk-induced-repair-20260819.json",
+            "reference/foundational-reference-round4b-scd-crosswalk-repair-20260819.json",
+            "reference/foundational-reference-round4c-human-crosswalk-repair-20260819.json",
+            "reference/foundational-reference-round4d-media-crosswalk-repair-20260819.json",
+            "reference/external-reference-round5a-social-cultural-normalization-20260819.json",
+            "reference/external-reference-round5b-social-cultural-breadth-normalization-20260819.json",
+        ]
+        rounds = [json.loads((ROOT / p).read_text()) for p in paths]
+        refs = {x["spaceRef"] for rr in rounds for x in rr["normalizedSpaces"]}
+        for rel in rounds[-1]["relations"]:
+            self.assertIn(rel["from"], refs, rel)
+            self.assertIn(rel["to"], refs, rel)
+
+    def test_round5b_navigation_candidates_pass_deletion_and_future_edge_perturbation(self) -> None:
+        d = json.loads((ROOT / "reference/social-cultural-major-region-round5b-admission-dogfood-20260819.json").read_text())
+        self.assertEqual(d["state"], "TWO_SOCIAL_CULTURAL_NAVIGATION_PROJECTIONS_ADMITTED_AFTER_ROUND5B")
+        self.assertEqual(set(d["admittedRegions"]), {
+            "candidate-region:historical-cultural-interpretive",
+            "candidate-region:social-institutional-collective",
+        })
+        self.assertEqual(d["deferredRegions"], [])
+        self.assertGreaterEqual(len(d["futureEdgePerturbations"]), 8)
+        for c in d["candidates"]:
+            self.assertEqual(c["gateResults"]["G2_NAVIGATION_DELETION_HARM"], "PASS_BOUNDED_FIXTURES")
+            self.assertEqual(c["gateResults"]["G7_STABILITY"], "PASS_BOUNDED_PERTURBATION")
+            self.assertEqual(c["admission"], "ADMITTED_NAVIGATION_PROJECTION_V1")
+            self.assertTrue(all(x["result"] == "PASS" for x in c["navigationFixtures"]))
+            self.assertTrue(all(x["result"] == "PASS" for x in c["futureEdgePerturbationFixtures"]))
+
+    def test_round5b_social_cultural_region_admission_is_navigation_not_root(self) -> None:
+        d = json.loads((ROOT / "reference/social-cultural-major-region-round5b-admission-dogfood-20260819.json").read_text())
+        self.assertIn("MAJOR_REGION_ADMISSION_IS_VERSIONED_NAVIGATION_ONLY", d["laws"])
+        self.assertIn("SOCIAL_CULTURAL_REGION != SOCIAL_SCIENCE_ROOT", d["laws"])
+        self.assertIn("HISTORICAL_CULTURAL_REGION != HUMANITIES_ROOT", d["laws"])
+        self.assertIn("REGION_COVERAGE_TRUTH_FORBIDDEN", d["laws"])
+
+    def test_major_regions_v07_add_exactly_two_nonexclusive_social_cultural_projections(self) -> None:
+        nav = json.loads((ROOT / "reference/canonical-major-regions-v0-7-20260819.json").read_text())
+        self.assertEqual(len(nav["regions"]), 10)
+        self.assertEqual(nav["closureClaim"], "NONE")
+        by = {x["regionRef"]: x for x in nav["regions"]}
+        for ref in ("navigation-region:historical-cultural-interpretive", "navigation-region:social-institutional-collective"):
+            self.assertIn(ref, by)
+            self.assertEqual(by[ref]["kind"], "CANONICAL_MAJOR_REGION_PROJECTION")
+            self.assertEqual(by[ref]["truthRole"], "NON_AUTHORITATIVE_NAVIGATION_PROJECTION")
+            self.assertEqual(by[ref]["membershipSemantics"], "NON_EXCLUSIVE")
+            self.assertEqual(by[ref]["closureClaim"], "NONE")
+            self.assertEqual(by[ref]["admissionEvidence"]["status"], "ADMITTED_NAVIGATION_PROJECTION_V1")
+
+    def test_major_regions_v07_geography_crosses_earth_and_social_navigation(self) -> None:
+        nav = json.loads((ROOT / "reference/canonical-major-regions-v0-7-20260819.json").read_text())
+        by = {x["regionRef"]: x for x in nav["regions"]}
+        self.assertIn("norm:geography", by["navigation-region:earth-planetary-space"]["memberRefs"])
+        self.assertIn("norm:geography", by["navigation-region:social-institutional-collective"]["memberRefs"])
+        self.assertIn("norm:human-geography", by["navigation-region:social-institutional-collective"]["memberRefs"])
+        self.assertNotIn("norm:human-geography", by["navigation-region:earth-planetary-space"]["anchorRefs"])
+
+    def test_crosswalk_v06_adds_regions_but_zero_new_owner_coverage_mappings(self) -> None:
+        old = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-5-20260819.json").read_text())
+        new = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-6-20260819.json").read_text())
+        self.assertEqual(new["state"], "TEN_OWNER_CROSSWALK_REPROJECTED_ON_TEN_MAJOR_REGIONS_NO_NEW_COVERAGE_MAPPINGS")
+        self.assertEqual(len(old["mappings"]), 25)
+        self.assertEqual(len(new["mappings"]), 25)
+        self.assertEqual(new["mappings"], old["mappings"])
+        self.assertEqual(len(new["regionCoverageViews"]), 10)
+        self.assertEqual(new["globalScalarCoverage"], "FORBIDDEN")
+        self.assertTrue(all(x["aggregateCoverageTruth"] == "FORBIDDEN" for x in new["regionCoverageViews"]))
+
+    def test_whole_audit_v9_tracks_round5b_region_growth_independent_of_coverage(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v9-social-cultural-round5b-20260819.json").read_text())
+        counts = a["counts"]
+        self.assertEqual(counts["normalizedSpaces"], 111)
+        self.assertEqual(counts["relations"], 202)
+        self.assertEqual(counts["multiPlacementSpaces"], 108)
+        self.assertEqual(counts["multiRoleSpaces"], 108)
+        self.assertEqual(counts["canonicalMajorRegionProjections"], 10)
+        self.assertEqual(counts["round5bNewIdentities"], 13)
+        self.assertEqual(counts["round5bNewRelations"], 54)
+        self.assertEqual(counts["round5bResidualSplits"], 3)
+        self.assertEqual(counts["round5bNewMajorRegionAdmissions"], 2)
+        self.assertEqual(counts["currentOwnerAuthorityInputs"], 10)
+        self.assertEqual(counts["crosswalkMappings"], 25)
+        self.assertEqual(counts["crosswalkNewMappingsRound5b"], 0)
+        self.assertEqual(counts["identityLabelCollisions"], 0)
+        self.assertEqual(counts["brokenRelations"], 0)
+        self.assertEqual(a["globalScalarCoverage"], "FORBIDDEN")
+        self.assertIn("NEW_REGION != NEW_COVERAGE", a["laws"])
+        self.assertIn("OPEN_WORLD_REMAINS_REOPENABLE", a["laws"])
+
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,57 @@
+{
+  "admittedRegions": [
+    "candidate-region:historical-cultural-interpretive",
+    "candidate-region:social-institutional-collective"
+  ],
+  "closure": "TWO_SOCIAL_CULTURAL_NAVIGATION_PROJECTIONS_ACCEPTED_OPEN_WORLD",
+  "controls": [
+    "Both new regions passed bounded navigation deletion-harm and future-edge perturbation fixtures.",
+    "Admission is versioned navigation only, not semantic root/owner/metaphysical truth.",
+    "Historical/Cultural/Interpretive is not a Humanities root.",
+    "Social/Institutional/Collective is not a Social Sciences root.",
+    "Membership remains non-exclusive and closureClaim=NONE.",
+    "Future edge additions do not assert exhaustive closure."
+  ],
+  "counts": {
+    "admittedRegions": 2,
+    "candidateRegions": 2,
+    "canonicalMajorRegions": 10,
+    "deferredRegions": 0,
+    "futureEdgePerturbations": 9
+  },
+  "date": "2026-08-19",
+  "dogfood": "reference/social-cultural-major-region-round5b-admission-dogfood-20260819.json",
+  "findings": [
+    {
+      "claim": "After thirteen residual identities are normalized, both social/cultural navigation candidates pass bounded deletion-harm and perturbation stability while remaining non-exclusive/open-world.",
+      "id": "R5B-D1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Historical, Cultural & Interpretive can be admitted as a navigation projection without treating Culture, Humanities or History as a semantic root.",
+      "id": "R5B-D2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Social, Institutional & Collective Systems can be admitted as a navigation projection without treating Social Sciences as a semantic root or collapsing Economics, Law, Politics, Management or Social Work.",
+      "id": "R5B-D3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Future edge additions such as International Relations, Development Studies, Musicology or STS do not delete the navigation function of either candidate in bounded perturbation fixtures.",
+      "id": "R5B-D4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.social-cultural-major-regions-v1-acceptance",
+  "projectionSet": "reference/canonical-major-regions-v0-7-20260819.json",
+  "schemaVersion": 1,
+  "state": "TWO_SOCIAL_CULTURAL_NAVIGATION_PROJECTIONS_ADMITTED_AFTER_ROUND5B",
+  "truthRole": "HISTORICAL_NAVIGATION_DOGFOOD_EVIDENCE",
+  "verification": {
+    "fullSuiteJob": "job-01a0167b-e11e-78f1-bfbb-90152b49a20b",
+    "fullSuiteResult": "151 tests OK; 28 gated skips; 123 deterministic tests executed",
+    "referenceSuiteJob": "job-01a0167b-a928-7c30-9153-72cf8d9a0982",
+    "referenceSuiteResult": "114/114 PASS"
+  }
+}

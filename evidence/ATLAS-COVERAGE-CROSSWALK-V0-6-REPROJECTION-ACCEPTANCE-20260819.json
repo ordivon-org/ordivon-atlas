@@ -1,0 +1,28 @@
+{
+  "closure": "TEN_OWNER_CROSSWALK_REPROJECTED_ON_TEN_REGIONS_WITH_ZERO_NEW_COVERAGE_TRUTH",
+  "controls": [
+    "Round5B adds two MajorRegion projections and zero owner-to-identity coverage mappings.",
+    "The exact 25 v0.5 identity mappings are preserved byte-for-structure in v0.6.",
+    "Every region view has aggregateCoverageTruth=FORBIDDEN.",
+    "Existing Human/Media mappings appearing in new region views are navigation hints only.",
+    "Global scalar coverage remains FORBIDDEN."
+  ],
+  "counts": {
+    "identityMappings": 25,
+    "newMappingsRound5b": 0,
+    "ownerAuthorityInputs": 10,
+    "regionViews": 10
+  },
+  "crosswalk": "reference/coverage-crosswalk-foundational-pilot-v0-6-20260819.json",
+  "date": "2026-08-19",
+  "kind": "ordivon.coverage-crosswalk-v0-6-reprojection-acceptance",
+  "schemaVersion": 1,
+  "state": "TEN_OWNER_CROSSWALK_REPROJECTED_ON_TEN_MAJOR_REGIONS_NO_NEW_COVERAGE_MAPPINGS",
+  "truthRole": "HISTORICAL_CROSSWALK_PROJECTION_EVIDENCE",
+  "verification": {
+    "fullSuiteJob": "job-01a0167b-e11e-78f1-bfbb-90152b49a20b",
+    "fullSuiteResult": "151 tests OK; 28 gated skips; 123 deterministic tests executed",
+    "referenceSuiteJob": "job-01a0167b-a928-7c30-9153-72cf8d9a0982",
+    "referenceSuiteResult": "114/114 PASS"
+  }
+}
