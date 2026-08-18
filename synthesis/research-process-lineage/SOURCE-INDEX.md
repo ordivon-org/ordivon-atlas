@@ -67,6 +67,37 @@ Host:
 - `task:computational-applicability-staged-deletion-intent-resolution-20260818`
 - `task:ordivon-atlas-computing-special-topology-audit-20260818`
 
+## Episode 4 — Runtime Operational Realization C1–C10
+
+Runtime owner:
+
+- source closeout commit `50e29e68e99a274fe9b7819aa1bdbd27ec63cd38`
+- programme-saturation owner publication transport `256ef6d0080de38c028a70e27cbaa08e0f817edb`
+- current AuthorityVersionRef `sha256:9c67d1b4094ce85a2465579430bb1a941f1923457087fb74cde0642d7b9a51b3`
+- result `result:runtime:operational-realization-programme-c1-c10-saturated`
+- `research/programme/PROGRAMME-SATURATION-CLOSEOUT.md`
+- `research/programme/consumption/C1-STANDING-CURRENTNESS-RECOVERY.md`
+- `research/programme/consumption/C2-CONSEQUENTIAL-RETRY-REGROUNDING.md`
+- `research/programme/consumption/C3-FRESH-EXECUTION-SUPPORT-REUSE.md`
+- `research/programme/consumption/C4-CROSS-OWNER-STANDING-CURRENTNESS.md`
+- `research/programme/consumption/C5-EVIDENCE-CLAIM-SCOPE.md`
+- `research/programme/consumption/C6-LOCAL-GLOBAL-PUBLICATION-COMPOSITION.md`
+- `research/programme/consumption/C7-IDENTITY-LINEAGE-CAUSAL-ATTRIBUTION.md`
+- `research/programme/consumption/C8-BINDING-AUTHORITY-REALIZATION-ORTHOGONALITY.md`
+- `research/programme/consumption/C9-LIFECYCLE-RETENTION-RECLAIMABILITY.md`
+- `research/programme/consumption/C10-CROSS-FAMILY-SATURATION-AUDIT.md`
+
+Host:
+
+- `task:runtime-operational-realization-programme-20260818` — revision 13 completed
+- `task:standing-currentness-semantics-project-20260818` — independent cross-owner follow-on candidate created from C1+C4
+
+Atlas:
+
+- synthesis `synthesis/2026-08-19-runtime-operational-realization/`
+- process episode `synthesis/research-process-lineage/episodes/2026-08-18-19-runtime-operational-realization-c1-c10.md`
+- live refresh after Runtime publication observed the C1–C10 result `CURRENT_TO_SOURCE`.
+
 ## Process-lineage requirement task
 
 - `task:ordivon-atlas-research-process-lineage-requirement-20260819`
