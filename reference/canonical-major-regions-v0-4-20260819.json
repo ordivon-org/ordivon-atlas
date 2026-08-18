@@ -1,0 +1,377 @@
+{
+  "closureClaim": "NONE",
+  "coverageCrosswalk": "IDENTITY_LEVEL_ONLY",
+  "deferred": [
+    {
+      "candidateRef": "candidate-region:historical-symbolic",
+      "reason": "Boundary expected to change materially when social/cultural/humanities breadth wave begins."
+    }
+  ],
+  "explicitNonRegions": [
+    "counterexample-region:statistics",
+    "counterexample-region:metrology",
+    "counterexample-region:materials",
+    "counterexample-region:medicine",
+    "counterexample-region:software-engineering",
+    "counterexample-region:classics"
+  ],
+  "kind": "ordivon.canonical-major-region-projection-set",
+  "openWorld": true,
+  "preservesHistory": true,
+  "projectionSetId": "foundational-major-regions:v0.4",
+  "regions": [
+    {
+      "admissionEvidence": {
+        "basis": "v0.3 admission preserved + Round4C Human crosswalk perturbation",
+        "status": "PASS_V0_4_HUMAN_PERTURBATION"
+      },
+      "anchorRefs": [
+        "norm:mathematics",
+        "norm:logic",
+        "norm:statistics"
+      ],
+      "authorityNotice": "Navigation only; no ReferenceIdentity/owner truth/closure authority.",
+      "closureClaim": "NONE",
+      "crossCuttingRefs": [
+        "norm:mathematics",
+        "norm:logic",
+        "norm:probability",
+        "norm:statistics",
+        "norm:information-theory",
+        "norm:dynamical-systems",
+        "norm:systems-theory-control",
+        "norm:formal-semantics",
+        "norm:formal-methods"
+      ],
+      "kind": "CANONICAL_MAJOR_REGION_PROJECTION",
+      "label": "Formal & Inferential Structures",
+      "memberRefs": [
+        "norm:mathematics",
+        "norm:logic",
+        "norm:probability",
+        "norm:statistics",
+        "norm:information-theory",
+        "norm:dynamical-systems",
+        "norm:systems-theory-control",
+        "norm:formal-semantics",
+        "norm:formal-methods"
+      ],
+      "membershipSemantics": "NON_EXCLUSIVE",
+      "regionRef": "navigation-region:formal-inferential",
+      "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+      "version": "0.4.0"
+    },
+    {
+      "admissionEvidence": {
+        "basis": "v0.3 admission preserved + Round4C Human crosswalk perturbation",
+        "status": "PASS_V0_4_HUMAN_PERTURBATION"
+      },
+      "anchorRefs": [
+        "norm:computation",
+        "norm:operating-systems",
+        "norm:networking-communication"
+      ],
+      "authorityNotice": "Navigation only; no ReferenceIdentity/owner truth/closure authority.",
+      "closureClaim": "NONE",
+      "crossCuttingRefs": [
+        "norm:computation",
+        "norm:foundations-programming-languages",
+        "norm:operating-systems",
+        "norm:parallel-distributed-computing",
+        "norm:networking-communication",
+        "norm:systems-fundamentals",
+        "norm:software-engineering",
+        "norm:computer-engineering",
+        "norm:control-engineering",
+        "norm:information-theory",
+        "norm:formal-semantics",
+        "norm:formal-methods"
+      ],
+      "kind": "CANONICAL_MAJOR_REGION_PROJECTION",
+      "label": "Computation & Computer Systems",
+      "memberRefs": [
+        "norm:computation",
+        "norm:foundations-programming-languages",
+        "norm:operating-systems",
+        "norm:parallel-distributed-computing",
+        "norm:networking-communication",
+        "norm:systems-fundamentals",
+        "norm:software-engineering",
+        "norm:computer-engineering",
+        "norm:control-engineering",
+        "norm:information-theory",
+        "norm:formal-semantics",
+        "norm:formal-methods"
+      ],
+      "membershipSemantics": "NON_EXCLUSIVE",
+      "regionRef": "navigation-region:computation-computer-systems",
+      "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+      "version": "0.4.0"
+    },
+    {
+      "admissionEvidence": {
+        "basis": "v0.3 admission preserved + Round4C Human crosswalk perturbation",
+        "status": "PASS_V0_4_HUMAN_PERTURBATION"
+      },
+      "anchorRefs": [
+        "norm:philosophy",
+        "norm:metaphysics",
+        "norm:epistemology"
+      ],
+      "authorityNotice": "Navigation only; no ReferenceIdentity/owner truth/closure authority.",
+      "closureClaim": "NONE",
+      "crossCuttingRefs": [
+        "norm:philosophy",
+        "norm:metaphysics",
+        "norm:epistemology",
+        "norm:ethics-value-theory",
+        "norm:logic",
+        "norm:philosophy-of-mind",
+        "norm:philosophy-of-science",
+        "norm:philosophy-of-language",
+        "norm:aesthetics"
+      ],
+      "kind": "CANONICAL_MAJOR_REGION_PROJECTION",
+      "label": "Philosophical & Conceptual Inquiry",
+      "memberRefs": [
+        "norm:philosophy",
+        "norm:metaphysics",
+        "norm:epistemology",
+        "norm:ethics-value-theory",
+        "norm:logic",
+        "norm:philosophy-of-mind",
+        "norm:philosophy-of-science",
+        "norm:philosophy-of-language",
+        "norm:aesthetics"
+      ],
+      "membershipSemantics": "NON_EXCLUSIVE",
+      "regionRef": "navigation-region:philosophical-conceptual",
+      "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+      "version": "0.4.0"
+    },
+    {
+      "admissionEvidence": {
+        "basis": "v0.3 admission preserved + Round4C Human crosswalk perturbation",
+        "status": "PASS_V0_4_HUMAN_PERTURBATION"
+      },
+      "anchorRefs": [
+        "norm:physics",
+        "norm:chemistry",
+        "norm:materials"
+      ],
+      "authorityNotice": "This projection organizes navigation only. It does not create or change ReferenceIdentity truth, Ordivon owner truth, Foundation standing or external-world semantics.",
+      "closureClaim": "NONE",
+      "crossCuttingRefs": [
+        "norm:chemistry",
+        "norm:condensed-matter",
+        "norm:chemical-physics",
+        "norm:materials",
+        "norm:biochemistry"
+      ],
+      "kind": "CANONICAL_MAJOR_REGION_PROJECTION",
+      "label": "Physical & Material",
+      "memberRefs": [
+        "norm:physics",
+        "norm:chemistry",
+        "norm:condensed-matter",
+        "norm:chemical-physics",
+        "norm:materials",
+        "norm:biochemistry"
+      ],
+      "membershipSemantics": "NON_EXCLUSIVE",
+      "regionRef": "navigation-region:physical-material",
+      "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+      "version": "0.4.0"
+    },
+    {
+      "admissionEvidence": {
+        "basis": "v0.3 admission preserved + Round4C Human crosswalk perturbation",
+        "status": "PASS_V0_4_HUMAN_PERTURBATION"
+      },
+      "anchorRefs": [
+        "norm:earth-science",
+        "norm:planetary-science",
+        "norm:astronomy"
+      ],
+      "authorityNotice": "This projection organizes navigation only. It does not create or change ReferenceIdentity truth, Ordivon owner truth, Foundation standing or external-world semantics.",
+      "closureClaim": "NONE",
+      "crossCuttingRefs": [
+        "norm:earth-science",
+        "norm:geophysics",
+        "norm:geochemistry",
+        "norm:atmospheric-science",
+        "norm:oceanography",
+        "norm:climate-science",
+        "norm:physical-geography",
+        "norm:planetary-science",
+        "norm:astronomy",
+        "norm:cosmology"
+      ],
+      "kind": "CANONICAL_MAJOR_REGION_PROJECTION",
+      "label": "Earth, Planetary & Space Systems",
+      "memberRefs": [
+        "norm:earth-science",
+        "norm:geology",
+        "norm:geophysics",
+        "norm:geochemistry",
+        "norm:atmospheric-science",
+        "norm:oceanography",
+        "norm:climate-science",
+        "norm:physical-geography",
+        "norm:planetary-science",
+        "norm:astronomy",
+        "norm:cosmology"
+      ],
+      "membershipSemantics": "NON_EXCLUSIVE",
+      "regionRef": "navigation-region:earth-planetary-space",
+      "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+      "version": "0.4.0"
+    },
+    {
+      "admissionEvidence": {
+        "basis": "v0.3 admission preserved + Round4C Human crosswalk perturbation",
+        "status": "PASS_V0_4_HUMAN_PERTURBATION"
+      },
+      "anchorRefs": [
+        "norm:biology",
+        "norm:genetics",
+        "norm:ecology"
+      ],
+      "authorityNotice": "This projection organizes navigation only. It does not create or change ReferenceIdentity truth, Ordivon owner truth, Foundation standing or external-world semantics.",
+      "closureClaim": "NONE",
+      "crossCuttingRefs": [
+        "norm:molecular-cellular-biology",
+        "norm:biochemistry",
+        "norm:genetics",
+        "norm:genomics",
+        "norm:evolutionary-biology",
+        "norm:ecology",
+        "norm:microbiology",
+        "norm:developmental-biology",
+        "norm:physiology",
+        "norm:organismal-biology",
+        "norm:neuroscience",
+        "norm:developmental-science"
+      ],
+      "kind": "CANONICAL_MAJOR_REGION_PROJECTION",
+      "label": "Life & Biological Organization",
+      "memberRefs": [
+        "norm:biology",
+        "norm:molecular-cellular-biology",
+        "norm:biochemistry",
+        "norm:genetics",
+        "norm:genomics",
+        "norm:evolutionary-biology",
+        "norm:ecology",
+        "norm:microbiology",
+        "norm:developmental-biology",
+        "norm:physiology",
+        "norm:organismal-biology",
+        "norm:neuroscience",
+        "norm:developmental-science"
+      ],
+      "membershipSemantics": "NON_EXCLUSIVE",
+      "regionRef": "navigation-region:life",
+      "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+      "version": "0.4.0"
+    },
+    {
+      "admissionEvidence": {
+        "basis": "v0.3 admission preserved + Round4C Human crosswalk perturbation",
+        "status": "PASS_V0_4_HUMAN_PERTURBATION"
+      },
+      "anchorRefs": [
+        "norm:cognitive-science",
+        "norm:psychology",
+        "norm:linguistics"
+      ],
+      "authorityNotice": "Navigation only; no ReferenceIdentity/owner truth/closure authority.",
+      "closureClaim": "NONE",
+      "crossCuttingRefs": [
+        "norm:cognitive-science",
+        "norm:psychology",
+        "norm:neuroscience",
+        "norm:linguistics",
+        "norm:philosophy-of-mind",
+        "norm:consciousness-science",
+        "norm:affective-science",
+        "norm:developmental-science"
+      ],
+      "kind": "CANONICAL_MAJOR_REGION_PROJECTION",
+      "label": "Mind, Cognition & Language",
+      "memberRefs": [
+        "norm:cognitive-science",
+        "norm:psychology",
+        "norm:neuroscience",
+        "norm:linguistics",
+        "norm:philosophy-of-mind",
+        "norm:consciousness-science",
+        "norm:affective-science",
+        "norm:developmental-science"
+      ],
+      "membershipSemantics": "NON_EXCLUSIVE",
+      "regionRef": "navigation-region:mind-language",
+      "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+      "version": "0.4.0"
+    },
+    {
+      "admissionEvidence": {
+        "basis": "v0.3 admission preserved + Round4C Human crosswalk perturbation",
+        "status": "PASS_V0_4_HUMAN_PERTURBATION"
+      },
+      "anchorRefs": [
+        "norm:engineering",
+        "norm:design",
+        "norm:systems-engineering"
+      ],
+      "authorityNotice": "This projection organizes navigation only. It does not create or change ReferenceIdentity truth, Ordivon owner truth, Foundation standing or external-world semantics.",
+      "closureClaim": "NONE",
+      "crossCuttingRefs": [
+        "norm:engineering",
+        "norm:design",
+        "norm:systems-engineering",
+        "norm:manufacturing",
+        "norm:materials",
+        "norm:bioengineering",
+        "norm:mechanical-engineering",
+        "norm:electrical-electronic-engineering",
+        "norm:civil-structural-engineering",
+        "norm:chemical-engineering",
+        "norm:computer-engineering",
+        "norm:software-engineering",
+        "norm:control-engineering",
+        "norm:environmental-engineering",
+        "norm:energy-engineering",
+        "norm:formal-methods"
+      ],
+      "kind": "CANONICAL_MAJOR_REGION_PROJECTION",
+      "label": "Engineering, Design & Realization",
+      "memberRefs": [
+        "norm:engineering",
+        "norm:design",
+        "norm:systems-engineering",
+        "norm:manufacturing",
+        "norm:materials",
+        "norm:bioengineering",
+        "norm:mechanical-engineering",
+        "norm:electrical-electronic-engineering",
+        "norm:civil-structural-engineering",
+        "norm:chemical-engineering",
+        "norm:computer-engineering",
+        "norm:software-engineering",
+        "norm:control-engineering",
+        "norm:environmental-engineering",
+        "norm:energy-engineering",
+        "norm:formal-methods"
+      ],
+      "membershipSemantics": "NON_EXCLUSIVE",
+      "regionRef": "navigation-region:engineering-design",
+      "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+      "version": "0.4.0"
+    }
+  ],
+  "schemaVersion": 4,
+  "supersedesForNavigation": "reference/canonical-major-regions-v0-3-20260819.json",
+  "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+  "version": "0.4.0"
+}

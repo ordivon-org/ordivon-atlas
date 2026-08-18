@@ -716,6 +716,130 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
         self.assertIn("MATURE_THEORY_SUBTRACTION_PRECEDES_NOVELTY", a["laws"])
 
 
+    def test_crosswalk_v04_owner_snapshot_is_nine_owner_and_human_source_fenced(self) -> None:
+        snap = json.loads((ROOT / "reference/coverage-crosswalk-owner-authority-snapshot-v0-4-20260819.json").read_text())
+        self.assertEqual(snap["atlasSource"]["mainRevision"], "86fbb686f5a1940dd6f5765bba3b01480aef6acf")
+        self.assertEqual(snap["atlasSource"]["observationResult"], "9/9 CURRENT_TO_SOURCE")
+        self.assertIn("PARALLEL_PER_OWNER", snap["atlasSource"]["observationMode"])
+        self.assertEqual(len(snap["owners"]), 9)
+        by = {x["ownerResearchRef"]: x for x in snap["owners"]}
+        h = by["research-owner:human"]
+        self.assertEqual(h["authorityVersionRef"], "sha256:035eaa334ffdfe3ae44236f966176a36ffd772ee8c2e4c4454733ab9699ef392")
+        self.assertEqual(h["sourceTransportRevision"], "cc966bf99458949b59c433a5f7bc8fafe3d692b7")
+        self.assertEqual(h["recoveryLocator"], "research/core/HUMAN-RESEARCH-CORE.md")
+        self.assertEqual((h["resultCount"], h["closureCount"], h["negativeLineageCount"]), (30, 16, 12))
+        self.assertEqual({x["owner"] for x in snap["excludedCurrentnessCases"]}, {"Finance", "Media", "Harness"})
+
+    def test_round4c_repairs_three_human_pressure_coordinates_from_external_sources(self) -> None:
+        r = json.loads((ROOT / "reference/foundational-reference-round4c-human-crosswalk-repair-20260819.json").read_text())
+        by = {x["spaceRef"]: x for x in r["normalizedSpaces"]}
+        self.assertEqual(set(by), {"norm:consciousness-science", "norm:affective-science", "norm:developmental-science"})
+        self.assertEqual(len(r["relations"]), 12)
+        for row in by.values():
+            self.assertEqual(row["rootAdmission"], "NOT_ADMITTED")
+            self.assertGreaterEqual(len(row["evidence"]), 2)
+            self.assertGreaterEqual(len(row["placements"]), 6)
+        self.assertIn("SUBJECTIVE_EXPERIENCE_RESEARCH_DOMAIN", by["norm:consciousness-science"]["roleClasses"])
+        self.assertIn("AFFECT_EMOTION_PROCESS_DOMAIN", by["norm:affective-science"]["roleClasses"])
+        self.assertIn("HUMAN_DEVELOPMENT_DOMAIN", by["norm:developmental-science"]["roleClasses"])
+        self.assertIn("MATURE_FIELD_SUBTRACTION_PRECEDES_NOVELTY", r["laws"])
+
+    def test_round4c_does_not_mint_human_owner_architecture_as_external_ontology(self) -> None:
+        r = json.loads((ROOT / "reference/foundational-reference-round4c-human-crosswalk-repair-20260819.json").read_text())
+        refs = {x["spaceRef"] for x in r["normalizedSpaces"]}
+        labels = " ".join(x["label"].lower() for x in r["normalizedSpaces"])
+        self.assertFalse(any("ordivon" in ref or "hf" in ref or "hoc" in ref for ref in refs))
+        self.assertNotIn("ordivon human", labels)
+        self.assertIn("HUMAN_FOUNDATION != EXTERNAL_DISCIPLINE", r["laws"])
+        self.assertIn("HOC != SCIENTIFIC_FIELD", r["laws"])
+        self.assertIn("DEEP_DOMAIN != PRIMITIVE_OR_EXTERNAL_ROOT", r["laws"])
+
+    def test_crosswalk_v04_human_has_ten_bounded_mappings_and_no_broad_biology_medicine_claim(self) -> None:
+        p = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-4-20260819.json").read_text())
+        human = [x for x in p["mappings"] if x["ownerResearchRef"] == "research-owner:human"]
+        self.assertEqual(len(human), 10)
+        self.assertEqual(len(p["mappings"]), 21)
+        self.assertEqual(p["humanDisposition"]["standing"], "EXTERNAL_MULTI_DOMAIN_PARTIAL_MAPPED_NOVELTY_NOT_ESTABLISHED")
+        self.assertEqual(p["humanDisposition"]["directFieldEquivalence"], "NOT_CLAIMED")
+        external = {x["externalRef"] for x in human}
+        self.assertEqual(external, {"norm:psychology", "norm:cognitive-science", "norm:consciousness-science", "norm:affective-science", "norm:developmental-science", "norm:linguistics", "norm:neuroscience", "norm:genetics", "norm:evolutionary-biology", "norm:physiology"})
+        self.assertNotIn("norm:biology", external)
+        self.assertNotIn("norm:medicine-health", external)
+        by = {x["externalRef"]: x for x in human}
+        for ref in ("norm:psychology", "norm:consciousness-science", "norm:affective-science"):
+            self.assertEqual(by[ref]["relation"], "DIRECT_PARTIAL_COVERAGE")
+        for ref in external - {"norm:psychology", "norm:consciousness-science", "norm:affective-science"}:
+            self.assertEqual(by[ref]["relation"], "BRIDGE_COVERAGE")
+
+    def test_crosswalk_v04_preserves_human_normative_and_operational_noncoverage(self) -> None:
+        p = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-4-20260819.json").read_text())
+        cases = " | ".join(x["case"] + " :: " + x["reason"] for x in p["nonCoverageCases"])
+        self.assertIn("HF14-HF18", cases)
+        self.assertIn("Ordivon Normative", cases)
+        self.assertIn("HOC0-HOC10", cases)
+        self.assertIn("No Human Science or Ordivon Human external identity", cases)
+        self.assertIn("HD7/HD8/HD9 bridge mappings do not amount to Biology or Medicine coverage", cases)
+
+    def test_major_regions_v04_keep_human_pressure_identities_nonanchor_and_no_new_region(self) -> None:
+        nav = json.loads((ROOT / "reference/canonical-major-regions-v0-4-20260819.json").read_text())
+        self.assertEqual(len(nav["regions"]), 8)
+        by = {x["regionRef"]: x for x in nav["regions"]}
+        mind = by["navigation-region:mind-language"]
+        life = by["navigation-region:life"]
+        for ref in ("norm:consciousness-science", "norm:affective-science", "norm:developmental-science"):
+            self.assertIn(ref, mind["memberRefs"])
+            self.assertNotIn(ref, mind["anchorRefs"])
+        self.assertIn("norm:developmental-science", life["memberRefs"])
+        self.assertNotIn("norm:developmental-science", life["anchorRefs"])
+        self.assertNotIn("norm:consciousness-science", life["memberRefs"])
+        self.assertNotIn("norm:affective-science", life["memberRefs"])
+
+    def test_major_regions_v04_human_perturbation_dogfood_passes(self) -> None:
+        d = json.loads((ROOT / "reference/canonical-major-regions-v0-4-dogfood-20260819.json").read_text())
+        self.assertEqual(d["state"], "PASS")
+        self.assertTrue(all(d["destructiveControls"].values()))
+        self.assertTrue(all(x["result"] == "PASS" for x in d["regionResults"]))
+        self.assertTrue(d["destructiveControls"]["noNewMajorRegionCreatedForHuman"])
+        self.assertTrue(d["destructiveControls"]["noHumanOwnerIdentityInReferenceGraph"])
+        self.assertTrue(d["destructiveControls"]["developmentCrossesMindAndLife"])
+
+    def test_crosswalk_v04_dense_human_mind_life_mapping_never_becomes_region_truth(self) -> None:
+        p = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-4-20260819.json").read_text())
+        self.assertEqual(p["globalScalarCoverage"], "FORBIDDEN")
+        for view in p["regionCoverageViews"]:
+            self.assertEqual(view["aggregateCoverageTruth"], "FORBIDDEN")
+        mind = next(x for x in p["regionCoverageViews"] if x["regionRef"] == "navigation-region:mind-language")
+        life = next(x for x in p["regionCoverageViews"] if x["regionRef"] == "navigation-region:life")
+        self.assertGreaterEqual(len(mind["mappedMemberRefs"]), 7)
+        self.assertGreaterEqual(len(life["mappedMemberRefs"]), 4)
+
+    def test_whole_audit_v6_tracks_human_crosswalk_without_integrity_or_novelty_promotion(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v6-human-crosswalk-20260819.json").read_text())
+        self.assertEqual(a["counts"]["normalizedSpaces"], 86)
+        self.assertEqual(a["counts"]["relations"], 110)
+        self.assertEqual(a["counts"]["multiPlacementSpaces"], 83)
+        self.assertEqual(a["counts"]["multiRoleSpaces"], 83)
+        self.assertEqual(a["counts"]["currentOwnerAuthorityInputs"], 9)
+        self.assertEqual(a["counts"]["crosswalkMappings"], 21)
+        self.assertEqual(a["counts"]["humanMappings"], 10)
+        self.assertEqual(a["counts"]["canonicalMajorRegionProjections"], 8)
+        self.assertEqual(a["counts"]["identityLabelCollisions"], 0)
+        self.assertEqual(a["counts"]["brokenRelations"], 0)
+        self.assertEqual(a["globalScalarCoverage"], "FORBIDDEN")
+        self.assertIn("MATURE_KNOWLEDGE_SUBTRACTION_PRECEDES_NOVELTY", a["laws"])
+
+    def test_open_resource_subtraction_pattern_is_heterogeneously_replicated_not_constitutional(self) -> None:
+        m = json.loads((ROOT / "reference/open-resource-mature-knowledge-subtraction-pattern-v0-2-20260819.json").read_text())
+        self.assertEqual(m["state"], "REPLICATED_ACROSS_TWO_HETEROGENEOUS_OWNERS_NOT_CONSTITUTIONAL")
+        self.assertEqual({x["owner"] for x in m["witnesses"]}, {"research-owner:semantics-of-computational-descriptions", "research-owner:human"})
+        modes = {x["mode"] for x in m["witnesses"]}
+        self.assertIn("MATURE_FORMAL_THEORY_SUBTRACTION", modes)
+        self.assertIn("MATURE_DISCIPLINARY_AND_EMPIRICAL_FIELD_SUBTRACTION", modes)
+        self.assertIn("TWO_OWNER_REPLICATION != CONSTITUTIONAL_METHOD", m["safetyLaws"])
+        self.assertIn("RESOURCE_COST != EPISTEMIC_VALUE", m["safetyLaws"])
+        self.assertIn("INTERNAL_ARCHITECTURE != EXTERNAL_ONTOLOGY", m["safetyLaws"])
+
+
 
 if __name__ == "__main__":
     unittest.main()

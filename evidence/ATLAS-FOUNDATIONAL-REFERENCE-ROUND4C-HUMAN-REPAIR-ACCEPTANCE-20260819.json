@@ -1,0 +1,61 @@
+{
+  "closure": "ROUND4C_HUMAN_INDUCED_EXTERNAL_REPAIR_ACCEPTED_OPEN_WORLD",
+  "counts": {
+    "majorRegions": 8,
+    "newNormalizedIdentities": 3,
+    "newRelations": 12
+  },
+  "date": "2026-08-19",
+  "destructiveControls": {
+    "consciousnessAndAffectOnlyMindNavigation": true,
+    "developmentCrossesMindAndLife": true,
+    "newIdentitiesAreNonAnchor": true,
+    "noHumanOwnerIdentityInReferenceGraph": true,
+    "noNewMajorRegionCreatedForHuman": true,
+    "regionCoverageTruthForbidden": true
+  },
+  "dogfood": "reference/canonical-major-regions-v0-4-dogfood-20260819.json",
+  "externalEvidenceFirewall": "Human owner-native HF/HD/HOC structure selected high-information search targets, but only independent ASSC/SAS/SRCD/APA disciplinary sources established Consciousness Science, Affective Science and Human Developmental Science as ReferenceIdentities.",
+  "findings": [
+    {
+      "claim": "Human-induced Consciousness/Affective/Developmental identities fit the existing eight-region navigation topology without creating a Human-shaped MajorRegion.",
+      "id": "R4C-D1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Human Developmental Science behaves as a genuine Mind↔Life bridge; Consciousness/Affective Science remain Mind-centered cross-cutting coordinates in the bounded navigation view.",
+      "id": "R4C-D2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Dense Human mappings do not promote new identities to anchors or permit region-level coverage truth.",
+      "id": "R4C-D3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.foundational-reference-round4c-human-repair-acceptance",
+  "laws": [
+    "HUMAN_INTERNAL_ARCHITECTURE_MAY_TRIGGER_SEARCH_NOT_EXTERNAL_IDENTITY",
+    "EXTERNAL_SOURCE_VERIFICATION_REQUIRED_BEFORE_REFERENCE_REPAIR",
+    "HUMAN_FOUNDATION != EXTERNAL_DISCIPLINE",
+    "HOC != SCIENTIFIC_FIELD",
+    "DEEP_DOMAIN != PRIMITIVE_OR_EXTERNAL_ROOT",
+    "NEW_EXTERNAL_IDENTITY != NEW_ORDIVON_OWNER",
+    "MATURE_FIELD_SUBTRACTION_PRECEDES_NOVELTY"
+  ],
+  "majorRegions": "reference/canonical-major-regions-v0-4-20260819.json",
+  "repair": "reference/foundational-reference-round4c-human-crosswalk-repair-20260819.json",
+  "schemaVersion": 1,
+  "state": "HUMAN_CROSSWALK_INDUCED_EXTERNAL_REPAIR_MATERIALIZED",
+  "truthRole": "HISTORICAL_REFERENCE_REPAIR_EVIDENCE",
+  "verification": {
+    "fullDeterministicSuite": "122 tests OK; 28 pre-existing gated skips; 94 deterministic tests executed",
+    "fullDeterministicSuiteJob": "job-01a01651-632f-7e72-a58f-282765d9f5cb",
+    "parallelNineOwnerObservation": "9/9 CURRENT_TO_SOURCE; previous eight AuthorityVersionRef+transport values exactly unchanged; Human added current",
+    "parallelNineOwnerObservationJob": "job-01a0164e-5e49-7c82-ac73-3a7392ed82c1",
+    "referenceSuite": "85/85 PASS",
+    "referenceSuiteJob": "job-01a01651-3235-74e2-9820-9b1ec7034808",
+    "serialNineOwnerRefreshDisposition": "MECHANICAL_TIMEOUT_NO_SEMANTIC_RESULT",
+    "serialNineOwnerRefreshTimeoutJob": "job-01a0164c-2a20-7933-b2f7-d7a9482ab324"
+  }
+}

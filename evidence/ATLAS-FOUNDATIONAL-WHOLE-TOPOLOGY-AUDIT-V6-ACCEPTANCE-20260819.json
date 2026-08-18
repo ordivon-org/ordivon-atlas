@@ -1,0 +1,86 @@
+{
+  "audit": "reference/foundational-whole-topology-audit-v6-human-crosswalk-20260819.json",
+  "closure": "REFERENCE_V0_4_STABLE_FOR_NINE_OWNER_IDENTITY_LEVEL_EXPANSION",
+  "controls": [
+    "No Human-shaped external identity or MajorRegion is admitted.",
+    "Consciousness/Affective/Developmental identities remain non-root and non-anchor.",
+    "Developmental Science is represented as a Mind↔Life bridge without collapsing to Developmental Biology.",
+    "Human deep biology mappings remain bridge-only and do not imply broad Biology/Medicine coverage.",
+    "Host weak mapping and SCD multi-theory bridge standings remain independent.",
+    "Open-world census and no-scalar coverage remain unchanged."
+  ],
+  "counts": {
+    "brokenRelations": 0,
+    "canonicalMajorRegionProjections": 8,
+    "crosswalkMappings": 21,
+    "currentOwnerAuthorityInputs": 9,
+    "excludedOwnerCurrentnessCases": 3,
+    "externalMappingWeakNoveltyNotEstablished": 1,
+    "externalMultiDomainPartialMappedNoveltyNotEstablished": 1,
+    "externalMultiTheoryBridgeNoveltyNotEstablished": 1,
+    "humanMappings": 10,
+    "identityLabelCollisions": 0,
+    "multiPlacementSpaces": 83,
+    "multiRoleSpaces": 83,
+    "normalizedSpaces": 86,
+    "relations": 110
+  },
+  "date": "2026-08-19",
+  "findings": [
+    {
+      "claim": "Human is the ninth current owner and supports source-fenced Life/Mind/Cognition/Language crosswalk.",
+      "id": "FTA6-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Round4C adds three externally verified identities, producing an 86-identity / 110-relation bounded graph with zero integrity defects.",
+      "id": "FTA6-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Human maps across 10 bounded external identities but does not establish Human Science, whole Psychology/Cognitive Science/Neuroscience/Linguistics, broad Biology or Medicine coverage.",
+      "id": "FTA6-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Internal Human Foundation/Deep/Operational layers survive mapping as owner-native research organization; they do not transfer into external ontology.",
+      "id": "FTA6-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The mature-knowledge subtraction pattern has now replicated across two heterogeneous owners: SCD subtracts mature formal theories; Human subtracts mature disciplinary/empirical fields before novelty.",
+      "id": "FTA6-5",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Finance/Media/Harness remain excluded currentness cases; exclusion is not evidence of untouched research.",
+      "id": "FTA6-6",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.whole-foundational-topology-audit-v6-acceptance",
+  "laws": [
+    "CROSSWALK_CAN_FALSIFY_REFERENCE_MODEL",
+    "REFERENCE_REPAIR_REQUIRES_INDEPENDENT_EXTERNAL_EVIDENCE",
+    "MATURE_KNOWLEDGE_SUBTRACTION_PRECEDES_NOVELTY",
+    "INTERNAL_ARCHITECTURE != EXTERNAL_ONTOLOGY",
+    "REGION_VIEW_DOES_NOT_OWN_COVERAGE",
+    "DENSE_MEMBER_MAPPING != REGION_COVERAGE",
+    "DEEP != PRIMITIVE",
+    "HOC != SCIENTIFIC_FIELD",
+    "ABSENT_CURRENT_OWNER != ABSENT_ORDIVON_RESEARCH"
+  ],
+  "schemaVersion": 1,
+  "state": "NINE_OWNER_HUMAN_CROSSWALK_REFERENCE_V0_4_STABLE",
+  "truthRole": "HISTORICAL_RESEARCH_EVIDENCE",
+  "verification": {
+    "fullDeterministicSuite": "122 tests OK; 28 pre-existing gated skips; 94 deterministic tests executed",
+    "fullDeterministicSuiteJob": "job-01a01651-632f-7e72-a58f-282765d9f5cb",
+    "parallelNineOwnerObservation": "9/9 CURRENT_TO_SOURCE; previous eight AuthorityVersionRef+transport values exactly unchanged; Human added current",
+    "parallelNineOwnerObservationJob": "job-01a0164e-5e49-7c82-ac73-3a7392ed82c1",
+    "referenceSuite": "85/85 PASS",
+    "referenceSuiteJob": "job-01a01651-3235-74e2-9820-9b1ec7034808",
+    "serialNineOwnerRefreshDisposition": "MECHANICAL_TIMEOUT_NO_SEMANTIC_RESULT",
+    "serialNineOwnerRefreshTimeoutJob": "job-01a0164c-2a20-7933-b2f7-d7a9482ab324"
+  }
+}

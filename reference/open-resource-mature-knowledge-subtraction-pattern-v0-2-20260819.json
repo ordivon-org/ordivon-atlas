@@ -1,0 +1,46 @@
+{
+  "claim": "Open/public disciplinary infrastructure can serve as a mature-knowledge subtraction layer. Owner-native research compresses the query space; independent external theory/disciplinary organization absorbs already-known structure; only residual irreducibility remains eligible for later novelty assessment. Two heterogeneous owners now support the pattern, but this is not yet a mandatory Ordivon research method.",
+  "date": "2026-08-19",
+  "heterogeneityEvidence": [
+    "SCD is formal/computational/semantic; Human is biological/cognitive/behavioral/operational.",
+    "Both use owner-native anomalies to choose searches but external evidence independently controls external identity/theory claims.",
+    "Both preserve negative results as useful: failed formal novelty in SCD; rejected universal-person/closure models and no-promotion deep routes in Human."
+  ],
+  "kind": "ordivon.open-resource-mature-knowledge-subtraction-pattern",
+  "next": "Dogfood on a third heterogeneous owner, preferably Finance or Media after owner-current publication, before considering a stronger methodology claim.",
+  "pattern": [
+    "OWNER_NATIVE_RESIDUAL_OR_ANOMALY",
+    "TARGETED_OPEN_EXTERNAL_RESOURCE_SEARCH",
+    "INDEPENDENT_EXTERNAL_IDENTITY_OR_THEORY_VERIFICATION",
+    "MATURE_KNOWLEDGE_SUBTRACTION",
+    "REFERENCE_MAPPING_OR_REPAIR",
+    "RESIDUAL_IRREDUCIBILITY_TEST",
+    "NOVELTY_ONLY_IF_RESIDUAL_SURVIVES"
+  ],
+  "preservesHistory": true,
+  "safetyLaws": [
+    "OPEN_RESOURCE != AUTOMATIC_AUTHORITY",
+    "RESOURCE_COST != EPISTEMIC_VALUE",
+    "INTERNAL_QUERY_SELECTION != EXTERNAL_EVIDENCE",
+    "INTERNAL_ARCHITECTURE != EXTERNAL_ONTOLOGY",
+    "FAILED_NOVELTY_HYPOTHESIS_CAN_STRENGTHEN_RESEARCH_QUALITY",
+    "MATURE_FIELD_MAPPING != WHOLE_FIELD_COVERAGE",
+    "TWO_OWNER_REPLICATION != CONSTITUTIONAL_METHOD"
+  ],
+  "schemaVersion": 2,
+  "state": "REPLICATED_ACROSS_TWO_HETEROGENEOUS_OWNERS_NOT_CONSTITUTIONAL",
+  "supersedesForCurrentMethodObservation": "reference/open-resource-mature-theory-subtraction-pattern-v0-20260819.json",
+  "truthRole": "RESEARCH_METHOD_OBSERVATION_NOT_METHODOLOGY_AUTHORITY",
+  "witnesses": [
+    {
+      "evidence": "G1-G4 independent missing-formal-theory hypotheses were rejected after targeted comparison with mature supplier theories; typed integration residues survived without claiming local theory invention.",
+      "mode": "MATURE_FORMAL_THEORY_SUBTRACTION",
+      "owner": "research-owner:semantics-of-computational-descriptions"
+    },
+    {
+      "evidence": "HF/HD/HOC structures mapped across established Psychology/Cognitive Science/Neuroscience/Linguistics/Genetics/Evolution/Physiology and externally verified Consciousness/Affective/Developmental fields; no Human-shaped external field was minted, and Deep/HOC/internal families remained owner-native organization.",
+      "mode": "MATURE_DISCIPLINARY_AND_EMPIRICAL_FIELD_SUBTRACTION",
+      "owner": "research-owner:human"
+    }
+  ]
+}

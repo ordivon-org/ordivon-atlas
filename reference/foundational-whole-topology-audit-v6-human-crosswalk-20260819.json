@@ -1,0 +1,79 @@
+{
+  "auditId": "foundational-topology-audit:v6-human-crosswalk:2026-08-19",
+  "brokenRelations": [],
+  "counts": {
+    "brokenRelations": 0,
+    "canonicalMajorRegionProjections": 8,
+    "crosswalkMappings": 21,
+    "currentOwnerAuthorityInputs": 9,
+    "excludedOwnerCurrentnessCases": 3,
+    "externalMappingWeakNoveltyNotEstablished": 1,
+    "externalMultiDomainPartialMappedNoveltyNotEstablished": 1,
+    "externalMultiTheoryBridgeNoveltyNotEstablished": 1,
+    "humanMappings": 10,
+    "identityLabelCollisions": 0,
+    "multiPlacementSpaces": 83,
+    "multiRoleSpaces": 83,
+    "normalizedSpaces": 86,
+    "relations": 110
+  },
+  "coverageReadiness": "READY_FOR_NINE_OWNER_IDENTITY_LEVEL_BOUNDED_EXPANSION",
+  "crosswalkRef": "reference/coverage-crosswalk-foundational-pilot-v0-4-20260819.json",
+  "findings": [
+    {
+      "claim": "Human is the ninth current owner and supports source-fenced Life/Mind/Cognition/Language crosswalk.",
+      "id": "FTA6-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Round4C adds three externally verified identities, producing an 86-identity / 110-relation bounded graph with zero integrity defects.",
+      "id": "FTA6-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Human maps across 10 bounded external identities but does not establish Human Science, whole Psychology/Cognitive Science/Neuroscience/Linguistics, broad Biology or Medicine coverage.",
+      "id": "FTA6-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Internal Human Foundation/Deep/Operational layers survive mapping as owner-native research organization; they do not transfer into external ontology.",
+      "id": "FTA6-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The mature-knowledge subtraction pattern has now replicated across two heterogeneous owners: SCD subtracts mature formal theories; Human subtracts mature disciplinary/empirical fields before novelty.",
+      "id": "FTA6-5",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Finance/Media/Harness remain excluded currentness cases; exclusion is not evidence of untouched research.",
+      "id": "FTA6-6",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "globalScalarCoverage": "FORBIDDEN",
+  "identityCollisions": {},
+  "kind": "ordivon.whole-foundational-topology-audit",
+  "laws": [
+    "CROSSWALK_CAN_FALSIFY_REFERENCE_MODEL",
+    "REFERENCE_REPAIR_REQUIRES_INDEPENDENT_EXTERNAL_EVIDENCE",
+    "MATURE_KNOWLEDGE_SUBTRACTION_PRECEDES_NOVELTY",
+    "INTERNAL_ARCHITECTURE != EXTERNAL_ONTOLOGY",
+    "REGION_VIEW_DOES_NOT_OWN_COVERAGE",
+    "DENSE_MEMBER_MAPPING != REGION_COVERAGE",
+    "DEEP != PRIMITIVE",
+    "HOC != SCIENTIFIC_FIELD",
+    "ABSENT_CURRENT_OWNER != ABSENT_ORDIVON_RESEARCH"
+  ],
+  "majorRegionRef": "reference/canonical-major-regions-v0-4-20260819.json",
+  "next": "Verify v0.4 tests/evidence, update mature-knowledge subtraction pattern as heterogeneous replication, then prioritize remaining owner-current publications before later social/institutional expansion.",
+  "openWorld": true,
+  "repairRefs": [
+    "reference/foundational-reference-round4a-crosswalk-induced-repair-20260819.json",
+    "reference/foundational-reference-round4b-scd-crosswalk-repair-20260819.json",
+    "reference/foundational-reference-round4c-human-crosswalk-repair-20260819.json"
+  ],
+  "schemaVersion": 6,
+  "state": "NINE_OWNER_HUMAN_CROSSWALK_REFERENCE_V0_4_STABLE",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_AUDIT"
+}

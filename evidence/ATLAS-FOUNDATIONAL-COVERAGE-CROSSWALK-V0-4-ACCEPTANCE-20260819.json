@@ -1,0 +1,102 @@
+{
+  "closure": "NINE_OWNER_IDENTITY_LEVEL_CROSSWALK_V0_4_ACCEPTED",
+  "controls": [
+    "Human entered coverage only after immutable owner publication and Atlas ninth-owner admission.",
+    "All previous eight owner AuthorityVersionRef+transport pairs were revalidated unchanged before v0.3 facts were reused.",
+    "Human mapping is conservative: no broad Biology or Medicine mapping is admitted.",
+    "Human→Psychology/Consciousness/Affective are DIRECT_PARTIAL_COVERAGE; Cognitive Science/Development/Linguistics/Neuroscience/Genetics/Evolution/Physiology are BRIDGE_COVERAGE.",
+    "HF/HD/HOC internal architecture does not mint external ontology.",
+    "HF14-HF18 normative owner overlay prevents Ethics/Normative coverage leakage.",
+    "Dense Mind/Life member mapping does not create region coverage truth.",
+    "Global scalar coverage remains forbidden."
+  ],
+  "counts": {
+    "excludedOwnerCurrentnessCases": 3,
+    "humanMappings": 10,
+    "identityMappings": 21,
+    "ownerAuthorityInputs": 9,
+    "regionViews": 8
+  },
+  "date": "2026-08-19",
+  "findings": [
+    {
+      "claim": "Human is now the ninth source-fenced current Atlas owner and can enter External Reference mapping without conversation/Host authority.",
+      "id": "CWP4-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Round4C independently repairs three Reference v0.3 granularity gaps: Consciousness Science, Affective Science and Human Developmental Science.",
+      "id": "CWP4-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Human is conservatively mapped through 10 bounded identities; broad Biology and Medicine mappings are intentionally not claimed.",
+      "id": "CWP4-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Human internal HF/HD/HOC architecture is useful for search compression and evidence routing but does not mint external disciplines, roots or novelty.",
+      "id": "CWP4-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Dense Life/Mind identity mappings remain non-aggregatable; MajorRegion coverage truth and global scalar coverage stay forbidden.",
+      "id": "CWP4-5",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Open-resource mature-knowledge subtraction now replicates across heterogeneous SCD and Human owners: internal residuals narrow search, mature external fields absorb already-known structure, and only residual irreducibility remains eligible for novelty assessment.",
+      "id": "CWP4-6",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "humanDisposition": {
+    "directFieldEquivalence": "NOT_CLAIMED",
+    "mappingRefs": [
+      "crosswalk:human->psychology",
+      "crosswalk:human->cognitive-science",
+      "crosswalk:human->consciousness-science",
+      "crosswalk:human->affective-science",
+      "crosswalk:human->developmental-science",
+      "crosswalk:human->linguistics",
+      "crosswalk:human->neuroscience",
+      "crosswalk:human->genetics",
+      "crosswalk:human->evolutionary-biology",
+      "crosswalk:human->physiology"
+    ],
+    "negativeNoveltyEvidence": [
+      "Human HF family views are internal navigation-only compression, not external disciplines.",
+      "Deep != Primitive: genetics/evolution/health/language routes retain scientific value without Foundation promotion.",
+      "OnePersonVector/OneUserProfile universal scalar-person reductions are falsified historical models.",
+      "HOC operational concepts/protocols are practical decision/action surfaces, not scientific field identities.",
+      "HF14-HF18 owner overlay routes normative validity outward rather than letting Human absorb Ethics/Normative authority."
+    ],
+    "ownerResearchRef": "research-owner:human",
+    "standing": "EXTERNAL_MULTI_DOMAIN_PARTIAL_MAPPED_NOVELTY_NOT_ESTABLISHED"
+  },
+  "kind": "ordivon.foundational-coverage-crosswalk-v0-4-acceptance",
+  "ownerSnapshot": "reference/coverage-crosswalk-owner-authority-snapshot-v0-4-20260819.json",
+  "pilot": "reference/coverage-crosswalk-foundational-pilot-v0-4-20260819.json",
+  "schemaVersion": 1,
+  "sourceFence": {
+    "mainRevision": "86fbb686f5a1940dd6f5765bba3b01480aef6acf",
+    "observationJobId": "job-01a0164e-5e49-7c82-ac73-3a7392ed82c1",
+    "observationMode": "PARALLEL_PER_OWNER_CURRENTNESS_OBSERVATION_AFTER_SERIAL_REFRESH_TIMEOUT",
+    "observationResult": "9/9 CURRENT_TO_SOURCE",
+    "repo": "/root/projects/ordivon-atlas",
+    "reuseRule": "v0.3 owner facts reused only after exact AuthorityVersionRef + sourceTransportRevision equality was revalidated for all prior eight owners.",
+    "serialRefreshTimeoutJobId": "job-01a0164c-2a20-7933-b2f7-d7a9482ab324"
+  },
+  "state": "NINE_OWNER_CROSSWALK_WITH_HUMAN_AND_ROUND4C_EXTERNAL_REPAIR",
+  "truthRole": "HISTORICAL_CROSSWALK_DOGFOOD_EVIDENCE",
+  "verification": {
+    "fullDeterministicSuite": "122 tests OK; 28 pre-existing gated skips; 94 deterministic tests executed",
+    "fullDeterministicSuiteJob": "job-01a01651-632f-7e72-a58f-282765d9f5cb",
+    "parallelNineOwnerObservation": "9/9 CURRENT_TO_SOURCE; previous eight AuthorityVersionRef+transport values exactly unchanged; Human added current",
+    "parallelNineOwnerObservationJob": "job-01a0164e-5e49-7c82-ac73-3a7392ed82c1",
+    "referenceSuite": "85/85 PASS",
+    "referenceSuiteJob": "job-01a01651-3235-74e2-9820-9b1ec7034808",
+    "serialNineOwnerRefreshDisposition": "MECHANICAL_TIMEOUT_NO_SEMANTIC_RESULT",
+    "serialNineOwnerRefreshTimeoutJob": "job-01a0164c-2a20-7933-b2f7-d7a9482ab324"
+  }
+}

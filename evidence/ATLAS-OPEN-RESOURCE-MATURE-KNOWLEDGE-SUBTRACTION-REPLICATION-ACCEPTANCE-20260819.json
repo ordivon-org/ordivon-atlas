@@ -1,0 +1,43 @@
+{
+  "closure": "HETEROGENEOUS_TWO_OWNER_REPLICATION_ACCEPTED_NOT_CONSTITUTIONAL",
+  "controls": [
+    "SCD and Human are materially heterogeneous owners, so replication is stronger than repetition within one domain.",
+    "External identity/theory claims remain independently sourced; owner theory only compresses query selection.",
+    "Negative results remain positive epistemic assets rather than being hidden.",
+    "Two-owner replication is explicitly insufficient for constitutional/methodology admission.",
+    "Resource cost and epistemic value remain separate dimensions."
+  ],
+  "date": "2026-08-19",
+  "heterogeneityEvidence": [
+    "SCD is formal/computational/semantic; Human is biological/cognitive/behavioral/operational.",
+    "Both use owner-native anomalies to choose searches but external evidence independently controls external identity/theory claims.",
+    "Both preserve negative results as useful: failed formal novelty in SCD; rejected universal-person/closure models and no-promotion deep routes in Human."
+  ],
+  "kind": "ordivon.open-resource-mature-knowledge-subtraction-replication-acceptance",
+  "methodObservation": "reference/open-resource-mature-knowledge-subtraction-pattern-v0-2-20260819.json",
+  "schemaVersion": 1,
+  "state": "REPLICATED_ACROSS_TWO_HETEROGENEOUS_OWNERS_NOT_CONSTITUTIONAL",
+  "truthRole": "HISTORICAL_RESEARCH_METHOD_DOGFOOD_EVIDENCE",
+  "verification": {
+    "fullDeterministicSuite": "122 tests OK; 28 pre-existing gated skips; 94 deterministic tests executed",
+    "fullDeterministicSuiteJob": "job-01a01651-632f-7e72-a58f-282765d9f5cb",
+    "parallelNineOwnerObservation": "9/9 CURRENT_TO_SOURCE; previous eight AuthorityVersionRef+transport values exactly unchanged; Human added current",
+    "parallelNineOwnerObservationJob": "job-01a0164e-5e49-7c82-ac73-3a7392ed82c1",
+    "referenceSuite": "85/85 PASS",
+    "referenceSuiteJob": "job-01a01651-3235-74e2-9820-9b1ec7034808",
+    "serialNineOwnerRefreshDisposition": "MECHANICAL_TIMEOUT_NO_SEMANTIC_RESULT",
+    "serialNineOwnerRefreshTimeoutJob": "job-01a0164c-2a20-7933-b2f7-d7a9482ab324"
+  },
+  "witnesses": [
+    {
+      "evidence": "G1-G4 independent missing-formal-theory hypotheses were rejected after targeted comparison with mature supplier theories; typed integration residues survived without claiming local theory invention.",
+      "mode": "MATURE_FORMAL_THEORY_SUBTRACTION",
+      "owner": "research-owner:semantics-of-computational-descriptions"
+    },
+    {
+      "evidence": "HF/HD/HOC structures mapped across established Psychology/Cognitive Science/Neuroscience/Linguistics/Genetics/Evolution/Physiology and externally verified Consciousness/Affective/Developmental fields; no Human-shaped external field was minted, and Deep/HOC/internal families remained owner-native organization.",
+      "mode": "MATURE_DISCIPLINARY_AND_EMPIRICAL_FIELD_SUBTRACTION",
+      "owner": "research-owner:human"
+    }
+  ]
+}

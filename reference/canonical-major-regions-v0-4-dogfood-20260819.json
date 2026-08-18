@@ -1,0 +1,89 @@
+{
+  "date": "2026-08-19",
+  "destructiveControls": {
+    "consciousnessAndAffectOnlyMindNavigation": true,
+    "developmentCrossesMindAndLife": true,
+    "newIdentitiesAreNonAnchor": true,
+    "noHumanOwnerIdentityInReferenceGraph": true,
+    "noNewMajorRegionCreatedForHuman": true,
+    "regionCoverageTruthForbidden": true
+  },
+  "findings": [
+    {
+      "claim": "Human-induced Consciousness/Affective/Developmental identities fit the existing eight-region navigation topology without creating a Human-shaped MajorRegion.",
+      "id": "R4C-D1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Human Developmental Science behaves as a genuine Mind↔Life bridge; Consciousness/Affective Science remain Mind-centered cross-cutting coordinates in the bounded navigation view.",
+      "id": "R4C-D2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Dense Human mappings do not promote new identities to anchors or permit region-level coverage truth.",
+      "id": "R4C-D3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.canonical-major-region-v0-4-human-perturbation-dogfood",
+  "regionResults": [
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "newHumanPressureIdentitiesNotPromotedToAnchors": true,
+      "regionRef": "navigation-region:formal-inferential",
+      "result": "PASS"
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "newHumanPressureIdentitiesNotPromotedToAnchors": true,
+      "regionRef": "navigation-region:computation-computer-systems",
+      "result": "PASS"
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "newHumanPressureIdentitiesNotPromotedToAnchors": true,
+      "regionRef": "navigation-region:philosophical-conceptual",
+      "result": "PASS"
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "newHumanPressureIdentitiesNotPromotedToAnchors": true,
+      "regionRef": "navigation-region:physical-material",
+      "result": "PASS"
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "newHumanPressureIdentitiesNotPromotedToAnchors": true,
+      "regionRef": "navigation-region:earth-planetary-space",
+      "result": "PASS"
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "newHumanPressureIdentitiesNotPromotedToAnchors": true,
+      "regionRef": "navigation-region:life",
+      "result": "PASS"
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "newHumanPressureIdentitiesNotPromotedToAnchors": true,
+      "regionRef": "navigation-region:mind-language",
+      "result": "PASS"
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "newHumanPressureIdentitiesNotPromotedToAnchors": true,
+      "regionRef": "navigation-region:engineering-design",
+      "result": "PASS"
+    }
+  ],
+  "schemaVersion": 1,
+  "state": "PASS"
+}

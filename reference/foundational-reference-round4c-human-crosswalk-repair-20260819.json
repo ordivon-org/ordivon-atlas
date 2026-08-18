@@ -1,0 +1,221 @@
+{
+  "closure": "ROUND4C_BOUNDED_REPAIR_COMPLETE_OPEN_WORLD_CONTINUES",
+  "kind": "ordivon.foundational-reference-round4c-human-crosswalk-repair",
+  "laws": [
+    "HUMAN_INTERNAL_ARCHITECTURE_MAY_TRIGGER_SEARCH_NOT_EXTERNAL_IDENTITY",
+    "EXTERNAL_SOURCE_VERIFICATION_REQUIRED_BEFORE_REFERENCE_REPAIR",
+    "HUMAN_FOUNDATION != EXTERNAL_DISCIPLINE",
+    "HOC != SCIENTIFIC_FIELD",
+    "DEEP_DOMAIN != PRIMITIVE_OR_EXTERNAL_ROOT",
+    "NEW_EXTERNAL_IDENTITY != NEW_ORDIVON_OWNER",
+    "MATURE_FIELD_SUBTRACTION_PRECEDES_NOVELTY"
+  ],
+  "normalizedSpaces": [
+    {
+      "evidence": [
+        "assc-purpose",
+        "assc-about"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Consciousness science",
+      "placements": [
+        "cognitive-science",
+        "psychology",
+        "neuroscience",
+        "philosophy-of-mind",
+        "medicine-boundary",
+        "subjective-experience"
+      ],
+      "rationale": "ASSC explicitly organizes rigorous scientific research on the nature, function and mechanisms of consciousness across cognitive science, neuroscience, philosophy, medicine and other sciences/humanities. This supports a stable cross-cutting external identity rather than forcing consciousness into Psychology, Neuroscience or Philosophy alone.",
+      "roleClasses": [
+        "CROSS_CUTTING_MIND_DOMAIN",
+        "SUBJECTIVE_EXPERIENCE_RESEARCH_DOMAIN",
+        "NEUROSCIENCE_PHILOSOPHY_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:consciousness-science"
+    },
+    {
+      "evidence": [
+        "sas-about",
+        "sas-mission"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Affective science",
+      "placements": [
+        "psychology",
+        "neuroscience",
+        "cognitive-science",
+        "physiology",
+        "health-boundary",
+        "social-boundary",
+        "development",
+        "language-culture-boundary"
+      ],
+      "rationale": "The Society for Affective Science explicitly defines affective science around emotion and related phenomena including moods, stress, attitudes, valuation and motivation, with basic/translational work spanning psychology, neuroscience, medicine, language, culture, development and other fields.",
+      "roleClasses": [
+        "CROSS_CUTTING_MIND_BEHAVIOR_DOMAIN",
+        "AFFECT_EMOTION_PROCESS_DOMAIN",
+        "BIO_BEHAVIOR_TRANSLATIONAL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:affective-science"
+    },
+    {
+      "evidence": [
+        "srcd-mission",
+        "apa-div7-2026"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Developmental science (human development)",
+      "placements": [
+        "psychology",
+        "cognitive-science",
+        "child-development",
+        "family-development",
+        "education-boundary",
+        "neuroscience-boundary",
+        "biology-boundary"
+      ],
+      "rationale": "SRCD explicitly identifies developmental science as its scientific domain, while APA Division 7 independently organizes developmental psychology around process-oriented research on normal development and developmental psychopathology in children and families. The coordinate is Human-development focused and remains distinct from developmental biology.",
+      "roleClasses": [
+        "HUMAN_DEVELOPMENT_DOMAIN",
+        "DEVELOPMENTAL_PROCESS_DOMAIN",
+        "PSYCHOLOGY_BIOLOGY_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:developmental-science"
+    }
+  ],
+  "relations": [
+    {
+      "from": "norm:consciousness-science",
+      "to": "norm:cognitive-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:consciousness-science",
+      "to": "norm:psychology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:consciousness-science",
+      "to": "norm:neuroscience",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:consciousness-science",
+      "to": "norm:philosophy-of-mind",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:affective-science",
+      "to": "norm:psychology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:affective-science",
+      "to": "norm:neuroscience",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:affective-science",
+      "to": "norm:cognitive-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:affective-science",
+      "to": "norm:physiology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:developmental-science",
+      "to": "norm:psychology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:developmental-science",
+      "to": "norm:cognitive-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:developmental-science",
+      "to": "norm:neuroscience",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:developmental-science",
+      "to": "norm:developmental-biology",
+      "type": "BRIDGES"
+    }
+  ],
+  "repairs": [
+    {
+      "externalBasis": [
+        "assc-purpose",
+        "assc-about"
+      ],
+      "pressure": "HF2/subjectivity and HD11/HD15 projections could only be mapped coarsely through Psychology/Cognitive Science/Neuroscience/Philosophy of Mind.",
+      "repair": "Normalize Consciousness Science as an independent cross-cutting external coordinate.",
+      "repairId": "R4C-HUMAN-1",
+      "status": "APPLIED"
+    },
+    {
+      "externalBasis": [
+        "sas-about",
+        "sas-mission"
+      ],
+      "pressure": "HD2/HF21/HOC10 affect/regulation research had only generic Psychology/Neuroscience coordinates.",
+      "repair": "Normalize Affective Science as a cross-cutting affect/emotion process domain.",
+      "repairId": "R4C-HUMAN-2",
+      "status": "APPLIED"
+    },
+    {
+      "externalBasis": [
+        "srcd-mission",
+        "apa-div7-2026"
+      ],
+      "pressure": "HF6 adaptation/plasticity/development had no Human-development coordinate distinct from Developmental Biology.",
+      "repair": "Normalize Developmental Science (human development) as a Human-development/psychology-biology bridge.",
+      "repairId": "R4C-HUMAN-3",
+      "status": "APPLIED"
+    }
+  ],
+  "roundId": "foundational-reference:round4c:2026-08-19",
+  "schemaVersion": 1,
+  "sources": {
+    "apa-div7-2026": {
+      "role": "DEVELOPMENTAL_PSYCHOLOGY_CURRENT_SCOPE",
+      "title": "APA 2026 Division 7 — Developmental Psychology",
+      "url": "https://convention.apa.org/proposals/division-contacts"
+    },
+    "assc-about": {
+      "role": "CONSCIOUSNESS_RESEARCH_FIELD_SCOPE",
+      "title": "Association for the Scientific Study of Consciousness — About",
+      "url": "https://theassc.org/about-us/"
+    },
+    "assc-purpose": {
+      "role": "CONSCIOUSNESS_SCIENCE_INTERDISCIPLINARY_SCOPE",
+      "title": "Association for the Scientific Study of Consciousness — Purpose / By-laws",
+      "url": "https://theassc.org/by-laws/"
+    },
+    "sas-about": {
+      "role": "AFFECTIVE_SCIENCE_SCOPE",
+      "title": "Society for Affective Science — What is Affective Science?",
+      "url": "https://society-for-affective-science.org/about-sas/"
+    },
+    "sas-mission": {
+      "role": "AFFECTIVE_SCIENCE_INTERDISCIPLINARY_SCOPE",
+      "title": "Society for Affective Science — Mission Statement",
+      "url": "https://society-for-affective-science.org/mission-statement-2/"
+    },
+    "srcd-mission": {
+      "role": "DEVELOPMENTAL_SCIENCE_SCOPE",
+      "title": "Society for Research in Child Development — mission/field statement",
+      "url": "https://www.srcd.org/news/charles-chuck-kalish-phd-named-director-science-society-research-child-development"
+    }
+  },
+  "state": "HUMAN_CROSSWALK_INDUCED_EXTERNAL_REPAIR_MATERIALIZED",
+  "trigger": "Newly current Human owner made Life/Mind/Cognition/Language crosswalk possible and exposed three coordinates that were too coarse in Reference v0.3. Human internal HF/HD/HOC structure selected search targets only; independent professional-society/public disciplinary sources were required before repair.",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_NORMALIZATION"
+}
