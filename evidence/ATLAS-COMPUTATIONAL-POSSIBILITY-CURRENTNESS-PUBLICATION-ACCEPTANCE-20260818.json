@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "kind": "ordivon.atlas-owner-admission-acceptance",
+  "ownerResearchRef": "research-owner:computational-possibility",
+  "authorityRef": "authority:ordivon:research-owner:computational-possibility",
+  "source": {
+    "repository": "git@github.com:zycxfyh/ordivon-computing.git",
+    "configuredRef": "refs/heads/main",
+    "transportRevision": "ad1bd73d91fa1a2d2a59cac4726b74ac171c457d",
+    "semanticSourceRevision": "a169730c8dcba121014076db6dc22e41a488e2ff",
+    "corpusRoot": "research/core/computational-possibility"
+  },
+  "authorityVersionRef": "sha256:5e12e043b14b57894cc0fffa85ed23821c36d491868c38555a0072cff4e263f9",
+  "currentRecovery": {
+    "targetRole": "OWNER_RESEARCH_CORPUS",
+    "locator": "research/core/computational-possibility/README.md"
+  },
+  "observation": {
+    "health": "CURRENT_TO_SOURCE",
+    "reason": null
+  },
+  "projection": {
+    "owners": 1,
+    "results": 10,
+    "closureRows": 6,
+    "negativeAndLineageRows": 6,
+    "zeroNumberedFoundationsProjected": true,
+    "foundation0NotAdmittedProjected": true,
+    "wholeOwnerArchitectureStatus": "ESTABLISHED_LOCAL",
+    "mathematicalExhaustionStatus": "NOT_CLAIMED",
+    "defaultNextSpecialistRoute": "NONE",
+    "proofSearchRouteStatus": "PARTIAL_HISTORICAL_DERIVED_ROUND_1"
+  },
+  "topologyResult": {
+    "sharedPhysicalRepositoryDoesNotMergeOwners": true,
+    "computationalPossibilityCurrentAuthorityUsesMain": true,
+    "historicalNonMainAuthorityWorkaroundSuperseded": true,
+    "broadComputingIsCurrentOwner": false
+  },
+  "validation": {
+    "defaultUnitTests": {
+      "ran": 37,
+      "passed": 9,
+      "skippedByExplicitGate": 28,
+      "failed": 0
+    },
+    "ownerObservation": "PASS",
+    "ownerProjection": "PASS",
+    "publicationDigest": "PASS",
+    "currentRecoveryLocator": "PASS"
+  },
+  "scope": "Computational Possibility owner admission/currentness only. This acceptance does not admit SCD, alter SCD currentness, create a Broad Computing owner, reopen CP architecture, or select a new CP specialist route."
+}

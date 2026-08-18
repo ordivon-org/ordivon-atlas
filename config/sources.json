@@ -66,6 +66,17 @@
         "git@github.com:zycxfyh/ordivon-research.git"
       ],
       "repo": "/root/projects/ordivon-research"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:computational-possibility",
+      "corpusRoot": "research/core/computational-possibility",
+      "ownerResearchRef": "research-owner:computational-possibility",
+      "ref": "refs/heads/main",
+      "remote": "https://github.com/zycxfyh/ordivon-computing.git",
+      "remoteFallbacks": [
+        "git@github.com:zycxfyh/ordivon-computing.git"
+      ],
+      "repo": "/root/projects/ordivon-computing"
     }
   ]
 }
