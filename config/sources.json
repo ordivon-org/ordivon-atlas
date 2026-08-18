@@ -44,6 +44,17 @@
         "git@github.com:zycxfyh/ordivon-game.git"
       ],
       "repo": "/root/projects/ordivon-game"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:world",
+      "corpusRoot": "docs/research/world",
+      "ownerResearchRef": "research-owner:world",
+      "ref": "refs/heads/main",
+      "remote": "https://github.com/zycxfyh/ordivon-world.git",
+      "remoteFallbacks": [
+        "git@github.com:zycxfyh/ordivon-world.git"
+      ],
+      "repo": "/root/projects/ordivon-world"
     }
   ]
 }

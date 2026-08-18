@@ -16,6 +16,7 @@ NETWORK_V1 = "sha256:bfadaaaad3b01f9c4388e4e4a75e77c782c2c3111849e5c4598052ec740
 NETWORK_V2 = "sha256:dbdbb759b2b86b898a343cbb81646b283c589676989e919537f1a6cbc2b1df91"
 HOST_V1 = "sha256:4fc9dee669927882337649d19c144d0938ecf3307c461bffd84eedb8fdc27df4"
 GAME_V1 = "sha256:b0e16e2cd6fe40685d7b96f94d78ef89bd55ed7f92db4de1408e33d2539bb2f0"
+WORLD_V1 = "sha256:76f3ebc35cc72a67e65cacbcb899d8ccf0919059577c97191c85dc9aed9ede8f"
 
 
 @unittest.skipUnless(LIVE, "set ORDIVON_ATLAS_LIVE_TESTS=1 for live remote acceptance")
@@ -81,6 +82,25 @@ class LiveSourceTests(unittest.TestCase):
             rows["result:game:gdf3-authoritative-case-determination-current"]["resultRef"],
             rows["result:game:gdf3-game-feel-historical-cancelled"]["resultRef"],
         )
+
+    def test_world_currentness_preserves_nonfoundation_nonadmission_and_open_closure(self) -> None:
+        spec = self.by_owner["research-owner:world"]
+        obs = Atlas([spec]).observe(spec)
+        self.assertEqual(obs.health, HealthState.CURRENT_TO_SOURCE)
+        self.assertEqual(obs.authorityVersionRef, WORLD_V1)
+        self.assertEqual((obs.currentRecovery or {}).get("locator"), "docs/research/world/README.md")
+        projection = Atlas([spec]).build()
+        rows = {row["resultRef"]: row for row in projection["results"]}
+        self.assertTrue(all(row["classificationHealth"] == "EXPLICIT" for row in rows.values()))
+        self.assertEqual(rows["result:world:wdf0-meta-foundation-current-frozen"]["standing"], ["CURRENT", "FROZEN"])
+        self.assertEqual(rows["result:world:wdf2-counterfactual-deep-history-nonfoundation"]["standing"], ["HISTORICAL_PRESERVED"])
+        self.assertEqual(rows["result:world:wdf3-categorial-deep-history-nonfoundation"]["standing"], ["HISTORICAL_PRESERVED"])
+        self.assertEqual(rows["result:world:wdf2-o-historical-superseded-not-admitted"]["standing"], ["HISTORICAL_PRESERVED", "NOT_ADMITTED", "SUPERSEDED"])
+        self.assertEqual(rows["result:world:wdf6-not-admitted"]["standing"], ["CURRENT", "NOT_ADMITTED"])
+        self.assertEqual(rows["result:world:tsaf1-not-admitted"]["standing"], ["CURRENT", "NOT_ADMITTED"])
+        self.assertEqual(rows["result:world:tsaf1-not-admitted"]["epistemicVerdict"], "UNDERDETERMINED")
+        self.assertEqual(rows["result:world:whole-world-closure-not-established"]["standing"], ["CURRENT"])
+        self.assertEqual(rows["result:world:next-world-route-unknown"]["epistemicVerdict"], "UNDERDETERMINED")
 
 
 if __name__ == "__main__":
