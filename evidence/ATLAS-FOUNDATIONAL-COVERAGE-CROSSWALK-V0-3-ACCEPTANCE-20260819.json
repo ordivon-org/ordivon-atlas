@@ -1,0 +1,81 @@
+{
+  "closure": "EIGHT_OWNER_IDENTITY_LEVEL_CROSSWALK_V0_3_ACCEPTED",
+  "controls": [
+    "SCD entered coverage only after owner-native publication and eight-owner CURRENT_TO_SOURCE refresh.",
+    "SCD and CP remain distinct authority/transport identities despite shared physical repository.",
+    "SCD maps to Formal Semantics and Formal Methods only as BRIDGE_COVERAGE.",
+    "No SCD mapping transfers to Formal/Computing/Engineering region truth.",
+    "SCD G1-G4 negative formal-gap closeout reduces novelty pressure; it does not falsify or claim coverage of external supplier theories.",
+    "Human/Finance/Media/Harness remain excluded currentness cases, not untouched research.",
+    "Global scalar coverage remains forbidden."
+  ],
+  "counts": {
+    "excludedOwnerCurrentnessCases": 4,
+    "identityMappings": 11,
+    "ownerAuthorityInputs": 8,
+    "regionViews": 8
+  },
+  "date": "2026-08-19",
+  "findings": [
+    {
+      "claim": "SCD is now source-fenced as the eighth current Atlas owner and can enter crosswalk without conversation/Host memory.",
+      "id": "CWP3-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Crosswalk pressure independently verified a Reference v0.2 granularity gap: Formal Semantics and Formal Methods are stable external identities finer and more appropriate than broad Foundations of Programming Languages alone.",
+      "id": "CWP3-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "SCD maps at BRIDGE_COVERAGE to Formal Semantics and Formal Methods; it does not claim whole-field equivalence or ownership of mature local theories.",
+      "id": "CWP3-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "SCD G1-G4 negative closeout is evidence against premature Ordivon novelty: mature-theory subtraction rejected four independent missing-theory hypotheses while preserving useful integration residues.",
+      "id": "CWP3-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "SCD and Computational Possibility remain distinct in both Atlas authority and External Reference mapping despite a shared physical repository.",
+      "id": "CWP3-5",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "SCD suggests a reusable pattern for resource-efficient research: owner-native anomalies narrow search, free/public mature theory supplies external subtraction, and only residual irreducibility can later support novelty.",
+      "id": "CWP3-6",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.foundational-coverage-crosswalk-v0-3-acceptance",
+  "ownerSnapshot": "reference/coverage-crosswalk-owner-authority-snapshot-v0-3-20260819.json",
+  "pilot": "reference/coverage-crosswalk-foundational-pilot-v0-3-20260819.json",
+  "scdDisposition": {
+    "directFieldEquivalence": "NOT_CLAIMED",
+    "mappingRefs": [
+      "crosswalk:scd->formal-semantics",
+      "crosswalk:scd->formal-methods"
+    ],
+    "negativeNoveltyEvidence": "SCD G1-G4 independent formal-gap hypotheses were rejected after mature-theory subtraction; current strength lies in typed cross-framework semantic responsibility/coordination, not invention of local formal semantics or formal methods.",
+    "ownerResearchRef": "research-owner:semantics-of-computational-descriptions",
+    "standing": "EXTERNAL_MULTI_THEORY_BRIDGE_MAPPED_NOVELTY_NOT_ESTABLISHED"
+  },
+  "schemaVersion": 1,
+  "sourceFence": {
+    "mainRevision": "c6fc241baee0b259c12d96064d00fb9eb1892b42",
+    "refreshJobId": "job-01a01612-928c-7901-b272-f2217fae5c37",
+    "refreshResult": "fullyCurrent=true; owners=8; unhealthy=0",
+    "repo": "/root/projects/ordivon-atlas"
+  },
+  "state": "EIGHT_OWNER_CROSSWALK_WITH_SCD_AND_ROUND4B_EXTERNAL_REPAIR",
+  "truthRole": "HISTORICAL_CROSSWALK_DOGFOOD_EVIDENCE",
+  "verification": {
+    "eightOwnerAtlasRefreshJob": "job-01a01612-928c-7901-b272-f2217fae5c37",
+    "eightOwnerAtlasRefreshResult": "fullyCurrent=true; owners=8; unhealthy=0",
+    "fullDeterministicSuiteJob": "job-01a01617-c102-7ab2-9bdd-3c18c5e04ebe",
+    "fullDeterministicSuiteResult": "112 tests OK; 28 pre-existing gated tests skipped; 84 deterministic tests executed.",
+    "referenceSuiteJob": "job-01a01617-8443-7303-88f9-ec51f3869609",
+    "referenceSuiteResult": "75/75 PASS"
+  }
+}

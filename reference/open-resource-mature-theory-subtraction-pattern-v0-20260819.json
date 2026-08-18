@@ -1,0 +1,28 @@
+{
+  "claim": "High-value open/public disciplinary infrastructure can act as a mature-theory subtraction layer: Ordivon internal research narrows the search and proposes falsifiers; external public theory explains away already-known structure; only residual irreducibility is eligible for later novelty assessment.",
+  "date": "2026-08-19",
+  "kind": "ordivon.open-resource-theory-subtraction-pattern",
+  "next": "Dogfood this subtraction pattern on Human and other future owner crosswalks; do not constitutionalize it as mandatory methodology until multiple heterogeneous owners survive.",
+  "pattern": [
+    "OWNER_NATIVE_RESIDUAL_OR_ANOMALY",
+    "TARGETED_OPEN_EXTERNAL_RESOURCE_SEARCH",
+    "MATURE_THEORY_SUBTRACTION",
+    "EXTERNAL_REFERENCE_MAPPING_OR_REPAIR",
+    "RESIDUAL_IRREDUCIBILITY_TEST",
+    "NOVELTY_ONLY_IF_RESIDUAL_SURVIVES"
+  ],
+  "safetyLaws": [
+    "OPEN_RESOURCE != AUTOMATIC_AUTHORITY",
+    "POPULARITY != TRUTH",
+    "INTERNAL_QUERY_SELECTION != EXTERNAL_EVIDENCE",
+    "FAILED_NOVELTY_HYPOTHESIS_CAN_STRENGTHEN_RESEARCH_QUALITY",
+    "RESOURCE_COST != EPISTEMIC_VALUE"
+  ],
+  "scdWitness": {
+    "disposition": "Four independent missing-formal-theory hypotheses rejected after targeted external-theory subtraction; useful typed integration residues retained without claiming local theory invention.",
+    "negativeGapResult": "result:scd:g1-g4-independent-formal-gaps-rejected"
+  },
+  "schemaVersion": 1,
+  "state": "SUPPORTED_BY_SCD_DOGFOOD",
+  "truthRole": "RESEARCH_METHOD_OBSERVATION_NOT_EXTERNAL_ONTOLOGY"
+}

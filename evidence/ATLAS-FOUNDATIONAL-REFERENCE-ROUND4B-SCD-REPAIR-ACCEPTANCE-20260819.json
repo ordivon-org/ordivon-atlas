@@ -1,0 +1,57 @@
+{
+  "closure": "ROUND4B_SCD_INDUCED_EXTERNAL_REPAIR_ACCEPTED_OPEN_WORLD",
+  "counts": {
+    "majorRegions": 8,
+    "newNormalizedIdentities": 2,
+    "newRelations": 6
+  },
+  "date": "2026-08-19",
+  "destructiveControls": {
+    "formalMethodsAppearsInFormalComputingEngineering": true,
+    "formalSemanticsAppearsInFormalAndComputing": true,
+    "noNewMajorRegionCreatedForSCD": true,
+    "noSCDOwnerIdentityInReferenceGraph": true,
+    "regionCoverageTruthForbidden": true
+  },
+  "dogfood": "reference/canonical-major-regions-v0-3-dogfood-20260819.json",
+  "externalEvidenceFirewall": "SCD owner-native research may select high-value external queries, but only independent external sources may establish Formal Semantics/Formal Methods as ReferenceIdentities.",
+  "findings": [
+    {
+      "claim": "Formal Semantics and Formal Methods behave as cross-cutting identities across existing MajorRegion views without requiring a new SCD-shaped MajorRegion.",
+      "id": "R4B-D1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Adding SCD coverage does not promote cross-cutting identities to anchors and does not transfer identity coverage to region truth.",
+      "id": "R4B-D2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "External reference topology remains independent of Ordivon owner identity; no SCD-named external node is minted.",
+      "id": "R4B-D3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.foundational-reference-round4b-scd-repair-acceptance",
+  "laws": [
+    "SCD_PRESSURE_MAY_TRIGGER_SEARCH_NOT_IDENTITY",
+    "EXTERNAL_SOURCE_VERIFICATION_REQUIRED_BEFORE_REFERENCE_REPAIR",
+    "FORMAL_SEMANTICS != SCD_OWNER",
+    "FORMAL_METHODS != SCD_OWNER",
+    "MATURE_THEORY_SUBTRACTION_REDUCES_NOVELTY_PRESSURE",
+    "NEW_EXTERNAL_IDENTITY != NEW_ORDIVON_OWNER"
+  ],
+  "majorRegions": "reference/canonical-major-regions-v0-3-20260819.json",
+  "repair": "reference/foundational-reference-round4b-scd-crosswalk-repair-20260819.json",
+  "schemaVersion": 1,
+  "state": "SCD_CROSSWALK_INDUCED_EXTERNAL_REPAIR_MATERIALIZED",
+  "truthRole": "HISTORICAL_REFERENCE_REPAIR_EVIDENCE",
+  "verification": {
+    "eightOwnerAtlasRefreshJob": "job-01a01612-928c-7901-b272-f2217fae5c37",
+    "eightOwnerAtlasRefreshResult": "fullyCurrent=true; owners=8; unhealthy=0",
+    "fullDeterministicSuiteJob": "job-01a01617-c102-7ab2-9bdd-3c18c5e04ebe",
+    "fullDeterministicSuiteResult": "112 tests OK; 28 pre-existing gated tests skipped; 84 deterministic tests executed.",
+    "referenceSuiteJob": "job-01a01617-8443-7303-88f9-ec51f3869609",
+    "referenceSuiteResult": "75/75 PASS"
+  }
+}

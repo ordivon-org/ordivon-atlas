@@ -1,0 +1,147 @@
+{
+  "closure": "ROUND4B_BOUNDED_REPAIR_COMPLETE_OPEN_WORLD_CONTINUES",
+  "kind": "ordivon.foundational-reference-round4b-scd-crosswalk-repair",
+  "laws": [
+    "SCD_PRESSURE_MAY_TRIGGER_SEARCH_NOT_IDENTITY",
+    "EXTERNAL_SOURCE_VERIFICATION_REQUIRED_BEFORE_REFERENCE_REPAIR",
+    "FORMAL_SEMANTICS != SCD_OWNER",
+    "FORMAL_METHODS != SCD_OWNER",
+    "MATURE_THEORY_SUBTRACTION_REDUCES_NOVELTY_PRESSURE",
+    "NEW_EXTERNAL_IDENTITY != NEW_ORDIVON_OWNER"
+  ],
+  "normalizedSpaces": [
+    {
+      "evidence": [
+        "acm-cs2023-fpl-formal-semantics",
+        "acm-cs2013-pl-formal-semantics",
+        "acm-sigplan-icfp2026"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Formal semantics",
+      "placements": [
+        "foundations-programming-languages",
+        "computation",
+        "logic",
+        "formal-methods",
+        "systems-modeling"
+      ],
+      "rationale": "ACM curricular and SIGPLAN research structures treat formal semantics as a stable research/knowledge unit with operational, denotational, axiomatic and type-based approaches. Its use extends beyond defining programming-language behavior to formal system modeling, so it is retained as a non-exclusive semantic-modeling axis/subspace rather than equated with all FPL.",
+      "roleClasses": [
+        "FORMAL_COMPUTING_SUBSPACE",
+        "SEMANTIC_MODELING_AXIS",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:formal-semantics"
+    },
+    {
+      "evidence": [
+        "acm-cs2023-formal-methods",
+        "acm-cs2023-fpl-methodologies",
+        "acm-sigplan-cpp"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Formal methods",
+      "placements": [
+        "computation",
+        "foundations-programming-languages",
+        "software-engineering",
+        "computer-systems",
+        "logic",
+        "formal-semantics",
+        "hardware-software-boundary"
+      ],
+      "rationale": "ACM sources characterize Formal Methods as a broad family of techniques/tools for specification, development, analysis and verification across software and hardware, including theorem proving, model checking, formal modeling, program logics, type systems and semantics. It is a cross-cutting method/domain, not a single-parent Foundation root.",
+      "roleClasses": [
+        "CROSS_CUTTING_COMPUTING_METHOD_DOMAIN",
+        "SPECIFICATION_VERIFICATION_AXIS",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:formal-methods"
+    }
+  ],
+  "relations": [
+    {
+      "from": "norm:formal-semantics",
+      "to": "norm:foundations-programming-languages",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:formal-semantics",
+      "to": "norm:logic",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:formal-semantics",
+      "to": "norm:formal-methods",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:formal-methods",
+      "to": "norm:foundations-programming-languages",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:formal-methods",
+      "to": "norm:software-engineering",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:formal-methods",
+      "to": "norm:systems-fundamentals",
+      "type": "BRIDGES"
+    }
+  ],
+  "repair": {
+    "externalBasis": [
+      "acm-cs2023-fpl-formal-semantics",
+      "acm-cs2013-pl-formal-semantics",
+      "acm-cs2023-formal-methods",
+      "acm-cs2023-fpl-methodologies",
+      "acm-sigplan-icfp2026",
+      "acm-sigplan-cpp"
+    ],
+    "oldPressure": "SCD had strong owner-native semantic/formalization research but the external model only exposed broad Foundations of Programming Languages, making any identity-level mapping either too coarse or falsely owner-like.",
+    "repair": "Normalize Formal Semantics and Formal Methods as external, non-root, cross-cutting identities.",
+    "repairId": "R4B-SCD-1",
+    "status": "APPLIED"
+  },
+  "roundId": "foundational-reference:round4b:2026-08-19",
+  "schemaVersion": 1,
+  "sources": {
+    "acm-cs2013-pl-formal-semantics": {
+      "role": "FORMAL_SEMANTICS_METHOD_AND_SYSTEM_MODELING_SCOPE",
+      "title": "ACM/IEEE-CS CS2013 Programming Languages — Formal Semantics",
+      "url": "https://csed.acm.org/knowledge-areas-programming-languages-pl-cs2013-version/"
+    },
+    "acm-cs2023-formal-methods": {
+      "role": "FORMAL_METHODS_CROSS_DOMAIN_SCOPE",
+      "title": "ACM CS2023 — The Role of Formal Methods in CS Education",
+      "url": "https://csed.acm.org/the-role-of-formal-methods-in-cs-education/"
+    },
+    "acm-cs2023-fpl-formal-semantics": {
+      "role": "FORMAL_SEMANTICS_KNOWLEDGE_UNIT",
+      "title": "ACM/IEEE-CS/AAAI CS2023 — Foundations of Programming Languages / Formal Semantics",
+      "url": "https://csed.acm.org/wp-content/uploads/2025/11/CS2023-Report.htm"
+    },
+    "acm-cs2023-fpl-methodologies": {
+      "role": "FORMAL_METHODS_PROGRAMMING_AND_SOFTWARE_SCOPE",
+      "title": "ACM/IEEE-CS/AAAI CS2023 — Formal Development Methodologies",
+      "url": "https://csed.acm.org/wp-content/uploads/2025/11/CS2023-Report.htm"
+    },
+    "acm-sigplan-cpp": {
+      "role": "FORMAL_METHODS_PROGRAM_LOGIC_TYPE_SYSTEM_SEMANTICS_SCOPE",
+      "title": "ACM SIGPLAN Certified Programs and Proofs",
+      "url": "https://www.sigplan.org/Conferences/CPP/"
+    },
+    "acm-sigplan-icfp2026": {
+      "role": "FORMAL_SEMANTICS_RESEARCH_FOUNDATIONS_SCOPE",
+      "title": "ACM SIGPLAN ICFP 2026 Call for Papers",
+      "url": "https://www.sigplan.org/announce/2025-11-11-icfp-2026/"
+    }
+  },
+  "state": "SCD_CROSSWALK_INDUCED_EXTERNAL_REPAIR_MATERIALIZED",
+  "trigger": "Newly current SCD owner exposed that Foundations of Programming Languages was too coarse for identity-level crosswalk. SCD internal theory supplied search routes only; independent ACM/IEEE-CS/AAAI/SIGPLAN sources were required to admit any external identity.",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_NORMALIZATION"
+}

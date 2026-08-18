@@ -1,0 +1,73 @@
+{
+  "auditId": "foundational-topology-audit:v5-scd-crosswalk:2026-08-19",
+  "brokenRelations": [],
+  "counts": {
+    "brokenRelations": 0,
+    "canonicalMajorRegionProjections": 8,
+    "crosswalkMappings": 11,
+    "currentOwnerAuthorityInputs": 8,
+    "externalMappingWeakNoveltyNotEstablished": 1,
+    "externalMultiTheoryBridgeNoveltyNotEstablished": 1,
+    "identityLabelCollisions": 0,
+    "multiPlacementSpaces": 80,
+    "multiRoleSpaces": 80,
+    "normalizedSpaces": 83,
+    "relations": 98
+  },
+  "coverageReadiness": "READY_FOR_EIGHT_OWNER_IDENTITY_LEVEL_BOUNDED_EXPANSION",
+  "crosswalkRef": "reference/coverage-crosswalk-foundational-pilot-v0-3-20260819.json",
+  "findings": [
+    {
+      "claim": "SCD is now the eighth source-fenced current owner and its crosswalk is independent of conversation memory.",
+      "id": "FTA5-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Round4B adds Formal Semantics and Formal Methods as externally verified non-root cross-cutting identities, producing an 83-identity / 98-relation bounded graph with zero integrity defects.",
+      "id": "FTA5-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "SCD has strong bridge-level external mapping but no whole-field equivalence: local semantic/formal methods remain mature external supplier territory.",
+      "id": "FTA5-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Negative G1-G4 mature-theory subtraction actively lowers novelty claims and is therefore positive epistemic evidence for disciplined crosswalk/novelty assessment.",
+      "id": "FTA5-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The emerging resource-efficient methodology is bidirectional: Ordivon owner research compresses what to search; open external infrastructures constrain what may be claimed; residual mismatch returns to owner or reference-model investigation.",
+      "id": "FTA5-5",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Human/Finance/Media/Harness remain excluded from current coverage interpretation until owner-current Atlas publication exists.",
+      "id": "FTA5-6",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "globalScalarCoverage": "FORBIDDEN",
+  "identityCollisions": {},
+  "kind": "ordivon.whole-foundational-topology-audit",
+  "laws": [
+    "CROSSWALK_CAN_FALSIFY_REFERENCE_MODEL",
+    "REFERENCE_REPAIR_REQUIRES_INDEPENDENT_EXTERNAL_EVIDENCE",
+    "MATURE_THEORY_SUBTRACTION_PRECEDES_NOVELTY",
+    "REGION_VIEW_DOES_NOT_OWN_COVERAGE",
+    "SHARED_REPOSITORY_DOES_NOT_MERGE_OWNER_OR_COVERAGE",
+    "EXTERNAL_MULTI_THEORY_BRIDGE != WHOLE_FIELD_COVERAGE",
+    "ABSENT_CURRENT_OWNER != ABSENT_ORDIVON_RESEARCH"
+  ],
+  "majorRegionRef": "reference/canonical-major-regions-v0-3-20260819.json",
+  "next": "Run tests/acceptance for v0.3, then prioritize Human owner-current publication and Life/Mind/Linguistic crosswalk before later social/institutional wave.",
+  "openWorld": true,
+  "repairRefs": [
+    "reference/foundational-reference-round4a-crosswalk-induced-repair-20260819.json",
+    "reference/foundational-reference-round4b-scd-crosswalk-repair-20260819.json"
+  ],
+  "schemaVersion": 5,
+  "state": "EIGHT_OWNER_SCD_CROSSWALK_REFERENCE_V0_3_STABLE",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_AUDIT"
+}

@@ -614,6 +614,108 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
         self.assertEqual(host["currentStatus"], "EXTERNAL_MAPPING_WEAK_NOVELTY_NOT_ESTABLISHED")
 
 
+    def test_crosswalk_v03_owner_snapshot_is_eight_owner_and_scd_source_fenced(self) -> None:
+        snap = json.loads((ROOT / "reference/coverage-crosswalk-owner-authority-snapshot-v0-3-20260819.json").read_text())
+        self.assertEqual(snap["atlasSource"]["mainRevision"], "c6fc241baee0b259c12d96064d00fb9eb1892b42")
+        self.assertEqual(len(snap["owners"]), 8)
+        by = {x["ownerResearchRef"]: x for x in snap["owners"]}
+        scd = by["research-owner:semantics-of-computational-descriptions"]
+        cp = by["research-owner:computational-possibility"]
+        self.assertEqual(scd["authorityVersionRef"], "sha256:3319f37f081908e545c708f79e489c3b2a1c54cb03453fa2ebe32bc6e72cbd4f")
+        self.assertEqual(scd["sourceTransportRevision"], "a35ee399fa0cf3dd24869d50f78ca05850ece0c4")
+        self.assertEqual(scd["projectionCurrentness"], "CURRENT_TO_SOURCE")
+        self.assertNotEqual(scd["authorityVersionRef"], cp["authorityVersionRef"])
+        self.assertNotEqual(scd["sourceTransportRevision"], cp["sourceTransportRevision"])
+        excluded = {x["owner"] for x in snap["excludedCurrentnessCases"]}
+        self.assertNotIn("Semantics of Computational Descriptions", excluded)
+        self.assertEqual(excluded, {"Human", "Finance", "Media", "Harness"})
+
+    def test_round4b_repairs_formal_semantics_and_formal_methods_from_external_sources(self) -> None:
+        r = json.loads((ROOT / "reference/foundational-reference-round4b-scd-crosswalk-repair-20260819.json").read_text())
+        by = {x["spaceRef"]: x for x in r["normalizedSpaces"]}
+        self.assertEqual(set(by), {"norm:formal-semantics", "norm:formal-methods"})
+        for x in by.values():
+            self.assertEqual(x["rootAdmission"], "NOT_ADMITTED")
+            self.assertGreaterEqual(len(x["evidence"]), 3)
+            self.assertGreaterEqual(len(x["placements"]), 5)
+        self.assertIn("SEMANTIC_MODELING_AXIS", by["norm:formal-semantics"]["roleClasses"])
+        self.assertIn("SPECIFICATION_VERIFICATION_AXIS", by["norm:formal-methods"]["roleClasses"])
+        self.assertIn("SCD_PRESSURE_MAY_TRIGGER_SEARCH_NOT_IDENTITY", r["laws"])
+        self.assertIn("MATURE_THEORY_SUBTRACTION_REDUCES_NOVELTY_PRESSURE", r["laws"])
+
+    def test_round4b_does_not_mint_scd_named_external_identity(self) -> None:
+        r = json.loads((ROOT / "reference/foundational-reference-round4b-scd-crosswalk-repair-20260819.json").read_text())
+        refs = {x["spaceRef"] for x in r["normalizedSpaces"]}
+        self.assertFalse(any("scd" in ref or "ordivon" in ref for ref in refs))
+        labels = " ".join(x["label"].lower() for x in r["normalizedSpaces"])
+        self.assertNotIn("ordivon", labels)
+
+    def test_crosswalk_v03_scd_is_multi_theory_bridge_not_whole_field_owner(self) -> None:
+        p = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-3-20260819.json").read_text())
+        self.assertEqual(p["globalScalarCoverage"], "FORBIDDEN")
+        self.assertEqual(len(p["mappings"]), 11)
+        self.assertEqual(p["scdDisposition"]["standing"], "EXTERNAL_MULTI_THEORY_BRIDGE_MAPPED_NOVELTY_NOT_ESTABLISHED")
+        self.assertEqual(p["scdDisposition"]["directFieldEquivalence"], "NOT_CLAIMED")
+        by = {x["mappingRef"]: x for x in p["mappings"]}
+        for ref, ext in (("crosswalk:scd->formal-semantics", "norm:formal-semantics"), ("crosswalk:scd->formal-methods", "norm:formal-methods")):
+            self.assertIn(ref, by)
+            self.assertEqual(by[ref]["externalRef"], ext)
+            self.assertEqual(by[ref]["relation"], "BRIDGE_COVERAGE")
+            self.assertIn("FALSIFICATION_TESTED", by[ref]["facets"])
+
+    def test_crosswalk_v03_scd_negative_gap_closeout_reduces_novelty_not_external_theory(self) -> None:
+        p = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-3-20260819.json").read_text())
+        self.assertIn("G1-G4", p["scdDisposition"]["negativeNoveltyEvidence"])
+        self.assertIn("rejected", p["scdDisposition"]["negativeNoveltyEvidence"])
+        cases = " | ".join(x["case"] + " :: " + x["reason"] for x in p["nonCoverageCases"])
+        self.assertIn("G1-G4 negative formal-gap closeout", cases)
+        self.assertIn("does not imply SCD has covered or falsified", cases)
+
+    def test_crosswalk_v03_region_views_never_aggregate_scd_bridge_coverage(self) -> None:
+        p = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-3-20260819.json").read_text())
+        for view in p["regionCoverageViews"]:
+            self.assertEqual(view["aggregateCoverageTruth"], "FORBIDDEN")
+        formal = next(x for x in p["regionCoverageViews"] if x["regionRef"] == "navigation-region:formal-inferential")
+        computing = next(x for x in p["regionCoverageViews"] if x["regionRef"] == "navigation-region:computation-computer-systems")
+        formal_refs = {x["externalRef"] for x in formal["mappedMemberRefs"]}
+        computing_refs = {x["externalRef"] for x in computing["mappedMemberRefs"]}
+        self.assertIn("norm:formal-semantics", formal_refs & computing_refs)
+        self.assertIn("norm:formal-methods", formal_refs & computing_refs)
+
+    def test_major_regions_v03_keep_crosscutting_semantics_and_methods_non_anchor(self) -> None:
+        nav = json.loads((ROOT / "reference/canonical-major-regions-v0-3-20260819.json").read_text())
+        self.assertEqual(len(nav["regions"]), 8)
+        self.assertEqual(nav["coverageCrosswalk"], "IDENTITY_LEVEL_ONLY")
+        by = {x["regionRef"]: x for x in nav["regions"]}
+        for ref in ("norm:formal-semantics", "norm:formal-methods"):
+            self.assertIn(ref, by["navigation-region:formal-inferential"]["memberRefs"])
+            self.assertIn(ref, by["navigation-region:computation-computer-systems"]["memberRefs"])
+            self.assertNotIn(ref, by["navigation-region:formal-inferential"]["anchorRefs"])
+            self.assertNotIn(ref, by["navigation-region:computation-computer-systems"]["anchorRefs"])
+        self.assertIn("norm:formal-methods", by["navigation-region:engineering-design"]["memberRefs"])
+
+    def test_major_regions_v03_scd_perturbation_dogfood_passes(self) -> None:
+        d = json.loads((ROOT / "reference/canonical-major-regions-v0-3-dogfood-20260819.json").read_text())
+        self.assertEqual(d["state"], "PASS")
+        self.assertTrue(all(d["destructiveControls"].values()))
+        self.assertTrue(all(x["result"] == "PASS" for x in d["regionResults"]))
+        self.assertTrue(d["destructiveControls"]["noNewMajorRegionCreatedForSCD"])
+        self.assertTrue(d["destructiveControls"]["noSCDOwnerIdentityInReferenceGraph"])
+
+    def test_whole_audit_v5_tracks_eight_owner_scd_crosswalk_without_novelty_promotion(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v5-scd-crosswalk-20260819.json").read_text())
+        self.assertEqual(a["counts"]["normalizedSpaces"], 83)
+        self.assertEqual(a["counts"]["relations"], 98)
+        self.assertEqual(a["counts"]["currentOwnerAuthorityInputs"], 8)
+        self.assertEqual(a["counts"]["crosswalkMappings"], 11)
+        self.assertEqual(a["counts"]["canonicalMajorRegionProjections"], 8)
+        self.assertEqual(a["counts"]["identityLabelCollisions"], 0)
+        self.assertEqual(a["counts"]["brokenRelations"], 0)
+        self.assertEqual(a["counts"]["externalMultiTheoryBridgeNoveltyNotEstablished"], 1)
+        self.assertEqual(a["globalScalarCoverage"], "FORBIDDEN")
+        self.assertIn("MATURE_THEORY_SUBTRACTION_PRECEDES_NOVELTY", a["laws"])
+
+
 
 if __name__ == "__main__":
     unittest.main()

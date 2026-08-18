@@ -1,0 +1,88 @@
+{
+  "date": "2026-08-19",
+  "destructiveControls": {
+    "formalMethodsAppearsInFormalComputingEngineering": true,
+    "formalSemanticsAppearsInFormalAndComputing": true,
+    "noNewMajorRegionCreatedForSCD": true,
+    "noSCDOwnerIdentityInReferenceGraph": true,
+    "regionCoverageTruthForbidden": true
+  },
+  "findings": [
+    {
+      "claim": "Formal Semantics and Formal Methods behave as cross-cutting identities across existing MajorRegion views without requiring a new SCD-shaped MajorRegion.",
+      "id": "R4B-D1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Adding SCD coverage does not promote cross-cutting identities to anchors and does not transfer identity coverage to region truth.",
+      "id": "R4B-D2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "External reference topology remains independent of Ordivon owner identity; no SCD-named external node is minted.",
+      "id": "R4B-D3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.canonical-major-region-v0-3-scd-perturbation-dogfood",
+  "regionResults": [
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "newCrossCuttingIdentitiesNotPromotedToAnchors": true,
+      "regionRef": "navigation-region:formal-inferential",
+      "result": "PASS"
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "newCrossCuttingIdentitiesNotPromotedToAnchors": true,
+      "regionRef": "navigation-region:computation-computer-systems",
+      "result": "PASS"
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "newCrossCuttingIdentitiesNotPromotedToAnchors": true,
+      "regionRef": "navigation-region:philosophical-conceptual",
+      "result": "PASS"
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "newCrossCuttingIdentitiesNotPromotedToAnchors": true,
+      "regionRef": "navigation-region:physical-material",
+      "result": "PASS"
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "newCrossCuttingIdentitiesNotPromotedToAnchors": true,
+      "regionRef": "navigation-region:earth-planetary-space",
+      "result": "PASS"
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "newCrossCuttingIdentitiesNotPromotedToAnchors": true,
+      "regionRef": "navigation-region:life",
+      "result": "PASS"
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "newCrossCuttingIdentitiesNotPromotedToAnchors": true,
+      "regionRef": "navigation-region:mind-language",
+      "result": "PASS"
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "newCrossCuttingIdentitiesNotPromotedToAnchors": true,
+      "regionRef": "navigation-region:engineering-design",
+      "result": "PASS"
+    }
+  ],
+  "schemaVersion": 1,
+  "state": "PASS"
+}

@@ -1,0 +1,79 @@
+{
+  "audit": "reference/foundational-whole-topology-audit-v5-scd-crosswalk-20260819.json",
+  "closure": "REFERENCE_V0_3_STABLE_FOR_EIGHT_OWNER_IDENTITY_LEVEL_EXPANSION",
+  "controls": [
+    "Mature-theory subtraction precedes novelty admission.",
+    "Formal Semantics and Formal Methods are cross-cutting non-root identities.",
+    "No SCD-shaped external identity or MajorRegion is admitted.",
+    "Host remains external-mapping-weak/novelty-not-established independently of SCD.",
+    "Eight-owner source fence supersedes the historical seven-owner snapshot for new coverage work.",
+    "Open-world census and no-scalar coverage remain unchanged."
+  ],
+  "counts": {
+    "brokenRelations": 0,
+    "canonicalMajorRegionProjections": 8,
+    "crosswalkMappings": 11,
+    "currentOwnerAuthorityInputs": 8,
+    "externalMappingWeakNoveltyNotEstablished": 1,
+    "externalMultiTheoryBridgeNoveltyNotEstablished": 1,
+    "identityLabelCollisions": 0,
+    "multiPlacementSpaces": 80,
+    "multiRoleSpaces": 80,
+    "normalizedSpaces": 83,
+    "relations": 98
+  },
+  "date": "2026-08-19",
+  "findings": [
+    {
+      "claim": "SCD is now the eighth source-fenced current owner and its crosswalk is independent of conversation memory.",
+      "id": "FTA5-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Round4B adds Formal Semantics and Formal Methods as externally verified non-root cross-cutting identities, producing an 83-identity / 98-relation bounded graph with zero integrity defects.",
+      "id": "FTA5-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "SCD has strong bridge-level external mapping but no whole-field equivalence: local semantic/formal methods remain mature external supplier territory.",
+      "id": "FTA5-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Negative G1-G4 mature-theory subtraction actively lowers novelty claims and is therefore positive epistemic evidence for disciplined crosswalk/novelty assessment.",
+      "id": "FTA5-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The emerging resource-efficient methodology is bidirectional: Ordivon owner research compresses what to search; open external infrastructures constrain what may be claimed; residual mismatch returns to owner or reference-model investigation.",
+      "id": "FTA5-5",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Human/Finance/Media/Harness remain excluded from current coverage interpretation until owner-current Atlas publication exists.",
+      "id": "FTA5-6",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.whole-foundational-topology-audit-v5-acceptance",
+  "laws": [
+    "CROSSWALK_CAN_FALSIFY_REFERENCE_MODEL",
+    "REFERENCE_REPAIR_REQUIRES_INDEPENDENT_EXTERNAL_EVIDENCE",
+    "MATURE_THEORY_SUBTRACTION_PRECEDES_NOVELTY",
+    "REGION_VIEW_DOES_NOT_OWN_COVERAGE",
+    "SHARED_REPOSITORY_DOES_NOT_MERGE_OWNER_OR_COVERAGE",
+    "EXTERNAL_MULTI_THEORY_BRIDGE != WHOLE_FIELD_COVERAGE",
+    "ABSENT_CURRENT_OWNER != ABSENT_ORDIVON_RESEARCH"
+  ],
+  "schemaVersion": 1,
+  "state": "EIGHT_OWNER_SCD_CROSSWALK_REFERENCE_V0_3_STABLE",
+  "truthRole": "HISTORICAL_RESEARCH_EVIDENCE",
+  "verification": {
+    "eightOwnerAtlasRefreshJob": "job-01a01612-928c-7901-b272-f2217fae5c37",
+    "eightOwnerAtlasRefreshResult": "fullyCurrent=true; owners=8; unhealthy=0",
+    "fullDeterministicSuiteJob": "job-01a01617-c102-7ab2-9bdd-3c18c5e04ebe",
+    "fullDeterministicSuiteResult": "112 tests OK; 28 pre-existing gated tests skipped; 84 deterministic tests executed.",
+    "referenceSuiteJob": "job-01a01617-8443-7303-88f9-ec51f3869609",
+    "referenceSuiteResult": "75/75 PASS"
+  }
+}
