@@ -1,0 +1,134 @@
+{
+  "classification": {
+    "authorityRecoveryFailure": false,
+    "newAdapterRequired": false,
+    "productionServiceRequired": false,
+    "publicationReadyAfterAudit": true,
+    "repositoryEqualsSemanticOwner": false,
+    "representationalFailure": false,
+    "siblingOwnerCommitMakesOtherOwnerStale": false,
+    "sourceTransportRevisionEqualsSemanticCurrentness": false
+  },
+  "conclusion": "Ordivon Normative can coexist with Network as a distinct semantic owner in the same physical Git repository. Atlas keys semantic currentness to owner-native AuthorityVersionRef and corpus-root publication, not repository head movement. No owner split/merge, repo split, adapter, database, service or MCP was required.",
+  "date": "2026-08-18",
+  "historicalReconciliationSources": [
+    {
+      "checkpointDigest": "sha256:443553d541eb0681ac78360800cfbd1d1084180165177b4fa7cdf0090b086e38",
+      "revision": 3,
+      "taskId": "task:ordivon-normative-research-core-consolidation-branch-20260818"
+    },
+    {
+      "checkpointDigest": "sha256:cb7af8bc80ccd6e654f497294b237eda179235fdd10dec1566ac2c24cd59a89f",
+      "historicalDisposition": "Recorded physical-home escalation before later shared-corpus materialization at 0fde1702 resolved placement without changing semantics.",
+      "revision": 3,
+      "taskId": "task:ordivon-normative-research-materialization-repair-20260818"
+    }
+  ],
+  "kind": "ordivon.atlas-normative-shared-repo-owner-acceptance-evidence",
+  "nonAuthorityNotice": "Network and Ordivon Normative owner publications/corpora remain their respective semantic authorities. Shared Git transport and Atlas projection do not merge ownership.",
+  "normativePublication": {
+    "allResultsExplicitlyClassified": true,
+    "authorityRef": "authority:ordivon:research-owner:ordivon-normative",
+    "authorityVersionRef": "sha256:6558bc84bb52a3a0ffbff0f683a36d46c28efc0f2ba531d4458bd5aa16a4a56e",
+    "closureRows": 4,
+    "corpusRoot": "owners/ordivon-normative",
+    "currentRecovery": {
+      "locator": "owners/ordivon-normative/README.md",
+      "targetRole": "OWNER_RESEARCH_CORPUS"
+    },
+    "resultCount": 12,
+    "semanticBaseRevision": "42c641db0557a8e09829a1917990cdc76568062f",
+    "semanticGuards": {
+      "ONFSeries": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "PHR1Origin": [
+        "HISTORICAL_PRESERVED"
+      ],
+      "PHR2ToPHR4CurrentSubprojects": false,
+      "PHRNumberedFoundationSeries": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "genericControlRegulationOwnerHere": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "genericInstitutionGovernanceOwner": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "genericReasonsValueOwner": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "nonNumberedArchitectureComponents": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "numberedFoundationCountZero": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "universalNormativityOwner": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ]
+    },
+    "transportRevision": "edfb2bb80803a586636804015169f0c01d6e9709"
+  },
+  "schemaVersion": 1,
+  "scope": "Branch O Ordivon Normative owner publication and shared-repository semantic-owner dogfood",
+  "sharedRepoSiblingOwnerProof": {
+    "conclusion": "A sibling semantic-owner commit may advance the shared Git transport revision without advancing or staling the other owner semantic AuthorityVersionRef.",
+    "distinctAuthorityRefsAndVersions": true,
+    "job": "job-01a0153d-86f1-7310-b097-a47b370b7aa4",
+    "networkAuthorityVersionRef": "sha256:dbdbb759b2b86b898a343cbb81646b283c589676989e919537f1a6cbc2b1df91",
+    "networkCurrentRecovery": "owners/network/README.md",
+    "networkProjectedRelationAfterNormativeSiblingCommit": "CURRENT_TO_SOURCE",
+    "normativeAuthorityVersionRef": "sha256:6558bc84bb52a3a0ffbff0f683a36d46c28efc0f2ba531d4458bd5aa16a4a56e",
+    "normativeCurrentRecovery": "owners/ordivon-normative/README.md",
+    "sameTransportRevision": true,
+    "sharedSourceTransportRevision": "edfb2bb80803a586636804015169f0c01d6e9709"
+  },
+  "sharedRepositoryAudit": {
+    "auditJob": "job-01a01539-276f-77e0-afc5-9c4207607496",
+    "changedPathsSinceMaterialization": [
+      "owners/network/authority/CURRENT.json",
+      "owners/network/authority/publications/bfadaaaad3b01f9c4388e4e4a75e77c782c2c3111849e5c4598052ec740ee79f.json",
+      "owners/network/authority/publications/dbdbb759b2b86b898a343cbb81646b283c589676989e919537f1a6cbc2b1df91.json"
+    ],
+    "commitsSinceMaterialization": [
+      "80bd37393ff46703be1dec6940bd11ea0f7149dc research(network): publish owner authority surface",
+      "42c641db0557a8e09829a1917990cdc76568062f research(network): classify published results per ResultRef"
+    ],
+    "historicalSharedMaterialization": "0fde1702e18cbaa12896497e13f400f64c7d1756",
+    "normativeCorpusDiffStat": "ZERO",
+    "preNormativePublicationRemoteHead": "42c641db0557a8e09829a1917990cdc76568062f",
+    "repository": "ordivon-research"
+  },
+  "truthRole": "historical-test-evidence",
+  "verification": {
+    "deterministicSuiteJob": "job-01a0153f-071a-7840-a829-4afccb6e42e7",
+    "deterministicSuiteResult": "9 PASS; 7 four-owner retirement + 7 live + 7 World retirement tests gated/skipped by default",
+    "generatedAuditJob": "job-01a01544-90ec-7ab0-8002-d7064f09f552",
+    "generatedAuditResult": {
+      "allResultClassificationsExplicit": true,
+      "closure": 28,
+      "history": 11,
+      "negativeAndLineage": 27,
+      "normativeClosureRows": 4,
+      "normativeResults": 12,
+      "owners": 6,
+      "results": 54
+    },
+    "liveSixOwnerSuiteJob": "job-01a0153f-46b4-7143-9ba1-798a07d6d908",
+    "liveSixOwnerSuiteResult": "7/7 PASS",
+    "localPublicationValidationJob": "job-01a0153c-eb84-7f43-96d4-41e3f2ff7335",
+    "normativeRootReadJob": "job-01a01539-b983-7c63-b140-5391978a2d82",
+    "publicationPushJob": "job-01a0153d-2c4b-7c40-ba08-9a2166a83ff1",
+    "refreshJob": "job-01a01543-a4e1-7922-94ef-7c58cd12ddcd",
+    "refreshResult": "fullyCurrent=true; owners=6; unhealthy=0"
+  }
+}

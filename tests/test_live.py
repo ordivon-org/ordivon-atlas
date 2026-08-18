@@ -17,6 +17,8 @@ NETWORK_V2 = "sha256:dbdbb759b2b86b898a343cbb81646b283c589676989e919537f1a6cbc2b
 HOST_V1 = "sha256:4fc9dee669927882337649d19c144d0938ecf3307c461bffd84eedb8fdc27df4"
 GAME_V1 = "sha256:b0e16e2cd6fe40685d7b96f94d78ef89bd55ed7f92db4de1408e33d2539bb2f0"
 WORLD_V1 = "sha256:76f3ebc35cc72a67e65cacbcb899d8ccf0919059577c97191c85dc9aed9ede8f"
+NORMATIVE_V1 = "sha256:6558bc84bb52a3a0ffbff0f683a36d46c28efc0f2ba531d4458bd5aa16a4a56e"
+SHARED_REPO_NORMATIVE_TRANSPORT = "edfb2bb80803a586636804015169f0c01d6e9709"
 
 
 @unittest.skipUnless(LIVE, "set ORDIVON_ATLAS_LIVE_TESTS=1 for live remote acceptance")
@@ -101,6 +103,30 @@ class LiveSourceTests(unittest.TestCase):
         self.assertEqual(rows["result:world:tsaf1-not-admitted"]["epistemicVerdict"], "UNDERDETERMINED")
         self.assertEqual(rows["result:world:whole-world-closure-not-established"]["standing"], ["CURRENT"])
         self.assertEqual(rows["result:world:next-world-route-unknown"]["epistemicVerdict"], "UNDERDETERMINED")
+
+    def test_shared_repo_network_and_normative_have_distinct_semantic_authority(self) -> None:
+        network_spec = self.by_owner["research-owner:network"]
+        normative_spec = self.by_owner["research-owner:ordivon-normative"]
+        network_obs = Atlas([network_spec]).observe(network_spec)
+        normative_obs = Atlas([normative_spec]).observe(normative_spec)
+        self.assertEqual(network_obs.health, HealthState.CURRENT_TO_SOURCE)
+        self.assertEqual(normative_obs.health, HealthState.CURRENT_TO_SOURCE)
+        self.assertEqual(network_obs.transportRevision, SHARED_REPO_NORMATIVE_TRANSPORT)
+        self.assertEqual(normative_obs.transportRevision, SHARED_REPO_NORMATIVE_TRANSPORT)
+        self.assertEqual(network_obs.authorityVersionRef, NETWORK_V2)
+        self.assertEqual(normative_obs.authorityVersionRef, NORMATIVE_V1)
+        self.assertNotEqual(network_obs.authorityVersionRef, normative_obs.authorityVersionRef)
+        self.assertEqual(compare_projected_version(NETWORK_V2, network_obs), HealthState.CURRENT_TO_SOURCE)
+        self.assertEqual((network_obs.currentRecovery or {}).get("locator"), "owners/network/README.md")
+        self.assertEqual((normative_obs.currentRecovery or {}).get("locator"), "owners/ordivon-normative/README.md")
+        projection = Atlas([network_spec, normative_spec]).build()
+        rows = {row["resultRef"]: row for row in projection["results"]}
+        self.assertTrue(all(row["classificationHealth"] == "EXPLICIT" for row in rows.values()))
+        self.assertEqual(rows["result:normative:numbered-foundation-count-zero-current-frozen"]["standing"], ["CURRENT", "FROZEN"])
+        self.assertEqual(rows["result:normative:onf-numbered-series-not-admitted"]["standing"], ["CURRENT", "NOT_ADMITTED"])
+        self.assertEqual(rows["result:normative:phr-numbered-foundation-series-not-admitted"]["standing"], ["CURRENT", "NOT_ADMITTED"])
+        self.assertEqual(rows["result:normative:phr1-historical-origin-preserved"]["standing"], ["HISTORICAL_PRESERVED"])
+        self.assertFalse(any(ref.startswith("result:normative:phr2") or ref.startswith("result:normative:phr3") or ref.startswith("result:normative:phr4") for ref in rows))
 
 
 if __name__ == "__main__":

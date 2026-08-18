@@ -55,6 +55,17 @@
         "git@github.com:zycxfyh/ordivon-world.git"
       ],
       "repo": "/root/projects/ordivon-world"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:ordivon-normative",
+      "corpusRoot": "owners/ordivon-normative",
+      "ownerResearchRef": "research-owner:ordivon-normative",
+      "ref": "refs/heads/main",
+      "remote": "https://github.com/zycxfyh/ordivon-research.git",
+      "remoteFallbacks": [
+        "git@github.com:zycxfyh/ordivon-research.git"
+      ],
+      "repo": "/root/projects/ordivon-research"
     }
   ]
 }
