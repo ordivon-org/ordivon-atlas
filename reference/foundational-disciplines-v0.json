@@ -1,0 +1,3052 @@
+{
+  "coverageAssessments": [],
+  "generatedOn": "2026-08-18",
+  "kind": "ordivon.external-exploration-reference-model",
+  "modelId": "external-reference:foundational-disciplines:v0",
+  "modelRepairs": [
+    {
+      "canonicalizationRule": "ONE_REFERENCE_IDENTITY_WITH_MULTI_DOMAIN_PLACEMENT",
+      "reason": "A source-outline import created duplicate identities for concepts that are better represented as one multi-domain overlap space.",
+      "removedRefs": [
+        "ref:space:mathematics:mathematical-physics",
+        "ref:space:philosophy:philosophy-of-science",
+        "ref:space:physics:biophysics",
+        "ref:space:biology:bioinformatics-and-computational-biology",
+        "ref:space:chemistry:biochemistry"
+      ],
+      "repairId": "repair:reference-v0:cross-domain-identity-dedup",
+      "semanticEffect": "No external claim was deleted; source evidence was merged into the canonical overlap identity.",
+      "status": "APPLIED"
+    }
+  ],
+  "nodes": [
+    {
+      "domainRefs": [
+        "ref:discipline:mathematics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "DISCIPLINE",
+      "label": "Mathematics",
+      "openWorld": true,
+      "refId": "ref:discipline:mathematics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "DOMAIN_OUTLINE",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:mathematics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Arithmetic and elementary mathematics",
+      "openWorld": true,
+      "refId": "ref:space:mathematics:arithmetic-and-elementary-mathematics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:mathematics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Algebra",
+      "openWorld": true,
+      "refId": "ref:space:mathematics:algebra",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:mathematics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Analysis and calculus",
+      "openWorld": true,
+      "refId": "ref:space:mathematics:analysis-and-calculus",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:mathematics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Geometry and topology",
+      "openWorld": true,
+      "refId": "ref:space:mathematics:geometry-and-topology",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:mathematics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Combinatorics and discrete mathematics",
+      "openWorld": true,
+      "refId": "ref:space:mathematics:combinatorics-and-discrete-mathematics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:mathematics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Mathematical logic and foundations",
+      "openWorld": true,
+      "refId": "ref:space:mathematics:mathematical-logic-and-foundations",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:mathematics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Number theory",
+      "openWorld": true,
+      "refId": "ref:space:mathematics:number-theory",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:mathematics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Probability and mathematical statistics",
+      "openWorld": true,
+      "refId": "ref:space:mathematics:probability-and-mathematical-statistics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:mathematics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Dynamical systems and differential equations",
+      "openWorld": true,
+      "refId": "ref:space:mathematics:dynamical-systems-and-differential-equations",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:mathematics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Theory of computation",
+      "openWorld": true,
+      "refId": "ref:space:mathematics:theory-of-computation",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:mathematics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Information theory and signal processing",
+      "openWorld": true,
+      "refId": "ref:space:mathematics:information-theory-and-signal-processing",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:mathematics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Operations research and optimization",
+      "openWorld": true,
+      "refId": "ref:space:mathematics:operations-research-and-optimization",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:philosophy"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "DISCIPLINE",
+      "label": "Philosophy",
+      "openWorld": true,
+      "refId": "ref:discipline:philosophy",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "DOMAIN_OUTLINE",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:philosophy"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Metaphysics and ontology",
+      "openWorld": true,
+      "refId": "ref:space:philosophy:metaphysics-and-ontology",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:philosophy"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Epistemology",
+      "openWorld": true,
+      "refId": "ref:space:philosophy:epistemology",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:philosophy"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Logic and philosophy of logic",
+      "openWorld": true,
+      "refId": "ref:space:philosophy:logic-and-philosophy-of-logic",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:philosophy"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Ethics and value theory",
+      "openWorld": true,
+      "refId": "ref:space:philosophy:ethics-and-value-theory",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:philosophy"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Aesthetics",
+      "openWorld": true,
+      "refId": "ref:space:philosophy:aesthetics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:philosophy"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Philosophy of mind",
+      "openWorld": true,
+      "refId": "ref:space:philosophy:philosophy-of-mind",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:philosophy"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Philosophy of language",
+      "openWorld": true,
+      "refId": "ref:space:philosophy:philosophy-of-language",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:philosophy"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Philosophy of mathematics",
+      "openWorld": true,
+      "refId": "ref:space:philosophy:philosophy-of-mathematics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:philosophy"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Philosophy of religion",
+      "openWorld": true,
+      "refId": "ref:space:philosophy:philosophy-of-religion",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:philosophy"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Phenomenology and philosophy of experience",
+      "openWorld": true,
+      "refId": "ref:space:philosophy:phenomenology-and-philosophy-of-experience",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:physics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "DISCIPLINE",
+      "label": "Physics",
+      "openWorld": true,
+      "refId": "ref:discipline:physics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "DOMAIN_OUTLINE",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:physics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Classical mechanics",
+      "openWorld": true,
+      "refId": "ref:space:physics:classical-mechanics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:physics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Electromagnetism and optics",
+      "openWorld": true,
+      "refId": "ref:space:physics:electromagnetism-and-optics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:physics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Thermodynamics and statistical mechanics",
+      "openWorld": true,
+      "refId": "ref:space:physics:thermodynamics-and-statistical-mechanics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:physics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Quantum physics",
+      "openWorld": true,
+      "refId": "ref:space:physics:quantum-physics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:physics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Relativity and gravitation",
+      "openWorld": true,
+      "refId": "ref:space:physics:relativity-and-gravitation",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:physics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Atomic molecular and optical physics",
+      "openWorld": true,
+      "refId": "ref:space:physics:atomic-molecular-and-optical-physics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:physics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Condensed matter physics",
+      "openWorld": true,
+      "refId": "ref:space:physics:condensed-matter-physics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:physics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Nuclear and particle physics",
+      "openWorld": true,
+      "refId": "ref:space:physics:nuclear-and-particle-physics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:physics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Fluid dynamics and continuum physics",
+      "openWorld": true,
+      "refId": "ref:space:physics:fluid-dynamics-and-continuum-physics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:physics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Plasma physics",
+      "openWorld": true,
+      "refId": "ref:space:physics:plasma-physics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:physics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Astrophysics and cosmology",
+      "openWorld": true,
+      "refId": "ref:space:physics:astrophysics-and-cosmology",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:physics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Geophysics and atmospheric physics",
+      "openWorld": true,
+      "refId": "ref:space:physics:geophysics-and-atmospheric-physics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:biology"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "DISCIPLINE",
+      "label": "Biology",
+      "openWorld": true,
+      "refId": "ref:discipline:biology",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "DOMAIN_OUTLINE",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:biology"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Cell biology",
+      "openWorld": true,
+      "refId": "ref:space:biology:cell-biology",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:biology"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Molecular biology",
+      "openWorld": true,
+      "refId": "ref:space:biology:molecular-biology",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:biology"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Genetics and genomics",
+      "openWorld": true,
+      "refId": "ref:space:biology:genetics-and-genomics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:biology"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Evolutionary biology",
+      "openWorld": true,
+      "refId": "ref:space:biology:evolutionary-biology",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:biology"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Ecology",
+      "openWorld": true,
+      "refId": "ref:space:biology:ecology",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:biology"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Physiology",
+      "openWorld": true,
+      "refId": "ref:space:biology:physiology",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:biology"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Developmental biology",
+      "openWorld": true,
+      "refId": "ref:space:biology:developmental-biology",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:biology"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Neuroscience",
+      "openWorld": true,
+      "refId": "ref:space:biology:neuroscience",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:biology"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Microbiology and virology",
+      "openWorld": true,
+      "refId": "ref:space:biology:microbiology-and-virology",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:biology"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Botany and plant biology",
+      "openWorld": true,
+      "refId": "ref:space:biology:botany-and-plant-biology",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:biology"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Zoology and animal biology",
+      "openWorld": true,
+      "refId": "ref:space:biology:zoology-and-animal-biology",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:biology"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Systematics and taxonomy",
+      "openWorld": true,
+      "refId": "ref:space:biology:systematics-and-taxonomy",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:biology"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Biotechnology and synthetic biology",
+      "openWorld": true,
+      "refId": "ref:space:biology:biotechnology-and-synthetic-biology",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:chemistry"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "DISCIPLINE",
+      "label": "Chemistry",
+      "openWorld": true,
+      "refId": "ref:discipline:chemistry",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "DOMAIN_OUTLINE",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:chemistry"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Physical chemistry",
+      "openWorld": true,
+      "refId": "ref:space:chemistry:physical-chemistry",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:chemistry"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Organic chemistry",
+      "openWorld": true,
+      "refId": "ref:space:chemistry:organic-chemistry",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:chemistry"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Inorganic chemistry",
+      "openWorld": true,
+      "refId": "ref:space:chemistry:inorganic-chemistry",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:chemistry"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Analytical chemistry",
+      "openWorld": true,
+      "refId": "ref:space:chemistry:analytical-chemistry",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:chemistry"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Theoretical and quantum chemistry",
+      "openWorld": true,
+      "refId": "ref:space:chemistry:theoretical-and-quantum-chemistry",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:chemistry"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Chemical thermodynamics",
+      "openWorld": true,
+      "refId": "ref:space:chemistry:chemical-thermodynamics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:chemistry"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Chemical kinetics",
+      "openWorld": true,
+      "refId": "ref:space:chemistry:chemical-kinetics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:chemistry"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Electrochemistry",
+      "openWorld": true,
+      "refId": "ref:space:chemistry:electrochemistry",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:chemistry"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Spectroscopy",
+      "openWorld": true,
+      "refId": "ref:space:chemistry:spectroscopy",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:chemistry"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Solid-state and materials chemistry",
+      "openWorld": true,
+      "refId": "ref:space:chemistry:solid-state-and-materials-chemistry",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:chemistry"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Surface and interface chemistry",
+      "openWorld": true,
+      "refId": "ref:space:chemistry:surface-and-interface-chemistry",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:chemistry"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Geochemistry and environmental chemistry",
+      "openWorld": true,
+      "refId": "ref:space:chemistry:geochemistry-and-environmental-chemistry",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "DISCIPLINE",
+      "label": "Engineering",
+      "openWorld": true,
+      "refId": "ref:discipline:engineering",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "DOMAIN_OUTLINE",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Mechanical engineering",
+      "openWorld": true,
+      "refId": "ref:space:engineering:mechanical-engineering",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Electrical and electronic engineering",
+      "openWorld": true,
+      "refId": "ref:space:engineering:electrical-and-electronic-engineering",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Civil and structural engineering",
+      "openWorld": true,
+      "refId": "ref:space:engineering:civil-and-structural-engineering",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Chemical and process engineering",
+      "openWorld": true,
+      "refId": "ref:space:engineering:chemical-and-process-engineering",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Materials engineering",
+      "openWorld": true,
+      "refId": "ref:space:engineering:materials-engineering",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Aerospace engineering",
+      "openWorld": true,
+      "refId": "ref:space:engineering:aerospace-engineering",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Computer engineering",
+      "openWorld": true,
+      "refId": "ref:space:engineering:computer-engineering",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Software engineering",
+      "openWorld": true,
+      "refId": "ref:space:engineering:software-engineering",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Systems engineering",
+      "openWorld": true,
+      "refId": "ref:space:engineering:systems-engineering",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Control engineering",
+      "openWorld": true,
+      "refId": "ref:space:engineering:control-engineering",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Industrial and manufacturing engineering",
+      "openWorld": true,
+      "refId": "ref:space:engineering:industrial-and-manufacturing-engineering",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Biomedical and bioengineering",
+      "openWorld": true,
+      "refId": "ref:space:engineering:biomedical-and-bioengineering",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Environmental engineering",
+      "openWorld": true,
+      "refId": "ref:space:engineering:environmental-engineering",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Energy engineering",
+      "openWorld": true,
+      "refId": "ref:space:engineering:energy-engineering",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Robotics and mechatronics",
+      "openWorld": true,
+      "refId": "ref:space:engineering:robotics-and-mechatronics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "SUBSPACE",
+      "label": "Nuclear engineering",
+      "openWorld": true,
+      "refId": "ref:space:engineering:nuclear-engineering",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:mathematics",
+        "ref:discipline:physics"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "OVERLAP_SPACE",
+      "label": "Mathematical physics",
+      "openWorld": true,
+      "refId": "ref:overlap:mathematical-physics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:physics"
+        },
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:philosophy",
+        "ref:discipline:physics",
+        "ref:discipline:biology",
+        "ref:discipline:chemistry"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "OVERLAP_SPACE",
+      "label": "Philosophy of science",
+      "openWorld": true,
+      "refId": "ref:overlap:philosophy-of-science",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:philosophy"
+        },
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:physics",
+        "ref:discipline:biology"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "OVERLAP_SPACE",
+      "label": "Biophysics",
+      "openWorld": true,
+      "refId": "ref:overlap:biophysics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:physics"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        },
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:biology",
+        "ref:discipline:chemistry"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "OVERLAP_SPACE",
+      "label": "Biochemistry",
+      "openWorld": true,
+      "refId": "ref:overlap:biochemistry",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        },
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:physics",
+        "ref:discipline:chemistry"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "OVERLAP_SPACE",
+      "label": "Chemical physics",
+      "openWorld": true,
+      "refId": "ref:overlap:chemical-physics",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:physics",
+        "ref:discipline:chemistry"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "OVERLAP_SPACE",
+      "label": "Quantum chemistry",
+      "openWorld": true,
+      "refId": "ref:overlap:quantum-chemistry",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:mathematics",
+        "ref:discipline:biology",
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "OVERLAP_SPACE",
+      "label": "Bioinformatics and computational biology",
+      "openWorld": true,
+      "refId": "ref:overlap:bioinformatics-and-computational-biology",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        },
+        {
+          "evidenceRole": "OUTLINE_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:biology",
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "OVERLAP_SPACE",
+      "label": "Bioengineering",
+      "openWorld": true,
+      "refId": "ref:overlap:bioengineering",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:chemistry",
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "OVERLAP_SPACE",
+      "label": "Chemical engineering",
+      "openWorld": true,
+      "refId": "ref:overlap:chemical-engineering",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:physics",
+        "ref:discipline:chemistry",
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "OVERLAP_SPACE",
+      "label": "Materials science and engineering",
+      "openWorld": true,
+      "refId": "ref:overlap:materials-science-and-engineering",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:mathematics",
+        "ref:discipline:physics",
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "OVERLAP_SPACE",
+      "label": "Control and dynamical systems",
+      "openWorld": true,
+      "refId": "ref:overlap:control-and-dynamical-systems",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    },
+    {
+      "domainRefs": [
+        "ref:discipline:mathematics",
+        "ref:discipline:physics",
+        "ref:discipline:chemistry",
+        "ref:discipline:biology",
+        "ref:discipline:engineering"
+      ],
+      "externalStatus": "REPRESENTED",
+      "kind": "OVERLAP_SPACE",
+      "label": "Scientific computing and simulation",
+      "openWorld": true,
+      "refId": "ref:overlap:scientific-computing-and-simulation",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ]
+    }
+  ],
+  "openWorld": true,
+  "ordivonCrosswalks": [],
+  "relations": [
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:mathematics:arithmetic-and-elementary-mathematics",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ],
+      "toRef": "ref:discipline:mathematics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:mathematics:algebra",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ],
+      "toRef": "ref:discipline:mathematics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:mathematics:analysis-and-calculus",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ],
+      "toRef": "ref:discipline:mathematics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:mathematics:geometry-and-topology",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ],
+      "toRef": "ref:discipline:mathematics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:mathematics:combinatorics-and-discrete-mathematics",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ],
+      "toRef": "ref:discipline:mathematics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:mathematics:mathematical-logic-and-foundations",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ],
+      "toRef": "ref:discipline:mathematics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:mathematics:number-theory",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ],
+      "toRef": "ref:discipline:mathematics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:mathematics:probability-and-mathematical-statistics",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ],
+      "toRef": "ref:discipline:mathematics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:mathematics:dynamical-systems-and-differential-equations",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ],
+      "toRef": "ref:discipline:mathematics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:mathematics:theory-of-computation",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ],
+      "toRef": "ref:discipline:mathematics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:mathematics:information-theory-and-signal-processing",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ],
+      "toRef": "ref:discipline:mathematics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:mathematics:operations-research-and-optimization",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ],
+      "toRef": "ref:discipline:mathematics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:philosophy:metaphysics-and-ontology",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ],
+      "toRef": "ref:discipline:philosophy"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:philosophy:epistemology",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ],
+      "toRef": "ref:discipline:philosophy"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:philosophy:logic-and-philosophy-of-logic",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ],
+      "toRef": "ref:discipline:philosophy"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:philosophy:ethics-and-value-theory",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ],
+      "toRef": "ref:discipline:philosophy"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:philosophy:aesthetics",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ],
+      "toRef": "ref:discipline:philosophy"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:philosophy:philosophy-of-mind",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ],
+      "toRef": "ref:discipline:philosophy"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:philosophy:philosophy-of-language",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ],
+      "toRef": "ref:discipline:philosophy"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:philosophy:philosophy-of-mathematics",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ],
+      "toRef": "ref:discipline:philosophy"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:philosophy:philosophy-of-religion",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ],
+      "toRef": "ref:discipline:philosophy"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:philosophy:phenomenology-and-philosophy-of-experience",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ],
+      "toRef": "ref:discipline:philosophy"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:physics:classical-mechanics",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:physics:electromagnetism-and-optics",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:physics:thermodynamics-and-statistical-mechanics",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:physics:quantum-physics",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:physics:relativity-and-gravitation",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:physics:atomic-molecular-and-optical-physics",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:physics:condensed-matter-physics",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:physics:nuclear-and-particle-physics",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:physics:fluid-dynamics-and-continuum-physics",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:physics:plasma-physics",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:physics:astrophysics-and-cosmology",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:physics:geophysics-and-atmospheric-physics",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:biology:cell-biology",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ],
+      "toRef": "ref:discipline:biology"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:biology:molecular-biology",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ],
+      "toRef": "ref:discipline:biology"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:biology:genetics-and-genomics",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ],
+      "toRef": "ref:discipline:biology"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:biology:evolutionary-biology",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ],
+      "toRef": "ref:discipline:biology"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:biology:ecology",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ],
+      "toRef": "ref:discipline:biology"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:biology:physiology",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ],
+      "toRef": "ref:discipline:biology"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:biology:developmental-biology",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ],
+      "toRef": "ref:discipline:biology"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:biology:neuroscience",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ],
+      "toRef": "ref:discipline:biology"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:biology:microbiology-and-virology",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ],
+      "toRef": "ref:discipline:biology"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:biology:botany-and-plant-biology",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ],
+      "toRef": "ref:discipline:biology"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:biology:zoology-and-animal-biology",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ],
+      "toRef": "ref:discipline:biology"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:biology:systematics-and-taxonomy",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ],
+      "toRef": "ref:discipline:biology"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:biology:biotechnology-and-synthetic-biology",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ],
+      "toRef": "ref:discipline:biology"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:chemistry:physical-chemistry",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:chemistry"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:chemistry:organic-chemistry",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:chemistry"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:chemistry:inorganic-chemistry",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:chemistry"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:chemistry:analytical-chemistry",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:chemistry"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:chemistry:theoretical-and-quantum-chemistry",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:chemistry"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:chemistry:chemical-thermodynamics",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:chemistry"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:chemistry:chemical-kinetics",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:chemistry"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:chemistry:electrochemistry",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:chemistry"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:chemistry:spectroscopy",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:chemistry"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:chemistry:solid-state-and-materials-chemistry",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:chemistry"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:chemistry:surface-and-interface-chemistry",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:chemistry"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:chemistry:geochemistry-and-environmental-chemistry",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:chemistry"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:engineering:mechanical-engineering",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:engineering:electrical-and-electronic-engineering",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:engineering:civil-and-structural-engineering",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:engineering:chemical-and-process-engineering",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:engineering:materials-engineering",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:engineering:aerospace-engineering",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:engineering:computer-engineering",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:engineering:software-engineering",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:engineering:systems-engineering",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:engineering:control-engineering",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:engineering:industrial-and-manufacturing-engineering",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:engineering:biomedical-and-bioengineering",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:engineering:environmental-engineering",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:engineering:energy-engineering",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:engineering:robotics-and-mechatronics",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_DERIVED_WEAK",
+      "fromRef": "ref:space:engineering:nuclear-engineering",
+      "relationType": "TOPICAL_MEMBER_OF",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "OUTLINE_MEMBERSHIP",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:mathematical-physics",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ],
+      "toRef": "ref:discipline:mathematics"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:mathematical-physics",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:physics"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:philosophy-of-science",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ],
+      "toRef": "ref:discipline:philosophy"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:philosophy-of-science",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:philosophy-of-science",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ],
+      "toRef": "ref:discipline:biology"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:philosophy-of-science",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:philosophy"
+        }
+      ],
+      "toRef": "ref:discipline:chemistry"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:biophysics",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:physics"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:biophysics",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:physics"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        }
+      ],
+      "toRef": "ref:discipline:biology"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:biochemistry",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:biology"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:biochemistry",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:chemistry"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:chemical-physics",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:chemical-physics",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:chemistry"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:quantum-chemistry",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:quantum-chemistry",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:chemistry"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:bioinformatics-and-computational-biology",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ],
+      "toRef": "ref:discipline:mathematics"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:bioinformatics-and-computational-biology",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ],
+      "toRef": "ref:discipline:biology"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:bioinformatics-and-computational-biology",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:bioengineering",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:biology"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:bioengineering",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:biology"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:chemical-engineering",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:chemistry"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:chemical-engineering",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:materials-science-and-engineering",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:materials-science-and-engineering",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:chemistry"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:materials-science-and-engineering",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:chemistry"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:control-and-dynamical-systems",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:mathematics"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:control-and-dynamical-systems",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:control-and-dynamical-systems",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:scientific-computing-and-simulation",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:mathematics"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:scientific-computing-and-simulation",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:physics"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:scientific-computing-and-simulation",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:chemistry"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:scientific-computing-and-simulation",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:biology"
+    },
+    {
+      "basis": "SOURCE_SUPPORTED_REFERENCE_SYNTHESIS",
+      "fromRef": "ref:overlap:scientific-computing-and-simulation",
+      "relationType": "OVERLAPS_DOMAIN",
+      "sourceEvidence": [
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:math"
+        },
+        {
+          "evidenceRole": "CROSS_DOMAIN_TOPIC",
+          "sourceRef": "src:wikipedia:engineering"
+        }
+      ],
+      "toRef": "ref:discipline:engineering"
+    }
+  ],
+  "schemaVersion": 1,
+  "scope": {
+    "coverageCrosswalk": "NOT_STARTED",
+    "deferred": [
+      "Social sciences",
+      "Economics",
+      "Politics",
+      "Law",
+      "Institutions",
+      "Culture"
+    ],
+    "included": [
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Biology",
+      "Chemistry",
+      "Engineering"
+    ]
+  },
+  "semantics": {
+    "NOT_REPRESENTED": "Means absent from current reference sources/model, never DOES_NOT_EXIST.",
+    "OVERLAPS_DOMAIN": "Reference synthesis indicating multi-domain placement; non-exclusive and non-authoritative.",
+    "REFERENCE_NODE": "External coordinate-space concept only; does not mint Ordivon owner truth.",
+    "SUBCLASS_OF": "Reserved for source evidence with explicit subclass semantics such as Wikidata P279; unused in v0 topic imports.",
+    "TOPICAL_MEMBER_OF": "Weak topical placement from an outline/list; MUST NOT be interpreted as Wikidata P279/subclass-of."
+  },
+  "sources": {
+    "src:wikidata:membership": {
+      "kind": "WIKIDATA_HELP",
+      "observedAt": "2026-08-18",
+      "role": "RELATION_SEMANTICS",
+      "title": "Wikidata Basic membership properties",
+      "url": "https://www.wikidata.org/wiki/Help:Basic_membership_properties"
+    },
+    "src:wikipedia:biology": {
+      "kind": "WIKIPEDIA_OUTLINE",
+      "observedAt": "2026-08-18",
+      "role": "TOPIC_SPACE_EVIDENCE",
+      "title": "Outline of biology",
+      "url": "https://en.wikipedia.org/wiki/Outline_of_biology"
+    },
+    "src:wikipedia:chemistry": {
+      "kind": "WIKIPEDIA_OUTLINE",
+      "observedAt": "2026-08-18",
+      "role": "TOPIC_SPACE_EVIDENCE",
+      "title": "Outline of chemistry",
+      "url": "https://en.wikipedia.org/wiki/Outline_of_chemistry"
+    },
+    "src:wikipedia:engineering": {
+      "kind": "WIKIPEDIA_OUTLINE",
+      "observedAt": "2026-08-18",
+      "role": "TOPIC_SPACE_EVIDENCE",
+      "title": "Outline of engineering",
+      "url": "https://en.wikipedia.org/wiki/Outline_of_engineering"
+    },
+    "src:wikipedia:math": {
+      "kind": "WIKIPEDIA_OUTLINE",
+      "observedAt": "2026-08-18",
+      "role": "TOPIC_SPACE_EVIDENCE",
+      "title": "Lists of mathematics topics / Outline of mathematics",
+      "url": "https://en.wikipedia.org/wiki/Outline_of_mathematics"
+    },
+    "src:wikipedia:philosophy": {
+      "kind": "WIKIPEDIA_OUTLINE",
+      "observedAt": "2026-08-18",
+      "role": "TOPIC_SPACE_EVIDENCE",
+      "title": "Outline of philosophy",
+      "url": "https://en.wikipedia.org/wiki/Outline_of_philosophy"
+    },
+    "src:wikipedia:physics": {
+      "kind": "WIKIPEDIA_OUTLINE",
+      "observedAt": "2026-08-18",
+      "role": "TOPIC_SPACE_EVIDENCE",
+      "title": "Outline of physics",
+      "url": "https://en.wikipedia.org/wiki/Outline_of_physics"
+    }
+  },
+  "truthRole": "NON_AUTHORITATIVE_EXTERNAL_REFERENCE",
+  "version": "0.1.0"
+}

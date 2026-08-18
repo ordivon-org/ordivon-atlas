@@ -1,0 +1,46 @@
+{
+  "classification": {
+    "coverageNotInvented": true,
+    "crossDomainIdentityCanonicalized": true,
+    "nonAuthoritative": true,
+    "openWorld": true,
+    "strictSingleTreeRejected": true,
+    "wikipediaOutlineDoesNotMintSubclass": true
+  },
+  "counts": {
+    "disciplines": 6,
+    "nodes": 93,
+    "overlapSpaces": 12,
+    "relations": 107
+  },
+  "date": "2026-08-18",
+  "deferred": [
+    "Wikidata item-level QID enrichment for all nodes",
+    "Ordivon owner/ResearchRef crosswalk",
+    "coverage/depth scoring",
+    "social sciences/economics/politics/law/institutions/culture"
+  ],
+  "kind": "ordivon.external-reference-model-foundational-v0-acceptance-evidence",
+  "model": "reference/foundational-disciplines-v0.json",
+  "modelRepairCount": 1,
+  "negativeDogfood": {
+    "failure": "Five concepts existed both as single-domain subspaces and cross-domain overlap identities.",
+    "initialDuplicateIdentityFailureJob": "job-01a01587-89e8-7703-846b-b90944e8f970",
+    "repair": "Merged source evidence into one canonical multi-domain identity; removed duplicate refs without deleting source evidence.",
+    "repairJob": "job-01a01587-e5eb-78d0-ae41-0cf33ecf07fc"
+  },
+  "nonAuthorityNotice": "External reference nodes are coordinates for exploration comparison only. They cannot admit, supersede, withdraw or reopen Ordivon research truth.",
+  "schemaVersion": 1,
+  "scope": "Mathematics, Philosophy, Physics, Biology, Chemistry, Engineering external exploration reference skeleton only",
+  "sourcePolicy": {
+    "Wikidata": "relation-semantics substrate; P31/P279/P361 distinctions preserved",
+    "WikipediaOutlines": "bounded topical-space evidence imported as weak TOPICAL_MEMBER_OF, never automatic SUBCLASS_OF"
+  },
+  "truthRole": "historical-test-evidence",
+  "verification": {
+    "destructiveSuiteJob": "job-01a01588-0ab6-7db2-9529-c534230bb650",
+    "fullDeterministicSuiteJob": "job-01a01588-c67a-7872-bcf6-e927e5e777f0",
+    "fullDeterministicSuiteResult": "44 tests OK; 28 existing gated live/retirement tests skipped; 16 deterministic tests executed including 7 reference-model tests",
+    "result": "7/7 PASS"
+  }
+}
