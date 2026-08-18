@@ -49,8 +49,9 @@ Before adding a synthesis item, classify it as one of:
 ## Current collections
 
 - [`2026-08-18-19-research-understanding/`](2026-08-18-19-research-understanding/) — manual assimilation of the research-understanding conversation: worldview, owner topology, Agent/work realization, research-method/significance compression, Human–Ordivon learning map, anti-rediscovery, and an explicit assimilation manifest.
+- [`2026-08-18-19-media-reconstruction/`](2026-08-18-19-media-reconstruction/) — Media-specific anti-rediscovery synthesis covering the Studio→Media owner inversion, Derived-vs-Foundation compression, Web/Game boundary corrections, OMPC formation/dogfood and stable-owner Phase-1 closure.
 - [`2026-08-19-runtime-operational-realization/`](2026-08-19-runtime-operational-realization/) — Runtime C1–C10 high-value synthesis and anti-rediscovery guard, source-fenced to the current Runtime programme-saturation owner publication without duplicating the owner corpus.
-- [`research-process-lineage/`](research-process-lineage/) — manual Research Episode / Decision-Falsification traces. The collection includes research-understanding, Broad Computing Search A–F, Computational Possibility formation/currentness/repair, and the Runtime C1–C10 correction/saturation cycle.
+- [`research-process-lineage/`](research-process-lineage/) — manual Research Episode / Decision-Falsification traces. The collection includes research-understanding, Broad Computing Search A–F, Computational Possibility formation/currentness/repair, Media owner-inversion/OMPC formation, and the Runtime C1–C10 correction/saturation cycle.
 
 ## Relationship to generated Atlas
 
