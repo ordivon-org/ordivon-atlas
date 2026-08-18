@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "kind": "ordivon.atlas-conversation-assimilation-acceptance",
+  "status": "PASS",
+  "subject": "Runtime C1-C10 Operational Realization Programme",
+  "runtimeOwner": {
+    "ownerResearchRef": "research-owner:runtime",
+    "sourceRevision": "50e29e68e99a274fe9b7819aa1bdbd27ec63cd38",
+    "publicationTransportRevision": "256ef6d0080de38c028a70e27cbaa08e0f817edb",
+    "authorityVersionRef": "sha256:9c67d1b4094ce85a2465579430bb1a941f1923457087fb74cde0642d7b9a51b3",
+    "resultRef": "result:runtime:operational-realization-programme-c1-c10-saturated",
+    "hostCloseout": "task:runtime-operational-realization-programme-20260818@rev13"
+  },
+  "atlasLiveRefresh": {
+    "ownerHealth": "CURRENT_TO_SOURCE",
+    "resultProjectionCurrentness": "CURRENT_TO_SOURCE",
+    "resultClassificationHealth": "EXPLICIT",
+    "resultStanding": ["CURRENT", "FROZEN"],
+    "epistemicVerdict": "ESTABLISHED_IN_SCOPE",
+    "fullyCurrent": true,
+    "ownerCount": 7,
+    "unhealthyOwnerCount": 0
+  },
+  "curatedAssimilation": {
+    "truthRole": "non-authoritative-cross-owner-synthesis",
+    "synthesisCollection": "synthesis/2026-08-19-runtime-operational-realization/",
+    "processEpisode": "synthesis/research-process-lineage/episodes/2026-08-18-19-runtime-operational-realization-c1-c10.md",
+    "antiRediscoveryGuard": "synthesis/2026-08-19-runtime-operational-realization/anti-rediscovery.md",
+    "rawConversationCopied": false,
+    "ownerTruthDuplicatedAsAuthority": false
+  },
+  "concurrency": {
+    "atlasBaseRevision": "ea778af2c36f8090c7a402d015d0c1b801a48625",
+    "concurrentRemoteRevision": "ee480e09c162146fb955febe65654e524e75e3ac",
+    "concurrentSubjectPreserved": "Media synthesis/process-lineage assimilation",
+    "mergeRevisionBeforeAcceptanceEvidence": "d5fc1a01ef93579b24a61142dd6bf8f7d3a4bfd8",
+    "historyRewritten": false
+  },
+  "validation": {
+    "synthesisMarkdownFiles": 22,
+    "missingLocalLinks": 0,
+    "atlasTestsTotal": 37,
+    "atlasTestsPassedDefault": 9,
+    "atlasTestsGatedSkipped": 28,
+    "atlasTestFailures": 0
+  },
+  "antiRediscoveryDisposition": "Runtime C1-C10 owner result plus process-memory/anti-rediscovery surface are now durable and should be queried before admitting semantically equivalent fresh Runtime research."
+}

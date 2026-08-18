@@ -51,6 +51,8 @@ Runtime owner semantic source:
 
 Atlas refresh verified Runtime `CURRENT_TO_SOURCE` and explicit result classification after the publication update.
 
+Machine-readable acceptance evidence: `evidence/ATLAS-RUNTIME-C1-C10-CONVERSATION-ASSIMILATION-ACCEPTANCE-20260819.json`.
+
 ## Anti-duplication rule
 
 Future research admission should search, in order:
