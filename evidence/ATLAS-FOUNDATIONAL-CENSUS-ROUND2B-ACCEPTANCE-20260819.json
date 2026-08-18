@@ -1,0 +1,90 @@
+{
+  "acceptedFindings": [
+    {
+      "claim": "Physics and Chemistry remain strong foundational-domain candidates, but their shared bridge zones such as chemical physics, condensed matter and materials require separate identities rather than exclusive parentage.",
+      "id": "FCR2B-1",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Materials science and engineering is a major interdisciplinary bridge domain coupling fundamental structure/property inquiry with design, synthesis, processing and technological intervention.",
+      "id": "FCR2B-2",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Biology is intrinsically multi-axis: molecular/cellular scale, organismal integration, evolutionary processes and ecological systems cannot be represented as one simple branch hierarchy.",
+      "id": "FCR2B-3",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Engineering is best modeled as an intervention/design/realization domain; design and systems engineering are cross-cutting methodological/integrative axes rather than ordinary natural-science subfields.",
+      "id": "FCR2B-4",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Philosophy and History deserve distinct first-class identities with different epistemic roles; Historical/Symbolic is therefore a family view, not one domain.",
+      "id": "FCR2B-5",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Basic biomedical science is a foundational bridge into medicine, while medicine/health as a whole is translational/professional and should not be admitted wholesale as a foundational root.",
+      "id": "FCR2B-6",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Agriculture is an applied intervention/system domain drawing on life, Earth, chemistry, engineering and social/economic inputs; soil science is a major cross-boundary subspace rather than merely an agricultural topic.",
+      "id": "FCR2B-7",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "closure": "ROUND2B_COMPLETE_GLOBAL_CENSUS_OPEN",
+  "controls": [
+    "All Round2B rootAdmissions remain NOT_ADMITTED.",
+    "Materials remains multi-domain bridge.",
+    "Biology preserves scale/process/system axes.",
+    "Engineering remains intervention/design/realization domain rather than natural-science bucket.",
+    "Philosophy and History remain distinct epistemic identities.",
+    "Medicine and Agriculture are not foundationalized wholesale.",
+    "Administrative/funding/accreditation boundaries do not mint ontology identities."
+  ],
+  "counts": {
+    "findings": 7,
+    "negativeFindings": 4,
+    "normalizedSpaces": 27,
+    "relations": 20,
+    "sources": 17
+  },
+  "date": "2026-08-19",
+  "kind": "ordivon.foundational-census-round2b-acceptance",
+  "negativeFindings": [
+    {
+      "claim": "NSF Emerging Frontiers is an organizational/funding mechanism, not automatically a knowledge-domain identity.",
+      "id": "FCR2B-N1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "NIH institute boundaries organized around diseases/body systems/missions must not be copied as a foundational biomedical ontology.",
+      "id": "FCR2B-N2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Engineering accreditation categories and NSF administrative sections do not mint canonical epistemic roots.",
+      "id": "FCR2B-N3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Composite humanities fields such as Classics must not be mistaken for primitive roots merely because they are institutionally established disciplines.",
+      "id": "FCR2B-N4",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "output": "reference/foundational-census-round2b-normalization-20260819.json",
+  "schemaVersion": 1,
+  "state": "ROUND2B_COMPLETE_GLOBAL_CENSUS_OPEN",
+  "truthRole": "HISTORICAL_RESEARCH_EVIDENCE",
+  "verification": {
+    "fullDeterministicSuiteJob": "job-01a015cf-127a-7c31-b146-bb25ac5766d0",
+    "fullDeterministicSuiteResult": "77 tests OK; 28 pre-existing gated tests skipped; 49 deterministic tests executed.",
+    "referenceSuiteJob": "job-01a015ce-e2db-7700-97dc-b68ca68b3a1d",
+    "referenceSuiteResult": "40/40 PASS"
+  }
+}

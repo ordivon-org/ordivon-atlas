@@ -1,0 +1,797 @@
+{
+  "closure": "ROUND2B_COMPLETE_GLOBAL_CENSUS_OPEN",
+  "findings": [
+    {
+      "claim": "Physics and Chemistry remain strong foundational-domain candidates, but their shared bridge zones such as chemical physics, condensed matter and materials require separate identities rather than exclusive parentage.",
+      "id": "FCR2B-1",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Materials science and engineering is a major interdisciplinary bridge domain coupling fundamental structure/property inquiry with design, synthesis, processing and technological intervention.",
+      "id": "FCR2B-2",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Biology is intrinsically multi-axis: molecular/cellular scale, organismal integration, evolutionary processes and ecological systems cannot be represented as one simple branch hierarchy.",
+      "id": "FCR2B-3",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Engineering is best modeled as an intervention/design/realization domain; design and systems engineering are cross-cutting methodological/integrative axes rather than ordinary natural-science subfields.",
+      "id": "FCR2B-4",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Philosophy and History deserve distinct first-class identities with different epistemic roles; Historical/Symbolic is therefore a family view, not one domain.",
+      "id": "FCR2B-5",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Basic biomedical science is a foundational bridge into medicine, while medicine/health as a whole is translational/professional and should not be admitted wholesale as a foundational root.",
+      "id": "FCR2B-6",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Agriculture is an applied intervention/system domain drawing on life, Earth, chemistry, engineering and social/economic inputs; soil science is a major cross-boundary subspace rather than merely an agricultural topic.",
+      "id": "FCR2B-7",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.foundational-census-round2b-normalization",
+  "negativeFindings": [
+    {
+      "claim": "NSF Emerging Frontiers is an organizational/funding mechanism, not automatically a knowledge-domain identity.",
+      "id": "FCR2B-N1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "NIH institute boundaries organized around diseases/body systems/missions must not be copied as a foundational biomedical ontology.",
+      "id": "FCR2B-N2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Engineering accreditation categories and NSF administrative sections do not mint canonical epistemic roots.",
+      "id": "FCR2B-N3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Composite humanities fields such as Classics must not be mistaken for primitive roots merely because they are institutionally established disciplines.",
+      "id": "FCR2B-N4",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "next": "Whole-Foundational Topology Audit across Round1+2A+2B before any canonical-root admission or Ordivon coverage crosswalk.",
+  "normalizedSpaces": [
+    {
+      "evidence": [
+        "aps-units"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Physics",
+      "placements": [
+        "physical-universe"
+      ],
+      "rationale": "APS maintains many physics subfields with cross-links to astronomy, biology, chemistry, materials and computation. Physics remains a major foundational-domain candidate but not a universal parent for every physically grounded field.",
+      "roleClasses": [
+        "FOUNDATIONAL_DOMAIN_CANDIDATE",
+        "OBJECT_REGIME_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:physics"
+    },
+    {
+      "evidence": [
+        "iupac-divisions"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Chemistry",
+      "placements": [
+        "physical-material",
+        "molecular"
+      ],
+      "rationale": "IUPAC organizes chemistry into multiple divisions including physical/biophysical, inorganic, organic/biomolecular, polymer, analytical, environment and health-related chemistry, supporting chemistry as a first-class domain with internal methodological and bridge subspaces.",
+      "roleClasses": [
+        "FOUNDATIONAL_DOMAIN_CANDIDATE",
+        "COMPOSITION_TRANSFORMATION_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:chemistry"
+    },
+    {
+      "evidence": [
+        "aps-units"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Condensed matter physics",
+      "placements": [
+        "physics",
+        "materials"
+      ],
+      "rationale": "APS treats condensed matter as a major physics division while materials physics is separately represented; condensed matter therefore remains a major physics subspace with strong materials overlap.",
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "MATERIALS_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:condensed-matter"
+    },
+    {
+      "evidence": [
+        "aps-units",
+        "iupac-divisions"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Chemical physics",
+      "placements": [
+        "physics",
+        "chemistry"
+      ],
+      "rationale": "APS explicitly maintains Chemical Physics and IUPAC maintains Physical and Biophysical Chemistry, demonstrating a stable physics↔chemistry bridge rather than exclusive placement.",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_SUBSPACE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:chemical-physics"
+    },
+    {
+      "evidence": [
+        "nsf-materials",
+        "mrs-about"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Materials science and engineering",
+      "placements": [
+        "physics",
+        "chemistry",
+        "biology",
+        "engineering"
+      ],
+      "rationale": "NSF and MRS both characterize materials research as inherently interdisciplinary across physics, chemistry, biology and engineering, linking fundamental structure/property understanding to design, synthesis, processing and technological creation.",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_DOMAIN_CANDIDATE",
+        "INTERVENTION_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:materials"
+    },
+    {
+      "evidence": [
+        "iupac-divisions"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Analytical chemistry",
+      "placements": [
+        "chemistry",
+        "measurement"
+      ],
+      "rationale": "IUPAC recognizes Analytical Chemistry as a distinct division. Its focus on measurement/characterization supports a chemistry subspace with methodological-axis character rather than a separate foundational root.",
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "METHODOLOGICAL_AXIS"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:analytical-chemistry"
+    },
+    {
+      "evidence": [
+        "iupac-divisions",
+        "aps-units"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Polymer science",
+      "placements": [
+        "chemistry",
+        "physics",
+        "materials",
+        "biology-boundary"
+      ],
+      "rationale": "Polymer is independently organized in both IUPAC and APS, indicating a stable cross-domain identity spanning chemistry, physics and materials.",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_SUBSPACE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:polymer-science"
+    },
+    {
+      "evidence": [
+        "nsf-bio"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Biology",
+      "placements": [
+        "life"
+      ],
+      "rationale": "NSF BIO organizes fundamental biology from molecular/cellular through organismal and ecological/evolutionary scales, supporting biology as a first-class life-domain candidate with multiple orthogonal scales and processes.",
+      "roleClasses": [
+        "FOUNDATIONAL_DOMAIN_CANDIDATE",
+        "MULTISCALE_LIFE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:biology"
+    },
+    {
+      "evidence": [
+        "nsf-bio"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Molecular and cellular biosciences",
+      "placements": [
+        "biology",
+        "chemistry-boundary"
+      ],
+      "rationale": "NSF MCB targets fundamental properties of living systems at atomic, molecular, subcellular and cellular scales; this is a major lower-scale biological subspace, not equivalent to biology as a whole.",
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "LOWER_SCALE_LIFE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:molecular-cellular-biology"
+    },
+    {
+      "evidence": [
+        "nsf-bio"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Organismal biology",
+      "placements": [
+        "biology",
+        "organism"
+      ],
+      "rationale": "NSF IOS explicitly studies organisms as integrated units of biological organization, supporting organismal biology as a major system-level subspace.",
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:organismal-biology"
+    },
+    {
+      "evidence": [
+        "nsf-bio"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Evolutionary biology",
+      "placements": [
+        "biology",
+        "ecology",
+        "genetics-boundary"
+      ],
+      "rationale": "NSF Environmental Biology explicitly supports fundamental evolutionary research across biological entities and scales. Evolution is better modeled as a pervasive biological process axis plus major subspace than as one taxonomic branch among peers.",
+      "roleClasses": [
+        "PROCESS_AXIS",
+        "MAJOR_SUBSPACE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:evolutionary-biology"
+    },
+    {
+      "evidence": [
+        "nsf-bio"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Ecology",
+      "placements": [
+        "biology",
+        "environment",
+        "earth-life"
+      ],
+      "rationale": "NSF DEB covers species, populations, communities and ecosystems across scales, supporting ecology as a system-oriented life/environment bridge.",
+      "roleClasses": [
+        "SYSTEM_DOMAIN",
+        "MAJOR_SUBSPACE",
+        "EARTH_LIFE_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:ecology"
+    },
+    {
+      "evidence": [
+        "nsf-bio"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Biological research infrastructure",
+      "placements": [
+        "biology",
+        "methodology"
+      ],
+      "rationale": "NSF DBI funds technologies, facilities and human/research infrastructure for fundamental biology. This should be represented as research infrastructure, not mistaken for a biological object-domain.",
+      "roleClasses": [
+        "EPISTEMIC_INFRASTRUCTURE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:biological-research-infrastructure"
+    },
+    {
+      "evidence": [
+        "nsf-eng",
+        "abet-eng-2026"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Engineering",
+      "placements": [
+        "design",
+        "technology",
+        "physical-realization"
+      ],
+      "rationale": "NSF organizes engineering around chemical/bio/energy/transport, civil/mechanical/manufacturing, and electrical/communications/computing areas, while ABET distinguishes engineering from basic sciences. Engineering is therefore best represented as a design/intervention/realization domain rather than another natural-science object domain.",
+      "roleClasses": [
+        "INTERVENTION_DOMAIN_CANDIDATE",
+        "DESIGN_REALIZATION_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:engineering"
+    },
+    {
+      "evidence": [
+        "design-society"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Design",
+      "placements": [
+        "engineering",
+        "artifacts",
+        "systems",
+        "human-created-environments"
+      ],
+      "rationale": "The Design Society treats design as creation of artifacts and systems across physical, virtual, psychological, economic and social environments. Design is a cross-domain intervention axis, not reducible to engineering alone.",
+      "roleClasses": [
+        "METHODOLOGICAL_AXIS",
+        "CREATIVE_INTERVENTION_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:design"
+    },
+    {
+      "evidence": [
+        "incose-systems"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Systems engineering",
+      "placements": [
+        "engineering",
+        "systems",
+        "lifecycle",
+        "management-boundary"
+      ],
+      "rationale": "INCOSE defines systems engineering as transdisciplinary and integrative across realization, use and retirement of engineered systems; it is a lifecycle integration method/domain rather than a single artifact-class branch.",
+      "roleClasses": [
+        "INTEGRATIVE_METHOD_AXIS",
+        "INTERVENTION_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:systems-engineering"
+    },
+    {
+      "evidence": [
+        "nsf-eng"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Manufacturing",
+      "placements": [
+        "engineering",
+        "materials",
+        "production"
+      ],
+      "rationale": "NSF engineering treats manufacturing together with civil/mechanical innovation and material/building technologies, supporting manufacturing as a realization/application domain rather than a foundational science root.",
+      "roleClasses": [
+        "REALIZATION_DOMAIN",
+        "APPLIED_ENGINEERING_SUBSPACE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:manufacturing"
+    },
+    {
+      "evidence": [
+        "nsf-eng",
+        "nih-institutes"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Bioengineering",
+      "placements": [
+        "engineering",
+        "biology",
+        "medicine"
+      ],
+      "rationale": "NSF places bioengineering with engineering healthcare while NIH maintains biomedical imaging/bioengineering institutes; bioengineering is a strong biology↔medicine↔engineering bridge.",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "APPLIED_INTERVENTION_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:bioengineering"
+    },
+    {
+      "evidence": [
+        "apa-major"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Philosophy",
+      "placements": [
+        "conceptual",
+        "normative",
+        "epistemic",
+        "historical"
+      ],
+      "rationale": "APA identifies metaphysics, epistemology, logic and ethics as central philosophical areas while emphasizing history, argument construction and expanding cross-disciplinary inquiry. Philosophy is not merely a historical-symbolic bucket.",
+      "roleClasses": [
+        "FOUNDATIONAL_CONCEPTUAL_DOMAIN_CANDIDATE",
+        "METHODOLOGICAL_REFLECTIVE_AXIS"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:philosophy"
+    },
+    {
+      "evidence": [
+        "aha-about"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "History",
+      "placements": [
+        "human-past",
+        "interpretation",
+        "evidence"
+      ],
+      "rationale": "AHA explicitly represents history as a distinct discipline centered on historical thinking and disciplined investigation/interpretation of the past, supporting first-class identity independent of generic humanities.",
+      "roleClasses": [
+        "HISTORICAL_INTERPRETIVE_DOMAIN_CANDIDATE",
+        "TEMPORAL_EVIDENCE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:history"
+    },
+    {
+      "evidence": [
+        "aar-publications"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Religious studies",
+      "placements": [
+        "religion",
+        "history",
+        "culture",
+        "social-boundary"
+      ],
+      "rationale": "AAR frames its mission around academic study of religion across world traditions and methodologies. This supports a first-class comparative domain identity but not foundational-root admission in the current pre-social wave.",
+      "roleClasses": [
+        "HISTORICAL_SYMBOLIC_DOMAIN",
+        "COMPARATIVE_HUMAN_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:religious-studies"
+    },
+    {
+      "evidence": [
+        "asa-org"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Aesthetics",
+      "placements": [
+        "philosophy",
+        "arts",
+        "psychology",
+        "sociology-boundary",
+        "cultural-history"
+      ],
+      "rationale": "ASA explicitly includes philosophical, scientific and theoretical studies of the arts and related experience, including psychology, sociology, anthropology and cultural history. Aesthetics is therefore a bridge identity rather than a philosophy-only child.",
+      "roleClasses": [
+        "CONCEPTUAL_ART_BRIDGE",
+        "HUMAN_EXPERIENCE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:aesthetics"
+    },
+    {
+      "evidence": [
+        "scs-mission"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Classics / Classical studies",
+      "placements": [
+        "history",
+        "language",
+        "literature",
+        "philosophy",
+        "religion",
+        "art",
+        "material-culture"
+      ],
+      "rationale": "SCS defines Classics across languages, literatures, history, material culture, philosophy, law, religion and art of the ancient Mediterranean. It is a composite domain, not evidence for a universal foundational root.",
+      "roleClasses": [
+        "COMPOSITE_HISTORICAL_SYMBOLIC_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:classics"
+    },
+    {
+      "evidence": [
+        "nih-institutes"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Basic biomedical sciences",
+      "placements": [
+        "biology",
+        "medicine",
+        "human-physiology"
+      ],
+      "rationale": "NIH NIGMS explicitly supports basic research on biological processes that underpins diagnosis, treatment and prevention, demonstrating a foundational biology↔medicine bridge distinct from clinical practice.",
+      "roleClasses": [
+        "FOUNDATIONAL_BRIDGE",
+        "TRANSLATIONAL_SOURCE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:basic-biomedical-science"
+    },
+    {
+      "evidence": [
+        "nih-institutes"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Medicine and health sciences",
+      "placements": [
+        "biomedicine",
+        "clinical",
+        "public-health-boundary"
+      ],
+      "rationale": "NIH organization is largely disease/body-system/health-mission oriented and spans basic, translational and clinical research. Medicine/health should not be imported wholesale as a foundational object-domain even though it contains foundational biomedical cores.",
+      "roleClasses": [
+        "APPLIED_PROFESSIONAL_DOMAIN",
+        "TRANSLATIONAL_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:medicine-health"
+    },
+    {
+      "evidence": [
+        "nifa-topics"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Agricultural sciences and systems",
+      "placements": [
+        "biology",
+        "ecology",
+        "soil",
+        "engineering",
+        "food",
+        "economics-boundary"
+      ],
+      "rationale": "NIFA agricultural topics combine plants, animals, ecosystems, natural resources, technology, food systems and human/economic concerns. Agriculture is an intervention/system domain drawing on multiple foundations rather than a single foundational root.",
+      "roleClasses": [
+        "APPLIED_INTERVENTION_SYSTEM_DOMAIN",
+        "EARTH_LIFE_ENGINEERING_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:agriculture"
+    },
+    {
+      "evidence": [
+        "nifa-soil"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Soil science",
+      "placements": [
+        "earth-science",
+        "biology",
+        "chemistry",
+        "agriculture",
+        "climate"
+      ],
+      "rationale": "NIFA describes soil as a dynamic natural resource central to plant growth, air/water quality, ecosystems, climate, nutrient cycling and agriculture. Soil science is a strong Earth↔life↔chemistry↔agriculture bridge.",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_ENVIRONMENTAL_SUBSPACE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:soil-science"
+    }
+  ],
+  "policies": {
+    "administrativeBoundary": "Funding/society/accreditation organization is evidence about field shape, not ontology authority.",
+    "appliedBoundary": "Applied/professional domains may contain foundational cores without becoming foundational roots wholesale.",
+    "compositeFields": "Institutionally stable composite disciplines are not automatically primitive roots.",
+    "multiAxis": "Scale, process, system, method and intervention relations may cross-cut discipline identities.",
+    "rootAdmission": "All Round2B spaces remain NOT_ADMITTED."
+  },
+  "relations": [
+    {
+      "from": "norm:condensed-matter",
+      "to": "norm:materials",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:chemical-physics",
+      "to": "norm:physics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:chemical-physics",
+      "to": "norm:chemistry",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:materials",
+      "to": "norm:physics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:materials",
+      "to": "norm:chemistry",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:materials",
+      "to": "norm:engineering",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:analytical-chemistry",
+      "to": "norm:measurement",
+      "type": "USES_AXIS"
+    },
+    {
+      "from": "norm:molecular-cellular-biology",
+      "to": "norm:biology",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:organismal-biology",
+      "to": "norm:biology",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:evolutionary-biology",
+      "to": "norm:biology",
+      "type": "PROCESS_AXIS_WITHIN"
+    },
+    {
+      "from": "norm:ecology",
+      "to": "norm:biology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:design",
+      "to": "norm:engineering",
+      "type": "CROSSCUTS"
+    },
+    {
+      "from": "norm:systems-engineering",
+      "to": "norm:engineering",
+      "type": "INTEGRATES"
+    },
+    {
+      "from": "norm:bioengineering",
+      "to": "norm:engineering",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:bioengineering",
+      "to": "norm:biology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:aesthetics",
+      "to": "norm:philosophy",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:basic-biomedical-science",
+      "to": "norm:biology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:basic-biomedical-science",
+      "to": "norm:medicine-health",
+      "type": "FOUNDATIONAL_INPUT_TO"
+    },
+    {
+      "from": "norm:soil-science",
+      "to": "norm:agriculture",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:soil-science",
+      "to": "norm:biology",
+      "type": "BRIDGES"
+    }
+  ],
+  "roundId": "foundational-census:round2b:2026-08-19",
+  "schemaVersion": 1,
+  "scope": [
+    "Physical/Material",
+    "Life",
+    "Engineering/Intervention",
+    "Historical/Symbolic",
+    "Biomedical/Agricultural boundaries"
+  ],
+  "sources": {
+    "aar-publications": {
+      "role": "RELIGIOUS_STUDIES_SCOPE",
+      "title": "American Academy of Religion publications",
+      "url": "https://aarweb.org/news-publications/aar-publications/"
+    },
+    "abet-eng-2026": {
+      "role": "ENGINEERING_BOUNDARY_AND_BASIC_SCIENCE",
+      "title": "ABET Engineering Accreditation Criteria 2026-2027",
+      "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/"
+    },
+    "aha-about": {
+      "role": "HISTORY_DOMAIN_SCOPE",
+      "title": "American Historical Association - About",
+      "url": "https://www.historians.org/about/"
+    },
+    "apa-major": {
+      "role": "PHILOSOPHY_DOMAIN_STRUCTURE",
+      "title": "American Philosophical Association - Statement on the Major",
+      "url": "https://www.apaonline.org/page/major"
+    },
+    "aps-units": {
+      "role": "PHYSICS_DOMAIN_TOPOLOGY",
+      "title": "American Physical Society units",
+      "url": "https://www.aps.org/membership/units"
+    },
+    "asa-org": {
+      "role": "AESTHETICS_SCOPE",
+      "title": "American Society for Aesthetics organization",
+      "url": "https://aesthetics-online.org/page/asaorganization"
+    },
+    "design-society": {
+      "role": "DESIGN_DOMAIN_SCOPE",
+      "title": "The Design Society - About",
+      "url": "https://www.designsociety.org/about"
+    },
+    "incose-systems": {
+      "role": "SYSTEMS_ENGINEERING_SCOPE",
+      "title": "INCOSE About Systems Engineering",
+      "url": "https://www.incose.org/about-systems-engineering/"
+    },
+    "iupac-divisions": {
+      "role": "CHEMISTRY_DOMAIN_TOPOLOGY",
+      "title": "IUPAC Divisions",
+      "url": "https://iupac.org/who-we-are/divisions/"
+    },
+    "mrs-about": {
+      "role": "MATERIALS_INTERDISCIPLINARITY",
+      "title": "Materials Research Society - About MRS",
+      "url": "https://www.mrs.org/discover-mrs/about-mrs"
+    },
+    "nifa-soil": {
+      "role": "SOIL_SCIENCE_SCOPE",
+      "title": "USDA NIFA Soil",
+      "url": "https://www.nifa.usda.gov/topics/soil"
+    },
+    "nifa-topics": {
+      "role": "AGRICULTURAL_DOMAIN_SCOPE",
+      "title": "USDA NIFA Topics",
+      "url": "https://www.nifa.usda.gov/topics"
+    },
+    "nih-institutes": {
+      "role": "BIOMEDICAL_BOUNDARY",
+      "title": "NIH Institutes and Centers",
+      "url": "https://www.nih.gov/institutes-nih/list-institutes-centers"
+    },
+    "nsf-bio": {
+      "role": "BIOLOGY_DOMAIN_TOPOLOGY",
+      "title": "NSF Directorate for Biological Sciences - About BIO",
+      "url": "https://www.nsf.gov/bio/about"
+    },
+    "nsf-eng": {
+      "role": "ENGINEERING_DOMAIN_TOPOLOGY",
+      "title": "NSF Directorate for Engineering",
+      "url": "https://www.nsf.gov/eng"
+    },
+    "nsf-materials": {
+      "role": "MATERIALS_DOMAIN_SCOPE",
+      "title": "NSF Materials Research",
+      "url": "https://www.nsf.gov/focus-areas/materials"
+    },
+    "scs-mission": {
+      "role": "CLASSICS_SCOPE",
+      "title": "Society for Classical Studies mission and structure",
+      "url": "https://classicalstudies.org/about/mission-and-structure"
+    }
+  },
+  "state": "ROUND2B_COMPLETE_CENSUS_OPEN",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_NORMALIZATION"
+}

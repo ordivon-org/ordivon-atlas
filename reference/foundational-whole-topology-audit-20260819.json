@@ -1,0 +1,1053 @@
+{
+  "auditId": "foundational-topology-audit:2026-08-19",
+  "brokenRelations": [],
+  "canonicalRootReadiness": "NOT_READY",
+  "counts": {
+    "brokenRelations": 0,
+    "identityLabelCollisions": 0,
+    "multiPlacementSpaces": 40,
+    "multiRoleSpaces": 40,
+    "normalizedSpaces": 43,
+    "relations": 32,
+    "round1Candidates": 37,
+    "round1UnresolvedAfterRound2": 7
+  },
+  "coverageCrosswalkReadiness": "NOT_READY",
+  "findings": [
+    {
+      "claim": "The foundational reference space is not representable as a single discipline tree: most normalized identities have multiple placements and/or multiple semantic roles.",
+      "id": "FTA-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "A single generic node type `discipline` is insufficient. The observed topology requires at least DOMAIN, MAJOR_SUBSPACE, BRIDGE, AXIS, INFRASTRUCTURE, APPLIED_TRANSLATIONAL and COMPOSITE archetypes.",
+      "id": "FTA-2",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Canonical-root admission is premature: Round 1 still has unresolved candidates after Round 2, and no source-independent root criterion has yet been validated.",
+      "id": "FTA-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Foundationality is not one scalar property. A space may be foundational as an object-domain, conceptual domain, methodological axis, process axis or enabling epistemic infrastructure.",
+      "id": "FTA-4",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Applied and professional domains should be represented rather than excluded, but with explicit consumption/translation/intervention roles so they do not masquerade as primitive foundations.",
+      "id": "FTA-5",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "The next missing-work bottleneck is no longer broad census discovery but normalization of the remaining formal, geochemical/geographical, life-information and knowledge-organization candidates.",
+      "id": "FTA-6",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "identityCollisions": {},
+  "inputs": [
+    "reference/foundational-census-round1-20260819.json",
+    "reference/foundational-census-round2a-normalization-20260819.json",
+    "reference/foundational-census-round2b-normalization-20260819.json"
+  ],
+  "kind": "ordivon.whole-foundational-topology-audit",
+  "negativeConclusions": [
+    "Do not admit a fixed root count.",
+    "Do not rename provisional probe families as roots.",
+    "Do not use institutional prestige or administrative independence as root evidence.",
+    "Do not begin Ordivon coverage scoring while unresolved foundational candidates remain material enough to bias the map.",
+    "Do not flatten axes/infrastructure into object-domain parent-child relations."
+  ],
+  "next": "Targeted Round 2C normalization of unresolved Round1 candidates, then repeat topology audit. If unresolved count and grammar pressure fall sufficiently, consider an explicit canonical-major-region admission phase before Ordivon crosswalk.",
+  "repairs": [
+    {
+      "failure": "Initial topology grammar failed to map EARTH_LIFE_ENGINEERING_BRIDGE and TEMPORAL_EVIDENCE_DOMAIN.",
+      "repair": "Mapped the former to BRIDGE and the latter to DOMAIN; no identity or root admission changed.",
+      "repairId": "repair:whole-topology-audit:archetype-coverage",
+      "semanticEffect": "Topology grammar now covers every roleClass observed in Round2A/2B.",
+      "status": "APPLIED"
+    }
+  ],
+  "round1NormalizationStatus": [
+    {
+      "candidate": "Mathematics",
+      "normalizedRef": null,
+      "status": "UNRESOLVED_AFTER_ROUND2"
+    },
+    {
+      "candidate": "Statistics and probability",
+      "normalizedRef": null,
+      "status": "UNRESOLVED_AFTER_ROUND2"
+    },
+    {
+      "candidate": "Logic",
+      "normalizedRef": "norm:logic",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Computer and information sciences",
+      "normalizedRef": "norm:computation",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Information theory",
+      "normalizedRef": "norm:information-theory",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Systems and dynamical theory",
+      "normalizedRef": null,
+      "status": "UNRESOLVED_AFTER_ROUND2"
+    },
+    {
+      "candidate": "Physics",
+      "normalizedRef": "norm:physics",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Astronomy and astrophysics",
+      "normalizedRef": "norm:astronomy",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Cosmology",
+      "normalizedRef": "norm:cosmology",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Chemistry",
+      "normalizedRef": "norm:chemistry",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Materials science",
+      "normalizedRef": "norm:materials",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Earth science / geoscience",
+      "normalizedRef": "norm:earth-science",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Geology",
+      "normalizedRef": "norm:geology",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Geophysics",
+      "normalizedRef": "norm:geophysics",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Geochemistry",
+      "normalizedRef": null,
+      "status": "UNRESOLVED_AFTER_ROUND2"
+    },
+    {
+      "candidate": "Atmospheric science and meteorology",
+      "normalizedRef": "norm:atmospheric-science",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Oceanography",
+      "normalizedRef": "norm:oceanography",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Physical geography",
+      "normalizedRef": null,
+      "status": "UNRESOLVED_AFTER_ROUND2"
+    },
+    {
+      "candidate": "Climate science",
+      "normalizedRef": "norm:climate-science",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Biology",
+      "normalizedRef": "norm:biology",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Molecular biology and biochemistry",
+      "normalizedRef": "norm:molecular-cellular-biology",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Genetics and genomics",
+      "normalizedRef": null,
+      "status": "UNRESOLVED_AFTER_ROUND2"
+    },
+    {
+      "candidate": "Evolutionary biology",
+      "normalizedRef": "norm:evolutionary-biology",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Ecology",
+      "normalizedRef": "norm:ecology",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Neuroscience",
+      "normalizedRef": "norm:neuroscience",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Medicine and health sciences",
+      "normalizedRef": "norm:medicine-health",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Basic biomedical sciences",
+      "normalizedRef": "norm:basic-biomedical-science",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Agricultural sciences",
+      "normalizedRef": "norm:agriculture",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Engineering science and technology",
+      "normalizedRef": "norm:engineering",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Philosophy",
+      "normalizedRef": "norm:philosophy",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Psychology",
+      "normalizedRef": "norm:psychology",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Cognitive science",
+      "normalizedRef": "norm:cognitive-science",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Linguistics",
+      "normalizedRef": "norm:linguistics",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "History",
+      "normalizedRef": "norm:history",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Religious studies",
+      "normalizedRef": "norm:religious-studies",
+      "status": "PROVISIONALLY_NORMALIZED"
+    },
+    {
+      "candidate": "Library and information science",
+      "normalizedRef": null,
+      "status": "UNRESOLVED_AFTER_ROUND2"
+    },
+    {
+      "candidate": "Measurement, metrology and standards",
+      "normalizedRef": "norm:measurement",
+      "status": "PROVISIONALLY_NORMALIZED"
+    }
+  ],
+  "schemaVersion": 1,
+  "spaceArchetypes": [
+    {
+      "archetypes": [
+        "AXIS",
+        "BRIDGE"
+      ],
+      "label": "Logic",
+      "placements": [
+        "formal-inferential",
+        "mathematics",
+        "philosophy",
+        "computation"
+      ],
+      "roleClasses": [
+        "FOUNDATIONAL_BRIDGE",
+        "METHODOLOGICAL_AXIS"
+      ],
+      "spaceRef": "norm:logic"
+    },
+    {
+      "archetypes": [
+        "BRIDGE",
+        "DOMAIN"
+      ],
+      "label": "Computation and computing",
+      "placements": [
+        "formal-inferential",
+        "engineering-intervention",
+        "information"
+      ],
+      "roleClasses": [
+        "FOUNDATIONAL_DOMAIN_CANDIDATE",
+        "BRIDGE_DOMAIN"
+      ],
+      "spaceRef": "norm:computation"
+    },
+    {
+      "archetypes": [
+        "AXIS",
+        "BRIDGE"
+      ],
+      "label": "Information theory",
+      "placements": [
+        "formal-inferential",
+        "computation",
+        "communication",
+        "statistics"
+      ],
+      "roleClasses": [
+        "FOUNDATIONAL_BRIDGE",
+        "METHODOLOGICAL_AXIS"
+      ],
+      "spaceRef": "norm:information-theory"
+    },
+    {
+      "archetypes": [
+        "BRIDGE",
+        "DOMAIN"
+      ],
+      "label": "Astronomy and astrophysics",
+      "placements": [
+        "space-cosmic",
+        "physics",
+        "planetary"
+      ],
+      "roleClasses": [
+        "MAJOR_DOMAIN_CANDIDATE",
+        "PHYSICAL_SPACE_BRIDGE"
+      ],
+      "spaceRef": "norm:astronomy"
+    },
+    {
+      "archetypes": [
+        "BRIDGE",
+        "MAJOR_SUBSPACE"
+      ],
+      "label": "Cosmology",
+      "placements": [
+        "astronomy",
+        "physics",
+        "space-cosmic"
+      ],
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "PHYSICS_ASTRONOMY_BRIDGE"
+      ],
+      "spaceRef": "norm:cosmology"
+    },
+    {
+      "archetypes": [
+        "DOMAIN"
+      ],
+      "label": "Earth science / geoscience",
+      "placements": [
+        "earth-environment",
+        "physical-material",
+        "planetary"
+      ],
+      "roleClasses": [
+        "MAJOR_DOMAIN_CANDIDATE",
+        "SYSTEM_DOMAIN"
+      ],
+      "spaceRef": "norm:earth-science"
+    },
+    {
+      "archetypes": [
+        "MAJOR_SUBSPACE"
+      ],
+      "label": "Geology",
+      "placements": [
+        "earth-science"
+      ],
+      "roleClasses": [
+        "MAJOR_SUBSPACE"
+      ],
+      "spaceRef": "norm:geology"
+    },
+    {
+      "archetypes": [
+        "BRIDGE",
+        "MAJOR_SUBSPACE"
+      ],
+      "label": "Geophysics",
+      "placements": [
+        "earth-science",
+        "physics"
+      ],
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_SUBSPACE"
+      ],
+      "spaceRef": "norm:geophysics"
+    },
+    {
+      "archetypes": [
+        "DOMAIN",
+        "MAJOR_SUBSPACE"
+      ],
+      "label": "Atmospheric science and meteorology",
+      "placements": [
+        "earth-science",
+        "climate",
+        "physics"
+      ],
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "SYSTEM_DOMAIN"
+      ],
+      "spaceRef": "norm:atmospheric-science"
+    },
+    {
+      "archetypes": [
+        "DOMAIN",
+        "MAJOR_SUBSPACE"
+      ],
+      "label": "Oceanography",
+      "placements": [
+        "earth-science",
+        "climate",
+        "biology",
+        "chemistry",
+        "physics"
+      ],
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "SYSTEM_DOMAIN"
+      ],
+      "spaceRef": "norm:oceanography"
+    },
+    {
+      "archetypes": [
+        "BRIDGE",
+        "DOMAIN"
+      ],
+      "label": "Climate science",
+      "placements": [
+        "atmosphere",
+        "ocean",
+        "cryosphere",
+        "biosphere",
+        "earth-science"
+      ],
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "SYSTEM_DOMAIN"
+      ],
+      "spaceRef": "norm:climate-science"
+    },
+    {
+      "archetypes": [
+        "BRIDGE",
+        "DOMAIN"
+      ],
+      "label": "Cognitive science",
+      "placements": [
+        "mind-cognition",
+        "psychology",
+        "neuroscience",
+        "linguistics",
+        "artificial-intelligence",
+        "philosophy",
+        "anthropology",
+        "education"
+      ],
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_DOMAIN_CANDIDATE"
+      ],
+      "spaceRef": "norm:cognitive-science"
+    },
+    {
+      "archetypes": [
+        "DOMAIN"
+      ],
+      "label": "Psychology",
+      "placements": [
+        "mind-cognition",
+        "behavior",
+        "social-boundary"
+      ],
+      "roleClasses": [
+        "MAJOR_DOMAIN_CANDIDATE",
+        "EMPIRICAL_MIND_DOMAIN"
+      ],
+      "spaceRef": "norm:psychology"
+    },
+    {
+      "archetypes": [
+        "BRIDGE",
+        "DOMAIN"
+      ],
+      "label": "Neuroscience",
+      "placements": [
+        "biology",
+        "medicine",
+        "mind-cognition",
+        "psychology"
+      ],
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_DOMAIN_CANDIDATE"
+      ],
+      "spaceRef": "norm:neuroscience"
+    },
+    {
+      "archetypes": [
+        "BRIDGE",
+        "DOMAIN"
+      ],
+      "label": "Linguistics",
+      "placements": [
+        "language",
+        "mind-cognition",
+        "social-boundary",
+        "formal-inferential",
+        "computation"
+      ],
+      "roleClasses": [
+        "MAJOR_DOMAIN_CANDIDATE",
+        "BRIDGE_DOMAIN"
+      ],
+      "spaceRef": "norm:linguistics"
+    },
+    {
+      "archetypes": [
+        "AXIS",
+        "INFRASTRUCTURE"
+      ],
+      "label": "Measurement and metrology",
+      "placements": [
+        "methodology",
+        "physics",
+        "chemistry",
+        "biology",
+        "engineering",
+        "social-measurement-boundary"
+      ],
+      "roleClasses": [
+        "METHODOLOGICAL_AXIS",
+        "EPISTEMIC_INFRASTRUCTURE"
+      ],
+      "spaceRef": "norm:measurement"
+    },
+    {
+      "archetypes": [
+        "DOMAIN"
+      ],
+      "label": "Physics",
+      "placements": [
+        "physical-universe"
+      ],
+      "roleClasses": [
+        "FOUNDATIONAL_DOMAIN_CANDIDATE",
+        "OBJECT_REGIME_DOMAIN"
+      ],
+      "spaceRef": "norm:physics"
+    },
+    {
+      "archetypes": [
+        "DOMAIN"
+      ],
+      "label": "Chemistry",
+      "placements": [
+        "physical-material",
+        "molecular"
+      ],
+      "roleClasses": [
+        "FOUNDATIONAL_DOMAIN_CANDIDATE",
+        "COMPOSITION_TRANSFORMATION_DOMAIN"
+      ],
+      "spaceRef": "norm:chemistry"
+    },
+    {
+      "archetypes": [
+        "BRIDGE",
+        "MAJOR_SUBSPACE"
+      ],
+      "label": "Condensed matter physics",
+      "placements": [
+        "physics",
+        "materials"
+      ],
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "MATERIALS_BRIDGE"
+      ],
+      "spaceRef": "norm:condensed-matter"
+    },
+    {
+      "archetypes": [
+        "BRIDGE",
+        "MAJOR_SUBSPACE"
+      ],
+      "label": "Chemical physics",
+      "placements": [
+        "physics",
+        "chemistry"
+      ],
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_SUBSPACE"
+      ],
+      "spaceRef": "norm:chemical-physics"
+    },
+    {
+      "archetypes": [
+        "APPLIED_TRANSLATIONAL",
+        "BRIDGE",
+        "DOMAIN"
+      ],
+      "label": "Materials science and engineering",
+      "placements": [
+        "physics",
+        "chemistry",
+        "biology",
+        "engineering"
+      ],
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_DOMAIN_CANDIDATE",
+        "INTERVENTION_DOMAIN"
+      ],
+      "spaceRef": "norm:materials"
+    },
+    {
+      "archetypes": [
+        "AXIS",
+        "MAJOR_SUBSPACE"
+      ],
+      "label": "Analytical chemistry",
+      "placements": [
+        "chemistry",
+        "measurement"
+      ],
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "METHODOLOGICAL_AXIS"
+      ],
+      "spaceRef": "norm:analytical-chemistry"
+    },
+    {
+      "archetypes": [
+        "BRIDGE",
+        "MAJOR_SUBSPACE"
+      ],
+      "label": "Polymer science",
+      "placements": [
+        "chemistry",
+        "physics",
+        "materials",
+        "biology-boundary"
+      ],
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_SUBSPACE"
+      ],
+      "spaceRef": "norm:polymer-science"
+    },
+    {
+      "archetypes": [
+        "DOMAIN"
+      ],
+      "label": "Biology",
+      "placements": [
+        "life"
+      ],
+      "roleClasses": [
+        "FOUNDATIONAL_DOMAIN_CANDIDATE",
+        "MULTISCALE_LIFE_DOMAIN"
+      ],
+      "spaceRef": "norm:biology"
+    },
+    {
+      "archetypes": [
+        "MAJOR_SUBSPACE"
+      ],
+      "label": "Molecular and cellular biosciences",
+      "placements": [
+        "biology",
+        "chemistry-boundary"
+      ],
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "LOWER_SCALE_LIFE_DOMAIN"
+      ],
+      "spaceRef": "norm:molecular-cellular-biology"
+    },
+    {
+      "archetypes": [
+        "DOMAIN",
+        "MAJOR_SUBSPACE"
+      ],
+      "label": "Organismal biology",
+      "placements": [
+        "biology",
+        "organism"
+      ],
+      "roleClasses": [
+        "MAJOR_SUBSPACE",
+        "SYSTEM_DOMAIN"
+      ],
+      "spaceRef": "norm:organismal-biology"
+    },
+    {
+      "archetypes": [
+        "AXIS",
+        "MAJOR_SUBSPACE"
+      ],
+      "label": "Evolutionary biology",
+      "placements": [
+        "biology",
+        "ecology",
+        "genetics-boundary"
+      ],
+      "roleClasses": [
+        "PROCESS_AXIS",
+        "MAJOR_SUBSPACE"
+      ],
+      "spaceRef": "norm:evolutionary-biology"
+    },
+    {
+      "archetypes": [
+        "BRIDGE",
+        "DOMAIN",
+        "MAJOR_SUBSPACE"
+      ],
+      "label": "Ecology",
+      "placements": [
+        "biology",
+        "environment",
+        "earth-life"
+      ],
+      "roleClasses": [
+        "SYSTEM_DOMAIN",
+        "MAJOR_SUBSPACE",
+        "EARTH_LIFE_BRIDGE"
+      ],
+      "spaceRef": "norm:ecology"
+    },
+    {
+      "archetypes": [
+        "INFRASTRUCTURE"
+      ],
+      "label": "Biological research infrastructure",
+      "placements": [
+        "biology",
+        "methodology"
+      ],
+      "roleClasses": [
+        "EPISTEMIC_INFRASTRUCTURE"
+      ],
+      "spaceRef": "norm:biological-research-infrastructure"
+    },
+    {
+      "archetypes": [
+        "APPLIED_TRANSLATIONAL"
+      ],
+      "label": "Engineering",
+      "placements": [
+        "design",
+        "technology",
+        "physical-realization"
+      ],
+      "roleClasses": [
+        "INTERVENTION_DOMAIN_CANDIDATE",
+        "DESIGN_REALIZATION_DOMAIN"
+      ],
+      "spaceRef": "norm:engineering"
+    },
+    {
+      "archetypes": [
+        "APPLIED_TRANSLATIONAL",
+        "AXIS"
+      ],
+      "label": "Design",
+      "placements": [
+        "engineering",
+        "artifacts",
+        "systems",
+        "human-created-environments"
+      ],
+      "roleClasses": [
+        "METHODOLOGICAL_AXIS",
+        "CREATIVE_INTERVENTION_DOMAIN"
+      ],
+      "spaceRef": "norm:design"
+    },
+    {
+      "archetypes": [
+        "AXIS",
+        "BRIDGE"
+      ],
+      "label": "Systems engineering",
+      "placements": [
+        "engineering",
+        "systems",
+        "lifecycle",
+        "management-boundary"
+      ],
+      "roleClasses": [
+        "INTEGRATIVE_METHOD_AXIS",
+        "INTERVENTION_BRIDGE"
+      ],
+      "spaceRef": "norm:systems-engineering"
+    },
+    {
+      "archetypes": [
+        "APPLIED_TRANSLATIONAL"
+      ],
+      "label": "Manufacturing",
+      "placements": [
+        "engineering",
+        "materials",
+        "production"
+      ],
+      "roleClasses": [
+        "REALIZATION_DOMAIN",
+        "APPLIED_ENGINEERING_SUBSPACE"
+      ],
+      "spaceRef": "norm:manufacturing"
+    },
+    {
+      "archetypes": [
+        "APPLIED_TRANSLATIONAL",
+        "BRIDGE"
+      ],
+      "label": "Bioengineering",
+      "placements": [
+        "engineering",
+        "biology",
+        "medicine"
+      ],
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "APPLIED_INTERVENTION_DOMAIN"
+      ],
+      "spaceRef": "norm:bioengineering"
+    },
+    {
+      "archetypes": [
+        "AXIS",
+        "DOMAIN"
+      ],
+      "label": "Philosophy",
+      "placements": [
+        "conceptual",
+        "normative",
+        "epistemic",
+        "historical"
+      ],
+      "roleClasses": [
+        "FOUNDATIONAL_CONCEPTUAL_DOMAIN_CANDIDATE",
+        "METHODOLOGICAL_REFLECTIVE_AXIS"
+      ],
+      "spaceRef": "norm:philosophy"
+    },
+    {
+      "archetypes": [
+        "DOMAIN"
+      ],
+      "label": "History",
+      "placements": [
+        "human-past",
+        "interpretation",
+        "evidence"
+      ],
+      "roleClasses": [
+        "HISTORICAL_INTERPRETIVE_DOMAIN_CANDIDATE",
+        "TEMPORAL_EVIDENCE_DOMAIN"
+      ],
+      "spaceRef": "norm:history"
+    },
+    {
+      "archetypes": [
+        "DOMAIN"
+      ],
+      "label": "Religious studies",
+      "placements": [
+        "religion",
+        "history",
+        "culture",
+        "social-boundary"
+      ],
+      "roleClasses": [
+        "HISTORICAL_SYMBOLIC_DOMAIN",
+        "COMPARATIVE_HUMAN_DOMAIN"
+      ],
+      "spaceRef": "norm:religious-studies"
+    },
+    {
+      "archetypes": [
+        "BRIDGE",
+        "DOMAIN"
+      ],
+      "label": "Aesthetics",
+      "placements": [
+        "philosophy",
+        "arts",
+        "psychology",
+        "sociology-boundary",
+        "cultural-history"
+      ],
+      "roleClasses": [
+        "CONCEPTUAL_ART_BRIDGE",
+        "HUMAN_EXPERIENCE_DOMAIN"
+      ],
+      "spaceRef": "norm:aesthetics"
+    },
+    {
+      "archetypes": [
+        "COMPOSITE"
+      ],
+      "label": "Classics / Classical studies",
+      "placements": [
+        "history",
+        "language",
+        "literature",
+        "philosophy",
+        "religion",
+        "art",
+        "material-culture"
+      ],
+      "roleClasses": [
+        "COMPOSITE_HISTORICAL_SYMBOLIC_DOMAIN"
+      ],
+      "spaceRef": "norm:classics"
+    },
+    {
+      "archetypes": [
+        "BRIDGE"
+      ],
+      "label": "Basic biomedical sciences",
+      "placements": [
+        "biology",
+        "medicine",
+        "human-physiology"
+      ],
+      "roleClasses": [
+        "FOUNDATIONAL_BRIDGE",
+        "TRANSLATIONAL_SOURCE_DOMAIN"
+      ],
+      "spaceRef": "norm:basic-biomedical-science"
+    },
+    {
+      "archetypes": [
+        "APPLIED_TRANSLATIONAL"
+      ],
+      "label": "Medicine and health sciences",
+      "placements": [
+        "biomedicine",
+        "clinical",
+        "public-health-boundary"
+      ],
+      "roleClasses": [
+        "APPLIED_PROFESSIONAL_DOMAIN",
+        "TRANSLATIONAL_DOMAIN"
+      ],
+      "spaceRef": "norm:medicine-health"
+    },
+    {
+      "archetypes": [
+        "APPLIED_TRANSLATIONAL",
+        "BRIDGE"
+      ],
+      "label": "Agricultural sciences and systems",
+      "placements": [
+        "biology",
+        "ecology",
+        "soil",
+        "engineering",
+        "food",
+        "economics-boundary"
+      ],
+      "roleClasses": [
+        "APPLIED_INTERVENTION_SYSTEM_DOMAIN",
+        "EARTH_LIFE_ENGINEERING_BRIDGE"
+      ],
+      "spaceRef": "norm:agriculture"
+    },
+    {
+      "archetypes": [
+        "BRIDGE",
+        "MAJOR_SUBSPACE"
+      ],
+      "label": "Soil science",
+      "placements": [
+        "earth-science",
+        "biology",
+        "chemistry",
+        "agriculture",
+        "climate"
+      ],
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_ENVIRONMENTAL_SUBSPACE"
+      ],
+      "spaceRef": "norm:soil-science"
+    }
+  ],
+  "state": "AUDIT_COMPLETE_FOUNDATIONAL_CENSUS_OPEN",
+  "topologyGrammar": {
+    "archetypes": {
+      "APPLIED_TRANSLATIONAL": "Intervention/professional/realization domain that consumes foundational knowledge and may contain foundational cores.",
+      "AXIS": "Cross-cutting organizing dimension such as process, method, scale, measurement, design or integration.",
+      "BRIDGE": "Identity whose stable meaning intrinsically connects two or more domains.",
+      "COMPOSITE": "Institutionally stable field constructed from several distinct epistemic domains or methods.",
+      "DOMAIN": "Stable area of inquiry organized around an object/regime/conceptual/temporal/system field.",
+      "INFRASTRUCTURE": "Research/epistemic capability enabling inquiry without being an object-domain itself.",
+      "MAJOR_SUBSPACE": "Large internally coherent region within or across domains; not presumed root."
+    },
+    "rootSemantics": "No canonical roots are admitted by this audit.",
+    "rule": "Archetype is orthogonal to canonical-root admission; one identity may carry multiple archetypes.",
+    "status": "PROVISIONAL_SUPPORTED"
+  },
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_AUDIT",
+  "unknownRoleClasses": [],
+  "unresolvedCandidates": [
+    {
+      "candidate": "Mathematics",
+      "normalizedRef": null,
+      "status": "UNRESOLVED_AFTER_ROUND2"
+    },
+    {
+      "candidate": "Statistics and probability",
+      "normalizedRef": null,
+      "status": "UNRESOLVED_AFTER_ROUND2"
+    },
+    {
+      "candidate": "Systems and dynamical theory",
+      "normalizedRef": null,
+      "status": "UNRESOLVED_AFTER_ROUND2"
+    },
+    {
+      "candidate": "Geochemistry",
+      "normalizedRef": null,
+      "status": "UNRESOLVED_AFTER_ROUND2"
+    },
+    {
+      "candidate": "Physical geography",
+      "normalizedRef": null,
+      "status": "UNRESOLVED_AFTER_ROUND2"
+    },
+    {
+      "candidate": "Genetics and genomics",
+      "normalizedRef": null,
+      "status": "UNRESOLVED_AFTER_ROUND2"
+    },
+    {
+      "candidate": "Library and information science",
+      "normalizedRef": null,
+      "status": "UNRESOLVED_AFTER_ROUND2"
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "breadthResidualCandidates": [
+    {
+      "candidate": "Planetary science",
+      "normalizedRefs": [],
+      "status": "BREADTH_RESIDUAL"
+    },
+    {
+      "candidate": "Biochemistry",
+      "normalizedRefs": [],
+      "status": "BREADTH_RESIDUAL"
+    },
+    {
+      "candidate": "Microbiology",
+      "normalizedRefs": [],
+      "status": "BREADTH_RESIDUAL"
+    },
+    {
+      "candidate": "Developmental biology",
+      "normalizedRefs": [],
+      "status": "BREADTH_RESIDUAL"
+    },
+    {
+      "candidate": "Physiology",
+      "normalizedRefs": [],
+      "status": "BREADTH_RESIDUAL"
+    },
+    {
+      "candidate": "Philosophy of mind and cognition",
+      "normalizedRefs": [],
+      "status": "BREADTH_RESIDUAL"
+    },
+    {
+      "candidate": "Mechanical engineering",
+      "normalizedRefs": [],
+      "status": "BREADTH_RESIDUAL"
+    },
+    {
+      "candidate": "Electrical and electronic engineering",
+      "normalizedRefs": [],
+      "status": "BREADTH_RESIDUAL"
+    },
+    {
+      "candidate": "Civil and structural engineering",
+      "normalizedRefs": [],
+      "status": "BREADTH_RESIDUAL"
+    },
+    {
+      "candidate": "Chemical engineering",
+      "normalizedRefs": [],
+      "status": "BREADTH_RESIDUAL"
+    },
+    {
+      "candidate": "Computer engineering",
+      "normalizedRefs": [],
+      "status": "BREADTH_RESIDUAL"
+    },
+    {
+      "candidate": "Software engineering",
+      "normalizedRefs": [],
+      "status": "BREADTH_RESIDUAL"
+    },
+    {
+      "candidate": "Control engineering",
+      "normalizedRefs": [],
+      "status": "BREADTH_RESIDUAL"
+    },
+    {
+      "candidate": "Environmental engineering",
+      "normalizedRefs": [],
+      "status": "BREADTH_RESIDUAL"
+    },
+    {
+      "candidate": "Energy engineering",
+      "normalizedRefs": [],
+      "status": "BREADTH_RESIDUAL"
+    },
+    {
+      "candidate": "Philology",
+      "normalizedRefs": [],
+      "status": "BREADTH_RESIDUAL"
+    },
+    {
+      "candidate": "Food science",
+      "normalizedRefs": [],
+      "status": "BREADTH_RESIDUAL"
+    }
+  ],
+  "closure": "CORE_NORMALIZATION_COMPLETE_BREADTH_CENSUS_OPEN",
+  "controls": [
+    "Round1 high-value 37/37 normalization complete does not imply breadth closure.",
+    "Single-root tree remains REJECTED.",
+    "CANONICAL_MAJOR_REGION is a navigation-anchor concept, not semantic authority or metaphysical root.",
+    "No canonical major region has been admitted.",
+    "Coverage crosswalk remains NOT_READY while breadth residuals and admission criteria are pending."
+  ],
+  "counts": {
+    "broadBreadthResidual": 17,
+    "broadCensusUniqueCandidates": 57,
+    "brokenRelations": 0,
+    "canonicalRootAdmissions": 0,
+    "identityLabelCollisions": 0,
+    "multiPlacementSpaces": 51,
+    "multiRoleSpaces": 51,
+    "normalizedSpaces": 54,
+    "relations": 46,
+    "round1HighValueCandidates": 37,
+    "round1HighValueUnresolved": 0
+  },
+  "date": "2026-08-19",
+  "findings": [
+    {
+      "claim": "Round 1 high-value candidate normalization is complete: every one of the 37 candidates maps to one or more explicit Round2 identities; four former combined candidates required split repair.",
+      "id": "FTA2-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The current normalized graph has no identity-label collisions, no broken topology relations, and no canonical-root self-admissions.",
+      "id": "FTA2-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The seven-archetype topology grammar is total over all current normalized role classes and better explains the observed graph than a uniform discipline-tree model.",
+      "id": "FTA2-3",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "`Canonical root` is the wrong default navigation concept. `Canonical major region` is preferable because stable Atlas anchors need not be primitive ontological roots and may coexist with cross-cutting axes and bridges.",
+      "id": "FTA2-4",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Foundational breadth is still open: the original broad census contains residual candidates not yet normalized even though the Round1 high-value subset is complete.",
+      "id": "FTA2-5",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The next work should target breadth residuals and draft explicit canonical-major-region admission criteria; Ordivon coverage scoring remains premature until that audit passes.",
+      "id": "FTA2-6",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.whole-foundational-topology-audit-v2-acceptance",
+  "navigationModel": {
+    "admissionCriteriaStatus": "DRAFT_REQUIRED_BEFORE_ADMISSION",
+    "canonicalMajorRegionAdmissions": [],
+    "preferredAnchorTerm": "CANONICAL_MAJOR_REGION",
+    "reason": "The graph contains domains, bridges, axes, infrastructure, applied/translational areas and composites. Calling every navigation anchor a root incorrectly implies one ontological tree and one semantic node type.",
+    "singleRootTree": "REJECTED"
+  },
+  "negativeConclusions": [
+    "Do not restore a fixed root count.",
+    "Do not reinterpret CANONICAL_MAJOR_REGION as semantic authority or metaphysical fundamentality.",
+    "Do not admit a major region from institutional independence alone.",
+    "Do not force BRIDGE/AXIS/INFRASTRUCTURE identities beneath one parent region.",
+    "Do not treat high-value-subset completion as whole foundational-space closure."
+  ],
+  "output": "reference/foundational-whole-topology-audit-v2-20260819.json",
+  "readiness": {
+    "canonicalMajorRegion": "NOT_READY_BREADTH_RESIDUALS_AND_CRITERIA_PENDING",
+    "coverageCrosswalk": "NOT_READY"
+  },
+  "schemaVersion": 1,
+  "state": "CORE_NORMALIZATION_COMPLETE_BREADTH_CENSUS_OPEN",
+  "topologyGrammar": {
+    "archetypes": {
+      "APPLIED_TRANSLATIONAL": "Intervention, realization, professional or translational area that consumes foundations and may contain foundational cores.",
+      "AXIS": "Cross-cutting organizing dimension such as inference, process, dynamics, measurement, design or integration.",
+      "BRIDGE": "Stable identity whose meaning intrinsically connects multiple domains.",
+      "COMPOSITE": "Stable field assembled from several distinct domains/methods, often historically or institutionally coherent.",
+      "DOMAIN": "Stable major area of inquiry organized around objects, regimes, concepts, systems, temporal evidence, or other coherent subject matter.",
+      "INFRASTRUCTURE": "Research/epistemic capability that enables inquiry without being an object-domain.",
+      "MAJOR_SUBSPACE": "Large coherent region within or across domains; not presumed a canonical navigation anchor."
+    },
+    "roleToArchetype": {
+      "ABSTRACT_STRUCTURE_DOMAIN": "DOMAIN",
+      "APPLIED_ENGINEERING_SUBSPACE": "APPLIED_TRANSLATIONAL",
+      "APPLIED_INFORMATION_DOMAIN": "APPLIED_TRANSLATIONAL",
+      "APPLIED_INTERVENTION_DOMAIN": "APPLIED_TRANSLATIONAL",
+      "APPLIED_INTERVENTION_SYSTEM_DOMAIN": "APPLIED_TRANSLATIONAL",
+      "APPLIED_PROFESSIONAL_DOMAIN": "APPLIED_TRANSLATIONAL",
+      "BIOLOGICAL_INFORMATION_AXIS": "AXIS",
+      "BRIDGE_DOMAIN": "BRIDGE",
+      "COMPARATIVE_HUMAN_DOMAIN": "DOMAIN",
+      "COMPOSITE_HISTORICAL_SYMBOLIC_DOMAIN": "COMPOSITE",
+      "COMPOSITION_TRANSFORMATION_DOMAIN": "DOMAIN",
+      "CONCEPTUAL_ART_BRIDGE": "BRIDGE",
+      "CONTROL_METHOD_DOMAIN": "AXIS",
+      "CREATIVE_INTERVENTION_DOMAIN": "APPLIED_TRANSLATIONAL",
+      "DATA_INTENSIVE_LIFE_DOMAIN": "DOMAIN",
+      "DESIGN_REALIZATION_DOMAIN": "APPLIED_TRANSLATIONAL",
+      "EARTH_HUMAN_INTERFACE_DOMAIN": "BRIDGE",
+      "EARTH_LIFE_BRIDGE": "BRIDGE",
+      "EARTH_LIFE_ENGINEERING_BRIDGE": "BRIDGE",
+      "EARTH_SYSTEM_SUBSPACE": "MAJOR_SUBSPACE",
+      "EMPIRICAL_MIND_DOMAIN": "DOMAIN",
+      "EPISTEMIC_INFRASTRUCTURE": "INFRASTRUCTURE",
+      "FORMAL_SYSTEM_AXIS": "AXIS",
+      "FOUNDATIONAL_BRIDGE": "BRIDGE",
+      "FOUNDATIONAL_CONCEPTUAL_DOMAIN_CANDIDATE": "DOMAIN",
+      "FOUNDATIONAL_DOMAIN_CANDIDATE": "DOMAIN",
+      "FOUNDATIONAL_FORMAL_DOMAIN_CANDIDATE": "DOMAIN",
+      "FOUNDATIONAL_FORMAL_SUBDOMAIN": "MAJOR_SUBSPACE",
+      "HISTORICAL_INTERPRETIVE_DOMAIN_CANDIDATE": "DOMAIN",
+      "HISTORICAL_SYMBOLIC_DOMAIN": "DOMAIN",
+      "HUMAN_EXPERIENCE_DOMAIN": "DOMAIN",
+      "INFERENTIAL_METHOD_AXIS": "AXIS",
+      "INFORMATION_ACCESS_DOMAIN": "DOMAIN",
+      "INHERITANCE_PROCESS_DOMAIN": "DOMAIN",
+      "INTEGRATIVE_METHOD_AXIS": "AXIS",
+      "INTERVENTION_BRIDGE": "BRIDGE",
+      "INTERVENTION_DOMAIN": "APPLIED_TRANSLATIONAL",
+      "INTERVENTION_DOMAIN_CANDIDATE": "APPLIED_TRANSLATIONAL",
+      "KNOWLEDGE_ORGANIZATION_BRIDGE": "BRIDGE",
+      "LOWER_SCALE_LIFE_DOMAIN": "DOMAIN",
+      "MAJOR_DOMAIN_CANDIDATE": "DOMAIN",
+      "MAJOR_ENVIRONMENTAL_SUBSPACE": "MAJOR_SUBSPACE",
+      "MAJOR_FORMAL_DOMAIN_CANDIDATE": "DOMAIN",
+      "MAJOR_FORMAL_SUBSPACE": "MAJOR_SUBSPACE",
+      "MAJOR_GEOGRAPHIC_SUBDOMAIN": "MAJOR_SUBSPACE",
+      "MAJOR_LIFE_SUBSPACE": "MAJOR_SUBSPACE",
+      "MAJOR_SUBSPACE": "MAJOR_SUBSPACE",
+      "MATERIALS_BRIDGE": "BRIDGE",
+      "METHODOLOGICAL_AXIS": "AXIS",
+      "METHODOLOGICAL_REFLECTIVE_AXIS": "AXIS",
+      "MULTISCALE_LIFE_DOMAIN": "DOMAIN",
+      "OBJECT_REGIME_DOMAIN": "DOMAIN",
+      "PHYSICAL_SPACE_BRIDGE": "BRIDGE",
+      "PHYSICS_ASTRONOMY_BRIDGE": "BRIDGE",
+      "PROCESS_AXIS": "AXIS",
+      "PROCESS_STRUCTURE_AXIS": "AXIS",
+      "REALIZATION_DOMAIN": "APPLIED_TRANSLATIONAL",
+      "STOCHASTIC_PROCESS_DOMAIN": "DOMAIN",
+      "SYSTEM_DOMAIN": "DOMAIN",
+      "TEMPORAL_EVIDENCE_DOMAIN": "DOMAIN",
+      "TRANSLATIONAL_DOMAIN": "APPLIED_TRANSLATIONAL",
+      "TRANSLATIONAL_SOURCE_DOMAIN": "APPLIED_TRANSLATIONAL"
+    },
+    "rule": "Archetype is orthogonal to navigation-anchor admission; one identity may carry multiple archetypes.",
+    "status": "SUPPORTED_AND_TOTAL_OVER_CURRENT_ROLES"
+  },
+  "truthRole": "HISTORICAL_RESEARCH_EVIDENCE",
+  "verification": {
+    "fullDeterministicSuiteJob": "job-01a015cf-127a-7c31-b146-bb25ac5766d0",
+    "fullDeterministicSuiteResult": "77 tests OK; 28 pre-existing gated tests skipped; 49 deterministic tests executed.",
+    "referenceSuiteJob": "job-01a015ce-e2db-7700-97dc-b68ca68b3a1d",
+    "referenceSuiteResult": "40/40 PASS"
+  }
+}

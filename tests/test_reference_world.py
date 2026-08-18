@@ -211,6 +211,172 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
             self.assertIn(rel["to"], refs)
 
 
+    def test_round2b_all_spaces_are_normalized_without_root_admission(self) -> None:
+        r2 = json.loads((ROOT / "reference/foundational-census-round2b-normalization-20260819.json").read_text())
+        self.assertEqual(r2["state"], "ROUND2B_COMPLETE_CENSUS_OPEN")
+        self.assertEqual(r2["closure"], "ROUND2B_COMPLETE_GLOBAL_CENSUS_OPEN")
+        self.assertTrue(all(x["identityStatus"] == "PROVISIONALLY_NORMALIZED" for x in r2["normalizedSpaces"]))
+        self.assertTrue(all(x["rootAdmission"] == "NOT_ADMITTED" for x in r2["normalizedSpaces"]))
+
+    def test_round2b_materials_is_interdisciplinary_bridge_not_single_parent(self) -> None:
+        r2 = json.loads((ROOT / "reference/foundational-census-round2b-normalization-20260819.json").read_text())
+        by = {x["spaceRef"]: x for x in r2["normalizedSpaces"]}
+        m = by["norm:materials"]
+        self.assertIn("BRIDGE_DOMAIN", m["roleClasses"])
+        for d in ("physics", "chemistry", "biology", "engineering"):
+            self.assertIn(d, m["placements"])
+        self.assertGreaterEqual(len(m["placements"]), 4)
+
+    def test_round2b_biology_preserves_scale_process_system_axes(self) -> None:
+        r2 = json.loads((ROOT / "reference/foundational-census-round2b-normalization-20260819.json").read_text())
+        by = {x["spaceRef"]: x for x in r2["normalizedSpaces"]}
+        self.assertIn("MULTISCALE_LIFE_DOMAIN", by["norm:biology"]["roleClasses"])
+        self.assertIn("LOWER_SCALE_LIFE_DOMAIN", by["norm:molecular-cellular-biology"]["roleClasses"])
+        self.assertIn("SYSTEM_DOMAIN", by["norm:organismal-biology"]["roleClasses"])
+        self.assertIn("PROCESS_AXIS", by["norm:evolutionary-biology"]["roleClasses"])
+        self.assertIn("SYSTEM_DOMAIN", by["norm:ecology"]["roleClasses"])
+        self.assertEqual(by["norm:biological-research-infrastructure"]["roleClasses"], ["EPISTEMIC_INFRASTRUCTURE"])
+
+    def test_round2b_engineering_is_intervention_domain_with_crosscutting_methods(self) -> None:
+        r2 = json.loads((ROOT / "reference/foundational-census-round2b-normalization-20260819.json").read_text())
+        by = {x["spaceRef"]: x for x in r2["normalizedSpaces"]}
+        eng = by["norm:engineering"]
+        self.assertIn("INTERVENTION_DOMAIN_CANDIDATE", eng["roleClasses"])
+        self.assertNotIn("FOUNDATIONAL_DOMAIN_CANDIDATE", eng["roleClasses"])
+        self.assertIn("METHODOLOGICAL_AXIS", by["norm:design"]["roleClasses"])
+        self.assertIn("INTEGRATIVE_METHOD_AXIS", by["norm:systems-engineering"]["roleClasses"])
+        self.assertIn("REALIZATION_DOMAIN", by["norm:manufacturing"]["roleClasses"])
+
+    def test_round2b_philosophy_and_history_remain_distinct_epistemic_domains(self) -> None:
+        r2 = json.loads((ROOT / "reference/foundational-census-round2b-normalization-20260819.json").read_text())
+        by = {x["spaceRef"]: x for x in r2["normalizedSpaces"]}
+        self.assertIn("FOUNDATIONAL_CONCEPTUAL_DOMAIN_CANDIDATE", by["norm:philosophy"]["roleClasses"])
+        self.assertIn("HISTORICAL_INTERPRETIVE_DOMAIN_CANDIDATE", by["norm:history"]["roleClasses"])
+        self.assertNotEqual(by["norm:philosophy"]["roleClasses"], by["norm:history"]["roleClasses"])
+        self.assertIn("COMPOSITE_HISTORICAL_SYMBOLIC_DOMAIN", by["norm:classics"]["roleClasses"])
+        self.assertIn("CONCEPTUAL_ART_BRIDGE", by["norm:aesthetics"]["roleClasses"])
+
+    def test_round2b_biomedical_and_agricultural_boundaries_do_not_wholesale_foundationalize(self) -> None:
+        r2 = json.loads((ROOT / "reference/foundational-census-round2b-normalization-20260819.json").read_text())
+        by = {x["spaceRef"]: x for x in r2["normalizedSpaces"]}
+        self.assertIn("FOUNDATIONAL_BRIDGE", by["norm:basic-biomedical-science"]["roleClasses"])
+        self.assertIn("APPLIED_PROFESSIONAL_DOMAIN", by["norm:medicine-health"]["roleClasses"])
+        self.assertNotIn("FOUNDATIONAL_DOMAIN_CANDIDATE", by["norm:medicine-health"]["roleClasses"])
+        self.assertIn("APPLIED_INTERVENTION_SYSTEM_DOMAIN", by["norm:agriculture"]["roleClasses"])
+        self.assertIn("BRIDGE_DOMAIN", by["norm:soil-science"]["roleClasses"])
+
+    def test_round2b_negative_controls_reject_administrative_taxonomy_as_ontology(self) -> None:
+        r2 = json.loads((ROOT / "reference/foundational-census-round2b-normalization-20260819.json").read_text())
+        claims = " | ".join(x["claim"] for x in r2["negativeFindings"])
+        self.assertIn("Emerging Frontiers", claims)
+        self.assertIn("NIH institute boundaries", claims)
+        self.assertIn("accreditation", claims)
+        self.assertIn("Composite humanities fields", claims)
+
+    def test_round2b_relations_resolve_against_round2a_plus_round2b_identities(self) -> None:
+        r2a = json.loads((ROOT / "reference/foundational-census-round2a-normalization-20260819.json").read_text())
+        r2b = json.loads((ROOT / "reference/foundational-census-round2b-normalization-20260819.json").read_text())
+        refs = {x["spaceRef"] for x in r2a["normalizedSpaces"] + r2b["normalizedSpaces"]}
+        for rel in r2b["relations"]:
+            self.assertIn(rel["from"], refs, rel)
+            self.assertIn(rel["to"], refs, rel)
+
+
+    def test_whole_audit_grammar_repair_covers_all_observed_round2ab_roles(self) -> None:
+        audit = json.loads((ROOT / "reference/foundational-whole-topology-audit-20260819.json").read_text())
+        self.assertEqual(audit["unknownRoleClasses"], [])
+        self.assertTrue(audit.get("repairs"))
+        self.assertEqual(audit["repairs"][-1]["status"], "APPLIED")
+
+    def test_round2c_residual_normalization_keeps_roots_closed(self) -> None:
+        r2c = json.loads((ROOT / "reference/foundational-census-round2c-residual-normalization-20260819.json").read_text())
+        self.assertEqual(r2c["state"], "ROUND2C_COMPLETE_CENSUS_OPEN")
+        self.assertTrue(all(x["rootAdmission"] == "NOT_ADMITTED" for x in r2c["normalizedSpaces"]))
+        self.assertEqual(len(r2c["repairs"]), 4)
+
+    def test_round2c_splits_probability_from_statistics(self) -> None:
+        r2c = json.loads((ROOT / "reference/foundational-census-round2c-residual-normalization-20260819.json").read_text())
+        by = {x["spaceRef"]: x for x in r2c["normalizedSpaces"]}
+        self.assertIn("norm:probability", by)
+        self.assertIn("norm:statistics", by)
+        self.assertNotEqual(by["norm:probability"]["roleClasses"], by["norm:statistics"]["roleClasses"])
+        self.assertIn("INFERENTIAL_METHOD_AXIS", by["norm:statistics"]["roleClasses"])
+
+    def test_round2c_splits_dynamics_systems_control_and_systems_engineering(self) -> None:
+        r2a = json.loads((ROOT / "reference/foundational-census-round2a-normalization-20260819.json").read_text())
+        r2b = json.loads((ROOT / "reference/foundational-census-round2b-normalization-20260819.json").read_text())
+        r2c = json.loads((ROOT / "reference/foundational-census-round2c-residual-normalization-20260819.json").read_text())
+        refs = {x["spaceRef"] for x in r2a["normalizedSpaces"] + r2b["normalizedSpaces"] + r2c["normalizedSpaces"]}
+        for ref in ("norm:dynamical-systems", "norm:systems-theory-control", "norm:systems-engineering"):
+            self.assertIn(ref, refs)
+        self.assertEqual(len({"norm:dynamical-systems", "norm:systems-theory-control", "norm:systems-engineering"}), 3)
+
+    def test_round2c_splits_genetics_and_genomics(self) -> None:
+        r2c = json.loads((ROOT / "reference/foundational-census-round2c-residual-normalization-20260819.json").read_text())
+        by = {x["spaceRef"]: x for x in r2c["normalizedSpaces"]}
+        self.assertIn("INHERITANCE_PROCESS_DOMAIN", by["norm:genetics"]["roleClasses"])
+        self.assertIn("DATA_INTENSIVE_LIFE_DOMAIN", by["norm:genomics"]["roleClasses"])
+        self.assertIn("computation", by["norm:genomics"]["placements"])
+
+    def test_round2c_splits_information_science_from_librarianship(self) -> None:
+        r2c = json.loads((ROOT / "reference/foundational-census-round2c-residual-normalization-20260819.json").read_text())
+        by = {x["spaceRef"]: x for x in r2c["normalizedSpaces"]}
+        self.assertIn("MAJOR_DOMAIN_CANDIDATE", by["norm:information-science"]["roleClasses"])
+        self.assertIn("APPLIED_PROFESSIONAL_DOMAIN", by["norm:librarianship"]["roleClasses"])
+        self.assertIn("EPISTEMIC_INFRASTRUCTURE", by["norm:librarianship"]["roleClasses"])
+
+    def test_round2c_relations_resolve_across_all_round2_identities(self) -> None:
+        rounds = [json.loads((ROOT / name).read_text()) for name in (
+            "reference/foundational-census-round2a-normalization-20260819.json",
+            "reference/foundational-census-round2b-normalization-20260819.json",
+            "reference/foundational-census-round2c-residual-normalization-20260819.json",
+        )]
+        refs = {x["spaceRef"] for r in rounds for x in r["normalizedSpaces"]}
+        for rel in rounds[2]["relations"]:
+            self.assertIn(rel["from"], refs, rel)
+            self.assertIn(rel["to"], refs, rel)
+
+
+    def test_whole_audit_v2_closes_high_value_normalization_but_not_breadth(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v2-20260819.json").read_text())
+        self.assertEqual(a["state"], "CORE_NORMALIZATION_COMPLETE_BREADTH_CENSUS_OPEN")
+        self.assertEqual(a["counts"]["round1HighValueUnresolved"], 0)
+        self.assertGreater(a["counts"]["broadBreadthResidual"], 0)
+        self.assertEqual(a["counts"]["canonicalRootAdmissions"], 0)
+        self.assertEqual(a["coverageCrosswalkReadiness"], "NOT_READY")
+
+    def test_whole_audit_v2_rejects_single_root_tree_and_uses_major_regions(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v2-20260819.json").read_text())
+        nav = a["navigationModel"]
+        self.assertEqual(nav["singleRootTree"], "REJECTED")
+        self.assertEqual(nav["preferredAnchorTerm"], "CANONICAL_MAJOR_REGION")
+        self.assertEqual(nav["canonicalMajorRegionAdmissions"], [])
+        self.assertEqual(nav["admissionCriteriaStatus"], "DRAFT_REQUIRED_BEFORE_ADMISSION")
+
+    def test_whole_audit_v2_topology_grammar_is_total_over_all_current_roles(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v2-20260819.json").read_text())
+        grammar = a["topologyGrammar"]
+        self.assertEqual(grammar["status"], "SUPPORTED_AND_TOTAL_OVER_CURRENT_ROLES")
+        self.assertEqual(set(grammar["archetypes"]), {"DOMAIN", "MAJOR_SUBSPACE", "BRIDGE", "AXIS", "INFRASTRUCTURE", "APPLIED_TRANSLATIONAL", "COMPOSITE"})
+        observed = {role for x in a["spaceArchetypes"] for role in x["roleClasses"]}
+        self.assertEqual(observed, set(grammar["roleToArchetype"]))
+        self.assertTrue(all(x["archetypes"] for x in a["spaceArchetypes"]))
+
+    def test_whole_audit_v2_has_no_identity_or_relation_integrity_defects(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v2-20260819.json").read_text())
+        self.assertEqual(a["identityCollisions"], {})
+        self.assertEqual(a["brokenRelations"], [])
+        self.assertEqual(a["counts"]["identityLabelCollisions"], 0)
+        self.assertEqual(a["counts"]["brokenRelations"], 0)
+
+    def test_whole_audit_v2_preserves_material_breadth_residuals(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v2-20260819.json").read_text())
+        residual = {x["candidate"] for x in a["breadthResidualCandidates"]}
+        for expected in ("Planetary science", "Biochemistry", "Microbiology", "Developmental biology", "Physiology", "Philosophy of mind and cognition", "Software engineering", "Philology", "Food science"):
+            self.assertIn(expected, residual)
+        self.assertEqual(a["canonicalMajorRegionReadiness"], "NOT_READY_BREADTH_RESIDUALS_AND_CRITERIA_PENDING")
+
+
 
 if __name__ == "__main__":
     unittest.main()
