@@ -88,6 +88,17 @@
         "git@github.com:zycxfyh/ordivon-computing.git"
       ],
       "repo": "/root/projects/ordivon-computing"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:human",
+      "corpusRoot": "research/core",
+      "ownerResearchRef": "research-owner:human",
+      "ref": "refs/heads/repair/human-research-core-materialization-20260818",
+      "remote": "https://github.com/zycxfyh/ordivon-human.git",
+      "remoteFallbacks": [
+        "git@github.com:zycxfyh/ordivon-human.git"
+      ],
+      "repo": "/root/projects/ordivon-human"
     }
   ]
 }

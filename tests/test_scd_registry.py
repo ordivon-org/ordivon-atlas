@@ -12,8 +12,8 @@ class SCDRegistryTests(unittest.TestCase):
         cls.sources = json.loads((ROOT / "config/sources.json").read_text())["sources"]
         cls.by_owner = {x["ownerResearchRef"]: x for x in cls.sources}
 
-    def test_scd_is_an_independent_eighth_source(self):
-        self.assertEqual(len(self.sources), 8)
+    def test_scd_remains_an_independent_registered_source(self):
+        self.assertEqual(len(self.sources), 9)
         self.assertIn(SCD, self.by_owner)
         self.assertIn(CP, self.by_owner)
         self.assertEqual(len(self.by_owner), len(self.sources))
