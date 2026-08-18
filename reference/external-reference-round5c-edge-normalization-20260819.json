@@ -1,0 +1,598 @@
+{
+  "closure": "ROUND5C_NINE_REAL_EDGE_IDENTITIES_NORMALIZED_READY_FOR_SATURATION_AUDIT",
+  "kind": "ordivon.external-reference-round5c-social-cultural-edge-normalization",
+  "laws": [
+    "EDGE_FIXTURE != PRECOMMITTED_ONTOLOGY",
+    "AREA_STUDIES_IS_REGIONAL_INTERDISCIPLINARY_MODE_NOT_OBJECT_ROOT",
+    "MUSICOLOGY != ART_HISTORY_SUBSPACE",
+    "PERFORMANCE_STUDIES != MEDIA_STUDIES_SUBSPACE",
+    "INTERNATIONAL_STUDIES != POLITICAL_SCIENCE_ONLY",
+    "DEVELOPMENT_STUDIES != ECONOMICS_ONLY",
+    "URBAN_STUDIES != HUMAN_GEOGRAPHY_ONLY",
+    "WGSS_IS_INTERDISCIPLINARY_NOT_SOCIOLOGY_CHILD",
+    "STS_IS_REFLEXIVE_CROSS_DOMAIN_NOT_ENGINEERING_CHILD",
+    "FOLKLORE_STUDIES != ANTHROPOLOGY_CHILD",
+    "IDENTITY_NORMALIZATION != REGION_OR_COVERAGE_ADMISSION"
+  ],
+  "normalizedSpaces": [
+    {
+      "evidence": [
+        "aas-area",
+        "lasa-area",
+        "aseees-area"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Area and regional studies",
+      "placements": [
+        "region-place",
+        "history",
+        "political-science",
+        "economics",
+        "language",
+        "culture",
+        "anthropology",
+        "geography",
+        "international-studies"
+      ],
+      "rationale": "Multiple mature regional scholarly associations independently show a stable area-studies pattern: geographically bounded inquiry integrating scholars from many disciplines. Model as a cross-disciplinary regional knowledge mode, not a universal object-domain root.",
+      "roleClasses": [
+        "REGIONALLY_BOUNDED_INTERDISCIPLINARY_DOMAIN",
+        "AREA_KNOWLEDGE_INTEGRATION_MODE",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:area-regional-studies"
+    },
+    {
+      "evidence": [
+        "ims"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Musicology and music studies",
+      "placements": [
+        "music",
+        "history",
+        "culture",
+        "arts",
+        "media",
+        "performance",
+        "analysis",
+        "cross-cultural-study"
+      ],
+      "rationale": "IMS explicitly advances musicological research in its broadest sense and embraces diverse methods across arts and sciences. Musicology is a stable domain, not merely an Art History subspace.",
+      "roleClasses": [
+        "MUSIC_RESEARCH_DOMAIN",
+        "HISTORICAL_CULTURAL_ANALYTIC_DOMAIN",
+        "ART_SCIENCE_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:musicology"
+    },
+    {
+      "evidence": [
+        "psi"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Performance studies",
+      "placements": [
+        "performance",
+        "arts",
+        "culture",
+        "media",
+        "embodiment",
+        "ritual",
+        "social-practice",
+        "activism-boundary"
+      ],
+      "rationale": "PSi explicitly represents and supports the broad field of performance studies across artists, thinkers, activists and academics. Preserve its practice/theory hybridity rather than reducing it to theatre, media or cultural studies.",
+      "roleClasses": [
+        "PERFORMANCE_PRACTICE_INTERPRETIVE_DOMAIN",
+        "EMBODIED_CULTURAL_DOMAIN",
+        "ART_SOCIAL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:performance-studies"
+    },
+    {
+      "aliases": [
+        "International relations",
+        "International studies"
+      ],
+      "evidence": [
+        "isa"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "International studies and international relations",
+      "placements": [
+        "international-relations",
+        "political-science",
+        "economics",
+        "law",
+        "history",
+        "sociology",
+        "geography",
+        "global-transnational-affairs"
+      ],
+      "rationale": "ISA organizes a broad interdisciplinary field concerned with international, transnational and global affairs and knowledge of relations among nations and peoples. Preserve broader International Studies while retaining strong Political Science/IR overlap.",
+      "roleClasses": [
+        "INTERNATIONAL_TRANSNATIONAL_SYSTEM_DOMAIN",
+        "POLITICAL_SOCIAL_BRIDGE",
+        "INTERDISCIPLINARY_GLOBAL_AFFAIRS_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:international-studies-relations"
+    },
+    {
+      "evidence": [
+        "dsa"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Development studies",
+      "placements": [
+        "development",
+        "economics",
+        "politics",
+        "sociology",
+        "anthropology",
+        "environment",
+        "public-policy",
+        "inequality",
+        "global-change"
+      ],
+      "rationale": "DSA explicitly advances global/international development as a field of study, research and action, addressing poverty, inequality, conflict and environmental destruction through interdisciplinary exchange.",
+      "roleClasses": [
+        "GLOBAL_DEVELOPMENT_DOMAIN",
+        "APPLIED_INTERDISCIPLINARY_SOCIAL_DOMAIN",
+        "INEQUALITY_ENVIRONMENT_INSTITUTION_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:development-studies"
+    },
+    {
+      "evidence": [
+        "uaa"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Urban studies and urban affairs",
+      "placements": [
+        "urban",
+        "geography",
+        "sociology",
+        "economics",
+        "politics",
+        "public-policy",
+        "demography",
+        "design-boundary",
+        "environment-boundary"
+      ],
+      "rationale": "UAA is an interdisciplinary professional organization for urban scholars and explicitly supports urban studies/urban affairs across theoretical, empirical and action-oriented research. Urban Studies is a cross-domain city/urban-system field.",
+      "roleClasses": [
+        "URBAN_SYSTEM_DOMAIN",
+        "INTERDISCIPLINARY_SPATIAL_SOCIAL_DOMAIN",
+        "APPLIED_POLICY_DESIGN_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:urban-studies"
+    },
+    {
+      "aliases": [
+        "WGSS",
+        "Gender studies"
+      ],
+      "evidence": [
+        "nwsa"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Women’s, gender, and sexuality studies",
+      "placements": [
+        "gender",
+        "sexuality",
+        "culture",
+        "society",
+        "history",
+        "politics",
+        "literature",
+        "media",
+        "power-inequality"
+      ],
+      "rationale": "NWSA explicitly describes WGSS as an interdisciplinary field centered on gender/sexuality, intersectionality, transnationalism, identity, power and inequality across arts, humanities, social sciences and sciences.",
+      "roleClasses": [
+        "GENDER_SEXUALITY_POWER_DOMAIN",
+        "INTERSECTIONAL_INTERDISCIPLINARY_DOMAIN",
+        "CRITICAL_INTERPRETIVE_SOCIAL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:gender-sexuality-studies"
+    },
+    {
+      "aliases": [
+        "STS",
+        "Social studies of science and technology"
+      ],
+      "evidence": [
+        "4s"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Science and technology studies",
+      "placements": [
+        "science",
+        "technology",
+        "society",
+        "history",
+        "sociology",
+        "philosophy-of-science",
+        "engineering-boundary",
+        "medicine-boundary",
+        "institutions"
+      ],
+      "rationale": "4S explicitly identifies STS/social studies of science, technology and medicine as an interdisciplinary field of scholarship, research, teaching and practice. It bridges scientific/technical practices and social/institutional analysis.",
+      "roleClasses": [
+        "SCIENCE_TECHNOLOGY_SOCIETY_DOMAIN",
+        "KNOWLEDGE_PRACTICE_INSTITUTION_BRIDGE",
+        "INTERDISCIPLINARY_REFLEXIVE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:science-technology-studies"
+    },
+    {
+      "evidence": [
+        "afs"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Folklore studies",
+      "placements": [
+        "folklore",
+        "expressive-culture",
+        "tradition",
+        "anthropology",
+        "history",
+        "literature",
+        "music",
+        "heritage",
+        "community"
+      ],
+      "rationale": "AFS explicitly supports the field of folklore and expressive cultural traditions, spanning scholarship, public/applied work and cultural practice. Preserve as a first-class cultural/ethnographic domain rather than an Anthropology or Literature leaf.",
+      "roleClasses": [
+        "EXPRESSIVE_TRADITION_DOMAIN",
+        "CULTURAL_ETHNOGRAPHIC_DOMAIN",
+        "HISTORY_ANTHROPOLOGY_ART_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:folklore-studies"
+    }
+  ],
+  "relations": [
+    {
+      "from": "norm:area-regional-studies",
+      "to": "norm:history",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:area-regional-studies",
+      "to": "norm:political-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:area-regional-studies",
+      "to": "norm:economics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:area-regional-studies",
+      "to": "norm:anthropology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:area-regional-studies",
+      "to": "norm:geography",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:area-regional-studies",
+      "to": "norm:international-studies-relations",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:musicology",
+      "to": "norm:history",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:musicology",
+      "to": "norm:art-history",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:musicology",
+      "to": "norm:media-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:musicology",
+      "to": "norm:cultural-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:musicology",
+      "to": "norm:folklore-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:performance-studies",
+      "to": "norm:media-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:performance-studies",
+      "to": "norm:cultural-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:performance-studies",
+      "to": "norm:anthropology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:performance-studies",
+      "to": "norm:communication-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:performance-studies",
+      "to": "norm:aesthetics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:international-studies-relations",
+      "to": "norm:political-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:international-studies-relations",
+      "to": "norm:economics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:international-studies-relations",
+      "to": "norm:legal-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:international-studies-relations",
+      "to": "norm:history",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:international-studies-relations",
+      "to": "norm:sociology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:international-studies-relations",
+      "to": "norm:geography",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:development-studies",
+      "to": "norm:economics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:development-studies",
+      "to": "norm:political-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:development-studies",
+      "to": "norm:sociology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:development-studies",
+      "to": "norm:anthropology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:development-studies",
+      "to": "norm:public-policy",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:development-studies",
+      "to": "norm:geography",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:development-studies",
+      "to": "norm:demography",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:urban-studies",
+      "to": "norm:human-geography",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:urban-studies",
+      "to": "norm:sociology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:urban-studies",
+      "to": "norm:economics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:urban-studies",
+      "to": "norm:political-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:urban-studies",
+      "to": "norm:public-policy",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:urban-studies",
+      "to": "norm:demography",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:gender-sexuality-studies",
+      "to": "norm:sociology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:gender-sexuality-studies",
+      "to": "norm:anthropology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:gender-sexuality-studies",
+      "to": "norm:history",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:gender-sexuality-studies",
+      "to": "norm:literary-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:gender-sexuality-studies",
+      "to": "norm:cultural-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:gender-sexuality-studies",
+      "to": "norm:political-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:gender-sexuality-studies",
+      "to": "norm:psychology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:science-technology-studies",
+      "to": "norm:sociology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:science-technology-studies",
+      "to": "norm:history",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:science-technology-studies",
+      "to": "norm:philosophy-of-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:science-technology-studies",
+      "to": "norm:engineering",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:science-technology-studies",
+      "to": "norm:computation",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:science-technology-studies",
+      "to": "norm:media-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:folklore-studies",
+      "to": "norm:anthropology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:folklore-studies",
+      "to": "norm:history",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:folklore-studies",
+      "to": "norm:cultural-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:folklore-studies",
+      "to": "norm:literary-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:folklore-studies",
+      "to": "norm:musicology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:folklore-studies",
+      "to": "norm:heritage-studies",
+      "type": "BRIDGES"
+    }
+  ],
+  "roundId": "external-reference:round5c-edges:2026-08-19",
+  "schemaVersion": 1,
+  "scope": "Only the nine future-edge identities explicitly named by Round5B perturbation. No checklist expansion beyond this bounded set.",
+  "sources": {
+    "4s": {
+      "role": "SCIENCE_TECHNOLOGY_STUDIES_FIELD_SCOPE",
+      "title": "Society for Social Studies of Science — What is 4S?",
+      "url": "https://4sonline.org/what_is_4s.php"
+    },
+    "aas-area": {
+      "role": "REGIONALLY_BOUNDED_INTERDISCIPLINARY_STUDY_SCOPE",
+      "title": "Association for Asian Studies — About",
+      "url": "https://www.asianstudies.org/about/"
+    },
+    "afs": {
+      "role": "FOLKLORE_STUDIES_FIELD_SCOPE",
+      "title": "American Folklore Society — Mission and Vision",
+      "url": "https://americanfolkloresociety.org/about/mission-and-vision/"
+    },
+    "aseees-area": {
+      "role": "REGIONALLY_BOUNDED_INTERDISCIPLINARY_STUDY_SCOPE",
+      "title": "Association for Slavic, East European, and Eurasian Studies — Mission",
+      "url": "https://aseees.org/about/mission/"
+    },
+    "dsa": {
+      "role": "DEVELOPMENT_STUDIES_FIELD_SCOPE",
+      "title": "Development Studies Association — Aims and Objectives",
+      "url": "https://www.devstud.org.uk/about/our-aims-and-objectives/"
+    },
+    "ims": {
+      "role": "MUSICOLOGY_FIELD_SCOPE",
+      "title": "International Musicological Society — Who We Are",
+      "url": "https://www.musicology.org/about-the-ims/who-we-are/"
+    },
+    "isa": {
+      "role": "INTERNATIONAL_STUDIES_FIELD_SCOPE",
+      "title": "International Studies Association — About",
+      "url": "https://www.isanet.org/ISA/About-ISA"
+    },
+    "lasa-area": {
+      "role": "REGIONALLY_BOUNDED_INTERDISCIPLINARY_STUDY_SCOPE",
+      "title": "Latin American Studies Association — About",
+      "url": "https://lasaweb.org/en/about/"
+    },
+    "nwsa": {
+      "role": "GENDER_SEXUALITY_STUDIES_FIELD_SCOPE",
+      "title": "National Women’s Studies Association — What is Women’s, Gender, & Sexuality Studies?",
+      "url": "https://www.nwsa.org/about/what-is-womens-gender-sexuality-studies"
+    },
+    "psi": {
+      "role": "PERFORMANCE_STUDIES_FIELD_SCOPE",
+      "title": "Performance Studies international",
+      "url": "https://www.psi-web.org/"
+    },
+    "uaa": {
+      "role": "URBAN_STUDIES_INTERDISCIPLINARY_SCOPE",
+      "title": "Urban Affairs Association — About",
+      "url": "https://urbanaffairsassociation.org/about/"
+    }
+  },
+  "state": "ROUND5C_NINE_REAL_EDGE_IDENTITIES_NORMALIZED",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_NORMALIZATION"
+}

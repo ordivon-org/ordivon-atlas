@@ -1196,6 +1196,147 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
         self.assertIn("OPEN_WORLD_REMAINS_REOPENABLE", a["laws"])
 
 
+    def test_round5c_normalizes_exact_nine_real_edge_identities(self) -> None:
+        r = json.loads((ROOT / "reference/external-reference-round5c-edge-normalization-20260819.json").read_text())
+        refs = {x["spaceRef"] for x in r["normalizedSpaces"]}
+        self.assertEqual(refs, {
+            "norm:area-regional-studies", "norm:musicology", "norm:performance-studies",
+            "norm:international-studies-relations", "norm:development-studies", "norm:urban-studies",
+            "norm:gender-sexuality-studies", "norm:science-technology-studies", "norm:folklore-studies",
+        })
+        self.assertEqual(len(r["relations"]), 54)
+        self.assertTrue(all(x["rootAdmission"] == "NOT_ADMITTED" for x in r["normalizedSpaces"]))
+        self.assertIn("EDGE_FIXTURE != PRECOMMITTED_ONTOLOGY", r["laws"])
+        self.assertIn("IDENTITY_NORMALIZATION != REGION_OR_COVERAGE_ADMISSION", r["laws"])
+
+    def test_round5c_area_studies_is_regional_interdisciplinary_mode(self) -> None:
+        r = json.loads((ROOT / "reference/external-reference-round5c-edge-normalization-20260819.json").read_text())
+        by = {x["spaceRef"]: x for x in r["normalizedSpaces"]}
+        area = by["norm:area-regional-studies"]
+        self.assertIn("REGIONALLY_BOUNDED_INTERDISCIPLINARY_DOMAIN", area["roleClasses"])
+        self.assertIn("AREA_KNOWLEDGE_INTEGRATION_MODE", area["roleClasses"])
+        self.assertGreaterEqual(len(area["evidence"]), 3)
+        self.assertIn("AREA_STUDIES_IS_REGIONAL_INTERDISCIPLINARY_MODE_NOT_OBJECT_ROOT", r["laws"])
+
+    def test_round5c_edges_preserve_nonreduction_laws(self) -> None:
+        r = json.loads((ROOT / "reference/external-reference-round5c-edge-normalization-20260819.json").read_text())
+        for law in (
+            "MUSICOLOGY != ART_HISTORY_SUBSPACE",
+            "PERFORMANCE_STUDIES != MEDIA_STUDIES_SUBSPACE",
+            "INTERNATIONAL_STUDIES != POLITICAL_SCIENCE_ONLY",
+            "DEVELOPMENT_STUDIES != ECONOMICS_ONLY",
+            "URBAN_STUDIES != HUMAN_GEOGRAPHY_ONLY",
+            "WGSS_IS_INTERDISCIPLINARY_NOT_SOCIOLOGY_CHILD",
+            "STS_IS_REFLEXIVE_CROSS_DOMAIN_NOT_ENGINEERING_CHILD",
+            "FOLKLORE_STUDIES != ANTHROPOLOGY_CHILD",
+        ):
+            self.assertIn(law, r["laws"])
+
+    def test_round5c_relations_resolve_across_whole_graph(self) -> None:
+        paths = [
+            "reference/foundational-census-round2a-normalization-20260819.json",
+            "reference/foundational-census-round2b-normalization-20260819.json",
+            "reference/foundational-census-round2c-residual-normalization-20260819.json",
+            "reference/foundational-census-round3a-breadth-normalization-20260819.json",
+            "reference/foundational-reference-round4a-crosswalk-induced-repair-20260819.json",
+            "reference/foundational-reference-round4b-scd-crosswalk-repair-20260819.json",
+            "reference/foundational-reference-round4c-human-crosswalk-repair-20260819.json",
+            "reference/foundational-reference-round4d-media-crosswalk-repair-20260819.json",
+            "reference/external-reference-round5a-social-cultural-normalization-20260819.json",
+            "reference/external-reference-round5b-social-cultural-breadth-normalization-20260819.json",
+            "reference/external-reference-round5c-edge-normalization-20260819.json",
+        ]
+        rounds = [json.loads((ROOT / p).read_text()) for p in paths]
+        refs = {x["spaceRef"] for rr in rounds for x in rr["normalizedSpaces"]}
+        for rel in rounds[-1]["relations"]:
+            self.assertIn(rel["from"], refs, rel)
+            self.assertIn(rel["to"], refs, rel)
+
+    def test_major_regions_v08_absorb_all_round5c_edges_without_new_region_or_anchor(self) -> None:
+        old = json.loads((ROOT / "reference/canonical-major-regions-v0-7-20260819.json").read_text())
+        new = json.loads((ROOT / "reference/canonical-major-regions-v0-8-20260819.json").read_text())
+        self.assertEqual(len(old["regions"]), 10)
+        self.assertEqual(len(new["regions"]), 10)
+        old_by = {x["regionRef"]: x for x in old["regions"]}
+        new_by = {x["regionRef"]: x for x in new["regions"]}
+        for ref in old_by:
+            self.assertEqual(old_by[ref]["anchorRefs"], new_by[ref]["anchorRefs"])
+        new_edges = {
+            "norm:area-regional-studies", "norm:musicology", "norm:performance-studies",
+            "norm:international-studies-relations", "norm:development-studies", "norm:urban-studies",
+            "norm:gender-sexuality-studies", "norm:science-technology-studies", "norm:folklore-studies",
+        }
+        members = {m for r in new["regions"] for m in r["memberRefs"]}
+        self.assertTrue(new_edges.issubset(members))
+        anchors = {a for r in new["regions"] for a in r["anchorRefs"]}
+        self.assertTrue(new_edges.isdisjoint(anchors))
+
+    def test_round5c_sts_and_area_wgss_are_nonexclusive_cross_region_members(self) -> None:
+        nav = json.loads((ROOT / "reference/canonical-major-regions-v0-8-20260819.json").read_text())
+        by = {x["regionRef"]: x for x in nav["regions"]}
+        self.assertIn("norm:science-technology-studies", by["navigation-region:social-institutional-collective"]["memberRefs"])
+        self.assertIn("norm:science-technology-studies", by["navigation-region:philosophical-conceptual"]["memberRefs"])
+        self.assertIn("norm:science-technology-studies", by["navigation-region:engineering-design"]["memberRefs"])
+        self.assertIn("norm:area-regional-studies", by["navigation-region:historical-cultural-interpretive"]["memberRefs"])
+        self.assertIn("norm:area-regional-studies", by["navigation-region:social-institutional-collective"]["memberRefs"])
+        self.assertIn("norm:gender-sexuality-studies", by["navigation-region:historical-cultural-interpretive"]["memberRefs"])
+        self.assertIn("norm:gender-sexuality-studies", by["navigation-region:social-institutional-collective"]["memberRefs"])
+
+    def test_crosswalk_v07_round5c_reprojects_zero_new_coverage_mappings(self) -> None:
+        old = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-6-20260819.json").read_text())
+        new = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-7-20260819.json").read_text())
+        self.assertEqual(new["state"], "TEN_OWNER_CROSSWALK_REPROJECTED_AFTER_ROUND5C_ZERO_NEW_COVERAGE_MAPPINGS")
+        self.assertEqual(old["mappings"], new["mappings"])
+        self.assertEqual(len(new["mappings"]), 25)
+        self.assertEqual(len(new["regionCoverageViews"]), 10)
+        self.assertTrue(all(x["aggregateCoverageTruth"] == "FORBIDDEN" for x in new["regionCoverageViews"]))
+        self.assertEqual(new["globalScalarCoverage"], "FORBIDDEN")
+
+    def test_topology_saturation_audit_recommends_pause_not_world_closure(self) -> None:
+        a = json.loads((ROOT / "reference/external-reference-topology-saturation-reopen-audit-v1-20260819.json").read_text())
+        self.assertEqual(a["state"], "BREADTH_EXPANSION_PAUSE_RECOMMENDED_OPEN_WORLD_REOPENABLE")
+        self.assertEqual(a["pauseDecision"], "PAUSE_CHECKLIST_BREADTH_EXPANSION")
+        self.assertTrue(a["tests"]["allNineRealEdgesPlacedWithoutNewRegion"])
+        self.assertTrue(a["tests"]["existingTenRegionAnchorsUnchanged"])
+        self.assertEqual(a["tests"]["newMajorRegionsRequired"], 0)
+        self.assertEqual(a["tests"]["newCoverageMappingsAuthorized"], 0)
+        self.assertGreaterEqual(len(a["reopenTriggers"]), 5)
+        self.assertIn("PAUSE_BREADTH != CLOSE_WORLD", a["laws"])
+        self.assertIn("SATURATION_IN_NAVIGATION != ONTOLOGY_COMPLETION", a["laws"])
+        self.assertIn("REOPEN_REQUIRES_STRUCTURAL_PRESSURE", a["laws"])
+
+    def test_topology_saturation_reopen_requires_structural_not_single_item_pressure(self) -> None:
+        a = json.loads((ROOT / "reference/external-reference-topology-saturation-reopen-audit-v1-20260819.json").read_text())
+        triggers = {x["trigger"] for x in a["reopenTriggers"]}
+        self.assertIn("UNPLACEABLE_HIGH_VALUE_CLUSTER", triggers)
+        self.assertIn("OWNER_CROSSWALK_REFERENCE_GAP", triggers)
+        self.assertIn("MAJOR_REGION_DELETION_HARM_DEGRADES", triggers)
+        non = " | ".join(a["nonTriggers"])
+        self.assertIn("single newly discovered discipline", non)
+        self.assertIn("catalog completeness", non)
+        self.assertIn("project name", non)
+
+    def test_whole_audit_v10_establishes_real_edge_navigation_saturation(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v10-round5c-saturation-20260819.json").read_text())
+        c = a["counts"]
+        self.assertEqual(c["normalizedSpaces"], 120)
+        self.assertEqual(c["relations"], 256)
+        self.assertEqual(c["multiPlacementSpaces"], 117)
+        self.assertEqual(c["multiRoleSpaces"], 117)
+        self.assertEqual(c["canonicalMajorRegionProjections"], 10)
+        self.assertEqual(c["round5cNewIdentities"], 9)
+        self.assertEqual(c["round5cNewRelations"], 54)
+        self.assertEqual(c["round5cNewMajorRegions"], 0)
+        self.assertEqual(c["currentOwnerAuthorityInputs"], 10)
+        self.assertEqual(c["crosswalkMappings"], 25)
+        self.assertEqual(c["crosswalkNewMappingsRound5c"], 0)
+        self.assertEqual(c["identityLabelCollisions"], 0)
+        self.assertEqual(c["brokenRelations"], 0)
+        self.assertEqual(a["coverageReadiness"], "READY_TO_SHIFT_FROM_BREADTH_CARTOGRAPHY_TO_FRONTIER_COVERAGE_ANALYSIS")
+        self.assertTrue(a["openWorld"])
+        self.assertEqual(a["globalScalarCoverage"], "FORBIDDEN")
+
+
 
 if __name__ == "__main__":
     unittest.main()

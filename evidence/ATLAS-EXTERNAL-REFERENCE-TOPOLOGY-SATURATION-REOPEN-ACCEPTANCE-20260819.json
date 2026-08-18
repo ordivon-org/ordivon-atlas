@@ -1,0 +1,70 @@
+{
+  "closure": "BOUNDED_NAVIGATION_SATURATION_ACCEPTED_OPEN_WORLD_REOPENABLE",
+  "controls": [
+    "Breadth pause is not world closure.",
+    "Navigation saturation is not ontology completion.",
+    "All nine real edge identities fit existing ten-region navigation and do not alter anchors.",
+    "No new MajorRegion or owner coverage mapping is required.",
+    "A single new discipline, catalog symmetry, trend or owner-name resemblance cannot reopen breadth expansion.",
+    "Reopen requires structural pressure such as repeated unplaceable clusters, crosswalk reference gaps, degraded navigation, or multi-source structural shift."
+  ],
+  "counts": {
+    "canonicalMajorRegions": 10,
+    "crosswalkMappings": 25,
+    "newCoverageMappings": 0,
+    "newMajorRegions": 0,
+    "reopenTriggers": 5,
+    "round5cNewIdentities": 9
+  },
+  "crosswalk": "reference/coverage-crosswalk-foundational-pilot-v0-7-20260819.json",
+  "date": "2026-08-19",
+  "kind": "ordivon.external-reference-topology-saturation-reopen-acceptance",
+  "majorRegions": "reference/canonical-major-regions-v0-8-20260819.json",
+  "nonTriggers": [
+    "A single newly discovered discipline.",
+    "Desire for catalog completeness or symmetry.",
+    "An owner project name resembling an external field.",
+    "A new publication or trendy topic without stable independent field evidence.",
+    "Unmapped owner research when current authority itself is absent."
+  ],
+  "reopenTriggers": [
+    {
+      "condition": "Three or more independently verified high-value identities repeatedly fail meaningful placement in all current MajorRegions.",
+      "trigger": "UNPLACEABLE_HIGH_VALUE_CLUSTER"
+    },
+    {
+      "condition": "Real user/agent navigation fixtures show current ten-region projections no longer compress/recover exploration effectively.",
+      "trigger": "MAJOR_REGION_DELETION_HARM_DEGRADES"
+    },
+    {
+      "condition": "A current owner repeatedly exposes mature semantics with no adequate ReferenceIdentity or navigation coordinate after external verification.",
+      "trigger": "OWNER_CROSSWALK_REFERENCE_GAP"
+    },
+    {
+      "condition": "Multiple independent authoritative/professional sources expose a stable knowledge-space organization not representable by current graph/regions.",
+      "trigger": "EXTERNAL_CLASSIFICATION_STRUCTURAL_SHIFT"
+    },
+    {
+      "condition": "A future edge cluster becomes deletion-essential enough to justify splitting one current social/cultural navigation projection.",
+      "trigger": "SOCIAL_CULTURAL_EDGE_DENSITY_SPLIT"
+    }
+  ],
+  "saturationAudit": "reference/external-reference-topology-saturation-reopen-audit-v1-20260819.json",
+  "schemaVersion": 1,
+  "state": "BREADTH_EXPANSION_PAUSE_RECOMMENDED_OPEN_WORLD_REOPENABLE",
+  "tests": {
+    "allNineRealEdgesPlacedWithoutNewRegion": true,
+    "brokenRelationsExpected": 0,
+    "existingTenRegionAnchorsUnchanged": true,
+    "identityLabelCollisionsExpected": 0,
+    "newCoverageMappingsAuthorized": 0,
+    "newMajorRegionsRequired": 0
+  },
+  "truthRole": "HISTORICAL_TOPOLOGY_SATURATION_EVIDENCE",
+  "verification": {
+    "fullSuiteJob": "job-01a01681-87ab-7150-ae4f-01c66f91213f",
+    "fullSuiteResult": "161 tests OK; 28 gated skips; 133 deterministic tests executed",
+    "referenceSuiteJob": "job-01a01681-450a-7ed2-a74d-b64003d834f4",
+    "referenceSuiteResult": "124/124 PASS"
+  }
+}

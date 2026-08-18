@@ -1,0 +1,27 @@
+{
+  "closure": "ROUND5C_REAL_EDGE_NORMALIZATION_ACCEPTED",
+  "controls": [
+    "Exactly the nine previously simulated future-edge identities were considered; no checklist expansion beyond the bounded set.",
+    "All nine are externally evidenced and remain NOT_ADMITTED roots.",
+    "Area/Regional Studies is modeled as a regional interdisciplinary mode, not an object root.",
+    "Musicology, Performance Studies, International Studies, Development Studies, Urban Studies, WGSS, STS and Folklore preserve explicit non-reduction laws.",
+    "Identity normalization does not create region or coverage admission."
+  ],
+  "counts": {
+    "newIdentities": 9,
+    "newRelations": 54,
+    "sourceViews": 11
+  },
+  "date": "2026-08-19",
+  "kind": "ordivon.external-reference-round5c-edge-acceptance",
+  "normalization": "reference/external-reference-round5c-edge-normalization-20260819.json",
+  "schemaVersion": 1,
+  "state": "ROUND5C_NINE_REAL_EDGE_IDENTITIES_NORMALIZED",
+  "truthRole": "HISTORICAL_REFERENCE_NORMALIZATION_EVIDENCE",
+  "verification": {
+    "fullSuiteJob": "job-01a01681-87ab-7150-ae4f-01c66f91213f",
+    "fullSuiteResult": "161 tests OK; 28 gated skips; 133 deterministic tests executed",
+    "referenceSuiteJob": "job-01a01681-450a-7ed2-a74d-b64003d834f4",
+    "referenceSuiteResult": "124/124 PASS"
+  }
+}

@@ -1,0 +1,521 @@
+{
+  "closureClaim": "NONE",
+  "coverageCrosswalk": "IDENTITY_LEVEL_ONLY",
+  "deferred": [],
+  "explicitNonRegions": [
+    "counterexample-region:statistics",
+    "counterexample-region:metrology",
+    "counterexample-region:materials",
+    "counterexample-region:medicine",
+    "counterexample-region:software-engineering",
+    "counterexample-region:classics"
+  ],
+  "kind": "ordivon.canonical-major-region-projection-set",
+  "openWorld": true,
+  "preservesHistory": true,
+  "projectionSetId": "foundational-major-regions:v0.8",
+  "regions": [
+    {
+      "admissionEvidence": {
+        "basis": "v0.7 admission preserved through real Round5C edge perturbation",
+        "status": "PRESERVED_NO_NEW_REGION"
+      },
+      "anchorRefs": [
+        "norm:mathematics",
+        "norm:logic",
+        "norm:statistics"
+      ],
+      "authorityNotice": "Navigation only; no ReferenceIdentity/owner truth/closure authority.",
+      "closureClaim": "NONE",
+      "crossCuttingRefs": [
+        "norm:mathematics",
+        "norm:logic",
+        "norm:probability",
+        "norm:statistics",
+        "norm:information-theory",
+        "norm:dynamical-systems",
+        "norm:systems-theory-control",
+        "norm:formal-semantics",
+        "norm:formal-methods"
+      ],
+      "kind": "CANONICAL_MAJOR_REGION_PROJECTION",
+      "label": "Formal & Inferential Structures",
+      "memberRefs": [
+        "norm:mathematics",
+        "norm:logic",
+        "norm:probability",
+        "norm:statistics",
+        "norm:information-theory",
+        "norm:dynamical-systems",
+        "norm:systems-theory-control",
+        "norm:formal-semantics",
+        "norm:formal-methods"
+      ],
+      "membershipSemantics": "NON_EXCLUSIVE",
+      "regionRef": "navigation-region:formal-inferential",
+      "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+      "version": "0.8.0"
+    },
+    {
+      "admissionEvidence": {
+        "basis": "v0.7 admission preserved through real Round5C edge perturbation",
+        "status": "PRESERVED_NO_NEW_REGION"
+      },
+      "anchorRefs": [
+        "norm:computation",
+        "norm:operating-systems",
+        "norm:networking-communication"
+      ],
+      "authorityNotice": "Navigation only; no ReferenceIdentity/owner truth/closure authority.",
+      "closureClaim": "NONE",
+      "crossCuttingRefs": [
+        "norm:computation",
+        "norm:foundations-programming-languages",
+        "norm:operating-systems",
+        "norm:parallel-distributed-computing",
+        "norm:networking-communication",
+        "norm:systems-fundamentals",
+        "norm:software-engineering",
+        "norm:computer-engineering",
+        "norm:control-engineering",
+        "norm:information-theory",
+        "norm:formal-semantics",
+        "norm:formal-methods",
+        "norm:human-computer-interaction"
+      ],
+      "kind": "CANONICAL_MAJOR_REGION_PROJECTION",
+      "label": "Computation & Computer Systems",
+      "memberRefs": [
+        "norm:computation",
+        "norm:foundations-programming-languages",
+        "norm:operating-systems",
+        "norm:parallel-distributed-computing",
+        "norm:networking-communication",
+        "norm:systems-fundamentals",
+        "norm:software-engineering",
+        "norm:computer-engineering",
+        "norm:control-engineering",
+        "norm:information-theory",
+        "norm:formal-semantics",
+        "norm:formal-methods",
+        "norm:human-computer-interaction"
+      ],
+      "membershipSemantics": "NON_EXCLUSIVE",
+      "regionRef": "navigation-region:computation-computer-systems",
+      "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+      "version": "0.8.0"
+    },
+    {
+      "admissionEvidence": {
+        "basis": "v0.7 admission preserved through real Round5C edge perturbation",
+        "status": "PRESERVED_NO_NEW_REGION"
+      },
+      "anchorRefs": [
+        "norm:philosophy",
+        "norm:metaphysics",
+        "norm:epistemology"
+      ],
+      "authorityNotice": "Navigation only; no ReferenceIdentity/owner truth/closure authority.",
+      "closureClaim": "NONE",
+      "crossCuttingRefs": [
+        "norm:philosophy",
+        "norm:metaphysics",
+        "norm:epistemology",
+        "norm:ethics-value-theory",
+        "norm:logic",
+        "norm:philosophy-of-mind",
+        "norm:philosophy-of-science",
+        "norm:philosophy-of-language",
+        "norm:aesthetics",
+        "norm:semiotics",
+        "norm:science-technology-studies"
+      ],
+      "kind": "CANONICAL_MAJOR_REGION_PROJECTION",
+      "label": "Philosophical & Conceptual Inquiry",
+      "memberRefs": [
+        "norm:philosophy",
+        "norm:metaphysics",
+        "norm:epistemology",
+        "norm:ethics-value-theory",
+        "norm:logic",
+        "norm:philosophy-of-mind",
+        "norm:philosophy-of-science",
+        "norm:philosophy-of-language",
+        "norm:aesthetics",
+        "norm:semiotics",
+        "norm:science-technology-studies"
+      ],
+      "membershipSemantics": "NON_EXCLUSIVE",
+      "regionRef": "navigation-region:philosophical-conceptual",
+      "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+      "version": "0.8.0"
+    },
+    {
+      "admissionEvidence": {
+        "basis": "v0.7 admission preserved through real Round5C edge perturbation",
+        "status": "PRESERVED_NO_NEW_REGION"
+      },
+      "anchorRefs": [
+        "norm:physics",
+        "norm:chemistry",
+        "norm:materials"
+      ],
+      "authorityNotice": "This projection organizes navigation only. It does not create or change ReferenceIdentity truth, Ordivon owner truth, Foundation standing or external-world semantics.",
+      "closureClaim": "NONE",
+      "crossCuttingRefs": [
+        "norm:chemistry",
+        "norm:condensed-matter",
+        "norm:chemical-physics",
+        "norm:materials",
+        "norm:biochemistry"
+      ],
+      "kind": "CANONICAL_MAJOR_REGION_PROJECTION",
+      "label": "Physical & Material",
+      "memberRefs": [
+        "norm:physics",
+        "norm:chemistry",
+        "norm:condensed-matter",
+        "norm:chemical-physics",
+        "norm:materials",
+        "norm:biochemistry"
+      ],
+      "membershipSemantics": "NON_EXCLUSIVE",
+      "regionRef": "navigation-region:physical-material",
+      "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+      "version": "0.8.0"
+    },
+    {
+      "admissionEvidence": {
+        "basis": "v0.7 admission preserved through real Round5C edge perturbation",
+        "status": "PRESERVED_NO_NEW_REGION"
+      },
+      "anchorRefs": [
+        "norm:earth-science",
+        "norm:planetary-science",
+        "norm:astronomy"
+      ],
+      "authorityNotice": "This projection organizes navigation only. It does not create or change ReferenceIdentity truth, Ordivon owner truth, Foundation standing or external-world semantics.",
+      "closureClaim": "NONE",
+      "crossCuttingRefs": [
+        "norm:earth-science",
+        "norm:geophysics",
+        "norm:geochemistry",
+        "norm:atmospheric-science",
+        "norm:oceanography",
+        "norm:climate-science",
+        "norm:physical-geography",
+        "norm:planetary-science",
+        "norm:astronomy",
+        "norm:cosmology",
+        "norm:geography"
+      ],
+      "kind": "CANONICAL_MAJOR_REGION_PROJECTION",
+      "label": "Earth, Planetary & Space Systems",
+      "memberRefs": [
+        "norm:earth-science",
+        "norm:geology",
+        "norm:geophysics",
+        "norm:geochemistry",
+        "norm:atmospheric-science",
+        "norm:oceanography",
+        "norm:climate-science",
+        "norm:physical-geography",
+        "norm:planetary-science",
+        "norm:astronomy",
+        "norm:cosmology",
+        "norm:geography"
+      ],
+      "membershipSemantics": "NON_EXCLUSIVE",
+      "regionRef": "navigation-region:earth-planetary-space",
+      "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+      "version": "0.8.0"
+    },
+    {
+      "admissionEvidence": {
+        "basis": "v0.7 admission preserved through real Round5C edge perturbation",
+        "status": "PRESERVED_NO_NEW_REGION"
+      },
+      "anchorRefs": [
+        "norm:biology",
+        "norm:genetics",
+        "norm:ecology"
+      ],
+      "authorityNotice": "This projection organizes navigation only. It does not create or change ReferenceIdentity truth, Ordivon owner truth, Foundation standing or external-world semantics.",
+      "closureClaim": "NONE",
+      "crossCuttingRefs": [
+        "norm:molecular-cellular-biology",
+        "norm:biochemistry",
+        "norm:genetics",
+        "norm:genomics",
+        "norm:evolutionary-biology",
+        "norm:ecology",
+        "norm:microbiology",
+        "norm:developmental-biology",
+        "norm:physiology",
+        "norm:organismal-biology",
+        "norm:neuroscience",
+        "norm:developmental-science"
+      ],
+      "kind": "CANONICAL_MAJOR_REGION_PROJECTION",
+      "label": "Life & Biological Organization",
+      "memberRefs": [
+        "norm:biology",
+        "norm:molecular-cellular-biology",
+        "norm:biochemistry",
+        "norm:genetics",
+        "norm:genomics",
+        "norm:evolutionary-biology",
+        "norm:ecology",
+        "norm:microbiology",
+        "norm:developmental-biology",
+        "norm:physiology",
+        "norm:organismal-biology",
+        "norm:neuroscience",
+        "norm:developmental-science"
+      ],
+      "membershipSemantics": "NON_EXCLUSIVE",
+      "regionRef": "navigation-region:life",
+      "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+      "version": "0.8.0"
+    },
+    {
+      "admissionEvidence": {
+        "basis": "v0.7 admission preserved through real Round5C edge perturbation",
+        "status": "PRESERVED_NO_NEW_REGION"
+      },
+      "anchorRefs": [
+        "norm:cognitive-science",
+        "norm:psychology",
+        "norm:linguistics"
+      ],
+      "authorityNotice": "Navigation only; no ReferenceIdentity/owner truth/closure authority.",
+      "closureClaim": "NONE",
+      "crossCuttingRefs": [
+        "norm:cognitive-science",
+        "norm:psychology",
+        "norm:neuroscience",
+        "norm:linguistics",
+        "norm:philosophy-of-mind",
+        "norm:consciousness-science",
+        "norm:affective-science",
+        "norm:developmental-science",
+        "norm:semiotics"
+      ],
+      "kind": "CANONICAL_MAJOR_REGION_PROJECTION",
+      "label": "Mind, Cognition & Language",
+      "memberRefs": [
+        "norm:cognitive-science",
+        "norm:psychology",
+        "norm:neuroscience",
+        "norm:linguistics",
+        "norm:philosophy-of-mind",
+        "norm:consciousness-science",
+        "norm:affective-science",
+        "norm:developmental-science",
+        "norm:semiotics"
+      ],
+      "membershipSemantics": "NON_EXCLUSIVE",
+      "regionRef": "navigation-region:mind-language",
+      "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+      "version": "0.8.0"
+    },
+    {
+      "admissionEvidence": {
+        "basis": "v0.7 admission preserved through real Round5C edge perturbation",
+        "status": "PRESERVED_NO_NEW_REGION"
+      },
+      "anchorRefs": [
+        "norm:engineering",
+        "norm:design",
+        "norm:systems-engineering"
+      ],
+      "authorityNotice": "This projection organizes navigation only. It does not create or change ReferenceIdentity truth, Ordivon owner truth, Foundation standing or external-world semantics.",
+      "closureClaim": "NONE",
+      "crossCuttingRefs": [
+        "norm:engineering",
+        "norm:design",
+        "norm:systems-engineering",
+        "norm:manufacturing",
+        "norm:materials",
+        "norm:bioengineering",
+        "norm:mechanical-engineering",
+        "norm:electrical-electronic-engineering",
+        "norm:civil-structural-engineering",
+        "norm:chemical-engineering",
+        "norm:computer-engineering",
+        "norm:software-engineering",
+        "norm:control-engineering",
+        "norm:environmental-engineering",
+        "norm:energy-engineering",
+        "norm:formal-methods",
+        "norm:human-computer-interaction",
+        "norm:science-technology-studies"
+      ],
+      "kind": "CANONICAL_MAJOR_REGION_PROJECTION",
+      "label": "Engineering, Design & Realization",
+      "memberRefs": [
+        "norm:engineering",
+        "norm:design",
+        "norm:systems-engineering",
+        "norm:manufacturing",
+        "norm:materials",
+        "norm:bioengineering",
+        "norm:mechanical-engineering",
+        "norm:electrical-electronic-engineering",
+        "norm:civil-structural-engineering",
+        "norm:chemical-engineering",
+        "norm:computer-engineering",
+        "norm:software-engineering",
+        "norm:control-engineering",
+        "norm:environmental-engineering",
+        "norm:energy-engineering",
+        "norm:formal-methods",
+        "norm:human-computer-interaction",
+        "norm:science-technology-studies"
+      ],
+      "membershipSemantics": "NON_EXCLUSIVE",
+      "regionRef": "navigation-region:engineering-design",
+      "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+      "version": "0.8.0"
+    },
+    {
+      "admissionEvidence": {
+        "basis": "v0.7 admission preserved through real Round5C edge perturbation",
+        "status": "PRESERVED_NO_NEW_REGION"
+      },
+      "anchorRefs": [
+        "norm:history",
+        "norm:cultural-studies",
+        "norm:literary-studies"
+      ],
+      "authorityNotice": "Navigation only; no ReferenceIdentity/owner truth/closure authority.",
+      "closureClaim": "NONE",
+      "crossCuttingRefs": [
+        "norm:history",
+        "norm:archaeology",
+        "norm:classics",
+        "norm:philology",
+        "norm:religious-studies",
+        "norm:cultural-studies",
+        "norm:literary-studies",
+        "norm:art-history",
+        "norm:heritage-studies",
+        "norm:museology",
+        "norm:media-studies",
+        "norm:semiotics",
+        "norm:anthropology",
+        "norm:aesthetics",
+        "norm:area-regional-studies",
+        "norm:musicology",
+        "norm:performance-studies",
+        "norm:gender-sexuality-studies",
+        "norm:folklore-studies"
+      ],
+      "kind": "CANONICAL_MAJOR_REGION_PROJECTION",
+      "label": "Historical, Cultural & Interpretive",
+      "memberRefs": [
+        "norm:history",
+        "norm:archaeology",
+        "norm:classics",
+        "norm:philology",
+        "norm:religious-studies",
+        "norm:cultural-studies",
+        "norm:literary-studies",
+        "norm:art-history",
+        "norm:heritage-studies",
+        "norm:museology",
+        "norm:media-studies",
+        "norm:semiotics",
+        "norm:anthropology",
+        "norm:aesthetics",
+        "norm:area-regional-studies",
+        "norm:musicology",
+        "norm:performance-studies",
+        "norm:gender-sexuality-studies",
+        "norm:folklore-studies"
+      ],
+      "membershipSemantics": "NON_EXCLUSIVE",
+      "regionRef": "navigation-region:historical-cultural-interpretive",
+      "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+      "version": "0.8.0"
+    },
+    {
+      "admissionEvidence": {
+        "basis": "v0.7 admission preserved through real Round5C edge perturbation",
+        "status": "PRESERVED_NO_NEW_REGION"
+      },
+      "anchorRefs": [
+        "norm:sociology",
+        "norm:economics",
+        "norm:political-science"
+      ],
+      "authorityNotice": "Navigation only; no ReferenceIdentity/owner truth/closure authority.",
+      "closureClaim": "NONE",
+      "crossCuttingRefs": [
+        "norm:sociology",
+        "norm:anthropology",
+        "norm:communication-studies",
+        "norm:media-studies",
+        "norm:education-research",
+        "norm:economics",
+        "norm:political-science",
+        "norm:legal-science",
+        "norm:geography",
+        "norm:human-geography",
+        "norm:psychology",
+        "norm:developmental-science",
+        "norm:demography",
+        "norm:public-administration",
+        "norm:public-policy",
+        "norm:management-organization-studies",
+        "norm:criminology",
+        "norm:social-policy",
+        "norm:social-work",
+        "norm:area-regional-studies",
+        "norm:international-studies-relations",
+        "norm:development-studies",
+        "norm:urban-studies",
+        "norm:gender-sexuality-studies",
+        "norm:science-technology-studies"
+      ],
+      "kind": "CANONICAL_MAJOR_REGION_PROJECTION",
+      "label": "Social, Institutional & Collective Systems",
+      "memberRefs": [
+        "norm:sociology",
+        "norm:anthropology",
+        "norm:communication-studies",
+        "norm:media-studies",
+        "norm:education-research",
+        "norm:economics",
+        "norm:political-science",
+        "norm:legal-science",
+        "norm:geography",
+        "norm:human-geography",
+        "norm:psychology",
+        "norm:developmental-science",
+        "norm:demography",
+        "norm:public-administration",
+        "norm:public-policy",
+        "norm:management-organization-studies",
+        "norm:criminology",
+        "norm:social-policy",
+        "norm:social-work",
+        "norm:area-regional-studies",
+        "norm:international-studies-relations",
+        "norm:development-studies",
+        "norm:urban-studies",
+        "norm:gender-sexuality-studies",
+        "norm:science-technology-studies"
+      ],
+      "membershipSemantics": "NON_EXCLUSIVE",
+      "regionRef": "navigation-region:social-institutional-collective",
+      "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+      "version": "0.8.0"
+    }
+  ],
+  "round5cRef": "reference/external-reference-round5c-edge-normalization-20260819.json",
+  "schemaVersion": 8,
+  "supersedesForNavigation": "reference/canonical-major-regions-v0-7-20260819.json",
+  "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION",
+  "version": "0.8.0"
+}

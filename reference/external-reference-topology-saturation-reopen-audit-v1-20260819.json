@@ -1,0 +1,100 @@
+{
+  "date": "2026-08-19",
+  "inputs": [
+    "reference/external-reference-round5c-edge-normalization-20260819.json",
+    "reference/canonical-major-regions-v0-7-20260819.json",
+    "reference/canonical-major-regions-v0-8-20260819.json",
+    "reference/coverage-crosswalk-foundational-pilot-v0-7-20260819.json"
+  ],
+  "kind": "ordivon.external-reference-topology-saturation-reopen-audit",
+  "laws": [
+    "PAUSE_BREADTH != CLOSE_WORLD",
+    "SATURATION_IN_NAVIGATION != ONTOLOGY_COMPLETION",
+    "ONE_NEW_IDENTITY != REOPEN",
+    "REOPEN_REQUIRES_STRUCTURAL_PRESSURE",
+    "NEW_EDGE != NEW_REGION",
+    "NEW_REGION != NEW_COVERAGE",
+    "OPEN_WORLD_REMAINS_REOPENABLE"
+  ],
+  "marginalNavigationObservation": {
+    "interpretation": "The bounded nine-edge wave materially enriches members/bridges but does not change the high-level ten-region navigation basis. Marginal taxonomy breadth is now lower value than frontier/coverage analysis under current evidence.",
+    "newCoverageMappings": 0,
+    "newMajorRegions": 0,
+    "round5cNewIdentities": 9
+  },
+  "next": "Shift External Reference effort toward untouched/frontier/weak-mapping analysis and owner crosswalk quality. Reopen breadth only on explicit structural triggers.",
+  "nonTriggers": [
+    "A single newly discovered discipline.",
+    "Desire for catalog completeness or symmetry.",
+    "An owner project name resembling an external field.",
+    "A new publication or trendy topic without stable independent field evidence.",
+    "Unmapped owner research when current authority itself is absent."
+  ],
+  "pauseDecision": "PAUSE_CHECKLIST_BREADTH_EXPANSION",
+  "reopenTriggers": [
+    {
+      "condition": "Three or more independently verified high-value identities repeatedly fail meaningful placement in all current MajorRegions.",
+      "trigger": "UNPLACEABLE_HIGH_VALUE_CLUSTER"
+    },
+    {
+      "condition": "Real user/agent navigation fixtures show current ten-region projections no longer compress/recover exploration effectively.",
+      "trigger": "MAJOR_REGION_DELETION_HARM_DEGRADES"
+    },
+    {
+      "condition": "A current owner repeatedly exposes mature semantics with no adequate ReferenceIdentity or navigation coordinate after external verification.",
+      "trigger": "OWNER_CROSSWALK_REFERENCE_GAP"
+    },
+    {
+      "condition": "Multiple independent authoritative/professional sources expose a stable knowledge-space organization not representable by current graph/regions.",
+      "trigger": "EXTERNAL_CLASSIFICATION_STRUCTURAL_SHIFT"
+    },
+    {
+      "condition": "A future edge cluster becomes deletion-essential enough to justify splitting one current social/cultural navigation projection.",
+      "trigger": "SOCIAL_CULTURAL_EDGE_DENSITY_SPLIT"
+    }
+  ],
+  "round5cPlacement": {
+    "norm:area-regional-studies": [
+      "navigation-region:historical-cultural-interpretive",
+      "navigation-region:social-institutional-collective"
+    ],
+    "norm:development-studies": [
+      "navigation-region:social-institutional-collective"
+    ],
+    "norm:folklore-studies": [
+      "navigation-region:historical-cultural-interpretive"
+    ],
+    "norm:gender-sexuality-studies": [
+      "navigation-region:historical-cultural-interpretive",
+      "navigation-region:social-institutional-collective"
+    ],
+    "norm:international-studies-relations": [
+      "navigation-region:social-institutional-collective"
+    ],
+    "norm:musicology": [
+      "navigation-region:historical-cultural-interpretive"
+    ],
+    "norm:performance-studies": [
+      "navigation-region:historical-cultural-interpretive"
+    ],
+    "norm:science-technology-studies": [
+      "navigation-region:philosophical-conceptual",
+      "navigation-region:engineering-design",
+      "navigation-region:social-institutional-collective"
+    ],
+    "norm:urban-studies": [
+      "navigation-region:social-institutional-collective"
+    ]
+  },
+  "schemaVersion": 1,
+  "state": "BREADTH_EXPANSION_PAUSE_RECOMMENDED_OPEN_WORLD_REOPENABLE",
+  "tests": {
+    "allNineRealEdgesPlacedWithoutNewRegion": true,
+    "brokenRelationsExpected": 0,
+    "existingTenRegionAnchorsUnchanged": true,
+    "identityLabelCollisionsExpected": 0,
+    "newCoverageMappingsAuthorized": 0,
+    "newMajorRegionsRequired": 0
+  },
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_AUDIT"
+}
