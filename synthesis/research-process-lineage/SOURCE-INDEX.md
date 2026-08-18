@@ -67,6 +67,33 @@ Host:
 - `task:computational-applicability-staged-deletion-intent-resolution-20260818`
 - `task:ordivon-atlas-computing-special-topology-audit-20260818`
 
+## Episode 4 — Ordivon Media owner inversion / OMPC formation
+
+Atlas synthesis:
+
+- `synthesis/2026-08-18-19-media-reconstruction/README.md`
+- `synthesis/research-process-lineage/episodes/2026-08-18-19-media-owner-inversion-and-ompc-formation.md`
+
+Media owner source fence:
+
+- repository: `/root/projects/ordivon-media`
+- Phase-1 closeout main: `5b5dbb4145ca91b575e517b6d56fe119f0853a18`
+- `MEDIA.md` Git blob `36395e99437c3e68648eddbc91479e0df89abfc5`
+- `research/media/README.md` Git blob `0b1c1d9a69f9b190f9a771148ab517b3e0df4fb4`
+- `research/media/engineering-consumption/OMPC-v0.md` Git blob `f5836f6adf6f3d8df9d5fb872911eb11673e2191`
+- `research/media/engineering-consumption/OMPC-CONFORMANCE-v0.md` Git blob `272efdb783d192cdd02f28892ae87cd4f05ac49b`
+- `docs/media-phase1-construction-audit.md` Git blob `fd2ed4e19815d4ac5bb69cbeaf58c27bd35d4edb`
+
+Host:
+
+- `task:media-research-core-consolidation-branch-20260818` — rev3 completed
+- `task:media-research-materialization-repair-20260818` — rev3 completed
+- `task:ordivon-media-project-inception-m0-m1-20260818` — rev5 completed
+- `task:ordivon-media-m2-transformation-provenance-dogfood-20260818` — rev3 completed
+- `task:ordivon-media-m3-interaction-trajectory-dogfood-20260819` — rev3 completed
+- `task:ordivon-media-m4-conformance-corpus-finance-frontier-20260819` — rev3 completed
+- `task:ordivon-media-phase1-construction-audit-20260819` — rev3 completed
+
 ## Process-lineage requirement task
 
 - `task:ordivon-atlas-research-process-lineage-requirement-20260819`

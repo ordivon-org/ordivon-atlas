@@ -62,11 +62,12 @@ A destructive/engineering action may enter only when the decision procedure itse
 
 ## Current collection
 
-The first manual collection keeps three related 2026-08-18/19 episodes together:
+The manual collection currently keeps four high-value 2026-08-18/19 episodes:
 
 1. [`episodes/2026-08-18-19-research-understanding-and-anti-rediscovery.md`](episodes/2026-08-18-19-research-understanding-and-anti-rediscovery.md) — why cross-owner semantic compression and anti-rediscovery needed a durable Atlas synthesis layer rather than remaining conversation-only.
 2. [`episodes/2026-08-18-computing-whole-referent-search-a-f.md`](episodes/2026-08-18-computing-whole-referent-search-a-f.md) — how the provisional broad Computing / Programming-Systems umbrella was tested and decomposed into two independent semantic owner lines instead of being declared as a single owner from the start.
 3. [`episodes/2026-08-18-19-computational-possibility-formation-currentness-and-repair.md`](episodes/2026-08-18-19-computational-possibility-formation-currentness-and-repair.md) — how owner line T / Algorithmics / AlgF0 became current Computational Possibility, why zero Foundation survived, and how project formation, currentness repair, destructive testing, Git integration, artifact restoration, and Atlas admission completed the cycle.
+4. [`episodes/2026-08-18-19-media-owner-inversion-and-ompc-formation.md`](episodes/2026-08-18-19-media-owner-inversion-and-ompc-formation.md) — how Studio-first project intuition was inverted into Media ownership, why major candidate concepts remained Derived rather than MF10, how Web/Game boundaries were corrected, and how Host/Studio/Web/Finance dogfood formed OMPC before construction deliberately stopped.
 
 See [`LINEAGE-OVERVIEW.md`](LINEAGE-OVERVIEW.md) for the combined continuity and [`SOURCE-INDEX.md`](SOURCE-INDEX.md) for durable source pointers.
 
