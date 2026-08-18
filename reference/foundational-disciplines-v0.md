@@ -1,6 +1,6 @@
-# Foundational Disciplines Reference Map v0
+# Foundational Disciplines Seed Reference Map v0
 
-> Non-authoritative external exploration coordinates for Ordivon Atlas. This is not a World/Reality ontology and does not express Ordivon coverage yet.
+> Non-authoritative external exploration coordinates for Ordivon Atlas. The six displayed domains are Seed Wave 0 schema probes, not an exhaustive foundational-discipline inventory. This is not a World/Reality ontology and does not express Ordivon coverage yet.
 
 ## Mathematics
 
@@ -40,11 +40,12 @@
 
 ## Model status
 
-- Discipline roots: 6
+- Seed Wave 0 discipline roots currently materialized: 6
+- Foundational-domain census: OPEN / root count UNKNOWN
 - Canonical reference nodes: 93
 - Reference relations: 107
 - Cross-domain overlap spaces: 12
 - Ordivon crosswalks: 0 (deliberately not started)
 - Coverage assessments: 0 (deliberately not started)
-- Social/political wave: deferred
+- Next stage: broad foundational-domain census before social/political expansion
 

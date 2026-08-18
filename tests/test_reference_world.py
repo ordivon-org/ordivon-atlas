@@ -25,12 +25,15 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
         self.assertEqual(self.model["coverageAssessments"], [])
         self.assertIn("never DOES_NOT_EXIST", self.model["semantics"]["NOT_REPRESENTED"])
 
-    def test_exact_six_foundational_roots_and_social_wave_deferred(self) -> None:
+    def test_six_seed_roots_do_not_close_foundational_census(self) -> None:
         roots = {n["label"] for n in self.nodes if n["kind"] == "DISCIPLINE"}
         self.assertEqual(roots, {"Mathematics", "Philosophy", "Physics", "Biology", "Chemistry", "Engineering"})
-        deferred = set(self.model["scope"]["deferred"])
-        for label in ("Social sciences", "Economics", "Politics", "Law", "Institutions", "Culture"):
-            self.assertIn(label, deferred)
+        scope = self.model["scope"]
+        self.assertEqual(set(scope["seedWave0"]), roots)
+        self.assertEqual(scope["censusState"], "OPEN_NOT_EXHAUSTIVE")
+        self.assertEqual(scope["foundationalDomainCount"], "UNKNOWN_UNTIL_CENSUS")
+        self.assertIn("MUST NOT", scope["seedPurpose"])
+        self.assertNotIn("deferred", scope)
 
     def test_every_node_and_relation_is_source_qualified(self) -> None:
         for node in self.nodes:
@@ -71,6 +74,17 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
             self.assertIn(rel["toRef"], refs)
         self.assertGreaterEqual(len(self.nodes), 60)
         self.assertLessEqual(len(self.nodes), 150)
+
+    def test_foundational_census_is_open_and_strictly_broader_than_seed_wave(self) -> None:
+        census = json.loads((ROOT / "reference/foundational-domain-census-v0.json").read_text())
+        self.assertEqual(census["state"], "OPEN_NOT_EXHAUSTIVE")
+        self.assertEqual(census["rootCount"], "UNKNOWN")
+        candidates = {c for family in census["families"] for c in family["candidates"]}
+        self.assertGreater(len(candidates), 30)
+        for expected in ("Astronomy and astrophysics", "Earth science / geoscience", "Atmospheric science and meteorology", "Oceanography", "Linguistics", "Cognitive science", "Statistics and probability"):
+            self.assertIn(expected, candidates)
+        self.assertEqual(census["admissionPolicy"]["censusClosure"], "NOT_ALLOWED_IN_V0")
+
 
 
 if __name__ == "__main__":

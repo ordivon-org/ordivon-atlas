@@ -17,6 +17,13 @@
       "repairId": "repair:reference-v0:cross-domain-identity-dedup",
       "semanticEffect": "No external claim was deleted; source evidence was merged into the canonical overlap identity.",
       "status": "APPLIED"
+    },
+    {
+      "forbiddenInference": "Exactly six foundational roots.",
+      "reason": "User clarified that Mathematics, Philosophy, Physics, Biology, Chemistry and Engineering were examples to start from, not an exhaustive list of foundational disciplines.",
+      "repairId": "repair:reference-v0:six-seeds-not-exhaustive",
+      "semanticEffect": "The six existing roots are reinterpreted as Seed Wave 0 probes. Foundational-domain census is OPEN and root count is explicitly UNKNOWN.",
+      "status": "APPLIED"
     }
   ],
   "nodes": [
@@ -2971,16 +2978,17 @@
   ],
   "schemaVersion": 1,
   "scope": {
+    "censusState": "OPEN_NOT_EXHAUSTIVE",
     "coverageCrosswalk": "NOT_STARTED",
-    "deferred": [
+    "foundationalDomainCount": "UNKNOWN_UNTIL_CENSUS",
+    "laterWaveExamples": [
       "Social sciences",
-      "Economics",
       "Politics",
       "Law",
-      "Institutions",
-      "Culture"
+      "Institutions"
     ],
-    "included": [
+    "seedPurpose": "Schema/dogfood probes only; these six MUST NOT be interpreted as the complete foundational-domain set.",
+    "seedWave0": [
       "Mathematics",
       "Philosophy",
       "Physics",
@@ -2990,9 +2998,11 @@
     ]
   },
   "semantics": {
+    "FOUNDATIONAL_CENSUS_OPEN": "The foundational-domain inventory is intentionally incomplete; new domains may be added without treating prior absence as a contradiction.",
     "NOT_REPRESENTED": "Means absent from current reference sources/model, never DOES_NOT_EXIST.",
     "OVERLAPS_DOMAIN": "Reference synthesis indicating multi-domain placement; non-exclusive and non-authoritative.",
     "REFERENCE_NODE": "External coordinate-space concept only; does not mint Ordivon owner truth.",
+    "SEED_DISCIPLINE": "A provisional reference root admitted for schema dogfood; seed membership does not imply exhaustiveness or privileged ontological fundamentality.",
     "SUBCLASS_OF": "Reserved for source evidence with explicit subclass semantics such as Wikidata P279; unused in v0 topic imports.",
     "TOPICAL_MEMBER_OF": "Weak topical placement from an outline/list; MUST NOT be interpreted as Wikidata P279/subclass-of."
   },

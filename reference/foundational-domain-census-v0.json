@@ -1,0 +1,168 @@
+{
+  "admissionPolicy": {
+    "candidateToReferenceRoot": "REQUIRES_MULTI_SOURCE_REVIEW_AND_GRAPH_DOGFOOD",
+    "censusClosure": "NOT_ALLOWED_IN_V0"
+  },
+  "censusId": "foundational-census:v0-open",
+  "deliberatelyLaterFamilies": [
+    "Sociology",
+    "Economics as social institution/system",
+    "Political science",
+    "Law",
+    "Public administration",
+    "Governance and institutions",
+    "International relations"
+  ],
+  "families": [
+    {
+      "candidates": [
+        "Mathematics",
+        "Statistics and probability",
+        "Logic",
+        "Computation and theoretical computer science",
+        "Information theory",
+        "Systems and dynamical theory"
+      ],
+      "familyRef": "family:formal-abstract",
+      "label": "Formal and abstract foundations"
+    },
+    {
+      "candidates": [
+        "Physics",
+        "Astronomy and astrophysics",
+        "Cosmology",
+        "Chemistry",
+        "Materials science",
+        "Planetary science"
+      ],
+      "familyRef": "family:physical-universe",
+      "label": "Physical universe and matter"
+    },
+    {
+      "candidates": [
+        "Earth science / geoscience",
+        "Geology",
+        "Geophysics",
+        "Geochemistry",
+        "Atmospheric science and meteorology",
+        "Oceanography",
+        "Physical geography",
+        "Climate science"
+      ],
+      "familyRef": "family:earth-environment",
+      "label": "Earth, ocean and atmosphere"
+    },
+    {
+      "candidates": [
+        "Biology",
+        "Molecular biology",
+        "Biochemistry",
+        "Genetics and genomics",
+        "Evolutionary biology",
+        "Ecology",
+        "Microbiology",
+        "Developmental biology",
+        "Physiology",
+        "Neuroscience"
+      ],
+      "familyRef": "family:life",
+      "label": "Life and biological organization"
+    },
+    {
+      "candidates": [
+        "Philosophy",
+        "Linguistics",
+        "Cognitive science",
+        "Psychology",
+        "Philosophy of mind and cognition"
+      ],
+      "familyRef": "family:mind-language",
+      "label": "Mind, cognition and language"
+    },
+    {
+      "candidates": [
+        "Engineering science",
+        "Mechanical engineering",
+        "Electrical and electronic engineering",
+        "Civil and structural engineering",
+        "Chemical engineering",
+        "Materials engineering",
+        "Computer engineering",
+        "Software engineering",
+        "Systems engineering",
+        "Control engineering",
+        "Bioengineering",
+        "Environmental engineering",
+        "Energy engineering"
+      ],
+      "familyRef": "family:engineering-design",
+      "label": "Engineering, design and intervention"
+    },
+    {
+      "candidates": [
+        "History",
+        "Philology",
+        "Classics",
+        "Religious studies",
+        "Aesthetics and art theory"
+      ],
+      "familyRef": "family:humanities-foundations",
+      "label": "Humanities and historical-symbolic foundations",
+      "status": "BOUNDARY_CANDIDATE_REQUIRES_CENSUS"
+    },
+    {
+      "candidates": [
+        "Basic biomedical sciences",
+        "Medicine and health sciences",
+        "Agricultural science",
+        "Food science"
+      ],
+      "familyRef": "family:biomedical-agricultural-boundary",
+      "label": "Biomedical and agricultural boundary fields",
+      "status": "BOUNDARY_CANDIDATE_REQUIRES_CENSUS"
+    }
+  ],
+  "kind": "ordivon.foundational-knowledge-space-census",
+  "principles": [
+    "Do not equate official education/R&D taxonomies with an ontology of knowledge.",
+    "Preserve disciplines, bridge fields and level-of-analysis spaces separately.",
+    "A candidate may overlap multiple families.",
+    "FOUNDATIONAL_CANDIDATE is provisional, not a claim of metaphysical fundamentality.",
+    "Later social/political expansion is deferred, but boundary candidates may be recorded now to avoid false closure."
+  ],
+  "purpose": "Discover candidate foundational knowledge domains before deeper Atlas cartography. Candidate presence is not root admission; candidate absence is not exclusion.",
+  "rootCount": "UNKNOWN",
+  "schemaVersion": 1,
+  "seedWave0": [
+    "Mathematics",
+    "Philosophy",
+    "Physics",
+    "Biology",
+    "Chemistry",
+    "Engineering science"
+  ],
+  "sourceFrameworks": [
+    {
+      "note": "UNESCO basic-sciences program foregrounds mathematics, physics, chemistry, biology and engineering; useful but intentionally narrower than this census.",
+      "ref": "source:unesco:basic-sciences",
+      "role": "ONE_POLICY_VIEW"
+    },
+    {
+      "note": "UNESCO science-and-technology field list explicitly includes astronomy, computer sciences, geology, geophysics, mathematics, meteorology, physical geography and other natural-science fields.",
+      "ref": "source:unesco:science-technology-fields-1978",
+      "role": "BROAD_SCIENCE_FIELD_VIEW"
+    },
+    {
+      "note": "FORD separates broad R&D fields such as natural sciences, engineering and technology, medical/health, agricultural/veterinary, social sciences and humanities/arts.",
+      "ref": "source:oecd:ford",
+      "role": "R_AND_D_CLASSIFICATION_VIEW"
+    },
+    {
+      "note": "ISCED-F classifies education/study fields; used as another external partition, not as semantic authority.",
+      "ref": "source:unesco:isced-f-2013",
+      "role": "EDUCATION_FIELD_VIEW"
+    }
+  ],
+  "state": "OPEN_NOT_EXHAUSTIVE",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_CENSUS"
+}

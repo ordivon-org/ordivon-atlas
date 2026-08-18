@@ -2,8 +2,11 @@
   "classification": {
     "coverageNotInvented": true,
     "crossDomainIdentityCanonicalized": true,
+    "foundationalCensus": "OPEN_NOT_EXHAUSTIVE",
     "nonAuthoritative": true,
     "openWorld": true,
+    "rootCount": "UNKNOWN",
+    "sixRootsExhaustive": false,
     "strictSingleTreeRejected": true,
     "wikipediaOutlineDoesNotMintSubclass": true
   },
@@ -18,7 +21,7 @@
     "Wikidata item-level QID enrichment for all nodes",
     "Ordivon owner/ResearchRef crosswalk",
     "coverage/depth scoring",
-    "social sciences/economics/politics/law/institutions/culture"
+    "Social/political/legal/institutional expansion until broad foundational census and crosswalk dogfood mature"
   ],
   "kind": "ordivon.external-reference-model-foundational-v0-acceptance-evidence",
   "model": "reference/foundational-disciplines-v0.json",
@@ -27,11 +30,17 @@
     "failure": "Five concepts existed both as single-domain subspaces and cross-domain overlap identities.",
     "initialDuplicateIdentityFailureJob": "job-01a01587-89e8-7703-846b-b90944e8f970",
     "repair": "Merged source evidence into one canonical multi-domain identity; removed duplicate refs without deleting source evidence.",
-    "repairJob": "job-01a01587-e5eb-78d0-ae41-0cf33ecf07fc"
+    "repairJob": "job-01a01587-e5eb-78d0-ae41-0cf33ecf07fc",
+    "sixSeedClosureBug": {
+      "failure": "Initial implementation/test encoded exactly six foundational roots, over-interpreting user examples as an exhaustive domain set.",
+      "repair": "Reclassified the six domains as Seed Wave 0 only; added an open foundational census with 57 candidate mentions across 8 provisional families; root count UNKNOWN and census closure forbidden in v0.",
+      "result": "8/8 reference tests PASS",
+      "verificationJob": "job-01a01597-07b6-7092-84a5-cd705e15ba23"
+    }
   },
   "nonAuthorityNotice": "External reference nodes are coordinates for exploration comparison only. They cannot admit, supersede, withdraw or reopen Ordivon research truth.",
   "schemaVersion": 1,
-  "scope": "Mathematics, Philosophy, Physics, Biology, Chemistry, Engineering external exploration reference skeleton only",
+  "scope": "Seed Wave 0 reference skeleton plus OPEN foundational-domain census; Mathematics, Philosophy, Physics, Biology, Chemistry and Engineering are probes, not exhaustive roots.",
   "sourcePolicy": {
     "Wikidata": "relation-semantics substrate; P31/P279/P361 distinctions preserved",
     "WikipediaOutlines": "bounded topical-space evidence imported as weak TOPICAL_MEMBER_OF, never automatic SUBCLASS_OF"

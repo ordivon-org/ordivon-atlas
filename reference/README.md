@@ -6,7 +6,7 @@ It is not the World / Reality research owner, not an Ordivon ontology of reality
 
 ## v0 foundational disciplines
 
-`foundational-disciplines-v0.json` starts with Mathematics, Philosophy, Physics, Biology, Chemistry and Engineering. The model is intentionally bounded and open-world.
+`foundational-disciplines-v0.json` starts with a **Seed Wave 0** of Mathematics, Philosophy, Physics, Biology, Chemistry and Engineering. These six were chosen to stress-test the schema; they are **not** the complete set of foundational disciplines. The foundational-domain census remains explicitly open and its eventual root count is unknown. The model is intentionally bounded and open-world.
 
 ### Relation discipline
 
@@ -21,4 +21,4 @@ The reference model may later receive `ORDIVON_CROSSWALK` and `COVERAGE_ASSESSME
 
 ### Deferred
 
-Social sciences, economics, politics, law, institutions and culture are intentionally deferred until this six-domain schema survives destructive dogfood.
+Social/political/institutional expansion remains later. Before that expansion, Atlas must first conduct a broad **Foundational Knowledge Space Census** rather than deepening only the original six seeds.
