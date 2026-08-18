@@ -1,0 +1,192 @@
+{
+  "atlasSource": {
+    "mainRevision": "e5c9c2b4c09f6f906496fdcf31d01747398e16db",
+    "refreshJobId": "job-01a015f6-e769-7fc1-90d7-65eca1f32daa",
+    "refreshResult": "fullyCurrent=true; owners=7; unhealthy=0",
+    "repo": "/root/projects/ordivon-atlas"
+  },
+  "date": "2026-08-19",
+  "excludedCurrentnessCases": [
+    {
+      "owner": "Semantics of Computational Descriptions",
+      "reason": "Separate SCD publication/currentness task remains open; internal-lens use does not authorize coverage counting.",
+      "status": "NOT_IN_CURRENT_7_OWNER_ATLAS_SOURCE_REGISTRY"
+    },
+    {
+      "owner": "Human",
+      "reason": "Known research exists but is not part of this current owner-authority snapshot; excluded from bounded pilot rather than guessed.",
+      "status": "NOT_IN_CURRENT_7_OWNER_ATLAS_SOURCE_REGISTRY"
+    },
+    {
+      "owner": "Finance",
+      "reason": "Excluded from bounded pilot current-owner snapshot.",
+      "status": "NOT_IN_CURRENT_7_OWNER_ATLAS_SOURCE_REGISTRY"
+    },
+    {
+      "owner": "Media",
+      "reason": "Excluded from bounded pilot current-owner snapshot.",
+      "status": "NOT_IN_CURRENT_7_OWNER_ATLAS_SOURCE_REGISTRY"
+    },
+    {
+      "owner": "Harness",
+      "reason": "Excluded from bounded pilot current-owner snapshot.",
+      "status": "NOT_IN_CURRENT_7_OWNER_ATLAS_SOURCE_REGISTRY"
+    }
+  ],
+  "kind": "ordivon.coverage-crosswalk-owner-authority-snapshot",
+  "owners": [
+    {
+      "authorityVersionRef": "sha256:dbdbb759b2b86b898a343cbb81646b283c589676989e919537f1a6cbc2b1df91",
+      "closureFacts": [
+        "NDF0-NDF5=ESTABLISHED",
+        "WHOLE_DOMAIN_EXHAUSTIVE=NOT_CLAIMED"
+      ],
+      "negativeHistoryCount": 3,
+      "ownerResearchRef": "research-owner:network",
+      "recoveryDigest": "sha256:8d66c0e2c36e07a96257af4c8bed3e890c055cb7bad8ffd24499bd3682159ee8",
+      "recoveryLocator": "owners/network/README.md",
+      "resultRefs": [
+        "result:network:ndf0-ndf5-current-frozen",
+        "result:network:ndf6-not-admitted",
+        "result:network:whole-domain-exhaustive-closure-not-established"
+      ],
+      "sourceTransportRevision": "aae7e71ea8aa13624d69ab94ad165dac744b2ad4"
+    },
+    {
+      "authorityVersionRef": "sha256:9c67d1b4094ce85a2465579430bb1a941f1923457087fb74cde0642d7b9a51b3",
+      "closureFacts": [
+        "RF0-RF16=ESTABLISHED",
+        "EF0-EF26=ESTABLISHED",
+        "RUNTIME_POST_FOUNDATION_PROGRAMME_C1_C10=ESTABLISHED",
+        "WHOLE_DOMAIN_EXHAUSTIVE=UNKNOWN"
+      ],
+      "negativeHistoryCount": 4,
+      "ownerResearchRef": "research-owner:runtime",
+      "recoveryDigest": "sha256:7d97a7f70f939f58a054fe82520aa6f8d8715567b44c2add27846c7a6b3ef12d",
+      "recoveryLocator": "research/README.md",
+      "resultRefs": [
+        "result:runtime:architecture-current-interface",
+        "result:runtime:rf0-rf16-frozen",
+        "result:runtime:ef0-ef26-frozen",
+        "result:runtime:operational-realization-programme-c1-c10-saturated",
+        "result:runtime:whole-domain-exhaustive-closure-unknown"
+      ],
+      "sourceTransportRevision": "256ef6d0080de38c028a70e27cbaa08e0f817edb"
+    },
+    {
+      "authorityVersionRef": "sha256:4fc9dee669927882337649d19c144d0938ecf3307c461bffd84eedb8fdc27df4",
+      "closureFacts": [
+        "HDF0-HDF43=ESTABLISHED",
+        "PRIMITIVE_UNIVERSAL_CENTRAL_HOST=FALSIFIED",
+        "GENERIC_COORDINATION_INDEPENDENT_OWNER=FALSIFIED"
+      ],
+      "negativeHistoryCount": 4,
+      "ownerResearchRef": "research-owner:host",
+      "recoveryDigest": "sha256:d71b2ad783b06f7d7d79542aab4a3199cc37f5ad9bce55166a8d05157616cad7",
+      "recoveryLocator": "research/README.md",
+      "resultRefs": [
+        "result:host:owner-boundary-current",
+        "result:host:hdf0-hdf43-current-frozen",
+        "result:host:primitive-universal-host-falsified",
+        "result:host:generic-coordination-owner-not-admitted"
+      ],
+      "sourceTransportRevision": "0439cef8c4361e509fe5219b9b726257e7033aab"
+    },
+    {
+      "authorityVersionRef": "sha256:b0e16e2cd6fe40685d7b96f94d78ef89bd55ed7f92db4de1408e33d2539bb2f0",
+      "closureFacts": [
+        "GDF0-GDF3=ESTABLISHED",
+        "ABSOLUTE_WHOLE_GAME=NOT_CLAIMED"
+      ],
+      "negativeHistoryCount": 5,
+      "ownerResearchRef": "research-owner:game",
+      "recoveryDigest": "sha256:c2702e5151a3a996f5bdafd6d20da44a6afdc964bb5a3d12f5733a27ba895b25",
+      "recoveryLocator": "research/README.md",
+      "resultRefs": [
+        "result:game:gdf0-gdf3-current-frozen",
+        "result:game:gdf4-not-admitted",
+        "result:game:gdf3-authoritative-case-determination-current",
+        "result:game:absolute-whole-game-closure-not-claimed"
+      ],
+      "sourceTransportRevision": "eb2013e13e9e3e5e50e7e93627fff00293335530"
+    },
+    {
+      "authorityVersionRef": "sha256:76f3ebc35cc72a67e65cacbcb899d8ccf0919059577c97191c85dc9aed9ede8f",
+      "closureFacts": [
+        "WDF0_META_FOUNDATION=ESTABLISHED",
+        "WDF1_MODAL_FOUNDATION=ESTABLISHED",
+        "WDF4_CAUSAL_LOCAL_FOUNDATION=ESTABLISHED",
+        "WDF5_PROPERTY_EVALUATION_LOCAL_FOUNDATION=ESTABLISHED",
+        "TSAF0_TEMPORAL_STRUCTURE_LOCAL_FOUNDATION=ESTABLISHED",
+        "WHOLE_WORLD=NOT_ESTABLISHED"
+      ],
+      "negativeHistoryCount": 6,
+      "ownerResearchRef": "research-owner:world",
+      "recoveryDigest": "sha256:24f8d8c89fd31d65b157848bb08228ea2e3d4dbabf686fe226a55e2d977880b2",
+      "recoveryLocator": "docs/research/world/README.md",
+      "resultRefs": [
+        "result:world:wdf0-meta-foundation-current-frozen",
+        "result:world:wdf1-modal-foundation-current-frozen",
+        "result:world:wdf4-causal-reality-current-frozen",
+        "result:world:wdf5-property-evaluation-current-frozen",
+        "result:world:tsaf0-temporal-structure-current-frozen",
+        "result:world:wdf2-counterfactual-deep-history-nonfoundation",
+        "result:world:wdf3-categorial-deep-history-nonfoundation",
+        "result:world:whole-world-closure-not-established"
+      ],
+      "sourceTransportRevision": "59ca305f144ac3f4dde6109418c31986716c1f45"
+    },
+    {
+      "authorityVersionRef": "sha256:91fe75c4827585487a5aadb8c55816b6628cda314bdbb79bdbe2554246a7b579",
+      "closureFacts": [
+        "CURRENT_OWNER_BOUNDARY=ESTABLISHED",
+        "FOUNDATION_LEVEL_ARCHITECTURE=ESTABLISHED",
+        "FORMAL_CORE_REFERENCE_CONTRACT_V1=ESTABLISHED",
+        "WHOLE_DOMAIN_EXHAUSTIVE=NOT_CLAIMED",
+        "NUMBERED_FOUNDATION_SERIES=NOT_ADMITTED"
+      ],
+      "negativeHistoryCount": 5,
+      "ownerResearchRef": "research-owner:ordivon-normative",
+      "recoveryDigest": "sha256:722fef6459f3def1eae0656a7732fdcdb60e8fa3541745149c458ab1b2538902",
+      "recoveryLocator": "owners/ordivon-normative/README.md",
+      "resultRefs": [
+        "result:normative:owner-boundary-current",
+        "result:normative:anchor-interface-current-frozen",
+        "result:normative:generator-admission-structure-current-frozen",
+        "result:normative:derivation-transition-semantics-current-frozen",
+        "result:normative:formal-core-reference-contract-v1",
+        "result:normative:three-intervention-loci-v1",
+        "result:normative:multicontext-bridge-contract-v1",
+        "result:normative:game-dogfood-pass",
+        "result:normative:harness-agent-dogfood-pass",
+        "result:normative:phase-ii-project-constitution-current"
+      ],
+      "sourceTransportRevision": "aae7e71ea8aa13624d69ab94ad165dac744b2ad4"
+    },
+    {
+      "authorityVersionRef": "sha256:5e12e043b14b57894cc0fffa85ed23821c36d491868c38555a0072cff4e263f9",
+      "closureFacts": [
+        "PROJECT_FORMATION_V0_1=COMPLETE",
+        "WHOLE_CP_ARCHITECTURE=ESTABLISHED_LOCAL",
+        "MATHEMATICAL_EXHAUSTION=NOT_CLAIMED",
+        "NUMBERED_FOUNDATION_COUNT=ZERO"
+      ],
+      "negativeHistoryCount": 6,
+      "ownerResearchRef": "research-owner:computational-possibility",
+      "recoveryDigest": "sha256:eca83b27689a5318d53e273a816cb9e951decf7485a3b9e077fb97b0c8fe27e0",
+      "recoveryLocator": "research/core/computational-possibility/README.md",
+      "resultRefs": [
+        "result:computational-possibility:owner-boundary-current",
+        "result:computational-possibility:zero-numbered-foundations",
+        "result:computational-possibility:eight-axis-current-architecture",
+        "result:computational-possibility:whole-owner-architectural-saturation",
+        "result:computational-possibility:algf0-historical-superseded",
+        "result:computational-possibility:proof-search-round1-partial",
+        "result:computational-possibility:applicability-subsystem-current"
+      ],
+      "sourceTransportRevision": "ad1bd73d91fa1a2d2a59cac4726b74ac171c457d"
+    }
+  ],
+  "schemaVersion": 1,
+  "truthRole": "SOURCE_FENCED_OWNER_AUTHORITY_INPUT"
+}

@@ -1,0 +1,75 @@
+{
+  "closure": "BOUNDED_IDENTITY_LEVEL_CROSSWALK_V0_2_ACCEPTED_GLOBAL_SCALAR_FORBIDDEN",
+  "contract": "reference/coverage-crosswalk-contract-v0-20260819.json",
+  "controls": [
+    "Coverage truth attaches to source-fenced Owner/ResearchRef↔ReferenceIdentity mappings, not MajorRegion projections.",
+    "Region member coverage never transfers to region-level truth.",
+    "No global scalar percentage is admitted.",
+    "Adjacency is not coverage.",
+    "Excluded SCD/Human/Finance/Media/Harness owners are not classified untouched.",
+    "Network maps directly to Networking & Communication after external repair; Information Theory adjacency is not substituted.",
+    "Runtime maps at bridge level to Systems Fundamentals/Operating Systems without whole-field coverage claims.",
+    "World maps to bounded Metaphysics and Philosophy-of-Science structures, not Physics or all Philosophy.",
+    "Normative maps as bridge into Ethics/Value Theory while retaining narrower owner scope.",
+    "Host is EXTERNAL_MAPPING_WEAK / NOVELTY_NOT_ESTABLISHED; no novelty claim is minted."
+  ],
+  "counts": {
+    "excludedCurrentOwnerCases": 5,
+    "explicitUntouchedPilotCandidates": 9,
+    "gapDispositions": 5,
+    "identityMappings": 9,
+    "ownerAuthorityInputs": 7,
+    "regionViews": 8
+  },
+  "date": "2026-08-19",
+  "findings": [
+    {
+      "claim": "The pilot successfully falsified and repaired external-reference granularity without allowing Ordivon owner theory to mint external identities.",
+      "id": "CWP2-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Network now has direct bounded mapping to Networking and Communication; the prior generic Computation/Information adjacency is no longer used as a substitute.",
+      "id": "CWP2-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Runtime has bridge-level mapping to Computer Systems Fundamentals and Operating Systems, but whole-field computing-systems coverage remains explicitly unclaimed.",
+      "id": "CWP2-3",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "World maps directly to a bounded Metaphysics subspace and bridges Philosophy of Science; Normative bridges Ethics & Value Theory. The new Philosophy region removes the prior Mind-region navigation false positive.",
+      "id": "CWP2-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The current seven-owner pilot still has no direct mapping to Physics, Chemistry, Earth/Planetary, Biology, Genetics, Cognitive Science, Psychology or Linguistics; excluded unpublished owners prevent interpreting that as whole-Ordivon absence.",
+      "id": "CWP2-6",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Host is currently EXTERNAL_MAPPING_WEAK and ORDIVON_NOVEL_STRUCTURE is NOT ESTABLISHED: external PDC/Systems/Information-Systems spaces are adjacent but do not yet provide a direct identity match to durable Task continuity semantics.",
+      "id": "CWP2-5",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.foundational-coverage-crosswalk-v0-2-acceptance",
+  "ownerAuthoritySnapshot": "reference/coverage-crosswalk-owner-authority-snapshot-20260819.json",
+  "pilot": "reference/coverage-crosswalk-foundational-pilot-v0-2-20260819.json",
+  "schemaVersion": 1,
+  "sourceFence": {
+    "atlasMainRevision": "e5c9c2b4c09f6f906496fdcf31d01747398e16db",
+    "ownerCount": 7,
+    "refreshJobId": "job-01a015f6-e769-7fc1-90d7-65eca1f32daa",
+    "refreshResult": "fullyCurrent=true; owners=7; unhealthy=0"
+  },
+  "state": "CROSSWALK_PILOT_REPAIRED_AFTER_EXTERNAL_REFERENCE_FALSIFICATION",
+  "truthRole": "HISTORICAL_CROSSWALK_DOGFOOD_EVIDENCE",
+  "verification": {
+    "fullDeterministicSuiteJob": "job-01a01600-d323-72a0-90af-9744bacae890",
+    "fullDeterministicSuiteResult": "103 tests OK; 28 pre-existing gated tests skipped; 75 deterministic tests executed.",
+    "referenceSuiteJob": "job-01a01600-a88c-7c83-8b42-c30a1ddea800",
+    "referenceSuiteResult": "66/66 PASS"
+  }
+}

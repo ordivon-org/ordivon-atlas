@@ -1,0 +1,606 @@
+{
+  "contractRef": "reference/coverage-crosswalk-contract-v0-20260819.json",
+  "explicitUntouchedIdentityCandidates": [
+    {
+      "externalRef": "norm:physics",
+      "status": "NO_DIRECT_MAPPING_IN_CURRENT_7_OWNER_PILOT"
+    },
+    {
+      "externalRef": "norm:chemistry",
+      "status": "NO_DIRECT_MAPPING_IN_CURRENT_7_OWNER_PILOT"
+    },
+    {
+      "externalRef": "norm:earth-science",
+      "status": "NO_DIRECT_MAPPING_IN_CURRENT_7_OWNER_PILOT"
+    },
+    {
+      "externalRef": "norm:planetary-science",
+      "status": "NO_DIRECT_MAPPING_IN_CURRENT_7_OWNER_PILOT"
+    },
+    {
+      "externalRef": "norm:biology",
+      "status": "NO_DIRECT_MAPPING_IN_CURRENT_7_OWNER_PILOT"
+    },
+    {
+      "externalRef": "norm:genetics",
+      "status": "NO_DIRECT_MAPPING_IN_CURRENT_7_OWNER_PILOT"
+    },
+    {
+      "externalRef": "norm:cognitive-science",
+      "status": "NO_DIRECT_MAPPING_IN_CURRENT_7_OWNER_PILOT"
+    },
+    {
+      "externalRef": "norm:psychology",
+      "status": "NO_DIRECT_MAPPING_IN_CURRENT_7_OWNER_PILOT"
+    },
+    {
+      "externalRef": "norm:linguistics",
+      "status": "NO_DIRECT_MAPPING_IN_CURRENT_7_OWNER_PILOT"
+    }
+  ],
+  "findings": [
+    {
+      "claim": "The pilot successfully falsified and repaired external-reference granularity without allowing Ordivon owner theory to mint external identities.",
+      "id": "CWP2-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Network now has direct bounded mapping to Networking and Communication; the prior generic Computation/Information adjacency is no longer used as a substitute.",
+      "id": "CWP2-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Runtime has bridge-level mapping to Computer Systems Fundamentals and Operating Systems, but whole-field computing-systems coverage remains explicitly unclaimed.",
+      "id": "CWP2-3",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "World maps directly to a bounded Metaphysics subspace and bridges Philosophy of Science; Normative bridges Ethics & Value Theory. The new Philosophy region removes the prior Mind-region navigation false positive.",
+      "id": "CWP2-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The current seven-owner pilot still has no direct mapping to Physics, Chemistry, Earth/Planetary, Biology, Genetics, Cognitive Science, Psychology or Linguistics; excluded unpublished owners prevent interpreting that as whole-Ordivon absence.",
+      "id": "CWP2-6",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Host is currently EXTERNAL_MAPPING_WEAK and ORDIVON_NOVEL_STRUCTURE is NOT ESTABLISHED: external PDC/Systems/Information-Systems spaces are adjacent but do not yet provide a direct identity match to durable Task continuity semantics.",
+      "id": "CWP2-5",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "gapDispositions": [
+    {
+      "currentStatus": "RESOLVED_IN_V0_2",
+      "gapRef": "gap:philosophy-major-region",
+      "previousStatus": "NAVIGATION_REGION_GAP_CANDIDATE",
+      "repairRefs": [
+        "navigation-region:philosophical-conceptual",
+        "norm:metaphysics",
+        "norm:epistemology",
+        "norm:ethics-value-theory",
+        "norm:philosophy-of-science",
+        "norm:philosophy-of-language"
+      ]
+    },
+    {
+      "currentStatus": "PARTIALLY_RESOLVED_IN_V0_2",
+      "gapRef": "gap:networking-distributed-systems",
+      "previousStatus": "REFERENCE_IDENTITY_GAP_CANDIDATE",
+      "repairRefs": [
+        "norm:networking-communication",
+        "norm:parallel-distributed-computing",
+        "norm:systems-fundamentals"
+      ]
+    },
+    {
+      "currentStatus": "PARTIALLY_RESOLVED_IN_V0_2",
+      "gapRef": "gap:runtime-programming-systems",
+      "previousStatus": "REFERENCE_IDENTITY_GAP_CANDIDATE",
+      "repairRefs": [
+        "norm:operating-systems",
+        "norm:systems-fundamentals",
+        "norm:foundations-programming-languages"
+      ]
+    },
+    {
+      "currentStatus": "EXTERNAL_MAPPING_WEAK_NOVELTY_NOT_ESTABLISHED",
+      "gapRef": "gap:coordination-workflow-systems",
+      "previousStatus": "REFERENCE_IDENTITY_OR_NOVELTY_AMBIGUITY",
+      "reason": "External computing/information-systems sources expose adjacent coordination, parallel/distributed execution, workflow, business-continuity and information-persistence spaces, but none yet matches Host durable Task continuity/revision-fencing/bounded-handoff semantics closely enough for direct coverage. Host has also falsified generic coordination ownership. Preserve weak mapping; do not mint novelty."
+    },
+    {
+      "currentStatus": "PARTIALLY_RESOLVED_IN_V0_2",
+      "gapRef": "gap:normative-philosophy-granularity",
+      "previousStatus": "REFERENCE_IDENTITY_GRANULARITY_GAP_CANDIDATE",
+      "reason": "Ethics/value theory is a better bridge, but constitutive/normative semantics remains narrower and partially orthogonal.",
+      "repairRefs": [
+        "norm:ethics-value-theory"
+      ]
+    }
+  ],
+  "globalScalarCoverage": "FORBIDDEN",
+  "kind": "ordivon.external-reference-coverage-crosswalk-pilot",
+  "majorRegionRef": "reference/canonical-major-regions-v0-2-20260819.json",
+  "mappings": [
+    {
+      "basisResultRefs": [
+        "result:computational-possibility:owner-boundary-current",
+        "result:computational-possibility:eight-axis-current-architecture",
+        "result:computational-possibility:whole-owner-architectural-saturation",
+        "result:computational-possibility:algf0-historical-superseded",
+        "result:computational-possibility:applicability-subsystem-current"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_ARCHITECTURAL_SATURATION",
+        "ConceptualDepth": "CORE_ARCHITECTURE",
+        "CrossDomainDepth": "BRIDGE_STRUCTURE_EXPLICIT",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "SPECIALIST_FALSIFICATION_PROGRAMME",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:computation",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP",
+        "LOCALLY_CLOSED"
+      ],
+      "mappingRef": "crosswalk:cp->computation",
+      "ownerResearchRef": "research-owner:computational-possibility",
+      "relation": "DIRECT_PARTIAL_COVERAGE",
+      "scope": "Formal regime-relative computational achievability, impossibility, witness/method existence, reductions/transfer, comparative power and abstract constraint/resource structure; does not claim all Computer Science or all computation research."
+    },
+    {
+      "basisResultRefs": [
+        "result:network:ndf0-ndf5-current-frozen",
+        "result:network:ndf6-not-admitted",
+        "result:network:whole-domain-exhaustive-closure-not-established"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ESTABLISHED",
+        "ConceptualDepth": "FOUNDATION_OR_EQUIVALENT_ARCHITECTURE",
+        "CrossDomainDepth": "OWNER_BOUNDARIES_EXPLICIT",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "REPAIR_OR_SUPERSESSION_LINEAGE",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:networking-communication",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP",
+        "LOCALLY_CLOSED"
+      ],
+      "mappingRef": "crosswalk:network->networking-communication",
+      "ownerResearchRef": "research-owner:network",
+      "relation": "DIRECT_PARTIAL_COVERAGE",
+      "scope": "Qualified cross-locus capability, composition/realization, structural interaction projection, service/satisfaction, reference-resolution and forwarding/reachability semantics. This overlaps the external Networking & Communication knowledge area but remains architecture-neutral and does not claim all networking research."
+    },
+    {
+      "basisResultRefs": [
+        "result:runtime:architecture-current-interface",
+        "result:runtime:rf0-rf16-frozen",
+        "result:runtime:ef0-ef26-frozen",
+        "result:runtime:operational-realization-programme-c1-c10-saturated"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ESTABLISHED",
+        "ConceptualDepth": "FOUNDATION_OR_EQUIVALENT_ARCHITECTURE",
+        "CrossDomainDepth": "OWNER_BOUNDARIES_EXPLICIT",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "REPAIR_OR_SUPERSESSION_LINEAGE",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:systems-fundamentals",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP",
+        "LOCALLY_CLOSED"
+      ],
+      "mappingRef": "crosswalk:runtime->systems-fundamentals",
+      "ownerResearchRef": "research-owner:runtime",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "Runtime research directly studies execution, resource/isolation, interaction/composition, failure/persistence/reconciliation, evidence/truth scope and lifecycle/standing structures that overlap computer-systems fundamentals. It does not claim the full external Systems Fundamentals field."
+    },
+    {
+      "basisResultRefs": [
+        "result:runtime:architecture-current-interface",
+        "result:runtime:rf0-rf16-frozen",
+        "result:runtime:ef0-ef26-frozen"
+      ],
+      "dimensions": {
+        "ClosureStrength": "WHOLE_EXTERNAL_FIELD_NOT_CLAIMED",
+        "ConceptualDepth": "DIRECT_BOUNDED_SUBSPACE",
+        "CrossDomainDepth": "OWNER_BOUNDARIES_EXPLICIT",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "REPAIR_OR_SUPERSESSION_LINEAGE",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:operating-systems",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP"
+      ],
+      "mappingRef": "crosswalk:runtime->operating-systems",
+      "ownerResearchRef": "research-owner:runtime",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "Runtime execution/resource/isolation/lifecycle semantics overlap OS concerns such as process/execution, resource management, protection/isolation and lifecycle, but Ordivon Runtime is not a general Operating Systems research programme."
+    },
+    {
+      "basisResultRefs": [
+        "result:world:wdf0-meta-foundation-current-frozen",
+        "result:world:wdf1-modal-foundation-current-frozen",
+        "result:world:wdf4-causal-reality-current-frozen",
+        "result:world:tsaf0-temporal-structure-current-frozen",
+        "result:world:wdf2-counterfactual-deep-history-nonfoundation",
+        "result:world:wdf3-categorial-deep-history-nonfoundation"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ESTABLISHED",
+        "ConceptualDepth": "FOUNDATION_OR_EQUIVALENT_ARCHITECTURE",
+        "CrossDomainDepth": "OWNER_BOUNDARIES_EXPLICIT",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "REPAIR_OR_SUPERSESSION_LINEAGE",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:metaphysics",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP",
+        "LOCALLY_CLOSED"
+      ],
+      "mappingRef": "crosswalk:world->metaphysics",
+      "ownerResearchRef": "research-owner:world",
+      "relation": "DIRECT_PARTIAL_COVERAGE",
+      "scope": "Reality/actuality, modality, causality, counterfactual/categorial structure and temporal/property semantics directly address a bounded metaphysical/reality subspace. World explicitly does not claim all Philosophy or a complete ontology of Reality."
+    },
+    {
+      "basisResultRefs": [
+        "result:world:wdf0-meta-foundation-current-frozen",
+        "result:world:wdf4-causal-reality-current-frozen",
+        "result:world:wdf5-property-evaluation-current-frozen"
+      ],
+      "dimensions": {
+        "ClosureStrength": "WHOLE_EXTERNAL_FIELD_NOT_CLAIMED",
+        "ConceptualDepth": "DIRECT_BOUNDED_SUBSPACE",
+        "CrossDomainDepth": "BRIDGE_STRUCTURE_EXPLICIT",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "REPAIR_OR_SUPERSESSION_LINEAGE",
+        "HistoricalDepth": "LINEAGE_PRESERVED"
+      },
+      "externalRef": "norm:philosophy-of-science",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED"
+      ],
+      "mappingRef": "crosswalk:world->philosophy-of-science",
+      "ownerResearchRef": "research-owner:world",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "Model/Reality firewalls, causal validation, property evaluation and evidence/claim structure overlap philosophy-of-science questions while remaining World-specific research semantics."
+    },
+    {
+      "basisResultRefs": [
+        "result:normative:owner-boundary-current",
+        "result:normative:anchor-interface-current-frozen",
+        "result:normative:generator-admission-structure-current-frozen",
+        "result:normative:derivation-transition-semantics-current-frozen",
+        "result:normative:formal-core-reference-contract-v1",
+        "result:normative:game-dogfood-pass",
+        "result:normative:harness-agent-dogfood-pass"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ESTABLISHED",
+        "ConceptualDepth": "FOUNDATION_OR_EQUIVALENT_ARCHITECTURE",
+        "CrossDomainDepth": "CROSS_OWNER_DOGFOOD",
+        "EvidenceDepth": "CURRENT_CROSS_DOMAIN_DOGFOOD",
+        "FalsificationDepth": "NEGATIVE_HISTORY",
+        "HistoricalDepth": "LINEAGE_PRESERVED"
+      },
+      "externalRef": "norm:ethics-value-theory",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP",
+        "LOCALLY_CLOSED"
+      ],
+      "mappingRef": "crosswalk:normative->ethics-value-theory",
+      "ownerResearchRef": "research-owner:ordivon-normative",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "Context-relative constitutive/normative admission, consequence, competence/power and valid transformation overlap normative philosophy. The owner explicitly rejects universal normativity, generic reasons/value and generic institutions/governance, so this is narrower than Ethics & Value Theory as a whole."
+    },
+    {
+      "adjacencySemantics": "ADJACENT_NOT_COVERAGE",
+      "adjacentExternalRefs": [
+        "norm:parallel-distributed-computing",
+        "norm:systems-fundamentals",
+        "norm:software-engineering",
+        "norm:information-science"
+      ],
+      "basisResultRefs": [
+        "result:host:owner-boundary-current",
+        "result:host:hdf0-hdf43-current-frozen",
+        "result:host:primitive-universal-host-falsified",
+        "result:host:generic-coordination-owner-not-admitted"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ESTABLISHED",
+        "ConceptualDepth": "FOUNDATION_OR_EQUIVALENT_ARCHITECTURE",
+        "CrossDomainDepth": "OWNER_BOUNDARIES_EXPLICIT",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "EXPLICIT_FALSIFIED_IN_SCOPE",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": null,
+      "facets": [
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP",
+        "LOCALLY_CLOSED"
+      ],
+      "gapCandidateLabels": [
+        "Workflow and task systems",
+        "Durable workflow / continuity systems",
+        "Coordination and provenance infrastructure"
+      ],
+      "mappingRef": "crosswalk:host->external-mapping-weak",
+      "ownerResearchRef": "research-owner:host",
+      "relation": "REFERENCE_MODEL_GAP_CANDIDATE",
+      "scope": "Durable Task continuity, Journal/CAS, revision/lease fencing, bounded handoff/inspection, opaque-extension durability and operational-integrity responsibilities still lack a clean external coordinate after computing-system repair. Parallel/distributed coordination is adjacent but does not equal Host Task continuity semantics."
+    },
+    {
+      "basisResultRefs": [
+        "result:game:gdf0-gdf3-current-frozen",
+        "result:game:gdf3-authoritative-case-determination-current",
+        "result:game:absolute-whole-game-closure-not-claimed"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ESTABLISHED",
+        "ConceptualDepth": "FOUNDATION_OR_EQUIVALENT_ARCHITECTURE",
+        "CrossDomainDepth": "OWNER_BOUNDARIES_EXPLICIT",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "REPAIR_OR_SUPERSESSION_LINEAGE",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": null,
+      "facets": [
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP",
+        "LOCALLY_CLOSED"
+      ],
+      "mappingRef": "crosswalk:game->out-of-foundational-pilot",
+      "ownerResearchRef": "research-owner:game",
+      "relation": "OUT_OF_FOUNDATIONAL_PILOT_SCOPE",
+      "scope": "Current Game semantic Foundations and practical/game-specific research are real/current, but the bounded foundational Reference World intentionally does not yet contain Game Studies/Game Design/Play as normalized external identities."
+    }
+  ],
+  "next": "Expand current owner authority surface (especially SCD/Human) and repeat identity-level crosswalk. Treat Host as external-mapping-weak until stronger external equivalence or irreducible novelty evidence appears. Social/political wave remains later.",
+  "nonCoverageCases": [
+    {
+      "case": "World metaphysics mapping does not count as Physics coverage",
+      "reason": "World explicitly rejects absorbing domain-specific physical mechanisms."
+    },
+    {
+      "case": "Network mapping to Networking and Communication does not count as Information Theory coverage",
+      "reason": "Generic Information Theory remains external to Network owner scope."
+    },
+    {
+      "case": "Runtime bridge coverage to Systems Fundamentals / Operating Systems does not count as whole-field OS or Software Engineering coverage",
+      "reason": "Runtime is an owner-specific execution/realization semantic project."
+    },
+    {
+      "case": "Philosophy of Mind appearing in both Philosophy and Mind regions does not transfer coverage between regions",
+      "reason": "Membership is non-exclusive navigation only."
+    },
+    {
+      "case": "Excluded Human/SCD/Finance/Media/Harness owners are not classified as untouched",
+      "reason": "They are absent from the current source-fenced seven-owner Atlas snapshot."
+    }
+  ],
+  "ownerSnapshotRef": "reference/coverage-crosswalk-owner-authority-snapshot-20260819.json",
+  "pilotId": "coverage-crosswalk:foundational-v0.2:2026-08-19",
+  "preservesHistory": true,
+  "referenceRepairRef": "reference/foundational-reference-round4a-crosswalk-induced-repair-20260819.json",
+  "regionCoverageViews": [
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:mathematics",
+        "norm:logic",
+        "norm:statistics"
+      ],
+      "label": "Formal & Inferential Structures",
+      "mappedMemberRefs": [],
+      "note": "Identity-level mappings only; no region coverage truth is minted.",
+      "regionRef": "navigation-region:formal-inferential",
+      "unmappedAnchorRefs": [
+        "norm:mathematics",
+        "norm:logic",
+        "norm:statistics"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:computation",
+        "norm:operating-systems",
+        "norm:networking-communication"
+      ],
+      "label": "Computation & Computer Systems",
+      "mappedMemberRefs": [
+        {
+          "externalRef": "norm:computation",
+          "mappingRefs": [
+            "crosswalk:cp->computation"
+          ]
+        },
+        {
+          "externalRef": "norm:operating-systems",
+          "mappingRefs": [
+            "crosswalk:runtime->operating-systems"
+          ]
+        },
+        {
+          "externalRef": "norm:networking-communication",
+          "mappingRefs": [
+            "crosswalk:network->networking-communication"
+          ]
+        },
+        {
+          "externalRef": "norm:systems-fundamentals",
+          "mappingRefs": [
+            "crosswalk:runtime->systems-fundamentals"
+          ]
+        }
+      ],
+      "note": "Identity-level mappings only; no region coverage truth is minted.",
+      "regionRef": "navigation-region:computation-computer-systems",
+      "unmappedAnchorRefs": []
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:philosophy",
+        "norm:metaphysics",
+        "norm:epistemology"
+      ],
+      "label": "Philosophical & Conceptual Inquiry",
+      "mappedMemberRefs": [
+        {
+          "externalRef": "norm:metaphysics",
+          "mappingRefs": [
+            "crosswalk:world->metaphysics"
+          ]
+        },
+        {
+          "externalRef": "norm:ethics-value-theory",
+          "mappingRefs": [
+            "crosswalk:normative->ethics-value-theory"
+          ]
+        },
+        {
+          "externalRef": "norm:philosophy-of-science",
+          "mappingRefs": [
+            "crosswalk:world->philosophy-of-science"
+          ]
+        }
+      ],
+      "note": "Identity-level mappings only; no region coverage truth is minted.",
+      "regionRef": "navigation-region:philosophical-conceptual",
+      "unmappedAnchorRefs": [
+        "norm:philosophy",
+        "norm:epistemology"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:physics",
+        "norm:chemistry",
+        "norm:materials"
+      ],
+      "label": "Physical & Material",
+      "mappedMemberRefs": [],
+      "note": "Identity-level mappings only; no region coverage truth is minted.",
+      "regionRef": "navigation-region:physical-material",
+      "unmappedAnchorRefs": [
+        "norm:physics",
+        "norm:chemistry",
+        "norm:materials"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:earth-science",
+        "norm:planetary-science",
+        "norm:astronomy"
+      ],
+      "label": "Earth, Planetary & Space Systems",
+      "mappedMemberRefs": [],
+      "note": "Identity-level mappings only; no region coverage truth is minted.",
+      "regionRef": "navigation-region:earth-planetary-space",
+      "unmappedAnchorRefs": [
+        "norm:earth-science",
+        "norm:planetary-science",
+        "norm:astronomy"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:biology",
+        "norm:genetics",
+        "norm:ecology"
+      ],
+      "label": "Life & Biological Organization",
+      "mappedMemberRefs": [],
+      "note": "Identity-level mappings only; no region coverage truth is minted.",
+      "regionRef": "navigation-region:life",
+      "unmappedAnchorRefs": [
+        "norm:biology",
+        "norm:genetics",
+        "norm:ecology"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:cognitive-science",
+        "norm:psychology",
+        "norm:linguistics"
+      ],
+      "label": "Mind, Cognition & Language",
+      "mappedMemberRefs": [],
+      "note": "Identity-level mappings only; no region coverage truth is minted.",
+      "regionRef": "navigation-region:mind-language",
+      "unmappedAnchorRefs": [
+        "norm:cognitive-science",
+        "norm:psychology",
+        "norm:linguistics"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:engineering",
+        "norm:design",
+        "norm:systems-engineering"
+      ],
+      "label": "Engineering, Design & Realization",
+      "mappedMemberRefs": [],
+      "note": "Identity-level mappings only; no region coverage truth is minted.",
+      "regionRef": "navigation-region:engineering-design",
+      "unmappedAnchorRefs": [
+        "norm:engineering",
+        "norm:design",
+        "norm:systems-engineering"
+      ]
+    }
+  ],
+  "schemaVersion": 2,
+  "state": "CROSSWALK_PILOT_REPAIRED_AFTER_EXTERNAL_REFERENCE_FALSIFICATION",
+  "supersedesForNavigation": "reference/coverage-crosswalk-foundational-pilot-v0-20260819.json",
+  "truthRole": "NON_AUTHORITATIVE_EVIDENCE_QUALIFIED_CROSSWALK"
+}

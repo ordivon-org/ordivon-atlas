@@ -1,0 +1,404 @@
+{
+  "closure": "ROUND4A_BOUNDED_REPAIR_COMPLETE_OPEN_WORLD_CONTINUES",
+  "kind": "ordivon.foundational-reference-round4a-crosswalk-induced-repair",
+  "laws": [
+    "CROSSWALK_MAY_FALSIFY_REFERENCE_GRANULARITY",
+    "OWNER_THEORY_DOES_NOT_MINT_THE_REPAIR",
+    "EXTERNAL_SOURCE_VERIFICATION_REQUIRED_BEFORE_REFERENCE_REPAIR",
+    "NEW_EXTERNAL_IDENTITY != NEW_ORDIVON_OWNER"
+  ],
+  "normalizedSpaces": [
+    {
+      "evidence": [
+        "acm-cs2023-ka",
+        "acm-cs2023-nc"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Networking and communication",
+      "placements": [
+        "computation",
+        "computer-systems",
+        "communication",
+        "distributed-systems",
+        "computer-engineering"
+      ],
+      "rationale": "CS2023 treats Networking and Communication as a distinct knowledge area covering naming/addressing, reliability, routing/forwarding, switching/layering, encoding and networked applications. It is a stable computing-systems identity rather than a synonym for generic Information Theory.",
+      "roleClasses": [
+        "MAJOR_COMPUTING_SUBSPACE",
+        "COMMUNICATION_SYSTEM_DOMAIN",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:networking-communication"
+    },
+    {
+      "evidence": [
+        "acm-cs2023-ka",
+        "acm-cs2023-os"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Operating systems",
+      "placements": [
+        "computation",
+        "computer-systems",
+        "software",
+        "resource-management",
+        "concurrency",
+        "virtualization"
+      ],
+      "rationale": "CS2023 identifies Operating Systems as a distinct knowledge area centered on safe hardware/application interfacing, processes, scheduling, memory, protection, devices, files, virtualization and fault tolerance.",
+      "roleClasses": [
+        "MAJOR_COMPUTING_SUBSPACE",
+        "EXECUTION_RESOURCE_SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:operating-systems"
+    },
+    {
+      "evidence": [
+        "acm-cs2023-ka",
+        "acm-cs2023-pdc"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Parallel and distributed computing",
+      "placements": [
+        "computation",
+        "computer-systems",
+        "networking",
+        "concurrency",
+        "coordination",
+        "software"
+      ],
+      "rationale": "CS2023 treats Parallel and Distributed Computing as a distinct knowledge area spanning programs/execution, communication, coordination, evaluation and algorithms across simultaneous and multi-locus computation.",
+      "roleClasses": [
+        "MAJOR_COMPUTING_SUBSPACE",
+        "COORDINATION_EXECUTION_DOMAIN",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:parallel-distributed-computing"
+    },
+    {
+      "evidence": [
+        "acm-cs2023-ka",
+        "acm-cs2023-sf"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Computer systems fundamentals",
+      "placements": [
+        "computation",
+        "operating-systems",
+        "parallel-distributed-computing",
+        "networking",
+        "computer-architecture",
+        "resource-management",
+        "reliability"
+      ],
+      "rationale": "CS2023 explicitly retains Systems Fundamentals as an integrative systems knowledge area; its scope includes resource allocation/scheduling, performance, reliability, security and system design concepts shared across systems subdomains.",
+      "roleClasses": [
+        "FOUNDATIONAL_COMPUTING_SYSTEM_AXIS",
+        "INTEGRATIVE_SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:systems-fundamentals"
+    },
+    {
+      "evidence": [
+        "acm-cs2023-ka",
+        "acm-cs2023-fpl"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Foundations of programming languages",
+      "placements": [
+        "computation",
+        "logic",
+        "software",
+        "semantics",
+        "parallel-distributed-computing"
+      ],
+      "rationale": "CS2023 identifies Foundations of Programming Languages as a distinct knowledge area including language models, type systems, execution/translation, semantics and parallel/distributed programming concerns.",
+      "roleClasses": [
+        "MAJOR_COMPUTING_SUBSPACE",
+        "FORMAL_SOFTWARE_SEMANTICS_DOMAIN",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:foundations-programming-languages"
+    },
+    {
+      "evidence": [
+        "apa-major",
+        "apa-undergrad"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Metaphysics",
+      "placements": [
+        "philosophy",
+        "reality",
+        "modality",
+        "mind-boundary",
+        "science-boundary"
+      ],
+      "rationale": "APA identifies metaphysics as a central philosophical field concerning reality, nature and existence; it cannot be reduced to Philosophy of Mind.",
+      "roleClasses": [
+        "MAJOR_PHILOSOPHICAL_SUBSPACE",
+        "REALITY_CONCEPT_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:metaphysics"
+    },
+    {
+      "evidence": [
+        "apa-major",
+        "apa-undergrad"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Epistemology",
+      "placements": [
+        "philosophy",
+        "knowledge",
+        "evidence",
+        "science-boundary",
+        "mind-boundary"
+      ],
+      "rationale": "APA identifies epistemology/theory of knowledge as a central field concerning knowledge, truth, evidence and justification.",
+      "roleClasses": [
+        "MAJOR_PHILOSOPHICAL_SUBSPACE",
+        "KNOWLEDGE_EVIDENCE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:epistemology"
+    },
+    {
+      "evidence": [
+        "apa-major",
+        "apa-undergrad"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Ethics and value theory",
+      "placements": [
+        "philosophy",
+        "normativity",
+        "value",
+        "social-political-boundary",
+        "law-boundary"
+      ],
+      "rationale": "APA identifies ethics and value theory as central philosophical fields and also distinguishes applied ethics and social/political extensions.",
+      "roleClasses": [
+        "MAJOR_PHILOSOPHICAL_SUBSPACE",
+        "NORMATIVE_VALUE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:ethics-value-theory"
+    },
+    {
+      "evidence": [
+        "apa-major",
+        "apa-undergrad"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Philosophy of science",
+      "placements": [
+        "philosophy",
+        "science",
+        "epistemology",
+        "metaphysics",
+        "methodology"
+      ],
+      "rationale": "APA recognizes philosophy of science as a distinct area connecting philosophical inquiry with scientific methods, assumptions and explanation.",
+      "roleClasses": [
+        "MAJOR_PHILOSOPHICAL_SUBSPACE",
+        "PHILOSOPHY_SCIENCE_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:philosophy-of-science"
+    },
+    {
+      "evidence": [
+        "apa-major",
+        "apa-undergrad"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Philosophy of language",
+      "placements": [
+        "philosophy",
+        "linguistics",
+        "meaning",
+        "logic-boundary",
+        "mind-boundary"
+      ],
+      "rationale": "APA recognizes philosophy of language as a specialized philosophical area distinct from Linguistics itself.",
+      "roleClasses": [
+        "MAJOR_PHILOSOPHICAL_SUBSPACE",
+        "PHILOSOPHY_LANGUAGE_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:philosophy-of-language"
+    }
+  ],
+  "relations": [
+    {
+      "from": "norm:networking-communication",
+      "to": "norm:computation",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:networking-communication",
+      "to": "norm:computer-engineering",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:operating-systems",
+      "to": "norm:computation",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:operating-systems",
+      "to": "norm:software-engineering",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:parallel-distributed-computing",
+      "to": "norm:computation",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:parallel-distributed-computing",
+      "to": "norm:networking-communication",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:systems-fundamentals",
+      "to": "norm:operating-systems",
+      "type": "INTEGRATES"
+    },
+    {
+      "from": "norm:systems-fundamentals",
+      "to": "norm:parallel-distributed-computing",
+      "type": "INTEGRATES"
+    },
+    {
+      "from": "norm:systems-fundamentals",
+      "to": "norm:networking-communication",
+      "type": "INTEGRATES"
+    },
+    {
+      "from": "norm:foundations-programming-languages",
+      "to": "norm:computation",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:foundations-programming-languages",
+      "to": "norm:logic",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:metaphysics",
+      "to": "norm:philosophy",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:epistemology",
+      "to": "norm:philosophy",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:ethics-value-theory",
+      "to": "norm:philosophy",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:philosophy-of-science",
+      "to": "norm:philosophy",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:philosophy-of-language",
+      "to": "norm:philosophy",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:philosophy-of-language",
+      "to": "norm:linguistics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:philosophy-of-science",
+      "to": "norm:epistemology",
+      "type": "BRIDGES"
+    }
+  ],
+  "repairs": [
+    {
+      "externalBasis": [
+        "acm-cs2023-ka",
+        "acm-cs2023-nc",
+        "acm-cs2023-os",
+        "acm-cs2023-pdc",
+        "acm-cs2023-sf",
+        "acm-cs2023-fpl"
+      ],
+      "oldPressure": "Network/Runtime only had adjacent generic computation/engineering identities.",
+      "repair": "Add Networking and Communication, Operating Systems, Parallel and Distributed Computing, Computer Systems Fundamentals, and Foundations of Programming Languages as explicit normalized identities.",
+      "repairId": "R4A-COMP-1",
+      "status": "APPLIED"
+    },
+    {
+      "externalBasis": [
+        "apa-major",
+        "apa-undergrad"
+      ],
+      "oldPressure": "World/Normative mapped deeply to norm:philosophy while Philosophy was navigationally embedded under Mind/Cognition/Language and internally under-normalized.",
+      "repair": "Normalize Metaphysics, Epistemology, Ethics & Value Theory, Philosophy of Science and Philosophy of Language; Philosophy of Mind already exists.",
+      "repairId": "R4A-PHIL-1",
+      "status": "APPLIED"
+    }
+  ],
+  "roundId": "foundational-reference:round4a:2026-08-19",
+  "schemaVersion": 1,
+  "sources": {
+    "acm-cs2023-fpl": {
+      "role": "PROGRAMMING_LANGUAGES_FOUNDATIONS_SCOPE",
+      "title": "CS2023 Foundations of Programming Languages",
+      "url": "https://csed.acm.org/programming-languages/"
+    },
+    "acm-cs2023-ka": {
+      "role": "COMPUTER_SCIENCE_KNOWLEDGE_AREA_TOPOLOGY",
+      "title": "ACM/IEEE-CS/AAAI CS2023 Knowledge Areas",
+      "url": "https://csed.acm.org/knowledge-areas/"
+    },
+    "acm-cs2023-nc": {
+      "role": "NETWORKING_COMMUNICATION_SCOPE",
+      "title": "CS2023 Networking and Communication",
+      "url": "https://csed.acm.org/networking-and-communication/"
+    },
+    "acm-cs2023-os": {
+      "role": "OPERATING_SYSTEMS_SCOPE",
+      "title": "CS2023 Operating Systems",
+      "url": "https://csed.acm.org/operating-systems/"
+    },
+    "acm-cs2023-pdc": {
+      "role": "PARALLEL_DISTRIBUTED_SCOPE",
+      "title": "CS2023 Parallel and Distributed Computing",
+      "url": "https://csed.acm.org/parallel-and-distributed-computing/"
+    },
+    "acm-cs2023-sf": {
+      "role": "COMPUTER_SYSTEMS_FOUNDATIONS_SCOPE",
+      "title": "CS2023 Systems Fundamentals",
+      "url": "https://csed.acm.org/systems-fundamentals/"
+    },
+    "apa-major": {
+      "role": "PHILOSOPHY_FIELD_TOPOLOGY",
+      "title": "American Philosophical Association - Statement on the Major",
+      "url": "https://www.apaonline.org/page/major"
+    },
+    "apa-undergrad": {
+      "role": "PHILOSOPHY_SUBFIELD_TOPOLOGY",
+      "title": "American Philosophical Association - Philosophy: A brief guide for undergraduates",
+      "url": "https://www.apaonline.org/page/undergraduates"
+    }
+  },
+  "state": "CROSSWALK_INDUCED_REFERENCE_REPAIR_MATERIALIZED",
+  "trigger": "Bounded owner crosswalk exposed repeated direct-owner semantics with no adequate normalized external coordinate or navigation region. External authoritative taxonomies independently verified the omissions.",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_NORMALIZATION"
+}

@@ -1,0 +1,73 @@
+{
+  "audit": "reference/foundational-whole-topology-audit-v4-crosswalk-repair-20260819.json",
+  "closure": "REFERENCE_V0_2_STABLE_FOR_IDENTITY_LEVEL_BOUNDED_EXPANSION",
+  "controls": [
+    "Crosswalk can falsify reference-model granularity but cannot self-authorize repair.",
+    "Reference repair requires independent external evidence.",
+    "Current bounded graph integrity remains collision-free and relation-complete.",
+    "Host weak external mapping remains distinct from novelty.",
+    "SCD/Human and other non-current Atlas owners remain outside this pilot rather than inferred from memory."
+  ],
+  "counts": {
+    "brokenRelations": 0,
+    "canonicalMajorRegionProjections": 8,
+    "crosswalkMappings": 9,
+    "currentOwnerAuthorityInputs": 7,
+    "externalMappingWeakNoveltyNotEstablished": 1,
+    "identityLabelCollisions": 0,
+    "multiPlacementSpaces": 78,
+    "multiRoleSpaces": 78,
+    "normalizedSpaces": 81,
+    "relations": 92,
+    "unresolvedReferenceOrNoveltyAmbiguities": 0
+  },
+  "coverageReadiness": "READY_FOR_IDENTITY_LEVEL_BOUNDED_EXPANSION",
+  "date": "2026-08-19",
+  "findings": [
+    {
+      "claim": "Crosswalk dogfood repaired two material Reference v0 defects: missing computing-systems identities and Philosophy navigation/granularity.",
+      "id": "FTA4-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The repaired bounded graph contains 81 normalized identities and 92 relations with zero label collision or broken relation.",
+      "id": "FTA4-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Canonical Major Regions v0.2 contains eight navigation projections after splitting Formal/Inferential from Computation/Computer Systems and adding Philosophical/Conceptual Inquiry.",
+      "id": "FTA4-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Owner-level mapping is informative enough to expose both external blind spots and reference-model omissions, but not enough to support whole-Ordivon or region-level scalar coverage.",
+      "id": "FTA4-4",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Host is classified EXTERNAL_MAPPING_WEAK / NOVELTY_NOT_ESTABLISHED after external comparison: PDC, Systems Fundamentals and Information Systems provide adjacent coordinates, but no direct match justifies either coverage equivalence or novelty admission.",
+      "id": "FTA4-5",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "globalScalarCoverage": "FORBIDDEN",
+  "kind": "ordivon.whole-foundational-topology-audit-v4-acceptance",
+  "laws": [
+    "CROSSWALK_CAN_FALSIFY_REFERENCE_MODEL",
+    "REFERENCE_REPAIR_REQUIRES_INDEPENDENT_EXTERNAL_EVIDENCE",
+    "REGION_VIEW_DOES_NOT_OWN_COVERAGE",
+    "IDENTITY_COVERAGE_IS_SCOPE_BOUNDED",
+    "ABSENT_CURRENT_OWNER != ABSENT_ORDIVON_RESEARCH",
+    "REFERENCE_MODEL_GAP != ORDIVON_NOVEL_STRUCTURE"
+  ],
+  "openWorld": true,
+  "schemaVersion": 1,
+  "state": "CROSSWALK_REPAIRED_REFERENCE_V0_2_STABLE_FOR_BOUNDED_PILOT",
+  "truthRole": "HISTORICAL_RESEARCH_EVIDENCE",
+  "verification": {
+    "fullDeterministicSuiteJob": "job-01a01600-d323-72a0-90af-9744bacae890",
+    "fullDeterministicSuiteResult": "103 tests OK; 28 pre-existing gated tests skipped; 75 deterministic tests executed.",
+    "referenceSuiteJob": "job-01a01600-a88c-7c83-8b42-c30a1ddea800",
+    "referenceSuiteResult": "66/66 PASS"
+  }
+}

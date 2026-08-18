@@ -1,0 +1,74 @@
+{
+  "contractId": "coverage-crosswalk:v0",
+  "coverageFacets": [
+    "MAPPED",
+    "INVESTIGATED",
+    "STRUCTURED",
+    "FALSIFICATION_TESTED",
+    "HISTORICALLY_DEEP",
+    "LOCALLY_CLOSED"
+  ],
+  "dimensionRule": "Dimensions are categorical evidence views, not ordinal scores; they MUST NOT be averaged, summed or converted into a global percentage.",
+  "dimensions": {
+    "ClosureStrength": [
+      "NO_CLAIM",
+      "LOCAL_SCOPE_ESTABLISHED",
+      "LOCAL_ARCHITECTURAL_SATURATION",
+      "WHOLE_EXTERNAL_FIELD_NOT_CLAIMED"
+    ],
+    "ConceptualDepth": [
+      "NONE",
+      "BOUNDARY_ONLY",
+      "DIRECT_BOUNDED_SUBSPACE",
+      "CORE_ARCHITECTURE",
+      "FOUNDATION_OR_EQUIVALENT_ARCHITECTURE"
+    ],
+    "CrossDomainDepth": [
+      "NONE",
+      "OWNER_BOUNDARIES_EXPLICIT",
+      "BRIDGE_STRUCTURE_EXPLICIT",
+      "CROSS_OWNER_DOGFOOD"
+    ],
+    "EvidenceDepth": [
+      "NONE",
+      "CURRENT_OWNER_AUTHORITY",
+      "EXPLICIT_CURRENT_RESULTS",
+      "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+      "CURRENT_CROSS_DOMAIN_DOGFOOD"
+    ],
+    "FalsificationDepth": [
+      "NONE",
+      "NEGATIVE_HISTORY",
+      "EXPLICIT_FALSIFIED_IN_SCOPE",
+      "REPAIR_OR_SUPERSESSION_LINEAGE",
+      "SPECIALIST_FALSIFICATION_PROGRAMME"
+    ],
+    "HistoricalDepth": [
+      "CURRENT_ONLY",
+      "LINEAGE_PRESERVED",
+      "SUPERSESSION_OR_REPAIR_PRESERVED"
+    ]
+  },
+  "kind": "ordivon.external-reference-coverage-crosswalk-contract",
+  "laws": [
+    "COVERAGE_ASSERTION = SOURCE_FENCED_OWNER_RESEARCHREF x EXTERNAL_REFERENCE_IDENTITY",
+    "REGION_VIEW != COVERAGE_TRUTH",
+    "REGION_MEMBER_COVERAGE DOES NOT TRANSFER TO REGION",
+    "NO_GLOBAL_SCALAR_COVERAGE_PERCENT",
+    "OWNER_NAME_SIMILARITY != MAPPING_EVIDENCE",
+    "ADJACENCY != COVERAGE",
+    "REFERENCE_MODEL_GAP != ORDIVON_COVERAGE_GAP",
+    "OUT_OF_PILOT_SCOPE != UNTOUCHED",
+    "ORDIVON_NOVEL_STRUCTURE != EXTERNAL_BLIND_SPOT"
+  ],
+  "mappingRelations": {
+    "ADJACENT_NOT_COVERAGE": "Owner boundary or imported concepts are adjacent to the identity; this is explicitly not counted as coverage.",
+    "BRIDGE_COVERAGE": "Owner directly investigates a cross-boundary structure touching the identity but does not own/investigate the external field as a whole.",
+    "DIRECT_PARTIAL_COVERAGE": "Owner-current semantics directly investigate a bounded subspace of the ReferenceIdentity. Never means whole external field coverage.",
+    "OUT_OF_FOUNDATIONAL_PILOT_SCOPE": "Owner research is real/current but the bounded foundational reference pilot has no relevant admitted identity/region; do not classify as untouched.",
+    "REFERENCE_MODEL_GAP_CANDIDATE": "Owner-current semantics are mature but no current normalized external identity is a good direct coordinate; suggests a Reference Model gap requiring external-source verification."
+  },
+  "regionRule": "MajorRegion projections may list mapped member identities and unmapped anchors for navigation only. They cannot inherit or aggregate member coverage into a region-level coverage truth.",
+  "schemaVersion": 1,
+  "truthRole": "NON_AUTHORITATIVE_CROSSWALK_CONTRACT"
+}

@@ -517,6 +517,103 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
         self.assertIn("do not publish scalar global coverage percentages", a["next"])
 
 
+    def test_crosswalk_contract_forbids_scalar_and_region_coverage_truth(self) -> None:
+        c = json.loads((ROOT / "reference/coverage-crosswalk-contract-v0-20260819.json").read_text())
+        self.assertIn("NO_GLOBAL_SCALAR_COVERAGE_PERCENT", c["laws"])
+        self.assertIn("REGION_VIEW != COVERAGE_TRUTH", c["laws"])
+        self.assertIn("REGION_MEMBER_COVERAGE DOES NOT TRANSFER TO REGION", c["laws"])
+        self.assertIn("MUST NOT be averaged", c["dimensionRule"])
+
+    def test_crosswalk_owner_snapshot_is_source_fenced_and_excludes_unpublished_owners(self) -> None:
+        s = json.loads((ROOT / "reference/coverage-crosswalk-owner-authority-snapshot-20260819.json").read_text())
+        self.assertEqual(len(s["owners"]), 7)
+        self.assertEqual(s["atlasSource"]["mainRevision"], "e5c9c2b4c09f6f906496fdcf31d01747398e16db")
+        self.assertIn("fullyCurrent=true", s["atlasSource"]["refreshResult"])
+        for o in s["owners"]:
+            self.assertTrue(o["authorityVersionRef"].startswith("sha256:"))
+            self.assertTrue(o["sourceTransportRevision"])
+            self.assertTrue(o["recoveryDigest"].startswith("sha256:"))
+        excluded = {x["owner"] for x in s["excludedCurrentnessCases"]}
+        for name in ("Semantics of Computational Descriptions", "Human", "Finance", "Media", "Harness"):
+            self.assertIn(name, excluded)
+
+    def test_crosswalk_v02_uses_identity_level_mappings_only(self) -> None:
+        p = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-2-20260819.json").read_text())
+        self.assertEqual(p["globalScalarCoverage"], "FORBIDDEN")
+        self.assertEqual(len(p["mappings"]), 9)
+        for v in p["regionCoverageViews"]:
+            self.assertEqual(v["aggregateCoverageTruth"], "FORBIDDEN")
+            self.assertIn("no region coverage truth", v["note"])
+
+    def test_crosswalk_v02_network_maps_to_networking_not_information_theory(self) -> None:
+        p = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-2-20260819.json").read_text())
+        by = {x["mappingRef"]: x for x in p["mappings"]}
+        n = by["crosswalk:network->networking-communication"]
+        self.assertEqual(n["externalRef"], "norm:networking-communication")
+        self.assertEqual(n["relation"], "DIRECT_PARTIAL_COVERAGE")
+        cases = " | ".join(x["case"] for x in p["nonCoverageCases"])
+        self.assertIn("does not count as Information Theory coverage", cases)
+
+    def test_crosswalk_v02_runtime_bridge_does_not_wholesale_cover_os(self) -> None:
+        p = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-2-20260819.json").read_text())
+        by = {x["mappingRef"]: x for x in p["mappings"]}
+        self.assertEqual(by["crosswalk:runtime->systems-fundamentals"]["relation"], "BRIDGE_COVERAGE")
+        self.assertEqual(by["crosswalk:runtime->operating-systems"]["relation"], "BRIDGE_COVERAGE")
+        self.assertIn("does not count as whole-field", " | ".join(x["case"] for x in p["nonCoverageCases"]))
+
+    def test_crosswalk_v02_philosophy_navigation_false_positive_is_repaired(self) -> None:
+        nav = json.loads((ROOT / "reference/canonical-major-regions-v0-2-20260819.json").read_text())
+        by = {x["regionRef"]: x for x in nav["regions"]}
+        self.assertIn("navigation-region:philosophical-conceptual", by)
+        self.assertNotIn("norm:philosophy", by["navigation-region:mind-language"]["memberRefs"])
+        self.assertIn("norm:philosophy-of-mind", by["navigation-region:mind-language"]["memberRefs"])
+        self.assertIn("norm:philosophy-of-mind", by["navigation-region:philosophical-conceptual"]["memberRefs"])
+
+    def test_round4a_computing_systems_gap_is_externally_repaired(self) -> None:
+        r = json.loads((ROOT / "reference/foundational-reference-round4a-crosswalk-induced-repair-20260819.json").read_text())
+        refs = {x["spaceRef"] for x in r["normalizedSpaces"]}
+        for ref in ("norm:networking-communication", "norm:operating-systems", "norm:parallel-distributed-computing", "norm:systems-fundamentals", "norm:foundations-programming-languages"):
+            self.assertIn(ref, refs)
+        self.assertIn("OWNER_THEORY_DOES_NOT_MINT_THE_REPAIR", r["laws"])
+        self.assertIn("EXTERNAL_SOURCE_VERIFICATION_REQUIRED_BEFORE_REFERENCE_REPAIR", r["laws"])
+
+    def test_round4a_philosophy_is_normalized_beyond_mind(self) -> None:
+        r = json.loads((ROOT / "reference/foundational-reference-round4a-crosswalk-induced-repair-20260819.json").read_text())
+        refs = {x["spaceRef"] for x in r["normalizedSpaces"]}
+        for ref in ("norm:metaphysics", "norm:epistemology", "norm:ethics-value-theory", "norm:philosophy-of-science", "norm:philosophy-of-language"):
+            self.assertIn(ref, refs)
+
+    def test_major_regions_v02_split_formal_from_computer_systems(self) -> None:
+        nav = json.loads((ROOT / "reference/canonical-major-regions-v0-2-20260819.json").read_text())
+        by = {x["regionRef"]: x for x in nav["regions"]}
+        self.assertEqual(len(nav["regions"]), 8)
+        self.assertIn("navigation-region:formal-inferential", by)
+        self.assertIn("navigation-region:computation-computer-systems", by)
+        self.assertIn("norm:networking-communication", by["navigation-region:computation-computer-systems"]["memberRefs"])
+        self.assertIn("norm:operating-systems", by["navigation-region:computation-computer-systems"]["memberRefs"])
+        self.assertEqual(nav["coverageCrosswalk"], "IDENTITY_LEVEL_ONLY")
+
+    def test_major_regions_v02_repair_dogfood_passes_all_controls(self) -> None:
+        d = json.loads((ROOT / "reference/canonical-major-regions-v0-2-dogfood-20260819.json").read_text())
+        self.assertEqual(d["state"], "PASS")
+        self.assertTrue(all(d["destructiveControls"].values()))
+        self.assertTrue(all(x["result"] == "PASS" for x in d["regionResults"]))
+
+    def test_whole_audit_v4_has_integrity_and_host_mapping_weak_without_novelty_claim(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v4-crosswalk-repair-20260819.json").read_text())
+        self.assertEqual(a["counts"]["normalizedSpaces"], 81)
+        self.assertEqual(a["counts"]["relations"], 92)
+        self.assertEqual(a["counts"]["canonicalMajorRegionProjections"], 8)
+        self.assertEqual(a["counts"]["identityLabelCollisions"], 0)
+        self.assertEqual(a["counts"]["brokenRelations"], 0)
+        self.assertEqual(a["counts"]["unresolvedReferenceOrNoveltyAmbiguities"], 0)
+        self.assertEqual(a["counts"]["externalMappingWeakNoveltyNotEstablished"], 1)
+        self.assertEqual(a["globalScalarCoverage"], "FORBIDDEN")
+        p = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-2-20260819.json").read_text())
+        host = next(x for x in p["gapDispositions"] if x["gapRef"] == "gap:coordination-workflow-systems")
+        self.assertEqual(host["currentStatus"], "EXTERNAL_MAPPING_WEAK_NOVELTY_NOT_ESTABLISHED")
+
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,128 @@
+{
+  "date": "2026-08-19",
+  "destructiveControls": {
+    "formalAndComputerSystemsAreDistinctRegions": true,
+    "networkingHasComputingRegion": true,
+    "operatingSystemsHasComputingRegion": true,
+    "philosophyOfMindRemainsCrossMember": true,
+    "philosophyRemovedFromMindParentMembership": true
+  },
+  "findings": [
+    {
+      "claim": "Crosswalk pressure plus independent external taxonomies justifies explicit Computing Systems identities rather than forcing Network/Runtime into generic Computation/Engineering coordinates.",
+      "id": "R4A-D1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Philosophy must be a separate non-exclusive navigation region; Philosophy of Mind can remain in both Philosophy and Mind regions without assigning all Philosophy to Mind.",
+      "id": "R4A-D2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Formal/Inferential and Computation/Computer Systems are more stable as separate navigation regions than the original combined Formal/Inferential/Computational projection.",
+      "id": "R4A-D3",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.canonical-major-region-v0-2-repair-dogfood",
+  "regionResults": [
+    {
+      "anchorDeletionSurvival": true,
+      "anchors": [
+        "norm:mathematics",
+        "norm:logic",
+        "norm:statistics"
+      ],
+      "memberCount": 7,
+      "missingRefs": [],
+      "regionRef": "navigation-region:formal-inferential",
+      "result": "PASS"
+    },
+    {
+      "anchorDeletionSurvival": true,
+      "anchors": [
+        "norm:computation",
+        "norm:operating-systems",
+        "norm:networking-communication"
+      ],
+      "memberCount": 10,
+      "missingRefs": [],
+      "regionRef": "navigation-region:computation-computer-systems",
+      "result": "PASS"
+    },
+    {
+      "anchorDeletionSurvival": true,
+      "anchors": [
+        "norm:philosophy",
+        "norm:metaphysics",
+        "norm:epistemology"
+      ],
+      "memberCount": 9,
+      "missingRefs": [],
+      "regionRef": "navigation-region:philosophical-conceptual",
+      "result": "PASS"
+    },
+    {
+      "anchorDeletionSurvival": true,
+      "anchors": [
+        "norm:physics",
+        "norm:chemistry",
+        "norm:materials"
+      ],
+      "memberCount": 6,
+      "missingRefs": [],
+      "regionRef": "navigation-region:physical-material",
+      "result": "PASS"
+    },
+    {
+      "anchorDeletionSurvival": true,
+      "anchors": [
+        "norm:earth-science",
+        "norm:planetary-science",
+        "norm:astronomy"
+      ],
+      "memberCount": 11,
+      "missingRefs": [],
+      "regionRef": "navigation-region:earth-planetary-space",
+      "result": "PASS"
+    },
+    {
+      "anchorDeletionSurvival": true,
+      "anchors": [
+        "norm:biology",
+        "norm:genetics",
+        "norm:ecology"
+      ],
+      "memberCount": 12,
+      "missingRefs": [],
+      "regionRef": "navigation-region:life",
+      "result": "PASS"
+    },
+    {
+      "anchorDeletionSurvival": true,
+      "anchors": [
+        "norm:cognitive-science",
+        "norm:psychology",
+        "norm:linguistics"
+      ],
+      "memberCount": 5,
+      "missingRefs": [],
+      "regionRef": "navigation-region:mind-language",
+      "result": "PASS"
+    },
+    {
+      "anchorDeletionSurvival": true,
+      "anchors": [
+        "norm:engineering",
+        "norm:design",
+        "norm:systems-engineering"
+      ],
+      "memberCount": 15,
+      "missingRefs": [],
+      "regionRef": "navigation-region:engineering-design",
+      "result": "PASS"
+    }
+  ],
+  "schemaVersion": 1,
+  "state": "PASS"
+}

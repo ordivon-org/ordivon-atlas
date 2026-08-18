@@ -1,0 +1,55 @@
+{
+  "closure": "ROUND4A_CROSSWALK_INDUCED_REFERENCE_REPAIR_ACCEPTED_OPEN_WORLD",
+  "counts": {
+    "majorRegionsV02": 8,
+    "newNormalizedIdentities": 10,
+    "newRelations": 18,
+    "repairActions": 2
+  },
+  "date": "2026-08-19",
+  "destructiveControls": {
+    "formalAndComputerSystemsAreDistinctRegions": true,
+    "networkingHasComputingRegion": true,
+    "operatingSystemsHasComputingRegion": true,
+    "philosophyOfMindRemainsCrossMember": true,
+    "philosophyRemovedFromMindParentMembership": true
+  },
+  "dogfoodState": "PASS",
+  "externalEvidenceFirewall": "Crosswalk/Ordivon owner anomalies may trigger a gap hypothesis; only independent external sources may admit a new ReferenceIdentity or navigation repair.",
+  "findings": [
+    {
+      "claim": "Crosswalk pressure plus independent external taxonomies justifies explicit Computing Systems identities rather than forcing Network/Runtime into generic Computation/Engineering coordinates.",
+      "id": "R4A-D1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Philosophy must be a separate non-exclusive navigation region; Philosophy of Mind can remain in both Philosophy and Mind regions without assigning all Philosophy to Mind.",
+      "id": "R4A-D2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Formal/Inferential and Computation/Computer Systems are more stable as separate navigation regions than the original combined Formal/Inferential/Computational projection.",
+      "id": "R4A-D3",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.foundational-reference-round4a-crosswalk-repair-acceptance",
+  "majorRegionDogfood": "reference/canonical-major-regions-v0-2-dogfood-20260819.json",
+  "majorRegions": "reference/canonical-major-regions-v0-2-20260819.json",
+  "repair": "reference/foundational-reference-round4a-crosswalk-induced-repair-20260819.json",
+  "repairLaws": [
+    "CROSSWALK_MAY_FALSIFY_REFERENCE_GRANULARITY",
+    "OWNER_THEORY_DOES_NOT_MINT_THE_REPAIR",
+    "EXTERNAL_SOURCE_VERIFICATION_REQUIRED_BEFORE_REFERENCE_REPAIR",
+    "NEW_EXTERNAL_IDENTITY != NEW_ORDIVON_OWNER"
+  ],
+  "schemaVersion": 1,
+  "state": "CROSSWALK_INDUCED_REFERENCE_REPAIR_MATERIALIZED",
+  "truthRole": "HISTORICAL_REFERENCE_REPAIR_EVIDENCE",
+  "verification": {
+    "fullDeterministicSuiteJob": "job-01a01600-d323-72a0-90af-9744bacae890",
+    "fullDeterministicSuiteResult": "103 tests OK; 28 pre-existing gated tests skipped; 75 deterministic tests executed.",
+    "referenceSuiteJob": "job-01a01600-a88c-7c83-8b42-c30a1ddea800",
+    "referenceSuiteResult": "66/66 PASS"
+  }
+}
