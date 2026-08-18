@@ -1,0 +1,114 @@
+from __future__ import annotations
+
+import hashlib
+import json
+import subprocess
+import tempfile
+import unittest
+from pathlib import Path
+
+from ordivon_atlas.atlas import Atlas, HealthState, SourceSpec, compare_projected_version
+
+
+def run(*args: str, cwd: Path | None = None) -> str:
+    proc = subprocess.run(args, cwd=cwd, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=False)
+    if proc.returncode != 0:
+        raise RuntimeError(proc.stderr)
+    return proc.stdout.strip()
+
+
+def write_publication(work: Path, *, owner: str = "fixture", authority: str = "authority:fixture", recovery: str = "research/README.md", corrupt_digest: bool = False) -> tuple[str, SourceSpec]:
+    root = work / "research"
+    (root / "authority/publications").mkdir(parents=True, exist_ok=True)
+    (root / "README.md").write_text("fixture\n")
+    payload = {"schemaVersion": 1, "kind": "ordivon.research-owner-publication", "profile": "NATIVE", "authorityRef": authority, "ownerResearchRef": f"research-owner:{owner}", "source": {"kind": "git", "repository": str(work), "authorityBranch": "refs/heads/main", "sourceRevision": "fixture", "corpusRoot": "research"}, "currentRecovery": {"targetRole": "OWNER_RESEARCH_CORPUS", "locator": recovery}, "statements": [], "closeouts": [{"researchRef": "research:fixture", "profile": "NATIVE", "resultRefs": ["result:fixture"], "closure": [{"scope": "ITEM", "status": "ESTABLISHED"}], "residualState": "NONE", "reopenPolicy": "UNKNOWN"}]}
+    content = json.dumps(payload, indent=2, sort_keys=True) + "\n"
+    digest = hashlib.sha256(content.encode()).hexdigest()
+    (root / f"authority/publications/{digest}.json").write_text(content)
+    current_ref = "sha256:" + ("0" * 64 if corrupt_digest else digest)
+    current = {"schemaVersion": 1, "kind": "ordivon.research-owner-current", "authorityRef": authority, "ownerResearchRef": f"research-owner:{owner}", "currentAuthorityVersionRef": current_ref, "publication": f"authority/publications/{digest}.json"}
+    (root / "authority/CURRENT.json").write_text(json.dumps(current, indent=2, sort_keys=True) + "\n")
+    run("git", "add", ".", cwd=work)
+    run("git", "commit", "-m", "fixture", cwd=work)
+    run("git", "push", "origin", "main", cwd=work)
+    spec = SourceSpec(f"research-owner:{owner}", authority, str(work), str(work.parent / "remote.git"), "refs/heads/main", "research")
+    return "sha256:" + digest, spec
+
+
+class AtlasTests(unittest.TestCase):
+    def fixture_repo(self) -> tuple[tempfile.TemporaryDirectory[str], Path]:
+        td = tempfile.TemporaryDirectory()
+        base = Path(td.name)
+        remote = base / "remote.git"
+        work = base / "work"
+        run("git", "init", "--bare", str(remote))
+        run("git", "init", "-b", "main", str(work))
+        run("git", "config", "user.email", "atlas@example.invalid", cwd=work)
+        run("git", "config", "user.name", "Atlas Fixture", cwd=work)
+        run("git", "remote", "add", "origin", str(remote), cwd=work)
+        return td, work
+
+    def test_current_and_stale_comparison(self) -> None:
+        td, work = self.fixture_repo(); self.addCleanup(td.cleanup)
+        version, spec = write_publication(work)
+        obs = Atlas([spec]).observe(spec)
+        self.assertEqual(obs.health, HealthState.CURRENT_TO_SOURCE)
+        self.assertEqual(compare_projected_version(version, obs), HealthState.CURRENT_TO_SOURCE)
+        self.assertEqual(compare_projected_version("sha256:" + "1" * 64, obs), HealthState.SOURCE_ADVANCED_STALE)
+
+    def test_digest_mismatch_fails_closed(self) -> None:
+        td, work = self.fixture_repo(); self.addCleanup(td.cleanup)
+        _, spec = write_publication(work, corrupt_digest=True)
+        obs = Atlas([spec]).observe(spec)
+        self.assertEqual(obs.health, HealthState.BROKEN_POINTER)
+        self.assertIn("DIGEST_MISMATCH", obs.reason or "")
+
+    def test_missing_recovery_fails_closed(self) -> None:
+        td, work = self.fixture_repo(); self.addCleanup(td.cleanup)
+        _, spec = write_publication(work, recovery="research/DOES-NOT-EXIST.md")
+        obs = Atlas([spec]).observe(spec)
+        self.assertEqual(obs.health, HealthState.BROKEN_POINTER)
+        self.assertIn("CURRENT_RECOVERY_MISSING", obs.reason or "")
+
+    def test_missing_current_is_unknown(self) -> None:
+        td, work = self.fixture_repo(); self.addCleanup(td.cleanup)
+        (work / "research").mkdir(); (work / "research/README.md").write_text("no publication\n")
+        run("git", "add", ".", cwd=work); run("git", "commit", "-m", "no-current", cwd=work); run("git", "push", "origin", "main", cwd=work)
+        spec = SourceSpec("research-owner:missing", "authority:missing", str(work), str(work.parent / "remote.git"), "refs/heads/main", "research")
+        self.assertEqual(Atlas([spec]).observe(spec).health, HealthState.CURRENTNESS_UNKNOWN)
+
+    def test_identity_mismatch_fails_closed(self) -> None:
+        td, work = self.fixture_repo(); self.addCleanup(td.cleanup)
+        _, spec = write_publication(work, owner="fixture", authority="authority:fixture")
+        wrong = SourceSpec("research-owner:other", "authority:other", spec.repo, spec.remote, spec.ref, spec.corpusRoot)
+        self.assertEqual(Atlas([wrong]).observe(wrong).health, HealthState.AUTHORITY_CHANGED_UNRESOLVED)
+
+
+if __name__ == "__main__":
+    unittest.main()
+
+
+class BrokenPublicationTests(unittest.TestCase):
+    def fixture_repo(self) -> tuple[tempfile.TemporaryDirectory[str], Path]:
+        td = tempfile.TemporaryDirectory()
+        base = Path(td.name)
+        remote = base / "remote.git"
+        work = base / "work"
+        run("git", "init", "--bare", str(remote))
+        run("git", "init", "-b", "main", str(work))
+        run("git", "config", "user.email", "atlas@example.invalid", cwd=work)
+        run("git", "config", "user.name", "Atlas Fixture", cwd=work)
+        run("git", "remote", "add", "origin", str(remote), cwd=work)
+        return td, work
+
+    def test_missing_publication_fails_closed(self) -> None:
+        td, work = self.fixture_repo(); self.addCleanup(td.cleanup)
+        _, spec = write_publication(work)
+        current_path = work / "research/authority/CURRENT.json"
+        current = json.loads(current_path.read_text())
+        current["publication"] = "authority/publications/does-not-exist.json"
+        current_path.write_text(json.dumps(current, indent=2, sort_keys=True) + "\n")
+        run("git", "add", ".", cwd=work); run("git", "commit", "-m", "break-publication", cwd=work); run("git", "push", "origin", "main", cwd=work)
+        obs = Atlas([spec]).observe(spec)
+        self.assertEqual(obs.health, HealthState.BROKEN_POINTER)
+        self.assertIn("PUBLICATION_MISSING", obs.reason or "")

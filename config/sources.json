@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "authorityRef": "authority:ordivon:research-owner:network",
+      "corpusRoot": "owners/network",
+      "ownerResearchRef": "research-owner:network",
+      "ref": "refs/heads/main",
+      "remote": "git@github.com:zycxfyh/ordivon-research.git",
+      "repo": "/root/projects/ordivon-research"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:runtime",
+      "corpusRoot": "research",
+      "ownerResearchRef": "research-owner:runtime",
+      "ref": "refs/heads/main",
+      "remote": "git@github.com:zycxfyh/ordivon-runtime.git",
+      "repo": "/root/projects/ordivon-runtime"
+    }
+  ]
+}
