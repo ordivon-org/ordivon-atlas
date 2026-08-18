@@ -22,6 +22,28 @@
         "git@github.com:zycxfyh/ordivon-runtime.git"
       ],
       "repo": "/root/projects/ordivon-runtime"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:host",
+      "corpusRoot": "research",
+      "ownerResearchRef": "research-owner:host",
+      "ref": "refs/heads/main",
+      "remote": "https://github.com/zycxfyh/ordivon-host.git",
+      "remoteFallbacks": [
+        "git@github.com:zycxfyh/ordivon-host.git"
+      ],
+      "repo": "/root/projects/ordivon-host"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:game",
+      "corpusRoot": "research",
+      "ownerResearchRef": "research-owner:game",
+      "ref": "refs/heads/main",
+      "remote": "https://github.com/zycxfyh/ordivon-game.git",
+      "remoteFallbacks": [
+        "git@github.com:zycxfyh/ordivon-game.git"
+      ],
+      "repo": "/root/projects/ordivon-game"
     }
   ]
 }

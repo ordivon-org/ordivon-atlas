@@ -14,6 +14,8 @@ RUNTIME_V4 = "sha256:227cc7e253de5fa10be7cbecdfd2e7d84724b507c4a0504836fc63996ac
 RUNTIME_V5 = "sha256:e06cac5f69942068fabe80dc5da22fc1fb566d3004ce4951df545534fda289d9"
 NETWORK_V1 = "sha256:bfadaaaad3b01f9c4388e4e4a75e77c782c2c3111849e5c4598052ec740ee79f"
 NETWORK_V2 = "sha256:dbdbb759b2b86b898a343cbb81646b283c589676989e919537f1a6cbc2b1df91"
+HOST_V1 = "sha256:4fc9dee669927882337649d19c144d0938ecf3307c461bffd84eedb8fdc27df4"
+GAME_V1 = "sha256:b0e16e2cd6fe40685d7b96f94d78ef89bd55ed7f92db4de1408e33d2539bb2f0"
 
 
 @unittest.skipUnless(LIVE, "set ORDIVON_ATLAS_LIVE_TESTS=1 for live remote acceptance")
@@ -61,6 +63,24 @@ class LiveSourceTests(unittest.TestCase):
         self.assertEqual(ndf6["standing"], ["CURRENT", "NOT_ADMITTED"])
         self.assertNotIn("FROZEN", ndf6["standing"])
         self.assertTrue(all(row["classificationHealth"] == "EXPLICIT" for row in rows.values()))
+
+    def test_rollout_host_and_game_are_current_with_negative_history_intact(self) -> None:
+        projection = Atlas(self.specs).build()
+        owners = {row["ownerResearchRef"]: row for row in projection["owners"]}
+        self.assertEqual(owners["research-owner:host"]["authorityVersionRef"], HOST_V1)
+        self.assertEqual(owners["research-owner:host"]["projectionHealth"], HealthState.CURRENT_TO_SOURCE)
+        self.assertEqual(owners["research-owner:game"]["authorityVersionRef"], GAME_V1)
+        self.assertEqual(owners["research-owner:game"]["projectionHealth"], HealthState.CURRENT_TO_SOURCE)
+        rows = {row["resultRef"]: row for row in projection["results"]}
+        self.assertEqual(rows["result:host:hdf44-not-admitted"]["standing"], ["CURRENT", "NOT_ADMITTED"])
+        self.assertEqual(rows["result:host:generic-coordination-owner-not-admitted"]["standing"], ["CURRENT", "NOT_ADMITTED"])
+        self.assertEqual(rows["result:game:gdf3-authoritative-case-determination-current"]["standing"], ["CURRENT", "FROZEN"])
+        self.assertEqual(rows["result:game:gdf3-game-feel-historical-cancelled"]["standing"], ["ABANDONED", "HISTORICAL_PRESERVED"])
+        self.assertEqual(rows["result:game:c1-strong-survivor-unadmitted"]["standing"], ["CURRENT", "NOT_ADMITTED"])
+        self.assertNotEqual(
+            rows["result:game:gdf3-authoritative-case-determination-current"]["resultRef"],
+            rows["result:game:gdf3-game-feel-historical-cancelled"]["resultRef"],
+        )
 
 
 if __name__ == "__main__":

@@ -1,0 +1,104 @@
+{
+  "classification": {
+    "authorityRecoveryFailure": false,
+    "constitutionSupported": true,
+    "implementationPressureOnly": [
+      "User-facing alias/collision indexing should eventually expose same-label distinct identities such as the two historical/current GDF3 tracks; this does not change authority semantics."
+    ],
+    "newAdapterRequired": false,
+    "productionServiceRequired": false,
+    "representationalFailure": false
+  },
+  "conclusion": "The owner-native publication convention rolled out unchanged to two additional independent repositories. Atlas now generates a four-owner source-fenced projection without central authority, while preserving negative/non-admission/history distinctions across Host, Game, Network and Runtime.",
+  "date": "2026-08-18",
+  "gamePublication": {
+    "authorityVersionRef": "sha256:b0e16e2cd6fe40685d7b96f94d78ef89bd55ed7f92db4de1408e33d2539bb2f0",
+    "resultCount": 7,
+    "semanticGuards": {
+      "absoluteWholeGameClosure": "NOT_CLAIMED",
+      "c1StrongSurvivor": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "canonicalGdf3": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "gdf0_gdf3": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "gdf4": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "gpr8": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "historicalGameFeelGdf3": [
+        "ABANDONED",
+        "HISTORICAL_PRESERVED"
+      ]
+    },
+    "transportRevision": "eb2013e13e9e3e5e50e7e93627fff00293335530"
+  },
+  "hostPublication": {
+    "authorityVersionRef": "sha256:4fc9dee669927882337649d19c144d0938ecf3307c461bffd84eedb8fdc27df4",
+    "resultCount": 5,
+    "semanticGuards": {
+      "genericCoordinationOwner": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "hdf0_hdf43": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "hdf44": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "primitiveUniversalHostVerdict": "FALSIFIED_IN_SCOPE"
+    },
+    "transportRevision": "0439cef8c4361e509fe5219b9b726257e7033aab"
+  },
+  "kind": "ordivon.atlas-bounded-owner-rollout-acceptance-evidence",
+  "nonAuthorityNotice": "This acceptance record and generated Atlas remain projections/evidence. Host/Game owner publications remain their semantic authority.",
+  "schemaVersion": 1,
+  "scope": "Branch K first bounded owner-publication rollout: Host + Game added to existing Network + Runtime Atlas",
+  "selection": {
+    "deferred": {
+      "Computing": "Known intentional dirty/staged main and split semantic owners; special policy.",
+      "Finance": "No configured/GitHub remote by existing repository policy.",
+      "Harness": "Concurrent-active workspace observed; deferred to avoid owner collision.",
+      "Human": "Known stale/dirty main and repair-branch topology; special policy.",
+      "Media": "No configured/GitHub Studio remote by existing repository policy.",
+      "World": "Current local/remote main 78980cbee6333cf0de0d972913f5a612a77ab357 advanced beyond last verified research materialization 7f4b7ca3d463d61be6799be89dd10be2a973c4d3; semantic delta not audited in K."
+    },
+    "selected": [
+      "Host",
+      "Game"
+    ]
+  },
+  "truthRole": "historical-test-evidence",
+  "verification": {
+    "deterministicSuiteJob": "job-01a0151b-1bd7-7fb2-9a08-652a35653ccd",
+    "deterministicSuiteResult": "9 PASS; 5 live tests gated/skipped by default",
+    "generatedAuditJob": "job-01a0151e-a120-7212-9c36-199fcc2113a2",
+    "generatedAuditResult": {
+      "allResultClassificationsExplicit": true,
+      "closure": 14,
+      "history": 9,
+      "negativeAndLineage": 16,
+      "owners": 4,
+      "results": 23
+    },
+    "independentHostGameObservationJob": "job-01a0151a-12aa-7461-a193-962ab8d5563b",
+    "independentObservationResult": "PASS; both owner publications CURRENT_TO_SOURCE before registry admission",
+    "liveFourOwnerSuiteJob": "job-01a0151b-4d08-7511-b641-6d3bd02140f4",
+    "liveFourOwnerSuiteResult": "5/5 PASS",
+    "refreshJob": "job-01a0151d-aad5-7840-b03e-0509e19b444f",
+    "refreshResult": "fullyCurrent=true; owners=4; unhealthy=0"
+  }
+}
