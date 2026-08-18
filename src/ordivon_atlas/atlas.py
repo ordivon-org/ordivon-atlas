@@ -25,6 +25,7 @@ class SourceSpec:
     remote: str
     ref: str
     corpusRoot: str
+    remoteFallbacks: list[str] | None = None
 
     @property
     def current_path(self) -> str:
@@ -66,19 +67,28 @@ def _run_git(repo: str, args: list[str], *, timeout: int = 20) -> bytes:
 
 
 def _remote_revision(spec: SourceSpec) -> str:
-    proc = subprocess.run(
-        ["git", "ls-remote", spec.remote, spec.ref],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        timeout=20,
-        check=False,
-    )
-    if proc.returncode != 0:
-        raise AtlasSourceError(proc.stderr.decode("utf-8", errors="replace").strip() or "git ls-remote failed")
-    lines = [line for line in proc.stdout.decode().splitlines() if line.strip()]
-    if len(lines) != 1:
-        raise AtlasSourceError(f"expected exactly one remote ref for {spec.ref}, got {len(lines)}")
-    return lines[0].split("\t", 1)[0]
+    remotes = [spec.remote, *(spec.remoteFallbacks or [])]
+    errors: list[str] = []
+    for remote in remotes:
+        try:
+            proc = subprocess.run(
+                ["git", "ls-remote", remote, spec.ref],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                timeout=15,
+                check=False,
+            )
+        except subprocess.TimeoutExpired:
+            errors.append(f"{remote}: timeout")
+            continue
+        if proc.returncode != 0:
+            errors.append(f"{remote}: {proc.stderr.decode('utf-8', errors='replace').strip() or 'git ls-remote failed'}")
+            continue
+        lines = [line for line in proc.stdout.decode().splitlines() if line.strip()]
+        if len(lines) == 1:
+            return lines[0].split("\t", 1)[0]
+        errors.append(f"{remote}: expected exactly one ref for {spec.ref}, got {len(lines)}")
+    raise AtlasSourceError(" | ".join(errors) or "no source transport configured")
 
 
 def _git_show(repo: str, revision: str, path: str) -> bytes:
@@ -125,11 +135,47 @@ def compare_projected_version(projected: str | None, observation: SourceObservat
     return HealthState.SOURCE_ADVANCED_STALE
 
 
+def _result_classification(publication: dict[str, Any], result_ref: str) -> dict[str, Any]:
+    standing: set[str] = set()
+    roles: set[str] = set()
+    verdict: Any = None
+    evidence_scope: Any = None
+    matched = 0
+    for statement in publication.get("statements", []):
+        if not isinstance(statement, dict) or statement.get("subjectRef") != result_ref:
+            continue
+        predicate = statement.get("predicate")
+        value = statement.get("value")
+        if isinstance(predicate, str) and predicate.startswith("STANDING:") and value is True:
+            standing.add(predicate.split(":", 1)[1])
+            matched += 1
+        elif predicate == "EPISTEMIC_VERDICT":
+            verdict = value
+            matched += 1
+        elif predicate == "EVIDENCE_SCOPE":
+            evidence_scope = value
+            matched += 1
+        elif predicate == "STRUCTURAL_ROLE":
+            if isinstance(value, list):
+                roles.update(str(item) for item in value)
+            elif value is not None:
+                roles.add(str(value))
+            matched += 1
+    return {
+        "classificationHealth": "EXPLICIT" if matched else "UNKNOWN",
+        "standing": sorted(standing),
+        "epistemicVerdict": verdict,
+        "evidenceScope": evidence_scope,
+        "structuralRoles": sorted(roles),
+    }
+
+
 class Atlas:
     """Generated projection over owner-native publication surfaces.
 
     Atlas never upgrades a projection into owner truth. Every semantic row carries
-    the owner AuthorityVersionRef from the verified CURRENT publication.
+    the owner AuthorityVersionRef from a verified owner publication or an explicit
+    last-known source fence retained from a prior Atlas projection.
     """
 
     def __init__(self, sources: Iterable[SourceSpec]):
@@ -211,11 +257,8 @@ class Atlas:
 
     def build(self, previous: dict[str, Any] | None = None) -> dict[str, Any]:
         observations = self.observe_all()
-        previous_by_owner: dict[str, str] = {}
-        if previous:
-            for row in previous.get("owners", []):
-                if row.get("ownerResearchRef") and row.get("authorityVersionRef"):
-                    previous_by_owner[row["ownerResearchRef"]] = row["authorityVersionRef"]
+        previous = previous or {}
+        previous_owner_rows = {row.get("ownerResearchRef"): row for row in previous.get("owners", []) if row.get("ownerResearchRef")}
 
         owners: list[dict[str, Any]] = []
         recovery: list[dict[str, Any]] = []
@@ -226,21 +269,83 @@ class Atlas:
         health: list[dict[str, Any]] = []
         specs = {spec.ownerResearchRef: spec for spec in self.sources}
 
+        def previous_rows(section: str, owner_ref: str) -> list[dict[str, Any]]:
+            return [dict(row) for row in previous.get(section, []) if row.get("ownerResearchRef") == owner_ref]
+
+        def retain(section: str, owner_ref: str, state: str) -> list[dict[str, Any]]:
+            rows = previous_rows(section, owner_ref)
+            for row in rows:
+                row["projectionCurrentness"] = state
+                row["retainedFromPreviousProjection"] = True
+            return rows
+
         for obs in observations:
-            previous_ref = previous_by_owner.get(obs.ownerResearchRef)
+            previous_owner = previous_owner_rows.get(obs.ownerResearchRef)
+            previous_ref = previous_owner.get("authorityVersionRef") if previous_owner else None
             previous_state = None if previous_ref is None else compare_projected_version(previous_ref, obs)
-            health.append({"ownerResearchRef": obs.ownerResearchRef, "authorityRef": obs.authorityRef, "health": obs.health, "reason": obs.reason, "observedAuthorityVersionRef": obs.authorityVersionRef, "previousProjectedAuthorityVersionRef": previous_ref, "previousProjectionCurrentness": previous_state, "sourceTransportRevision": obs.transportRevision})
-            owners.append({"ownerResearchRef": obs.ownerResearchRef, "authorityRef": obs.authorityRef, "authorityVersionRef": obs.authorityVersionRef, "projectionHealth": obs.health, "sourceTransportRevision": obs.transportRevision})
-            history.extend(self._publication_history(specs[obs.ownerResearchRef], obs))
+            health.append({
+                "ownerResearchRef": obs.ownerResearchRef,
+                "authorityRef": obs.authorityRef,
+                "health": obs.health,
+                "reason": obs.reason,
+                "observedAuthorityVersionRef": obs.authorityVersionRef,
+                "previousProjectedAuthorityVersionRef": previous_ref,
+                "previousProjectionCurrentness": previous_state,
+                "sourceTransportRevision": obs.transportRevision,
+            })
+
             if obs.health != HealthState.CURRENT_TO_SOURCE or not obs.publication:
+                if previous_owner and previous_ref:
+                    retained_owner = dict(previous_owner)
+                    retained_owner.update({
+                        "projectionHealth": obs.health,
+                        "projectionCurrentness": obs.health,
+                        "retainedFromPreviousProjection": True,
+                        "observedAuthorityVersionRef": obs.authorityVersionRef,
+                        "observedSourceTransportRevision": obs.transportRevision,
+                    })
+                    owners.append(retained_owner)
+                    recovery.extend(retain("currentRecovery", obs.ownerResearchRef, obs.health))
+                    results.extend(retain("results", obs.ownerResearchRef, obs.health))
+                    closures.extend(retain("closure", obs.ownerResearchRef, obs.health))
+                    negatives.extend(retain("negativeAndLineage", obs.ownerResearchRef, obs.health))
+                    history.extend(previous_rows("history", obs.ownerResearchRef))
+                else:
+                    owners.append({
+                        "ownerResearchRef": obs.ownerResearchRef,
+                        "authorityRef": obs.authorityRef,
+                        "authorityVersionRef": None,
+                        "projectionHealth": obs.health,
+                        "projectionCurrentness": obs.health,
+                        "retainedFromPreviousProjection": False,
+                        "sourceTransportRevision": obs.transportRevision,
+                    })
                 continue
 
-            source_fence = {"ownerResearchRef": obs.ownerResearchRef, "authorityRef": obs.authorityRef, "authorityVersionRef": obs.authorityVersionRef, "sourceTransportRevision": obs.transportRevision}
+            owners.append({
+                "ownerResearchRef": obs.ownerResearchRef,
+                "authorityRef": obs.authorityRef,
+                "authorityVersionRef": obs.authorityVersionRef,
+                "projectionHealth": obs.health,
+                "projectionCurrentness": HealthState.CURRENT_TO_SOURCE,
+                "retainedFromPreviousProjection": False,
+                "sourceTransportRevision": obs.transportRevision,
+            })
+            history.extend(self._publication_history(specs[obs.ownerResearchRef], obs))
+            source_fence = {
+                "ownerResearchRef": obs.ownerResearchRef,
+                "authorityRef": obs.authorityRef,
+                "authorityVersionRef": obs.authorityVersionRef,
+                "sourceTransportRevision": obs.transportRevision,
+                "projectionCurrentness": HealthState.CURRENT_TO_SOURCE,
+                "retainedFromPreviousProjection": False,
+            }
             recovery.append({**source_fence, **(obs.currentRecovery or {})})
             for closeout in obs.publication.get("closeouts", []):
-                base = {**source_fence, "researchRef": closeout.get("researchRef"), "profile": closeout.get("profile"), "standing": closeout.get("standing", []), "epistemicVerdict": closeout.get("epistemicVerdict"), "evidenceScope": closeout.get("evidenceScope"), "residualState": closeout.get("residualState"), "reopenPolicy": closeout.get("reopenPolicy")}
+                base = {**source_fence, "researchRef": closeout.get("researchRef"), "profile": closeout.get("profile")}
                 for result_ref in closeout.get("resultRefs", []):
-                    results.append({**base, "resultRef": result_ref})
+                    classification = _result_classification(obs.publication, result_ref)
+                    results.append({**base, "resultRef": result_ref, **classification})
                 for closure in closeout.get("closure", []):
                     closures.append({**source_fence, "researchRef": closeout.get("researchRef"), **closure})
                 for item in closeout.get("materialLineage", []):
@@ -260,8 +365,25 @@ class Atlas:
                 previous = json.loads(atlas_file.read_text(encoding="utf-8"))
             except Exception:
                 previous = None
+
         projection = self.build(previous=previous)
-        views = {"atlas.json": projection, "owner-map.json": projection["owners"], "current-recovery.json": projection["currentRecovery"], "results.json": projection["results"], "closure.json": projection["closure"], "negative-history.json": projection["negativeAndLineage"], "history.json": projection["history"], "projection-health.json": projection["projectionHealth"]}
+        views = {
+            "atlas.json": projection,
+            "owner-map.json": projection["owners"],
+            "current-recovery.json": projection["currentRecovery"],
+            "results.json": projection["results"],
+            "closure.json": projection["closure"],
+            "negative-history.json": projection["negativeAndLineage"],
+            "history.json": projection["history"],
+            "projection-health.json": projection["projectionHealth"],
+            "projection-health-latest.json": projection["projectionHealth"],
+        }
+        pending: list[tuple[Path, Path]] = []
         for name, payload in views.items():
-            (out / name).write_text(json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False) + "\n", encoding="utf-8")
+            target = out / name
+            temp = out / f".{name}.tmp"
+            temp.write_text(json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False) + "\n", encoding="utf-8")
+            pending.append((temp, target))
+        for temp, target in pending:
+            temp.replace(target)
         return projection

@@ -29,7 +29,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "refresh":
         projection = atlas.write(args.out)
         unhealthy = [row for row in projection["projectionHealth"] if row["health"] != "CURRENT_TO_SOURCE"]
-        print(json.dumps({"owners": len(projection["owners"]), "unhealthy": len(unhealthy), "out": args.out}, sort_keys=True))
+        print(json.dumps({"owners": len(projection["owners"]), "unhealthy": len(unhealthy), "fullyCurrent": not unhealthy, "snapshotUpdated": True, "out": args.out}, sort_keys=True))
         return 0 if not unhealthy else 2
     names = {"atlas": "atlas.json", "owners": "owner-map.json", "recovery": "current-recovery.json", "results": "results.json", "closure": "closure.json", "negative": "negative-history.json", "history": "history.json", "health": "projection-health.json"}
     path = Path(args.out) / names[args.view]

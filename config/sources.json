@@ -6,7 +6,10 @@
       "corpusRoot": "owners/network",
       "ownerResearchRef": "research-owner:network",
       "ref": "refs/heads/main",
-      "remote": "git@github.com:zycxfyh/ordivon-research.git",
+      "remote": "https://github.com/zycxfyh/ordivon-research.git",
+      "remoteFallbacks": [
+        "git@github.com:zycxfyh/ordivon-research.git"
+      ],
       "repo": "/root/projects/ordivon-research"
     },
     {
@@ -14,7 +17,10 @@
       "corpusRoot": "research",
       "ownerResearchRef": "research-owner:runtime",
       "ref": "refs/heads/main",
-      "remote": "git@github.com:zycxfyh/ordivon-runtime.git",
+      "remote": "https://github.com/zycxfyh/ordivon-runtime.git",
+      "remoteFallbacks": [
+        "git@github.com:zycxfyh/ordivon-runtime.git"
+      ],
       "repo": "/root/projects/ordivon-runtime"
     }
   ]

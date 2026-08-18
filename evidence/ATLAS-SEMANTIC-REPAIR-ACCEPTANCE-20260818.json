@@ -1,0 +1,72 @@
+{
+  "classification": {
+    "authorityRecoveryFailure": false,
+    "constitutionSupported": true,
+    "productionServiceRequired": false,
+    "representationalFailureRepaired": true
+  },
+  "date": "2026-08-18",
+  "defects": [
+    {
+      "canonicalExamples": [
+        "result:runtime:ef27-historical-superseded",
+        "result:network:ndf6-not-admitted"
+      ],
+      "id": "RESULT_STANDING_INHERITANCE",
+      "observed": "Atlas copied closeout-wide standing/verdict/evidence scope onto every ResultRef, misclassifying heterogeneous results.",
+      "repair": "Project result classification only from authority-qualified statements whose subjectRef is the exact ResultRef; absence becomes classificationHealth=UNKNOWN rather than inheritance."
+    },
+    {
+      "id": "FEDERATED_REFRESH_PARTIAL_SOURCE_FAILURE",
+      "observed": "Live J transition encountered temporary remote transport failures; a global refresh must not erase healthy or last-known source-fenced owner data because one source is unavailable.",
+      "repair": "Multiple read-only remote transports plus per-owner retention of prior source-fenced rows marked retainedFromPreviousProjection and projectionCurrentness=<unhealthy state>; healthy owners still advance."
+    }
+  ],
+  "kind": "ordivon.atlas-semantic-repair-acceptance-evidence",
+  "nonAuthorityNotice": "This evidence records bounded repair acceptance. Owner publications remain semantic authority; Atlas outputs remain generated source-fenced projections.",
+  "ownerAuthorityAdvances": [
+    {
+      "currentAuthorityVersionRef": "sha256:dbdbb759b2b86b898a343cbb81646b283c589676989e919537f1a6cbc2b1df91",
+      "owner": "Network",
+      "previousAuthorityVersionRef": "sha256:bfadaaaad3b01f9c4388e4e4a75e77c782c2c3111849e5c4598052ec740ee79f",
+      "transportRevision": "42c641db0557a8e09829a1917990cdc76568062f"
+    },
+    {
+      "currentAuthorityVersionRef": "sha256:227cc7e253de5fa10be7cbecdfd2e7d84724b507c4a0504836fc63996ac53497",
+      "owner": "Runtime",
+      "previousAuthorityVersionRef": "sha256:350d042df3c01399cf9314c6954f0c3f4c45bdeb660aa275556e098a77ec62eb",
+      "transportRevision": "6e756cd11483d69e9f549d4103b1a71ad82f4ac4"
+    }
+  ],
+  "schemaVersion": 1,
+  "scope": "Branch I-R result-classification semantic repair plus federated last-known projection retention exposed during interrupted Branch J live transition",
+  "semanticAssertions": {
+    "allCurrentLiveResultsExplicitlyClassified": true,
+    "networkAuthorityHistoryCount": 2,
+    "networkNdf6Standing": [
+      "CURRENT",
+      "NOT_ADMITTED"
+    ],
+    "runtimeAuthorityHistoryCount": 4,
+    "runtimeEf27Standing": [
+      "HISTORICAL_PRESERVED",
+      "SUPERSEDED",
+      "WITHDRAWN"
+    ]
+  },
+  "supersession": {
+    "disposition": "PRIOR_PLUMBING_ACCEPTANCE_REMAINS_VALID; BROAD_RESULT_SEMANTIC_ACCEPTANCE_SUPERSEDED_BY_THIS_REPAIR",
+    "priorEvidence": "evidence/ATLAS-MVP-ACCEPTANCE-20260818.json"
+  },
+  "testEvidence": {
+    "deterministicSuiteJob": "job-01a01506-9b2e-75d1-ab88-f2831016d182",
+    "deterministicSuiteResult": "9 PASS; 4 live tests intentionally skipped without ORDIVON_ATLAS_LIVE_TESTS=1",
+    "generatedAuditJob": "job-01a01508-45fa-7af1-99a4-e6f7e75d9692",
+    "generatedAuditResult": "PASS; 10 results; 6 authority-history rows",
+    "liveRefreshJob": "job-01a01507-eff8-7c41-83c5-c6ce44edd32c",
+    "liveRefreshResult": "fullyCurrent=true; owners=2; unhealthy=0",
+    "liveSemanticSuiteJob": "job-01a01506-c162-7152-9e1e-582836c32ad5",
+    "liveSemanticSuiteResult": "4/4 PASS"
+  },
+  "truthRole": "historical-test-evidence"
+}
