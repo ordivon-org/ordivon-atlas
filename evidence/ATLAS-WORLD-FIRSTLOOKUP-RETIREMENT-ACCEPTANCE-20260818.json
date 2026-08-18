@@ -1,0 +1,71 @@
+{
+  "atlasBaselineCommit": "621ab410788b6ae37399beece6afa9342e9ccadc",
+  "classification": {
+    "authorityRecoveryFailure": false,
+    "bootstrapAccessDuringDestructiveTest": false,
+    "closureParityPassed": true,
+    "negativeHistoryParityPassed": true,
+    "productionServiceRequired": false,
+    "recoveryParityPassed": true,
+    "representationalFailure": false,
+    "semanticParityPassed": true,
+    "worldToWorkstationCurrentTransferRecovered": false
+  },
+  "date": "2026-08-18",
+  "destructiveProof": {
+    "allowedInputs": [
+      "generated/atlas.json",
+      "config/sources.json",
+      "World Git objects at generated sourceTransportRevision"
+    ],
+    "deterministicSuiteJob": "job-01a01535-8c32-7c12-9e34-730aa8ac0489",
+    "deterministicSuiteResult": "9 PASS; 7 four-owner retirement + 6 live + 7 World retirement tests gated/skipped by default",
+    "hostTaskReadsDuringProof": false,
+    "paritySpec": "evidence/BOOTSTRAP-WORLD-PARITY-SPEC-20260818.json",
+    "testModule": "tests/test_world_retirement.py",
+    "worldRetirementProofJob": "job-01a01535-b0fc-7770-abe8-06b82690389a",
+    "worldRetirementProofResult": "7/7 PASS"
+  },
+  "kind": "ordivon.atlas-world-firstlookup-retirement-acceptance-evidence",
+  "legacyReconciliationSources": [
+    {
+      "checkpointDigest": "sha256:26d5bbc112e9df81918074284c55216140fe97f44d950b1a335400a3dd7dabd7",
+      "revision": 3,
+      "taskId": "task:world-research-core-consolidation-branch-20260818"
+    },
+    {
+      "checkpointDigest": "sha256:b3c3627b5c513f578690e701fbbac2a198c57900da5014f079cfa542e20a5887",
+      "revision": 3,
+      "taskId": "task:world-research-materialization-repair-20260818"
+    }
+  ],
+  "nonAuthorityNotice": "Retirement changes live navigation only. World owner publication/corpus remains semantic authority; Atlas remains projection; historical Host capsules remain historical evidence.",
+  "recoveredHighControlFacts": [
+    "World owner-native recovery resolves exactly to docs/research/world/README.md at transport revision 59ca305.",
+    "WDF0/WDF1/WDF4/WDF5/TSAF0 remain CURRENT+FROZEN at their respective admitted scopes.",
+    "WDF2 and WDF3 remain HISTORICAL_PRESERVED deep research and are not frozen Foundations.",
+    "WDF2-O remains HISTORICAL_PRESERVED+NOT_ADMITTED+SUPERSEDED.",
+    "WDF3-M/WDF4-G/WDF5-J/WDF6/TSAF1 remain non-admitted with UNDERDETERMINED where current evidence is explicitly unknown.",
+    "WholeWorldClosure, TemporalWholeDomainClosure and TemporalProjectClosure remain NOT_ESTABLISHED.",
+    "NextWorldRoute remains UNDERDETERMINED/UNKNOWN; residuals are not a roadmap.",
+    "Measurement/Quantification rebasing, primitive-Time failure and latest-foundations engineering non-promotion remain recoverable negative/lineage memory."
+  ],
+  "retirementDisposition": {
+    "historicalConsolidationCapsule": "PRESERVE_AS_HISTORICAL_RECONCILIATION_EVIDENCE",
+    "historicalMaterializationCapsule": "PRESERVE_AS_HISTORICAL_RECONCILIATION_EVIDENCE",
+    "physicalDeletionPerformed": false,
+    "worldLegacyConsolidationMaterializationLiveNavigationRole": "RETIRED",
+    "worldOwnerPublicationAndAtlasBecomeLiveFirstLookup": true
+  },
+  "schemaVersion": 1,
+  "scope": "World owner only",
+  "transferFirewall": {
+    "blockedWorldToWorkstationFixtureDisposition": "REMAINS_BLOCKED_AND_SEPARATE",
+    "recoveryNeverMintsTransferAuthority": true,
+    "worldCurrentRecoveryRequiresTransferDecision": false,
+    "worldProjectionContainsWorkstation": false
+  },
+  "truthRole": "historical-test-evidence",
+  "worldAuthorityVersionRef": "sha256:76f3ebc35cc72a67e65cacbcb899d8ccf0919059577c97191c85dc9aed9ede8f",
+  "worldSourceTransportRevision": "59ca305f144ac3f4dde6109418c31986716c1f45"
+}

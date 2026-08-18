@@ -1,0 +1,228 @@
+{
+  "authority": {
+    "authorityRef": "authority:ordivon:research-owner:world",
+    "authorityVersionRef": "sha256:76f3ebc35cc72a67e65cacbcb899d8ccf0919059577c97191c85dc9aed9ede8f",
+    "recovery": {
+      "locator": "docs/research/world/README.md",
+      "targetRole": "OWNER_RESEARCH_CORPUS"
+    },
+    "sourceTransportRevision": "59ca305f144ac3f4dde6109418c31986716c1f45"
+  },
+  "bootstrapExecutionPolicy": {
+    "allowedInputs": [
+      "generated/atlas.json",
+      "config/sources.json",
+      "World Git objects at generated sourceTransportRevision"
+    ],
+    "bootstrapUsedAtExecution": false,
+    "forbiddenInputs": [
+      "Ordivon Host task reads",
+      "World consolidation/materialization capsule reads",
+      "World→Workstation transfer inference"
+    ]
+  },
+  "closure": [
+    {
+      "scope": "WDF0_META_FOUNDATION",
+      "status": "ESTABLISHED"
+    },
+    {
+      "scope": "WDF1_MODAL_FOUNDATION",
+      "status": "ESTABLISHED"
+    },
+    {
+      "scope": "WDF4_CAUSAL_LOCAL_FOUNDATION",
+      "status": "ESTABLISHED"
+    },
+    {
+      "scope": "WDF5_PROPERTY_EVALUATION_LOCAL_FOUNDATION",
+      "status": "ESTABLISHED"
+    },
+    {
+      "scope": "TSAF0_TEMPORAL_STRUCTURE_LOCAL_FOUNDATION",
+      "status": "ESTABLISHED"
+    },
+    {
+      "scope": "WDF2_COUNTERFACTUAL_PROGRAMME",
+      "status": "STAGE_COMPLETE_NO_FROZEN_FOUNDATION"
+    },
+    {
+      "scope": "WDF3_CATEGORIAL_PROGRAMME",
+      "status": "STAGE_COMPLETE_NO_FROZEN_FOUNDATION"
+    },
+    {
+      "scope": "WHOLE_WORLD",
+      "status": "NOT_ESTABLISHED"
+    },
+    {
+      "scope": "TEMPORAL_WHOLE_DOMAIN",
+      "status": "NOT_ESTABLISHED"
+    },
+    {
+      "scope": "TEMPORAL_PROJECT",
+      "status": "NOT_ESTABLISHED"
+    }
+  ],
+  "date": "2026-08-18",
+  "historicalRetention": "REQUIRED",
+  "kind": "ordivon.atlas-world-firstlookup-parity-spec",
+  "legacyReconciliationSources": [
+    {
+      "checkpointDigest": "sha256:26d5bbc112e9df81918074284c55216140fe97f44d950b1a335400a3dd7dabd7",
+      "revision": 3,
+      "taskId": "task:world-research-core-consolidation-branch-20260818"
+    },
+    {
+      "checkpointDigest": "sha256:b3c3627b5c513f578690e701fbbac2a198c57900da5014f079cfa542e20a5887",
+      "revision": 3,
+      "taskId": "task:world-research-materialization-repair-20260818"
+    }
+  ],
+  "lineageContains": [
+    "WDF2-O was once proposed after WDF2-N and is historical-preserved/superseded/not-admitted as canonical next.",
+    "WDF3-M remains unknown/not-admitted; WDF4-G and WDF5-J remain not admitted; WDF6 is not admitted; TSAF1 is unknown/not admitted.",
+    "Measurement / Quantification ceased to be the primitive WDF5 owner referent and was rebased under Property Evaluation Architecture.",
+    "A single primitive Time did not survive Temporal Structure decomposition.",
+    "WDF2 and WDF3 complete deep research without a final frozen Foundation; that non-promotion is substantive, not missing documentation.",
+    "The 2026-08-18 WDF4/WDF5/TSAF0 engineering delta admitted no generic Causal/Measurement/Temporal product subsystem; research constrains interpretation without ontology-to-schema promotion."
+  ],
+  "negativeFalsifiers": {
+    "nextWorldRouteMustRemainUnknown": true,
+    "wdf2AndWdf3MustNotBeFrozenFoundations": true,
+    "wdf6AndTsaf1MustNotBeAdmitted": true,
+    "wholeWorldClosureMustNotBeEstablished": true,
+    "worldToWorkstationCurrentTransferClaimMustBeAbsent": true
+  },
+  "ownerResearchRef": "research-owner:world",
+  "results": {
+    "result:world:latest-foundations-engineering-nonpromotion": {
+      "standing": [
+        "CURRENT"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:world:next-world-route-unknown": {
+      "standing": [
+        "CURRENT"
+      ],
+      "verdict": "UNDERDETERMINED"
+    },
+    "result:world:owner-boundary-current": {
+      "standing": [
+        "CURRENT"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:world:temporal-project-closure-not-established": {
+      "standing": [
+        "CURRENT"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:world:temporal-whole-domain-closure-not-established": {
+      "standing": [
+        "CURRENT"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:world:tsaf0-temporal-structure-current-frozen": {
+      "standing": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:world:tsaf1-not-admitted": {
+      "standing": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "verdict": "UNDERDETERMINED"
+    },
+    "result:world:wdf0-meta-foundation-current-frozen": {
+      "standing": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:world:wdf1-modal-foundation-current-frozen": {
+      "standing": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:world:wdf2-counterfactual-deep-history-nonfoundation": {
+      "standing": [
+        "HISTORICAL_PRESERVED"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:world:wdf2-o-historical-superseded-not-admitted": {
+      "standing": [
+        "HISTORICAL_PRESERVED",
+        "NOT_ADMITTED",
+        "SUPERSEDED"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:world:wdf3-categorial-deep-history-nonfoundation": {
+      "standing": [
+        "HISTORICAL_PRESERVED"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:world:wdf3-m-not-admitted": {
+      "standing": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "verdict": "UNDERDETERMINED"
+    },
+    "result:world:wdf4-causal-reality-current-frozen": {
+      "standing": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:world:wdf4-g-not-admitted": {
+      "standing": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:world:wdf5-j-not-admitted": {
+      "standing": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:world:wdf5-property-evaluation-current-frozen": {
+      "standing": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:world:wdf6-not-admitted": {
+      "standing": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:world:whole-world-closure-not-established": {
+      "standing": [
+        "CURRENT"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    }
+  },
+  "retirementScope": "WORLD_LEGACY_LIVE_NAVIGATION_ROLE_ONLY",
+  "schemaVersion": 1,
+  "truthRole": "historical-reconciliation-spec"
+}
