@@ -1,0 +1,66 @@
+{
+  "closure": "ROUND4D_MEDIA_INDUCED_EXTERNAL_REPAIR_ACCEPTED_SOCIAL_CULTURAL_NAVIGATION_DEFERRED",
+  "counts": {
+    "deferredNavigationPressure": 2,
+    "majorRegions": 8,
+    "newNormalizedIdentities": 4,
+    "newRelations": 10
+  },
+  "date": "2026-08-19",
+  "destructiveControls": {
+    "communicationStudiesNotForcedIntoCurrentRegions": true,
+    "hciCrossesComputingAndEngineering": true,
+    "majorRegionCountStillEight": true,
+    "mediaStudiesNotForcedIntoCurrentRegions": true,
+    "noOrdivonMediaIdentityMinted": true,
+    "regionCoverageTruthForbidden": true,
+    "semioticsCrossesPhilosophyAndMind": true
+  },
+  "dogfood": "reference/canonical-major-regions-v0-5-dogfood-20260819.json",
+  "externalEvidenceFirewall": "Media owner research may select search pressure; Communication Studies, Media Studies, Semiotics and HCI were admitted only from independent external professional-association evidence.",
+  "findings": [
+    {
+      "claim": "Semiotics and HCI behave as non-exclusive cross-cutting members without becoming anchors or owner-shaped regions.",
+      "id": "R4D-D1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Communication Studies and Media Studies should remain explicit identities outside the current eight MajorRegions rather than being falsely absorbed by Mind/Language or Philosophy.",
+      "id": "R4D-D2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Media owner admission does not create an Ordivon-shaped external identity or transfer identity-level coverage into region truth.",
+      "id": "R4D-D3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.foundational-reference-round4d-media-repair-acceptance",
+  "laws": [
+    "MEDIA_PRESSURE_MAY_TRIGGER_SEARCH_NOT_IDENTITY",
+    "EXTERNAL_SOURCE_VERIFICATION_REQUIRED_BEFORE_REFERENCE_REPAIR",
+    "MEDIA_OWNER != MEDIA_STUDIES_FIELD",
+    "COMMUNICATION_STUDIES != MEDIA_STUDIES",
+    "SEMIOTICS_IS_CROSS_CUTTING_NOT_LINGUISTICS_CHILD",
+    "HCI_IS_INTERDISCIPLINARY_NOT_COMPUTING_CHILD",
+    "SOCIAL_CULTURAL_REGION_MAY_REMAIN_UNASSIGNED",
+    "NEW_EXTERNAL_IDENTITY != NEW_ORDIVON_OWNER"
+  ],
+  "majorRegions": "reference/canonical-major-regions-v0-5-20260819.json",
+  "repair": "reference/foundational-reference-round4d-media-crosswalk-repair-20260819.json",
+  "schemaVersion": 1,
+  "state": "MEDIA_CROSSWALK_INDUCED_EXTERNAL_REPAIR_MATERIALIZED",
+  "truthRole": "HISTORICAL_REFERENCE_REPAIR_EVIDENCE",
+  "verification": {
+    "atlasDeterministic": "63 tests OK; 45 gated skips; 18 deterministic executed",
+    "atlasDeterministicJob": "job-01a0165f-8acc-7ab3-ac5d-d2e157584885",
+    "atlasTenOwnerObservation": "10/10 CURRENT_TO_SOURCE",
+    "atlasTenOwnerObservationJob": "job-01a01663-0711-7d92-a59c-0193114dfe3d",
+    "fullReferenceBranchSuite": "132 tests OK; 28 gated skips; 104 deterministic executed",
+    "fullReferenceBranchSuiteJob": "job-01a01665-dae1-7a52-91f6-899ed4184c46",
+    "mediaAtlasParity": "9/9 PASS",
+    "mediaAtlasParityJob": "job-01a0165e-afd3-7422-b643-e1357bac9d5e",
+    "referenceSuite": "95/95 PASS",
+    "referenceSuiteJob": "job-01a01665-9da9-7723-bee4-b628ed3daea6"
+  }
+}

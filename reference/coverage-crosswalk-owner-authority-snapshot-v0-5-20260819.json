@@ -1,0 +1,141 @@
+{
+  "atlasSource": {
+    "mainRevision": "5506abec4f755b1e72a6257a1babe33ca4180c3b",
+    "observationJobId": "job-01a01663-0711-7d92-a59c-0193114dfe3d",
+    "observationMode": "PARALLEL_PER_OWNER_CURRENTNESS_OBSERVATION",
+    "observationResult": "10/10 CURRENT_TO_SOURCE",
+    "repo": "/root/projects/ordivon-atlas",
+    "reuseRule": "All prior nine AuthorityVersionRef+transport pairs were revalidated exactly unchanged; Media added current."
+  },
+  "date": "2026-08-19",
+  "excludedCurrentnessCases": [
+    {
+      "owner": "Finance",
+      "reason": "Known mature research exists but owner-current Atlas publication is absent; exclusion != untouched research.",
+      "status": "NOT_IN_CURRENT_10_OWNER_ATLAS_SOURCE_REGISTRY"
+    },
+    {
+      "owner": "Harness",
+      "reason": "Active research/currentness work is ongoing and no settled owner-current Atlas publication is admitted; exclusion != untouched research.",
+      "status": "NOT_IN_CURRENT_10_OWNER_ATLAS_SOURCE_REGISTRY"
+    }
+  ],
+  "kind": "ordivon.coverage-crosswalk-owner-authority-snapshot",
+  "owners": [
+    {
+      "authorityRef": "authority:ordivon:research-owner:computational-possibility",
+      "authorityVersionRef": "sha256:5e12e043b14b57894cc0fffa85ed23821c36d491868c38555a0072cff4e263f9",
+      "closureCount": 6,
+      "negativeLineageCount": 6,
+      "ownerResearchRef": "research-owner:computational-possibility",
+      "projectionCurrentness": "CURRENT_TO_SOURCE",
+      "recoveryLocator": "research/core/computational-possibility/README.md",
+      "resultCount": 10,
+      "sourceTransportRevision": "ad1bd73d91fa1a2d2a59cac4726b74ac171c457d"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:game",
+      "authorityVersionRef": "sha256:b0e16e2cd6fe40685d7b96f94d78ef89bd55ed7f92db4de1408e33d2539bb2f0",
+      "closureCount": 3,
+      "negativeLineageCount": 5,
+      "ownerResearchRef": "research-owner:game",
+      "projectionCurrentness": "CURRENT_TO_SOURCE",
+      "recoveryLocator": "research/README.md",
+      "resultCount": 7,
+      "sourceTransportRevision": "eb2013e13e9e3e5e50e7e93627fff00293335530"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:host",
+      "authorityVersionRef": "sha256:4fc9dee669927882337649d19c144d0938ecf3307c461bffd84eedb8fdc27df4",
+      "closureCount": 3,
+      "negativeLineageCount": 4,
+      "ownerResearchRef": "research-owner:host",
+      "projectionCurrentness": "CURRENT_TO_SOURCE",
+      "recoveryLocator": "research/README.md",
+      "resultCount": 5,
+      "sourceTransportRevision": "0439cef8c4361e509fe5219b9b726257e7033aab"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:human",
+      "authorityVersionRef": "sha256:035eaa334ffdfe3ae44236f966176a36ffd772ee8c2e4c4454733ab9699ef392",
+      "closureCount": 16,
+      "negativeLineageCount": 12,
+      "ownerResearchRef": "research-owner:human",
+      "projectionCurrentness": "CURRENT_TO_SOURCE",
+      "recoveryLocator": "research/core/HUMAN-RESEARCH-CORE.md",
+      "resultCount": 30,
+      "sourceTransportRevision": "cc966bf99458949b59c433a5f7bc8fafe3d692b7"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:media",
+      "authorityVersionRef": "sha256:d73f350556c6a66ecf58750dba88ce34839334fdf2920d8cb6dcdfff59fd3c33",
+      "closureCount": 26,
+      "negativeLineageCount": 18,
+      "ownerResearchRef": "research-owner:media",
+      "projectionCurrentness": "CURRENT_TO_SOURCE",
+      "recoveryLocator": "research/media/README.md",
+      "resultCount": 31,
+      "sourceTransportRevision": "c3b39f1a2093a9aae5338abebb8224de2a5b7a06"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:network",
+      "authorityVersionRef": "sha256:dbdbb759b2b86b898a343cbb81646b283c589676989e919537f1a6cbc2b1df91",
+      "closureCount": 2,
+      "negativeLineageCount": 3,
+      "ownerResearchRef": "research-owner:network",
+      "projectionCurrentness": "CURRENT_TO_SOURCE",
+      "recoveryLocator": "owners/network/README.md",
+      "resultCount": 3,
+      "sourceTransportRevision": "aae7e71ea8aa13624d69ab94ad165dac744b2ad4"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:ordivon-normative",
+      "authorityVersionRef": "sha256:91fe75c4827585487a5aadb8c55816b6628cda314bdbb79bdbe2554246a7b579",
+      "closureCount": 16,
+      "negativeLineageCount": 5,
+      "ownerResearchRef": "research-owner:ordivon-normative",
+      "projectionCurrentness": "CURRENT_TO_SOURCE",
+      "recoveryLocator": "owners/ordivon-normative/README.md",
+      "resultCount": 29,
+      "sourceTransportRevision": "aae7e71ea8aa13624d69ab94ad165dac744b2ad4"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:runtime",
+      "authorityVersionRef": "sha256:9c67d1b4094ce85a2465579430bb1a941f1923457087fb74cde0642d7b9a51b3",
+      "closureCount": 9,
+      "negativeLineageCount": 4,
+      "ownerResearchRef": "research-owner:runtime",
+      "projectionCurrentness": "CURRENT_TO_SOURCE",
+      "recoveryLocator": "research/README.md",
+      "resultCount": 10,
+      "sourceTransportRevision": "256ef6d0080de38c028a70e27cbaa08e0f817edb"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:semantics-of-computational-descriptions",
+      "authorityVersionRef": "sha256:3319f37f081908e545c708f79e489c3b2a1c54cb03453fa2ebe32bc6e72cbd4f",
+      "closureCount": 17,
+      "negativeLineageCount": 14,
+      "ownerResearchRef": "research-owner:semantics-of-computational-descriptions",
+      "projectionCurrentness": "CURRENT_TO_SOURCE",
+      "recoveryLocator": "research/core/semantics-of-computational-descriptions/README.md",
+      "resultCount": 16,
+      "sourceTransportRevision": "a35ee399fa0cf3dd24869d50f78ca05850ece0c4"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:world",
+      "authorityVersionRef": "sha256:76f3ebc35cc72a67e65cacbcb899d8ccf0919059577c97191c85dc9aed9ede8f",
+      "closureCount": 10,
+      "negativeLineageCount": 6,
+      "ownerResearchRef": "research-owner:world",
+      "projectionCurrentness": "CURRENT_TO_SOURCE",
+      "recoveryLocator": "docs/research/world/README.md",
+      "resultCount": 19,
+      "sourceTransportRevision": "59ca305f144ac3f4dde6109418c31986716c1f45"
+    }
+  ],
+  "preservesHistory": true,
+  "schemaVersion": 3,
+  "snapshotId": "coverage-crosswalk-owner-snapshot:v0.5:2026-08-19",
+  "supersedesForCurrentCrosswalk": "reference/coverage-crosswalk-owner-authority-snapshot-v0-4-20260819.json",
+  "truthRole": "SOURCE_FENCED_OWNER_AUTHORITY_INPUT"
+}

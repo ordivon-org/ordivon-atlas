@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-19",
+  "kind": "ordivon.open-resource-mature-knowledge-subtraction-pattern",
+  "laws": [
+    "OPEN_RESOURCE != AUTOMATIC_AUTHORITY",
+    "RESOURCE_COST != EPISTEMIC_VALUE",
+    "INTERNAL_QUERY_SELECTION != EXTERNAL_EVIDENCE",
+    "MATURE_KNOWLEDGE_SUBTRACTION_PRECEDES_NOVELTY_ADMISSION_WHEN_APPLICABLE",
+    "FAILED_NOVELTY_HYPOTHESIS_CAN_STRENGTHEN_RESEARCH_QUALITY",
+    "DERIVED != UNREAL",
+    "ABSENCE_OF_EXTERNAL_MATCH != NOVELTY",
+    "METHOD_CANDIDATE != CONSTITUTION"
+  ],
+  "name": "Open-Resource Mature-Knowledge Subtraction",
+  "next": "Dogfood on Finance or another owner with institutional/economic external theory; compare search cost, subtraction yield, false-novelty prevention and residual quality before stronger methodology standing.",
+  "pattern": [
+    "OWNER_NATIVE_RESIDUAL_OR_ANOMALY",
+    "TARGETED_OPEN_EXTERNAL_RESOURCE_SEARCH",
+    "MATURE_KNOWLEDGE_SUBTRACTION",
+    "EXTERNAL_REFERENCE_MAPPING_OR_REPAIR",
+    "RESIDUAL_IRREDUCIBILITY_TEST",
+    "NOVELTY_ONLY_IF_RESIDUAL_SURVIVES",
+    "PRESERVE_NEGATIVE_AND_DERIVED_RESULTS"
+  ],
+  "promotionRationale": [
+    "Three witnesses are heterogeneous in object, method and external literature ecology.",
+    "All three use owner-native anomalies to narrow search but require independent public external evidence for mapping/repair.",
+    "All three preserve negative/non-novel findings as positive epistemic output instead of forcing novelty.",
+    "At least one witness (SCD) rejects multiple explicit novelty hypotheses; Human rejects broad/universal reductions; Media rejects candidate-continent-to-Foundation promotion."
+  ],
+  "schemaVersion": 3,
+  "state": "THREE_HETEROGENEOUS_OWNER_REPLICATION_METHOD_CANDIDATE_NOT_CONSTITUTIONAL",
+  "truthRole": "RESEARCH_METHOD_CANDIDATE_NOT_CONSTITUTION",
+  "whyNotConstitutional": [
+    "Three owner cases remain a small, selected sample inside one research programme.",
+    "The pattern has not yet been compared against alternative search/review strategies under controlled cost/quality measures.",
+    "Open-resource quality and coverage vary strongly by domain; some fields may depend on paywalled, tacit, proprietary or non-digitized knowledge.",
+    "Finance/Harness and later social/institutional domains have not yet provided independent replication.",
+    "A useful candidate method must remain optional enough not to suppress genuinely exploratory research before a residual is well formed."
+  ],
+  "witnesses": [
+    {
+      "domainType": "FORMAL_COMPUTATIONAL_SEMANTICS",
+      "owner": "research-owner:semantics-of-computational-descriptions",
+      "witness": "G1-G4 independent formal-gap hypotheses were rejected after targeted mature-theory subtraction; useful typed coordination/integration residues survived without local-theory invention."
+    },
+    {
+      "domainType": "BIOLOGICAL_COGNITIVE_BEHAVIORAL",
+      "owner": "research-owner:human",
+      "witness": "Human HF/HD/HOC pressures were mapped against mature psychology/cognitive/consciousness/affective/developmental/language/life sciences; broad Biology/Medicine and universal-person reductions were not promoted."
+    },
+    {
+      "domainType": "COMMUNICATION_REPRESENTATION_CULTURAL_TECHNICAL_MEDIATION",
+      "owner": "research-owner:media",
+      "witness": "Communication/audience/meaning/archive/interface/presence candidate continents survived as derived/cross-owner structures while external Communication/Media/Semiotics/HCI fields absorbed broad novelty; MF10 remained unadmitted."
+    }
+  ]
+}

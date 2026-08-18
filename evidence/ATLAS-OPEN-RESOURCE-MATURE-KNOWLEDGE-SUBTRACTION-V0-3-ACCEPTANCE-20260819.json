@@ -1,0 +1,60 @@
+{
+  "closure": "THREE_HETEROGENEOUS_OWNER_REPLICATION_ACCEPTED_AS_METHOD_CANDIDATE_NOT_CONSTITUTION",
+  "controls": [
+    "Three heterogeneous owners justify candidate-method status only.",
+    "Open/public resources are not automatic authority.",
+    "Internal query selection is not external evidence.",
+    "Negative novelty findings and derived residues are preserved as positive research output.",
+    "Absence of external match is not novelty.",
+    "Method candidate remains optional/non-constitutional pending comparative dogfood."
+  ],
+  "date": "2026-08-19",
+  "kind": "ordivon.open-resource-mature-knowledge-subtraction-v0-3-acceptance",
+  "method": "reference/open-resource-mature-knowledge-subtraction-pattern-v0-3-20260819.json",
+  "promotionRationale": [
+    "Three witnesses are heterogeneous in object, method and external literature ecology.",
+    "All three use owner-native anomalies to narrow search but require independent public external evidence for mapping/repair.",
+    "All three preserve negative/non-novel findings as positive epistemic output instead of forcing novelty.",
+    "At least one witness (SCD) rejects multiple explicit novelty hypotheses; Human rejects broad/universal reductions; Media rejects candidate-continent-to-Foundation promotion."
+  ],
+  "schemaVersion": 1,
+  "state": "THREE_HETEROGENEOUS_OWNER_REPLICATION_METHOD_CANDIDATE_NOT_CONSTITUTIONAL",
+  "truthRole": "HISTORICAL_RESEARCH_METHOD_DOGFOOD_EVIDENCE",
+  "verification": {
+    "atlasDeterministic": "63 tests OK; 45 gated skips; 18 deterministic executed",
+    "atlasDeterministicJob": "job-01a0165f-8acc-7ab3-ac5d-d2e157584885",
+    "atlasTenOwnerObservation": "10/10 CURRENT_TO_SOURCE",
+    "atlasTenOwnerObservationJob": "job-01a01663-0711-7d92-a59c-0193114dfe3d",
+    "fullReferenceBranchSuite": "132 tests OK; 28 gated skips; 104 deterministic executed",
+    "fullReferenceBranchSuiteJob": "job-01a01665-dae1-7a52-91f6-899ed4184c46",
+    "mediaAtlasParity": "9/9 PASS",
+    "mediaAtlasParityJob": "job-01a0165e-afd3-7422-b643-e1357bac9d5e",
+    "referenceSuite": "95/95 PASS",
+    "referenceSuiteJob": "job-01a01665-9da9-7723-bee4-b628ed3daea6"
+  },
+  "whyNotConstitutional": [
+    "Three owner cases remain a small, selected sample inside one research programme.",
+    "The pattern has not yet been compared against alternative search/review strategies under controlled cost/quality measures.",
+    "Open-resource quality and coverage vary strongly by domain; some fields may depend on paywalled, tacit, proprietary or non-digitized knowledge.",
+    "Finance/Harness and later social/institutional domains have not yet provided independent replication.",
+    "A useful candidate method must remain optional enough not to suppress genuinely exploratory research before a residual is well formed."
+  ],
+  "witnessCount": 3,
+  "witnesses": [
+    {
+      "domainType": "FORMAL_COMPUTATIONAL_SEMANTICS",
+      "owner": "research-owner:semantics-of-computational-descriptions",
+      "witness": "G1-G4 independent formal-gap hypotheses were rejected after targeted mature-theory subtraction; useful typed coordination/integration residues survived without local-theory invention."
+    },
+    {
+      "domainType": "BIOLOGICAL_COGNITIVE_BEHAVIORAL",
+      "owner": "research-owner:human",
+      "witness": "Human HF/HD/HOC pressures were mapped against mature psychology/cognitive/consciousness/affective/developmental/language/life sciences; broad Biology/Medicine and universal-person reductions were not promoted."
+    },
+    {
+      "domainType": "COMMUNICATION_REPRESENTATION_CULTURAL_TECHNICAL_MEDIATION",
+      "owner": "research-owner:media",
+      "witness": "Communication/audience/meaning/archive/interface/presence candidate continents survived as derived/cross-owner structures while external Communication/Media/Semiotics/HCI fields absorbed broad novelty; MF10 remained unadmitted."
+    }
+  ]
+}

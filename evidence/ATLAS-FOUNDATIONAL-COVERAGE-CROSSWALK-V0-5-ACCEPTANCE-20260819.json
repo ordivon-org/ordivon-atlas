@@ -1,0 +1,97 @@
+{
+  "closure": "TEN_OWNER_IDENTITY_LEVEL_CROSSWALK_V0_5_ACCEPTED",
+  "controls": [
+    "Media entered coverage only after immutable owner publication and tenth-owner CURRENT_TO_SOURCE observation.",
+    "All previous nine owner AuthorityVersionRef+transport pairs were revalidated unchanged before reuse.",
+    "Media maps to Communication Studies, Media Studies, Semiotics and HCI only as BRIDGE_COVERAGE.",
+    "Communication Studies/Media Studies are not forced into current MajorRegions.",
+    "Art/Expression/Studio adjacency does not transfer cultural/art owner authority.",
+    "HCI/Semiotics bridge mappings do not imply whole-field ownership.",
+    "Dense Media mappings do not create region or scalar coverage truth.",
+    "Global scalar coverage remains forbidden."
+  ],
+  "counts": {
+    "excludedOwnerCurrentnessCases": 2,
+    "identityMappings": 25,
+    "mediaMappings": 4,
+    "ownerAuthorityInputs": 10,
+    "regionViews": 8
+  },
+  "date": "2026-08-19",
+  "findings": [
+    {
+      "claim": "Media is now the tenth source-fenced current Atlas owner and can enter crosswalk without Studio/project-history authority.",
+      "id": "CWP5-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Round4D independently verifies four previously missing external coordinates: Communication Studies, Media Studies, Semiotics and Human-Computer Interaction.",
+      "id": "CWP5-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Media maps to all four as BRIDGE_COVERAGE only; no direct field equivalence, cultural ownership, HCI ownership or semiotic ownership is claimed.",
+      "id": "CWP5-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Media crosswalk strengthens the deferred social/cultural navigation pressure: Communication Studies and Media Studies are real identities but should remain unassigned rather than be forced into current Mind/Philosophy regions.",
+      "id": "CWP5-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Media destructive reductions provide a third heterogeneous mature-knowledge-subtraction witness: apparently new continents can remain scientifically real as derived profiles after mature external fields and neighboring-owner responsibilities absorb primitive novelty.",
+      "id": "CWP5-5",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Across SCD, Human and Media, open-resource mature-knowledge subtraction now merits candidate-method status, but three selected Ordivon owners are insufficient for Constitution-level methodology authority.",
+      "id": "CWP5-6",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.foundational-coverage-crosswalk-v0-5-acceptance",
+  "mediaDisposition": {
+    "directFieldEquivalence": "NOT_CLAIMED",
+    "mappingRefs": [
+      "crosswalk:media->communication-studies",
+      "crosswalk:media->media-studies",
+      "crosswalk:media->semiotics",
+      "crosswalk:media->human-computer-interaction"
+    ],
+    "negativeNoveltyEvidence": [
+      "Communication/exposure/protocol/publication/audience/meaning/archive/translation profiles survived as derived structures rather than MF10.",
+      "Round C falsified checklist-completion closure; fresh candidate continents were then directly reduced in Round D rather than promoted by novelty pressure.",
+      "Infrastructure, operative mediation, interface/action coupling and mediated presence remain typed derived/cross-owner structures, not new primitives.",
+      "Art/Expression/Studio is explicitly adjacent-not-core and cross-owner semantic dependency does not transfer authority.",
+      "Strong current research closure does not claim absolute whole-Media exhaustion."
+    ],
+    "ownerResearchRef": "research-owner:media",
+    "standing": "EXTERNAL_MULTI_DOMAIN_MEDIATION_BRIDGE_MAPPED_NOVELTY_NOT_ESTABLISHED"
+  },
+  "ownerSnapshot": "reference/coverage-crosswalk-owner-authority-snapshot-v0-5-20260819.json",
+  "pilot": "reference/coverage-crosswalk-foundational-pilot-v0-5-20260819.json",
+  "schemaVersion": 1,
+  "sourceFence": {
+    "mainRevision": "5506abec4f755b1e72a6257a1babe33ca4180c3b",
+    "observationJobId": "job-01a01663-0711-7d92-a59c-0193114dfe3d",
+    "observationMode": "PARALLEL_PER_OWNER_CURRENTNESS_OBSERVATION",
+    "observationResult": "10/10 CURRENT_TO_SOURCE",
+    "repo": "/root/projects/ordivon-atlas",
+    "reuseRule": "All prior nine AuthorityVersionRef+transport pairs were revalidated exactly unchanged; Media added current."
+  },
+  "state": "TEN_OWNER_CROSSWALK_WITH_MEDIA_AND_ROUND4D_EXTERNAL_REPAIR",
+  "truthRole": "HISTORICAL_CROSSWALK_DOGFOOD_EVIDENCE",
+  "verification": {
+    "atlasDeterministic": "63 tests OK; 45 gated skips; 18 deterministic executed",
+    "atlasDeterministicJob": "job-01a0165f-8acc-7ab3-ac5d-d2e157584885",
+    "atlasTenOwnerObservation": "10/10 CURRENT_TO_SOURCE",
+    "atlasTenOwnerObservationJob": "job-01a01663-0711-7d92-a59c-0193114dfe3d",
+    "fullReferenceBranchSuite": "132 tests OK; 28 gated skips; 104 deterministic executed",
+    "fullReferenceBranchSuiteJob": "job-01a01665-dae1-7a52-91f6-899ed4184c46",
+    "mediaAtlasParity": "9/9 PASS",
+    "mediaAtlasParityJob": "job-01a0165e-afd3-7422-b643-e1357bac9d5e",
+    "referenceSuite": "95/95 PASS",
+    "referenceSuiteJob": "job-01a01665-9da9-7723-bee4-b628ed3daea6"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "date": "2026-08-19",
+  "destructiveControls": {
+    "communicationStudiesNotForcedIntoCurrentRegions": true,
+    "hciCrossesComputingAndEngineering": true,
+    "majorRegionCountStillEight": true,
+    "mediaStudiesNotForcedIntoCurrentRegions": true,
+    "noOrdivonMediaIdentityMinted": true,
+    "regionCoverageTruthForbidden": true,
+    "semioticsCrossesPhilosophyAndMind": true
+  },
+  "findings": [
+    {
+      "claim": "Semiotics and HCI behave as non-exclusive cross-cutting members without becoming anchors or owner-shaped regions.",
+      "id": "R4D-D1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Communication Studies and Media Studies should remain explicit identities outside the current eight MajorRegions rather than being falsely absorbed by Mind/Language or Philosophy.",
+      "id": "R4D-D2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Media owner admission does not create an Ordivon-shaped external identity or transfer identity-level coverage into region truth.",
+      "id": "R4D-D3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.canonical-major-region-v0-5-media-perturbation-dogfood",
+  "regionResults": [
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "regionRef": "navigation-region:formal-inferential",
+      "result": "PASS",
+      "round4dIdentitiesNotPromotedToAnchors": true
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "regionRef": "navigation-region:computation-computer-systems",
+      "result": "PASS",
+      "round4dIdentitiesNotPromotedToAnchors": true
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "regionRef": "navigation-region:philosophical-conceptual",
+      "result": "PASS",
+      "round4dIdentitiesNotPromotedToAnchors": true
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "regionRef": "navigation-region:physical-material",
+      "result": "PASS",
+      "round4dIdentitiesNotPromotedToAnchors": true
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "regionRef": "navigation-region:earth-planetary-space",
+      "result": "PASS",
+      "round4dIdentitiesNotPromotedToAnchors": true
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "regionRef": "navigation-region:life",
+      "result": "PASS",
+      "round4dIdentitiesNotPromotedToAnchors": true
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "regionRef": "navigation-region:mind-language",
+      "result": "PASS",
+      "round4dIdentitiesNotPromotedToAnchors": true
+    },
+    {
+      "anchorsPreserved": true,
+      "missingRefs": [],
+      "regionRef": "navigation-region:engineering-design",
+      "result": "PASS",
+      "round4dIdentitiesNotPromotedToAnchors": true
+    }
+  ],
+  "schemaVersion": 1,
+  "state": "PASS"
+}

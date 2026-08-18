@@ -1,0 +1,245 @@
+{
+  "closure": "ROUND4D_BOUNDED_REPAIR_COMPLETE_SOCIAL_CULTURAL_NAVIGATION_STILL_DEFERRED",
+  "kind": "ordivon.foundational-reference-round4d-media-crosswalk-repair",
+  "laws": [
+    "MEDIA_PRESSURE_MAY_TRIGGER_SEARCH_NOT_IDENTITY",
+    "EXTERNAL_SOURCE_VERIFICATION_REQUIRED_BEFORE_REFERENCE_REPAIR",
+    "MEDIA_OWNER != MEDIA_STUDIES_FIELD",
+    "COMMUNICATION_STUDIES != MEDIA_STUDIES",
+    "SEMIOTICS_IS_CROSS_CUTTING_NOT_LINGUISTICS_CHILD",
+    "HCI_IS_INTERDISCIPLINARY_NOT_COMPUTING_CHILD",
+    "SOCIAL_CULTURAL_REGION_MAY_REMAIN_UNASSIGNED",
+    "NEW_EXTERNAL_IDENTITY != NEW_ORDIVON_OWNER"
+  ],
+  "normalizedSpaces": [
+    {
+      "aliases": [
+        "Communication science"
+      ],
+      "evidence": [
+        "ica-mission",
+        "ica-divisions",
+        "iamcr-profile"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Communication studies",
+      "placements": [
+        "communication",
+        "media",
+        "language",
+        "technology",
+        "organizations",
+        "public-sphere-boundary",
+        "social-cultural-boundary"
+      ],
+      "rationale": "ICA explicitly organizes the scholarly study of communication as a wide-ranging discipline with stable subfields spanning interpersonal, mass, technological, visual, language/social interaction, organizational and other communication. IAMCR independently confirms a global media-and-communication research field. Preserve Communication Studies as a first-class but non-root interdisciplinary domain rather than reducing it to linguistics, media studies or information theory.",
+      "roleClasses": [
+        "MAJOR_COMMUNICATION_DOMAIN",
+        "INTERDISCIPLINARY_SOCIAL_COMMUNICATION_DOMAIN",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:communication-studies"
+    },
+    {
+      "aliases": [
+        "Cinema and media studies"
+      ],
+      "evidence": [
+        "scms-about",
+        "iamcr-profile"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Media studies",
+      "placements": [
+        "media",
+        "communication-studies",
+        "history",
+        "culture-boundary",
+        "representation",
+        "production-circulation-reception",
+        "industry-boundary"
+      ],
+      "rationale": "SCMS identifies Cinema and Media Studies as a distinct humanities-oriented field studying production, circulation, reception, representations, aesthetics, meanings and uses, while explicitly distinguishing it from social-science mass communication. IAMCR shows the broader media/communication research ecology. Preserve Media Studies as distinct from Communication Studies while allowing overlap.",
+      "roleClasses": [
+        "MEDIA_CULTURAL_INTERPRETIVE_DOMAIN",
+        "REPRESENTATION_CIRCULATION_DOMAIN",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:media-studies"
+    },
+    {
+      "aliases": [
+        "Semiology"
+      ],
+      "evidence": [
+        "iass-home",
+        "iass-statutes"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Semiotics",
+      "placements": [
+        "philosophy",
+        "linguistics",
+        "communication-studies",
+        "media-studies",
+        "cognition",
+        "biology-boundary",
+        "meaning-signification"
+      ],
+      "rationale": "IASS defines semiotics as scientific research into signification and communication across natural and cultural environments, with explicit transdisciplinary reach. It is therefore a cross-cutting meaning/signification axis rather than a child of either Linguistics or Media Studies alone.",
+      "roleClasses": [
+        "SIGNIFICATION_MEANING_AXIS",
+        "INTERPRETIVE_FORMAL_BRIDGE",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:semiotics"
+    },
+    {
+      "aliases": [
+        "HCI"
+      ],
+      "evidence": [
+        "sigchi-home",
+        "sigchi-about",
+        "ica-divisions"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Human-computer interaction",
+      "placements": [
+        "computation",
+        "psychology",
+        "design",
+        "communication-studies",
+        "information-science",
+        "media",
+        "human-technology-interaction"
+      ],
+      "rationale": "ACM SIGCHI treats HCI as a stable interdisciplinary research/practice field drawing on computing, software engineering, psychology, interaction/graphic design, sociology, multimedia and information science. ICA independently places HCI within communication-and-technology research. Preserve HCI as an interdisciplinary bridge rather than computing-only or psychology-only.",
+      "roleClasses": [
+        "INTERDISCIPLINARY_COMPUTING_INTERACTION_DOMAIN",
+        "DESIGN_INTERVENTION_BRIDGE",
+        "HUMAN_TECHNOLOGY_SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:human-computer-interaction"
+    }
+  ],
+  "relations": [
+    {
+      "from": "norm:communication-studies",
+      "to": "norm:linguistics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:media-studies",
+      "to": "norm:communication-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:media-studies",
+      "to": "norm:semiotics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:media-studies",
+      "to": "norm:history",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:semiotics",
+      "to": "norm:linguistics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:semiotics",
+      "to": "norm:philosophy",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:human-computer-interaction",
+      "to": "norm:computation",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:human-computer-interaction",
+      "to": "norm:psychology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:human-computer-interaction",
+      "to": "norm:design",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:human-computer-interaction",
+      "to": "norm:communication-studies",
+      "type": "BRIDGES"
+    }
+  ],
+  "repair": {
+    "externalBasis": [
+      "ica-mission",
+      "ica-divisions",
+      "iamcr-profile",
+      "scms-about",
+      "iass-home",
+      "iass-statutes",
+      "sigchi-home",
+      "sigchi-about"
+    ],
+    "oldPressure": "Media owner contained mature structural mediation research and many derived communication/meaning/interface/publication profiles, but v0.4 lacked Communication Studies, Media Studies, Semiotics and HCI coordinates.",
+    "repair": "Normalize four externally supported non-root identities while preserving the deferred social/cultural MajorRegion boundary.",
+    "repairId": "R4D-MEDIA-1",
+    "status": "APPLIED"
+  },
+  "roundId": "foundational-reference:round4d:2026-08-19",
+  "schemaVersion": 1,
+  "sources": {
+    "iamcr-profile": {
+      "role": "MEDIA_COMMUNICATION_RESEARCH_FIELD_SCOPE",
+      "title": "International Association for Media and Communication Research — Profile",
+      "url": "https://iamcr.org/iamcr-profile"
+    },
+    "iass-home": {
+      "role": "SEMIOTICS_SIGNIFICATION_COMMUNICATION_SCOPE",
+      "title": "International Association for Semiotic Studies — Semiotics field scope",
+      "url": "https://iass-ais.org/"
+    },
+    "iass-statutes": {
+      "role": "SEMIOTICS_SCIENTIFIC_RESEARCH_SCOPE",
+      "title": "International Association for Semiotic Studies — Statutes",
+      "url": "https://iass-ais.org/statutes-of-the-international-association-for-semiotic-studies-iass-association-internationale-de-semiotique-ais/"
+    },
+    "ica-divisions": {
+      "role": "COMMUNICATION_SUBFIELD_TOPOLOGY",
+      "title": "International Communication Association — Divisions and Interest Groups",
+      "url": "https://www.icahdq.org/page/div_igs"
+    },
+    "ica-mission": {
+      "role": "COMMUNICATION_FIELD_SCOPE",
+      "title": "International Communication Association — Guiding Principles / scholarly study of communication",
+      "url": "https://www.icahdq.org/page/MissionStatement"
+    },
+    "scms-about": {
+      "role": "MEDIA_STUDIES_HUMANITIES_SCOPE",
+      "title": "Society for Cinema & Media Studies — About / What Is Cinema and Media Studies?",
+      "url": "https://www.cmstudies.org/page/about_us"
+    },
+    "sigchi-about": {
+      "role": "HCI_INTERDISCIPLINARY_TOPOLOGY",
+      "title": "ACM SIGCHI — About",
+      "url": "https://sigchi.org/about/"
+    },
+    "sigchi-home": {
+      "role": "HCI_FIELD_SCOPE",
+      "title": "ACM SIGCHI — Human Computer Interaction community",
+      "url": "https://sigchi.org/"
+    }
+  },
+  "state": "MEDIA_CROSSWALK_INDUCED_EXTERNAL_REPAIR_MATERIALIZED",
+  "trigger": "Newly current Media owner exposed that v0.4 had no adequate external coordinates for communication/media research, signification, or human-computer interaction. Media owner theory and derived profiles supplied search pressure only; independent professional associations were required for admission.",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_NORMALIZATION"
+}

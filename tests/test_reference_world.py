@@ -840,6 +840,120 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
         self.assertIn("INTERNAL_ARCHITECTURE != EXTERNAL_ONTOLOGY", m["safetyLaws"])
 
 
+    def test_crosswalk_v05_owner_snapshot_is_ten_owner_and_media_source_fenced(self) -> None:
+        snap = json.loads((ROOT / "reference/coverage-crosswalk-owner-authority-snapshot-v0-5-20260819.json").read_text())
+        self.assertEqual(snap["atlasSource"]["mainRevision"], "5506abec4f755b1e72a6257a1babe33ca4180c3b")
+        self.assertEqual(snap["atlasSource"]["observationResult"], "10/10 CURRENT_TO_SOURCE")
+        self.assertEqual(len(snap["owners"]), 10)
+        by = {x["ownerResearchRef"]: x for x in snap["owners"]}
+        m = by["research-owner:media"]
+        self.assertEqual(m["authorityVersionRef"], "sha256:d73f350556c6a66ecf58750dba88ce34839334fdf2920d8cb6dcdfff59fd3c33")
+        self.assertEqual(m["sourceTransportRevision"], "c3b39f1a2093a9aae5338abebb8224de2a5b7a06")
+        self.assertEqual(m["projectionCurrentness"], "CURRENT_TO_SOURCE")
+        excluded = {x["owner"] for x in snap["excludedCurrentnessCases"]}
+        self.assertEqual(excluded, {"Finance", "Harness"})
+
+    def test_round4d_repairs_four_media_adjacent_external_identities(self) -> None:
+        r = json.loads((ROOT / "reference/foundational-reference-round4d-media-crosswalk-repair-20260819.json").read_text())
+        by = {x["spaceRef"]: x for x in r["normalizedSpaces"]}
+        self.assertEqual(set(by), {"norm:communication-studies", "norm:media-studies", "norm:semiotics", "norm:human-computer-interaction"})
+        for x in by.values():
+            self.assertEqual(x["rootAdmission"], "NOT_ADMITTED")
+            self.assertGreaterEqual(len(x["placements"]), 6)
+            self.assertGreaterEqual(len(x["evidence"]), 2)
+        self.assertIn("SIGNIFICATION_MEANING_AXIS", by["norm:semiotics"]["roleClasses"])
+        self.assertIn("INTERDISCIPLINARY_COMPUTING_INTERACTION_DOMAIN", by["norm:human-computer-interaction"]["roleClasses"])
+        self.assertIn("COMMUNICATION_STUDIES != MEDIA_STUDIES", r["laws"])
+        self.assertIn("SOCIAL_CULTURAL_REGION_MAY_REMAIN_UNASSIGNED", r["laws"])
+
+    def test_round4d_does_not_mint_ordivon_media_external_identity(self) -> None:
+        r = json.loads((ROOT / "reference/foundational-reference-round4d-media-crosswalk-repair-20260819.json").read_text())
+        refs = {x["spaceRef"] for x in r["normalizedSpaces"]}
+        self.assertFalse(any("ordivon" in ref or ref.startswith("norm:media-owner") for ref in refs))
+
+    def test_crosswalk_v05_media_has_only_bounded_bridge_coverage(self) -> None:
+        p = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-5-20260819.json").read_text())
+        self.assertEqual(p["globalScalarCoverage"], "FORBIDDEN")
+        self.assertEqual(len(p["mappings"]), 25)
+        self.assertEqual(p["mediaDisposition"]["standing"], "EXTERNAL_MULTI_DOMAIN_MEDIATION_BRIDGE_MAPPED_NOVELTY_NOT_ESTABLISHED")
+        self.assertEqual(p["mediaDisposition"]["directFieldEquivalence"], "NOT_CLAIMED")
+        by = {x["mappingRef"]: x for x in p["mappings"]}
+        for ref, ext in (
+            ("crosswalk:media->communication-studies", "norm:communication-studies"),
+            ("crosswalk:media->media-studies", "norm:media-studies"),
+            ("crosswalk:media->semiotics", "norm:semiotics"),
+            ("crosswalk:media->human-computer-interaction", "norm:human-computer-interaction"),
+        ):
+            self.assertEqual(by[ref]["externalRef"], ext)
+            self.assertEqual(by[ref]["relation"], "BRIDGE_COVERAGE")
+            self.assertIn("FALSIFICATION_TESTED", by[ref]["facets"])
+
+    def test_media_crosswalk_preserves_art_studio_culture_and_hci_noncoverage(self) -> None:
+        p = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-5-20260819.json").read_text())
+        text = " | ".join(x["case"] + " :: " + x["reason"] for x in p["nonCoverageCases"])
+        self.assertIn("does not absorb cultural/history/art authority", text)
+        self.assertIn("does not count as whole HCI", text)
+        self.assertIn("does not count as whole signification/meaning coverage", text)
+        self.assertIn("does not count as whole communication coverage", text)
+
+    def test_major_regions_v05_leave_communication_and_media_studies_unassigned(self) -> None:
+        nav = json.loads((ROOT / "reference/canonical-major-regions-v0-5-20260819.json").read_text())
+        self.assertEqual(len(nav["regions"]), 8)
+        members = {m for r in nav["regions"] for m in r["memberRefs"]}
+        self.assertNotIn("norm:communication-studies", members)
+        self.assertNotIn("norm:media-studies", members)
+        pressure = {x["identityRef"] for x in nav["deferredNavigationPressure"]}
+        self.assertEqual(pressure, {"norm:communication-studies", "norm:media-studies"})
+
+    def test_major_regions_v05_keep_semiotics_and_hci_crosscutting_nonanchor(self) -> None:
+        nav = json.loads((ROOT / "reference/canonical-major-regions-v0-5-20260819.json").read_text())
+        by = {x["regionRef"]: x for x in nav["regions"]}
+        self.assertIn("norm:semiotics", by["navigation-region:philosophical-conceptual"]["memberRefs"])
+        self.assertIn("norm:semiotics", by["navigation-region:mind-language"]["memberRefs"])
+        self.assertIn("norm:human-computer-interaction", by["navigation-region:computation-computer-systems"]["memberRefs"])
+        self.assertIn("norm:human-computer-interaction", by["navigation-region:engineering-design"]["memberRefs"])
+        for r in nav["regions"]:
+            self.assertNotIn("norm:semiotics", r["anchorRefs"])
+            self.assertNotIn("norm:human-computer-interaction", r["anchorRefs"])
+
+    def test_major_regions_v05_media_perturbation_dogfood_passes(self) -> None:
+        d = json.loads((ROOT / "reference/canonical-major-regions-v0-5-dogfood-20260819.json").read_text())
+        self.assertEqual(d["state"], "PASS")
+        self.assertTrue(all(d["destructiveControls"].values()))
+        self.assertTrue(all(x["result"] == "PASS" for x in d["regionResults"]))
+        self.assertTrue(d["destructiveControls"]["communicationStudiesNotForcedIntoCurrentRegions"])
+        self.assertTrue(d["destructiveControls"]["mediaStudiesNotForcedIntoCurrentRegions"])
+
+    def test_mature_knowledge_subtraction_v03_is_candidate_method_not_constitution(self) -> None:
+        m = json.loads((ROOT / "reference/open-resource-mature-knowledge-subtraction-pattern-v0-3-20260819.json").read_text())
+        self.assertEqual(m["state"], "THREE_HETEROGENEOUS_OWNER_REPLICATION_METHOD_CANDIDATE_NOT_CONSTITUTIONAL")
+        self.assertEqual(len(m["witnesses"]), 3)
+        self.assertEqual({x["owner"] for x in m["witnesses"]}, {
+            "research-owner:semantics-of-computational-descriptions",
+            "research-owner:human",
+            "research-owner:media",
+        })
+        self.assertGreaterEqual(len(m["whyNotConstitutional"]), 5)
+        self.assertIn("METHOD_CANDIDATE != CONSTITUTION", m["laws"])
+        self.assertIn("ABSENCE_OF_EXTERNAL_MATCH != NOVELTY", m["laws"])
+
+    def test_whole_audit_v7_tracks_media_and_explicit_social_cultural_navigation_gap(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v7-media-crosswalk-20260819.json").read_text())
+        self.assertEqual(a["counts"]["normalizedSpaces"], 90)
+        self.assertEqual(a["counts"]["relations"], 120)
+        self.assertEqual(a["counts"]["multiPlacementSpaces"], 87)
+        self.assertEqual(a["counts"]["multiRoleSpaces"], 87)
+        self.assertEqual(a["counts"]["currentOwnerAuthorityInputs"], 10)
+        self.assertEqual(a["counts"]["crosswalkMappings"], 25)
+        self.assertEqual(a["counts"]["canonicalMajorRegionProjections"], 8)
+        self.assertEqual(a["counts"]["deferredSocialCulturalNavigationIdentities"], 2)
+        self.assertEqual(a["counts"]["matureKnowledgeSubtractionWitnesses"], 3)
+        self.assertEqual(a["counts"]["identityLabelCollisions"], 0)
+        self.assertEqual(a["counts"]["brokenRelations"], 0)
+        self.assertEqual(a["globalScalarCoverage"], "FORBIDDEN")
+        self.assertIn("THREE_OWNER_REPLICATION != CONSTITUTION", a["laws"])
+
+
 
 if __name__ == "__main__":
     unittest.main()
