@@ -99,6 +99,17 @@
         "git@github.com:zycxfyh/ordivon-human.git"
       ],
       "repo": "/root/projects/ordivon-human"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:media",
+      "corpusRoot": "research/media",
+      "ownerResearchRef": "research-owner:media",
+      "ref": "refs/heads/research/media-authority-publication-20260819",
+      "remote": "https://github.com/zycxfyh/ordivon-media.git",
+      "remoteFallbacks": [
+        "git@github.com:zycxfyh/ordivon-media.git"
+      ],
+      "repo": "/root/projects/ordivon-media"
     }
   ]
 }

@@ -12,9 +12,9 @@ class HumanRegistryTests(unittest.TestCase):
         cls.sources = json.loads((ROOT / "config/sources.json").read_text())["sources"]
         cls.by_owner = {x["ownerResearchRef"]: x for x in cls.sources}
 
-    def test_human_is_ninth_independent_source(self):
-        self.assertEqual(len(self.sources), 9)
-        self.assertEqual(len(self.by_owner), 9)
+    def test_human_remains_independent_registered_source(self):
+        self.assertEqual(len(self.sources), 10)
+        self.assertEqual(len(self.by_owner), 10)
         self.assertIn(HUMAN, self.by_owner)
 
     def test_human_uses_owner_native_repair_ref_and_core_root(self):

@@ -13,7 +13,7 @@ class SCDRegistryTests(unittest.TestCase):
         cls.by_owner = {x["ownerResearchRef"]: x for x in cls.sources}
 
     def test_scd_remains_an_independent_registered_source(self):
-        self.assertEqual(len(self.sources), 9)
+        self.assertEqual(len(self.sources), 10)
         self.assertIn(SCD, self.by_owner)
         self.assertIn(CP, self.by_owner)
         self.assertEqual(len(self.by_owner), len(self.sources))
