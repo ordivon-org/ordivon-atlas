@@ -10,8 +10,12 @@ This collection does **not** canonize the conversation transcript. It extracts o
 
 ## Files
 
+- [`assimilation-manifest.md`](assimilation-manifest.md) — semantic-dedup audit of the conversation: what was already durable, what was newly synthesized, and what was deliberately not copied.
 - [`worldview.md`](worldview.md) — the compact Ordivon responsibility/worldview map: Reality, Meaning, Possibility, Cognition, Realization, Work, Synthesis, Map, Investigation, Current Truth.
+- [`owner-topology-guide.md`](owner-topology-guide.md) — human explanation of why semantic owners are truth-condition responsibilities rather than repository partitions.
+- [`agent-work-realization-guide.md`](agent-work-realization-guide.md) — Host/Harness/Runtime/domain-result responsibility chain and scoped-success model.
 - [`research-method-v1.md`](research-method-v1.md) — human-readable compression of the current Ordivon Research Method and its boundary between invariants and optional strategies.
+- [`research-significance-map.md`](research-significance-map.md) — separates world-model-changing results, method changes, architecture formalization, and high-value frontiers.
 - [`human-ordivon-learning-map.md`](human-ordivon-learning-map.md) — Human Core / Working Knowledge / Retrievable Knowledge / Machine Memory model.
 - [`anti-rediscovery.md`](anti-rediscovery.md) — prior-result lookup and duplicate-research guard.
 
