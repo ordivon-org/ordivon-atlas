@@ -1,0 +1,80 @@
+{
+  "atlasBaselineCommit": "412779cb92e2a7cd2b5cc59bdc98aea287421529",
+  "classification": {
+    "authorityRecoveryFailure": false,
+    "bootstrapAccessDuringDestructiveTest": false,
+    "boundaryParityPassed": true,
+    "closureParityPassed": true,
+    "numberedFoundationInvented": false,
+    "phr2ToPhr4ReenteredCurrentOwner": false,
+    "productionServiceRequired": false,
+    "recoveryParityPassed": true,
+    "representationalFailure": false,
+    "semanticParityPassed": true,
+    "sharedRepoAuthorityCollapsedToNetwork": false
+  },
+  "date": "2026-08-18",
+  "destructiveProof": {
+    "allowedInputs": [
+      "generated/atlas.json",
+      "config/sources.json",
+      "shared-repo Git objects at sourceTransportRevision"
+    ],
+    "finalDeterministicSuiteJob": "job-01a01549-787b-7bd2-a88c-4f0cf5141929",
+    "finalDeterministicSuiteResult": "9 PASS; 7 four-owner retirement + 7 live + 7 Normative retirement + 7 World retirement tests gated/skipped by default",
+    "finalProofJob": "job-01a01549-0fc6-7803-a21a-6a47059169f1",
+    "finalProofResult": "7/7 PASS",
+    "hostTaskReadsDuringProof": false,
+    "initialProofJob": "job-01a01548-8739-72a2-85fa-82121e80bb3c",
+    "initialProofResult": "6/7 semantic assertions PASS; one recovery-text assertion failed only because test hard-coded display spelling `Numbered Foundation Count = 0` while owner README says `Numbered Foundation count: **0**`.",
+    "paritySpec": "evidence/BOOTSTRAP-NORMATIVE-PARITY-SPEC-20260818.json",
+    "testModule": "tests/test_normative_retirement.py",
+    "testRepairDisposition": "Changed the recovery check to a formatting-tolerant semantic regex; owner corpus was not edited to satisfy the test.",
+    "testRepairJob": "job-01a01548-d3a4-7100-84ef-083484a3986c"
+  },
+  "kind": "ordivon.atlas-normative-firstlookup-retirement-acceptance-evidence",
+  "legacyReconciliationSources": [
+    {
+      "checkpointDigest": "sha256:443553d541eb0681ac78360800cfbd1d1084180165177b4fa7cdf0090b086e38",
+      "revision": 3,
+      "taskId": "task:ordivon-normative-research-core-consolidation-branch-20260818"
+    },
+    {
+      "checkpointDigest": "sha256:cb7af8bc80ccd6e654f497294b237eda179235fdd10dec1566ac2c24cd59a89f",
+      "historicalDisposition": "Earlier physical-home escalation; later shared-corpus materialization 0fde1702 resolved placement.",
+      "revision": 3,
+      "taskId": "task:ordivon-normative-research-materialization-repair-20260818"
+    }
+  ],
+  "nonAuthorityNotice": "Retirement changes live navigation only. Normative owner publication/corpus remains semantic authority; Atlas remains projection; historical Host capsules remain historical evidence.",
+  "normativeAuthorityVersionRef": "sha256:6558bc84bb52a3a0ffbff0f683a36d46c28efc0f2ba531d4458bd5aa16a4a56e",
+  "recoveredHighControlFacts": [
+    "Normative owner-native recovery resolves to owners/ordivon-normative/README.md at shared transport edfb2bb and not to Network recovery.",
+    "Numbered Foundation Count remains exactly zero as a current frozen architecture fact.",
+    "AnchorInterface, GeneratorAdmissionStructure and Constitutive/Normative Derivation-and-Transition Semantics remain non-numbered CURRENT+FROZEN architecture components.",
+    "No ONF or PHR numbered Foundation series is admitted.",
+    "Universal Normativity, generic institution/governance, generic reasons/value and generic Control/Regulation are not admitted as this owner scope.",
+    "PHR1 remains HISTORICAL_PRESERVED origin history.",
+    "PHR2–PHR4 do not re-enter current Ordivon Normative result projection.",
+    "Closure and material lineage remain recoverable without Host lookup."
+  ],
+  "retirementDisposition": {
+    "historicalConsolidationCapsule": "PRESERVE_AS_HISTORICAL_RECONCILIATION_EVIDENCE",
+    "historicalMaterializationCapsule": "PRESERVE_AS_HISTORICAL_RECONCILIATION_EVIDENCE",
+    "normativeLegacyConsolidationMaterializationLiveNavigationRole": "RETIRED",
+    "normativeOwnerPublicationAndAtlasBecomeLiveFirstLookup": true,
+    "physicalDeletionPerformed": false
+  },
+  "schemaVersion": 1,
+  "scope": "Ordivon Normative owner only",
+  "sharedRepoRecoveryFirewall": {
+    "distinctAuthorityVersionRefs": true,
+    "distinctCurrentRecoveryLocators": true,
+    "networkCorpusUsedAsNormativeRecovery": false,
+    "normativeAndNetworkUseSamePhysicalRepo": true,
+    "repositoryMintedSemanticOwnership": false,
+    "sameSourceTransportRevision": true
+  },
+  "sharedSourceTransportRevision": "edfb2bb80803a586636804015169f0c01d6e9709",
+  "truthRole": "historical-test-evidence"
+}

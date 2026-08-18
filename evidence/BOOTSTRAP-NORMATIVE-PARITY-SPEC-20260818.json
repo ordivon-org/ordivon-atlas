@@ -1,0 +1,160 @@
+{
+  "authority": {
+    "authorityRef": "authority:ordivon:research-owner:ordivon-normative",
+    "authorityVersionRef": "sha256:6558bc84bb52a3a0ffbff0f683a36d46c28efc0f2ba531d4458bd5aa16a4a56e",
+    "recovery": {
+      "locator": "owners/ordivon-normative/README.md",
+      "targetRole": "OWNER_RESEARCH_CORPUS"
+    },
+    "sourceTransportRevision": "edfb2bb80803a586636804015169f0c01d6e9709"
+  },
+  "bootstrapExecutionPolicy": {
+    "allowedInputs": [
+      "generated/atlas.json",
+      "config/sources.json",
+      "shared-repo Git objects at generated sourceTransportRevision"
+    ],
+    "bootstrapUsedAtExecution": false,
+    "forbiddenInputs": [
+      "Ordivon Host task reads",
+      "Normative consolidation/materialization capsule reads",
+      "Network corpus as Normative semantic authority"
+    ]
+  },
+  "closure": [
+    {
+      "scope": "CURRENT_OWNER_BOUNDARY",
+      "status": "ESTABLISHED"
+    },
+    {
+      "scope": "FOUNDATION_LEVEL_ARCHITECTURE",
+      "status": "ESTABLISHED"
+    },
+    {
+      "scope": "NUMBERED_FOUNDATION_SERIES",
+      "status": "NOT_ADMITTED"
+    },
+    {
+      "scope": "UNIVERSAL_NORMATIVITY_OWNER",
+      "status": "NOT_ADMITTED"
+    }
+  ],
+  "date": "2026-08-18",
+  "historicalRetention": "REQUIRED",
+  "kind": "ordivon.atlas-normative-firstlookup-parity-spec",
+  "legacyReconciliationSources": [
+    {
+      "checkpointDigest": "sha256:443553d541eb0681ac78360800cfbd1d1084180165177b4fa7cdf0090b086e38",
+      "revision": 3,
+      "taskId": "task:ordivon-normative-research-core-consolidation-branch-20260818"
+    },
+    {
+      "checkpointDigest": "sha256:cb7af8bc80ccd6e654f497294b237eda179235fdd10dec1566ac2c24cd59a89f",
+      "historicalDisposition": "Physical-home escalation later resolved by shared-corpus materialization 0fde1702.",
+      "revision": 3,
+      "taskId": "task:ordivon-normative-research-materialization-repair-20260818"
+    }
+  ],
+  "lineageContains": [
+    "PHR1 is the historical origin of current Ordivon Normative and remains preserved as origin history, not a numbered Foundation.",
+    "PHR2-PHR4 are deliberately outside the current Normative root as sibling derived/contested Post-Host research history and are not active Normative subprojects.",
+    "Numbered Foundation Count remains zero; no ONF or PHR numbered Foundation series is admitted.",
+    "Explanatory families are navigation-only compression over the three-part architecture and do not create numbered Foundations.",
+    "Generic Control/Regulation and generic Representation/conceptual-resource ownership are not owned by Ordivon Normative; their broader placement remains external/open rather than being resolved here."
+  ],
+  "negativeFalsifiers": {
+    "PHR2ToPHR4MustNotAppearAsCurrentNormativeResults": true,
+    "nonNumberedArchitectureMustNotBecomeONF0ToONF2": true,
+    "numberedFoundationCountMustRemainZero": true,
+    "sharedRepoNetworkCorpusMustNotBecomeNormativeRecovery": true
+  },
+  "ownerResearchRef": "research-owner:ordivon-normative",
+  "results": {
+    "result:normative:anchor-interface-current-frozen": {
+      "standing": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:normative:derivation-transition-semantics-current-frozen": {
+      "standing": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:normative:generator-admission-structure-current-frozen": {
+      "standing": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:normative:generic-control-regulation-not-owned-here": {
+      "standing": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:normative:generic-institution-governance-owner-not-admitted": {
+      "standing": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:normative:generic-reasons-value-owner-not-admitted": {
+      "standing": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:normative:numbered-foundation-count-zero-current-frozen": {
+      "standing": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:normative:onf-numbered-series-not-admitted": {
+      "standing": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:normative:owner-boundary-current": {
+      "standing": [
+        "CURRENT",
+        "FROZEN"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:normative:phr-numbered-foundation-series-not-admitted": {
+      "standing": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:normative:phr1-historical-origin-preserved": {
+      "standing": [
+        "HISTORICAL_PRESERVED"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    },
+    "result:normative:universal-normativity-owner-not-admitted": {
+      "standing": [
+        "CURRENT",
+        "NOT_ADMITTED"
+      ],
+      "verdict": "ESTABLISHED_IN_SCOPE"
+    }
+  },
+  "retirementScope": "NORMATIVE_LEGACY_LIVE_NAVIGATION_ROLE_ONLY",
+  "schemaVersion": 1,
+  "truthRole": "historical-reconciliation-spec"
+}
