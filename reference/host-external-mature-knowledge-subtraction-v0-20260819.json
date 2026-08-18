@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-19",
+  "externalRepairRef": "reference/foundational-reference-round6a-host-crosswalk-repair-20260819.json",
+  "hostAuthority": {
+    "authorityVersionRef": "sha256:4fc9dee669927882337649d19c144d0938ecf3307c461bffd84eedb8fdc27df4",
+    "ownerResearchRef": "research-owner:host",
+    "ownerSourceRevision": "c6b606ac89a0f3866ad172ad446dc577018b548b"
+  },
+  "kind": "ordivon.host-external-mature-knowledge-subtraction",
+  "methodStanding": "FOURTH_HETEROGENEOUS_MATURE_KNOWLEDGE_SUBTRACTION_WITNESS_SUPPORTS_PATTERN_NOT_CONSTITUTION",
+  "negativeConclusions": [
+    "Do not claim Host = workflow systems.",
+    "Do not claim Host = provenance science/infrastructure as a whole.",
+    "Do not re-admit Generic Coordination owner.",
+    "Do not promote owner-specific residual responsibilities to a novel field without repeated irreducibility evidence across external comparisons."
+  ],
+  "next": "Use the repaired external identities for bounded bridge mapping. Preserve residuals as owner-specific unless later cross-system evidence shows irreducible general structure.",
+  "residuals": [
+    {
+      "reason": "A specific concurrency/currentness contract can be system-local even when no external discipline matches it one-to-one.",
+      "residual": "Exact Host Task revision fencing and short lease fencing",
+      "standing": "OWNER_SPECIFIC_RESIDUAL_NO_NOVELTY_INFERENCE"
+    },
+    {
+      "reason": "Workflow fault tolerance/retry explains part of the problem class but does not establish semantic equivalence to Host exact replay fences.",
+      "residual": "Bounded continuity checkpoint admission and response-loss-safe replay",
+      "standing": "OWNER_SPECIFIC_RESIDUAL_NO_NOVELTY_INFERENCE"
+    },
+    {
+      "reason": "Provenance/interchange concepts are adjacent; Host owner-opacity is a specific authority firewall.",
+      "residual": "Opaque-extension / foreign-owner namespace durability without interpreting foreign semantics",
+      "standing": "OWNER_SPECIFIC_RESIDUAL_NO_NOVELTY_INFERENCE"
+    },
+    {
+      "reason": "Operational integrity is implementation/owner responsibility, not evidence of a new external field.",
+      "residual": "Local Doctor/backup/restore/release-deployment integrity required to preserve Host state",
+      "standing": "OWNER_SPECIFIC_RESIDUAL_NO_NOVELTY_INFERENCE"
+    }
+  ],
+  "schemaVersion": 1,
+  "state": "MATURE_EXTERNAL_KNOWLEDGE_EXPLAINS_MAJOR_HOST_SURFACES_RESIDUAL_NOVELTY_NOT_ESTABLISHED",
+  "subtractions": [
+    {
+      "disposition": "SUBSTANTIALLY_EXPLAINED_BY_MATURE_EXTERNAL_SPACE",
+      "externalSupplier": [
+        "norm:workflow-process-systems"
+      ],
+      "hostResponsibility": "Task/process lifecycle, bounded execution-state transitions, retries/timeouts/fault handling and orchestration-adjacent behavior",
+      "nonEquivalence": "Host explicitly is not a global scheduler/workflow engine; only bounded continuity responsibilities overlap."
+    },
+    {
+      "disposition": "SUBSTANTIALLY_EXPLAINED_BY_MATURE_EXTERNAL_SPACE",
+      "externalSupplier": [
+        "norm:provenance-information-lineage"
+      ],
+      "hostResponsibility": "Journal/CAS witness history, entity/reference lineage, derivation/revision and responsibility traceability",
+      "nonEquivalence": "Host explicitly is not a universal provenance owner; PROV lineage does not manufacture Host currentness or constituted standing."
+    },
+    {
+      "disposition": "ADJACENT_MATURE_KNOWLEDGE_ALREADY_KNOWN",
+      "externalSupplier": [
+        "norm:parallel-distributed-computing",
+        "norm:systems-fundamentals"
+      ],
+      "hostResponsibility": "Cross-locus coordination/execution adjacency",
+      "nonEquivalence": "Host generic coordination ownership was falsified; adjacency does not restore it."
+    }
+  ],
+  "truthRole": "RESEARCH_METHOD_EVIDENCE_NOT_OWNER_OR_EXTERNAL_AUTHORITY"
+}

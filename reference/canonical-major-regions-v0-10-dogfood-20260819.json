@@ -1,0 +1,98 @@
+{
+  "date": "2026-08-19",
+  "destructiveControls": {
+    "allAnchorsUnchanged": true,
+    "coverageTruthForbidden": true,
+    "noHostNamedExternalIdentity": true,
+    "provenanceIsNonAnchor": true,
+    "regionCountUnchanged": true,
+    "workflowIsNonAnchor": true
+  },
+  "findings": [
+    {
+      "claim": "Two Host-pressure identities are absorbed by existing navigation regions with no new MajorRegion and no anchor change.",
+      "id": "R6A-D1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Host bridge mapping changes identity-level crosswalk only; MajorRegion coverage truth remains forbidden.",
+      "id": "R6A-D2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.canonical-major-region-v0-10-host-repair-dogfood",
+  "regionResults": [
+    {
+      "anchorRefsUnchanged": true,
+      "closureClaim": "NONE",
+      "missingRefs": [],
+      "regionRef": "navigation-region:formal-inferential",
+      "result": "PASS"
+    },
+    {
+      "anchorRefsUnchanged": true,
+      "closureClaim": "NONE",
+      "missingRefs": [],
+      "regionRef": "navigation-region:computation-computer-systems",
+      "result": "PASS"
+    },
+    {
+      "anchorRefsUnchanged": true,
+      "closureClaim": "NONE",
+      "missingRefs": [],
+      "regionRef": "navigation-region:philosophical-conceptual",
+      "result": "PASS"
+    },
+    {
+      "anchorRefsUnchanged": true,
+      "closureClaim": "NONE",
+      "missingRefs": [],
+      "regionRef": "navigation-region:physical-material",
+      "result": "PASS"
+    },
+    {
+      "anchorRefsUnchanged": true,
+      "closureClaim": "NONE",
+      "missingRefs": [],
+      "regionRef": "navigation-region:earth-planetary-space",
+      "result": "PASS"
+    },
+    {
+      "anchorRefsUnchanged": true,
+      "closureClaim": "NONE",
+      "missingRefs": [],
+      "regionRef": "navigation-region:life",
+      "result": "PASS"
+    },
+    {
+      "anchorRefsUnchanged": true,
+      "closureClaim": "NONE",
+      "missingRefs": [],
+      "regionRef": "navigation-region:mind-language",
+      "result": "PASS"
+    },
+    {
+      "anchorRefsUnchanged": true,
+      "closureClaim": "NONE",
+      "missingRefs": [],
+      "regionRef": "navigation-region:engineering-design",
+      "result": "PASS"
+    },
+    {
+      "anchorRefsUnchanged": true,
+      "closureClaim": "NONE",
+      "missingRefs": [],
+      "regionRef": "navigation-region:historical-cultural-interpretive",
+      "result": "PASS"
+    },
+    {
+      "anchorRefsUnchanged": true,
+      "closureClaim": "NONE",
+      "missingRefs": [],
+      "regionRef": "navigation-region:social-institutional-collective",
+      "result": "PASS"
+    }
+  ],
+  "schemaVersion": 1,
+  "state": "PASS"
+}

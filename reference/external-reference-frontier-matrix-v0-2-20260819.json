@@ -1,0 +1,2230 @@
+{
+  "contractRef": "reference/external-reference-frontier-state-contract-v0-20260819.json",
+  "counts": {
+    "currentMappings": 26,
+    "identities": 122,
+    "mappedIdentities": 25,
+    "noDirectMappingCurrentPilot": 97,
+    "unmappedCrossRegionMembers": 20,
+    "unmappedMajorRegionAnchors": 22,
+    "unmappedNoRegionMembers": 0,
+    "unmappedSingleRegionMembers": 55
+  },
+  "crosswalkRef": "reference/coverage-crosswalk-foundational-pilot-v0-9-20260819.json",
+  "globalScalarCoverage": "FORBIDDEN",
+  "kind": "ordivon.external-reference-frontier-matrix",
+  "laws": [
+    "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT != ORDIVON_UNTOUCHED",
+    "HOST_MAPPING_REPAIR != FRONTIER_PRIORITY_CHANGE",
+    "NEW_MAPPED_IDENTITIES_CAN_BE_ADDED_WITHOUT_RECLASSIFYING_UNRELATED_UNMAPPED_IDENTITIES",
+    "NAVIGATION_OVERLAY != COVERAGE_TRUTH",
+    "GRAPH_DEGREE != PRIORITY",
+    "GLOBAL_SCALAR_COVERAGE_FORBIDDEN"
+  ],
+  "majorRegionRef": "reference/canonical-major-regions-v0-10-20260819.json",
+  "matrixId": "external-reference-frontier:v0.2:2026-08-19",
+  "next": "Use v0.2 for current frontier facts; compare to v0.1 to prove Host repair changes exactly two identity fact states and leaves the prior 97 unmapped identities unchanged.",
+  "preservesHistory": true,
+  "rows": [
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:aesthetics",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 3,
+      "label": "Aesthetics",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:philosophical-conceptual",
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:affective-science",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 4,
+      "label": "Affective science",
+      "mappedNeighborRefs": [
+        "norm:cognitive-science",
+        "norm:neuroscience",
+        "norm:physiology",
+        "norm:psychology"
+      ],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->affective-science"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:mind-language"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:agriculture",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 1,
+      "label": "Agricultural sciences and systems",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:earth-planetary-space",
+        "navigation-region:life",
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:analytical-chemistry",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 1,
+      "label": "Analytical chemistry",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:physical-material"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:anthropology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 16,
+      "label": "Anthropology",
+      "mappedNeighborRefs": [
+        "norm:communication-studies",
+        "norm:linguistics",
+        "norm:media-studies"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive",
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:archaeology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 6,
+      "label": "Archaeology",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:area-regional-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 6,
+      "label": "Area and regional studies",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive",
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:art-history",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 6,
+      "label": "Art history and visual/material culture studies",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:earth-planetary-space"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:astronomy",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Astronomy and astrophysics",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:atmospheric-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Atmospheric science and meteorology",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:basic-biomedical-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Basic biomedical sciences",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:life"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:biochemistry",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 3,
+      "label": "Biochemistry",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:physical-material",
+        "navigation-region:life"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:bioengineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Bioengineering",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:biological-research-infrastructure",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 0,
+      "label": "Biological research infrastructure",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:life"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:life"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:biology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 13,
+      "label": "Biology",
+      "mappedNeighborRefs": [
+        "norm:evolutionary-biology",
+        "norm:genetics",
+        "norm:physiology"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:life"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:chemical-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Chemical engineering",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:chemical-physics",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Chemical physics",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:physical-material"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:physical-material"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:chemistry",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 5,
+      "label": "Chemistry",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:physical-material"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:civil-structural-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 1,
+      "label": "Civil and structural engineering",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:classics",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 1,
+      "label": "Classics / Classical studies",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:climate-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Climate science",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:mind-language"
+      ],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:cognitive-science",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 7,
+      "label": "Cognitive science",
+      "mappedNeighborRefs": [
+        "norm:affective-science",
+        "norm:consciousness-science",
+        "norm:developmental-science",
+        "norm:linguistics",
+        "norm:neuroscience",
+        "norm:psychology"
+      ],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->cognitive-science"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:mind-language"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:communication-studies",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 7,
+      "label": "Communication studies",
+      "mappedNeighborRefs": [
+        "norm:human-computer-interaction",
+        "norm:linguistics",
+        "norm:media-studies"
+      ],
+      "mappedOwners": [
+        "research-owner:media"
+      ],
+      "mappingRefs": [
+        "crosswalk:media->communication-studies"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:computation-computer-systems"
+      ],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:computation",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 11,
+      "label": "Computation and computing",
+      "mappedNeighborRefs": [
+        "norm:human-computer-interaction",
+        "norm:networking-communication",
+        "norm:operating-systems"
+      ],
+      "mappedOwners": [
+        "research-owner:computational-possibility"
+      ],
+      "mappingRefs": [
+        "crosswalk:cp->computation"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:computation-computer-systems"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:computer-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 3,
+      "label": "Computer engineering",
+      "mappedNeighborRefs": [
+        "norm:computation",
+        "norm:networking-communication"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:computation-computer-systems",
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:condensed-matter",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 1,
+      "label": "Condensed matter physics",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:physical-material"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:consciousness-science",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 4,
+      "label": "Consciousness science",
+      "mappedNeighborRefs": [
+        "norm:cognitive-science",
+        "norm:neuroscience",
+        "norm:psychology"
+      ],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->consciousness-science"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:mind-language"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:control-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Control engineering",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:computation-computer-systems",
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:cosmology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 1,
+      "label": "Cosmology",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:criminology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 4,
+      "label": "Criminology and criminal justice studies",
+      "mappedNeighborRefs": [
+        "norm:psychology"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:cultural-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 9,
+      "label": "Cultural studies",
+      "mappedNeighborRefs": [
+        "norm:media-studies"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:demography",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 6,
+      "label": "Demography and population studies",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:engineering-design"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:design",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Design",
+      "mappedNeighborRefs": [
+        "norm:human-computer-interaction"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:development-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 7,
+      "label": "Development studies",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:developmental-biology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Developmental biology",
+      "mappedNeighborRefs": [
+        "norm:developmental-science"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:life"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:developmental-science",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 5,
+      "label": "Developmental science (human development)",
+      "mappedNeighborRefs": [
+        "norm:cognitive-science",
+        "norm:neuroscience",
+        "norm:psychology"
+      ],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->developmental-science"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:life",
+        "navigation-region:mind-language",
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:dynamical-systems",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Dynamical systems and ergodic theory",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:formal-inferential"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:earth-planetary-space"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:earth-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 9,
+      "label": "Earth science / geoscience",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:life"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:ecology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 1,
+      "label": "Ecology",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:life"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:economics",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 12,
+      "label": "Economics",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:education-research",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 4,
+      "label": "Education research",
+      "mappedNeighborRefs": [
+        "norm:developmental-science",
+        "norm:psychology"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:electrical-electronic-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 1,
+      "label": "Electrical and electronic engineering",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:energy-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 1,
+      "label": "Energy engineering",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:engineering-design"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 15,
+      "label": "Engineering",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:environmental-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Environmental engineering",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:philosophical-conceptual"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:epistemology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Epistemology",
+      "mappedNeighborRefs": [
+        "norm:philosophy-of-science"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:philosophical-conceptual"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:ethics-value-theory",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 2,
+      "label": "Ethics and value theory",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [
+        "research-owner:ordivon-normative"
+      ],
+      "mappingRefs": [
+        "crosswalk:normative->ethics-value-theory"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:philosophical-conceptual"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:evolutionary-biology",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 1,
+      "label": "Evolutionary biology",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->evolutionary-biology"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:life"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:folklore-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 6,
+      "label": "Folklore studies",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:food-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 3,
+      "label": "Food science",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:physical-material",
+        "navigation-region:life",
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:formal-methods",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 5,
+      "label": "Formal methods",
+      "mappedNeighborRefs": [
+        "norm:formal-semantics",
+        "norm:provenance-information-lineage",
+        "norm:systems-fundamentals"
+      ],
+      "mappedOwners": [
+        "research-owner:semantics-of-computational-descriptions"
+      ],
+      "mappingRefs": [
+        "crosswalk:scd->formal-methods"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:formal-inferential",
+        "navigation-region:computation-computer-systems",
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:formal-semantics",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 3,
+      "label": "Formal semantics",
+      "mappedNeighborRefs": [
+        "norm:formal-methods"
+      ],
+      "mappedOwners": [
+        "research-owner:semantics-of-computational-descriptions"
+      ],
+      "mappingRefs": [
+        "crosswalk:scd->formal-semantics"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:formal-inferential",
+        "navigation-region:computation-computer-systems"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:foundations-programming-languages",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 4,
+      "label": "Foundations of programming languages",
+      "mappedNeighborRefs": [
+        "norm:computation",
+        "norm:formal-methods",
+        "norm:formal-semantics"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:computation-computer-systems"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:gender-sexuality-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 7,
+      "label": "Women’s, gender, and sexuality studies",
+      "mappedNeighborRefs": [
+        "norm:psychology"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive",
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:life"
+      ],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:genetics",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 2,
+      "label": "Genetics",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->genetics"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:life"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:genomics",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Genomics",
+      "mappedNeighborRefs": [
+        "norm:computation",
+        "norm:genetics"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:life"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:geochemistry",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Geochemistry",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:geography",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 10,
+      "label": "Geography",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:earth-planetary-space",
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:geology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 1,
+      "label": "Geology",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:geophysics",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 1,
+      "label": "Geophysics",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:heritage-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 6,
+      "label": "Heritage studies",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:history",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 15,
+      "label": "History",
+      "mappedNeighborRefs": [
+        "norm:media-studies"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:human-computer-interaction",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 4,
+      "label": "Human-computer interaction",
+      "mappedNeighborRefs": [
+        "norm:communication-studies",
+        "norm:computation",
+        "norm:psychology"
+      ],
+      "mappedOwners": [
+        "research-owner:media"
+      ],
+      "mappingRefs": [
+        "crosswalk:media->human-computer-interaction"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:computation-computer-systems",
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:human-geography",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 6,
+      "label": "Human geography",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:information-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 3,
+      "label": "Information science",
+      "mappedNeighborRefs": [
+        "norm:provenance-information-lineage"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:computation-computer-systems",
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:information-theory",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 3,
+      "label": "Information theory",
+      "mappedNeighborRefs": [
+        "norm:computation"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:formal-inferential",
+        "navigation-region:computation-computer-systems"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:international-studies-relations",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 7,
+      "label": "International studies and international relations",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:legal-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 7,
+      "label": "Legal science and legal studies",
+      "mappedNeighborRefs": [
+        "norm:ethics-value-theory"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:librarianship",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 1,
+      "label": "Librarianship and library studies",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive",
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:mind-language"
+      ],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:linguistics",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 7,
+      "label": "Linguistics",
+      "mappedNeighborRefs": [
+        "norm:cognitive-science",
+        "norm:communication-studies",
+        "norm:semiotics"
+      ],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->linguistics"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:mind-language"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:literary-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 6,
+      "label": "Literary studies and comparative literature",
+      "mappedNeighborRefs": [
+        "norm:linguistics"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:formal-inferential"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:logic",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 3,
+      "label": "Logic",
+      "mappedNeighborRefs": [
+        "norm:computation",
+        "norm:formal-semantics"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:formal-inferential",
+        "navigation-region:philosophical-conceptual"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:management-organization-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 5,
+      "label": "Management and organization studies",
+      "mappedNeighborRefs": [
+        "norm:psychology",
+        "norm:workflow-process-systems"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:manufacturing",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 0,
+      "label": "Manufacturing",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:physical-material"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:materials",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 4,
+      "label": "Materials science and engineering",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:physical-material",
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:formal-inferential"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:mathematics",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Mathematics",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:formal-inferential"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:measurement",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 1,
+      "label": "Measurement and metrology",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:formal-inferential",
+        "navigation-region:physical-material",
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:mechanical-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 1,
+      "label": "Mechanical engineering",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:media-studies",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 10,
+      "label": "Media studies",
+      "mappedNeighborRefs": [
+        "norm:communication-studies",
+        "norm:semiotics"
+      ],
+      "mappedOwners": [
+        "research-owner:media"
+      ],
+      "mappingRefs": [
+        "crosswalk:media->media-studies"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive",
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:medicine-health",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 1,
+      "label": "Medicine and health sciences",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:life",
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:philosophical-conceptual"
+      ],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:metaphysics",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 1,
+      "label": "Metaphysics",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [
+        "research-owner:world"
+      ],
+      "mappingRefs": [
+        "crosswalk:world->metaphysics"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:philosophical-conceptual"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:microbiology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Microbiology / microbial sciences",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:life"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:molecular-cellular-biology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 1,
+      "label": "Molecular and cellular biosciences",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:life"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:museology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 4,
+      "label": "Museology and museum studies",
+      "mappedNeighborRefs": [
+        "norm:communication-studies",
+        "norm:media-studies"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:musicology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 5,
+      "label": "Musicology and music studies",
+      "mappedNeighborRefs": [
+        "norm:media-studies"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:computation-computer-systems"
+      ],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:networking-communication",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 4,
+      "label": "Networking and communication",
+      "mappedNeighborRefs": [
+        "norm:computation",
+        "norm:systems-fundamentals"
+      ],
+      "mappedOwners": [
+        "research-owner:network"
+      ],
+      "mappingRefs": [
+        "crosswalk:network->networking-communication"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:computation-computer-systems"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:neuroscience",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 4,
+      "label": "Neuroscience",
+      "mappedNeighborRefs": [
+        "norm:affective-science",
+        "norm:cognitive-science",
+        "norm:consciousness-science",
+        "norm:developmental-science"
+      ],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->neuroscience"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:life",
+        "navigation-region:mind-language"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:oceanography",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Oceanography",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:computation-computer-systems"
+      ],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:operating-systems",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 3,
+      "label": "Operating systems",
+      "mappedNeighborRefs": [
+        "norm:computation",
+        "norm:systems-fundamentals"
+      ],
+      "mappedOwners": [
+        "research-owner:runtime"
+      ],
+      "mappingRefs": [
+        "crosswalk:runtime->operating-systems"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:computation-computer-systems"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:organismal-biology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 1,
+      "label": "Organismal biology",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:life"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:parallel-distributed-computing",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 4,
+      "label": "Parallel and distributed computing",
+      "mappedNeighborRefs": [
+        "norm:computation",
+        "norm:networking-communication",
+        "norm:systems-fundamentals",
+        "norm:workflow-process-systems"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:computation-computer-systems"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:performance-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 5,
+      "label": "Performance studies",
+      "mappedNeighborRefs": [
+        "norm:communication-studies",
+        "norm:media-studies"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:philology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 3,
+      "label": "Philology",
+      "mappedNeighborRefs": [
+        "norm:linguistics"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:philosophical-conceptual"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:philosophy",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 8,
+      "label": "Philosophy",
+      "mappedNeighborRefs": [
+        "norm:ethics-value-theory",
+        "norm:metaphysics",
+        "norm:philosophy-of-science",
+        "norm:semiotics"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:philosophical-conceptual"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:philosophy-of-language",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Philosophy of language",
+      "mappedNeighborRefs": [
+        "norm:linguistics"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:philosophical-conceptual"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:philosophy-of-mind",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 3,
+      "label": "Philosophy of mind and cognition",
+      "mappedNeighborRefs": [
+        "norm:cognitive-science",
+        "norm:consciousness-science"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:philosophical-conceptual",
+        "navigation-region:mind-language"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:philosophy-of-science",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 3,
+      "label": "Philosophy of science",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [
+        "research-owner:world"
+      ],
+      "mappingRefs": [
+        "crosswalk:world->philosophy-of-science"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:philosophical-conceptual"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:physical-geography",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Physical geography",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:physical-material"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:physics",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Physics",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:physical-material"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:physiology",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 2,
+      "label": "Physiology",
+      "mappedNeighborRefs": [
+        "norm:affective-science"
+      ],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->physiology"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:life"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:earth-planetary-space"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:planetary-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Planetary science",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:earth-planetary-space"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:political-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 13,
+      "label": "Political science",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:polymer-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 0,
+      "label": "Polymer science",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:physical-material",
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:probability",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Probability theory and stochastic processes",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:formal-inferential"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:provenance-information-lineage",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 3,
+      "label": "Provenance and information lineage",
+      "mappedNeighborRefs": [
+        "norm:formal-methods",
+        "norm:workflow-process-systems"
+      ],
+      "mappedOwners": [
+        "research-owner:host"
+      ],
+      "mappingRefs": [
+        "crosswalk:host->provenance-information-lineage"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:computation-computer-systems"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:mind-language"
+      ],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:psychology",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 11,
+      "label": "Psychology",
+      "mappedNeighborRefs": [
+        "norm:affective-science",
+        "norm:cognitive-science",
+        "norm:consciousness-science",
+        "norm:developmental-science",
+        "norm:human-computer-interaction"
+      ],
+      "mappedOwners": [
+        "research-owner:human"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->psychology"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:mind-language",
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:public-administration",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 4,
+      "label": "Public administration",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:public-policy",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 9,
+      "label": "Public policy research",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:religious-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 0,
+      "label": "Religious studies",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:science-technology-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 6,
+      "label": "Science and technology studies",
+      "mappedNeighborRefs": [
+        "norm:computation",
+        "norm:media-studies",
+        "norm:philosophy-of-science"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:philosophical-conceptual",
+        "navigation-region:engineering-design",
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:semiotics",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 3,
+      "label": "Semiotics",
+      "mappedNeighborRefs": [
+        "norm:linguistics",
+        "norm:media-studies"
+      ],
+      "mappedOwners": [
+        "research-owner:media"
+      ],
+      "mappingRefs": [
+        "crosswalk:media->semiotics"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:philosophical-conceptual",
+        "navigation-region:mind-language",
+        "navigation-region:historical-cultural-interpretive"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:social-policy",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 4,
+      "label": "Social policy",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:social-work",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 4,
+      "label": "Social work",
+      "mappedNeighborRefs": [
+        "norm:psychology"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:social-institutional-collective"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:sociology",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 21,
+      "label": "Sociology",
+      "mappedNeighborRefs": [
+        "norm:communication-studies",
+        "norm:media-studies",
+        "norm:psychology"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:software-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 5,
+      "label": "Software engineering",
+      "mappedNeighborRefs": [
+        "norm:computation",
+        "norm:formal-methods",
+        "norm:operating-systems",
+        "norm:workflow-process-systems"
+      ],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:computation-computer-systems",
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:soil-science",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Soil science",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_CROSS_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:earth-planetary-space",
+        "navigation-region:life"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:formal-inferential"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:statistics",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 4,
+      "label": "Statistics",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:formal-inferential"
+      ]
+    },
+    {
+      "anchorRegionRefs": [
+        "navigation-region:engineering-design"
+      ],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:systems-engineering",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 2,
+      "label": "Systems engineering",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "regionRefs": [
+        "navigation-region:engineering-design"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:systems-fundamentals",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 5,
+      "label": "Computer systems fundamentals",
+      "mappedNeighborRefs": [
+        "norm:formal-methods",
+        "norm:networking-communication",
+        "norm:operating-systems",
+        "norm:workflow-process-systems"
+      ],
+      "mappedOwners": [
+        "research-owner:runtime"
+      ],
+      "mappingRefs": [
+        "crosswalk:runtime->systems-fundamentals"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:computation-computer-systems"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:systems-theory-control",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 3,
+      "label": "Systems theory and control",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:formal-inferential"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "NO_DIRECT_MAPPING_FACT_ONLY",
+      "externalRef": "norm:urban-studies",
+      "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "graphDegreeDiagnostic": 6,
+      "label": "Urban studies and urban affairs",
+      "mappedNeighborRefs": [],
+      "mappedOwners": [],
+      "mappingRefs": [],
+      "navigationOverlay": "UNMAPPED_SINGLE_REGION_MEMBER",
+      "regionRefs": [
+        "navigation-region:social-institutional-collective"
+      ]
+    },
+    {
+      "anchorRegionRefs": [],
+      "coverageTruth": "IDENTITY_LEVEL_ONLY",
+      "externalRef": "norm:workflow-process-systems",
+      "factState": "MAPPED_CURRENT_OWNER",
+      "graphDegreeDiagnostic": 5,
+      "label": "Workflow and process orchestration systems",
+      "mappedNeighborRefs": [
+        "norm:provenance-information-lineage",
+        "norm:systems-fundamentals"
+      ],
+      "mappedOwners": [
+        "research-owner:host"
+      ],
+      "mappingRefs": [
+        "crosswalk:host->workflow-process-systems"
+      ],
+      "navigationOverlay": "CURRENTLY_MAPPED",
+      "regionRefs": [
+        "navigation-region:computation-computer-systems",
+        "navigation-region:engineering-design",
+        "navigation-region:social-institutional-collective"
+      ]
+    }
+  ],
+  "schemaVersion": 2,
+  "state": "HOST_REPAIR_REPROJECTED_FRONTIER_FACTS_STABLE",
+  "supersedesForCurrentFrontier": "reference/external-reference-frontier-matrix-v0-1-20260819.json",
+  "truthRole": "NON_AUTHORITATIVE_FRONTIER_DIAGNOSTIC"
+}

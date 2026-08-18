@@ -1,0 +1,209 @@
+{
+  "controls": [
+    "Host now has two bridge mappings but no direct field equivalence or novelty standing.",
+    "Game remains current but out of bounded Reference identity mapping scope.",
+    "Finance and Harness publication unavailability remains separate from identity no-mapping state.",
+    "SCD/Human/Media/Host novelty remains not established where stated.",
+    "Generic Coordination owner remains falsified/not admitted in Host authority."
+  ],
+  "crosswalkRef": "reference/coverage-crosswalk-foundational-pilot-v0-9-20260819.json",
+  "date": "2026-08-19",
+  "kind": "ordivon.external-reference-owner-frontier-status",
+  "laws": [
+    "OWNER_FRONTIER_STATE != IDENTITY_FRONTIER_STATE",
+    "PUBLICATION_UNAVAILABLE != UNTOUCHED",
+    "CURRENT_OUT_OF_SCOPE != NO_RESEARCH",
+    "EXTERNAL_MAPPING_WEAK != NOVELTY",
+    "OWNER_NAME != EXTERNAL_IDENTITY_MAPPING",
+    "CURRENT_MAPPED != WHOLE_FIELD_EQUIVALENCE",
+    "OWNER_SPECIFIC_RESIDUAL != NOVELTY"
+  ],
+  "ownerSnapshotRef": "reference/coverage-crosswalk-owner-authority-snapshot-v0-5-20260819.json",
+  "preservesHistory": true,
+  "rows": [
+    {
+      "authorityVersionRef": "sha256:5e12e043b14b57894cc0fffa85ed23821c36d491868c38555a0072cff4e263f9",
+      "frontierState": "CURRENT_MAPPED",
+      "mappedExternalRefs": [
+        "norm:computation"
+      ],
+      "mappingRefs": [
+        "crosswalk:cp->computation"
+      ],
+      "noveltyStanding": "NO_NOVELTY_STANDING_ASSERTED_HERE",
+      "ownerResearchRef": "research-owner:computational-possibility",
+      "sourceTransportRevision": "ad1bd73d91fa1a2d2a59cac4726b74ac171c457d"
+    },
+    {
+      "authorityVersionRef": "sha256:b0e16e2cd6fe40685d7b96f94d78ef89bd55ed7f92db4de1408e33d2539bb2f0",
+      "frontierState": "CURRENT_OUT_OF_BOUNDED_REFERENCE_SCOPE",
+      "mappedExternalRefs": [],
+      "mappingRefs": [
+        "crosswalk:game->out-of-foundational-pilot"
+      ],
+      "noveltyStanding": "NO_NOVELTY_STANDING_ASSERTED_HERE",
+      "ownerResearchRef": "research-owner:game",
+      "sourceTransportRevision": "eb2013e13e9e3e5e50e7e93627fff00293335530"
+    },
+    {
+      "authorityVersionRef": "sha256:4fc9dee669927882337649d19c144d0938ecf3307c461bffd84eedb8fdc27df4",
+      "frontierState": "CURRENT_MAPPED",
+      "mappedExternalRefs": [
+        "norm:workflow-process-systems",
+        "norm:provenance-information-lineage"
+      ],
+      "mappingQualification": "BRIDGE_ONLY_NO_FIELD_EQUIVALENCE",
+      "mappingRefs": [
+        "crosswalk:host->workflow-process-systems",
+        "crosswalk:host->provenance-information-lineage"
+      ],
+      "noveltyStanding": "NOVELTY_NOT_ESTABLISHED",
+      "ownerResearchRef": "research-owner:host",
+      "sourceTransportRevision": "0439cef8c4361e509fe5219b9b726257e7033aab",
+      "subtractionRef": "reference/host-external-mature-knowledge-subtraction-v0-20260819.json"
+    },
+    {
+      "authorityVersionRef": "sha256:035eaa334ffdfe3ae44236f966176a36ffd772ee8c2e4c4454733ab9699ef392",
+      "frontierState": "CURRENT_MAPPED",
+      "mappedExternalRefs": [
+        "norm:psychology",
+        "norm:cognitive-science",
+        "norm:consciousness-science",
+        "norm:affective-science",
+        "norm:developmental-science",
+        "norm:linguistics",
+        "norm:neuroscience",
+        "norm:genetics",
+        "norm:evolutionary-biology",
+        "norm:physiology"
+      ],
+      "mappingRefs": [
+        "crosswalk:human->psychology",
+        "crosswalk:human->cognitive-science",
+        "crosswalk:human->consciousness-science",
+        "crosswalk:human->affective-science",
+        "crosswalk:human->developmental-science",
+        "crosswalk:human->linguistics",
+        "crosswalk:human->neuroscience",
+        "crosswalk:human->genetics",
+        "crosswalk:human->evolutionary-biology",
+        "crosswalk:human->physiology"
+      ],
+      "noveltyStanding": "NOVELTY_NOT_ESTABLISHED",
+      "ownerResearchRef": "research-owner:human",
+      "sourceTransportRevision": "cc966bf99458949b59c433a5f7bc8fafe3d692b7"
+    },
+    {
+      "authorityVersionRef": "sha256:d73f350556c6a66ecf58750dba88ce34839334fdf2920d8cb6dcdfff59fd3c33",
+      "frontierState": "CURRENT_MAPPED",
+      "mappedExternalRefs": [
+        "norm:communication-studies",
+        "norm:media-studies",
+        "norm:semiotics",
+        "norm:human-computer-interaction"
+      ],
+      "mappingRefs": [
+        "crosswalk:media->communication-studies",
+        "crosswalk:media->media-studies",
+        "crosswalk:media->semiotics",
+        "crosswalk:media->human-computer-interaction"
+      ],
+      "noveltyStanding": "NOVELTY_NOT_ESTABLISHED",
+      "ownerResearchRef": "research-owner:media",
+      "sourceTransportRevision": "c3b39f1a2093a9aae5338abebb8224de2a5b7a06"
+    },
+    {
+      "authorityVersionRef": "sha256:dbdbb759b2b86b898a343cbb81646b283c589676989e919537f1a6cbc2b1df91",
+      "frontierState": "CURRENT_MAPPED",
+      "mappedExternalRefs": [
+        "norm:networking-communication"
+      ],
+      "mappingRefs": [
+        "crosswalk:network->networking-communication"
+      ],
+      "noveltyStanding": "NO_NOVELTY_STANDING_ASSERTED_HERE",
+      "ownerResearchRef": "research-owner:network",
+      "sourceTransportRevision": "aae7e71ea8aa13624d69ab94ad165dac744b2ad4"
+    },
+    {
+      "authorityVersionRef": "sha256:91fe75c4827585487a5aadb8c55816b6628cda314bdbb79bdbe2554246a7b579",
+      "frontierState": "CURRENT_MAPPED",
+      "mappedExternalRefs": [
+        "norm:ethics-value-theory"
+      ],
+      "mappingRefs": [
+        "crosswalk:normative->ethics-value-theory"
+      ],
+      "noveltyStanding": "NO_NOVELTY_STANDING_ASSERTED_HERE",
+      "ownerResearchRef": "research-owner:ordivon-normative",
+      "sourceTransportRevision": "aae7e71ea8aa13624d69ab94ad165dac744b2ad4"
+    },
+    {
+      "authorityVersionRef": "sha256:9c67d1b4094ce85a2465579430bb1a941f1923457087fb74cde0642d7b9a51b3",
+      "frontierState": "CURRENT_MAPPED",
+      "mappedExternalRefs": [
+        "norm:systems-fundamentals",
+        "norm:operating-systems"
+      ],
+      "mappingRefs": [
+        "crosswalk:runtime->systems-fundamentals",
+        "crosswalk:runtime->operating-systems"
+      ],
+      "noveltyStanding": "NO_NOVELTY_STANDING_ASSERTED_HERE",
+      "ownerResearchRef": "research-owner:runtime",
+      "sourceTransportRevision": "256ef6d0080de38c028a70e27cbaa08e0f817edb"
+    },
+    {
+      "authorityVersionRef": "sha256:3319f37f081908e545c708f79e489c3b2a1c54cb03453fa2ebe32bc6e72cbd4f",
+      "frontierState": "CURRENT_MAPPED",
+      "mappedExternalRefs": [
+        "norm:formal-semantics",
+        "norm:formal-methods"
+      ],
+      "mappingRefs": [
+        "crosswalk:scd->formal-semantics",
+        "crosswalk:scd->formal-methods"
+      ],
+      "noveltyStanding": "NOVELTY_NOT_ESTABLISHED",
+      "ownerResearchRef": "research-owner:semantics-of-computational-descriptions",
+      "sourceTransportRevision": "a35ee399fa0cf3dd24869d50f78ca05850ece0c4"
+    },
+    {
+      "authorityVersionRef": "sha256:76f3ebc35cc72a67e65cacbcb899d8ccf0919059577c97191c85dc9aed9ede8f",
+      "frontierState": "CURRENT_MAPPED",
+      "mappedExternalRefs": [
+        "norm:metaphysics",
+        "norm:philosophy-of-science"
+      ],
+      "mappingRefs": [
+        "crosswalk:world->metaphysics",
+        "crosswalk:world->philosophy-of-science"
+      ],
+      "noveltyStanding": "NO_NOVELTY_STANDING_ASSERTED_HERE",
+      "ownerResearchRef": "research-owner:world",
+      "sourceTransportRevision": "59ca305f144ac3f4dde6109418c31986716c1f45"
+    },
+    {
+      "displayOwner": "Finance",
+      "frontierState": "PUBLICATION_UNAVAILABLE",
+      "mappedExternalRefs": [],
+      "mappingRefs": [],
+      "noveltyStanding": "NOT_EVALUATED_FROM_FRONTIER_MATRIX",
+      "ownerResearchRef": "research-owner:finance",
+      "reason": "Known mature research exists but owner-current Atlas publication is absent; exclusion != untouched research."
+    },
+    {
+      "displayOwner": "Harness",
+      "frontierState": "PUBLICATION_UNAVAILABLE",
+      "mappedExternalRefs": [],
+      "mappingRefs": [],
+      "noveltyStanding": "NOT_EVALUATED_FROM_FRONTIER_MATRIX",
+      "ownerResearchRef": "research-owner:harness",
+      "reason": "Active research/currentness work is ongoing and no settled owner-current Atlas publication is admitted; exclusion != untouched research."
+    }
+  ],
+  "schemaVersion": 2,
+  "state": "HOST_BRIDGE_MAPPED_OWNER_FRONTIER_CURRENT",
+  "supersedesForCurrentOwnerFrontier": "reference/external-reference-owner-frontier-status-v0-20260819.json",
+  "truthRole": "NON_AUTHORITATIVE_OWNER_CROSSWALK_FRONTIER_PROJECTION"
+}

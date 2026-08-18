@@ -1,0 +1,23 @@
+{
+  "closure": "FOUR_WITNESS_METHOD_CANDIDATE_ACCEPTED_NOT_CONSTITUTIONAL",
+  "controls": [
+    "Fourth heterogeneous witness does not promote the method to Constitution.",
+    "Residual non-equivalence is preserved rather than forced into novelty.",
+    "Public/open external knowledge is query/constraint infrastructure, not automatic authority.",
+    "No controlled cost/quality comparison against alternative research strategies has yet been completed."
+  ],
+  "date": "2026-08-19",
+  "hostWitness": "reference/host-external-mature-knowledge-subtraction-v0-20260819.json",
+  "kind": "ordivon.open-resource-mature-knowledge-subtraction-v0-4-acceptance",
+  "method": "reference/open-resource-mature-knowledge-subtraction-pattern-v0-4-20260819.json",
+  "schemaVersion": 1,
+  "state": "FOUR_HETEROGENEOUS_OWNER_REPLICATION_METHOD_CANDIDATE_NOT_CONSTITUTIONAL",
+  "truthRole": "HISTORICAL_METHOD_DOGFOOD_EVIDENCE",
+  "verification": {
+    "fullSuiteJob": "job-01a016a4-da8f-7e83-b9f7-51247880751b",
+    "fullSuiteResult": "188 tests OK; 28 gated skips; 160 deterministic tests executed",
+    "referenceSuiteJob": "job-01a016a4-a61c-7712-8f87-7f8fc59b479c",
+    "referenceSuiteResult": "151/151 PASS"
+  },
+  "witnessCount": 4
+}

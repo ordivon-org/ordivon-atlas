@@ -1,0 +1,35 @@
+{
+  "closure": "ROUND6A_HOST_WEAK_MAPPING_REPAIRED_NOVELTY_NOT_ESTABLISHED",
+  "controls": [
+    "External sources, not Host theory, authorize Workflow/Process Systems and Provenance/Information Lineage identities.",
+    "Both new identities remain non-root and non-anchor.",
+    "Host has BRIDGE_COVERAGE only; no direct field equivalence.",
+    "Generic Coordination owner remains falsified/not admitted.",
+    "Owner-specific lease/replay/opacity/integrity residuals do not establish novelty.",
+    "No new MajorRegion and all previous anchors remain unchanged."
+  ],
+  "counts": {
+    "hostBridgeMappings": 2,
+    "majorRegions": 10,
+    "mappedUniqueIdentities": 25,
+    "mappingRows": 26,
+    "newIdentities": 2,
+    "newRelations": 7
+  },
+  "crosswalk": "reference/coverage-crosswalk-foundational-pilot-v0-9-20260819.json",
+  "date": "2026-08-19",
+  "kind": "ordivon.foundational-reference-round6a-host-repair-acceptance",
+  "majorRegionDogfood": "reference/canonical-major-regions-v0-10-dogfood-20260819.json",
+  "majorRegions": "reference/canonical-major-regions-v0-10-20260819.json",
+  "repair": "reference/foundational-reference-round6a-host-crosswalk-repair-20260819.json",
+  "schemaVersion": 1,
+  "state": "HOST_WEAK_MAPPING_EXTERNAL_REPAIR_MATERIALIZED",
+  "subtraction": "reference/host-external-mature-knowledge-subtraction-v0-20260819.json",
+  "truthRole": "HISTORICAL_REFERENCE_REPAIR_EVIDENCE",
+  "verification": {
+    "fullSuiteJob": "job-01a016a4-da8f-7e83-b9f7-51247880751b",
+    "fullSuiteResult": "188 tests OK; 28 gated skips; 160 deterministic tests executed",
+    "referenceSuiteJob": "job-01a016a4-a61c-7712-8f87-7f8fc59b479c",
+    "referenceSuiteResult": "151/151 PASS"
+  }
+}

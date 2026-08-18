@@ -1,0 +1,148 @@
+{
+  "closure": "ROUND6A_OWNER_CROSSWALK_REFERENCE_GAP_REPAIR_COMPLETE_OPEN_WORLD_CONTINUES",
+  "kind": "ordivon.foundational-reference-round6a-host-crosswalk-repair",
+  "laws": [
+    "HOST_PRESSURE_MAY_TRIGGER_REFERENCE_SEARCH_NOT_IDENTITY",
+    "EXTERNAL_SOURCE_VERIFICATION_REQUIRED_BEFORE_REFERENCE_REPAIR",
+    "WORKFLOW_PROCESS_SYSTEMS != HOST_OWNER",
+    "PROVENANCE_LINEAGE != HOST_OWNER",
+    "OWNER_SPECIFIC_RESIDUAL != NOVEL_FIELD",
+    "GENERIC_COORDINATION_OWNER_REMAINS_NOT_ADMITTED",
+    "NEW_EXTERNAL_IDENTITY != NEW_ORDIVON_OWNER"
+  ],
+  "normalizedSpaces": [
+    {
+      "aliases": [
+        "Workflow systems",
+        "Process orchestration systems"
+      ],
+      "evidence": [
+        "omg-bpmn-2-0-2",
+        "cncf-open-workflow"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Workflow and process orchestration systems",
+      "placements": [
+        "computation",
+        "computer-systems",
+        "software-engineering",
+        "parallel-distributed-computing",
+        "process-orchestration",
+        "management-organization-boundary"
+      ],
+      "rationale": "OMG BPMN establishes standardized process/workflow modeling, while Open Workflow provides an implementation-neutral workflow/task model with execution state, lifecycle events, retries, timeouts, fault handling and orchestration. Preserve this as a non-root systems/process bridge rather than equating it with any single runtime, scheduler or Host owner.",
+      "roleClasses": [
+        "WORKFLOW_PROCESS_SYSTEM_DOMAIN",
+        "COORDINATION_EXECUTION_BRIDGE",
+        "APPLIED_SYSTEMS_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:workflow-process-systems"
+    },
+    {
+      "aliases": [
+        "Data provenance",
+        "Information provenance",
+        "Lineage and traceability"
+      ],
+      "evidence": [
+        "w3c-prov-o",
+        "w3c-prov-dm"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Provenance and information lineage",
+      "placements": [
+        "information-science",
+        "computation",
+        "workflow-process-systems",
+        "traceability",
+        "evidence-lineage",
+        "source-identity-boundary"
+      ],
+      "rationale": "W3C PROV supplies a domain-agnostic, interoperable model of entities, activities, agents, derivation/revision, responsibility, plans and bundles/provenance-of-provenance. Preserve provenance/lineage as a cross-domain information infrastructure identity, not as universal truth/currentness ownership.",
+      "roleClasses": [
+        "PROVENANCE_INFORMATION_INFRASTRUCTURE",
+        "LINEAGE_TRACEABILITY_AXIS",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:provenance-information-lineage"
+    }
+  ],
+  "relations": [
+    {
+      "from": "norm:workflow-process-systems",
+      "to": "norm:systems-fundamentals",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:workflow-process-systems",
+      "to": "norm:parallel-distributed-computing",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:workflow-process-systems",
+      "to": "norm:software-engineering",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:workflow-process-systems",
+      "to": "norm:management-organization-studies",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:provenance-information-lineage",
+      "to": "norm:information-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:provenance-information-lineage",
+      "to": "norm:workflow-process-systems",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:provenance-information-lineage",
+      "to": "norm:formal-methods",
+      "type": "BRIDGES"
+    }
+  ],
+  "repair": {
+    "externalBasis": [
+      "omg-bpmn-2-0-2",
+      "cncf-open-workflow",
+      "w3c-prov-o",
+      "w3c-prov-dm"
+    ],
+    "oldPressure": "Host durable Task continuity, Journal/CAS, revision/lease fencing, replay and bounded handoff had only adjacent Computing/Information coordinates and remained external-mapping-weak.",
+    "repair": "Normalize Workflow/Process Orchestration Systems and Provenance/Information Lineage as externally supported non-root bridge identities.",
+    "repairId": "R6A-HOST-1",
+    "status": "APPLIED"
+  },
+  "roundId": "foundational-reference:round6a:2026-08-19",
+  "schemaVersion": 1,
+  "sources": {
+    "cncf-open-workflow": {
+      "role": "WORKFLOW_DEFINITION_EXECUTION_LIFECYCLE_SCOPE",
+      "title": "CNCF Open Workflow Specification / DSL",
+      "url": "https://github.com/open-workflow-specification/specification"
+    },
+    "omg-bpmn-2-0-2": {
+      "role": "BUSINESS_PROCESS_MODELING_STANDARD",
+      "title": "OMG Business Process Model and Notation (BPMN) 2.0.2",
+      "url": "https://www.omg.org/spec/BPMN/2.0.2/"
+    },
+    "w3c-prov-dm": {
+      "role": "PROVENANCE_DATA_MODEL_SCOPE",
+      "title": "W3C PROV Data Model",
+      "url": "https://www.w3.org/TR/prov-dm/"
+    },
+    "w3c-prov-o": {
+      "role": "PROVENANCE_ONTOLOGY_SCOPE",
+      "title": "W3C PROV-O Recommendation",
+      "url": "https://www.w3.org/TR/prov-o/"
+    }
+  },
+  "state": "HOST_WEAK_MAPPING_EXTERNAL_REPAIR_MATERIALIZED",
+  "trigger": "Host remained CURRENT_EXTERNAL_MAPPING_WEAK after computing-systems repair. Current owner-native Host responsibilities were compared against mature public workflow/process and provenance standards. Independent external evidence supports two missing bridge identities; Host theory only selected the pressure/query.",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_NORMALIZATION"
+}

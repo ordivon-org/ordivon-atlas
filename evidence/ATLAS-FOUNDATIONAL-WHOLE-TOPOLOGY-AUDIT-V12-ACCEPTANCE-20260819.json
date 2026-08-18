@@ -1,0 +1,87 @@
+{
+  "audit": "reference/foundational-whole-topology-audit-v12-host-crosswalk-repair-20260819.json",
+  "breadthPosture": "PAUSED_BY_BOUNDED_SATURATION_TARGETED_GAP_REPAIR_ALLOWED",
+  "closure": "WHOLE_AUDIT_V12_HOST_REPAIR_ACCEPTED_BREADTH_PAUSE_MAINTAINED",
+  "controls": [
+    "Round6A uses approved OWNER_CROSSWALK_REFERENCE_GAP trigger without resuming broad catalog growth.",
+    "The previous 120 identity fact states are unchanged; two newly admitted external identities enter already mapped.",
+    "The 97 no-direct-mapping facts and A/B/C=22/20/55 remain unchanged.",
+    "Host external-mapping-weak count goes to zero without novelty promotion.",
+    "Global scalar coverage remains forbidden."
+  ],
+  "counts": {
+    "canonicalMajorRegionProjections": 10,
+    "crosswalkMappings": 26,
+    "currentOwnerAuthorityInputs": 10,
+    "externalMappingWeakOwners": 0,
+    "hostBridgeMappings": 2,
+    "mappedUniqueIdentities": 25,
+    "navigationFrontierA": 22,
+    "navigationFrontierB": 20,
+    "navigationFrontierC": 55,
+    "newMajorRegionsFromRound6A": 0,
+    "noDirectMappingCurrentPilot": 97,
+    "normalizedSpaces": 122,
+    "publicationUnavailableOwners": 2,
+    "relations": 263,
+    "unmappedMajorRegionAnchors": 22,
+    "unmappedNoRegionMembers": 0
+  },
+  "coveragePosture": "IDENTITY_LEVEL_SOURCE_FENCED_NO_SCALAR",
+  "date": "2026-08-19",
+  "findings": [
+    {
+      "claim": "An approved OWNER_CROSSWALK_REFERENCE_GAP trigger repaired Host weak mapping with two independently supported non-root external identities: Workflow/Process Orchestration Systems and Provenance/Information Lineage.",
+      "id": "FTA12-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Host now has two BRIDGE_COVERAGE mappings and moves from CURRENT_EXTERNAL_MAPPING_WEAK to CURRENT_MAPPED while direct field equivalence and novelty remain unclaimed.",
+      "id": "FTA12-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Mature workflow/process and provenance knowledge explains substantial Host lifecycle/orchestration and lineage surfaces; exact lease/replay/owner-opacity/local-integrity residuals remain owner-specific and do not establish a novel field.",
+      "id": "FTA12-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Round6A adds 2 identities and 7 relations, increases mapping rows 25→26 and distinct mapped identities 23→25, while keeping the existing 97 no-direct-mapping identities and A/B/C=22/20/55 unchanged.",
+      "id": "FTA12-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Canonical MajorRegions remain exactly ten with all anchors unchanged; targeted owner-crosswalk repair does not resume breadth catalog growth.",
+      "id": "FTA12-5",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Open-resource mature-knowledge subtraction now has four heterogeneous Ordivon owner witnesses, including a weak-mapping case, but remains a method candidate rather than constitutional methodology.",
+      "id": "FTA12-6",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "frontierPosture": "RULE_BASED_NONSCALAR_INSPECTION_UNCHANGED_FOR_PRIOR_97",
+  "hostPosture": "EXTERNAL_MULTI_DOMAIN_CONTINUITY_INFRASTRUCTURE_BRIDGE_MAPPED_NOVELTY_NOT_ESTABLISHED",
+  "kind": "ordivon.whole-foundational-topology-audit-v12-acceptance",
+  "laws": [
+    "OWNER_CROSSWALK_REFERENCE_GAP_CAN_TRIGGER_TARGETED_REPAIR_WITHOUT_BREADTH_RESUMPTION",
+    "HOST_BRIDGE_MAPPING != WORKFLOW_OR_PROVENANCE_FIELD_EQUIVALENCE",
+    "OWNER_SPECIFIC_RESIDUAL != NOVELTY",
+    "GENERIC_COORDINATION_OWNER_REMAINS_FALSIFIED",
+    "NEW_EXTERNAL_IDENTITY != NEW_MAJOR_REGION",
+    "HOST_REPAIR_DOES_NOT_CHANGE_UNRELATED_FRONTIER_FACTS",
+    "NO_CURRENT_MAPPING != ORDIVON_UNTOUCHED",
+    "GLOBAL_SCALAR_COVERAGE_FORBIDDEN",
+    "METHOD_CANDIDATE != CONSTITUTION"
+  ],
+  "schemaVersion": 1,
+  "state": "HOST_WEAK_MAPPING_RESOLVED_BY_TARGETED_EXTERNAL_BRIDGES_BREADTH_PAUSE_MAINTAINED",
+  "truthRole": "HISTORICAL_RESEARCH_EVIDENCE",
+  "verification": {
+    "fullSuiteJob": "job-01a016a4-da8f-7e83-b9f7-51247880751b",
+    "fullSuiteResult": "188 tests OK; 28 gated skips; 160 deterministic tests executed",
+    "referenceSuiteJob": "job-01a016a4-a61c-7712-8f87-7f8fc59b479c",
+    "referenceSuiteResult": "151/151 PASS"
+  }
+}

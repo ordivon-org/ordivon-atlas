@@ -1,0 +1,1480 @@
+{
+  "contractRef": "reference/coverage-crosswalk-contract-v0-20260819.json",
+  "currentFrontierRef": "reference/external-reference-frontier-matrix-v0-1-20260819.json",
+  "currentFrontierSemantics": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT != ORDIVON_UNTOUCHED",
+  "findings": [
+    {
+      "claim": "Media is now the tenth source-fenced current Atlas owner and can enter crosswalk without Studio/project-history authority.",
+      "id": "CWP5-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Round4D independently verifies four previously missing external coordinates: Communication Studies, Media Studies, Semiotics and Human-Computer Interaction.",
+      "id": "CWP5-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Media maps to all four as BRIDGE_COVERAGE only; no direct field equivalence, cultural ownership, HCI ownership or semiotic ownership is claimed.",
+      "id": "CWP5-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Media crosswalk strengthens the deferred social/cultural navigation pressure: Communication Studies and Media Studies are real identities but should remain unassigned rather than be forced into current Mind/Philosophy regions.",
+      "id": "CWP5-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Media destructive reductions provide a third heterogeneous mature-knowledge-subtraction witness: apparently new continents can remain scientifically real as derived profiles after mature external fields and neighboring-owner responsibilities absorb primitive novelty.",
+      "id": "CWP5-5",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Across SCD, Human and Media, open-resource mature-knowledge subtraction now merits candidate-method status, but three selected Ordivon owners are insufficient for Constitution-level methodology authority.",
+      "id": "CWP5-6",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Round5B adds two navigation projections but zero new owner-to-identity coverage mappings; navigation repair and coverage truth remain separate.",
+      "id": "CWP6-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Existing Media/Human mappings may appear in new social/cultural region views as navigation hints only; no region-level coverage truth is minted.",
+      "id": "CWP6-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Nine real Round5C edge identities are absorbed by existing ten navigation regions with zero new owner-to-identity coverage mappings.",
+      "id": "CWP7-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "STS, Area Studies and WGSS demonstrate non-exclusive cross-region navigation while preserving identity-level coverage authority.",
+      "id": "CWP7-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Eleven previously unassigned normalized identities are repaired into existing navigation regions with zero new owner-to-identity coverage mappings.",
+      "id": "CWP8-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The repair removes projection debt without breadth reopen, new MajorRegion, anchor change, identity standing change or coverage inference.",
+      "id": "CWP8-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The legacy seven-owner untouched-candidate field is removed from the current v0.8 projection because no-current-mapping is not equivalent to untouched research and several historical candidates later gained mappings.",
+      "id": "CWP8-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Host weak external mapping is repaired by two independently verified bridge identities: Workflow/Process Orchestration Systems and Provenance/Information Lineage.",
+      "id": "CWP9-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Host remains novelty-not-established and gains no direct field equivalence; mature external workflow/provenance knowledge explains substantial surfaces while lease/replay/owner-opacity/integrity residues remain owner-specific.",
+      "id": "CWP9-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Replacing one weak-mapping row with two bridge mappings increases mapping rows by exactly one while adding two directly mapped ReferenceIdentities; generic coordination ownership remains falsified.",
+      "id": "CWP9-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "gapDispositions": [
+    {
+      "currentStatus": "RESOLVED_IN_V0_2",
+      "gapRef": "gap:philosophy-major-region",
+      "previousStatus": "NAVIGATION_REGION_GAP_CANDIDATE",
+      "repairRefs": [
+        "navigation-region:philosophical-conceptual",
+        "norm:metaphysics",
+        "norm:epistemology",
+        "norm:ethics-value-theory",
+        "norm:philosophy-of-science",
+        "norm:philosophy-of-language"
+      ]
+    },
+    {
+      "currentStatus": "PARTIALLY_RESOLVED_IN_V0_2",
+      "gapRef": "gap:networking-distributed-systems",
+      "previousStatus": "REFERENCE_IDENTITY_GAP_CANDIDATE",
+      "repairRefs": [
+        "norm:networking-communication",
+        "norm:parallel-distributed-computing",
+        "norm:systems-fundamentals"
+      ]
+    },
+    {
+      "currentStatus": "PARTIALLY_RESOLVED_IN_V0_2",
+      "gapRef": "gap:runtime-programming-systems",
+      "previousStatus": "REFERENCE_IDENTITY_GAP_CANDIDATE",
+      "repairRefs": [
+        "norm:operating-systems",
+        "norm:systems-fundamentals",
+        "norm:foundations-programming-languages"
+      ]
+    },
+    {
+      "currentStatus": "RESOLVED_TO_BRIDGE_MAPPINGS_WITH_OWNER_SPECIFIC_RESIDUALS",
+      "gapRef": "gap:coordination-workflow-systems",
+      "previousStatus": "REFERENCE_IDENTITY_OR_NOVELTY_AMBIGUITY",
+      "reason": "Independent OMG/CNCF/W3C sources supply stable workflow/process and provenance/lineage coordinates. Host now maps to both only at bridge level; exact lease/replay/owner-opacity/integrity residuals remain owner-specific and do not establish novelty.",
+      "repairRefs": [
+        "norm:workflow-process-systems",
+        "norm:provenance-information-lineage"
+      ]
+    },
+    {
+      "currentStatus": "PARTIALLY_RESOLVED_IN_V0_2",
+      "gapRef": "gap:normative-philosophy-granularity",
+      "previousStatus": "REFERENCE_IDENTITY_GRANULARITY_GAP_CANDIDATE",
+      "reason": "Ethics/value theory is a better bridge, but constitutive/normative semantics remains narrower and partially orthogonal.",
+      "repairRefs": [
+        "norm:ethics-value-theory"
+      ]
+    },
+    {
+      "currentStatus": "PRESSURE_STRENGTHENED_NOT_ADMITTED",
+      "evidence": [
+        "norm:communication-studies",
+        "norm:media-studies"
+      ],
+      "gapRef": "gap:social-cultural-communication-navigation",
+      "previousStatus": "DEFERRED_SOCIAL_CULTURAL_WAVE",
+      "reason": "Two stable external identities now sit outside the current eight MajorRegions. Do not force them into Mind/Language or Philosophy; later social/cultural navigation dogfood is required."
+    }
+  ],
+  "globalScalarCoverage": "FORBIDDEN",
+  "hostDisposition": {
+    "directFieldEquivalence": "NOT_CLAIMED",
+    "mappingRefs": [
+      "crosswalk:host->workflow-process-systems",
+      "crosswalk:host->provenance-information-lineage"
+    ],
+    "ownerResearchRef": "research-owner:host",
+    "residualNovelty": "NOT_ESTABLISHED",
+    "standing": "EXTERNAL_MULTI_DOMAIN_CONTINUITY_INFRASTRUCTURE_BRIDGE_MAPPED_NOVELTY_NOT_ESTABLISHED",
+    "subtractionRef": "reference/host-external-mature-knowledge-subtraction-v0-20260819.json"
+  },
+  "kind": "ordivon.external-reference-coverage-crosswalk-pilot",
+  "legacyUntouchedCandidateFieldDisposition": {
+    "historicalSource": "Earlier bounded seven-owner pilot files retain the original candidate list for provenance.",
+    "legacyEntryCount": 9,
+    "reason": "Several identities in the legacy list later gained current mappings after Human admission; more fundamentally, NO_DIRECT_MAPPING was never sufficient to assert ORDIVON_UNTOUCHED.",
+    "replacement": "Use reference/external-reference-frontier-state-contract-v0-20260819.json plus frontier matrix factState=NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT. Do not use untouched terminology without independent historical owner-corpus evidence.",
+    "status": "REMOVED_FROM_CURRENT_PROJECTION_AS_SEMANTICALLY_STALE"
+  },
+  "majorRegionRef": "reference/canonical-major-regions-v0-10-20260819.json",
+  "mappings": [
+    {
+      "basisResultRefs": [
+        "result:computational-possibility:owner-boundary-current",
+        "result:computational-possibility:eight-axis-current-architecture",
+        "result:computational-possibility:whole-owner-architectural-saturation",
+        "result:computational-possibility:algf0-historical-superseded",
+        "result:computational-possibility:applicability-subsystem-current"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_ARCHITECTURAL_SATURATION",
+        "ConceptualDepth": "CORE_ARCHITECTURE",
+        "CrossDomainDepth": "BRIDGE_STRUCTURE_EXPLICIT",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "SPECIALIST_FALSIFICATION_PROGRAMME",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:computation",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP",
+        "LOCALLY_CLOSED"
+      ],
+      "mappingRef": "crosswalk:cp->computation",
+      "ownerResearchRef": "research-owner:computational-possibility",
+      "relation": "DIRECT_PARTIAL_COVERAGE",
+      "scope": "Formal regime-relative computational achievability, impossibility, witness/method existence, reductions/transfer, comparative power and abstract constraint/resource structure; does not claim all Computer Science or all computation research."
+    },
+    {
+      "basisResultRefs": [
+        "result:network:ndf0-ndf5-current-frozen",
+        "result:network:ndf6-not-admitted",
+        "result:network:whole-domain-exhaustive-closure-not-established"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ESTABLISHED",
+        "ConceptualDepth": "FOUNDATION_OR_EQUIVALENT_ARCHITECTURE",
+        "CrossDomainDepth": "OWNER_BOUNDARIES_EXPLICIT",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "REPAIR_OR_SUPERSESSION_LINEAGE",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:networking-communication",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP",
+        "LOCALLY_CLOSED"
+      ],
+      "mappingRef": "crosswalk:network->networking-communication",
+      "ownerResearchRef": "research-owner:network",
+      "relation": "DIRECT_PARTIAL_COVERAGE",
+      "scope": "Qualified cross-locus capability, composition/realization, structural interaction projection, service/satisfaction, reference-resolution and forwarding/reachability semantics. This overlaps the external Networking & Communication knowledge area but remains architecture-neutral and does not claim all networking research."
+    },
+    {
+      "basisResultRefs": [
+        "result:runtime:architecture-current-interface",
+        "result:runtime:rf0-rf16-frozen",
+        "result:runtime:ef0-ef26-frozen",
+        "result:runtime:operational-realization-programme-c1-c10-saturated"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ESTABLISHED",
+        "ConceptualDepth": "FOUNDATION_OR_EQUIVALENT_ARCHITECTURE",
+        "CrossDomainDepth": "OWNER_BOUNDARIES_EXPLICIT",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "REPAIR_OR_SUPERSESSION_LINEAGE",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:systems-fundamentals",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP",
+        "LOCALLY_CLOSED"
+      ],
+      "mappingRef": "crosswalk:runtime->systems-fundamentals",
+      "ownerResearchRef": "research-owner:runtime",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "Runtime research directly studies execution, resource/isolation, interaction/composition, failure/persistence/reconciliation, evidence/truth scope and lifecycle/standing structures that overlap computer-systems fundamentals. It does not claim the full external Systems Fundamentals field."
+    },
+    {
+      "basisResultRefs": [
+        "result:runtime:architecture-current-interface",
+        "result:runtime:rf0-rf16-frozen",
+        "result:runtime:ef0-ef26-frozen"
+      ],
+      "dimensions": {
+        "ClosureStrength": "WHOLE_EXTERNAL_FIELD_NOT_CLAIMED",
+        "ConceptualDepth": "DIRECT_BOUNDED_SUBSPACE",
+        "CrossDomainDepth": "OWNER_BOUNDARIES_EXPLICIT",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "REPAIR_OR_SUPERSESSION_LINEAGE",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:operating-systems",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP"
+      ],
+      "mappingRef": "crosswalk:runtime->operating-systems",
+      "ownerResearchRef": "research-owner:runtime",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "Runtime execution/resource/isolation/lifecycle semantics overlap OS concerns such as process/execution, resource management, protection/isolation and lifecycle, but Ordivon Runtime is not a general Operating Systems research programme."
+    },
+    {
+      "basisResultRefs": [
+        "result:world:wdf0-meta-foundation-current-frozen",
+        "result:world:wdf1-modal-foundation-current-frozen",
+        "result:world:wdf4-causal-reality-current-frozen",
+        "result:world:tsaf0-temporal-structure-current-frozen",
+        "result:world:wdf2-counterfactual-deep-history-nonfoundation",
+        "result:world:wdf3-categorial-deep-history-nonfoundation"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ESTABLISHED",
+        "ConceptualDepth": "FOUNDATION_OR_EQUIVALENT_ARCHITECTURE",
+        "CrossDomainDepth": "OWNER_BOUNDARIES_EXPLICIT",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "REPAIR_OR_SUPERSESSION_LINEAGE",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:metaphysics",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP",
+        "LOCALLY_CLOSED"
+      ],
+      "mappingRef": "crosswalk:world->metaphysics",
+      "ownerResearchRef": "research-owner:world",
+      "relation": "DIRECT_PARTIAL_COVERAGE",
+      "scope": "Reality/actuality, modality, causality, counterfactual/categorial structure and temporal/property semantics directly address a bounded metaphysical/reality subspace. World explicitly does not claim all Philosophy or a complete ontology of Reality."
+    },
+    {
+      "basisResultRefs": [
+        "result:world:wdf0-meta-foundation-current-frozen",
+        "result:world:wdf4-causal-reality-current-frozen",
+        "result:world:wdf5-property-evaluation-current-frozen"
+      ],
+      "dimensions": {
+        "ClosureStrength": "WHOLE_EXTERNAL_FIELD_NOT_CLAIMED",
+        "ConceptualDepth": "DIRECT_BOUNDED_SUBSPACE",
+        "CrossDomainDepth": "BRIDGE_STRUCTURE_EXPLICIT",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "REPAIR_OR_SUPERSESSION_LINEAGE",
+        "HistoricalDepth": "LINEAGE_PRESERVED"
+      },
+      "externalRef": "norm:philosophy-of-science",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED"
+      ],
+      "mappingRef": "crosswalk:world->philosophy-of-science",
+      "ownerResearchRef": "research-owner:world",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "Model/Reality firewalls, causal validation, property evaluation and evidence/claim structure overlap philosophy-of-science questions while remaining World-specific research semantics."
+    },
+    {
+      "basisResultRefs": [
+        "result:normative:owner-boundary-current",
+        "result:normative:anchor-interface-current-frozen",
+        "result:normative:generator-admission-structure-current-frozen",
+        "result:normative:derivation-transition-semantics-current-frozen",
+        "result:normative:formal-core-reference-contract-v1",
+        "result:normative:game-dogfood-pass",
+        "result:normative:harness-agent-dogfood-pass"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ESTABLISHED",
+        "ConceptualDepth": "FOUNDATION_OR_EQUIVALENT_ARCHITECTURE",
+        "CrossDomainDepth": "CROSS_OWNER_DOGFOOD",
+        "EvidenceDepth": "CURRENT_CROSS_DOMAIN_DOGFOOD",
+        "FalsificationDepth": "NEGATIVE_HISTORY",
+        "HistoricalDepth": "LINEAGE_PRESERVED"
+      },
+      "externalRef": "norm:ethics-value-theory",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP",
+        "LOCALLY_CLOSED"
+      ],
+      "mappingRef": "crosswalk:normative->ethics-value-theory",
+      "ownerResearchRef": "research-owner:ordivon-normative",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "Context-relative constitutive/normative admission, consequence, competence/power and valid transformation overlap normative philosophy. The owner explicitly rejects universal normativity, generic reasons/value and generic institutions/governance, so this is narrower than Ethics & Value Theory as a whole."
+    },
+    {
+      "basisResultRefs": [
+        "result:game:gdf0-gdf3-current-frozen",
+        "result:game:gdf3-authoritative-case-determination-current",
+        "result:game:absolute-whole-game-closure-not-claimed"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ESTABLISHED",
+        "ConceptualDepth": "FOUNDATION_OR_EQUIVALENT_ARCHITECTURE",
+        "CrossDomainDepth": "OWNER_BOUNDARIES_EXPLICIT",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "REPAIR_OR_SUPERSESSION_LINEAGE",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": null,
+      "facets": [
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP",
+        "LOCALLY_CLOSED"
+      ],
+      "mappingRef": "crosswalk:game->out-of-foundational-pilot",
+      "ownerResearchRef": "research-owner:game",
+      "relation": "OUT_OF_FOUNDATIONAL_PILOT_SCOPE",
+      "scope": "Current Game semantic Foundations and practical/game-specific research are real/current, but the bounded foundational Reference World intentionally does not yet contain Game Studies/Game Design/Play as normalized external identities."
+    },
+    {
+      "basisResultRefs": [
+        "result:scd:owner-boundary-current",
+        "result:scd:scdf-frozen-set-current",
+        "result:scd:scdf-open-set-current",
+        "result:scd:scdf2-scdf5-scdf10-boundary-architecture-v1-frozen",
+        "result:scd:k0-2-role-model-current-provisional",
+        "result:scd:canonical-falsification-corpus-v0-1-current",
+        "result:scd:g1-g4-independent-formal-gaps-rejected",
+        "result:scd:a1-a8-consumer-dogfood-current",
+        "result:scd:consumer-dogfood-foundation-promotion-not-admitted"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ESTABLISHED",
+        "ConceptualDepth": "FOUNDATION_OR_EQUIVALENT_ARCHITECTURE",
+        "CrossDomainDepth": "CROSS_OWNER_DOGFOOD",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "SPECIALIST_FALSIFICATION_PROGRAMME",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:formal-semantics",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP",
+        "LOCALLY_CLOSED"
+      ],
+      "mappingRef": "crosswalk:scd->formal-semantics",
+      "ownerResearchRef": "research-owner:semantics-of-computational-descriptions",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "SCD directly studies typed semantic responsibilities across observation, composition/context, comparison/refinement, abstraction, transport/preservation, admissibility, satisfaction, predicate transformation, dependency and evolution, while explicitly reusing framework-specific operational/denotational/axiomatic/type-system semantics rather than claiming those local theories as SCD inventions. This is a cross-framework semantics bridge, not whole Formal Semantics ownership."
+    },
+    {
+      "basisResultRefs": [
+        "result:scd:owner-boundary-current",
+        "result:scd:scdf-frozen-set-current",
+        "result:scd:scdf-open-set-current",
+        "result:scd:scdf2-scdf5-scdf10-boundary-architecture-v1-frozen",
+        "result:scd:k0-2-role-model-current-provisional",
+        "result:scd:canonical-falsification-corpus-v0-1-current",
+        "result:scd:g1-g4-independent-formal-gaps-rejected",
+        "result:scd:a1-a8-consumer-dogfood-current",
+        "result:scd:consumer-dogfood-foundation-promotion-not-admitted"
+      ],
+      "dimensions": {
+        "ClosureStrength": "WHOLE_EXTERNAL_FIELD_NOT_CLAIMED",
+        "ConceptualDepth": "CORE_ARCHITECTURE",
+        "CrossDomainDepth": "CROSS_OWNER_DOGFOOD",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "SPECIALIST_FALSIFICATION_PROGRAMME",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:formal-methods",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP",
+        "LOCALLY_CLOSED"
+      ],
+      "mappingRef": "crosswalk:scd->formal-methods",
+      "ownerResearchRef": "research-owner:semantics-of-computational-descriptions",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "SCD formalization and consumer dogfood use specification, refinement, abstract interpretation, verified transformation, type-system, satisfaction, dependency and proof-obligation techniques as mature external suppliers. SCD contributes owner-typed cross-framework responsibility/currentness coordination, not Formal Methods as a whole."
+    },
+    {
+      "basisResultRefs": [
+        "result:human:owner-boundary-current",
+        "result:human:hf-family-boundary-subjectivity",
+        "result:human:hf-family-perception-access",
+        "result:human:hf-family-valuation-regulation-adaptation",
+        "result:human:hf-family-memory-representation-cognition",
+        "result:human:hf-family-decision-situated-action",
+        "result:human:hf-family-relation-coordination",
+        "result:human:hd11-hd16-retained-projections"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ONLY",
+        "ConceptualDepth": "FOUNDATION_AND_DEEP_ARCHITECTURE",
+        "CrossDomainDepth": "MULTI_DOMAIN_BRIDGE",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "OWNER_NEGATIVE_AND_REVISION_HISTORY",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:psychology",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_AWARE",
+        "HISTORICALLY_DEEP",
+        "BOUNDED_CLOSURE"
+      ],
+      "mappingRef": "crosswalk:human->psychology",
+      "ownerResearchRef": "research-owner:human",
+      "relation": "DIRECT_PARTIAL_COVERAGE",
+      "scope": "Human directly studies bounded psychological territory including consciousness/experience, attention/access, affect/regulation, memory/representation/reasoning, decision/action, relationships and multiple retained cognition projections. This is partial coverage, not whole Psychology."
+    },
+    {
+      "basisResultRefs": [
+        "result:human:owner-boundary-current",
+        "result:human:hf-family-perception-access",
+        "result:human:hf-family-memory-representation-cognition",
+        "result:human:hf-family-decision-situated-action",
+        "result:human:hd4-hd5-culture-language-dispositions",
+        "result:human:hd11-hd16-retained-projections"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ONLY",
+        "ConceptualDepth": "CORE_ARCHITECTURE",
+        "CrossDomainDepth": "MULTI_DOMAIN_BRIDGE",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "OWNER_NEGATIVE_AND_REVISION_HISTORY",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:cognitive-science",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_AWARE",
+        "HISTORICALLY_DEEP",
+        "BOUNDED_CLOSURE"
+      ],
+      "mappingRef": "crosswalk:human->cognitive-science",
+      "ownerResearchRef": "research-owner:human",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "Human contributes a broad Human-mind/cognition side spanning perception, memory, reasoning, decision, symbolic systems and retained temporal/quantitative/spatial/imagination projections, but Cognitive Science also includes AI, linguistics, anthropology, neuroscience, philosophy and education outside Human ownership."
+    },
+    {
+      "basisResultRefs": [
+        "result:human:owner-boundary-current",
+        "result:human:hf-family-boundary-subjectivity",
+        "result:human:hd11-hd16-retained-projections"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ONLY",
+        "ConceptualDepth": "FOUNDATION_PLUS_DEEP_PROJECTIONS",
+        "CrossDomainDepth": "MULTI_DOMAIN_BRIDGE",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "OWNER_NEGATIVE_AND_REVISION_HISTORY",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:consciousness-science",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_AWARE",
+        "HISTORICALLY_DEEP",
+        "BOUNDED_CLOSURE"
+      ],
+      "mappingRef": "crosswalk:human->consciousness-science",
+      "ownerResearchRef": "research-owner:human",
+      "relation": "DIRECT_PARTIAL_COVERAGE",
+      "scope": "HF2 is retained inside the current Boundary & Subjectivity family and Human owns Human-side consciousness/subjective-experience claims; deep imagination/reality-monitoring and bodily-self projections add bounded scientific depth. This does not cover all neural or philosophical theories of consciousness."
+    },
+    {
+      "basisResultRefs": [
+        "result:human:owner-boundary-current",
+        "result:human:hf-family-valuation-regulation-adaptation",
+        "result:human:hoc10-closure-falsification-admission-history",
+        "result:human:generic-operational-core-sufficiency-falsified"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ONLY",
+        "ConceptualDepth": "FOUNDATION_OPERATIONAL_REVISION_CHAIN",
+        "CrossDomainDepth": "MULTI_DOMAIN_BRIDGE",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "OWNER_NEGATIVE_AND_REVISION_HISTORY",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:affective-science",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_AWARE",
+        "HISTORICALLY_DEEP",
+        "BOUNDED_CLOSURE"
+      ],
+      "mappingRef": "crosswalk:human->affective-science",
+      "ownerResearchRef": "research-owner:human",
+      "relation": "DIRECT_PARTIAL_COVERAGE",
+      "scope": "Human has direct affect/emotion/regulation research through the valuation-regulation-adaptation family and the HOC10 admission episode, where a missing affect/regulation operational object falsified prior HOC0-HOC9 sufficiency. Coverage remains Human-side and does not absorb clinical/medical/social-policy authority."
+    },
+    {
+      "basisResultRefs": [
+        "result:human:owner-boundary-current",
+        "result:human:hf-family-valuation-regulation-adaptation"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ONLY",
+        "ConceptualDepth": "CORE_ARCHITECTURE",
+        "CrossDomainDepth": "MULTI_DOMAIN_BRIDGE",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "OWNER_NEGATIVE_AND_REVISION_HISTORY",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:developmental-science",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_AWARE",
+        "HISTORICALLY_DEEP",
+        "BOUNDED_CLOSURE"
+      ],
+      "mappingRef": "crosswalk:human->developmental-science",
+      "ownerResearchRef": "research-owner:human",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "HF6 adaptation/plasticity/development supplies a stable Human-development concern, but Human does not claim the whole developmental-science field, child/family developmental research, education or developmental biology."
+    },
+    {
+      "basisResultRefs": [
+        "result:human:owner-boundary-current",
+        "result:human:hf-family-memory-representation-cognition",
+        "result:human:hd4-hd5-culture-language-dispositions"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ONLY",
+        "ConceptualDepth": "CORE_ARCHITECTURE",
+        "CrossDomainDepth": "MULTI_DOMAIN_BRIDGE",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "OWNER_NEGATIVE_AND_REVISION_HISTORY",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:linguistics",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_AWARE",
+        "HISTORICALLY_DEEP",
+        "BOUNDED_CLOSURE"
+      ],
+      "mappingRef": "crosswalk:human->linguistics",
+      "ownerResearchRef": "research-owner:human",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "Human-side symbolic/generative-system structure and HD5 language work intersect language science, while communication-use remains separately bounded and Human does not own the full formal, descriptive, historical or sociolinguistic field."
+    },
+    {
+      "basisResultRefs": [
+        "result:human:owner-boundary-current",
+        "result:human:hf-family-boundary-subjectivity",
+        "result:human:hf-family-perception-access",
+        "result:human:hf-family-valuation-regulation-adaptation",
+        "result:human:hd6-hd9-bio-evolution-health-no-promotion",
+        "result:human:hd11-hd16-retained-projections"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ONLY",
+        "ConceptualDepth": "CORE_ARCHITECTURE",
+        "CrossDomainDepth": "MULTI_DOMAIN_BRIDGE",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "OWNER_NEGATIVE_AND_REVISION_HISTORY",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:neuroscience",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_AWARE",
+        "HISTORICALLY_DEEP",
+        "BOUNDED_CLOSURE"
+      ],
+      "mappingRef": "crosswalk:human->neuroscience",
+      "ownerResearchRef": "research-owner:human",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "Human research consumes and integrates brain/nervous-system evidence across consciousness, perception, affect and retained cognitive projections, but neural mechanism truth remains external neuroscience evidence and Human does not own neuroscience as a field."
+    },
+    {
+      "basisResultRefs": [
+        "result:human:owner-boundary-current",
+        "result:human:hd6-hd9-bio-evolution-health-no-promotion"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ONLY",
+        "ConceptualDepth": "DEEP_DOMAIN_ONLY",
+        "CrossDomainDepth": "MULTI_DOMAIN_BRIDGE",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "OWNER_NEGATIVE_AND_REVISION_HISTORY",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:genetics",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_AWARE",
+        "HISTORICALLY_DEEP",
+        "BOUNDED_CLOSURE"
+      ],
+      "mappingRef": "crosswalk:human->genetics",
+      "ownerResearchRef": "research-owner:human",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "HD7 genetics/heredity is retained as deep biological Human research with no peer Foundation promotion. This maps a bounded Human genetics/heredity interface, not genetics as a whole."
+    },
+    {
+      "basisResultRefs": [
+        "result:human:owner-boundary-current",
+        "result:human:hd6-hd9-bio-evolution-health-no-promotion"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ONLY",
+        "ConceptualDepth": "DEEP_DOMAIN_ONLY",
+        "CrossDomainDepth": "MULTI_DOMAIN_BRIDGE",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "OWNER_NEGATIVE_AND_REVISION_HISTORY",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:evolutionary-biology",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_AWARE",
+        "HISTORICALLY_DEEP",
+        "BOUNDED_CLOSURE"
+      ],
+      "mappingRef": "crosswalk:human->evolutionary-biology",
+      "ownerResearchRef": "research-owner:human",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "HD8 evolution/phylogeny/population-change is retained as deep Human research without Foundation promotion. This is a Human/evolution bridge, not ownership of evolutionary biology."
+    },
+    {
+      "basisResultRefs": [
+        "result:human:owner-boundary-current",
+        "result:human:hd6-hd9-bio-evolution-health-no-promotion"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ONLY",
+        "ConceptualDepth": "DEEP_DOMAIN_ONLY",
+        "CrossDomainDepth": "MULTI_DOMAIN_BRIDGE",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "OWNER_NEGATIVE_AND_REVISION_HISTORY",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:physiology",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_AWARE",
+        "HISTORICALLY_DEEP",
+        "BOUNDED_CLOSURE"
+      ],
+      "mappingRef": "crosswalk:human->physiology",
+      "ownerResearchRef": "research-owner:human",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "HD9 organismic systems/health/disease preserves physiological and functional Human depth, while operational HOC7 remains explicitly non-diagnostic. Human does not claim medicine or physiology wholesale."
+    },
+    {
+      "basisResultRefs": [
+        "result:media:owner-boundary-current",
+        "result:media:mf0-mf9-frozen-current",
+        "result:media:mf10-not-admitted",
+        "result:media:round-b-derived-realities-current",
+        "result:media:round-d-derived-realities-current",
+        "result:media:round-c-checklist-closure-assumption-falsified",
+        "result:media:art-expression-studio-adjacent-not-core",
+        "result:media:cross-owner-bridges-current",
+        "result:media:ompc-v0-reference-contract-current",
+        "result:media:shared-implementation-not-admitted",
+        "result:media:universal-media-framework-engine-runtime-sdk-not-admitted"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ESTABLISHED",
+        "ConceptualDepth": "FOUNDATION_OR_EQUIVALENT_ARCHITECTURE",
+        "CrossDomainDepth": "CROSS_OWNER_DOGFOOD",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "SPECIALIST_FALSIFICATION_PROGRAMME",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:communication-studies",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP",
+        "LOCALLY_CLOSED"
+      ],
+      "mappingRef": "crosswalk:media->communication-studies",
+      "ownerResearchRef": "research-owner:media",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "Media directly studies structured mediation, signals, communication/exposure/protocol/publication/audience profiles and mediated relations, but Communication Studies also includes interpersonal, organizational, political, health, instructional and other communication domains outside Media owner scope."
+    },
+    {
+      "basisResultRefs": [
+        "result:media:owner-boundary-current",
+        "result:media:mf0-mf9-frozen-current",
+        "result:media:mf10-not-admitted",
+        "result:media:round-b-derived-realities-current",
+        "result:media:round-d-derived-realities-current",
+        "result:media:round-c-checklist-closure-assumption-falsified",
+        "result:media:art-expression-studio-adjacent-not-core",
+        "result:media:cross-owner-bridges-current",
+        "result:media:ompc-v0-reference-contract-current",
+        "result:media:shared-implementation-not-admitted",
+        "result:media:universal-media-framework-engine-runtime-sdk-not-admitted"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ESTABLISHED",
+        "ConceptualDepth": "FOUNDATION_OR_EQUIVALENT_ARCHITECTURE",
+        "CrossDomainDepth": "CROSS_OWNER_DOGFOOD",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "SPECIALIST_FALSIFICATION_PROGRAMME",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:media-studies",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP",
+        "LOCALLY_CLOSED"
+      ],
+      "mappingRef": "crosswalk:media->media-studies",
+      "ownerResearchRef": "research-owner:media",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "Media owns structural mediation/representation/composition/experience semantics and derived publication/audience/remediation profiles, while external Media Studies additionally centers historical, cultural, aesthetic, industrial and interpretive analysis; Art/Expression/Studio remains explicitly adjacent-not-core."
+    },
+    {
+      "basisResultRefs": [
+        "result:media:owner-boundary-current",
+        "result:media:mf0-mf9-frozen-current",
+        "result:media:mf10-not-admitted",
+        "result:media:round-b-derived-realities-current",
+        "result:media:round-d-derived-realities-current",
+        "result:media:round-c-checklist-closure-assumption-falsified",
+        "result:media:art-expression-studio-adjacent-not-core",
+        "result:media:cross-owner-bridges-current",
+        "result:media:ompc-v0-reference-contract-current",
+        "result:media:shared-implementation-not-admitted",
+        "result:media:universal-media-framework-engine-runtime-sdk-not-admitted"
+      ],
+      "dimensions": {
+        "ClosureStrength": "WHOLE_EXTERNAL_FIELD_NOT_CLAIMED",
+        "ConceptualDepth": "FOUNDATION_OR_EQUIVALENT_ARCHITECTURE",
+        "CrossDomainDepth": "CROSS_OWNER_DOGFOOD",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "SPECIALIST_FALSIFICATION_PROGRAMME",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:semiotics",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP"
+      ],
+      "mappingRef": "crosswalk:media->semiotics",
+      "ownerResearchRef": "research-owner:media",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "MF3 Representation plus derived meaning/context/quotation/translation structures overlap signification and communication, but Semiotics ranges across language, philosophy, culture and biological sign systems not owned by Media."
+    },
+    {
+      "basisResultRefs": [
+        "result:media:owner-boundary-current",
+        "result:media:mf0-mf9-frozen-current",
+        "result:media:mf10-not-admitted",
+        "result:media:round-b-derived-realities-current",
+        "result:media:round-d-derived-realities-current",
+        "result:media:round-c-checklist-closure-assumption-falsified",
+        "result:media:art-expression-studio-adjacent-not-core",
+        "result:media:cross-owner-bridges-current",
+        "result:media:ompc-v0-reference-contract-current",
+        "result:media:shared-implementation-not-admitted",
+        "result:media:universal-media-framework-engine-runtime-sdk-not-admitted"
+      ],
+      "dimensions": {
+        "ClosureStrength": "WHOLE_EXTERNAL_FIELD_NOT_CLAIMED",
+        "ConceptualDepth": "CORE_ARCHITECTURE",
+        "CrossDomainDepth": "CROSS_OWNER_DOGFOOD",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "SPECIALIST_FALSIFICATION_PROGRAMME",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:human-computer-interaction",
+      "facets": [
+        "MAPPED",
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED"
+      ],
+      "mappingRef": "crosswalk:media->human-computer-interaction",
+      "ownerResearchRef": "research-owner:media",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "Round-D interface/action coupling and mediated-presence/teleaction/embodiment structures overlap HCI interaction, feedback and experience concerns. Concrete interface design/usability, computing implementation and empirical human factors remain external or other-owner territory."
+    },
+    {
+      "basisResultRefs": [
+        "result:host:owner-boundary-current",
+        "result:host:hdf0-hdf43-current-frozen",
+        "result:host:primitive-universal-host-falsified",
+        "result:host:generic-coordination-owner-not-admitted"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ESTABLISHED",
+        "ConceptualDepth": "FOUNDATION_OR_EQUIVALENT_ARCHITECTURE",
+        "CrossDomainDepth": "OWNER_BOUNDARIES_EXPLICIT",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "EXPLICIT_FALSIFIED_IN_SCOPE",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:workflow-process-systems",
+      "facets": [
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP",
+        "LOCALLY_CLOSED",
+        "MAPPED"
+      ],
+      "mappingRef": "crosswalk:host->workflow-process-systems",
+      "ownerResearchRef": "research-owner:host",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "Host durable Task continuity, checkpoint/replay, bounded handoff/inspection and lifecycle integrity overlap workflow/process orchestration concerns. Host explicitly is not a global workflow engine or scheduler, so mapping is bridge-level and narrower than the external field."
+    },
+    {
+      "basisResultRefs": [
+        "result:host:owner-boundary-current",
+        "result:host:hdf0-hdf43-current-frozen",
+        "result:host:primitive-universal-host-falsified",
+        "result:host:generic-coordination-owner-not-admitted"
+      ],
+      "dimensions": {
+        "ClosureStrength": "LOCAL_SCOPE_ESTABLISHED",
+        "ConceptualDepth": "FOUNDATION_OR_EQUIVALENT_ARCHITECTURE",
+        "CrossDomainDepth": "OWNER_BOUNDARIES_EXPLICIT",
+        "EvidenceDepth": "MULTI_RESULT_PLUS_NEGATIVE_HISTORY",
+        "FalsificationDepth": "EXPLICIT_FALSIFIED_IN_SCOPE",
+        "HistoricalDepth": "SUPERSESSION_OR_REPAIR_PRESERVED"
+      },
+      "externalRef": "norm:provenance-information-lineage",
+      "facets": [
+        "INVESTIGATED",
+        "STRUCTURED",
+        "FALSIFICATION_TESTED",
+        "HISTORICALLY_DEEP",
+        "LOCALLY_CLOSED",
+        "MAPPED"
+      ],
+      "mappingRef": "crosswalk:host->provenance-information-lineage",
+      "ownerResearchRef": "research-owner:host",
+      "relation": "BRIDGE_COVERAGE",
+      "scope": "Host Journal/CAS identity, witness history, revision/reference integrity and opaque-extension durability overlap provenance/information-lineage concerns. Host explicitly is not a universal provenance owner and does not derive semantic currentness or constituted validity from provenance alone."
+    }
+  ],
+  "mediaDisposition": {
+    "directFieldEquivalence": "NOT_CLAIMED",
+    "mappingRefs": [
+      "crosswalk:media->communication-studies",
+      "crosswalk:media->media-studies",
+      "crosswalk:media->semiotics",
+      "crosswalk:media->human-computer-interaction"
+    ],
+    "negativeNoveltyEvidence": [
+      "Communication/exposure/protocol/publication/audience/meaning/archive/translation profiles survived as derived structures rather than MF10.",
+      "Round C falsified checklist-completion closure; fresh candidate continents were then directly reduced in Round D rather than promoted by novelty pressure.",
+      "Infrastructure, operative mediation, interface/action coupling and mediated presence remain typed derived/cross-owner structures, not new primitives.",
+      "Art/Expression/Studio is explicitly adjacent-not-core and cross-owner semantic dependency does not transfer authority.",
+      "Strong current research closure does not claim absolute whole-Media exhaustion."
+    ],
+    "ownerResearchRef": "research-owner:media",
+    "standing": "EXTERNAL_MULTI_DOMAIN_MEDIATION_BRIDGE_MAPPED_NOVELTY_NOT_ESTABLISHED"
+  },
+  "next": "Recompute Frontier Matrix against 122 identities and 26 mapping rows. Preserve no-current-mapping semantics and breadth pause; do not interpret Host residuals as novelty.",
+  "nonCoverageCases": [
+    {
+      "case": "World metaphysics mapping does not count as Physics coverage",
+      "reason": "World explicitly rejects absorbing domain-specific physical mechanisms."
+    },
+    {
+      "case": "Network mapping to Networking and Communication does not count as Information Theory coverage",
+      "reason": "Generic Information Theory remains external to Network owner scope."
+    },
+    {
+      "case": "Runtime bridge coverage to Systems Fundamentals / Operating Systems does not count as whole-field OS or Software Engineering coverage",
+      "reason": "Runtime is an owner-specific execution/realization semantic project."
+    },
+    {
+      "case": "Philosophy of Mind appearing in both Philosophy and Mind regions does not transfer coverage between regions",
+      "reason": "Membership is non-exclusive navigation only."
+    },
+    {
+      "case": "Excluded Human/SCD/Finance/Media/Harness owners are not classified as untouched",
+      "reason": "They are absent from the current source-fenced seven-owner Atlas snapshot."
+    },
+    {
+      "case": "SCD bridge mapping to Formal Semantics does not count as whole Foundations of Programming Languages coverage",
+      "reason": "SCD explicitly reuses framework-specific language/system semantics and does not own programming-language design/implementation as a discipline."
+    },
+    {
+      "case": "SCD bridge mapping to Formal Methods does not count as whole Formal Methods coverage",
+      "reason": "Specification, theorem proving, model checking, type systems, abstract interpretation and refinement are external supplier theories; SCD coordinates bounded cross-framework semantic responsibility."
+    },
+    {
+      "case": "SCD and Computational Possibility sharing ordivon-computing does not merge their external mappings",
+      "reason": "The current eight-owner Atlas snapshot proves distinct authority/version/transport fences; repository location has no semantic transfer rule."
+    },
+    {
+      "case": "G1-G4 negative formal-gap closeout does not imply SCD has covered or falsified the corresponding external theories",
+      "reason": "The negative result rejects SCD novelty/additive-theory hypotheses after subtraction; external supplier theory remains external authority."
+    },
+    {
+      "case": "Human partial Psychology mapping does not equal whole Psychology",
+      "reason": "Current Human publication is broad but source-fenced to Human-side empirical/cognitive/experiential/behavioral claims; clinical, comparative, industrial and other psychological subfields are not thereby covered."
+    },
+    {
+      "case": "Human Cognitive Science mapping does not transfer AI/Linguistics/Anthropology/Philosophy/Education ownership",
+      "reason": "Cognitive Science is externally interdisciplinary; Human supplies only bounded Human-mind/cognition contributions."
+    },
+    {
+      "case": "Human Neuroscience mapping does not make neural mechanism truth Human-owned",
+      "reason": "Human integrates neuroscience evidence, but brain/nervous-system field authority remains external neuroscience research."
+    },
+    {
+      "case": "HD7/HD8/HD9 bridge mappings do not amount to Biology or Medicine coverage",
+      "reason": "Deep != Primitive and no Foundation promotion was admitted; v0.4 intentionally avoids broad Biology/Medicine mappings."
+    },
+    {
+      "case": "HF23/HD5 language mapping does not equal whole Linguistics",
+      "reason": "Human-side symbolic/generative and meaning structures are bounded; formal/descriptive/historical/sociolinguistic breadth remains outside the claim."
+    },
+    {
+      "case": "HOC0-HOC10 do not mint external scientific identities",
+      "reason": "Operational decision/action surfaces are owner-native practical constructs; usefulness and falsification history do not establish external field identity."
+    },
+    {
+      "case": "Human HF14-HF18 identities do not imply Ethics/Normative coverage",
+      "reason": "Current owner overlay explicitly routes normative validity/standing/obligation/priority/conflict to Ordivon Normative or other relevant owners."
+    },
+    {
+      "case": "No Human Science or Ordivon Human external identity is admitted",
+      "reason": "Reference identities come from independent external disciplinary organization, not owner naming."
+    },
+    {
+      "case": "Media bridge mapping to Communication Studies does not count as whole communication coverage",
+      "reason": "Interpersonal, organizational, political, health, instructional and other communication fields exceed Media owner scope."
+    },
+    {
+      "case": "Media bridge mapping to Media Studies does not absorb cultural/history/art authority",
+      "reason": "Media publication explicitly keeps Art/Expression/Studio adjacent-not-core; SCMS Media Studies includes historical, cultural, aesthetic and industrial inquiry."
+    },
+    {
+      "case": "Media bridge mapping to Semiotics does not count as whole signification/meaning coverage",
+      "reason": "Semiotics spans philosophy, linguistics, culture and biological sign systems beyond Media."
+    },
+    {
+      "case": "Media bridge mapping to HCI does not count as whole HCI or usability/design coverage",
+      "reason": "Media owns interface-standing/action-exposure/mediated-presence structures, not generic HCI empirical/design/computing authority."
+    },
+    {
+      "case": "Communication Studies and Media Studies absence from current MajorRegions is not an identity defect",
+      "reason": "Their external identities are admitted; only high-level social/cultural navigation remains deliberately deferred."
+    }
+  ],
+  "ownerSnapshotRef": "reference/coverage-crosswalk-owner-authority-snapshot-v0-5-20260819.json",
+  "pilotId": "coverage-crosswalk:foundational-v0.9:2026-08-19",
+  "preservesHistory": true,
+  "referenceRepairRefs": [
+    "reference/foundational-reference-round4a-crosswalk-induced-repair-20260819.json",
+    "reference/foundational-reference-round4b-scd-crosswalk-repair-20260819.json",
+    "reference/foundational-reference-round4c-human-crosswalk-repair-20260819.json",
+    "reference/foundational-reference-round4d-media-crosswalk-repair-20260819.json",
+    "reference/foundational-reference-round6a-host-crosswalk-repair-20260819.json"
+  ],
+  "regionCoverageViews": [
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:mathematics",
+        "norm:logic",
+        "norm:statistics"
+      ],
+      "label": "Formal & Inferential Structures",
+      "mappedMemberRefs": [
+        {
+          "externalRef": "norm:formal-semantics",
+          "mappingRefs": [
+            "crosswalk:scd->formal-semantics"
+          ]
+        },
+        {
+          "externalRef": "norm:formal-methods",
+          "mappingRefs": [
+            "crosswalk:scd->formal-methods"
+          ]
+        }
+      ],
+      "note": "Identity-level mappings only; Host bridge mappings do not transfer coverage to MajorRegion truth.",
+      "regionRef": "navigation-region:formal-inferential",
+      "unmappedAnchorRefs": [
+        "norm:mathematics",
+        "norm:logic",
+        "norm:statistics"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:computation",
+        "norm:operating-systems",
+        "norm:networking-communication"
+      ],
+      "label": "Computation & Computer Systems",
+      "mappedMemberRefs": [
+        {
+          "externalRef": "norm:computation",
+          "mappingRefs": [
+            "crosswalk:cp->computation"
+          ]
+        },
+        {
+          "externalRef": "norm:operating-systems",
+          "mappingRefs": [
+            "crosswalk:runtime->operating-systems"
+          ]
+        },
+        {
+          "externalRef": "norm:networking-communication",
+          "mappingRefs": [
+            "crosswalk:network->networking-communication"
+          ]
+        },
+        {
+          "externalRef": "norm:systems-fundamentals",
+          "mappingRefs": [
+            "crosswalk:runtime->systems-fundamentals"
+          ]
+        },
+        {
+          "externalRef": "norm:formal-semantics",
+          "mappingRefs": [
+            "crosswalk:scd->formal-semantics"
+          ]
+        },
+        {
+          "externalRef": "norm:formal-methods",
+          "mappingRefs": [
+            "crosswalk:scd->formal-methods"
+          ]
+        },
+        {
+          "externalRef": "norm:human-computer-interaction",
+          "mappingRefs": [
+            "crosswalk:media->human-computer-interaction"
+          ]
+        },
+        {
+          "externalRef": "norm:workflow-process-systems",
+          "mappingRefs": [
+            "crosswalk:host->workflow-process-systems"
+          ]
+        },
+        {
+          "externalRef": "norm:provenance-information-lineage",
+          "mappingRefs": [
+            "crosswalk:host->provenance-information-lineage"
+          ]
+        }
+      ],
+      "note": "Identity-level mappings only; Host bridge mappings do not transfer coverage to MajorRegion truth.",
+      "regionRef": "navigation-region:computation-computer-systems",
+      "unmappedAnchorRefs": []
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:philosophy",
+        "norm:metaphysics",
+        "norm:epistemology"
+      ],
+      "label": "Philosophical & Conceptual Inquiry",
+      "mappedMemberRefs": [
+        {
+          "externalRef": "norm:metaphysics",
+          "mappingRefs": [
+            "crosswalk:world->metaphysics"
+          ]
+        },
+        {
+          "externalRef": "norm:ethics-value-theory",
+          "mappingRefs": [
+            "crosswalk:normative->ethics-value-theory"
+          ]
+        },
+        {
+          "externalRef": "norm:philosophy-of-science",
+          "mappingRefs": [
+            "crosswalk:world->philosophy-of-science"
+          ]
+        },
+        {
+          "externalRef": "norm:semiotics",
+          "mappingRefs": [
+            "crosswalk:media->semiotics"
+          ]
+        }
+      ],
+      "note": "Identity-level mappings only; Host bridge mappings do not transfer coverage to MajorRegion truth.",
+      "regionRef": "navigation-region:philosophical-conceptual",
+      "unmappedAnchorRefs": [
+        "norm:philosophy",
+        "norm:epistemology"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:physics",
+        "norm:chemistry",
+        "norm:materials"
+      ],
+      "label": "Physical & Material",
+      "mappedMemberRefs": [],
+      "note": "Identity-level mappings only; Host bridge mappings do not transfer coverage to MajorRegion truth.",
+      "regionRef": "navigation-region:physical-material",
+      "unmappedAnchorRefs": [
+        "norm:physics",
+        "norm:chemistry",
+        "norm:materials"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:earth-science",
+        "norm:planetary-science",
+        "norm:astronomy"
+      ],
+      "label": "Earth, Planetary & Space Systems",
+      "mappedMemberRefs": [],
+      "note": "Identity-level mappings only; Host bridge mappings do not transfer coverage to MajorRegion truth.",
+      "regionRef": "navigation-region:earth-planetary-space",
+      "unmappedAnchorRefs": [
+        "norm:earth-science",
+        "norm:planetary-science",
+        "norm:astronomy"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:biology",
+        "norm:genetics",
+        "norm:ecology"
+      ],
+      "label": "Life & Biological Organization",
+      "mappedMemberRefs": [
+        {
+          "externalRef": "norm:genetics",
+          "mappingRefs": [
+            "crosswalk:human->genetics"
+          ]
+        },
+        {
+          "externalRef": "norm:evolutionary-biology",
+          "mappingRefs": [
+            "crosswalk:human->evolutionary-biology"
+          ]
+        },
+        {
+          "externalRef": "norm:physiology",
+          "mappingRefs": [
+            "crosswalk:human->physiology"
+          ]
+        },
+        {
+          "externalRef": "norm:neuroscience",
+          "mappingRefs": [
+            "crosswalk:human->neuroscience"
+          ]
+        },
+        {
+          "externalRef": "norm:developmental-science",
+          "mappingRefs": [
+            "crosswalk:human->developmental-science"
+          ]
+        }
+      ],
+      "note": "Identity-level mappings only; Host bridge mappings do not transfer coverage to MajorRegion truth.",
+      "regionRef": "navigation-region:life",
+      "unmappedAnchorRefs": [
+        "norm:biology",
+        "norm:ecology"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:cognitive-science",
+        "norm:psychology",
+        "norm:linguistics"
+      ],
+      "label": "Mind, Cognition & Language",
+      "mappedMemberRefs": [
+        {
+          "externalRef": "norm:cognitive-science",
+          "mappingRefs": [
+            "crosswalk:human->cognitive-science"
+          ]
+        },
+        {
+          "externalRef": "norm:psychology",
+          "mappingRefs": [
+            "crosswalk:human->psychology"
+          ]
+        },
+        {
+          "externalRef": "norm:neuroscience",
+          "mappingRefs": [
+            "crosswalk:human->neuroscience"
+          ]
+        },
+        {
+          "externalRef": "norm:linguistics",
+          "mappingRefs": [
+            "crosswalk:human->linguistics"
+          ]
+        },
+        {
+          "externalRef": "norm:consciousness-science",
+          "mappingRefs": [
+            "crosswalk:human->consciousness-science"
+          ]
+        },
+        {
+          "externalRef": "norm:affective-science",
+          "mappingRefs": [
+            "crosswalk:human->affective-science"
+          ]
+        },
+        {
+          "externalRef": "norm:developmental-science",
+          "mappingRefs": [
+            "crosswalk:human->developmental-science"
+          ]
+        },
+        {
+          "externalRef": "norm:semiotics",
+          "mappingRefs": [
+            "crosswalk:media->semiotics"
+          ]
+        }
+      ],
+      "note": "Identity-level mappings only; Host bridge mappings do not transfer coverage to MajorRegion truth.",
+      "regionRef": "navigation-region:mind-language",
+      "unmappedAnchorRefs": []
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:engineering",
+        "norm:design",
+        "norm:systems-engineering"
+      ],
+      "label": "Engineering, Design & Realization",
+      "mappedMemberRefs": [
+        {
+          "externalRef": "norm:formal-methods",
+          "mappingRefs": [
+            "crosswalk:scd->formal-methods"
+          ]
+        },
+        {
+          "externalRef": "norm:human-computer-interaction",
+          "mappingRefs": [
+            "crosswalk:media->human-computer-interaction"
+          ]
+        },
+        {
+          "externalRef": "norm:workflow-process-systems",
+          "mappingRefs": [
+            "crosswalk:host->workflow-process-systems"
+          ]
+        }
+      ],
+      "note": "Identity-level mappings only; Host bridge mappings do not transfer coverage to MajorRegion truth.",
+      "regionRef": "navigation-region:engineering-design",
+      "unmappedAnchorRefs": [
+        "norm:engineering",
+        "norm:design",
+        "norm:systems-engineering"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:history",
+        "norm:cultural-studies",
+        "norm:literary-studies"
+      ],
+      "label": "Historical, Cultural & Interpretive",
+      "mappedMemberRefs": [
+        {
+          "externalRef": "norm:media-studies",
+          "mappingRefs": [
+            "crosswalk:media->media-studies"
+          ]
+        },
+        {
+          "externalRef": "norm:semiotics",
+          "mappingRefs": [
+            "crosswalk:media->semiotics"
+          ]
+        }
+      ],
+      "note": "Identity-level mappings only; Host bridge mappings do not transfer coverage to MajorRegion truth.",
+      "regionRef": "navigation-region:historical-cultural-interpretive",
+      "unmappedAnchorRefs": [
+        "norm:history",
+        "norm:cultural-studies",
+        "norm:literary-studies"
+      ]
+    },
+    {
+      "aggregateCoverageTruth": "FORBIDDEN",
+      "anchorRefs": [
+        "norm:sociology",
+        "norm:economics",
+        "norm:political-science"
+      ],
+      "label": "Social, Institutional & Collective Systems",
+      "mappedMemberRefs": [
+        {
+          "externalRef": "norm:communication-studies",
+          "mappingRefs": [
+            "crosswalk:media->communication-studies"
+          ]
+        },
+        {
+          "externalRef": "norm:media-studies",
+          "mappingRefs": [
+            "crosswalk:media->media-studies"
+          ]
+        },
+        {
+          "externalRef": "norm:psychology",
+          "mappingRefs": [
+            "crosswalk:human->psychology"
+          ]
+        },
+        {
+          "externalRef": "norm:developmental-science",
+          "mappingRefs": [
+            "crosswalk:human->developmental-science"
+          ]
+        },
+        {
+          "externalRef": "norm:workflow-process-systems",
+          "mappingRefs": [
+            "crosswalk:host->workflow-process-systems"
+          ]
+        }
+      ],
+      "note": "Identity-level mappings only; Host bridge mappings do not transfer coverage to MajorRegion truth.",
+      "regionRef": "navigation-region:social-institutional-collective",
+      "unmappedAnchorRefs": [
+        "norm:sociology",
+        "norm:economics",
+        "norm:political-science"
+      ]
+    }
+  ],
+  "schemaVersion": 9,
+  "state": "HOST_WEAK_MAPPING_RESOLVED_TO_TWO_EXTERNAL_BRIDGES_NOVELTY_NOT_ESTABLISHED",
+  "supersedesForNavigation": "reference/coverage-crosswalk-foundational-pilot-v0-8-20260819.json",
+  "truthRole": "NON_AUTHORITATIVE_EVIDENCE_QUALIFIED_CROSSWALK"
+}

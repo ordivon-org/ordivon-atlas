@@ -1,0 +1,67 @@
+{
+  "date": "2026-08-19",
+  "kind": "ordivon.open-resource-mature-knowledge-subtraction-pattern",
+  "laws": [
+    "OPEN_RESOURCE != AUTOMATIC_AUTHORITY",
+    "RESOURCE_COST != EPISTEMIC_VALUE",
+    "INTERNAL_QUERY_SELECTION != EXTERNAL_EVIDENCE",
+    "MATURE_KNOWLEDGE_SUBTRACTION_PRECEDES_NOVELTY_ADMISSION_WHEN_APPLICABLE",
+    "FAILED_NOVELTY_HYPOTHESIS_CAN_STRENGTHEN_RESEARCH_QUALITY",
+    "DERIVED != UNREAL",
+    "ABSENCE_OF_EXTERNAL_MATCH != NOVELTY",
+    "METHOD_CANDIDATE != CONSTITUTION"
+  ],
+  "name": "Open-Resource Mature-Knowledge Subtraction",
+  "next": "Do not promote to Constitution. Next evidence should measure subtraction yield/search cost/false-novelty prevention or replicate outside the current owner family; Finance remains useful when transport authority becomes available.",
+  "pattern": [
+    "OWNER_NATIVE_RESIDUAL_OR_ANOMALY",
+    "TARGETED_OPEN_EXTERNAL_RESOURCE_SEARCH",
+    "MATURE_KNOWLEDGE_SUBTRACTION",
+    "EXTERNAL_REFERENCE_MAPPING_OR_REPAIR",
+    "RESIDUAL_IRREDUCIBILITY_TEST",
+    "NOVELTY_ONLY_IF_RESIDUAL_SURVIVES",
+    "PRESERVE_NEGATIVE_AND_DERIVED_RESULTS"
+  ],
+  "preservesHistory": true,
+  "promotionRationale": [
+    "Three witnesses are heterogeneous in object, method and external literature ecology.",
+    "All three use owner-native anomalies to narrow search but require independent public external evidence for mapping/repair.",
+    "All three preserve negative/non-novel findings as positive epistemic output instead of forcing novelty.",
+    "At least one witness (SCD) rejects multiple explicit novelty hypotheses; Human rejects broad/universal reductions; Media rejects candidate-continent-to-Foundation promotion.",
+    "Host supplies a distinct mapping-weak case where mature knowledge resolves the external-coordinate gap without erasing owner-specific residuals or promoting them to novelty."
+  ],
+  "schemaVersion": 4,
+  "state": "FOUR_HETEROGENEOUS_OWNER_REPLICATION_METHOD_CANDIDATE_NOT_CONSTITUTIONAL",
+  "supersedesForCurrentMethodObservation": "reference/open-resource-mature-knowledge-subtraction-pattern-v0-3-20260819.json",
+  "truthRole": "RESEARCH_METHOD_CANDIDATE_NOT_CONSTITUTION",
+  "whyNotConstitutional": [
+    "The pattern has not yet been compared against alternative search/review strategies under controlled cost/quality measures.",
+    "Open-resource quality and coverage vary strongly by domain; some fields may depend on paywalled, tacit, proprietary or non-digitized knowledge.",
+    "A useful candidate method must remain optional enough not to suppress genuinely exploratory research before a residual is well formed.",
+    "Four owner cases remain a small, non-random sample inside one research programme.",
+    "The Host witness demonstrates residual-preservation but does not yet provide controlled evidence that this pattern outperforms alternative literature-review/search strategies.",
+    "Finance/Harness and domain-external replication remain unavailable, and open-resource coverage still varies sharply across disciplines."
+  ],
+  "witnesses": [
+    {
+      "domainType": "FORMAL_COMPUTATIONAL_SEMANTICS",
+      "owner": "research-owner:semantics-of-computational-descriptions",
+      "witness": "G1-G4 independent formal-gap hypotheses were rejected after targeted mature-theory subtraction; useful typed coordination/integration residues survived without local-theory invention."
+    },
+    {
+      "domainType": "BIOLOGICAL_COGNITIVE_BEHAVIORAL",
+      "owner": "research-owner:human",
+      "witness": "Human HF/HD/HOC pressures were mapped against mature psychology/cognitive/consciousness/affective/developmental/language/life sciences; broad Biology/Medicine and universal-person reductions were not promoted."
+    },
+    {
+      "domainType": "COMMUNICATION_REPRESENTATION_CULTURAL_TECHNICAL_MEDIATION",
+      "owner": "research-owner:media",
+      "witness": "Communication/audience/meaning/archive/interface/presence candidate continents survived as derived/cross-owner structures while external Communication/Media/Semiotics/HCI fields absorbed broad novelty; MF10 remained unadmitted."
+    },
+    {
+      "domainType": "DURABLE_CONTINUITY_WORKFLOW_PROVENANCE_INFRASTRUCTURE",
+      "owner": "research-owner:host",
+      "witness": "Host weak mapping was attacked using OMG/CNCF workflow/process and W3C provenance standards. Mature external spaces absorbed lifecycle/orchestration and lineage/provenance surfaces; exact revision/lease, response-loss-safe replay, owner-opacity and local-integrity residues remained owner-specific without novelty promotion."
+    }
+  ]
+}

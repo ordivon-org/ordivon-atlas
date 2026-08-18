@@ -1499,6 +1499,112 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
         self.assertIn("NAVIGATION_OVERLAY != RESEARCH_VALUE", a["laws"])
 
 
+    def test_round6a_host_repair_adds_exact_two_external_nonroot_identities(self) -> None:
+        r = json.loads((ROOT / "reference/foundational-reference-round6a-host-crosswalk-repair-20260819.json").read_text())
+        by = {x["spaceRef"]: x for x in r["normalizedSpaces"]}
+        self.assertEqual(set(by), {"norm:workflow-process-systems", "norm:provenance-information-lineage"})
+        self.assertEqual(len(r["relations"]), 7)
+        self.assertTrue(all(x["rootAdmission"] == "NOT_ADMITTED" for x in by.values()))
+        self.assertGreaterEqual(len(by["norm:workflow-process-systems"]["evidence"]), 2)
+        self.assertGreaterEqual(len(by["norm:provenance-information-lineage"]["evidence"]), 2)
+        self.assertIn("WORKFLOW_PROCESS_SYSTEMS != HOST_OWNER", r["laws"])
+        self.assertIn("PROVENANCE_LINEAGE != HOST_OWNER", r["laws"])
+        self.assertIn("OWNER_SPECIFIC_RESIDUAL != NOVEL_FIELD", r["laws"])
+
+    def test_round6a_does_not_mint_host_named_external_ontology(self) -> None:
+        r = json.loads((ROOT / "reference/foundational-reference-round6a-host-crosswalk-repair-20260819.json").read_text())
+        refs = {x["spaceRef"] for x in r["normalizedSpaces"]}
+        self.assertFalse(any("host" in x or "ordivon" in x for x in refs))
+
+    def test_host_subtraction_ledger_explains_surface_but_preserves_non_novel_residuals(self) -> None:
+        l = json.loads((ROOT / "reference/host-external-mature-knowledge-subtraction-v0-20260819.json").read_text())
+        self.assertIn("NOVELTY_NOT_ESTABLISHED", l["state"])
+        self.assertEqual(len(l["subtractions"]), 3)
+        self.assertEqual(len(l["residuals"]), 4)
+        self.assertTrue(all(x["standing"] == "OWNER_SPECIFIC_RESIDUAL_NO_NOVELTY_INFERENCE" for x in l["residuals"]))
+        self.assertIn("Do not re-admit Generic Coordination owner.", l["negativeConclusions"])
+
+    def test_crosswalk_v09_replaces_host_weak_row_with_two_bridge_mappings_only(self) -> None:
+        old = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-8-20260819.json").read_text())
+        new = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-9-20260819.json").read_text())
+        self.assertEqual(len(old["mappings"]), 25)
+        self.assertEqual(len(new["mappings"]), 26)
+        refs = {x["mappingRef"]: x for x in new["mappings"]}
+        self.assertNotIn("crosswalk:host->external-mapping-weak", refs)
+        for ref, ext in (("crosswalk:host->workflow-process-systems", "norm:workflow-process-systems"), ("crosswalk:host->provenance-information-lineage", "norm:provenance-information-lineage")):
+            self.assertEqual(refs[ref]["externalRef"], ext)
+            self.assertEqual(refs[ref]["relation"], "BRIDGE_COVERAGE")
+        self.assertEqual(new["hostDisposition"]["directFieldEquivalence"], "NOT_CLAIMED")
+        self.assertIn("NOVELTY_NOT_ESTABLISHED", new["hostDisposition"]["standing"])
+
+    def test_major_regions_v010_absorb_host_repair_without_region_or_anchor_growth(self) -> None:
+        old = json.loads((ROOT / "reference/canonical-major-regions-v0-9-20260819.json").read_text())
+        new = json.loads((ROOT / "reference/canonical-major-regions-v0-10-20260819.json").read_text())
+        self.assertEqual(len(old["regions"]), len(new["regions"]), 10)
+        ob = {r["regionRef"]: r for r in old["regions"]}; nb = {r["regionRef"]: r for r in new["regions"]}
+        self.assertEqual(set(ob), set(nb))
+        for ref in ob:
+            self.assertEqual(ob[ref]["anchorRefs"], nb[ref]["anchorRefs"])
+            self.assertEqual(nb[ref]["closureClaim"], "NONE")
+        for ref in ("norm:workflow-process-systems", "norm:provenance-information-lineage"):
+            self.assertFalse(any(ref in r["anchorRefs"] for r in new["regions"]))
+
+    def test_major_regions_v010_host_repair_dogfood_passes(self) -> None:
+        d = json.loads((ROOT / "reference/canonical-major-regions-v0-10-dogfood-20260819.json").read_text())
+        self.assertEqual(d["state"], "PASS")
+        self.assertTrue(all(d["destructiveControls"].values()))
+        self.assertTrue(all(x["result"] == "PASS" for x in d["regionResults"]))
+
+    def test_frontier_matrix_v02_changes_only_two_new_mapped_identities(self) -> None:
+        old = json.loads((ROOT / "reference/external-reference-frontier-matrix-v0-1-20260819.json").read_text())
+        new = json.loads((ROOT / "reference/external-reference-frontier-matrix-v0-2-20260819.json").read_text())
+        self.assertEqual(new["counts"], {"currentMappings": 26, "identities": 122, "mappedIdentities": 25, "noDirectMappingCurrentPilot": 97, "unmappedCrossRegionMembers": 20, "unmappedMajorRegionAnchors": 22, "unmappedNoRegionMembers": 0, "unmappedSingleRegionMembers": 55})
+        of = {r["externalRef"]: r["factState"] for r in old["rows"]}; nf = {r["externalRef"]: r["factState"] for r in new["rows"]}
+        self.assertTrue(all(nf[k] == v for k, v in of.items()))
+        self.assertEqual(nf["norm:workflow-process-systems"], "MAPPED_CURRENT_OWNER")
+        self.assertEqual(nf["norm:provenance-information-lineage"], "MAPPED_CURRENT_OWNER")
+
+    def test_owner_frontier_v01_resolves_host_weak_mapping_without_novelty(self) -> None:
+        o = json.loads((ROOT / "reference/external-reference-owner-frontier-status-v0-1-20260819.json").read_text())
+        h = next(r for r in o["rows"] if r["ownerResearchRef"] == "research-owner:host")
+        self.assertEqual(h["frontierState"], "CURRENT_MAPPED")
+        self.assertEqual(h["mappedExternalRefs"], ["norm:workflow-process-systems", "norm:provenance-information-lineage"])
+        self.assertEqual(h["noveltyStanding"], "NOVELTY_NOT_ESTABLISHED")
+        self.assertEqual(h["mappingQualification"], "BRIDGE_ONLY_NO_FIELD_EQUIVALENCE")
+        self.assertIn("OWNER_SPECIFIC_RESIDUAL != NOVELTY", o["laws"])
+
+    def test_frontier_priority_v02_preserves_prior_A_B_C_partition(self) -> None:
+        p = json.loads((ROOT / "reference/external-reference-frontier-priority-v0-2-20260819.json").read_text())
+        self.assertEqual(p["classes"]["CURRENTLY_MAPPED_COUNT"], 25)
+        self.assertEqual(len(p["classes"]["NAVIGATION_FRONTIER_A"]), 22)
+        self.assertEqual(len(p["classes"]["NAVIGATION_FRONTIER_B"]), 20)
+        self.assertEqual(p["classes"]["NAVIGATION_FRONTIER_C_COUNT"], 55)
+        self.assertEqual(p["classes"]["UNMAPPED_NO_REGION_COUNT"], 0)
+        self.assertEqual(p["globalScalarPriority"], "FORBIDDEN")
+        self.assertIn("HOST_REPAIR_DOES_NOT_REORDER_UNRELATED_FRONTIERS", p["laws"])
+
+    def test_mature_knowledge_subtraction_v04_has_four_witnesses_but_is_not_constitution(self) -> None:
+        m = json.loads((ROOT / "reference/open-resource-mature-knowledge-subtraction-pattern-v0-4-20260819.json").read_text())
+        self.assertEqual(len(m["witnesses"]), 4)
+        self.assertEqual(m["state"], "FOUR_HETEROGENEOUS_OWNER_REPLICATION_METHOD_CANDIDATE_NOT_CONSTITUTIONAL")
+        self.assertEqual(m["truthRole"], "RESEARCH_METHOD_CANDIDATE_NOT_CONSTITUTION")
+        self.assertIn("METHOD_CANDIDATE != CONSTITUTION", m["laws"])
+        self.assertTrue(any(x["owner"] == "research-owner:host" for x in m["witnesses"]))
+
+    def test_whole_audit_v12_tracks_host_repair_without_breadth_resume(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v12-host-crosswalk-repair-20260819.json").read_text())
+        c = a["counts"]
+        self.assertEqual((c["normalizedSpaces"], c["relations"], c["canonicalMajorRegionProjections"]), (122, 263, 10))
+        self.assertEqual((c["crosswalkMappings"], c["mappedUniqueIdentities"], c["noDirectMappingCurrentPilot"]), (26, 25, 97))
+        self.assertEqual((c["navigationFrontierA"], c["navigationFrontierB"], c["navigationFrontierC"]), (22, 20, 55))
+        self.assertEqual(c["externalMappingWeakOwners"], 0)
+        self.assertEqual(c["hostBridgeMappings"], 2)
+        self.assertEqual(c["newMajorRegionsFromRound6A"], 0)
+        self.assertEqual(a["repairTrigger"], "OWNER_CROSSWALK_REFERENCE_GAP")
+        self.assertIn("BREADTH_PAUSE", a["state"])
+        self.assertIn("NOVELTY_NOT_ESTABLISHED", a["hostPosture"])
+
+
 
 if __name__ == "__main__":
     unittest.main()
