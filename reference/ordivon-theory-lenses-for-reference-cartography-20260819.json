@@ -1,0 +1,68 @@
+{
+  "date": "2026-08-19",
+  "derivedControls": [
+    "NAVIGATION_VIEW != REFERENCE_IDENTITY",
+    "MAJOR_REGION != METAPHYSICAL_ROOT",
+    "DERIVED != UNREAL",
+    "DEEP != PRIMITIVE",
+    "ZERO_PRIMITIVES != NO_COHERENT_FIELD",
+    "INSTITUTIONAL_CATEGORY != ONTOLOGY_AUTHORITY",
+    "MULTI_PLACEMENT_IS_EXPECTED_NOT_AN_ERROR",
+    "INTERNAL_ORDIVON_THEORY != EXTERNAL_EVIDENCE"
+  ],
+  "kind": "ordivon.reference-cartography-internal-analytic-lenses",
+  "lenses": [
+    {
+      "cartographyUse": "Reject single-parent trees; allow multi-role/multi-placement identities; treat major regions as projections over a graph rather than ontology nodes.",
+      "lensId": "L-SCD-HYPERGRAPH",
+      "principle": "Canonical architecture can be a typed responsibility hypergraph; explanatory family views need not become semantic identities or roots.",
+      "sourceRole": "OWNER_NATIVE_INTERNAL_THEORY",
+      "sourceTask": "task:scd-research-core-consolidation-branch-20260818"
+    },
+    {
+      "cartographyUse": "Never require a field to expose a primitive/root merely to deserve representation or major navigational prominence.",
+      "lensId": "L-CP-ZERO-PRIMITIVE",
+      "principle": "Zero numbered Foundations can be a positive coherent architecture; derived theory can support a mature owner.",
+      "sourceRole": "OWNER_NATIVE_INTERNAL_THEORY",
+      "sourceTask": "task:computational-possibility-research-core-consolidation-branch-20260818"
+    },
+    {
+      "cartographyUse": "Reject institutional/technology vocabulary as ontology authority; distinguish core domains from specializations, bridges and realization mechanisms.",
+      "lensId": "L-NETWORK-RESPONSIBILITY",
+      "principle": "Engineering nouns and historical stacks are contingent projections; stable owner structure is a typed responsibility graph with specialization and explicit imports.",
+      "sourceRole": "OWNER_NATIVE_INTERNAL_THEORY",
+      "sourceTask": "task:network-research-core-consolidation-branch-20260818"
+    },
+    {
+      "cartographyUse": "Allow AXIS and BRIDGE structures without root promotion; do not infer metaphysical fundamentality from navigation.",
+      "lensId": "L-WORLD-DERIVED-REAL",
+      "principle": "Derived != unreal; question/claim grammars, modal/process/property/temporal axes need not be ontic roots; numbering is not ontology priority.",
+      "sourceRole": "OWNER_NATIVE_INTERNAL_THEORY",
+      "sourceTask": "task:world-research-core-consolidation-branch-20260818"
+    },
+    {
+      "cartographyUse": "Do not promote genetics, health, cognition, engineering subfields, or other deep areas merely because they are important, lesionable, useful or institutionally large.",
+      "lensId": "L-HUMAN-DEEP-NOT-PRIMITIVE",
+      "principle": "Deep != Primitive; OperationallyUseful != Foundation; navigation families are views over stable identities.",
+      "sourceRole": "OWNER_NATIVE_INTERNAL_THEORY",
+      "sourceTask": "task:human-research-core-consolidation-branch-20260818"
+    },
+    {
+      "cartographyUse": "Prefer explicit scope/firewalls over domain inflation; avoid turning adjacent social concepts into one super-region.",
+      "lensId": "L-NORMATIVE-NONNUMBERED-CORE",
+      "principle": "A coherent owner can have zero numbered Foundations and a non-numbered architecture while excluding broad neighboring notions such as generic institutions/governance/value.",
+      "sourceRole": "OWNER_NATIVE_INTERNAL_THEORY",
+      "sourceTask": "task:ordivon-atlas-normative-shared-repo-owner-audit-20260818"
+    },
+    {
+      "cartographyUse": "CanonicalMajorRegion must be a navigation projection and cannot become semantic authority.",
+      "lensId": "L-ATLAS-PROJECTION-NOT-TRUTH",
+      "principle": "Atlas is a generated exploration/recovery projection, not owner truth.",
+      "sourceRole": "RESEARCH_SYSTEM_INTERNAL_THEORY",
+      "sourceTask": "task:ordivon-information-management-atlas-architecture-20260818"
+    }
+  ],
+  "rule": "These owner-native Ordivon theories may generate hypotheses, negative controls and topology tests. They MUST NOT be counted as external evidence that a human knowledge field exists, nor mint External Reference World truth.",
+  "schemaVersion": 1,
+  "truthRole": "INTERNAL_ANALYTIC_LENS_NOT_EXTERNAL_EVIDENCE"
+}

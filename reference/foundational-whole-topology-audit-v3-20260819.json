@@ -1,0 +1,532 @@
+{
+  "auditId": "foundational-topology-audit:v3:2026-08-19",
+  "brokenRelations": [],
+  "censusSemantics": {
+    "law": "V0_RESIDUAL_ZERO != FOUNDATIONAL_KNOWLEDGE_EXHAUSTION",
+    "nextBreadthDiscovery": "May add new candidates from new external sources or later social/cultural waves without contradicting v0.",
+    "openWorldCensusStatus": "OPEN_NOT_EXHAUSTIVE",
+    "v0BoundedBreadthStatus": "ALL_57_CANDIDATES_NORMALIZED_OR_EXPLICITLY_MAPPED"
+  },
+  "counts": {
+    "brokenRelations": 0,
+    "canonicalMajorRegionProjections": 6,
+    "deferredMajorRegionCandidates": 1,
+    "identityLabelCollisions": 0,
+    "internalAnalyticLenses": 7,
+    "multiPlacementSpaces": 68,
+    "multiRoleSpaces": 68,
+    "normalizedSpaces": 71,
+    "relations": 74,
+    "round1HighValueCandidates": 37,
+    "v0BreadthResidual": 0,
+    "v0BroadCensusUniqueCandidates": 57
+  },
+  "coverageCrosswalkReadiness": "READY_FOR_BOUNDED_PILOT_NOT_GLOBAL_COVERAGE_SCORE",
+  "findings": [
+    {
+      "claim": "All 57 unique candidates in the bounded v0 foundational census are now normalized or explicitly mapped, but this does not establish exhaustive foundational-knowledge closure.",
+      "id": "FTA3-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The normalized graph now has 71 explicit identities and 74 relations with no normalized-label collision or broken relation in the bounded model.",
+      "id": "FTA3-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Ordivon owner-native theories materially improve cartography discipline by separating views from identities, deep from primitive, derived from unreal, and specialization from universal ontology; they remain internal analytic lenses only.",
+      "id": "FTA3-3",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Six CanonicalMajorRegion v0 navigation projections passed bounded structural, deletion-harm and perturbation dogfood without minting semantic roots.",
+      "id": "FTA3-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Historical/Linguistic/Interpretive remains deliberately deferred until the later social/cultural wave because current boundary stability is insufficient.",
+      "id": "FTA3-5",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The current reference model is ready for a bounded Ordivon coverage-crosswalk pilot against the six admitted navigation projections, while the open-world census itself remains permanently reopenable.",
+      "id": "FTA3-6",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "identityCollisions": {},
+  "inputs": [
+    "reference/foundational-domain-census-v0.json",
+    "reference/foundational-census-round2a-normalization-20260819.json",
+    "reference/foundational-census-round2b-normalization-20260819.json",
+    "reference/foundational-census-round2c-residual-normalization-20260819.json",
+    "reference/foundational-census-round3a-breadth-normalization-20260819.json",
+    "reference/ordivon-theory-lenses-for-reference-cartography-20260819.json",
+    "reference/canonical-major-region-projection-contract-v0-20260819.json",
+    "reference/canonical-major-region-admission-dogfood-20260819.json",
+    "reference/canonical-major-regions-v0-20260819.json"
+  ],
+  "kind": "ordivon.whole-foundational-topology-audit",
+  "majorRegionProjection": {
+    "admittedCount": 6,
+    "admittedV0RegionRefs": [
+      "navigation-region:formal-inferential-computational",
+      "navigation-region:physical-material",
+      "navigation-region:earth-planetary-space",
+      "navigation-region:life",
+      "navigation-region:mind-language",
+      "navigation-region:engineering-design"
+    ],
+    "closureClaim": "NONE",
+    "deferred": [
+      {
+        "candidateRef": "candidate-region:historical-symbolic",
+        "reason": "Boundary expected to change materially when social/cultural/humanities breadth wave begins."
+      }
+    ],
+    "dogfoodState": "BOUNDED_NAVIGATION_AND_PERTURBATION_DOGFOOD_COMPLETE",
+    "law": "CANONICAL_MAJOR_REGION != REFERENCE_IDENTITY != SEMANTIC_AUTHORITY != METAPHYSICAL_ROOT",
+    "membershipSemantics": "NON_EXCLUSIVE"
+  },
+  "negativeConclusions": [
+    "Do not claim exhaustive human-knowledge closure from v0 residual zero.",
+    "Do not turn MajorRegion projections into ReferenceIdentities or semantic owners.",
+    "Do not force bridge/axis identities into exclusive region membership.",
+    "Do not count Ordivon internal theories as external evidence.",
+    "Do not pre-admit Historical/Linguistic/Interpretive before social/cultural boundary dogfood."
+  ],
+  "next": "Run a bounded Ordivon owner/ResearchRef crosswalk pilot against the six v0 Major Region projections using explicit evidence and multi-dimensional ExplorationDepth; do not publish scalar global coverage percentages.",
+  "ordivonTheoryUse": {
+    "firewall": "Internal Ordivon theory may shape topology hypotheses, deletion-harm tests and negative controls; it cannot count as external field-existence evidence or override external-source provenance.",
+    "sourceTasks": [
+      "task:scd-research-core-consolidation-branch-20260818",
+      "task:computational-possibility-research-core-consolidation-branch-20260818",
+      "task:network-research-core-consolidation-branch-20260818",
+      "task:world-research-core-consolidation-branch-20260818",
+      "task:human-research-core-consolidation-branch-20260818",
+      "task:ordivon-atlas-normative-shared-repo-owner-audit-20260818",
+      "task:ordivon-information-management-atlas-architecture-20260818"
+    ],
+    "status": "ADMITTED_AS_INTERNAL_ANALYTIC_LENSES_ONLY"
+  },
+  "schemaVersion": 3,
+  "state": "V0_BOUNDED_BREADTH_NORMALIZED_OPEN_WORLD_CENSUS_CONTINUES",
+  "topologyGrammar": {
+    "archetypes": [
+      "DOMAIN",
+      "MAJOR_SUBSPACE",
+      "BRIDGE",
+      "AXIS",
+      "INFRASTRUCTURE",
+      "APPLIED_TRANSLATIONAL",
+      "COMPOSITE"
+    ],
+    "singleRootTree": "REJECTED",
+    "status": "SUPPORTED"
+  },
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_AUDIT",
+  "v0BroadCensusStatus": [
+    {
+      "candidate": "Mathematics",
+      "normalizedRefs": [
+        "norm:mathematics"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Statistics and probability",
+      "normalizedRefs": [
+        "norm:probability",
+        "norm:statistics"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Logic",
+      "normalizedRefs": [
+        "norm:logic"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Computation and theoretical computer science",
+      "normalizedRefs": [
+        "norm:computation"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Information theory",
+      "normalizedRefs": [
+        "norm:information-theory"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Systems and dynamical theory",
+      "normalizedRefs": [
+        "norm:dynamical-systems",
+        "norm:systems-theory-control"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Physics",
+      "normalizedRefs": [
+        "norm:physics"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Astronomy and astrophysics",
+      "normalizedRefs": [
+        "norm:astronomy"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Cosmology",
+      "normalizedRefs": [
+        "norm:cosmology"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Chemistry",
+      "normalizedRefs": [
+        "norm:chemistry"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Materials science",
+      "normalizedRefs": [
+        "norm:materials"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Planetary science",
+      "normalizedRefs": [
+        "norm:planetary-science"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Earth science / geoscience",
+      "normalizedRefs": [
+        "norm:earth-science"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Geology",
+      "normalizedRefs": [
+        "norm:geology"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Geophysics",
+      "normalizedRefs": [
+        "norm:geophysics"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Geochemistry",
+      "normalizedRefs": [
+        "norm:geochemistry"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Atmospheric science and meteorology",
+      "normalizedRefs": [
+        "norm:atmospheric-science"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Oceanography",
+      "normalizedRefs": [
+        "norm:oceanography"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Physical geography",
+      "normalizedRefs": [
+        "norm:physical-geography"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Climate science",
+      "normalizedRefs": [
+        "norm:climate-science"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Biology",
+      "normalizedRefs": [
+        "norm:biology"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Molecular biology",
+      "normalizedRefs": [
+        "norm:molecular-cellular-biology"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Biochemistry",
+      "normalizedRefs": [
+        "norm:biochemistry"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Genetics and genomics",
+      "normalizedRefs": [
+        "norm:genetics",
+        "norm:genomics"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Evolutionary biology",
+      "normalizedRefs": [
+        "norm:evolutionary-biology"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Ecology",
+      "normalizedRefs": [
+        "norm:ecology"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Microbiology",
+      "normalizedRefs": [
+        "norm:microbiology"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Developmental biology",
+      "normalizedRefs": [
+        "norm:developmental-biology"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Physiology",
+      "normalizedRefs": [
+        "norm:physiology"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Neuroscience",
+      "normalizedRefs": [
+        "norm:neuroscience"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Philosophy",
+      "normalizedRefs": [
+        "norm:philosophy"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Linguistics",
+      "normalizedRefs": [
+        "norm:linguistics"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Cognitive science",
+      "normalizedRefs": [
+        "norm:cognitive-science"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Psychology",
+      "normalizedRefs": [
+        "norm:psychology"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Philosophy of mind and cognition",
+      "normalizedRefs": [
+        "norm:philosophy-of-mind"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Engineering science",
+      "normalizedRefs": [
+        "norm:engineering"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Mechanical engineering",
+      "normalizedRefs": [
+        "norm:mechanical-engineering"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Electrical and electronic engineering",
+      "normalizedRefs": [
+        "norm:electrical-electronic-engineering"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Civil and structural engineering",
+      "normalizedRefs": [
+        "norm:civil-structural-engineering"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Chemical engineering",
+      "normalizedRefs": [
+        "norm:chemical-engineering"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Materials engineering",
+      "normalizedRefs": [
+        "norm:materials"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Computer engineering",
+      "normalizedRefs": [
+        "norm:computer-engineering"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Software engineering",
+      "normalizedRefs": [
+        "norm:software-engineering"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Systems engineering",
+      "normalizedRefs": [
+        "norm:systems-engineering"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Control engineering",
+      "normalizedRefs": [
+        "norm:control-engineering"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Bioengineering",
+      "normalizedRefs": [
+        "norm:bioengineering"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Environmental engineering",
+      "normalizedRefs": [
+        "norm:environmental-engineering"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Energy engineering",
+      "normalizedRefs": [
+        "norm:energy-engineering"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "History",
+      "normalizedRefs": [
+        "norm:history"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Philology",
+      "normalizedRefs": [
+        "norm:philology"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Classics",
+      "normalizedRefs": [
+        "norm:classics"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Religious studies",
+      "normalizedRefs": [
+        "norm:religious-studies"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Aesthetics and art theory",
+      "normalizedRefs": [
+        "norm:aesthetics"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Basic biomedical sciences",
+      "normalizedRefs": [
+        "norm:basic-biomedical-science"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Medicine and health sciences",
+      "normalizedRefs": [
+        "norm:medicine-health"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Agricultural science",
+      "normalizedRefs": [
+        "norm:agriculture"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    },
+    {
+      "candidate": "Food science",
+      "normalizedRefs": [
+        "norm:food-science"
+      ],
+      "status": "NORMALIZED_OR_MAPPED"
+    }
+  ]
+}

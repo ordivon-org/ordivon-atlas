@@ -1,0 +1,115 @@
+{
+  "censusSemantics": {
+    "law": "V0_RESIDUAL_ZERO != FOUNDATIONAL_KNOWLEDGE_EXHAUSTION",
+    "nextBreadthDiscovery": "May add new candidates from new external sources or later social/cultural waves without contradicting v0.",
+    "openWorldCensusStatus": "OPEN_NOT_EXHAUSTIVE",
+    "v0BoundedBreadthStatus": "ALL_57_CANDIDATES_NORMALIZED_OR_EXPLICITLY_MAPPED"
+  },
+  "closure": "V0_BOUNDED_BREADTH_NORMALIZED_OPEN_WORLD_CENSUS_CONTINUES",
+  "controls": [
+    "V0_RESIDUAL_ZERO != FOUNDATIONAL_KNOWLEDGE_EXHAUSTION.",
+    "Internal Ordivon theory is analytic lens only, not external evidence.",
+    "MajorRegion projections remain separate from normalized ReferenceIdentities.",
+    "Coverage readiness is only a bounded crosswalk pilot, not global scalar scoring."
+  ],
+  "counts": {
+    "brokenRelations": 0,
+    "canonicalMajorRegionProjections": 6,
+    "deferredMajorRegionCandidates": 1,
+    "identityLabelCollisions": 0,
+    "internalAnalyticLenses": 7,
+    "multiPlacementSpaces": 68,
+    "multiRoleSpaces": 68,
+    "normalizedSpaces": 71,
+    "relations": 74,
+    "round1HighValueCandidates": 37,
+    "v0BreadthResidual": 0,
+    "v0BroadCensusUniqueCandidates": 57
+  },
+  "coverageCrosswalkReadiness": "READY_FOR_BOUNDED_PILOT_NOT_GLOBAL_COVERAGE_SCORE",
+  "date": "2026-08-19",
+  "findings": [
+    {
+      "claim": "All 57 unique candidates in the bounded v0 foundational census are now normalized or explicitly mapped, but this does not establish exhaustive foundational-knowledge closure.",
+      "id": "FTA3-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The normalized graph now has 71 explicit identities and 74 relations with no normalized-label collision or broken relation in the bounded model.",
+      "id": "FTA3-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Ordivon owner-native theories materially improve cartography discipline by separating views from identities, deep from primitive, derived from unreal, and specialization from universal ontology; they remain internal analytic lenses only.",
+      "id": "FTA3-3",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Six CanonicalMajorRegion v0 navigation projections passed bounded structural, deletion-harm and perturbation dogfood without minting semantic roots.",
+      "id": "FTA3-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Historical/Linguistic/Interpretive remains deliberately deferred until the later social/cultural wave because current boundary stability is insufficient.",
+      "id": "FTA3-5",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The current reference model is ready for a bounded Ordivon coverage-crosswalk pilot against the six admitted navigation projections, while the open-world census itself remains permanently reopenable.",
+      "id": "FTA3-6",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.whole-foundational-topology-audit-v3-acceptance",
+  "majorRegionProjection": {
+    "admittedCount": 6,
+    "admittedV0RegionRefs": [
+      "navigation-region:formal-inferential-computational",
+      "navigation-region:physical-material",
+      "navigation-region:earth-planetary-space",
+      "navigation-region:life",
+      "navigation-region:mind-language",
+      "navigation-region:engineering-design"
+    ],
+    "closureClaim": "NONE",
+    "deferred": [
+      {
+        "candidateRef": "candidate-region:historical-symbolic",
+        "reason": "Boundary expected to change materially when social/cultural/humanities breadth wave begins."
+      }
+    ],
+    "dogfoodState": "BOUNDED_NAVIGATION_AND_PERTURBATION_DOGFOOD_COMPLETE",
+    "law": "CANONICAL_MAJOR_REGION != REFERENCE_IDENTITY != SEMANTIC_AUTHORITY != METAPHYSICAL_ROOT",
+    "membershipSemantics": "NON_EXCLUSIVE"
+  },
+  "negativeConclusions": [
+    "Do not claim exhaustive human-knowledge closure from v0 residual zero.",
+    "Do not turn MajorRegion projections into ReferenceIdentities or semantic owners.",
+    "Do not force bridge/axis identities into exclusive region membership.",
+    "Do not count Ordivon internal theories as external evidence.",
+    "Do not pre-admit Historical/Linguistic/Interpretive before social/cultural boundary dogfood."
+  ],
+  "ordivonTheoryUse": {
+    "firewall": "Internal Ordivon theory may shape topology hypotheses, deletion-harm tests and negative controls; it cannot count as external field-existence evidence or override external-source provenance.",
+    "sourceTasks": [
+      "task:scd-research-core-consolidation-branch-20260818",
+      "task:computational-possibility-research-core-consolidation-branch-20260818",
+      "task:network-research-core-consolidation-branch-20260818",
+      "task:world-research-core-consolidation-branch-20260818",
+      "task:human-research-core-consolidation-branch-20260818",
+      "task:ordivon-atlas-normative-shared-repo-owner-audit-20260818",
+      "task:ordivon-information-management-atlas-architecture-20260818"
+    ],
+    "status": "ADMITTED_AS_INTERNAL_ANALYTIC_LENSES_ONLY"
+  },
+  "output": "reference/foundational-whole-topology-audit-v3-20260819.json",
+  "schemaVersion": 1,
+  "state": "V0_BOUNDED_BREADTH_NORMALIZED_OPEN_WORLD_CENSUS_CONTINUES",
+  "truthRole": "HISTORICAL_RESEARCH_EVIDENCE",
+  "verification": {
+    "fullDeterministicSuiteJob": "job-01a015de-7247-7081-8b43-9b68ba01394e",
+    "fullDeterministicSuiteResult": "92 tests OK; 28 pre-existing gated tests skipped; 64 deterministic tests executed.",
+    "referenceSuiteJob": "job-01a015de-4d27-7ba0-8c32-c6abf566e045",
+    "referenceSuiteResult": "55/55 PASS"
+  }
+}

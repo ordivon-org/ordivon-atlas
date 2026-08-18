@@ -1,0 +1,638 @@
+{
+  "closure": "ROUND3A_BOUNDED_BREADTH_RESIDUAL_SET_COMPLETE_OPEN_WORLD_CENSUS_CONTINUES",
+  "findings": [
+    {
+      "claim": "Planetary Science is a first-class comparative planetary-systems domain bridging astronomy and Earth/geoscience, but not yet an independent canonical major region.",
+      "id": "FCR3A-1",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Biochemistry, Microbiology, Developmental Biology and Physiology are stable life-science identities with different bridge/process/function roles; none requires wholesale root promotion.",
+      "id": "FCR3A-2",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Engineering specialties are best represented as explicit major subspaces/intervention bridges under the broader Engineering/Design topology, not as peer foundational regions by institutional symmetry.",
+      "id": "FCR3A-3",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Philosophy of Mind is a major philosophical subspace and cognition bridge; Philology is a historical-language/textual bridge and method axis.",
+      "id": "FCR3A-4",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Food Science is a stable applied/composite domain spanning chemistry, biology, microbiology, engineering and human/nutrition boundaries rather than a foundational major region.",
+      "id": "FCR3A-5",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "All 17 residual candidates from the v0 broad census are now explicitly normalized; this closes only that bounded residual set, not the open-world foundational census.",
+      "id": "FCR3A-6",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "internalLensRef": "reference/ordivon-theory-lenses-for-reference-cartography-20260819.json",
+  "internalLensSemantics": "Internal lenses constrain modeling and generate negative controls; external evidence remains independently required for every normalized space.",
+  "kind": "ordivon.foundational-census-round3a-breadth-normalization",
+  "next": "Round3B major-region projection contract and admission dogfood.",
+  "normalizedSpaces": [
+    {
+      "evidence": [
+        "agu-planetary"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Planetary science",
+      "placements": [
+        "astronomy",
+        "earth-science",
+        "geophysics",
+        "geochemistry",
+        "atmosphere",
+        "space-physics",
+        "astrobiology-boundary"
+      ],
+      "rationale": "AGU defines planetary science around properties, formation and evolution of planetary bodies and environments from cores to magnetospheres, using geophysical/geochemical principles and observational, experimental and modeling approaches. This supports a first-class comparative planetary systems identity, not reduction to Astronomy or Earth Science.",
+      "roleClasses": [
+        "MAJOR_DOMAIN_CANDIDATE",
+        "BRIDGE_DOMAIN",
+        "COMPARATIVE_SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:planetary-science"
+    },
+    {
+      "evidence": [
+        "asbmb-bmb"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Biochemistry",
+      "placements": [
+        "chemistry",
+        "biology",
+        "molecular-cellular-biology",
+        "medicine-boundary"
+      ],
+      "rationale": "ASBMB distinguishes biochemistry as investigation of molecular composition and chemical reactions in life while treating BMB as enabling molecular-life science. Biochemistry is therefore a stable Chemistry↔Life bridge, not identical to Molecular Biology.",
+      "roleClasses": [
+        "BRIDGE_DOMAIN",
+        "MAJOR_LIFE_CHEMISTRY_SUBSPACE",
+        "MOLECULAR_TRANSFORMATION_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:biochemistry"
+    },
+    {
+      "evidence": [
+        "asm-about"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Microbiology / microbial sciences",
+      "placements": [
+        "biology",
+        "ecology",
+        "evolution",
+        "medicine",
+        "agriculture",
+        "environment",
+        "biotechnology-boundary"
+      ],
+      "rationale": "ASM spans fundamental, clinical and applied microbial sciences across health, environment, agriculture and industry. Microbiology has stable object/regime identity around microbial life, but its applications and bridges do not justify a separate foundational major region by themselves.",
+      "roleClasses": [
+        "MAJOR_LIFE_SUBSPACE",
+        "OBJECT_REGIME_DOMAIN",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:microbiology"
+    },
+    {
+      "evidence": [
+        "sdb-journal"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Developmental biology",
+      "placements": [
+        "biology",
+        "molecular-cellular-biology",
+        "genetics",
+        "evolution",
+        "organismal-biology"
+      ],
+      "rationale": "SDB describes developmental biology through mechanisms of development, differentiation and growth at molecular, cellular, genetic and evolutionary levels. Development is a cross-scale biological process axis plus major subspace, not a new root.",
+      "roleClasses": [
+        "PROCESS_AXIS",
+        "MAJOR_LIFE_SUBSPACE",
+        "MULTISCALE_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:developmental-biology"
+    },
+    {
+      "evidence": [
+        "aps-physiology"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Physiology",
+      "placements": [
+        "biology",
+        "organismal-biology",
+        "medicine",
+        "environment-response"
+      ],
+      "rationale": "APS characterizes physiology as broad scientific inquiry into biological function of living organisms and foundational to life sciences. Function crosses organs, systems, organisms and health contexts, supporting a major functional/system axis rather than a primitive root.",
+      "roleClasses": [
+        "FUNCTION_AXIS",
+        "MAJOR_LIFE_SUBSPACE",
+        "SYSTEM_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:physiology"
+    },
+    {
+      "evidence": [
+        "columbia-mind",
+        "toronto-lemm"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Philosophy of mind and cognition",
+      "placements": [
+        "philosophy",
+        "cognitive-science",
+        "psychology",
+        "neuroscience",
+        "epistemology",
+        "metaphysics",
+        "language"
+      ],
+      "rationale": "University philosophy research structures treat philosophy of mind as a stable philosophical area with explicit links to psychology, cognitive science, epistemology, metaphysics and language. It is a major conceptual bridge/subspace rather than a separate foundational region.",
+      "roleClasses": [
+        "MAJOR_PHILOSOPHICAL_SUBSPACE",
+        "CONCEPTUAL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:philosophy-of-mind"
+    },
+    {
+      "evidence": [
+        "abet-2026"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Mechanical engineering",
+      "placements": [
+        "engineering",
+        "mechanics",
+        "thermal-systems",
+        "manufacturing",
+        "materials"
+      ],
+      "rationale": "ABET requires mechanical programs to combine engineering/basic science/mathematics with modeling, analysis, design and realization of physical, thermal and mechanical systems. This is a major engineering specialization, not an independent foundational major region.",
+      "roleClasses": [
+        "MAJOR_ENGINEERING_SUBSPACE",
+        "REALIZATION_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:mechanical-engineering"
+    },
+    {
+      "evidence": [
+        "abet-2026"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Electrical and electronic engineering",
+      "placements": [
+        "engineering",
+        "physics",
+        "signals",
+        "communications",
+        "control",
+        "computing-hardware"
+      ],
+      "rationale": "ABET treats electrical/electronic programs as engineering specializations spanning devices, software-containing systems, communication and advanced mathematics. Preserve as major engineering subspace with multiple bridges.",
+      "roleClasses": [
+        "MAJOR_ENGINEERING_SUBSPACE",
+        "DEVICE_SYSTEM_REALIZATION_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:electrical-electronic-engineering"
+    },
+    {
+      "evidence": [
+        "abet-2026"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Civil and structural engineering",
+      "placements": [
+        "engineering",
+        "built-environment",
+        "materials",
+        "earth-environment",
+        "infrastructure"
+      ],
+      "rationale": "ABET civil criteria combine physical/basic sciences, design and system-scale ecological/social impacts. This is a built-environment intervention specialization under Engineering, not a foundational object science.",
+      "roleClasses": [
+        "MAJOR_ENGINEERING_SUBSPACE",
+        "BUILT_ENVIRONMENT_INTERVENTION_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:civil-structural-engineering"
+    },
+    {
+      "evidence": [
+        "abet-2026"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Chemical engineering",
+      "placements": [
+        "engineering",
+        "chemistry",
+        "thermodynamics",
+        "transport",
+        "reaction",
+        "control"
+      ],
+      "rationale": "ABET chemical-engineering criteria center material/energy balances, thermodynamics, transport, reaction, process control and design. It is a Chemistry↔Engineering process-intervention bridge, distinct from Chemistry itself.",
+      "roleClasses": [
+        "MAJOR_ENGINEERING_SUBSPACE",
+        "PROCESS_INTERVENTION_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:chemical-engineering"
+    },
+    {
+      "evidence": [
+        "abet-2026"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Computer engineering",
+      "placements": [
+        "engineering",
+        "computation",
+        "electronics",
+        "hardware",
+        "software",
+        "networks"
+      ],
+      "rationale": "ABET treats computer engineering within electrical/computer engineering with hardware/software system design and discrete mathematics. It is a realization bridge between computation and engineered electronic systems, not Computational Possibility or theoretical computing.",
+      "roleClasses": [
+        "MAJOR_ENGINEERING_SUBSPACE",
+        "HARDWARE_SOFTWARE_REALIZATION_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:computer-engineering"
+    },
+    {
+      "evidence": [
+        "abet-2026"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Software engineering",
+      "placements": [
+        "engineering",
+        "computation",
+        "software-systems",
+        "verification",
+        "security-boundary"
+      ],
+      "rationale": "ABET software criteria emphasize design/construction, requirements, verification/validation and processes/tools for complex software systems. Software Engineering is an applied realization discipline, not a foundational computation identity.",
+      "roleClasses": [
+        "APPLIED_INTERVENTION_DOMAIN",
+        "COMPUTATION_ENGINEERING_BRIDGE",
+        "MAJOR_ENGINEERING_SUBSPACE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:software-engineering"
+    },
+    {
+      "evidence": [
+        "abet-2026"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Control engineering",
+      "placements": [
+        "engineering",
+        "systems-theory-control",
+        "dynamical-systems",
+        "electrical-electronic-engineering",
+        "mechanical-engineering"
+      ],
+      "rationale": "ABET places control across chemical, electrical/electronic, mechatronic and systems engineering contexts. Control Engineering applies systems/control theory as an intervention discipline and should not duplicate the formal Systems Theory & Control identity.",
+      "roleClasses": [
+        "APPLIED_METHOD_AXIS",
+        "ENGINEERING_SUBSPACE",
+        "SYSTEMS_CONTROL_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:control-engineering"
+    },
+    {
+      "evidence": [
+        "abet-2026"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Environmental engineering",
+      "placements": [
+        "engineering",
+        "earth-science",
+        "chemistry",
+        "biology",
+        "fluid-systems",
+        "policy-boundary"
+      ],
+      "rationale": "ABET environmental criteria explicitly integrate chemistry, Earth science, biology, fluid mechanics, fate/transport and engineered systems. It is a multi-foundation intervention bridge, not a foundational region.",
+      "roleClasses": [
+        "APPLIED_INTERVENTION_DOMAIN",
+        "EARTH_LIFE_CHEMISTRY_ENGINEERING_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:environmental-engineering"
+    },
+    {
+      "evidence": [
+        "abet-2026"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Energy engineering",
+      "placements": [
+        "engineering",
+        "physics",
+        "chemistry",
+        "materials",
+        "thermal-systems",
+        "electrical-systems",
+        "economics-boundary"
+      ],
+      "rationale": "Energy engineering draws on multiple engineering and physical/material domains. Current evidence supports an applied intervention bridge; no deletion-essential independent foundational identity has been shown.",
+      "roleClasses": [
+        "APPLIED_INTERVENTION_DOMAIN",
+        "PHYSICAL_MATERIAL_ENGINEERING_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:energy-engineering"
+    },
+    {
+      "evidence": [
+        "oxford-philology",
+        "wpu-about"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Philology",
+      "placements": [
+        "linguistics",
+        "history",
+        "literature",
+        "textual-heritage",
+        "semantics",
+        "language-change"
+      ],
+      "rationale": "Oxford defines philology around systematic behavior and development of languages over time, overlapping many linguistic fields; WPU emphasizes oral/written language and literary heritage. Philology is a historical-language/textual bridge and method axis, not a primitive humanities root.",
+      "roleClasses": [
+        "HISTORICAL_LANGUAGE_DOMAIN",
+        "TEXTUAL_METHOD_AXIS",
+        "BRIDGE_DOMAIN"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:philology"
+    },
+    {
+      "evidence": [
+        "ifst-food",
+        "ift-jfs"
+      ],
+      "identityStatus": "PROVISIONALLY_NORMALIZED",
+      "label": "Food science",
+      "placements": [
+        "chemistry",
+        "biology",
+        "microbiology",
+        "engineering",
+        "nutrition-boundary",
+        "sensory-human-boundary",
+        "agriculture"
+      ],
+      "rationale": "IFST defines food science through physical, biological and chemical properties plus processing, preservation, safety and quality; IFT describes the field as multidisciplinary. It is a stable applied/composite science of food, not a new foundational major region.",
+      "roleClasses": [
+        "APPLIED_TRANSLATIONAL_DOMAIN",
+        "COMPOSITE_DOMAIN",
+        "BIO_CHEM_MICROBIO_ENGINEERING_BRIDGE"
+      ],
+      "rootAdmission": "NOT_ADMITTED",
+      "spaceRef": "norm:food-science"
+    }
+  ],
+  "policies": {
+    "engineeringRule": "Engineering specializations remain explicit identities but default to major subspace/intervention roles unless deletion-essential independent major-region structure is proven.",
+    "internalTheoryFirewall": "Ordivon owner theory cannot count as external evidence for field existence or standing.",
+    "rootAdmission": "All Round3A identities remain NOT_ADMITTED.",
+    "subordinationAllowed": "A stable field may normalize as a major subspace, bridge, axis, applied/translational or composite without manufacturing a major region."
+  },
+  "relations": [
+    {
+      "from": "norm:planetary-science",
+      "to": "norm:astronomy",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:planetary-science",
+      "to": "norm:earth-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:biochemistry",
+      "to": "norm:chemistry",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:biochemistry",
+      "to": "norm:biology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:microbiology",
+      "to": "norm:biology",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:developmental-biology",
+      "to": "norm:biology",
+      "type": "PROCESS_AXIS_WITHIN"
+    },
+    {
+      "from": "norm:physiology",
+      "to": "norm:biology",
+      "type": "FUNCTION_AXIS_WITHIN"
+    },
+    {
+      "from": "norm:philosophy-of-mind",
+      "to": "norm:philosophy",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:philosophy-of-mind",
+      "to": "norm:cognitive-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:mechanical-engineering",
+      "to": "norm:engineering",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:electrical-electronic-engineering",
+      "to": "norm:engineering",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:civil-structural-engineering",
+      "to": "norm:engineering",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:chemical-engineering",
+      "to": "norm:chemistry",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:chemical-engineering",
+      "to": "norm:engineering",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:computer-engineering",
+      "to": "norm:computation",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:computer-engineering",
+      "to": "norm:engineering",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:software-engineering",
+      "to": "norm:computation",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:software-engineering",
+      "to": "norm:engineering",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:control-engineering",
+      "to": "norm:systems-theory-control",
+      "type": "APPLIES_AXIS"
+    },
+    {
+      "from": "norm:control-engineering",
+      "to": "norm:engineering",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:environmental-engineering",
+      "to": "norm:engineering",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:environmental-engineering",
+      "to": "norm:earth-science",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:energy-engineering",
+      "to": "norm:engineering",
+      "type": "MAJOR_SUBSPACE_OF"
+    },
+    {
+      "from": "norm:philology",
+      "to": "norm:linguistics",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:philology",
+      "to": "norm:history",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:food-science",
+      "to": "norm:biochemistry",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:food-science",
+      "to": "norm:microbiology",
+      "type": "BRIDGES"
+    },
+    {
+      "from": "norm:food-science",
+      "to": "norm:engineering",
+      "type": "BRIDGES"
+    }
+  ],
+  "roundId": "foundational-census:round3a:2026-08-19",
+  "schemaVersion": 1,
+  "scope": "17 broad-census residual candidates from Whole-Foundational Topology Audit v2.",
+  "sources": {
+    "abet-2026": {
+      "role": "ENGINEERING_SPECIALIZATION_SCOPE",
+      "title": "ABET Criteria for Accrediting Engineering Programs 2026-2027",
+      "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/"
+    },
+    "agu-planetary": {
+      "role": "PLANETARY_DOMAIN_SCOPE",
+      "title": "AGU Planetary Sciences",
+      "url": "https://connect.agu.org/planetarysciences/about/about-planetary-sciences"
+    },
+    "aps-physiology": {
+      "role": "PHYSIOLOGY_SCOPE",
+      "title": "American Physiological Society - Welcome",
+      "url": "https://www.physiology.org/about/welcome"
+    },
+    "asbmb-bmb": {
+      "role": "BIOCHEMISTRY_MOLECULAR_LIFE_SCOPE",
+      "title": "ASBMB Biochemistry and Molecular Biology",
+      "url": "https://www.asbmb.org/about-bmb"
+    },
+    "asm-about": {
+      "role": "MICROBIOLOGY_SCOPE",
+      "title": "American Society for Microbiology - About ASM",
+      "url": "https://asm.org/about-asm"
+    },
+    "columbia-mind": {
+      "role": "PHILOSOPHY_OF_MIND_SCOPE",
+      "title": "Columbia Philosophy - Philosophy of Mind and Psychology",
+      "url": "https://philosophy.columbia.edu/content/philosophy-mind-and-psychology"
+    },
+    "ifst-food": {
+      "role": "FOOD_SCIENCE_SCOPE",
+      "title": "IFST Food Science and Food Technology",
+      "url": "https://www.ifst.org/food-science-food-technology"
+    },
+    "ift-jfs": {
+      "role": "FOOD_SCIENCE_MULTIDISCIPLINARY_SCOPE",
+      "title": "IFT Journal of Food Science scope",
+      "url": "https://www.ift.org/trends-and-learning/research-and-publications/scientific-journals/journal-of-food-science/jfs-author-guidelines/"
+    },
+    "oxford-philology": {
+      "role": "PHILOLOGY_SCOPE",
+      "title": "Oxford Faculty of Linguistics, Philology and Phonetics - Philology",
+      "url": "https://www.ling-phil.ox.ac.uk/philology"
+    },
+    "sdb-journal": {
+      "role": "DEVELOPMENTAL_BIOLOGY_SCOPE",
+      "title": "Society for Developmental Biology - Developmental Biology",
+      "url": "https://www.sdbonline.org/developmental_biology_journal"
+    },
+    "toronto-lemm": {
+      "role": "PHILOSOPHY_MIND_COGSCI_BRIDGE",
+      "title": "University of Toronto Philosophy - Language, Epistemology, Metaphysics, and Mind",
+      "url": "https://philosophy.utoronto.ca/research/research-interest-groups/"
+    },
+    "wpu-about": {
+      "role": "PHILOLOGY_HERITAGE_SCOPE",
+      "title": "World Philology Union - About",
+      "url": "https://www.philology.org/about"
+    }
+  },
+  "state": "ROUND3A_COMPLETE_BREADTH_RESIDUAL_SET_ZERO_FOR_V0_CENSUS",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_NORMALIZATION"
+}

@@ -1,0 +1,632 @@
+{
+  "admittedRegions": [
+    "candidate-region:formal-inferential-computational",
+    "candidate-region:physical-material",
+    "candidate-region:earth-planetary-space",
+    "candidate-region:life",
+    "candidate-region:mind-language",
+    "candidate-region:engineering-design"
+  ],
+  "contractRef": "reference/canonical-major-region-projection-contract-v0-20260819.json",
+  "date": "2026-08-19",
+  "deferredRegions": [
+    "candidate-region:historical-symbolic"
+  ],
+  "findings": [
+    {
+      "claim": "CanonicalMajorRegion must be a navigation projection over ReferenceIdentities, not a new ReferenceIdentity or semantic root.",
+      "id": "CMR-D1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Large multi-domain projections can preserve non-exclusive topology while single BRIDGE/AXIS/APPLIED/COMPOSITE identities remain explicit without demanding standalone major regions.",
+      "id": "CMR-D2",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "No region can be admitted yet because G2 navigation deletion harm and G7 perturbation stability have not been empirically dogfooded.",
+      "id": "CMR-D3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Ordivon owner theories improve admission discipline by separating navigation views from semantic identities, primitives from derived structures, and deep/useful fields from deletion-essential anchors; they do not provide external evidence.",
+      "id": "CMR-D4",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Six multi-identity candidate regions passed bounded navigation deletion-harm and perturbation-stability fixtures and can be admitted as versioned navigation projections without minting reference identities.",
+      "id": "CMR-D5",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Historical/Linguistic/Interpretive remains deferred because later social/cultural expansion is likely to perturb its boundary materially.",
+      "id": "CMR-D6",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Single bridge/axis/applied/composite identities such as Statistics, Metrology, Materials, Medicine, Software Engineering and Classics do not gain navigation value merely by being wrapped in one-item major-region projections.",
+      "id": "CMR-D7",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.canonical-major-region-admission-dogfood",
+  "navigationFixtures": [
+    {
+      "deletionCostIncrease": 3,
+      "expectedRegion": "candidate-region:formal-inferential-computational",
+      "fixture": "Q-formal-1",
+      "missingFromRegion": [],
+      "queryRefs": [
+        "norm:logic",
+        "norm:statistics",
+        "norm:computation",
+        "norm:information-theory"
+      ],
+      "result": "PASS",
+      "withRegionEntryCost": 1,
+      "withoutRegionRawIdentityEntryCost": 4
+    },
+    {
+      "deletionCostIncrease": 2,
+      "expectedRegion": "candidate-region:formal-inferential-computational",
+      "fixture": "Q-formal-2",
+      "missingFromRegion": [],
+      "queryRefs": [
+        "norm:probability",
+        "norm:dynamical-systems",
+        "norm:systems-theory-control"
+      ],
+      "result": "PASS",
+      "withRegionEntryCost": 1,
+      "withoutRegionRawIdentityEntryCost": 3
+    },
+    {
+      "deletionCostIncrease": 3,
+      "expectedRegion": "candidate-region:physical-material",
+      "fixture": "Q-physical-1",
+      "missingFromRegion": [],
+      "queryRefs": [
+        "norm:physics",
+        "norm:chemistry",
+        "norm:chemical-physics",
+        "norm:materials"
+      ],
+      "result": "PASS",
+      "withRegionEntryCost": 1,
+      "withoutRegionRawIdentityEntryCost": 4
+    },
+    {
+      "deletionCostIncrease": 3,
+      "expectedRegion": "candidate-region:earth-planetary-space",
+      "fixture": "Q-earth-1",
+      "missingFromRegion": [],
+      "queryRefs": [
+        "norm:earth-science",
+        "norm:geochemistry",
+        "norm:climate-science",
+        "norm:oceanography"
+      ],
+      "result": "PASS",
+      "withRegionEntryCost": 1,
+      "withoutRegionRawIdentityEntryCost": 4
+    },
+    {
+      "deletionCostIncrease": 3,
+      "expectedRegion": "candidate-region:earth-planetary-space",
+      "fixture": "Q-earth-2",
+      "missingFromRegion": [],
+      "queryRefs": [
+        "norm:planetary-science",
+        "norm:astronomy",
+        "norm:cosmology",
+        "norm:geophysics"
+      ],
+      "result": "PASS",
+      "withRegionEntryCost": 1,
+      "withoutRegionRawIdentityEntryCost": 4
+    },
+    {
+      "deletionCostIncrease": 3,
+      "expectedRegion": "candidate-region:life",
+      "fixture": "Q-life-1",
+      "missingFromRegion": [],
+      "queryRefs": [
+        "norm:biology",
+        "norm:genetics",
+        "norm:evolutionary-biology",
+        "norm:developmental-biology"
+      ],
+      "result": "PASS",
+      "withRegionEntryCost": 1,
+      "withoutRegionRawIdentityEntryCost": 4
+    },
+    {
+      "deletionCostIncrease": 3,
+      "expectedRegion": "candidate-region:life",
+      "fixture": "Q-life-2",
+      "missingFromRegion": [],
+      "queryRefs": [
+        "norm:microbiology",
+        "norm:ecology",
+        "norm:physiology",
+        "norm:biochemistry"
+      ],
+      "result": "PASS",
+      "withRegionEntryCost": 1,
+      "withoutRegionRawIdentityEntryCost": 4
+    },
+    {
+      "deletionCostIncrease": 3,
+      "expectedRegion": "candidate-region:mind-language",
+      "fixture": "Q-mind-1",
+      "missingFromRegion": [],
+      "queryRefs": [
+        "norm:cognitive-science",
+        "norm:psychology",
+        "norm:linguistics",
+        "norm:philosophy-of-mind"
+      ],
+      "result": "PASS",
+      "withRegionEntryCost": 1,
+      "withoutRegionRawIdentityEntryCost": 4
+    },
+    {
+      "deletionCostIncrease": 3,
+      "expectedRegion": "candidate-region:engineering-design",
+      "fixture": "Q-eng-1",
+      "missingFromRegion": [],
+      "queryRefs": [
+        "norm:engineering",
+        "norm:mechanical-engineering",
+        "norm:control-engineering",
+        "norm:systems-engineering"
+      ],
+      "result": "PASS",
+      "withRegionEntryCost": 1,
+      "withoutRegionRawIdentityEntryCost": 4
+    },
+    {
+      "deletionCostIncrease": 3,
+      "expectedRegion": "candidate-region:engineering-design",
+      "fixture": "Q-eng-2",
+      "missingFromRegion": [],
+      "queryRefs": [
+        "norm:software-engineering",
+        "norm:computer-engineering",
+        "norm:electrical-electronic-engineering",
+        "norm:design"
+      ],
+      "result": "PASS",
+      "withRegionEntryCost": 1,
+      "withoutRegionRawIdentityEntryCost": 4
+    },
+    {
+      "deletionCostIncrease": 3,
+      "expectedRegion": "candidate-region:historical-symbolic",
+      "fixture": "Q-hist-1",
+      "missingFromRegion": [],
+      "queryRefs": [
+        "norm:history",
+        "norm:philology",
+        "norm:religious-studies",
+        "norm:classics"
+      ],
+      "result": "PASS",
+      "withRegionEntryCost": 1,
+      "withoutRegionRawIdentityEntryCost": 4
+    }
+  ],
+  "next": "Materialize admitted navigation-region v0 projections separately from ReferenceIdentity graph. Keep historical/interpretive region deferred until social/cultural wave. Coverage crosswalk remains separate.",
+  "perturbationFixtures": [
+    {
+      "allAnchorsPresent": true,
+      "anchors": [
+        "norm:mathematics",
+        "norm:logic",
+        "norm:computation"
+      ],
+      "broadEnoughForEdgeReclassification": true,
+      "candidateRef": "candidate-region:formal-inferential-computational",
+      "memberCount": 8,
+      "result": "PASS_BOUNDED_PERTURBATION",
+      "survivesAnyOneAnchorLoss": true
+    },
+    {
+      "allAnchorsPresent": true,
+      "anchors": [
+        "norm:physics",
+        "norm:chemistry",
+        "norm:materials"
+      ],
+      "broadEnoughForEdgeReclassification": true,
+      "candidateRef": "candidate-region:physical-material",
+      "memberCount": 6,
+      "result": "PASS_BOUNDED_PERTURBATION",
+      "survivesAnyOneAnchorLoss": true
+    },
+    {
+      "allAnchorsPresent": true,
+      "anchors": [
+        "norm:earth-science",
+        "norm:planetary-science",
+        "norm:astronomy"
+      ],
+      "broadEnoughForEdgeReclassification": true,
+      "candidateRef": "candidate-region:earth-planetary-space",
+      "memberCount": 11,
+      "result": "PASS_BOUNDED_PERTURBATION",
+      "survivesAnyOneAnchorLoss": true
+    },
+    {
+      "allAnchorsPresent": true,
+      "anchors": [
+        "norm:biology",
+        "norm:genetics",
+        "norm:ecology"
+      ],
+      "broadEnoughForEdgeReclassification": true,
+      "candidateRef": "candidate-region:life",
+      "memberCount": 12,
+      "result": "PASS_BOUNDED_PERTURBATION",
+      "survivesAnyOneAnchorLoss": true
+    },
+    {
+      "allAnchorsPresent": true,
+      "anchors": [
+        "norm:cognitive-science",
+        "norm:psychology",
+        "norm:linguistics"
+      ],
+      "broadEnoughForEdgeReclassification": true,
+      "candidateRef": "candidate-region:mind-language",
+      "memberCount": 6,
+      "result": "PASS_BOUNDED_PERTURBATION",
+      "survivesAnyOneAnchorLoss": true
+    },
+    {
+      "allAnchorsPresent": true,
+      "anchors": [
+        "norm:engineering",
+        "norm:design",
+        "norm:systems-engineering"
+      ],
+      "broadEnoughForEdgeReclassification": true,
+      "candidateRef": "candidate-region:engineering-design",
+      "memberCount": 15,
+      "result": "PASS_BOUNDED_PERTURBATION",
+      "survivesAnyOneAnchorLoss": true
+    },
+    {
+      "allAnchorsPresent": true,
+      "anchors": [
+        "norm:history",
+        "norm:philology",
+        "norm:religious-studies"
+      ],
+      "broadEnoughForEdgeReclassification": true,
+      "candidateRef": "candidate-region:historical-symbolic",
+      "memberCount": 7,
+      "result": "DEFERRED_FUTURE_SOCIAL_CULTURAL_BOUNDARY_PERTURBATION",
+      "survivesAnyOneAnchorLoss": true
+    }
+  ],
+  "rejectedOrNotAdmitted": [
+    "counterexample-region:statistics",
+    "counterexample-region:metrology",
+    "counterexample-region:materials",
+    "counterexample-region:medicine",
+    "counterexample-region:software-engineering",
+    "counterexample-region:classics"
+  ],
+  "results": [
+    {
+      "admission": "ADMITTED_NAVIGATION_PROJECTION_V0",
+      "candidateRef": "candidate-region:formal-inferential-computational",
+      "expected": "STRONG_CANDIDATE",
+      "gateResults": {
+        "G1_REFERENCE_SUPPORT": "PASS",
+        "G2_NAVIGATION_DELETION_HARM": "PASS_BOUNDED_FIXTURES",
+        "G3_SCOPE_COHERENCE": "PROVISIONAL_PASS",
+        "G4_TOPOLOGY_PRESERVATION": "PASS",
+        "G5_NON_AUTHORITY": "PASS_BY_CONTRACT",
+        "G6_OPEN_WORLD": "PASS_BY_CONTRACT",
+        "G7_STABILITY": "PASS_BOUNDED_PERTURBATION"
+      },
+      "label": "Formal, Inferential & Computational",
+      "memberRefs": [
+        "norm:mathematics",
+        "norm:logic",
+        "norm:probability",
+        "norm:statistics",
+        "norm:computation",
+        "norm:information-theory",
+        "norm:dynamical-systems",
+        "norm:systems-theory-control"
+      ],
+      "missingRefs": []
+    },
+    {
+      "admission": "ADMITTED_NAVIGATION_PROJECTION_V0",
+      "candidateRef": "candidate-region:physical-material",
+      "expected": "STRONG_CANDIDATE_WITH_BRIDGES",
+      "gateResults": {
+        "G1_REFERENCE_SUPPORT": "PASS",
+        "G2_NAVIGATION_DELETION_HARM": "PASS_BOUNDED_FIXTURES",
+        "G3_SCOPE_COHERENCE": "PROVISIONAL_PASS",
+        "G4_TOPOLOGY_PRESERVATION": "PASS",
+        "G5_NON_AUTHORITY": "PASS_BY_CONTRACT",
+        "G6_OPEN_WORLD": "PASS_BY_CONTRACT",
+        "G7_STABILITY": "PASS_BOUNDED_PERTURBATION"
+      },
+      "label": "Physical & Material",
+      "memberRefs": [
+        "norm:physics",
+        "norm:chemistry",
+        "norm:condensed-matter",
+        "norm:chemical-physics",
+        "norm:materials",
+        "norm:biochemistry"
+      ],
+      "missingRefs": []
+    },
+    {
+      "admission": "ADMITTED_NAVIGATION_PROJECTION_V0",
+      "candidateRef": "candidate-region:earth-planetary-space",
+      "expected": "STRONG_CANDIDATE_WITH_CROSS_REGION_LINKS",
+      "gateResults": {
+        "G1_REFERENCE_SUPPORT": "PASS",
+        "G2_NAVIGATION_DELETION_HARM": "PASS_BOUNDED_FIXTURES",
+        "G3_SCOPE_COHERENCE": "PROVISIONAL_PASS",
+        "G4_TOPOLOGY_PRESERVATION": "PASS",
+        "G5_NON_AUTHORITY": "PASS_BY_CONTRACT",
+        "G6_OPEN_WORLD": "PASS_BY_CONTRACT",
+        "G7_STABILITY": "PASS_BOUNDED_PERTURBATION"
+      },
+      "label": "Earth, Planetary & Space Systems",
+      "memberRefs": [
+        "norm:earth-science",
+        "norm:geology",
+        "norm:geophysics",
+        "norm:geochemistry",
+        "norm:atmospheric-science",
+        "norm:oceanography",
+        "norm:climate-science",
+        "norm:physical-geography",
+        "norm:planetary-science",
+        "norm:astronomy",
+        "norm:cosmology"
+      ],
+      "missingRefs": []
+    },
+    {
+      "admission": "ADMITTED_NAVIGATION_PROJECTION_V0",
+      "candidateRef": "candidate-region:life",
+      "expected": "STRONG_CANDIDATE_MULTI_AXIS",
+      "gateResults": {
+        "G1_REFERENCE_SUPPORT": "PASS",
+        "G2_NAVIGATION_DELETION_HARM": "PASS_BOUNDED_FIXTURES",
+        "G3_SCOPE_COHERENCE": "PROVISIONAL_PASS",
+        "G4_TOPOLOGY_PRESERVATION": "PASS",
+        "G5_NON_AUTHORITY": "PASS_BY_CONTRACT",
+        "G6_OPEN_WORLD": "PASS_BY_CONTRACT",
+        "G7_STABILITY": "PASS_BOUNDED_PERTURBATION"
+      },
+      "label": "Life & Biological Organization",
+      "memberRefs": [
+        "norm:biology",
+        "norm:molecular-cellular-biology",
+        "norm:biochemistry",
+        "norm:genetics",
+        "norm:genomics",
+        "norm:evolutionary-biology",
+        "norm:ecology",
+        "norm:microbiology",
+        "norm:developmental-biology",
+        "norm:physiology",
+        "norm:organismal-biology",
+        "norm:neuroscience"
+      ],
+      "missingRefs": []
+    },
+    {
+      "admission": "ADMITTED_NAVIGATION_PROJECTION_V0",
+      "candidateRef": "candidate-region:mind-language",
+      "expected": "STRONG_CANDIDATE_WITH_PHILOSOPHY_OVERLAP",
+      "gateResults": {
+        "G1_REFERENCE_SUPPORT": "PASS",
+        "G2_NAVIGATION_DELETION_HARM": "PASS_BOUNDED_FIXTURES",
+        "G3_SCOPE_COHERENCE": "PROVISIONAL_PASS",
+        "G4_TOPOLOGY_PRESERVATION": "PASS",
+        "G5_NON_AUTHORITY": "PASS_BY_CONTRACT",
+        "G6_OPEN_WORLD": "PASS_BY_CONTRACT",
+        "G7_STABILITY": "PASS_BOUNDED_PERTURBATION"
+      },
+      "label": "Mind, Cognition & Language",
+      "memberRefs": [
+        "norm:cognitive-science",
+        "norm:psychology",
+        "norm:neuroscience",
+        "norm:linguistics",
+        "norm:philosophy-of-mind",
+        "norm:philosophy"
+      ],
+      "missingRefs": []
+    },
+    {
+      "admission": "ADMITTED_NAVIGATION_PROJECTION_V0",
+      "candidateRef": "candidate-region:engineering-design",
+      "expected": "STRONG_CANDIDATE_INTERVENTION_REGION",
+      "gateResults": {
+        "G1_REFERENCE_SUPPORT": "PASS",
+        "G2_NAVIGATION_DELETION_HARM": "PASS_BOUNDED_FIXTURES",
+        "G3_SCOPE_COHERENCE": "PROVISIONAL_PASS",
+        "G4_TOPOLOGY_PRESERVATION": "PASS",
+        "G5_NON_AUTHORITY": "PASS_BY_CONTRACT",
+        "G6_OPEN_WORLD": "PASS_BY_CONTRACT",
+        "G7_STABILITY": "PASS_BOUNDED_PERTURBATION"
+      },
+      "label": "Engineering, Design & Realization",
+      "memberRefs": [
+        "norm:engineering",
+        "norm:design",
+        "norm:systems-engineering",
+        "norm:manufacturing",
+        "norm:materials",
+        "norm:bioengineering",
+        "norm:mechanical-engineering",
+        "norm:electrical-electronic-engineering",
+        "norm:civil-structural-engineering",
+        "norm:chemical-engineering",
+        "norm:computer-engineering",
+        "norm:software-engineering",
+        "norm:control-engineering",
+        "norm:environmental-engineering",
+        "norm:energy-engineering"
+      ],
+      "missingRefs": []
+    },
+    {
+      "admission": "DEFERRED",
+      "candidateRef": "candidate-region:historical-symbolic",
+      "expected": "PROVISIONAL_CANDIDATE_BOUNDARY_PRESSURE",
+      "gateResults": {
+        "G1_REFERENCE_SUPPORT": "PASS",
+        "G2_NAVIGATION_DELETION_HARM": "PASS_BOUNDED_FIXTURES",
+        "G3_SCOPE_COHERENCE": "PROVISIONAL_PASS",
+        "G4_TOPOLOGY_PRESERVATION": "PASS",
+        "G5_NON_AUTHORITY": "PASS_BY_CONTRACT",
+        "G6_OPEN_WORLD": "PASS_BY_CONTRACT",
+        "G7_STABILITY": "DEFERRED_FUTURE_SOCIAL_CULTURAL_BOUNDARY_PERTURBATION"
+      },
+      "label": "Historical, Linguistic & Interpretive",
+      "memberRefs": [
+        "norm:history",
+        "norm:philology",
+        "norm:religious-studies",
+        "norm:classics",
+        "norm:aesthetics",
+        "norm:linguistics",
+        "norm:philosophy"
+      ],
+      "missingRefs": []
+    },
+    {
+      "admission": "REJECTED_OR_NOT_ADMITTED",
+      "candidateRef": "counterexample-region:statistics",
+      "expected": "REJECT_MAJOR_REGION_KEEP_AXIS_DOMAIN",
+      "gateResults": {
+        "G1_REFERENCE_SUPPORT": "PASS",
+        "G2_NAVIGATION_DELETION_HARM": "FAIL_NO_MULTI_IDENTITY_COMPRESSION",
+        "G3_SCOPE_COHERENCE": "PROVISIONAL_PASS",
+        "G4_TOPOLOGY_PRESERVATION": "PASS",
+        "G5_NON_AUTHORITY": "PASS_BY_CONTRACT",
+        "G6_OPEN_WORLD": "PASS_BY_CONTRACT",
+        "G7_STABILITY": "FAIL_SINGLE_IDENTITY_OR_ROLE_SPECIFIC_PROJECTION"
+      },
+      "label": "Statistics Alone",
+      "memberRefs": [
+        "norm:statistics"
+      ],
+      "missingRefs": []
+    },
+    {
+      "admission": "REJECTED_OR_NOT_ADMITTED",
+      "candidateRef": "counterexample-region:metrology",
+      "expected": "REJECT_MAJOR_REGION_KEEP_AXIS_INFRASTRUCTURE",
+      "gateResults": {
+        "G1_REFERENCE_SUPPORT": "PASS",
+        "G2_NAVIGATION_DELETION_HARM": "FAIL_NO_MULTI_IDENTITY_COMPRESSION",
+        "G3_SCOPE_COHERENCE": "PROVISIONAL_PASS",
+        "G4_TOPOLOGY_PRESERVATION": "PASS",
+        "G5_NON_AUTHORITY": "PASS_BY_CONTRACT",
+        "G6_OPEN_WORLD": "PASS_BY_CONTRACT",
+        "G7_STABILITY": "FAIL_SINGLE_IDENTITY_OR_ROLE_SPECIFIC_PROJECTION"
+      },
+      "label": "Measurement & Metrology Alone",
+      "memberRefs": [
+        "norm:measurement"
+      ],
+      "missingRefs": []
+    },
+    {
+      "admission": "REJECTED_OR_NOT_ADMITTED",
+      "candidateRef": "counterexample-region:materials",
+      "expected": "REJECT_OR_DEFER_MAJOR_REGION_KEEP_BRIDGE_DOMAIN",
+      "gateResults": {
+        "G1_REFERENCE_SUPPORT": "PASS",
+        "G2_NAVIGATION_DELETION_HARM": "FAIL_NO_MULTI_IDENTITY_COMPRESSION",
+        "G3_SCOPE_COHERENCE": "PROVISIONAL_PASS",
+        "G4_TOPOLOGY_PRESERVATION": "PASS",
+        "G5_NON_AUTHORITY": "PASS_BY_CONTRACT",
+        "G6_OPEN_WORLD": "PASS_BY_CONTRACT",
+        "G7_STABILITY": "FAIL_SINGLE_IDENTITY_OR_ROLE_SPECIFIC_PROJECTION"
+      },
+      "label": "Materials Alone",
+      "memberRefs": [
+        "norm:materials"
+      ],
+      "missingRefs": []
+    },
+    {
+      "admission": "REJECTED_OR_NOT_ADMITTED",
+      "candidateRef": "counterexample-region:medicine",
+      "expected": "REJECT_FOUNDATIONAL_MAJOR_REGION_KEEP_APPLIED_TRANSLATIONAL",
+      "gateResults": {
+        "G1_REFERENCE_SUPPORT": "FAIL",
+        "G2_NAVIGATION_DELETION_HARM": "FAIL_NO_MULTI_IDENTITY_COMPRESSION",
+        "G3_SCOPE_COHERENCE": "PROVISIONAL_PASS",
+        "G4_TOPOLOGY_PRESERVATION": "PASS",
+        "G5_NON_AUTHORITY": "PASS_BY_CONTRACT",
+        "G6_OPEN_WORLD": "PASS_BY_CONTRACT",
+        "G7_STABILITY": "FAIL_SINGLE_IDENTITY_OR_ROLE_SPECIFIC_PROJECTION"
+      },
+      "label": "Medicine & Health Alone",
+      "memberRefs": [
+        "norm:medicine-health",
+        "norm:basic-biomedical-science"
+      ],
+      "missingRefs": []
+    },
+    {
+      "admission": "REJECTED_OR_NOT_ADMITTED",
+      "candidateRef": "counterexample-region:software-engineering",
+      "expected": "REJECT_MAJOR_REGION_KEEP_APPLIED_SUBSPACE",
+      "gateResults": {
+        "G1_REFERENCE_SUPPORT": "PASS",
+        "G2_NAVIGATION_DELETION_HARM": "FAIL_NO_MULTI_IDENTITY_COMPRESSION",
+        "G3_SCOPE_COHERENCE": "PROVISIONAL_PASS",
+        "G4_TOPOLOGY_PRESERVATION": "PASS",
+        "G5_NON_AUTHORITY": "PASS_BY_CONTRACT",
+        "G6_OPEN_WORLD": "PASS_BY_CONTRACT",
+        "G7_STABILITY": "FAIL_SINGLE_IDENTITY_OR_ROLE_SPECIFIC_PROJECTION"
+      },
+      "label": "Software Engineering Alone",
+      "memberRefs": [
+        "norm:software-engineering"
+      ],
+      "missingRefs": []
+    },
+    {
+      "admission": "REJECTED_OR_NOT_ADMITTED",
+      "candidateRef": "counterexample-region:classics",
+      "expected": "REJECT_MAJOR_REGION_KEEP_COMPOSITE",
+      "gateResults": {
+        "G1_REFERENCE_SUPPORT": "PASS",
+        "G2_NAVIGATION_DELETION_HARM": "FAIL_NO_MULTI_IDENTITY_COMPRESSION",
+        "G3_SCOPE_COHERENCE": "PROVISIONAL_PASS",
+        "G4_TOPOLOGY_PRESERVATION": "PASS",
+        "G5_NON_AUTHORITY": "PASS_BY_CONTRACT",
+        "G6_OPEN_WORLD": "PASS_BY_CONTRACT",
+        "G7_STABILITY": "FAIL_SINGLE_IDENTITY_OR_ROLE_SPECIFIC_PROJECTION"
+      },
+      "label": "Classics Alone",
+      "memberRefs": [
+        "norm:classics"
+      ],
+      "missingRefs": []
+    }
+  ],
+  "schemaVersion": 1,
+  "state": "BOUNDED_NAVIGATION_AND_PERTURBATION_DOGFOOD_COMPLETE",
+  "truthRole": "NON_AUTHORITATIVE_NAVIGATION_DOGFOOD"
+}

@@ -1,0 +1,73 @@
+{
+  "admissionGates": [
+    {
+      "gate": "G1_REFERENCE_SUPPORT",
+      "rule": "Every projected region must be backed by multiple normalized external ReferenceIdentities or one strongly coherent identity plus externally supported internal topology. No internal Ordivon theory may satisfy this gate."
+    },
+    {
+      "gate": "G2_NAVIGATION_DELETION_HARM",
+      "rule": "Removing the region projection must create material repeated navigation/recovery/exploration loss that cannot be repaired cheaply by neighboring regions plus explicit bridges/axes."
+    },
+    {
+      "gate": "G3_SCOPE_COHERENCE",
+      "rule": "The projection must have an intelligible scope/firewall and avoid mixing arbitrary unrelated fields merely for balance or institutional symmetry."
+    },
+    {
+      "gate": "G4_TOPOLOGY_PRESERVATION",
+      "rule": "The region must preserve multi-placement and cross-cutting BRIDGE/AXIS/INFRASTRUCTURE identities; admission must not force exclusive parentage."
+    },
+    {
+      "gate": "G5_NON_AUTHORITY",
+      "rule": "The region must not create or override external reference identity, owner truth, Foundation standing, closure, or currentness."
+    },
+    {
+      "gate": "G6_OPEN_WORLD",
+      "rule": "Admission is bounded/versioned navigation convenience and never claims exhaustive foundational-space closure."
+    },
+    {
+      "gate": "G7_STABILITY",
+      "rule": "The region should remain useful under plausible addition/removal/reclassification of subspaces; it must not depend on one fragile institutional taxonomy."
+    }
+  ],
+  "admissionState": "CONTRACT_DRAFT_SUPPORTED_NO_REGIONS_ADMITTED",
+  "contractId": "canonical-major-region:contract:v0",
+  "coreDistinction": {
+    "CanonicalMajorRegion": "A generated, stable navigation projection over ReferenceIdentities/relations/archetypes for human and Agent exploration.",
+    "ReferenceIdentity": "An externally evidenced coordinate/identity in the exploration graph.",
+    "law": "CANONICAL_MAJOR_REGION != REFERENCE_IDENTITY != SEMANTIC_AUTHORITY != METAPHYSICAL_ROOT"
+  },
+  "externalReferenceTruthRole": "NONE",
+  "kind": "ordivon.canonical-major-region-projection-contract",
+  "negativeCriteria": [
+    "Independent university department or degree program is insufficient.",
+    "Professional society or funding division is insufficient.",
+    "High publication volume or historical age is insufficient.",
+    "Graph degree/centrality is insufficient.",
+    "Being deep, useful, measurable or important is insufficient.",
+    "Being a BRIDGE/AXIS/INFRASTRUCTURE alone does not require a major-region projection.",
+    "A coherent field with zero primitives is not disqualified.",
+    "A field being derived or subordinate does not make it unreal or unworthy of explicit identity."
+  ],
+  "ordivonLensBasis": [
+    "L-SCD-HYPERGRAPH",
+    "L-CP-ZERO-PRIMITIVE",
+    "L-NETWORK-RESPONSIBILITY",
+    "L-WORLD-DERIVED-REAL",
+    "L-HUMAN-DEEP-NOT-PRIMITIVE",
+    "L-NORMATIVE-NONNUMBERED-CORE",
+    "L-ATLAS-PROJECTION-NOT-TRUTH"
+  ],
+  "projectionShape": {
+    "admissionEvidence": "Gate-by-gate dogfood result",
+    "anchorRefs": "Optional high-salience ReferenceIdentity refs; anchor != semantic root",
+    "closureClaim": "NONE by default",
+    "crossCuttingRefs": "BRIDGE/AXIS/INFRASTRUCTURE refs displayed across region boundaries",
+    "label": "Human-facing navigation label",
+    "memberRefs": "ReferenceIdentity refs; non-exclusive membership allowed",
+    "regionRef": "navigation-region:<stable-slug>",
+    "sourceBasisRefs": "External reference evidence/provenance that supports member identities, not authority for the projection itself",
+    "version": "Region projection version"
+  },
+  "schemaVersion": 1,
+  "truthRole": "NON_AUTHORITATIVE_NAVIGATION_PROJECTION_CONTRACT"
+}

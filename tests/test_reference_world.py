@@ -377,6 +377,146 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
         self.assertEqual(a["canonicalMajorRegionReadiness"], "NOT_READY_BREADTH_RESIDUALS_AND_CRITERIA_PENDING")
 
 
+    def test_ordivon_internal_lenses_cannot_mint_external_reference_truth(self) -> None:
+        lenses = json.loads((ROOT / "reference/ordivon-theory-lenses-for-reference-cartography-20260819.json").read_text())
+        self.assertEqual(lenses["truthRole"], "INTERNAL_ANALYTIC_LENS_NOT_EXTERNAL_EVIDENCE")
+        self.assertIn("MUST NOT", lenses["rule"])
+        self.assertIn("INTERNAL_ORDIVON_THEORY != EXTERNAL_EVIDENCE", lenses["derivedControls"])
+        self.assertGreaterEqual(len(lenses["lenses"]), 6)
+
+    def test_round3a_closes_bounded_breadth_residual_set_without_world_closure(self) -> None:
+        r3 = json.loads((ROOT / "reference/foundational-census-round3a-breadth-normalization-20260819.json").read_text())
+        self.assertEqual(r3["state"], "ROUND3A_COMPLETE_BREADTH_RESIDUAL_SET_ZERO_FOR_V0_CENSUS")
+        self.assertEqual(len(r3["normalizedSpaces"]), 17)
+        self.assertTrue(all(x["rootAdmission"] == "NOT_ADMITTED" for x in r3["normalizedSpaces"]))
+        self.assertIn("OPEN_WORLD", r3["closure"])
+
+    def test_round3a_engineering_residuals_are_explicit_but_subordinate(self) -> None:
+        r3 = json.loads((ROOT / "reference/foundational-census-round3a-breadth-normalization-20260819.json").read_text())
+        by = {x["spaceRef"]: x for x in r3["normalizedSpaces"]}
+        refs = [
+            "norm:mechanical-engineering", "norm:electrical-electronic-engineering", "norm:civil-structural-engineering",
+            "norm:chemical-engineering", "norm:computer-engineering", "norm:software-engineering", "norm:control-engineering",
+            "norm:environmental-engineering", "norm:energy-engineering"
+        ]
+        for ref in refs:
+            self.assertIn(ref, by)
+            self.assertEqual(by[ref]["rootAdmission"], "NOT_ADMITTED")
+            self.assertTrue(any("ENGINEERING" in role or "INTERVENTION" in role or "REALIZATION" in role or "CONTROL" in role for role in by[ref]["roleClasses"]), ref)
+
+    def test_round3a_residuals_preserve_process_bridge_and_composite_roles(self) -> None:
+        r3 = json.loads((ROOT / "reference/foundational-census-round3a-breadth-normalization-20260819.json").read_text())
+        by = {x["spaceRef"]: x for x in r3["normalizedSpaces"]}
+        self.assertIn("BRIDGE_DOMAIN", by["norm:biochemistry"]["roleClasses"])
+        self.assertIn("PROCESS_AXIS", by["norm:developmental-biology"]["roleClasses"])
+        self.assertIn("FUNCTION_AXIS", by["norm:physiology"]["roleClasses"])
+        self.assertIn("CONCEPTUAL_BRIDGE", by["norm:philosophy-of-mind"]["roleClasses"])
+        self.assertIn("TEXTUAL_METHOD_AXIS", by["norm:philology"]["roleClasses"])
+        self.assertIn("COMPOSITE_DOMAIN", by["norm:food-science"]["roleClasses"])
+
+    def test_round3b_major_region_is_projection_not_reference_identity(self) -> None:
+        c = json.loads((ROOT / "reference/canonical-major-region-projection-contract-v0-20260819.json").read_text())
+        distinction = c["coreDistinction"]
+        self.assertIn("CANONICAL_MAJOR_REGION != REFERENCE_IDENTITY", distinction["law"])
+        self.assertEqual(c["truthRole"], "NON_AUTHORITATIVE_NAVIGATION_PROJECTION_CONTRACT")
+        self.assertEqual(c["externalReferenceTruthRole"], "NONE")
+        self.assertEqual(c["admissionState"], "CONTRACT_DRAFT_SUPPORTED_NO_REGIONS_ADMITTED")
+
+    def test_round3b_major_region_contract_forbids_institutional_and_graph_self_admission(self) -> None:
+        c = json.loads((ROOT / "reference/canonical-major-region-projection-contract-v0-20260819.json").read_text())
+        negative = " | ".join(c["negativeCriteria"])
+        for phrase in ("university department", "Professional society", "publication volume", "Graph degree", "deep, useful"):
+            self.assertIn(phrase, negative)
+        gates = {g["gate"] for g in c["admissionGates"]}
+        self.assertEqual(gates, {"G1_REFERENCE_SUPPORT", "G2_NAVIGATION_DELETION_HARM", "G3_SCOPE_COHERENCE", "G4_TOPOLOGY_PRESERVATION", "G5_NON_AUTHORITY", "G6_OPEN_WORLD", "G7_STABILITY"})
+
+    def test_round3b_dogfood_admits_only_multi_identity_navigation_projections_after_bounded_tests(self) -> None:
+        d = json.loads((ROOT / "reference/canonical-major-region-admission-dogfood-20260819.json").read_text())
+        self.assertEqual(d["state"], "BOUNDED_NAVIGATION_AND_PERTURBATION_DOGFOOD_COMPLETE")
+        self.assertEqual(len(d["admittedRegions"]), 6)
+        self.assertEqual(d["deferredRegions"], ["candidate-region:historical-symbolic"])
+        self.assertEqual(len(d["rejectedOrNotAdmitted"]), 6)
+        by = {x["candidateRef"]: x for x in d["results"]}
+        for ref in d["admittedRegions"]:
+            self.assertEqual(by[ref]["admission"], "ADMITTED_NAVIGATION_PROJECTION_V0")
+            self.assertEqual(by[ref]["gateResults"]["G2_NAVIGATION_DELETION_HARM"], "PASS_BOUNDED_FIXTURES")
+            self.assertEqual(by[ref]["gateResults"]["G7_STABILITY"], "PASS_BOUNDED_PERTURBATION")
+        self.assertEqual(by["candidate-region:historical-symbolic"]["admission"], "DEFERRED")
+        for ref in d["rejectedOrNotAdmitted"]:
+            self.assertEqual(by[ref]["admission"], "REJECTED_OR_NOT_ADMITTED")
+
+    def test_major_region_projection_set_is_non_authoritative_nonexclusive_and_open_world(self) -> None:
+        pset = json.loads((ROOT / "reference/canonical-major-regions-v0-20260819.json").read_text())
+        self.assertEqual(pset["truthRole"], "NON_AUTHORITATIVE_NAVIGATION_PROJECTION")
+        self.assertTrue(pset["openWorld"])
+        self.assertEqual(pset["closureClaim"], "NONE")
+        self.assertEqual(pset["coverageCrosswalk"], "NOT_STARTED")
+        self.assertEqual(len(pset["regions"]), 6)
+        for region in pset["regions"]:
+            self.assertEqual(region["kind"], "CANONICAL_MAJOR_REGION_PROJECTION")
+            self.assertEqual(region["membershipSemantics"], "NON_EXCLUSIVE")
+            self.assertEqual(region["closureClaim"], "NONE")
+            self.assertGreaterEqual(len(region["memberRefs"]), 5)
+            self.assertEqual(len(region["anchorRefs"]), 3)
+
+    def test_major_region_navigation_fixtures_show_bounded_deletion_harm(self) -> None:
+        d = json.loads((ROOT / "reference/canonical-major-region-admission-dogfood-20260819.json").read_text())
+        self.assertGreaterEqual(len(d["navigationFixtures"]), 10)
+        for f in d["navigationFixtures"]:
+            self.assertEqual(f["result"], "PASS")
+            self.assertGreaterEqual(f["deletionCostIncrease"], 2)
+
+    def test_historical_symbolic_region_is_deferred_for_later_social_cultural_boundary(self) -> None:
+        pset = json.loads((ROOT / "reference/canonical-major-regions-v0-20260819.json").read_text())
+        self.assertEqual(len(pset["deferred"]), 1)
+        self.assertIn("social/cultural", pset["deferred"][0]["reason"])
+        labels = {r["label"] for r in pset["regions"]}
+        self.assertNotIn("Historical, Linguistic & Interpretive", labels)
+
+    def test_round3a_relations_resolve_across_all_normalized_rounds(self) -> None:
+        paths = [
+            "reference/foundational-census-round2a-normalization-20260819.json",
+            "reference/foundational-census-round2b-normalization-20260819.json",
+            "reference/foundational-census-round2c-residual-normalization-20260819.json",
+            "reference/foundational-census-round3a-breadth-normalization-20260819.json",
+        ]
+        rounds = [json.loads((ROOT / p).read_text()) for p in paths]
+        refs = {x["spaceRef"] for r in rounds for x in r["normalizedSpaces"]}
+        for rel in rounds[-1]["relations"]:
+            self.assertIn(rel["from"], refs, rel)
+            self.assertIn(rel["to"], refs, rel)
+
+
+    def test_whole_audit_v3_closes_bounded_v0_residual_not_open_world_census(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v3-20260819.json").read_text())
+        self.assertEqual(a["state"], "V0_BOUNDED_BREADTH_NORMALIZED_OPEN_WORLD_CENSUS_CONTINUES")
+        self.assertEqual(a["counts"]["v0BreadthResidual"], 0)
+        self.assertEqual(a["censusSemantics"]["openWorldCensusStatus"], "OPEN_NOT_EXHAUSTIVE")
+        self.assertIn("!=", a["censusSemantics"]["law"])
+
+    def test_whole_audit_v3_graph_integrity_and_major_region_projection_counts(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v3-20260819.json").read_text())
+        self.assertEqual(a["counts"]["normalizedSpaces"], 71)
+        self.assertEqual(a["counts"]["relations"], 74)
+        self.assertEqual(a["counts"]["identityLabelCollisions"], 0)
+        self.assertEqual(a["counts"]["brokenRelations"], 0)
+        self.assertEqual(a["counts"]["canonicalMajorRegionProjections"], 6)
+        self.assertEqual(a["counts"]["deferredMajorRegionCandidates"], 1)
+
+    def test_whole_audit_v3_keeps_internal_lenses_and_major_regions_non_authoritative(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v3-20260819.json").read_text())
+        self.assertEqual(a["ordivonTheoryUse"]["status"], "ADMITTED_AS_INTERNAL_ANALYTIC_LENSES_ONLY")
+        self.assertIn("cannot count as external", a["ordivonTheoryUse"]["firewall"])
+        self.assertIn("CANONICAL_MAJOR_REGION != REFERENCE_IDENTITY", a["majorRegionProjection"]["law"])
+        self.assertEqual(a["majorRegionProjection"]["closureClaim"], "NONE")
+        self.assertEqual(a["majorRegionProjection"]["membershipSemantics"], "NON_EXCLUSIVE")
+
+    def test_whole_audit_v3_only_enables_bounded_crosswalk_pilot(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v3-20260819.json").read_text())
+        self.assertEqual(a["coverageCrosswalkReadiness"], "READY_FOR_BOUNDED_PILOT_NOT_GLOBAL_COVERAGE_SCORE")
+        self.assertIn("do not publish scalar global coverage percentages", a["next"])
+
+
 
 if __name__ == "__main__":
     unittest.main()

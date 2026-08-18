@@ -1,0 +1,61 @@
+{
+  "closure": "ROUND3A_BOUNDED_BREADTH_RESIDUAL_SET_COMPLETE_OPEN_WORLD_CENSUS_CONTINUES",
+  "controls": [
+    "All 17 prior breadth residuals have explicit normalized identities/roles.",
+    "All Round3A rootAdmissions remain NOT_ADMITTED.",
+    "Engineering specializations may be explicit without peer-major-region promotion.",
+    "Stable bridge/process/function/composite roles are preserved instead of flattened.",
+    "Bounded residual zero does not imply open-world foundational closure.",
+    "Ordivon internal lenses do not count as external evidence."
+  ],
+  "counts": {
+    "findings": 6,
+    "normalizedSpaces": 17,
+    "relations": 28,
+    "sources": 12
+  },
+  "date": "2026-08-19",
+  "findings": [
+    {
+      "claim": "Planetary Science is a first-class comparative planetary-systems domain bridging astronomy and Earth/geoscience, but not yet an independent canonical major region.",
+      "id": "FCR3A-1",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Biochemistry, Microbiology, Developmental Biology and Physiology are stable life-science identities with different bridge/process/function roles; none requires wholesale root promotion.",
+      "id": "FCR3A-2",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Engineering specialties are best represented as explicit major subspaces/intervention bridges under the broader Engineering/Design topology, not as peer foundational regions by institutional symmetry.",
+      "id": "FCR3A-3",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Philosophy of Mind is a major philosophical subspace and cognition bridge; Philology is a historical-language/textual bridge and method axis.",
+      "id": "FCR3A-4",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Food Science is a stable applied/composite domain spanning chemistry, biology, microbiology, engineering and human/nutrition boundaries rather than a foundational major region.",
+      "id": "FCR3A-5",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "All 17 residual candidates from the v0 broad census are now explicitly normalized; this closes only that bounded residual set, not the open-world foundational census.",
+      "id": "FCR3A-6",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.foundational-census-round3a-acceptance",
+  "output": "reference/foundational-census-round3a-breadth-normalization-20260819.json",
+  "schemaVersion": 1,
+  "state": "ROUND3A_COMPLETE_BREADTH_RESIDUAL_SET_ZERO_FOR_V0_CENSUS",
+  "truthRole": "HISTORICAL_RESEARCH_EVIDENCE",
+  "verification": {
+    "fullDeterministicSuiteJob": "job-01a015de-7247-7081-8b43-9b68ba01394e",
+    "fullDeterministicSuiteResult": "92 tests OK; 28 pre-existing gated tests skipped; 64 deterministic tests executed.",
+    "referenceSuiteJob": "job-01a015de-4d27-7ba0-8c32-c6abf566e045",
+    "referenceSuiteResult": "55/55 PASS"
+  }
+}
