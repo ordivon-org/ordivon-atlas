@@ -246,3 +246,48 @@ Key retrieval aliases / pressure terms:
 - Praxis rejected / Finite Situated Intelligence not admitted
 - DecisionLocalStandingEnvelope rejected / universal Standing schema rejected
 - EXISTING_CONTRACTS_SEMANTICALLY_SUFFICIENT / NO_NEW_CONTRACT / NO_NEW_SCHEMA / NO_NEW_OWNER
+
+
+## Episode 9 — Network -> Interlocus Re-understanding / Engineering Contraction
+
+Atlas synthesis:
+
+- `synthesis/2026-08-19-interlocus-reunderstanding/README.md`
+- `synthesis/2026-08-19-interlocus-reunderstanding/core-law-and-locus-reconstruction.md`
+- `synthesis/2026-08-19-interlocus-reunderstanding/engineering-and-action-boundary.md`
+- `synthesis/2026-08-19-interlocus-reunderstanding/anti-rediscovery.md`
+- `synthesis/2026-08-19-interlocus-reunderstanding/assimilation-manifest.md`
+- `synthesis/research-process-lineage/episodes/2026-08-19-network-to-interlocus-reunderstanding-and-engineering-contraction.md`
+
+Primary Host source fences:
+
+- `task:interlocus-owner-name-transition-20260819@3`
+- `task:interlocus-locus-reconstruction-20260819@5`
+- `task:interlocus-independent-core-reconstruction-20260819@6`
+- `task:interlocus-engineering-practical-pass-20260819@7`
+- `task:interlocus-capability-path-explanation-dogfood-20260819@4`
+- `task:interlocus-counterfactual-capability-repair-20260819@6`
+- `task:interlocus-consumer-value-dogfood-20260819@7`
+- `task:interlocus-harness-normative-action-admission-20260819@4`
+- `task:interlocus-current-project-synthesis-20260819@3`
+
+Reference engineering lineage:
+
+- validator/projector commit `3e05f5372a2995544ad5081f9f85308aa2b3a7f1`
+- local ref `refs/ordivon/research/interlocus-capability-explanation-validator-v0-20260819`
+
+Key retrieval aliases / pressure terms:
+
+- Network -> Interlocus / Interlocus Capability / why rename Network
+- Communicability -> InterLocusCapability / communication not universal carrier
+- locus not node / scope-relative locus / overlapping loci / no Locus Foundation
+- six-law basis falsified / C3 grounding repair / C7 Conservative Warrant
+- Well-Founded Warrant / grounded recursion / same-slice self-certification
+- Capability Path Explanation / warrant DAG / why not usable
+- branch failure != target failure / blocker necessity witness
+- Counterfactual Repair / target revision != repair / hypothetical effect != actual fact
+- failed premise vs blocker vs necessary/sufficient/minimal repair
+- decision compression / no witness -> no cross-role conclusion
+- technically sufficient != permitted != selected != executable
+- Required != Capable / no third action-admission contract
+- evidence-triggered reopen / no NDF6 / no Core Theory v2 / no autonomous repair
