@@ -1668,6 +1668,42 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
         self.assertIn("CONTROL_STRENGTHENING != COVERAGE_CHANGE", a["laws"])
 
 
+    def test_owner_topology_gap_audit_identifies_exact_two_zero_touch_regions(self) -> None:
+        a = json.loads((ROOT / "reference/owner-topology-gap-candidate-audit-v0-20260819.json").read_text())
+        by = {x["regionRef"]: x for x in a["zeroTouchRegions"]}
+        self.assertEqual(set(by), {"navigation-region:physical-material", "navigation-region:earth-planetary-space"})
+        self.assertEqual(by["navigation-region:physical-material"]["memberCount"], 10)
+        self.assertEqual(by["navigation-region:earth-planetary-space"]["memberCount"], 14)
+        self.assertTrue(all(x["mappedMemberCount"] == 0 for x in by.values()))
+        self.assertTrue(all(x["currentOwnerScopeCandidateState"] == "NO_CURRENT_PUBLISHED_OWNER_SCOPE_CANDIDATE_FOUND" for x in by.values()))
+
+    def test_owner_topology_gap_audit_checks_all_current_owners_but_preserves_unavailable_cases(self) -> None:
+        a = json.loads((ROOT / "reference/owner-topology-gap-candidate-audit-v0-20260819.json").read_text())
+        self.assertEqual(len(a["ownerApplicabilityRows"]), 10)
+        self.assertTrue(all(x["candidateState"] == "NO_TARGET_REGION_SCOPE_CANDIDATE_IN_CURRENT_CROSSWALK" for x in a["ownerApplicabilityRows"]))
+        self.assertEqual(len(a["publicationUnavailableCases"]), 2)
+        names = {x["owner"] for x in a["publicationUnavailableCases"]}
+        self.assertEqual(names, {"Finance", "Harness"})
+        self.assertIn("PUBLICATION_UNAVAILABLE_OWNER_MAY_NOT_BE_TREATED_AS_NEGATIVE_EVIDENCE", a["laws"])
+
+    def test_owner_topology_gap_candidate_is_not_untouched_or_new_owner_admission(self) -> None:
+        a = json.loads((ROOT / "reference/owner-topology-gap-candidate-audit-v0-20260819.json").read_text())
+        self.assertIn("NO_CURRENT_PUBLISHED_OWNER_SCOPE_CANDIDATE != ORDIVON_UNTOUCHED", a["laws"])
+        self.assertIn("NO_CURRENT_OWNER_CANDIDATE != PERMANENT_OWNER_ABSENCE", a["laws"])
+        self.assertIn("OWNER_TOPOLOGY_GAP_CANDIDATE != AUTOMATIC_NEW_OWNER_ADMISSION", a["laws"])
+        self.assertIn("CURRENT_CROSSWALK_CANDIDATE_SET != COMPLETE_FUTURE_RESEARCH_SPACE", a["laws"])
+
+    def test_whole_audit_v14_adds_owner_gap_classification_with_zero_topology_change(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v14-owner-topology-gaps-20260819.json").read_text())
+        c = a["counts"]
+        self.assertEqual((c["normalizedSpaces"], c["relations"], c["canonicalMajorRegionProjections"]), (122, 263, 10))
+        self.assertEqual((c["crosswalkMappings"], c["mappedUniqueIdentities"], c["noDirectMappingCurrentPilot"]), (26, 25, 97))
+        self.assertEqual((c["ownerTopologyGapCandidateRegions"], c["ownerTopologyGapCandidateMembers"]), (2, 24))
+        self.assertEqual((c["currentOwnersAudited"], c["publicationUnavailableOwners"]), (10, 2))
+        self.assertEqual((c["newOwnersAdmitted"], c["newMappings"], c["newIdentities"], c["newMajorRegions"]), (0, 0, 0, 0))
+        self.assertIn("NO_NEW_OWNER_ADMISSION", a["state"])
+
+
 
 if __name__ == "__main__":
     unittest.main()

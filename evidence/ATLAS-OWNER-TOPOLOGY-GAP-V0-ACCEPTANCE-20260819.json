@@ -1,0 +1,36 @@
+{
+  "audit": "reference/owner-topology-gap-candidate-audit-v0-20260819.json",
+  "closure": "CURRENT_OWNER_TOPOLOGY_GAP_CANDIDATES_ACCEPTED_NO_NEW_OWNER_ADMISSION",
+  "controls": [
+    "Exactly two current MajorRegions are zero-direct-touch",
+    "All ten current source-fenced owners were checked through admitted crosswalk candidates",
+    "Finance and Harness publication-unavailable states are preserved and not used as negative evidence",
+    "Gap candidate does not imply untouchedness, permanent owner absence, or automatic new-owner admission",
+    "Zero topology and coverage change"
+  ],
+  "counts": {
+    "canonicalMajorRegionProjections": 10,
+    "crosswalkMappings": 26,
+    "currentOwnersAudited": 10,
+    "mappedUniqueIdentities": 25,
+    "newIdentities": 0,
+    "newMajorRegions": 0,
+    "newMappings": 0,
+    "newOwnersAdmitted": 0,
+    "noDirectMappingCurrentPilot": 97,
+    "normalizedSpaces": 122,
+    "ownerTopologyGapCandidateMembers": 24,
+    "ownerTopologyGapCandidateRegions": 2,
+    "publicationUnavailableOwners": 2,
+    "relations": 263
+  },
+  "date": "2026-08-19",
+  "kind": "ordivon.owner-topology-gap-v0-acceptance",
+  "schemaVersion": 1,
+  "state": "TWO_CURRENT_OWNER_TOPOLOGY_GAP_CANDIDATE_REGIONS_ESTABLISHED_NO_NEW_OWNER_ADMISSION",
+  "verification": {
+    "full": "198 OK; 28 gated skips; 170 deterministic",
+    "reference": "161/161 PASS"
+  },
+  "wholeAudit": "reference/foundational-whole-topology-audit-v14-owner-topology-gaps-20260819.json"
+}

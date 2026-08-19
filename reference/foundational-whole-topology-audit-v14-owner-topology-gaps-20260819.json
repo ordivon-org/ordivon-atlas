@@ -1,0 +1,81 @@
+{
+  "auditId": "foundational-topology-audit:v14-owner-topology-gaps:2026-08-19",
+  "breadthPosture": "PAUSED_TARGETED_OWNER_GAP_DIAGNOSTICS_ALLOWED",
+  "counts": {
+    "canonicalMajorRegionProjections": 10,
+    "crosswalkMappings": 26,
+    "currentOwnersAudited": 10,
+    "mappedUniqueIdentities": 25,
+    "newIdentities": 0,
+    "newMajorRegions": 0,
+    "newMappings": 0,
+    "newOwnersAdmitted": 0,
+    "noDirectMappingCurrentPilot": 97,
+    "normalizedSpaces": 122,
+    "ownerTopologyGapCandidateMembers": 24,
+    "ownerTopologyGapCandidateRegions": 2,
+    "publicationUnavailableOwners": 2,
+    "relations": 263
+  },
+  "coveragePosture": "IDENTITY_LEVEL_SOURCE_FENCED_PARENT_NON_LIFTING_ENFORCED",
+  "findings": [
+    {
+      "claim": "Physical & Material and Earth/Planetary/Space are the only current MajorRegions with zero mapped members.",
+      "id": "FTA14-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "No source-fenced mapping candidate from any of the ten current owners reaches any member of those two regions.",
+      "id": "FTA14-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The strongest justified current classification is NO_CURRENT_PUBLISHED_OWNER_SCOPE_CANDIDATE_FOUND, not untouchedness or permanent semantic-owner absence.",
+      "id": "FTA14-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Finance and Harness publication-unavailable states prevent treating the current owner topology as exhaustive negative evidence.",
+      "id": "FTA14-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "A future expansion decision in these regions must discriminate hidden/unpublished owner, legitimate existing-owner extension, and genuinely absent semantic programme before proposing a new owner.",
+      "id": "FTA14-5",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "gapCandidates": [
+    {
+      "memberCount": 10,
+      "regionRef": "navigation-region:physical-material",
+      "state": "NO_CURRENT_PUBLISHED_OWNER_SCOPE_CANDIDATE_FOUND"
+    },
+    {
+      "memberCount": 14,
+      "regionRef": "navigation-region:earth-planetary-space",
+      "state": "NO_CURRENT_PUBLISHED_OWNER_SCOPE_CANDIDATE_FOUND"
+    }
+  ],
+  "kind": "ordivon.whole-foundational-topology-audit",
+  "laws": [
+    "NO_CURRENT_PUBLISHED_OWNER_SCOPE_CANDIDATE != ORDIVON_UNTOUCHED",
+    "NO_CURRENT_OWNER_CANDIDATE != PERMANENT_OWNER_ABSENCE",
+    "OWNER_TOPOLOGY_GAP_CANDIDATE != AUTOMATIC_NEW_OWNER_ADMISSION",
+    "PUBLICATION_UNAVAILABLE_OWNER_MAY_NOT_BE_NEGATIVE_EVIDENCE",
+    "CURRENT_OWNER_TOPOLOGY != FUTURE_OWNER_TOPOLOGY",
+    "ZERO_DIRECT_TOUCH_REGION != ZERO_RESEARCH_HISTORY",
+    "OWNER_GAP_CLASSIFICATION != RESEARCH_PRIORITY_SCORE"
+  ],
+  "next": "Before any new owner proposal, run hypothesis-discrimination on one zero-touch region: search existing Ordivon owner corpora/legacy research for hidden relevant work, then compare against existing owner boundary extension criteria. Do not create a Physics/Earth owner from Reference absence alone.",
+  "ownerTopologyPosture": "CURRENT_PUBLISHED_OWNER_SET_NONEXHAUSTIVE_TWO_GAP_CANDIDATE_REGIONS",
+  "schemaVersion": 14,
+  "sourceFence": {
+    "crosswalk": "reference/coverage-crosswalk-foundational-pilot-v0-9-20260819.json",
+    "externalReferenceBranchBase": "6a47e9a555ef81b1381ce12b020487af96635dec",
+    "ownerGapAudit": "reference/owner-topology-gap-candidate-audit-v0-20260819.json",
+    "ownerSnapshot": "reference/coverage-crosswalk-owner-authority-snapshot-v0-5-20260819.json"
+  },
+  "state": "TWO_CURRENT_OWNER_TOPOLOGY_GAP_CANDIDATE_REGIONS_ESTABLISHED_NO_NEW_OWNER_ADMISSION",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_AUDIT"
+}

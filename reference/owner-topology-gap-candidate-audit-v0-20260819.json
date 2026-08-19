@@ -1,0 +1,226 @@
+{
+  "auditId": "owner-topology-gap:v0:2026-08-19",
+  "closure": "CURRENT_OWNER_TOPOLOGY_GAP_CANDIDATES_ESTABLISHED_FOR_TWO_REGIONS_ONLY",
+  "findings": [
+    {
+      "claim": "Physical & Material and Earth/Planetary/Space are the only current MajorRegions with zero directly mapped member identities.",
+      "id": "OTG-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Across all ten current source-fenced owner publications as represented by the admitted crosswalk, no owner mapping candidate reaches any member identity of those two regions.",
+      "id": "OTG-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "This supports a bounded state NO_CURRENT_PUBLISHED_OWNER_SCOPE_CANDIDATE_FOUND, which is stronger than simple no-mapping but weaker than untouchedness or permanent owner absence.",
+      "id": "OTG-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Finance and Harness publication-unavailable states prevent treating the current owner topology as exhaustive negative evidence.",
+      "id": "OTG-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "These two regions are currently the clearest places where future Ordivon expansion may require either a genuinely new semantic owner, publication of an already-existing hidden/mature owner, or later evidence that an existing owner legitimately extends scope; the audit does not choose among these.",
+      "id": "OTG-5",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.owner-topology-gap-candidate-audit",
+  "laws": [
+    "NO_CURRENT_PUBLISHED_OWNER_SCOPE_CANDIDATE != ORDIVON_UNTOUCHED",
+    "NO_CURRENT_OWNER_CANDIDATE != PERMANENT_OWNER_ABSENCE",
+    "ZERO_DIRECT_TOUCH_REGION != ZERO_RESEARCH_HISTORY",
+    "PUBLICATION_UNAVAILABLE_OWNER_MAY_NOT_BE_TREATED_AS_NEGATIVE_EVIDENCE",
+    "FUTURE_OWNER_TOPOLOGY_MAY_EXPAND",
+    "OWNER_TOPOLOGY_GAP_CANDIDATE != AUTOMATIC_NEW_OWNER_ADMISSION",
+    "REGION_MEMBERSHIP != OWNER_SCOPE",
+    "CURRENT_CROSSWALK_CANDIDATE_SET != COMPLETE_FUTURE_RESEARCH_SPACE"
+  ],
+  "next": "Do not create Physics/Chemistry/Earth owners from this diagnostic. First distinguish three hypotheses per region: hidden/unpublished existing owner, legitimate extension of an existing owner, or genuinely absent semantic programme. Finance/Harness unlocks should be rechecked before any new-owner proposal.",
+  "ownerApplicabilityRows": [
+    {
+      "candidateState": "NO_TARGET_REGION_SCOPE_CANDIDATE_IN_CURRENT_CROSSWALK",
+      "currentMappedExternalRefs": [
+        "norm:computation"
+      ],
+      "evidenceBasis": "Current crosswalk mappings are source-fenced to owner AuthorityVersionRef/basisResultRefs; this audit does not infer beyond published candidate mappings.",
+      "ownerResearchRef": "research-owner:computational-possibility",
+      "sourceFencedMappingCount": 1
+    },
+    {
+      "candidateState": "NO_TARGET_REGION_SCOPE_CANDIDATE_IN_CURRENT_CROSSWALK",
+      "currentMappedExternalRefs": [],
+      "evidenceBasis": "Current crosswalk mappings are source-fenced to owner AuthorityVersionRef/basisResultRefs; this audit does not infer beyond published candidate mappings.",
+      "ownerResearchRef": "research-owner:game",
+      "sourceFencedMappingCount": 1
+    },
+    {
+      "candidateState": "NO_TARGET_REGION_SCOPE_CANDIDATE_IN_CURRENT_CROSSWALK",
+      "currentMappedExternalRefs": [
+        "norm:workflow-process-systems",
+        "norm:provenance-information-lineage"
+      ],
+      "evidenceBasis": "Current crosswalk mappings are source-fenced to owner AuthorityVersionRef/basisResultRefs; this audit does not infer beyond published candidate mappings.",
+      "ownerResearchRef": "research-owner:host",
+      "sourceFencedMappingCount": 2
+    },
+    {
+      "candidateState": "NO_TARGET_REGION_SCOPE_CANDIDATE_IN_CURRENT_CROSSWALK",
+      "currentMappedExternalRefs": [
+        "norm:psychology",
+        "norm:cognitive-science",
+        "norm:consciousness-science",
+        "norm:affective-science",
+        "norm:developmental-science",
+        "norm:linguistics",
+        "norm:neuroscience",
+        "norm:genetics",
+        "norm:evolutionary-biology",
+        "norm:physiology"
+      ],
+      "evidenceBasis": "Current crosswalk mappings are source-fenced to owner AuthorityVersionRef/basisResultRefs; this audit does not infer beyond published candidate mappings.",
+      "ownerResearchRef": "research-owner:human",
+      "sourceFencedMappingCount": 10
+    },
+    {
+      "candidateState": "NO_TARGET_REGION_SCOPE_CANDIDATE_IN_CURRENT_CROSSWALK",
+      "currentMappedExternalRefs": [
+        "norm:communication-studies",
+        "norm:media-studies",
+        "norm:semiotics",
+        "norm:human-computer-interaction"
+      ],
+      "evidenceBasis": "Current crosswalk mappings are source-fenced to owner AuthorityVersionRef/basisResultRefs; this audit does not infer beyond published candidate mappings.",
+      "ownerResearchRef": "research-owner:media",
+      "sourceFencedMappingCount": 4
+    },
+    {
+      "candidateState": "NO_TARGET_REGION_SCOPE_CANDIDATE_IN_CURRENT_CROSSWALK",
+      "currentMappedExternalRefs": [
+        "norm:networking-communication"
+      ],
+      "evidenceBasis": "Current crosswalk mappings are source-fenced to owner AuthorityVersionRef/basisResultRefs; this audit does not infer beyond published candidate mappings.",
+      "ownerResearchRef": "research-owner:network",
+      "sourceFencedMappingCount": 1
+    },
+    {
+      "candidateState": "NO_TARGET_REGION_SCOPE_CANDIDATE_IN_CURRENT_CROSSWALK",
+      "currentMappedExternalRefs": [
+        "norm:ethics-value-theory"
+      ],
+      "evidenceBasis": "Current crosswalk mappings are source-fenced to owner AuthorityVersionRef/basisResultRefs; this audit does not infer beyond published candidate mappings.",
+      "ownerResearchRef": "research-owner:ordivon-normative",
+      "sourceFencedMappingCount": 1
+    },
+    {
+      "candidateState": "NO_TARGET_REGION_SCOPE_CANDIDATE_IN_CURRENT_CROSSWALK",
+      "currentMappedExternalRefs": [
+        "norm:systems-fundamentals",
+        "norm:operating-systems"
+      ],
+      "evidenceBasis": "Current crosswalk mappings are source-fenced to owner AuthorityVersionRef/basisResultRefs; this audit does not infer beyond published candidate mappings.",
+      "ownerResearchRef": "research-owner:runtime",
+      "sourceFencedMappingCount": 2
+    },
+    {
+      "candidateState": "NO_TARGET_REGION_SCOPE_CANDIDATE_IN_CURRENT_CROSSWALK",
+      "currentMappedExternalRefs": [
+        "norm:formal-semantics",
+        "norm:formal-methods"
+      ],
+      "evidenceBasis": "Current crosswalk mappings are source-fenced to owner AuthorityVersionRef/basisResultRefs; this audit does not infer beyond published candidate mappings.",
+      "ownerResearchRef": "research-owner:semantics-of-computational-descriptions",
+      "sourceFencedMappingCount": 2
+    },
+    {
+      "candidateState": "NO_TARGET_REGION_SCOPE_CANDIDATE_IN_CURRENT_CROSSWALK",
+      "currentMappedExternalRefs": [
+        "norm:metaphysics",
+        "norm:philosophy-of-science"
+      ],
+      "evidenceBasis": "Current crosswalk mappings are source-fenced to owner AuthorityVersionRef/basisResultRefs; this audit does not infer beyond published candidate mappings.",
+      "ownerResearchRef": "research-owner:world",
+      "sourceFencedMappingCount": 2
+    }
+  ],
+  "publicationUnavailableCases": [
+    {
+      "owner": "Finance",
+      "reason": "Known mature research exists but owner-current Atlas publication is absent; exclusion != untouched research.",
+      "status": "NOT_IN_CURRENT_10_OWNER_ATLAS_SOURCE_REGISTRY"
+    },
+    {
+      "owner": "Harness",
+      "reason": "Active research/currentness work is ongoing and no settled owner-current Atlas publication is admitted; exclusion != untouched research.",
+      "status": "NOT_IN_CURRENT_10_OWNER_ATLAS_SOURCE_REGISTRY"
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceFence": {
+    "crosswalk": "reference/coverage-crosswalk-foundational-pilot-v0-9-20260819.json",
+    "frontierMatrix": "reference/external-reference-frontier-matrix-v0-2-20260819.json",
+    "majorRegions": "reference/canonical-major-regions-v0-10-20260819.json",
+    "ownerSnapshot": "reference/coverage-crosswalk-owner-authority-snapshot-v0-5-20260819.json"
+  },
+  "state": "TWO_ZERO_TOUCH_REGIONS_HAVE_NO_CURRENT_PUBLISHED_OWNER_SCOPE_CANDIDATE",
+  "truthRole": "NON_AUTHORITATIVE_FRONTIER_DIAGNOSTIC",
+  "zeroTouchRegions": [
+    {
+      "anchorRefs": [
+        "norm:physics",
+        "norm:chemistry",
+        "norm:materials"
+      ],
+      "currentOwnerScopeCandidateState": "NO_CURRENT_PUBLISHED_OWNER_SCOPE_CANDIDATE_FOUND",
+      "interpretation": "Under the exact current ten-owner source-fenced publication/crosswalk surface, no admitted owner-native mapping candidate reaches any member of this region. This is a current owner-topology gap candidate, not evidence that Ordivon has never researched the domain or that a new owner must be created.",
+      "label": "Physical & Material",
+      "mappedMemberCount": 0,
+      "memberCount": 10,
+      "memberRefs": [
+        "norm:physics",
+        "norm:chemistry",
+        "norm:condensed-matter",
+        "norm:chemical-physics",
+        "norm:materials",
+        "norm:biochemistry",
+        "norm:analytical-chemistry",
+        "norm:food-science",
+        "norm:measurement",
+        "norm:polymer-science"
+      ],
+      "regionRef": "navigation-region:physical-material"
+    },
+    {
+      "anchorRefs": [
+        "norm:earth-science",
+        "norm:planetary-science",
+        "norm:astronomy"
+      ],
+      "currentOwnerScopeCandidateState": "NO_CURRENT_PUBLISHED_OWNER_SCOPE_CANDIDATE_FOUND",
+      "interpretation": "Under the exact current ten-owner source-fenced publication/crosswalk surface, no admitted owner-native mapping candidate reaches any member of this region. This is a current owner-topology gap candidate, not evidence that Ordivon has never researched the domain or that a new owner must be created.",
+      "label": "Earth, Planetary & Space Systems",
+      "mappedMemberCount": 0,
+      "memberCount": 14,
+      "memberRefs": [
+        "norm:earth-science",
+        "norm:geology",
+        "norm:geophysics",
+        "norm:geochemistry",
+        "norm:atmospheric-science",
+        "norm:oceanography",
+        "norm:climate-science",
+        "norm:physical-geography",
+        "norm:planetary-science",
+        "norm:astronomy",
+        "norm:cosmology",
+        "norm:geography",
+        "norm:agriculture",
+        "norm:soil-science"
+      ],
+      "regionRef": "navigation-region:earth-planetary-space"
+    }
+  ]
+}
