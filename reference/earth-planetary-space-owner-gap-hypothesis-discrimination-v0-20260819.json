@@ -1,0 +1,138 @@
+{
+  "auditId": "earth-planetary-space-owner-gap:hypothesis-v0:2026-08-19",
+  "findings": [
+    {
+      "claim": "Earth/Planetary/Space is internally heterogeneous: cosmology/spacetime is a known-but-unworked World frontier, whereas Earth-system sciences lack a dedicated current research programme in the bounded scan.",
+      "id": "EPSH-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "World cannot be lifted into Earth/Space field ownership because current World authority excludes domain-specific mechanisms and explicitly records cosmology/spacetime as unexplored.",
+      "id": "EPSH-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "No dedicated current Earth/Planetary/Space semantic programme was found in sampled current owner corpora.",
+      "id": "EPSH-3",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "The strongest current region-level posture is dedicated owner not established with heterogeneous research standing; untouchedness is not established and no owner is admitted.",
+      "id": "EPSH-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "hypotheses": [
+    {
+      "evidence": [
+        "Human current corpus targeted scan returned zero dedicated Earth/geoscience/climate/astronomy/planetary programme hits.",
+        "Shared Research current corpus targeted scan returned zero dedicated hits.",
+        "Computing matches were concentrated in industrial-history/methodology evidence rather than an Earth/Space semantic owner.",
+        "World has limited cosmology/spacetime frontier material but no dedicated Earth-system sciences programme surface."
+      ],
+      "id": "H1",
+      "interpretation": "No current dedicated Earth/Planetary/Space programme was found in the bounded current-corpus scan. This does not establish exhaustive historical absence.",
+      "name": "HIDDEN_OR_UNPUBLISHED_EXISTING_DEDICATED_PROGRAMME",
+      "standing": "NOT_FOUND_IN_BOUNDED_CURRENT_CORPUS_SCAN"
+    },
+    {
+      "candidateOwner": "research-owner:world",
+      "evidence": [
+        "World owner contract owns cross-domain Reality semantics and thin cross-regime grammar, but excludes domain-specific mechanisms.",
+        "World current-stage closeout labels relativity/spacetime/cosmology as an Unexplored continent rather than current owned field truth.",
+        "Earth-system disciplines such as geology, atmospheric science, oceanography, climate science and soil science do not appear as current World owner-native programmes."
+      ],
+      "id": "H2",
+      "interpretation": "World may own generic Reality abstractions discovered through future Earth/space research, but current owner authority cannot be lifted into geoscience, climate, astronomy or planetary-science field coverage.",
+      "name": "LEGITIMATE_EXTENSION_OF_EXISTING_OWNER",
+      "standing": "CURRENT_WORLD_EXTENSION_REJECTED_BY_OWNER_BOUNDARY"
+    },
+    {
+      "evidence": [
+        "No current published owner mapping candidate reaches any of the 14 region members.",
+        "Bounded current-corpus scan found no dedicated programme.",
+        "Legacy conversations, non-current repositories and future owner formation are not exhaustively closed."
+      ],
+      "id": "H3",
+      "interpretation": "Dedicated current owner/programme is not established; permanent or historical absence is not established.",
+      "name": "GENUINELY_ABSENT_SEMANTIC_PROGRAMME",
+      "standing": "CANDIDATE_NOT_ESTABLISHED"
+    }
+  ],
+  "internalStrata": [
+    {
+      "basis": "World explicitly records relativity/spacetime/cosmology as an Unexplored continent; cosmology appears as a retained burden/continent, not admitted field coverage. Astronomy and planetary science remain adjacent external identities without current owner mapping.",
+      "label": "Cosmology / spacetime-adjacent frontier",
+      "memberRefs": [
+        "norm:cosmology",
+        "norm:astronomy",
+        "norm:planetary-science"
+      ],
+      "state": "KNOWN_UNWORKED_OR_UNSYSTEMATIC_WORLD_FRONTIER",
+      "stratumId": "EPS-S1"
+    },
+    {
+      "basis": "Current sampled owner corpora did not reveal a dedicated Earth-system semantic programme; this is bounded non-finding, not untouchedness.",
+      "label": "Earth-system sciences",
+      "memberRefs": [
+        "norm:earth-science",
+        "norm:geology",
+        "norm:geophysics",
+        "norm:geochemistry",
+        "norm:atmospheric-science",
+        "norm:oceanography",
+        "norm:climate-science",
+        "norm:physical-geography",
+        "norm:geography",
+        "norm:soil-science"
+      ],
+      "state": "NO_DEDICATED_CURRENT_RESEARCH_FOUND_IN_BOUNDED_SCAN",
+      "stratumId": "EPS-S2"
+    },
+    {
+      "basis": "Agriculture spans Earth/Life/Engineering navigation and has no current source-fenced owner mapping; region membership does not imply Earth-system ownership.",
+      "label": "Cross-region applied/natural systems",
+      "memberRefs": [
+        "norm:agriculture"
+      ],
+      "state": "CROSS_REGION_IDENTITY_WITH_NO_CURRENT_OWNER_MAPPING",
+      "stratumId": "EPS-S3"
+    }
+  ],
+  "kind": "ordivon.owner-topology-gap-hypothesis-discrimination",
+  "laws": [
+    "KNOWN_FRONTIER != RESEARCHED_FRONTIER",
+    "UNEXPLORED_IN_ONE_OWNER != ORDIVON_HISTORICALLY_UNTOUCHED",
+    "NO_DEDICATED_RESEARCH_FOUND != PERMANENT_ABSENCE",
+    "REGION_INTERNAL_HETEROGENEITY_MUST_BE_PRESERVED",
+    "WORLD_GENERIC_REALITY_SCOPE != EARTH_OR_SPACE_FIELD_AUTHORITY",
+    "OWNER_BOUNDARY_BLOCKS_SCOPE_LIFT",
+    "BOUNDED_CORPUS_SCAN != EXHAUSTIVE_ORDIVON_HISTORY",
+    "CROSS_REGION_MEMBERSHIP != OWNER_SCOPE"
+  ],
+  "next": "Do not force one Earth/Space project from the region projection. If a project proposal is considered, separate at least cosmology/spacetime from Earth-system sciences and test each for owner coherence, non-duplication and practical research tractability.",
+  "result": {
+    "crosswalkChange": "NONE",
+    "currentDedicatedOwnerStanding": "NOT_ESTABLISHED",
+    "currentState": "HETEROGENEOUS_KNOWN_UNWORKED_AND_NO_DEDICATED_RESEARCH_FOUND_OWNER_NOT_ESTABLISHED",
+    "existingOwnerExtension": "NONE",
+    "majorRegionChange": "NONE",
+    "newOwnerAdmission": "NONE",
+    "untouchedStanding": "NOT_ESTABLISHED"
+  },
+  "schemaVersion": 1,
+  "sourceFence": {
+    "externalReferenceHeadBase": "a811337983b3cdf187c0777f2add513aeeb1af53",
+    "ownerGapAudit": "reference/owner-topology-gap-candidate-audit-v0-20260819.json",
+    "worldCurrentSource": "methodology-survival-world-current-20260819@78980cbee6333cf0de0d972913f5a612a77ab357",
+    "worldOwnerFirstLookup": "docs/research/world/README.md"
+  },
+  "state": "HETEROGENEOUS_KNOWN_UNWORKED_AND_NO_DEDICATED_RESEARCH_FOUND_OWNER_NOT_ESTABLISHED",
+  "target": {
+    "label": "Earth, Planetary & Space Systems",
+    "memberCount": 14,
+    "priorState": "NO_CURRENT_PUBLISHED_OWNER_SCOPE_CANDIDATE_FOUND",
+    "regionRef": "navigation-region:earth-planetary-space"
+  },
+  "truthRole": "NON_AUTHORITATIVE_FRONTIER_DIAGNOSTIC"
+}

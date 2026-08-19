@@ -1,0 +1,60 @@
+{
+  "auditId": "foundational-topology-audit:v16-earth-space-owner-gap-discrimination:2026-08-19",
+  "counts": {
+    "canonicalMajorRegionProjections": 10,
+    "crosswalkMappings": 26,
+    "earthPlanetarySpaceMembers": 14,
+    "mappedUniqueIdentities": 25,
+    "newIdentities": 0,
+    "newMajorRegions": 0,
+    "newMappings": 0,
+    "newOwnersAdmitted": 0,
+    "newRelations": 0,
+    "noDirectMappingCurrentPilot": 97,
+    "normalizedSpaces": 122,
+    "ownerTopologyGapCandidateRegions": 2,
+    "relations": 263
+  },
+  "earthPlanetarySpacePosture": "HETEROGENEOUS_KNOWN_UNWORKED_AND_NO_DEDICATED_RESEARCH_FOUND_OWNER_NOT_ESTABLISHED",
+  "findings": [
+    {
+      "claim": "The two zero-touch owner-gap candidate regions have different research histories: Physical/Material has substantial World residual pressure; Earth/Space is heterogeneous with known-unworked cosmology/spacetime and weak Earth-system programme evidence.",
+      "id": "FTA16-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Region-level symmetry cannot justify copying owner-gap classifications across regions.",
+      "id": "FTA16-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "No dedicated current Earth/Planetary/Space programme was found in the bounded sampled owner corpora.",
+      "id": "FTA16-3",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "No owner, mapping, identity, relation or MajorRegion is admitted by the Earth/Space discrimination.",
+      "id": "FTA16-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.whole-foundational-topology-audit",
+  "laws": [
+    "OWNER_GAP_REGIONS_NEED_NOT_SHARE_RESEARCH_HISTORY",
+    "KNOWN_FRONTIER != RESEARCHED_FRONTIER",
+    "REGION_INTERNAL_HETEROGENEITY_MUST_BE_PRESERVED",
+    "UNEXPLORED_IN_ONE_OWNER != ORDIVON_HISTORICALLY_UNTOUCHED",
+    "OWNER_BOUNDARY_BLOCKS_SCOPE_LIFT",
+    "HYPOTHESIS_DISCRIMINATION != OWNER_ADMISSION"
+  ],
+  "next": "Pause zero-touch region classification after both candidate regions have independent hypothesis audits. Next high-information work should compare whether any owner-gap finding warrants a separate project-proposal process; Atlas itself must not auto-create projects or owners.",
+  "physicalMaterialPosture": "RESEARCH_PRESSURE_PRESENT_DEDICATED_OWNER_NOT_ESTABLISHED",
+  "schemaVersion": 16,
+  "sourceFence": {
+    "earthSpaceDiscrimination": "reference/earth-planetary-space-owner-gap-hypothesis-discrimination-v0-20260819.json",
+    "externalReferenceBranchBase": "a811337983b3cdf187c0777f2add513aeeb1af53",
+    "physicalDiscrimination": "reference/physical-material-owner-gap-hypothesis-discrimination-v0-20260819.json"
+  },
+  "state": "EARTH_SPACE_HETEROGENEOUS_OWNER_GAP_DISCRIMINATED_NO_ADMISSION",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_AUDIT"
+}

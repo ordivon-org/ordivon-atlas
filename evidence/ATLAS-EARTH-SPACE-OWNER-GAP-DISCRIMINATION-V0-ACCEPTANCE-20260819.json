@@ -1,0 +1,35 @@
+{
+  "closure": "EARTH_SPACE_HETEROGENEOUS_OWNER_GAP_ACCEPTED_NO_ADMISSION",
+  "controls": [
+    "World unexplored cosmology frontier does not mint cosmology coverage",
+    "Earth-system bounded non-finding does not mint historical untouchedness",
+    "Region internal heterogeneity is preserved",
+    "Physical and Earth owner-gap research histories remain distinct",
+    "No owner/mapping/identity/relation/region admission"
+  ],
+  "counts": {
+    "canonicalMajorRegionProjections": 10,
+    "crosswalkMappings": 26,
+    "earthPlanetarySpaceMembers": 14,
+    "mappedUniqueIdentities": 25,
+    "newIdentities": 0,
+    "newMajorRegions": 0,
+    "newMappings": 0,
+    "newOwnersAdmitted": 0,
+    "newRelations": 0,
+    "noDirectMappingCurrentPilot": 97,
+    "normalizedSpaces": 122,
+    "ownerTopologyGapCandidateRegions": 2,
+    "relations": 263
+  },
+  "date": "2026-08-19",
+  "discrimination": "reference/earth-planetary-space-owner-gap-hypothesis-discrimination-v0-20260819.json",
+  "kind": "ordivon.earth-space-owner-gap-discrimination-v0-acceptance",
+  "schemaVersion": 1,
+  "state": "EARTH_SPACE_HETEROGENEOUS_OWNER_GAP_DISCRIMINATED_NO_ADMISSION",
+  "verification": {
+    "full": "208 OK; 28 gated skips; 180 deterministic",
+    "reference": "171/171 PASS"
+  },
+  "wholeAudit": "reference/foundational-whole-topology-audit-v16-earth-space-owner-gap-discrimination-20260819.json"
+}

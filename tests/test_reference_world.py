@@ -1754,6 +1754,49 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
         self.assertIn("HYPOTHESIS_DISCRIMINATION != OWNER_ADMISSION", a["laws"])
 
 
+    def test_earth_space_hypothesis_discrimination_preserves_internal_heterogeneity(self) -> None:
+        a = json.loads((ROOT / "reference/earth-planetary-space-owner-gap-hypothesis-discrimination-v0-20260819.json").read_text())
+        self.assertEqual(a["state"], "HETEROGENEOUS_KNOWN_UNWORKED_AND_NO_DEDICATED_RESEARCH_FOUND_OWNER_NOT_ESTABLISHED")
+        strata = {x["stratumId"]: x for x in a["internalStrata"]}
+        self.assertEqual(strata["EPS-S1"]["state"], "KNOWN_UNWORKED_OR_UNSYSTEMATIC_WORLD_FRONTIER")
+        self.assertEqual(strata["EPS-S2"]["state"], "NO_DEDICATED_CURRENT_RESEARCH_FOUND_IN_BOUNDED_SCAN")
+        self.assertEqual(strata["EPS-S3"]["state"], "CROSS_REGION_IDENTITY_WITH_NO_CURRENT_OWNER_MAPPING")
+        self.assertIn("REGION_INTERNAL_HETEROGENEITY_MUST_BE_PRESERVED", a["laws"])
+
+    def test_world_unexplored_cosmology_frontier_does_not_mint_cosmology_coverage(self) -> None:
+        a = json.loads((ROOT / "reference/earth-planetary-space-owner-gap-hypothesis-discrimination-v0-20260819.json").read_text())
+        h2 = next(x for x in a["hypotheses"] if x["id"] == "H2")
+        self.assertEqual(h2["standing"], "CURRENT_WORLD_EXTENSION_REJECTED_BY_OWNER_BOUNDARY")
+        self.assertIn("Unexplored continent", h2["evidence"][1])
+        self.assertEqual(a["result"]["existingOwnerExtension"], "NONE")
+        self.assertEqual(a["result"]["crosswalkChange"], "NONE")
+        self.assertIn("KNOWN_FRONTIER != RESEARCHED_FRONTIER", a["laws"])
+
+    def test_earth_system_nonfinding_is_bounded_not_historical_untouchedness(self) -> None:
+        a = json.loads((ROOT / "reference/earth-planetary-space-owner-gap-hypothesis-discrimination-v0-20260819.json").read_text())
+        self.assertEqual(a["result"]["untouchedStanding"], "NOT_ESTABLISHED")
+        self.assertEqual(a["result"]["currentDedicatedOwnerStanding"], "NOT_ESTABLISHED")
+        self.assertIn("NO_DEDICATED_RESEARCH_FOUND != PERMANENT_ABSENCE", a["laws"])
+        self.assertIn("BOUNDED_CORPUS_SCAN != EXHAUSTIVE_ORDIVON_HISTORY", a["laws"])
+        h3 = next(x for x in a["hypotheses"] if x["id"] == "H3")
+        self.assertEqual(h3["standing"], "CANDIDATE_NOT_ESTABLISHED")
+
+    def test_physical_and_earth_owner_gaps_have_distinct_research_histories(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v16-earth-space-owner-gap-discrimination-20260819.json").read_text())
+        self.assertEqual(a["physicalMaterialPosture"], "RESEARCH_PRESSURE_PRESENT_DEDICATED_OWNER_NOT_ESTABLISHED")
+        self.assertEqual(a["earthPlanetarySpacePosture"], "HETEROGENEOUS_KNOWN_UNWORKED_AND_NO_DEDICATED_RESEARCH_FOUND_OWNER_NOT_ESTABLISHED")
+        self.assertNotEqual(a["physicalMaterialPosture"], a["earthPlanetarySpacePosture"])
+        self.assertIn("OWNER_GAP_REGIONS_NEED_NOT_SHARE_RESEARCH_HISTORY", a["laws"])
+
+    def test_whole_audit_v16_changes_no_topology_or_owner_authority(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v16-earth-space-owner-gap-discrimination-20260819.json").read_text())
+        c = a["counts"]
+        self.assertEqual((c["normalizedSpaces"], c["relations"], c["canonicalMajorRegionProjections"]), (122, 263, 10))
+        self.assertEqual((c["crosswalkMappings"], c["mappedUniqueIdentities"], c["noDirectMappingCurrentPilot"]), (26, 25, 97))
+        self.assertEqual((c["newOwnersAdmitted"], c["newMappings"], c["newIdentities"], c["newRelations"], c["newMajorRegions"]), (0, 0, 0, 0, 0))
+        self.assertIn("NO_ADMISSION", a["state"])
+
+
 
 if __name__ == "__main__":
     unittest.main()
