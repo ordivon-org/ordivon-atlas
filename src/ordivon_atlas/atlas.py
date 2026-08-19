@@ -170,6 +170,34 @@ def _result_classification(publication: dict[str, Any], result_ref: str) -> dict
     }
 
 
+def _owner_descriptor(publication: dict[str, Any], owner_ref: str) -> dict[str, Any]:
+    canonical_name: Any = None
+    canonical_referent: Any = None
+    historical_names: list[str] = []
+    for statement in publication.get("statements", []):
+        if not isinstance(statement, dict) or statement.get("subjectRef") != owner_ref or statement.get("scope") != "OWNER":
+            continue
+        predicate = statement.get("predicate")
+        value = statement.get("value")
+        if predicate == "CANONICAL_NAME":
+            canonical_name = value
+        elif predicate == "CANONICAL_REFERENT":
+            canonical_referent = value
+        elif predicate == "HISTORICAL_NAME":
+            if isinstance(value, list):
+                historical_names.extend(str(item) for item in value)
+            elif value is not None:
+                historical_names.append(str(value))
+    descriptor: dict[str, Any] = {}
+    if canonical_name is not None:
+        descriptor["canonicalName"] = canonical_name
+    if canonical_referent is not None:
+        descriptor["canonicalReferent"] = canonical_referent
+    if historical_names:
+        descriptor["historicalNames"] = sorted(set(historical_names))
+    return descriptor
+
+
 class Atlas:
     """Generated projection over owner-native publication surfaces.
 
@@ -330,6 +358,7 @@ class Atlas:
                 "projectionCurrentness": HealthState.CURRENT_TO_SOURCE,
                 "retainedFromPreviousProjection": False,
                 "sourceTransportRevision": obs.transportRevision,
+                **_owner_descriptor(obs.publication, obs.ownerResearchRef),
             })
             history.extend(self._publication_history(specs[obs.ownerResearchRef], obs))
             source_fence = {

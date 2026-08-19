@@ -1,0 +1,39 @@
+{
+  "date": "2026-08-19",
+  "initialFailureJob": "job-01a0160c-dccb-7c52-87e9-a005dcf8f5cb",
+  "kind": "ordivon.atlas-live-currentness-expectation-repair",
+  "nonChanges": [
+    "No owner publication was altered to satisfy tests.",
+    "No historical authority version was deleted.",
+    "No SCD expectation caused the Runtime/Normative/Network advances.",
+    "Repair changes only live-test currentness expectations to already-observed CURRENT_TO_SOURCE facts."
+  ],
+  "repairs": [
+    {
+      "current": "sha256:9c67d1b4094ce85a2465579430bb1a941f1923457087fb74cde0642d7b9a51b3",
+      "disposition": "Old expected authority retained as HISTORICAL_NOT_CURRENT; new current added as RUNTIME_V6.",
+      "oldExpectedCurrent": "sha256:e06cac5f69942068fabe80dc5da22fc1fb566d3004ce4951df545534fda289d9",
+      "owner": "research-owner:runtime",
+      "transport": "256ef6d0080de38c028a70e27cbaa08e0f817edb"
+    },
+    {
+      "current": "sha256:91fe75c4827585487a5aadb8c55816b6628cda314bdbb79bdbe2554246a7b579",
+      "disposition": "Old expected authority now asserted SOURCE_ADVANCED_STALE; current authority preserved.",
+      "oldExpectedCurrent": "sha256:6558bc84bb52a3a0ffbff0f683a36d46c28efc0f2ba531d4458bd5aa16a4a56e",
+      "owner": "research-owner:ordivon-normative",
+      "transport": "aae7e71ea8aa13624d69ab94ad165dac744b2ad4"
+    },
+    {
+      "currentSharedTransport": "aae7e71ea8aa13624d69ab94ad165dac744b2ad4",
+      "disposition": "Shared physical transport fence updated without merging semantic authorities.",
+      "oldExpectedSharedTransport": "edfb2bb80803a586636804015169f0c01d6e9709",
+      "owner": "research-owner:network + research-owner:ordivon-normative"
+    }
+  ],
+  "schemaVersion": 1,
+  "state": "REPAIRED_AND_LIVE_VERIFIED",
+  "trigger": "All-owner live regression during SCD assimilation exposed three stale test expectations that no longer matched already-current owner publications.",
+  "truthRole": "HISTORICAL_TEST_CURRENTNESS_REPAIR_EVIDENCE",
+  "verification": "12/12 existing Atlas live + SCD live tests PASS after repair.",
+  "verificationJob": "job-01a0160e-954e-7c82-9954-50131af896a4"
+}

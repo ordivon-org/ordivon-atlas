@@ -17,11 +17,11 @@ def run(*args: str, cwd: Path | None = None) -> str:
     return proc.stdout.strip()
 
 
-def write_publication(work: Path, *, owner: str = "fixture", authority: str = "authority:fixture", recovery: str = "research/README.md", corrupt_digest: bool = False) -> tuple[str, SourceSpec]:
+def write_publication(work: Path, *, owner: str = "fixture", authority: str = "authority:fixture", recovery: str = "research/README.md", corrupt_digest: bool = False, statements: list[dict] | None = None) -> tuple[str, SourceSpec]:
     root = work / "research"
     (root / "authority/publications").mkdir(parents=True, exist_ok=True)
     (root / "README.md").write_text("fixture\n")
-    payload = {"schemaVersion": 1, "kind": "ordivon.research-owner-publication", "profile": "NATIVE", "authorityRef": authority, "ownerResearchRef": f"research-owner:{owner}", "source": {"kind": "git", "repository": str(work), "authorityBranch": "refs/heads/main", "sourceRevision": "fixture", "corpusRoot": "research"}, "currentRecovery": {"targetRole": "OWNER_RESEARCH_CORPUS", "locator": recovery}, "statements": [], "closeouts": [{"researchRef": "research:fixture", "profile": "NATIVE", "resultRefs": ["result:fixture"], "closure": [{"scope": "ITEM", "status": "ESTABLISHED"}], "residualState": "NONE", "reopenPolicy": "UNKNOWN"}]}
+    payload = {"schemaVersion": 1, "kind": "ordivon.research-owner-publication", "profile": "NATIVE", "authorityRef": authority, "ownerResearchRef": f"research-owner:{owner}", "source": {"kind": "git", "repository": str(work), "authorityBranch": "refs/heads/main", "sourceRevision": "fixture", "corpusRoot": "research"}, "currentRecovery": {"targetRole": "OWNER_RESEARCH_CORPUS", "locator": recovery}, "statements": list(statements or []), "closeouts": [{"researchRef": "research:fixture", "profile": "NATIVE", "resultRefs": ["result:fixture"], "closure": [{"scope": "ITEM", "status": "ESTABLISHED"}], "residualState": "NONE", "reopenPolicy": "UNKNOWN"}]}
     content = json.dumps(payload, indent=2, sort_keys=True) + "\n"
     digest = hashlib.sha256(content.encode()).hexdigest()
     (root / f"authority/publications/{digest}.json").write_text(content)
@@ -55,6 +55,21 @@ class AtlasTests(unittest.TestCase):
         self.assertEqual(obs.health, HealthState.CURRENT_TO_SOURCE)
         self.assertEqual(compare_projected_version(version, obs), HealthState.CURRENT_TO_SOURCE)
         self.assertEqual(compare_projected_version("sha256:" + "1" * 64, obs), HealthState.SOURCE_ADVANCED_STALE)
+
+    def test_owner_descriptor_projects_canonical_name_without_changing_identity(self) -> None:
+        td, work = self.fixture_repo(); self.addCleanup(td.cleanup)
+        statements = [
+            {"predicate": "CANONICAL_NAME", "scope": "OWNER", "subjectRef": "research-owner:fixture", "value": "Interlocus"},
+            {"predicate": "CANONICAL_REFERENT", "scope": "OWNER", "subjectRef": "research-owner:fixture", "value": "Interlocus Capability"},
+            {"predicate": "HISTORICAL_NAME", "scope": "OWNER", "subjectRef": "research-owner:fixture", "value": "Network"},
+            {"predicate": "OWNER_BINDING", "scope": "OWNER", "subjectRef": "research-owner:fixture", "value": "fixture"},
+        ]
+        _, spec = write_publication(work, statements=statements)
+        owner = Atlas([spec]).build()["owners"][0]
+        self.assertEqual(owner["ownerResearchRef"], "research-owner:fixture")
+        self.assertEqual(owner["canonicalName"], "Interlocus")
+        self.assertEqual(owner["canonicalReferent"], "Interlocus Capability")
+        self.assertEqual(owner["historicalNames"], ["Network"])
 
     def test_digest_mismatch_fails_closed(self) -> None:
         td, work = self.fixture_repo(); self.addCleanup(td.cleanup)
