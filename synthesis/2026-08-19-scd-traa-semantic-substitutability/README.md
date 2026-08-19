@@ -7,14 +7,18 @@
 - owner: Semantics of Computational Descriptions (SCD), upstream only
 - programmeStanding: `DERIVED_THEORY_CANDIDATE / CONTINUED_FALSIFICATION / NOT_FROZEN`
 - Atlas purpose: discovery, anti-rediscovery, process recovery, and cross-owner boundary comprehension
+- manualCurrentness: `SOURCE_ADVANCED_STALE` relative to current owner recovery
+- current owner recovery: `task:scd-traa-derived-theory-live-dogfood-20260819@7`
+
+> **Currentness notice:** this collection is the non-authoritative historical synthesis of the owner state assimilated at `@5`. The owner research has advanced to `@7`. Recover `@7` before present-tense use. This notice does not import the later owner semantics into Atlas.
 
 `AtlasSynthesis != SCDOwnerTruth`
 
 This collection does **not** reproduce the SCD owner note or SCDF registry. It compresses the research transition and points to the current owner-side materialization.
 
-## Current source fences
+## Source fences at the @5 assimilation
 
-Authoritative/current owner-side sources at this assimilation:
+The following owner-side sources were authoritative/current at the time of this assimilation:
 
 - Computing commit: `50c65fafb37a29b8f1c25a7ea2a92eff99c0b5de`
 - owner note: `research/core/semantics-of-computational-descriptions/TRAA-DERIVED-THEORY-CANDIDATE-LIVE-DOGFOOD-20260819.md`
@@ -114,9 +118,11 @@ The remaining novelty hypothesis is narrow and **OPEN**: Agent-visible abstracti
 
 Do not present this as established originality.
 
-## Current next frontier
+## Historical @5 next frontier — not current recovery guidance
 
-If this route is reopened, start from the current owner note and Host task, not from the original conversation. The next useful falsifiers are:
+The bullets below preserve the frontier as it stood at the `@5` assimilation. They are historical process memory, not a current roadmap. **Do not resume them as current work.** First recover `task:scd-traa-derived-theory-live-dogfood-20260819@7` and revalidate the owner frontier.
+
+At the @5 source fence, the next useful falsifiers were:
 
 - lexical/randomized attractor ablations;
 - open-world support-closure tests separating absent, unknown and explicitly unestablished edges;

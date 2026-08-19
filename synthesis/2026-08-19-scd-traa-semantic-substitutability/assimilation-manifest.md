@@ -4,6 +4,14 @@
 
 This manifest records what was intentionally copied, compressed, pointed to, or omitted so Atlas does not become a second SCD authority.
 
+## Manual currentness disposition
+
+- represented owner continuity: `task:scd-traa-derived-theory-live-dogfood-20260819@5`
+- current owner recovery: `task:scd-traa-derived-theory-live-dogfood-20260819@7`
+- manual synthesis currentness: `SOURCE_ADVANCED_STALE`
+
+The source owner has advanced beyond the state summarized here. Treat this manifest and its sibling synthesis as historical @5 recovery/process memory until revalidated against the current owner. This currentness repair does **not** copy @6/@7 owner conclusions into Atlas.
+
 | Material | Classification | Atlas treatment |
 |---|---|---|
 | SCD TRAA current derived-theory note | `ALREADY_DURABLE` | pointer + compact current-standing summary only |
