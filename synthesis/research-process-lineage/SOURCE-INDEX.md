@@ -163,3 +163,43 @@ Key retrieval aliases / pressure terms:
 - problem-space / representation-space / search-space / evaluation-space challenge
 - epistemic attractor / unformulated question space
 - do-not-collapse / premature-convergence veto
+
+
+## Episode 7 — RSI / PAL Standing, Action, Causal Reach, and Governance
+
+Atlas synthesis:
+
+- `synthesis/2026-08-19-rsi-pal-action-governance/README.md`
+- `synthesis/2026-08-19-rsi-pal-action-governance/anti-rediscovery.md`
+- `synthesis/2026-08-19-rsi-pal-action-governance/next-frontier-handoff.md`
+- `synthesis/research-process-lineage/episodes/2026-08-19-rsi-pal-standing-action-governance.md`
+
+Owner source fences consumed by the conversation:
+
+- Computing / PAL: `ad1bd73d91fa1a2d2a59cac4726b74ac171c457d`
+- Runtime: `256ef6d0080de38c028a70e27cbaa08e0f817edb`
+- Finance: `6ed0730ce6f7b067ddb56d806a744e121b987402`
+- Harness: `277606d67c13203f5c03af97000dfa8b8a54a205`
+- Human: `9c31b842adcb1f5bb22bd3e903784e9f88093b4d`
+- World: `78980cbee6333cf0de0d972913f5a612a77ab357`
+- Normative/shared Research source: `9727aacca2f073b88473d3fbab01c32c6b691359`
+- Interlocus transition workspace head: `6cee31e62d089c9d3ae6387847f1ad13b3cca907`
+
+Host continuity:
+
+- `task:ordivon-conversation-synthesis-atlas-assimilation-20260819` — updated during conversation closeout.
+
+Key retrieval aliases / pressure terms:
+
+- responsibility gap / marginal closure / authority topology fidelity
+- standing-to-action / action admission vs selection / use-relative premise sufficiency
+- hidden action premise / premise blindness / participant closure / dependency closure
+- structural uncertainty / irreversible commitment surface / explicit UNKNOWN
+- causal reach / propagation frontier / control frontier / observation frontier
+- causal gain / generative gain / gain coupling / damping
+- causal capital non-fungibility / gain conversion / conversion bridge
+- rule-use power vs rule-change power / self-amending sufficiency
+- constitutional escape / incumbent challenge monopoly / challenger self-admission
+- plural grounding / ground composition vs aggregation / non-sovereign governance
+- settlement vs resolution / procedural standing / frontier-qualified finality
+- Agenda Power / Option-Space Governance / option generation vs option selection

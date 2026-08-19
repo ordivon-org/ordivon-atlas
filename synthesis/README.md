@@ -61,3 +61,5 @@ The normal `generated/` Atlas is source-fenced and regenerable from owner author
 Future Atlas search/indexing may expose these documents as **synthesis references** or process-lineage references, but must not project them as owner-current semantic results unless an owner publication explicitly admits the underlying claim.
 
 If Atlas later gains a first-class generated Research Episode model, the manual `research-process-lineage/` collection is dogfood/migration evidence, not an automatic schema definition.
+
+- [`2026-08-19-rsi-pal-action-governance/`](2026-08-19-rsi-pal-action-governance/) — hostile cross-owner synthesis from effective-research-constitution reconstruction through Standing→Action, hidden action premises, structural uncertainty, causal reach/gain, gain conversion, recursive governance, constitutional escape, plural grounding and procedural finality; closes with the deliberately selected Agenda Power / Option-Space Governance frontier.
