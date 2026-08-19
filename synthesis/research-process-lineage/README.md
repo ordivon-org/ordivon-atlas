@@ -62,7 +62,7 @@ A destructive/engineering action may enter only when the decision procedure itse
 
 ## Current collection
 
-The manual collection currently preserves eleven high-value 2026-08-18/19 episodes:
+The manual collection currently preserves twelve high-value 2026-08-18/19 episodes:
 
 1. [`episodes/2026-08-18-19-research-understanding-and-anti-rediscovery.md`](episodes/2026-08-18-19-research-understanding-and-anti-rediscovery.md) — why cross-owner semantic compression and anti-rediscovery needed a durable Atlas synthesis layer rather than remaining conversation-only.
 2. [`episodes/2026-08-18-computing-whole-referent-search-a-f.md`](episodes/2026-08-18-computing-whole-referent-search-a-f.md) — how the provisional broad Computing / Programming-Systems umbrella was tested and decomposed into two independent semantic owner lines instead of being declared as a single owner from the start.
@@ -76,6 +76,7 @@ The manual collection currently preserves eleven high-value 2026-08-18/19 episod
 
 10. [`episodes/2026-08-19-scd-traa-destructive-repair-live-dogfood-and-novelty-subtraction.md`](episodes/2026-08-19-scd-traa-destructive-repair-live-dogfood-and-novelty-subtraction.md) — how a loose Agent-context sufficiency question was repeatedly falsified and contracted into a derived SCD semantic-substitutability candidate, then live-dogfooded, support-topology-repaired and novelty-subtracted without creating a new SCDF or production bridge engine.
 11. [`episodes/2026-08-19-rsi-pal-challengeability-persistence-selection.md`](episodes/2026-08-19-rsi-pal-challengeability-persistence-selection.md) — how basis-independence/common-mode pressure was reduced through prior-art subtraction, reinterpreted as PAL/RSI challengeability, then connected to adaptive-transition gaps and historically replayed persistence-selection failure without admitting a new grand theory or central memory authority.
+12. [`episodes/2026-08-19-rsi-pal-option-pressure-deletion-and-capability-topology.md`](episodes/2026-08-19-rsi-pal-option-pressure-deletion-and-capability-topology.md) — delayed-canonicalization continuation of Episode 7 through Option-Space/Pressure theory deletion into an RSI capability topology. It was branch-locally called Episode 10 at `f6bd1a4`; canonical slot 12 avoids renumbering already-current SCD Episode 10 and challengeability Episode 11, and the ordinal is navigation-only rather than event chronology.
 
 See [`LINEAGE-OVERVIEW.md`](LINEAGE-OVERVIEW.md) for the existing Computing/CP combined continuity and [`SOURCE-INDEX.md`](SOURCE-INDEX.md) for durable source pointers. Individual owner-specific episodes are self-contained where they are not part of that Computing continuity.
 

@@ -357,3 +357,43 @@ Key retrieval aliases / pressure terms:
 - persistence-selection bias / closure bias / open residual retention / process-control pivot
 - high-recall candidate capture vs high-precision durable promotion
 - raw historical-cut replay / thin candidate detector
+
+## Episode 12 — RSI / PAL Option-Space and Pressure Theory Deletion -> Capability Topology
+
+Canonicalization note:
+
+- stable semantic/process identity: `synthesis/research-process-lineage/episodes/2026-08-19-rsi-pal-option-pressure-deletion-and-capability-topology.md`
+- source commit: `f6bd1a4adb3a32786020245645c7454c14c75f04`
+- historical branch-local label: `Episode 10`
+- canonical navigation slot: `Episode 12`
+- temporal/source order: this episode predates the currently indexed SCD Episode 10 and RSI/PAL Challengeability Episode 11; the slot 12 assignment records delayed canonical integration and avoids renumbering already-current entries. Episode ordinals are navigation aids, not semantic identity or event-time authority.
+
+Atlas synthesis:
+
+- `synthesis/2026-08-19-rsi-pal-option-pressure-capability/README.md`
+- `synthesis/2026-08-19-rsi-pal-option-pressure-capability/anti-rediscovery.md`
+- `synthesis/2026-08-19-rsi-pal-option-pressure-capability/rsi-capability-topology.md`
+- `synthesis/2026-08-19-rsi-pal-option-pressure-capability/next-frontier-handoff.md`
+- `synthesis/research-process-lineage/episodes/2026-08-19-rsi-pal-option-pressure-deletion-and-capability-topology.md`
+
+Host source fences:
+
+- `task:rsi-pal-agenda-option-space-next-conversation-20260819@20` — research + Atlas closeout; Option-Space Governance and Pressure Formation deleted as universal theories, bounded capability topology retained.
+
+Durable Git source:
+
+- `f6bd1a4adb3a32786020245645c7454c14c75f04` — original remote-durable branch closeout later consumed by the challengeability/persistence study before canonical-main integration.
+
+Key retrieval aliases / pressure terms:
+
+- Option-Space Governance / consideration set / option formation / option selection
+- Pressure Formation / problem finding / problem formulation / research allocation
+- OptionGeneration != OptionSelection
+- KnownTheory != DemonstratedCapability
+- F8A more candidates not better / F11 option-aware not reliable / P9 more evidence not better / C6 more context not enough
+- RSI capability topology / negative vs partial vs non-identifiable deficit
+- F18 support-bound prior revalidation / F19 invariant-bound identity
+- Web render-prior transfer / Media production-prior reuse
+- Security CA7 negative gate / Game fresh-player frontier
+- Host persistence utility design-ready experiment-not-admitted / current RSI task treatment-contaminated
+- unused research capacity acceptable / no second line admitted
