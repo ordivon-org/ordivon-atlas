@@ -1,0 +1,52 @@
+{
+  "atlasBaseRevision": "c6fc241baee0b259c12d96064d00fb9eb1892b42",
+  "closure": "HUMAN_OWNER_PUBLICATION_NINE_OWNER_ATLAS_PARITY_AND_LOCAL_LIVE_BOUNDARY_ACCEPTED_PENDING_MAINLINE_INTEGRATION",
+  "controls": [
+    "Human enters Atlas only from owner-native immutable publication on the repair authority ref.",
+    "HF0-HF23 frozen does not imply sole semantic ownership of mixed HF14-HF18 normative claims.",
+    "HF24 and HOC11 remain UNKNOWN/NOT_ADMITTED.",
+    "HD11-HD16 stage-complete history does not establish whole-Human exhaustion.",
+    "GenericOperationalCoreSufficiency(HOC0-HOC9) falsification and HOC10 admission history remain discoverable.",
+    "OnePersonVector/OneUserProfile universal scalar reductions remain rejected historical models.",
+    "Human applied bridges do not promote new HF/HOC/HD standing.",
+    "Human and Ordivon Normative remain distinct semantic authorities.",
+    "Human live parity is scoped to Human+Normative; global nine-owner currentness is independently evidenced by the nine-owner refresh, avoiding redundant remote work in owner-local tests."
+  ],
+  "date": "2026-08-19",
+  "human": {
+    "authorityRef": "authority:ordivon:research-owner:human",
+    "authorityVersionRef": "sha256:035eaa334ffdfe3ae44236f966176a36ffd772ee8c2e4c4454733ab9699ef392",
+    "closureCount": 16,
+    "currentRecovery": {
+      "authorityRef": "authority:ordivon:research-owner:human",
+      "authorityVersionRef": "sha256:035eaa334ffdfe3ae44236f966176a36ffd772ee8c2e4c4454733ab9699ef392",
+      "locator": "research/core/HUMAN-RESEARCH-CORE.md",
+      "ownerResearchRef": "research-owner:human",
+      "projectionCurrentness": "CURRENT_TO_SOURCE",
+      "retainedFromPreviousProjection": false,
+      "sourceTransportRevision": "cc966bf99458949b59c433a5f7bc8fafe3d692b7",
+      "targetRole": "OWNER_RESEARCH_CORPUS"
+    },
+    "historyPublicationCount": 1,
+    "negativeLineageCount": 12,
+    "ownerResearchRef": "research-owner:human",
+    "resultCount": 30,
+    "sourceTransportRevision": "cc966bf99458949b59c433a5f7bc8fafe3d692b7"
+  },
+  "kind": "ordivon.atlas-human-currentness-publication-acceptance",
+  "schemaVersion": 1,
+  "state": "HUMAN_NINTH_OWNER_CURRENT_TO_SOURCE",
+  "truthRole": "HISTORICAL_PUBLICATION_ASSIMILATION_EVIDENCE",
+  "verification": {
+    "fullDeterministic": "54 tests OK; 39 gated skips; 15 deterministic tests executed.",
+    "fullDeterministicJob": "job-01a01646-c27c-7d90-a31d-90d266206d8b",
+    "initialTargetedLive": "MECHANICAL_TIMEOUT after registry tests because test setup redundantly refreshed all nine remote owners; no semantic failure observed.",
+    "initialTargetedLiveJob": "job-01a01644-74d7-70b3-8992-dcac4536a441",
+    "nineOwnerRefresh": "fullyCurrent=true; owners=9; unhealthy=0",
+    "nineOwnerRefreshJob": "job-01a01642-f70b-7c71-8744-e4f9014875cd",
+    "ownerPublicationIndependentValidation": "PASS; 30 ResultRefs / 132 statements / 4 closeouts / 16 closure rows",
+    "ownerPublicationIndependentValidationJob": "job-01a01641-7f1a-7331-829d-16f128d6df68",
+    "scopedTargetedLive": "12/12 PASS after correctly separating global federation refresh from Human+Normative local parity.",
+    "scopedTargetedLiveJob": "job-01a01646-3871-7201-8272-bc64bb4b4cf6"
+  }
+}

@@ -12,13 +12,15 @@ RUNTIME_V2 = "sha256:e2eb5a6d46c50390ec4b666cd6faba5528ff42b2c9e1bfb75cb45b6c0c4
 RUNTIME_V3 = "sha256:350d042df3c01399cf9314c6954f0c3f4c45bdeb660aa275556e098a77ec62eb"
 RUNTIME_V4 = "sha256:227cc7e253de5fa10be7cbecdfd2e7d84724b507c4a0504836fc63996ac53497"
 RUNTIME_V5 = "sha256:e06cac5f69942068fabe80dc5da22fc1fb566d3004ce4951df545534fda289d9"
+RUNTIME_V6 = "sha256:9c67d1b4094ce85a2465579430bb1a941f1923457087fb74cde0642d7b9a51b3"
 NETWORK_V1 = "sha256:bfadaaaad3b01f9c4388e4e4a75e77c782c2c3111849e5c4598052ec740ee79f"
 NETWORK_V2 = "sha256:dbdbb759b2b86b898a343cbb81646b283c589676989e919537f1a6cbc2b1df91"
 HOST_V1 = "sha256:4fc9dee669927882337649d19c144d0938ecf3307c461bffd84eedb8fdc27df4"
 GAME_V1 = "sha256:b0e16e2cd6fe40685d7b96f94d78ef89bd55ed7f92db4de1408e33d2539bb2f0"
 WORLD_V1 = "sha256:76f3ebc35cc72a67e65cacbcb899d8ccf0919059577c97191c85dc9aed9ede8f"
 NORMATIVE_V1 = "sha256:6558bc84bb52a3a0ffbff0f683a36d46c28efc0f2ba531d4458bd5aa16a4a56e"
-SHARED_REPO_NORMATIVE_TRANSPORT = "edfb2bb80803a586636804015169f0c01d6e9709"
+NORMATIVE_V2 = "sha256:91fe75c4827585487a5aadb8c55816b6628cda314bdbb79bdbe2554246a7b579"
+SHARED_REPO_NORMATIVE_TRANSPORT = "aae7e71ea8aa13624d69ab94ad165dac744b2ad4"
 
 
 @unittest.skipUnless(LIVE, "set ORDIVON_ATLAS_LIVE_TESTS=1 for live remote acceptance")
@@ -40,8 +42,8 @@ class LiveSourceTests(unittest.TestCase):
         spec = self.by_owner["research-owner:runtime"]
         obs = Atlas([spec]).observe(spec)
         self.assertEqual(obs.health, HealthState.CURRENT_TO_SOURCE)
-        self.assertEqual(obs.authorityVersionRef, RUNTIME_V5)
-        for old in (RUNTIME_V1, RUNTIME_V2, RUNTIME_V3, RUNTIME_V4):
+        self.assertEqual(obs.authorityVersionRef, RUNTIME_V6)
+        for old in (RUNTIME_V1, RUNTIME_V2, RUNTIME_V3, RUNTIME_V4, RUNTIME_V5):
             self.assertEqual(compare_projected_version(old, obs), HealthState.SOURCE_ADVANCED_STALE)
 
     def test_runtime_history_preserves_v1_v2_v3_and_current(self) -> None:
@@ -49,9 +51,9 @@ class LiveSourceTests(unittest.TestCase):
         projection = Atlas([spec]).build()
         self.assertEqual(projection["projectionHealth"][0]["health"], HealthState.CURRENT_TO_SOURCE)
         versions = {row.get("authorityVersionRef"): row.get("currentness") for row in projection["history"]}
-        for old in (RUNTIME_V1, RUNTIME_V2, RUNTIME_V3, RUNTIME_V4):
+        for old in (RUNTIME_V1, RUNTIME_V2, RUNTIME_V3, RUNTIME_V4, RUNTIME_V5):
             self.assertEqual(versions[old], "HISTORICAL_NOT_CURRENT")
-        self.assertEqual(versions[RUNTIME_V5], "CURRENT_VERIFIED")
+        self.assertEqual(versions[RUNTIME_V6], "CURRENT_VERIFIED")
 
     def test_live_heterogeneous_result_standing_is_per_result(self) -> None:
         projection = Atlas(self.specs).build()
@@ -114,7 +116,8 @@ class LiveSourceTests(unittest.TestCase):
         self.assertEqual(network_obs.transportRevision, SHARED_REPO_NORMATIVE_TRANSPORT)
         self.assertEqual(normative_obs.transportRevision, SHARED_REPO_NORMATIVE_TRANSPORT)
         self.assertEqual(network_obs.authorityVersionRef, NETWORK_V2)
-        self.assertEqual(normative_obs.authorityVersionRef, NORMATIVE_V1)
+        self.assertEqual(normative_obs.authorityVersionRef, NORMATIVE_V2)
+        self.assertEqual(compare_projected_version(NORMATIVE_V1, normative_obs), HealthState.SOURCE_ADVANCED_STALE)
         self.assertNotEqual(network_obs.authorityVersionRef, normative_obs.authorityVersionRef)
         self.assertEqual(compare_projected_version(NETWORK_V2, network_obs), HealthState.CURRENT_TO_SOURCE)
         self.assertEqual((network_obs.currentRecovery or {}).get("locator"), "owners/network/README.md")
