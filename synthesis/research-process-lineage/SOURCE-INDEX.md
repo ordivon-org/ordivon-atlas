@@ -397,3 +397,60 @@ Key retrieval aliases / pressure terms:
 - Security CA7 negative gate / Game fresh-player frontier
 - Host persistence utility design-ready experiment-not-admitted / current RSI task treatment-contaminated
 - unused research capacity acceptable / no second line admitted
+
+## Episode 13 — Computational Possibility Destructive Audit / Positive Reconstruction
+
+Canonicalization note:
+
+- stable semantic/process identity: `synthesis/research-process-lineage/episodes/2026-08-19-computational-possibility-destructive-audit-and-positive-reconstruction.md`
+- final pinned synthesis ref: `77689c9015bb64ad1e59df5b8898e50af8778926`
+- initial pinned synthesis ref: `7efe7f1cd88cf746cec501018423918a48145e06`
+- historical branch-local label: `Episode 10`
+- canonical navigation slot: `Episode 13`
+- the slot assignment records delayed canonical integration after current slots 10–12 were already in use; ordinal is not event chronology or semantic authority.
+
+Atlas synthesis:
+
+- `synthesis/2026-08-19-computational-possibility-reunderstanding/README.md`
+- `synthesis/2026-08-19-computational-possibility-reunderstanding/core-reconstruction.md`
+- `synthesis/2026-08-19-computational-possibility-reunderstanding/transport-capability-audit.md`
+- `synthesis/2026-08-19-computational-possibility-reunderstanding/consumer-dogfood-and-products.md`
+- `synthesis/2026-08-19-computational-possibility-reunderstanding/anti-rediscovery.md`
+- `synthesis/2026-08-19-computational-possibility-reunderstanding/assimilation-manifest.md`
+- `synthesis/research-process-lineage/episodes/2026-08-19-computational-possibility-destructive-audit-and-positive-reconstruction.md`
+
+Primary Host source fences:
+
+- `task:computational-possibility-achievability-quantifier-audit-20260819@13` — completed Rounds 1–11 destructive audit, deletion/factorization audit and derived calculus materialization.
+- `task:computational-possibility-reunderstanding-synthesis-20260819@7` — completed positive reconstruction, product topology and consumer dogfoods.
+- historical prerequisite `task:computational-possibility-project-formation-20260818@8` — completed project formation.
+
+CP owner commits:
+
+- `5cf8b40886e0089f2097a759fa29c0f2b4992cde` — `DERIVED-TRANSPORT-CAPABILITY-CALCULUS.md` + bounded canonical repairs.
+- `16e2880189a6d9fcbe35134be98f4de23bfb6d81` — `RESEARCH-PRODUCTS.md` + first-reading navigation.
+
+Harness dogfood source:
+
+- Harness head observed `277606d67c13203f5c03af97000dfa8b8a54a205`.
+
+Key retrieval aliases / pressure terms:
+
+- CP re-understanding / second reconstruction / post-formation audit
+- guarded strategy normal form / quantifier opacity
+- claim formation / Underconstituted != Impossible
+- possibility structure / C -> Poss(C)
+- componentwise vs compositional achievability
+- qualified presentation invariance
+- typed transport / theorem variance / upper domination / lower reflection
+- PromiseProblemSolver != OracleCapability
+- ValidOutputRelation != SelectionSemantics
+- PointwiseValidity != HistoryValidity
+- PerCallMarginals != JointLaw
+- Capability Interaction Contract
+- assumption/guarantee capability refinement
+- contract demand vs provider guarantee vs client robustness vs regime power vs hardness
+- SameUsePolicyAdmission != CapabilitySubstitutability
+- ExactRouteUnavailable != GlobalNetworkImpossibility
+- computational inference firewall
+- four CP research-product families

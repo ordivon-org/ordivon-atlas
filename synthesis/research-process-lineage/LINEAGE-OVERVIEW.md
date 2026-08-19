@@ -37,6 +37,20 @@ Owner line T continuation
   -> CP publishes owner-native CURRENT/authority surface
   -> Atlas observes CP CURRENT_TO_SOURCE
   -> current formation cycle closes with no default next specialist route
+
+Post-formation re-understanding
+  -> reopen understanding without assuming architecture must reopen
+  -> hostile quantifier/composition/presentation/transport pressure repairs the explanatory model
+  -> existential achievability survives as guarded strategy normal form
+  -> promise-oracle / relational / stateful / stochastic pressure yields a derived Capability Interaction Contract
+  -> deletion/factorization audit rejects new Foundations, ninth axis and several tempting universal schemas
+  -> Derived Transport & Capability Calculus materializes
+  -> positive reconstruction shifts theory-level picture from `Achievable?` to `C -> Poss(C)`
+  -> four research-product families contract the consumer surface
+  -> Harness dogfood separates route admission from workload-level capability substitution
+  -> Runtime/Interlocus dogfood separates scoped route failure/currentness from global impossibility
+  -> CP independent niche becomes scope-preserving computational inference / computational inference firewall
+  -> Research Product Topology materializes; no default next CP route selected
 ```
 
 ## Why these episodes belong together
