@@ -454,3 +454,36 @@ Key retrieval aliases / pressure terms:
 - ExactRouteUnavailable != GlobalNetworkImpossibility
 - computational inference firewall
 - four CP research-product families
+
+## Episode 14 — Cross-Owner Coupling Audit / Shadow Semantic Authority Repair
+
+Atlas synthesis:
+
+- `synthesis/2026-08-19-cross-owner-coupling-audit/README.md`
+- `synthesis/2026-08-19-cross-owner-coupling-audit/anti-rediscovery.md`
+- `synthesis/2026-08-19-cross-owner-coupling-audit/assimilation-manifest.md`
+- `synthesis/research-process-lineage/episodes/2026-08-19-cross-owner-coupling-audit-and-shadow-authority-repair.md`
+
+Primary Host source fences:
+
+- `task:ordivon-cross-owner-coupling-audit-20260819@10` — completed disposition/engineering closeout.
+- `task:computing-project-registry-shadow-authority-contraction-20260819@4` — completed bounded Computing repair.
+- `task:rsi-pal-agenda-option-space-next-conversation-20260819@20` — PAL/RSI historical-home test evidence.
+- `task:host:task-grading-model-20260813@10` — Q-C-A-U Host non-ownership evidence.
+- `task:standing-currentness-semantics-project-20260818@3` — independent Standing/Currentness boundary.
+
+Computing repair lineage:
+
+- `c385b035d46a968509a9e906c9c2c05fe209696b` — project-registry authority contraction.
+- `26512cdf63eae76624e0cbcf1ad0f994f7c3ec2e` — current Media packaging / historical Studio frontier decoupling.
+
+Key retrieval aliases / pressure terms:
+
+- cross-owner coupling / horizontal layers / global Core
+- Shadow Semantic Authority / semantic lifting / carrier semantic ceiling
+- KEEP_LOCAL / SHARE_RELATION / INDEPENDENT_PROGRAMME / CARRIER_WITH_CEILING / DERIVED_BRIDGE / REHOME_CANDIDATE
+- historical home != semantic owner / repository != semantic owner
+- PAL RSI Computing rehome rejected / Q-C-A-U Host ownership rejected
+- project registry shadow authority / Studio -> Media packaging
+- StudioHistoricalObservation != MediaCurrentAssimilation
+- local truth + typed relations + bounded carriers + justified bridges

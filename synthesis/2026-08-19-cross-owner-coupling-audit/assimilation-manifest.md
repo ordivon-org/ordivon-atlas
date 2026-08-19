@@ -5,8 +5,8 @@
 - truthRole: `non-authoritative-cross-owner-synthesis`
 - authorityRole: `none`
 - admissionClass: `NEW_CROSS_OWNER_SYNTHESIS`
-- materializationShape: `compact synthesis + anti-rediscovery`
-- processLineageEpisodeAdded: `false`
+- materializationShape: `compact synthesis + anti-rediscovery + manual process lineage`
+- processLineageEpisodeAdded: `true`
 
 ## Exact source fences
 
@@ -36,7 +36,8 @@ Only bounded explanatory synthesis is copied:
 - the completed audit disposition ecology;
 - stable owner/carrier/rehome distinctions;
 - anti-rediscovery constraints;
-- the exact Computing shadow-authority repair genealogy.
+- the exact Computing shadow-authority repair genealogy;
+- one manual Process Lineage episode preserving the falsification/rehome/repair transition rather than only its final answer.
 
 No owner publication bytes or mutable owner standing are copied into Atlas authority.
 
