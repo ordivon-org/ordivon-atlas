@@ -291,3 +291,42 @@ Key retrieval aliases / pressure terms:
 - technically sufficient != permitted != selected != executable
 - Required != Capable / no third action-admission contract
 - evidence-triggered reopen / no NDF6 / no Core Theory v2 / no autonomous repair
+
+
+## Episode 10 — RSI / PAL Option-Space and Pressure Theory Deletion -> Capability Topology
+
+Atlas synthesis:
+
+- `synthesis/2026-08-19-rsi-pal-option-pressure-capability/README.md`
+- `synthesis/2026-08-19-rsi-pal-option-pressure-capability/anti-rediscovery.md`
+- `synthesis/2026-08-19-rsi-pal-option-pressure-capability/rsi-capability-topology.md`
+- `synthesis/2026-08-19-rsi-pal-option-pressure-capability/next-frontier-handoff.md`
+- `synthesis/research-process-lineage/episodes/2026-08-19-rsi-pal-option-pressure-deletion-and-capability-topology.md`
+
+Current owner source fences revalidated in the episode:
+
+- Computing / PAL: `5cf8b40886e0089f2097a759fa29c0f2b4992cde`
+- Host: `c6b606ac89a0f3866ad172ad446dc577018b548b`
+- Game: `f27f1f6f1b736b93ce443fc9b46fcc043ad6ba1e`
+- Security: `5524d937607f3ddd6ce8eab61dda986436a3f625`
+- Web: `407d151f0939de87286be50ec24ca35fc2c04bb4`
+- Media: `5b5dbb4145ca91b575e517b6d56fe119f0853a18`
+
+Host continuity:
+
+- `task:rsi-pal-agenda-option-space-next-conversation-20260819` — revisions 2–19 cover recovery, hostile option-space reconstruction, prior-art subtraction, pressure-formation reconstruction/subtraction, RSI topology audit, owner readiness audit and Host-persistence admission design.
+
+Key retrieval aliases / negative results:
+
+- Option-Space Governance theory deletion / consideration-set absorption / unawareness absorption
+- candidate set vs deliberation surface / option identity / composition / liveness
+- pressure ground / problem formulation / investigability / probe admission
+- Pressure Formation theory deletion / problem-finding absorption / problemistic search / opportunity discovery
+- known theory vs demonstrated capability
+- F8A more candidates not better / F11 option-aware not reliable / P9 more evidence not better / C6 more context not enough
+- RSI capability topology / negative vs partial vs non-identifiable deficit
+- F18 support-bound prior revalidation / F19 invariant-bound identity
+- Web render-prior transfer / Media production-prior reuse
+- Security CA7 negative gate / Game fresh-player frontier
+- Host persistence utility design-ready experiment-not-admitted / current RSI task treatment-contaminated
+- unused research capacity acceptable / no second line admitted
