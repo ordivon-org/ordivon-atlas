@@ -130,3 +130,36 @@ Atlas:
 - `task:ordivon-atlas-research-process-lineage-requirement-20260819`
 
 This task owns the design requirement for a future first-class Research Episode / Decision-Falsification Trace capability. The markdown in this directory is manual dogfood, not that future contract.
+
+
+## Episode 6 — Generalization / Theory Rejection / Epistemic Opening
+
+Atlas synthesis:
+
+- `synthesis/2026-08-19-generalization-and-epistemic-space/README.md`
+- `synthesis/2026-08-19-generalization-and-epistemic-space/assimilation-manifest.md`
+- `synthesis/2026-08-19-generalization-and-epistemic-space/research-reconstruction.md`
+- `synthesis/2026-08-19-generalization-and-epistemic-space/anti-rediscovery.md`
+- `synthesis/2026-08-19-generalization-and-epistemic-space/open-problem-handoff.md`
+- `synthesis/research-process-lineage/episodes/2026-08-19-generalization-theory-rejection-and-epistemic-opening.md`
+
+Host semantic/process sources:
+
+- `task:ordivon-consequence-selected-capability-theory-20260819` — revision 6 completed; independent theory NOT ADMITTED.
+- `task:standing-currentness-semantics-project-20260818` — revision 3 source for `CurrentStanding != OperationalInfluence != Deactivation` boundary.
+- `task:ordivon-research-methodology-observation-20260819` — revisions 15–17 are the conversation-origin reconstruction/opening phases; revision 26 was current when materialization began and must be consulted for later Methodology standing.
+- `task:ordivon-atlas-research-process-lineage-requirement-20260819` — revision 6 at materialization start.
+- `task:ordivon-conversation-generalization-lineage-assimilation-20260819` — dedicated assimilation continuity task.
+
+Key retrieval aliases / pressure terms:
+
+- consequence closure / capability formation / capability as compressed consequence
+- feedback vs learning / update reach / standing-influence lag
+- theory rejection with distinction survival
+- research as epistemic-state improvement
+- originality vs truth-use admission
+- prior-art absorption vs referent resolution
+- human knowledge as contingent/civilizational search trajectory
+- problem-space / representation-space / search-space / evaluation-space challenge
+- epistemic attractor / unformulated question space
+- do-not-collapse / premature-convergence veto
