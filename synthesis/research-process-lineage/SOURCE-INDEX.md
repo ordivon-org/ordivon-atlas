@@ -291,3 +291,38 @@ Key retrieval aliases / pressure terms:
 - technically sufficient != permitted != selected != executable
 - Required != Capable / no third action-admission contract
 - evidence-triggered reopen / no NDF6 / no Core Theory v2 / no autonomous repair
+
+
+## Episode 10 — RSI / PAL Challengeability, Adaptive Transitions, and Persistence Selection
+
+Atlas synthesis:
+
+- `synthesis/2026-08-19-rsi-pal-challengeability-persistence/README.md`
+- `synthesis/research-process-lineage/episodes/2026-08-19-rsi-pal-challengeability-persistence-selection.md`
+
+Primary prior durable sources / dedup fences:
+
+- `synthesis/research-methodology-observation/` — M0 materialized at Atlas commit `5da63ed2f0dd67391ec2da63c44f42bdf9171890`; mechanism/failure/bias observations are referenced rather than copied.
+- `synthesis/2026-08-19-generalization-and-epistemic-space/` — prior-art absorption, referent-open pressure and deliberate non-collapse.
+- `synthesis/2026-08-19-rsi-pal-action-governance/` — prior standing/action/causal-reach/governance episode.
+- `synthesis/2026-08-19-theory-to-engineering-revision-commitment/` — existing research→engineering expansion/contraction/no-new-layer closeout.
+- remote-durable commit `f6bd1a4` on `research/rsi-pal-option-pressure-capability-20260819` — option-space / pressure-formation deletion and typed RSI capability topology; explicitly not duplicated here.
+- `task:ordivon-research-methodology-observation-20260819@38` — current Methodology Observation state at closeout review.
+- `task:ordivon-atlas-research-process-lineage-requirement-20260819@6` — current manual process-lineage/discovery requirement at closeout review.
+- Research System Branch A/B/D/E completed tasks — Atlas, Lab, migration and minimal-contract semantics.
+
+Key retrieval aliases / pressure terms:
+
+- representation diversity vs epistemic independence / failure-orthogonal basis / common-mode failure
+- support provenance vs challenge provenance / claim standing vs challenge standing
+- failure-hypothesis-relative challenge / untested challenge != reopen trigger
+- adaptive research portfolio theory rejected / tree-shaping value rejected
+- open-world model adequacy theory rejected / counter-basis challengeability
+- RecursiveOptimization != OpenWorldRSI / self-critique != independent basis challenge
+- SemanticTopology strong / AdaptiveTransitionTopology uneven
+- ConversationBoundary != ResearchBoundary / ConversationSummary != ResearchDelta
+- CandidateDelta != AdmittedTruth / detection != promotion
+- EpistemicStanding != PersistenceStanding
+- persistence-selection bias / closure bias / open residual retention / process-control pivot
+- high-recall candidate capture vs high-precision durable promotion
+- raw historical-cut replay / thin candidate detector
