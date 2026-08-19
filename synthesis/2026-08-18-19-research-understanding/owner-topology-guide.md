@@ -6,6 +6,8 @@
 
 The underlying owner boundaries are already durable in owner corpora and in the Research Results Classification & Descent review. This file preserves the compact explanation that makes those boundaries easier to recover without re-deriving them.
 
+This guide is **illustrative and non-exhaustive**. It is not a current owner registry, relevance oracle, or currentness authority. Use it to form candidate truth-responsibility questions; resolve current owner identity, descriptive name, authority and recovery through owner-native authority plus Atlas generated owner/current-recovery projections before relying on them as current.
+
 ## What an owner means
 
 An Ordivon semantic owner is not defined by repository location or by which system stores a record.
@@ -34,6 +36,8 @@ World owns generic Reality concerns such as existence, change, possibility, caus
 
 Domain owners retain irreducible truth conditions that generic Reality cannot safely define for them.
 
+The table below is a compact mnemonic, not an exhaustive list of current owners.
+
 | Owner | Human mental handle | Examples of irreducible concern |
 |---|---|---|
 | World | generic Reality | existence, change, causality, property evaluation, temporal structure |
@@ -41,7 +45,7 @@ Domain owners retain irreducible truth conditions that generic Reality cannot sa
 | Finance | claim | positions, obligations, control, settlement, liquidity, financial mechanisms |
 | Game | ludic reality | constituted game state, participation, valid transition, challenge/progress |
 | Media | representation | capture, expression, framing, legibility, metricization, interpretation |
-| Network | inter-locus capability | capability across loci, reachability, resolution, forwarding, service/topology |
+| Ordivon Interlocus *(historical name: Network)* | inter-locus capability | capability across loci, reachability, resolution, forwarding, service/topology |
 | Ordivon Normative | validity | admission, permission, obligation, competence, consequence/transformation semantics |
 
 The guiding law is:
@@ -78,5 +82,11 @@ rather than `one concept -> one owner/repo/service`.
 The detailed placement result is preserved by Host continuity task:
 
 `task:ordivon-research-results-classification-and-descent-20260818` rev3/completed.
+
+The controlled current-name transition from Network to Ordivon Interlocus is preserved by:
+
+`task:interlocus-owner-name-transition-20260819` rev3/completed.
+
+For the current non-authoritative reconstruction of that transition and its consumer boundaries, see [`../2026-08-19-interlocus-reunderstanding/`](../2026-08-19-interlocus-reunderstanding/).
 
 Owner-native details remain authoritative in the corresponding owner corpora.
