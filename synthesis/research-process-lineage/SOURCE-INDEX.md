@@ -291,3 +291,34 @@ Key retrieval aliases / pressure terms:
 - technically sufficient != permitted != selected != executable
 - Required != Capable / no third action-admission contract
 - evidence-triggered reopen / no NDF6 / no Core Theory v2 / no autonomous repair
+
+
+## Episode 10 — SCD TRAA Destructive Repair / Live Dogfood / Novelty Subtraction
+
+Atlas synthesis:
+
+- `synthesis/2026-08-19-scd-traa-semantic-substitutability/README.md`
+- `synthesis/2026-08-19-scd-traa-semantic-substitutability/anti-rediscovery.md`
+- `synthesis/2026-08-19-scd-traa-semantic-substitutability/assimilation-manifest.md`
+- `synthesis/research-process-lineage/episodes/2026-08-19-scd-traa-destructive-repair-live-dogfood-and-novelty-subtraction.md`
+
+Primary owner / continuity fences:
+
+- `task:scd-traa-derived-theory-live-dogfood-20260819@5`
+- Ordivon Computing `50c65fafb37a29b8f1c25a7ea2a92eff99c0b5de`
+- owner note `research/core/semantics-of-computational-descriptions/TRAA-DERIVED-THEORY-CANDIDATE-LIVE-DOGFOOD-20260819.md`
+- primary Harness dogfood `277606d67c13203f5c03af97000dfa8b8a54a205`
+
+Key retrieval aliases / pressure terms:
+
+- TRAA / Transformation-Relative Abstraction Adequacy / semantic substitutability
+- exact projection != semantic sufficiency / sound != sufficient
+- directional semantic approximation / wrong-way summary
+- context separator / scoped precongruence / preservation scope
+- support path != standing sufficiency / inferential standing topology
+- target-scoped support closure / absent edge vs unestablished edge
+- illicit bridge completion / semantic bridge attractor / model-prior semantics
+- current-corpus correlation != constitutive semantic law
+- WorkingView / semantic adequacy / Harness exactness boundary
+- novelty subtraction / argument graphs / proof obligations / proof-carrying context
+- no SCDF11 / no BridgeStanding engine / no production semantic service
