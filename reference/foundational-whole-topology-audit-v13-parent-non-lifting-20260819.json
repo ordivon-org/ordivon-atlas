@@ -1,0 +1,98 @@
+{
+  "auditId": "foundational-topology-audit:v13-parent-non-lifting:2026-08-19",
+  "breadthPosture": "PAUSED_BY_BOUNDED_SATURATION_TARGETED_REPAIR_ONLY",
+  "counts": {
+    "canonicalMajorRegionProjections": 10,
+    "crosswalkMappings": 26,
+    "mappedUniqueIdentities": 25,
+    "navigationFrontierA": 22,
+    "navigationFrontierB": 20,
+    "navigationFrontierC": 55,
+    "negativeParentControls": 2,
+    "newIdentities": 0,
+    "newMajorRegions": 0,
+    "newMappings": 0,
+    "newRelations": 0,
+    "noDirectMappingCurrentPilot": 97,
+    "normalizedSpaces": 122,
+    "positiveDirectScopeControls": 2,
+    "relations": 263
+  },
+  "coveragePosture": "IDENTITY_LEVEL_SOURCE_FENCED_PARENT_NON_LIFTING_ENFORCED",
+  "findings": [
+    {
+      "claim": "Biology remains unmapped despite mapped Genetics, Evolutionary Biology and Physiology interfaces; Human bounded biological research cannot be lifted into Biology parent coverage.",
+      "id": "FTA13-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Philosophy remains unmapped despite Metaphysics, Philosophy of Science and Ethics/Value Theory mappings across autonomous owners; cross-owner child aggregation cannot manufacture Philosophy authority.",
+      "id": "FTA13-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Psychology and Computation provide positive controls: their parent-level direct partial mappings are grounded in explicit owner-native basisResultRefs and bounded parent semantic scope, not child-count thresholds.",
+      "id": "FTA13-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Because Reference child sets are open-world, overlapping and non-exhaustive, no numeric fraction of mapped children can serve as a valid generic parent-lift threshold.",
+      "id": "FTA13-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Parent non-lifting should become a durable crosswalk lint for future mapping admission: direct owner-native source scope is required; graph/decomposition evidence may support search but cannot create authority.",
+      "id": "FTA13-5",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "frontierPosture": "UNCHANGED_97_NO_DIRECT_A22_B20_C55",
+  "kind": "ordivon.whole-foundational-topology-audit",
+  "laws": [
+    "MAPPED_CHILD != MAPPED_PARENT",
+    "MULTIPLE_MAPPED_CHILDREN != MAPPED_PARENT",
+    "MULTIPLE_OWNERS_ACROSS_CHILDREN != SHARED_PARENT_AUTHORITY",
+    "SUBSPACE_AGGREGATION_CANNOT_MINT_OWNER_AUTHORITY",
+    "PARENT_MAPPING_REQUIRES_OWNER_NATIVE_DIRECT_SCOPE_EVIDENCE",
+    "NO_SCALAR_CHILD_COVERAGE_THRESHOLD_FOR_PARENT_LIFT",
+    "DIRECT_PARTIAL_COVERAGE != WHOLE_FIELD_COVERAGE",
+    "UNMAPPED_PARENT != UNTOUCHED_PARENT",
+    "CONTROL_STRENGTHENING != COVERAGE_CHANGE"
+  ],
+  "next": "Implement/test parent non-lifting as a reusable crosswalk lint over current mappings. Then select a frontier case whose uncertainty is not already resolved by this contract; Finance authority unlock remains blocked, so a distinct no-direct identity should be chosen only if owner-native evidence suggests a real mapping candidate.",
+  "pairedNegativeControls": [
+    {
+      "mappedExplicitChildren": 3,
+      "parentRef": "norm:biology",
+      "unmappedExplicitChildren": 4,
+      "verdict": "NO_LIFT"
+    },
+    {
+      "mappedExplicitChildren": 3,
+      "parentRef": "norm:philosophy",
+      "unmappedExplicitChildren": 3,
+      "verdict": "NO_LIFT"
+    }
+  ],
+  "positiveControls": [
+    {
+      "admission": "OWNER_NATIVE_DIRECT_SCOPE_EVIDENCE",
+      "externalRef": "norm:psychology",
+      "mappingRef": "crosswalk:human->psychology"
+    },
+    {
+      "admission": "OWNER_NATIVE_DIRECT_SCOPE_EVIDENCE",
+      "externalRef": "norm:computation",
+      "mappingRef": "crosswalk:cp->computation"
+    }
+  ],
+  "schemaVersion": 13,
+  "sourceFence": {
+    "crosswalk": "reference/coverage-crosswalk-foundational-pilot-v0-9-20260819.json",
+    "externalReferenceBranchBase": "9e658dac47feaebc6718385307ec55503356b29a",
+    "frontierMatrix": "reference/external-reference-frontier-matrix-v0-2-20260819.json",
+    "parentControl": "reference/parent-identity-non-lifting-contract-v0-1-20260819.json"
+  },
+  "state": "PARENT_NON_LIFTING_CONTROL_ESTABLISHED_NO_TOPOLOGY_OR_COVERAGE_CHANGE",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_AUDIT"
+}

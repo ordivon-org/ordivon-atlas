@@ -1,0 +1,21 @@
+{
+  "closure": "PARENT_NON_LIFTING_AND_DIRECT_SCOPE_ADMISSION_ACCEPTED",
+  "contract": "reference/parent-identity-non-lifting-contract-v0-1-20260819.json",
+  "controls": [
+    "Biology and Philosophy remain unmapped despite multiple mapped children",
+    "Cross-owner child aggregation cannot mint shared parent authority",
+    "Psychology and Computation are admitted from explicit owner-native direct scope",
+    "No scalar mapped-child threshold is permitted",
+    "Zero coverage/topology change"
+  ],
+  "date": "2026-08-19",
+  "kind": "ordivon.parent-non-lifting-v0-1-acceptance",
+  "negativeDogfood": "reference/parent-non-lifting-paired-dogfood-v0-20260819.json",
+  "positiveDogfood": "reference/parent-direct-scope-positive-control-dogfood-v0-20260819.json",
+  "schemaVersion": 1,
+  "state": "NEGATIVE_AND_POSITIVE_CONTROL_DOGFOOD_ESTABLISHED",
+  "verification": {
+    "full": "194 OK; 28 gated skips; 166 deterministic",
+    "reference": "157/157 PASS"
+  }
+}

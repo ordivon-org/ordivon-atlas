@@ -1605,6 +1605,69 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
         self.assertIn("NOVELTY_NOT_ESTABLISHED", a["hostPosture"])
 
 
+    def test_parent_non_lifting_contract_has_paired_negative_controls(self) -> None:
+        c = json.loads((ROOT / "reference/parent-identity-non-lifting-contract-v0-1-20260819.json").read_text())
+        self.assertEqual(c["state"], "NEGATIVE_AND_POSITIVE_CONTROL_DOGFOOD_ESTABLISHED")
+        cases = {x["parentRef"]: x for x in c["pairedCases"]}
+        self.assertEqual(cases["norm:biology"]["verdict"], "NO_LIFT")
+        self.assertEqual(cases["norm:biology"]["mappedChildCount"], 3)
+        self.assertEqual(cases["norm:biology"]["unmappedChildCount"], 4)
+        self.assertEqual(cases["norm:philosophy"]["verdict"], "NO_LIFT")
+        self.assertEqual(cases["norm:philosophy"]["mappedChildCount"], 3)
+        self.assertEqual(cases["norm:philosophy"]["unmappedChildCount"], 3)
+        self.assertIn("MULTIPLE_OWNERS_ACROSS_CHILDREN != SHARED_PARENT_AUTHORITY", c["laws"])
+        self.assertIn("NO_SCALAR_CHILD_COVERAGE_THRESHOLD_FOR_PARENT_LIFT", c["laws"])
+
+    def test_parent_non_lifting_keeps_biology_and_philosophy_unmapped(self) -> None:
+        f = json.loads((ROOT / "reference/external-reference-frontier-matrix-v0-2-20260819.json").read_text())
+        by = {x["externalRef"]: x for x in f["rows"]}
+        for ref in ("norm:biology", "norm:philosophy"):
+            self.assertEqual(by[ref]["factState"], "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT")
+            self.assertEqual(by[ref]["navigationOverlay"], "UNMAPPED_MAJOR_REGION_ANCHOR")
+            self.assertEqual(by[ref]["mappedOwners"], [])
+
+    def test_philosophy_child_mappings_from_multiple_owners_do_not_create_parent_authority(self) -> None:
+        c = json.loads((ROOT / "reference/parent-identity-non-lifting-contract-v0-1-20260819.json").read_text())
+        case = next(x for x in c["pairedCases"] if x["parentRef"] == "norm:philosophy")
+        owners = {owner for child in case["children"] for owner in child["mappedOwners"]}
+        self.assertGreaterEqual(len(owners), 2)
+        self.assertEqual(case["verdict"], "NO_LIFT")
+        self.assertIn("SUBSPACE_AGGREGATION_CANNOT_MINT_OWNER_AUTHORITY", c["laws"])
+
+    def test_parent_direct_scope_positive_controls_use_owner_native_basis(self) -> None:
+        d = json.loads((ROOT / "reference/parent-direct-scope-positive-control-dogfood-v0-20260819.json").read_text())
+        self.assertEqual(d["result"], "PASS")
+        by = {x["externalRef"]: x for x in d["positiveControls"]}
+        self.assertEqual(set(by), {"norm:psychology", "norm:computation"})
+        for x in by.values():
+            self.assertEqual(x["relation"], "DIRECT_PARTIAL_COVERAGE")
+            self.assertTrue(x["basisResultRefs"])
+            self.assertEqual(x["admissionMechanism"], "OWNER_NATIVE_DIRECT_SCOPE_EVIDENCE")
+            self.assertEqual(x["frontierFactState"], "MAPPED_CURRENT_OWNER")
+            self.assertEqual(x["result"], "PASS")
+        self.assertIn("CHILD_AGGREGATION_IS_NOT_THE_ADMISSION_MECHANISM", d["laws"])
+
+    def test_current_parent_like_direct_mappings_have_explicit_owner_native_basis_and_scope(self) -> None:
+        c = json.loads((ROOT / "reference/coverage-crosswalk-foundational-pilot-v0-9-20260819.json").read_text())
+        for ref in ("norm:psychology", "norm:computation"):
+            m = next(x for x in c["mappings"] if x.get("externalRef") == ref)
+            self.assertTrue(m["basisResultRefs"])
+            self.assertTrue(m["scope"])
+            self.assertEqual(m["relation"], "DIRECT_PARTIAL_COVERAGE")
+            if ref == "norm:psychology":
+                self.assertIn("not whole Psychology", m["scope"])
+
+    def test_parent_non_lifting_round_changes_no_crosswalk_or_frontier_counts(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v13-parent-non-lifting-20260819.json").read_text())
+        c = a["counts"]
+        self.assertEqual((c["normalizedSpaces"], c["relations"], c["canonicalMajorRegionProjections"]), (122, 263, 10))
+        self.assertEqual((c["crosswalkMappings"], c["mappedUniqueIdentities"], c["noDirectMappingCurrentPilot"]), (26, 25, 97))
+        self.assertEqual((c["navigationFrontierA"], c["navigationFrontierB"], c["navigationFrontierC"]), (22, 20, 55))
+        self.assertEqual((c["newIdentities"], c["newRelations"], c["newMappings"], c["newMajorRegions"]), (0, 0, 0, 0))
+        self.assertEqual(a["state"], "PARENT_NON_LIFTING_CONTROL_ESTABLISHED_NO_TOPOLOGY_OR_COVERAGE_CHANGE")
+        self.assertIn("CONTROL_STRENGTHENING != COVERAGE_CHANGE", a["laws"])
+
+
 
 if __name__ == "__main__":
     unittest.main()

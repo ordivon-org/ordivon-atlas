@@ -1,0 +1,31 @@
+{
+  "audit": "reference/foundational-whole-topology-audit-v13-parent-non-lifting-20260819.json",
+  "closure": "WHOLE_AUDIT_V13_CONTROL_STRENGTHENING_ACCEPTED_NO_COVERAGE_CHANGE",
+  "counts": {
+    "canonicalMajorRegionProjections": 10,
+    "crosswalkMappings": 26,
+    "mappedUniqueIdentities": 25,
+    "navigationFrontierA": 22,
+    "navigationFrontierB": 20,
+    "navigationFrontierC": 55,
+    "negativeParentControls": 2,
+    "newIdentities": 0,
+    "newMajorRegions": 0,
+    "newMappings": 0,
+    "newRelations": 0,
+    "noDirectMappingCurrentPilot": 97,
+    "normalizedSpaces": 122,
+    "positiveDirectScopeControls": 2,
+    "relations": 263
+  },
+  "coveragePosture": "IDENTITY_LEVEL_SOURCE_FENCED_PARENT_NON_LIFTING_ENFORCED",
+  "date": "2026-08-19",
+  "frontierPosture": "UNCHANGED_97_NO_DIRECT_A22_B20_C55",
+  "kind": "ordivon.whole-foundational-topology-audit-v13-acceptance",
+  "schemaVersion": 1,
+  "state": "PARENT_NON_LIFTING_CONTROL_ESTABLISHED_NO_TOPOLOGY_OR_COVERAGE_CHANGE",
+  "verification": {
+    "full": "194 OK; 28 gated skips; 166 deterministic",
+    "reference": "157/157 PASS"
+  }
+}

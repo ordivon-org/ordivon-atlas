@@ -1,0 +1,233 @@
+{
+  "admissionRule": {
+    "forbiddenRoutes": [
+      "Count mapped children and apply a threshold.",
+      "Combine distinct owners children into synthetic parent authority.",
+      "Use graph degree or mapped-neighbor density as evidence of parent coverage.",
+      "Treat all currently known child identities as an exhaustive partition of the parent.",
+      "Infer parent mapping merely because the parent is a MajorRegion anchor."
+    ],
+    "parentCanBecomeMappedOnlyIf": "At least one current source-fenced owner publication/result directly ranges over the parent external identity at a bounded scope that is semantically valid for that parent. Child mappings may support interpretation but cannot substitute for the direct owner-native scope claim."
+  },
+  "closure": "PAIRED_PARENT_NON_LIFTING_ACCEPTED_NO_CROSSWALK_CHANGE",
+  "contractId": "parent-non-lifting:v0:2026-08-19",
+  "findings": [
+    {
+      "claim": "Biology remains NO_DIRECT_MAPPING despite multiple mapped biological child/axis identities, demonstrating that child coverage does not lift broad-parent coverage.",
+      "id": "PNL-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Philosophy remains NO_DIRECT_MAPPING even when mapped child/adjacent identities come from multiple autonomous owners; cross-owner aggregation cannot manufacture parent authority.",
+      "id": "PNL-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "A numeric mapped-child threshold would be structurally invalid because current Reference children are open-world, non-exhaustive and non-partitional.",
+      "id": "PNL-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Parent mapping should require direct owner-native scope evidence rather than graph or decomposition inference; child mappings remain useful as explanation and search pressure only.",
+      "id": "PNL-4",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.parent-identity-non-lifting-contract",
+  "laws": [
+    "MAPPED_CHILD != MAPPED_PARENT",
+    "MULTIPLE_MAPPED_CHILDREN != MAPPED_PARENT",
+    "MULTIPLE_OWNERS_ACROSS_CHILDREN != SHARED_PARENT_AUTHORITY",
+    "GRAPH_NEIGHBORHOOD_DENSITY != PARENT_COVERAGE",
+    "MAJOR_REGION_ANCHOR_STATUS != COVERAGE",
+    "SUBSPACE_AGGREGATION_CANNOT_MINT_OWNER_AUTHORITY",
+    "PARENT_MAPPING_REQUIRES_OWNER_NATIVE_DIRECT_SCOPE_EVIDENCE",
+    "PARENT_MAPPING_MAY_NOT_BE_INFERRED_FROM_COMPLEMENT_HEURISTICS",
+    "UNMAPPED_PARENT != UNTOUCHED_PARENT",
+    "NO_SCALAR_CHILD_COVERAGE_THRESHOLD_FOR_PARENT_LIFT"
+  ],
+  "next": "Dogfood the direct-scope admission side of the contract on an already-mapped broad-enough identity such as Psychology or Computation; prove that mapping arises from owner-native direct scope rather than child aggregation.",
+  "pairedCases": [
+    {
+      "caseId": "PNL-BIOLOGY",
+      "childRelationSet": [
+        "MAJOR_SUBSPACE_OF",
+        "PROCESS_AXIS_WITHIN",
+        "FUNCTION_AXIS_WITHIN"
+      ],
+      "children": [
+        {
+          "externalRef": "norm:developmental-biology",
+          "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+          "label": "Developmental biology",
+          "mappedOwners": [],
+          "mappingRefs": [],
+          "relationToParent": "PROCESS_AXIS_WITHIN"
+        },
+        {
+          "externalRef": "norm:evolutionary-biology",
+          "factState": "MAPPED_CURRENT_OWNER",
+          "label": "Evolutionary biology",
+          "mappedOwners": [
+            "research-owner:human"
+          ],
+          "mappingRefs": [
+            "crosswalk:human->evolutionary-biology"
+          ],
+          "relationToParent": "PROCESS_AXIS_WITHIN"
+        },
+        {
+          "externalRef": "norm:genetics",
+          "factState": "MAPPED_CURRENT_OWNER",
+          "label": "Genetics",
+          "mappedOwners": [
+            "research-owner:human"
+          ],
+          "mappingRefs": [
+            "crosswalk:human->genetics"
+          ],
+          "relationToParent": "MAJOR_SUBSPACE_OF"
+        },
+        {
+          "externalRef": "norm:microbiology",
+          "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+          "label": "Microbiology / microbial sciences",
+          "mappedOwners": [],
+          "mappingRefs": [],
+          "relationToParent": "MAJOR_SUBSPACE_OF"
+        },
+        {
+          "externalRef": "norm:molecular-cellular-biology",
+          "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+          "label": "Molecular and cellular biosciences",
+          "mappedOwners": [],
+          "mappingRefs": [],
+          "relationToParent": "MAJOR_SUBSPACE_OF"
+        },
+        {
+          "externalRef": "norm:organismal-biology",
+          "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+          "label": "Organismal biology",
+          "mappedOwners": [],
+          "mappingRefs": [],
+          "relationToParent": "MAJOR_SUBSPACE_OF"
+        },
+        {
+          "externalRef": "norm:physiology",
+          "factState": "MAPPED_CURRENT_OWNER",
+          "label": "Physiology",
+          "mappedOwners": [
+            "research-owner:human"
+          ],
+          "mappingRefs": [
+            "crosswalk:human->physiology"
+          ],
+          "relationToParent": "FUNCTION_AXIS_WITHIN"
+        }
+      ],
+      "mappedChildCount": 3,
+      "parentFactState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "parentLabel": "Biology",
+      "parentMappedNeighbors": [
+        "norm:evolutionary-biology",
+        "norm:genetics",
+        "norm:physiology"
+      ],
+      "parentOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "parentRef": "norm:biology",
+      "reason": "Human maps bounded genetics, evolutionary-biology and physiology interfaces, but the Biology identity spans multiple molecular/cellular, organismal, ecological, microbial and developmental scales/processes outside Human owner scope. No owner-native result claims Biology as a bounded parent field.",
+      "unmappedChildCount": 4,
+      "verdict": "NO_LIFT"
+    },
+    {
+      "caseId": "PNL-PHILOSOPHY",
+      "childRelationSet": [
+        "MAJOR_SUBSPACE_OF"
+      ],
+      "children": [
+        {
+          "externalRef": "norm:epistemology",
+          "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+          "label": "Epistemology",
+          "mappedOwners": [],
+          "mappingRefs": [],
+          "relationToParent": "MAJOR_SUBSPACE_OF"
+        },
+        {
+          "externalRef": "norm:ethics-value-theory",
+          "factState": "MAPPED_CURRENT_OWNER",
+          "label": "Ethics and value theory",
+          "mappedOwners": [
+            "research-owner:ordivon-normative"
+          ],
+          "mappingRefs": [
+            "crosswalk:normative->ethics-value-theory"
+          ],
+          "relationToParent": "MAJOR_SUBSPACE_OF"
+        },
+        {
+          "externalRef": "norm:metaphysics",
+          "factState": "MAPPED_CURRENT_OWNER",
+          "label": "Metaphysics",
+          "mappedOwners": [
+            "research-owner:world"
+          ],
+          "mappingRefs": [
+            "crosswalk:world->metaphysics"
+          ],
+          "relationToParent": "MAJOR_SUBSPACE_OF"
+        },
+        {
+          "externalRef": "norm:philosophy-of-language",
+          "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+          "label": "Philosophy of language",
+          "mappedOwners": [],
+          "mappingRefs": [],
+          "relationToParent": "MAJOR_SUBSPACE_OF"
+        },
+        {
+          "externalRef": "norm:philosophy-of-mind",
+          "factState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+          "label": "Philosophy of mind and cognition",
+          "mappedOwners": [],
+          "mappingRefs": [],
+          "relationToParent": "MAJOR_SUBSPACE_OF"
+        },
+        {
+          "externalRef": "norm:philosophy-of-science",
+          "factState": "MAPPED_CURRENT_OWNER",
+          "label": "Philosophy of science",
+          "mappedOwners": [
+            "research-owner:world"
+          ],
+          "mappingRefs": [
+            "crosswalk:world->philosophy-of-science"
+          ],
+          "relationToParent": "MAJOR_SUBSPACE_OF"
+        }
+      ],
+      "mappedChildCount": 3,
+      "parentFactState": "NO_DIRECT_MAPPING_CURRENT_TEN_OWNER_PILOT",
+      "parentLabel": "Philosophy",
+      "parentMappedNeighbors": [
+        "norm:ethics-value-theory",
+        "norm:metaphysics",
+        "norm:philosophy-of-science",
+        "norm:semiotics"
+      ],
+      "parentOverlay": "UNMAPPED_MAJOR_REGION_ANCHOR",
+      "parentRef": "norm:philosophy",
+      "reason": "Metaphysics, philosophy of science and ethics/value theory are mapped by different owners, while other major philosophical subspaces remain unmapped. Combining heterogeneous child-owner authority would manufacture a synthetic Philosophy owner that no source publication asserts.",
+      "unmappedChildCount": 3,
+      "verdict": "NO_LIFT"
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceFence": {
+    "crosswalk": "reference/coverage-crosswalk-foundational-pilot-v0-9-20260819.json",
+    "frontierMatrix": "reference/external-reference-frontier-matrix-v0-2-20260819.json",
+    "majorRegions": "reference/canonical-major-regions-v0-10-20260819.json"
+  },
+  "state": "PAIRED_BIOLOGY_PHILOSOPHY_DESTRUCTIVE_DOGFOOD_ESTABLISHED",
+  "truthRole": "NON_AUTHORITATIVE_CROSSWALK_CONTROL_CONTRACT"
+}

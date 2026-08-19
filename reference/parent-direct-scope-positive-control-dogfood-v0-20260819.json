@@ -1,0 +1,56 @@
+{
+  "contractRef": "reference/parent-identity-non-lifting-contract-v0-20260819.json",
+  "date": "2026-08-19",
+  "kind": "ordivon.parent-direct-scope-positive-control-dogfood",
+  "laws": [
+    "DIRECT_PARTIAL_COVERAGE_REQUIRES_OWNER_NATIVE_SCOPE",
+    "DIRECT_PARTIAL_COVERAGE != WHOLE_FIELD_COVERAGE",
+    "MAPPED_PARENT_NEED_NOT_HAVE_MAPPED_CHILD_THRESHOLD",
+    "CHILD_AGGREGATION_IS_NOT_THE_ADMISSION_MECHANISM"
+  ],
+  "negativeControls": [
+    "reference/parent-non-lifting-paired-dogfood-v0-20260819.json"
+  ],
+  "positiveControls": [
+    {
+      "admissionMechanism": "OWNER_NATIVE_DIRECT_SCOPE_EVIDENCE",
+      "basisResultRefs": [
+        "result:human:owner-boundary-current",
+        "result:human:hf-family-boundary-subjectivity",
+        "result:human:hf-family-perception-access",
+        "result:human:hf-family-valuation-regulation-adaptation",
+        "result:human:hf-family-memory-representation-cognition",
+        "result:human:hf-family-decision-situated-action",
+        "result:human:hf-family-relation-coordination",
+        "result:human:hd11-hd16-retained-projections"
+      ],
+      "externalRef": "norm:psychology",
+      "frontierFactState": "MAPPED_CURRENT_OWNER",
+      "mappingRef": "crosswalk:human->psychology",
+      "ownerResearchRef": "research-owner:human",
+      "relation": "DIRECT_PARTIAL_COVERAGE",
+      "result": "PASS",
+      "scope": "Human directly studies bounded psychological territory including consciousness/experience, attention/access, affect/regulation, memory/representation/reasoning, decision/action, relationships and multiple retained cognition projections. This is partial coverage, not whole Psychology."
+    },
+    {
+      "admissionMechanism": "OWNER_NATIVE_DIRECT_SCOPE_EVIDENCE",
+      "basisResultRefs": [
+        "result:computational-possibility:owner-boundary-current",
+        "result:computational-possibility:eight-axis-current-architecture",
+        "result:computational-possibility:whole-owner-architectural-saturation",
+        "result:computational-possibility:algf0-historical-superseded",
+        "result:computational-possibility:applicability-subsystem-current"
+      ],
+      "externalRef": "norm:computation",
+      "frontierFactState": "MAPPED_CURRENT_OWNER",
+      "mappingRef": "crosswalk:cp->computation",
+      "ownerResearchRef": "research-owner:computational-possibility",
+      "relation": "DIRECT_PARTIAL_COVERAGE",
+      "result": "PASS",
+      "scope": "Formal regime-relative computational achievability, impossibility, witness/method existence, reductions/transfer, comparative power and abstract constraint/resource structure; does not claim all Computer Science or all computation research."
+    }
+  ],
+  "result": "PASS",
+  "schemaVersion": 1,
+  "truthRole": "HISTORICAL_FRONTIER_DOGFOOD_EVIDENCE"
+}
