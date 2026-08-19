@@ -1,0 +1,73 @@
+{
+  "admissionFirewall": {
+    "atlasMay": "emit bounded proposal-review eligibility/disposition plus evidence refs",
+    "atlasMayNot": [
+      "create semantic owner",
+      "create Foundation",
+      "declare domain coverage",
+      "create mandatory roadmap",
+      "infer project priority from region size or zero-touch status",
+      "merge heterogeneous strata into one project for symmetry"
+    ]
+  },
+  "contractId": "owner-gap-project-proposal-gate:v0:2026-08-19",
+  "gates": {
+    "G0_SCOPE_COHERENCE": {
+      "question": "Is there a bounded problem family coherent enough to investigate as one programme rather than merely a navigation region?",
+      "required": true
+    },
+    "G1_EXISTING_OWNER_NONABSORPTION": {
+      "question": "Has at least one plausible existing-owner extension been tested and rejected or bounded by current owner authority?",
+      "required": true
+    },
+    "G2_NON_DUPLICATION": {
+      "question": "Would the proposed programme own a semantic responsibility not already owned by an existing current owner?",
+      "required": true
+    },
+    "G3_EVIDENCE_OR_FRONTIER_BASIS": {
+      "question": "Is there either a coherent residual/falsifier corpus or an explicitly documented known-unworked frontier sufficient to motivate bounded investigation?",
+      "required": true
+    },
+    "G4_FALSIFIABLE_CHARTER": {
+      "question": "Can the proposal state questions, rivals, negative routes and closeout conditions without pre-admitting a new owner or Foundation?",
+      "required": true
+    },
+    "G5_TRACTABILITY": {
+      "question": "Are suitable public/source-fenced evidence and bounded investigation routes plausibly available?",
+      "required": true
+    },
+    "G6_OWNER_ADMISSION_FIREWALL": {
+      "question": "Does the proposal explicitly state that project approval does not establish semantic owner admission?",
+      "required": true
+    }
+  },
+  "inputClasses": [
+    "OWNER_TOPOLOGY_GAP_CANDIDATE",
+    "RESEARCH_PRESSURE_PRESENT_DEDICATED_OWNER_NOT_ESTABLISHED",
+    "KNOWN_UNWORKED_FRONTIER",
+    "NO_DEDICATED_CURRENT_RESEARCH_FOUND_IN_BOUNDED_SCAN"
+  ],
+  "kind": "ordivon.owner-gap-project-proposal-gate",
+  "laws": [
+    "ATLAS_GAP != PROJECT",
+    "PROJECT_PROPOSAL != PROJECT_ADMISSION",
+    "PROJECT_ADMISSION != SEMANTIC_OWNER_ADMISSION",
+    "SEMANTIC_OWNER_ADMISSION != FOUNDATION_ADMISSION",
+    "MAJOR_REGION != PROJECT_BOUNDARY",
+    "REGION_INTERNAL_HETEROGENEITY_BLOCKS_MONOLITHIC_PROJECT_PROPOSAL",
+    "EXISTING_OWNER_BOUNDARY_MUST_BE_TESTED_BEFORE_NEW_OWNER_PROPOSAL",
+    "RESIDUAL_CORPUS_MAY_MOTIVATE_PROJECT_REVIEW_BUT_DOES_NOT_PREAUTHORIZE_OWNER",
+    "KNOWN_UNWORKED_FRONTIER_MAY_MOTIVATE_SCOPING_BUT_NOT_OWNER",
+    "PROPOSAL_REVIEW_ELIGIBILITY != RESEARCH_PRIORITY_SCORE"
+  ],
+  "outputs": [
+    "NOT_PROPOSAL_READY",
+    "SCOPING_SURVEY_FIRST",
+    "PROPOSAL_REVIEW_ELIGIBLE",
+    "PROPOSAL_REVIEW_ELIGIBLE_AFTER_SPLIT"
+  ],
+  "purpose": "Route Atlas owner-gap findings into an independent project-proposal review without allowing Atlas frontier structure to auto-create projects, owners, Foundations, repositories or roadmaps.",
+  "schemaVersion": 1,
+  "state": "PROJECT_PROPOSAL_REVIEW_SEPARATED_FROM_OWNER_ADMISSION",
+  "truthRole": "NON_AUTHORITATIVE_RESEARCH_ROUTING_CONTROL"
+}

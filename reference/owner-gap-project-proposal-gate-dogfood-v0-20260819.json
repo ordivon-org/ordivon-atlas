@@ -1,0 +1,105 @@
+{
+  "cases": [
+    {
+      "caseId": "OGPP-PHYSICAL",
+      "disposition": "PROPOSAL_REVIEW_ELIGIBLE",
+      "gateResults": {
+        "G0_SCOPE_COHERENCE": "PASS_WITH_NARROWING",
+        "G1_EXISTING_OWNER_NONABSORPTION": "PASS_WORLD_BOUNDARY_REJECTS_DOMAIN_MECHANISM_ABSORPTION",
+        "G2_NON_DUPLICATION": "PASS_CANDIDATE_OWNS_DOMAIN_SPECIFIC_PHYSICAL_MECHANISM_RESEARCH_NOT_GENERIC_REALITY",
+        "G3_EVIDENCE_OR_FRONTIER_BASIS": "PASS_SUBSTANTIAL_WORLD_RESIDUAL_FALSIFIER_CORPUS",
+        "G4_FALSIFIABLE_CHARTER": "PLAUSIBLE_NOT_YET_MATERIALIZED",
+        "G5_TRACTABILITY": "PASS_IN_PRINCIPLE_PUBLIC_PHYSICS_LITERATURE_AND_EXISTING_WORLD_RESIDUALS",
+        "G6_OWNER_ADMISSION_FIREWALL": "PASS_REQUIRED_BY_GATE"
+      },
+      "ownerAdmission": "NONE",
+      "reason": "Unlike a bare map gap, Physical has a coherent body of already-discovered domain-specific residual pressure that World explicitly refuses to own as domain mechanism. This is sufficient to justify a separate proposal review, not to establish a project or owner.",
+      "scopeCandidate": "Physical reality / domain-specific physical mechanisms as a research programme, initially bounded by the coherent World residual/falsifier corpus rather than the full Physical & Material navigation region.",
+      "sourceRef": "reference/physical-material-owner-gap-hypothesis-discrimination-v0-20260819.json",
+      "target": "Physical & Material"
+    },
+    {
+      "caseId": "OGPP-EARTH-WHOLE",
+      "disposition": "NOT_PROPOSAL_READY",
+      "gateResults": {
+        "G0_SCOPE_COHERENCE": "FAIL_REGION_IS_HETEROGENEOUS",
+        "G1_EXISTING_OWNER_NONABSORPTION": "PASS_WORLD_BOUNDARY",
+        "G2_NON_DUPLICATION": "UNRESOLVED_AT_WHOLE_REGION_LEVEL",
+        "G3_EVIDENCE_OR_FRONTIER_BASIS": "MIXED",
+        "G4_FALSIFIABLE_CHARTER": "FAIL_MONOLITHIC_SCOPE",
+        "G5_TRACTABILITY": "MIXED",
+        "G6_OWNER_ADMISSION_FIREWALL": "PASS_REQUIRED_BY_GATE"
+      },
+      "ownerAdmission": "NONE",
+      "reason": "The navigation region combines cosmology/spacetime, Earth-system sciences and cross-region agriculture. MajorRegion coherence is insufficient evidence of project coherence.",
+      "scopeCandidate": "Entire 14-member MajorRegion as one research programme.",
+      "sourceRef": "reference/earth-planetary-space-owner-gap-hypothesis-discrimination-v0-20260819.json",
+      "target": "Earth, Planetary & Space Systems as one project"
+    },
+    {
+      "caseId": "OGPP-COSMOLOGY-SPACETIME",
+      "disposition": "PROPOSAL_REVIEW_ELIGIBLE",
+      "gateResults": {
+        "G0_SCOPE_COHERENCE": "PASS_BOUNDED_FRONTIER_FAMILY",
+        "G1_EXISTING_OWNER_NONABSORPTION": "PASS_WORLD_RECORDS_FRONTIER_UNEXPLORED_AND_DOMAIN_SPECIFIC",
+        "G2_NON_DUPLICATION": "PASS_CANDIDATE_DOMAIN_MECHANISM_SCOPE_DISTINCT_FROM_WORLD_GENERIC_REALITY",
+        "G3_EVIDENCE_OR_FRONTIER_BASIS": "PASS_KNOWN_UNWORKED_WORLD_FRONTIER",
+        "G4_FALSIFIABLE_CHARTER": "PLAUSIBLE_NOT_YET_MATERIALIZED",
+        "G5_TRACTABILITY": "PASS_IN_PRINCIPLE_PUBLIC_RELATIVITY_COSMOLOGY_LITERATURE",
+        "G6_OWNER_ADMISSION_FIREWALL": "PASS_REQUIRED_BY_GATE"
+      },
+      "ownerAdmission": "NONE",
+      "reason": "World already identifies a coherent unexplored continent and owner boundary. This is enough for proposal review eligibility, not enough for owner admission.",
+      "scopeCandidate": "Relativity/spacetime/cosmology frontier explicitly identified but unworked by World.",
+      "sourceRef": "reference/earth-planetary-space-owner-gap-hypothesis-discrimination-v0-20260819.json",
+      "target": "Cosmology / spacetime-adjacent stratum"
+    },
+    {
+      "caseId": "OGPP-EARTH-SYSTEM",
+      "disposition": "SCOPING_SURVEY_FIRST",
+      "gateResults": {
+        "G0_SCOPE_COHERENCE": "PLAUSIBLE_BUT_NOT_TESTED",
+        "G1_EXISTING_OWNER_NONABSORPTION": "PARTIAL_WORLD_BOUNDARY_ONLY",
+        "G2_NON_DUPLICATION": "UNRESOLVED",
+        "G3_EVIDENCE_OR_FRONTIER_BASIS": "WEAK_BOUNDED_NONFINDING_MORE_THAN_RESIDUAL_CORPUS",
+        "G4_FALSIFIABLE_CHARTER": "NOT_YET",
+        "G5_TRACTABILITY": "PASS_IN_PRINCIPLE_PUBLIC_EARTH_SCIENCE_LITERATURE",
+        "G6_OWNER_ADMISSION_FIREWALL": "PASS_REQUIRED_BY_GATE"
+      },
+      "ownerAdmission": "NONE",
+      "reason": "The bounded scan found no dedicated current programme, but Atlas does not yet have a coherent residual corpus or tested owner-boundary matrix sufficient to propose a programme. A scoping survey should precede project proposal review.",
+      "scopeCandidate": "Earth science/geology/geophysics/geochemistry/atmosphere/ocean/climate/physical geography/soil cluster.",
+      "sourceRef": "reference/earth-planetary-space-owner-gap-hypothesis-discrimination-v0-20260819.json",
+      "target": "Earth-system sciences stratum"
+    }
+  ],
+  "closure": "OWNER_GAP_TO_PROJECT_PROPOSAL_ROUTING_DOGFOOD_ACCEPTED_NO_PROJECT_OR_OWNER_CREATED",
+  "contractRef": "reference/owner-gap-project-proposal-gate-v0-20260819.json",
+  "date": "2026-08-19",
+  "findings": [
+    {
+      "claim": "Owner-gap evidence does not map one-to-one to project proposals: Physical is proposal-review eligible, the whole Earth/Space region is not, cosmology/spacetime is separately eligible, and Earth-system sciences require scoping first.",
+      "id": "OGPP-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "MajorRegion boundaries are navigation projections and may be too broad or heterogeneous to serve as project boundaries.",
+      "id": "OGPP-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Project proposal review can be justified by either coherent residual evidence or a coherent known-unworked frontier, but neither route establishes semantic owner admission.",
+      "id": "OGPP-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The strongest next Atlas contribution is routing quality: preserving evidence and owner-boundary constraints while delegating actual charter/admission decisions to the Research System rather than expanding Atlas authority.",
+      "id": "OGPP-4",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.owner-gap-project-proposal-gate-dogfood",
+  "result": "PASS",
+  "schemaVersion": 1,
+  "truthRole": "HISTORICAL_RESEARCH_ROUTING_EVIDENCE"
+}

@@ -1,0 +1,47 @@
+{
+  "closure": "OWNER_GAP_PROJECT_PROPOSAL_ROUTING_ACCEPTED_NO_PROJECT_OR_OWNER_CREATED",
+  "contract": "reference/owner-gap-project-proposal-gate-v0-20260819.json",
+  "controls": [
+    "Atlas gap does not create a project",
+    "Proposal review eligibility does not approve a project",
+    "Project approval does not admit a semantic owner",
+    "MajorRegion is not a project boundary",
+    "Earth/Space whole-region heterogeneity blocks monolithic proposal",
+    "Physical and Cosmology are proposal-review eligible only",
+    "Earth-system sciences require scoping first"
+  ],
+  "counts": {
+    "canonicalMajorRegionProjections": 10,
+    "crosswalkMappings": 26,
+    "mappedUniqueIdentities": 25,
+    "newIdentities": 0,
+    "newMajorRegions": 0,
+    "newMappings": 0,
+    "newOwnersAdmitted": 0,
+    "newProjectsCreated": 0,
+    "newRelations": 0,
+    "noDirectMappingCurrentPilot": 97,
+    "normalizedSpaces": 122,
+    "notProposalReadyCases": 1,
+    "proposalDogfoodCases": 4,
+    "proposalReviewEligibleCases": 2,
+    "relations": 263,
+    "scopingSurveyFirstCases": 1
+  },
+  "date": "2026-08-19",
+  "dogfood": "reference/owner-gap-project-proposal-gate-dogfood-v0-20260819.json",
+  "kind": "ordivon.owner-gap-project-proposal-routing-v0-acceptance",
+  "routingPostures": {
+    "cosmologySpacetime": "PROPOSAL_REVIEW_ELIGIBLE",
+    "earthPlanetarySpaceWhole": "NOT_PROPOSAL_READY",
+    "earthSystemSciences": "SCOPING_SURVEY_FIRST",
+    "physicalMaterial": "PROPOSAL_REVIEW_ELIGIBLE"
+  },
+  "schemaVersion": 1,
+  "state": "OWNER_GAP_PROJECT_PROPOSAL_ROUTING_SEPARATED_FROM_OWNER_ADMISSION",
+  "verification": {
+    "full": "214 OK; 28 gated skips; 186 deterministic",
+    "reference": "177/177 PASS"
+  },
+  "wholeAudit": "reference/foundational-whole-topology-audit-v17-project-proposal-routing-20260819.json"
+}

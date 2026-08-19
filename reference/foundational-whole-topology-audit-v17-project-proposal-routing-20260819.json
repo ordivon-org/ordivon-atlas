@@ -1,0 +1,73 @@
+{
+  "auditId": "foundational-topology-audit:v17-project-proposal-routing:2026-08-19",
+  "counts": {
+    "canonicalMajorRegionProjections": 10,
+    "crosswalkMappings": 26,
+    "mappedUniqueIdentities": 25,
+    "newIdentities": 0,
+    "newMajorRegions": 0,
+    "newMappings": 0,
+    "newOwnersAdmitted": 0,
+    "newProjectsCreated": 0,
+    "newRelations": 0,
+    "noDirectMappingCurrentPilot": 97,
+    "normalizedSpaces": 122,
+    "notProposalReadyCases": 1,
+    "proposalDogfoodCases": 4,
+    "proposalReviewEligibleCases": 2,
+    "relations": 263,
+    "scopingSurveyFirstCases": 1
+  },
+  "findings": [
+    {
+      "claim": "Owner-gap evidence does not map one-to-one to project proposals: Physical is proposal-review eligible, the whole Earth/Space region is not, cosmology/spacetime is separately eligible, and Earth-system sciences require scoping first.",
+      "id": "OGPP-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "MajorRegion boundaries are navigation projections and may be too broad or heterogeneous to serve as project boundaries.",
+      "id": "OGPP-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Project proposal review can be justified by either coherent residual evidence or a coherent known-unworked frontier, but neither route establishes semantic owner admission.",
+      "id": "OGPP-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The strongest next Atlas contribution is routing quality: preserving evidence and owner-boundary constraints while delegating actual charter/admission decisions to the Research System rather than expanding Atlas authority.",
+      "id": "OGPP-4",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.whole-foundational-topology-audit",
+  "laws": [
+    "ATLAS_GAP != PROJECT",
+    "PROJECT_PROPOSAL != PROJECT_ADMISSION",
+    "PROJECT_ADMISSION != SEMANTIC_OWNER_ADMISSION",
+    "SEMANTIC_OWNER_ADMISSION != FOUNDATION_ADMISSION",
+    "MAJOR_REGION != PROJECT_BOUNDARY",
+    "REGION_INTERNAL_HETEROGENEITY_BLOCKS_MONOLITHIC_PROJECT_PROPOSAL",
+    "EXISTING_OWNER_BOUNDARY_MUST_BE_TESTED_BEFORE_NEW_OWNER_PROPOSAL",
+    "RESIDUAL_CORPUS_MAY_MOTIVATE_PROJECT_REVIEW_BUT_DOES_NOT_PREAUTHORIZE_OWNER",
+    "KNOWN_UNWORKED_FRONTIER_MAY_MOTIVATE_SCOPING_BUT_NOT_OWNER",
+    "PROPOSAL_REVIEW_ELIGIBILITY != RESEARCH_PRIORITY_SCORE",
+    "ATLAS_ROUTING_CONTROL != RESEARCH_SYSTEM_ADMISSION_AUTHORITY",
+    "PROPOSAL_REVIEW_ELIGIBLE != PROPOSAL_APPROVED"
+  ],
+  "next": "Materialize a technology-neutral handoff contract from Atlas proposal-review eligibility to Research System Question/Charter intake. Do not create the Physical or Cosmology project in Atlas. The next action should be a handoff schema/dogfood, not domain research.",
+  "routingPostures": {
+    "cosmologySpacetime": "PROPOSAL_REVIEW_ELIGIBLE",
+    "earthPlanetarySpaceWhole": "NOT_PROPOSAL_READY",
+    "earthSystemSciences": "SCOPING_SURVEY_FIRST",
+    "physicalMaterial": "PROPOSAL_REVIEW_ELIGIBLE"
+  },
+  "schemaVersion": 17,
+  "sourceFence": {
+    "externalReferenceBranchBase": "bfa916533ee286fba7a26a92a5df25f610e3edd8",
+    "proposalDogfood": "reference/owner-gap-project-proposal-gate-dogfood-v0-20260819.json",
+    "proposalGate": "reference/owner-gap-project-proposal-gate-v0-20260819.json"
+  },
+  "state": "OWNER_GAP_PROJECT_PROPOSAL_ROUTING_SEPARATED_FROM_OWNER_ADMISSION",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_AUDIT"
+}

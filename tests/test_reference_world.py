@@ -1797,6 +1797,63 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
         self.assertIn("NO_ADMISSION", a["state"])
 
 
+    def test_owner_gap_project_proposal_gate_separates_atlas_routing_from_admission(self) -> None:
+        c = json.loads((ROOT / "reference/owner-gap-project-proposal-gate-v0-20260819.json").read_text())
+        self.assertEqual(c["state"], "PROJECT_PROPOSAL_REVIEW_SEPARATED_FROM_OWNER_ADMISSION")
+        for law in (
+            "ATLAS_GAP != PROJECT",
+            "PROJECT_PROPOSAL != PROJECT_ADMISSION",
+            "PROJECT_ADMISSION != SEMANTIC_OWNER_ADMISSION",
+            "SEMANTIC_OWNER_ADMISSION != FOUNDATION_ADMISSION",
+            "MAJOR_REGION != PROJECT_BOUNDARY",
+        ):
+            self.assertIn(law, c["laws"])
+        self.assertIn("create semantic owner", c["admissionFirewall"]["atlasMayNot"])
+        self.assertIn("create Foundation", c["admissionFirewall"]["atlasMayNot"])
+
+    def test_owner_gap_project_proposal_dogfood_has_four_distinct_routing_outcomes(self) -> None:
+        d = json.loads((ROOT / "reference/owner-gap-project-proposal-gate-dogfood-v0-20260819.json").read_text())
+        by = {x["caseId"]: x for x in d["cases"]}
+        self.assertEqual(by["OGPP-PHYSICAL"]["disposition"], "PROPOSAL_REVIEW_ELIGIBLE")
+        self.assertEqual(by["OGPP-EARTH-WHOLE"]["disposition"], "NOT_PROPOSAL_READY")
+        self.assertEqual(by["OGPP-COSMOLOGY-SPACETIME"]["disposition"], "PROPOSAL_REVIEW_ELIGIBLE")
+        self.assertEqual(by["OGPP-EARTH-SYSTEM"]["disposition"], "SCOPING_SURVEY_FIRST")
+        self.assertTrue(all(x["ownerAdmission"] == "NONE" for x in d["cases"]))
+        self.assertEqual(d["result"], "PASS")
+
+    def test_major_region_heterogeneity_blocks_monolithic_earth_space_project(self) -> None:
+        d = json.loads((ROOT / "reference/owner-gap-project-proposal-gate-dogfood-v0-20260819.json").read_text())
+        case = next(x for x in d["cases"] if x["caseId"] == "OGPP-EARTH-WHOLE")
+        self.assertEqual(case["gateResults"]["G0_SCOPE_COHERENCE"], "FAIL_REGION_IS_HETEROGENEOUS")
+        self.assertEqual(case["gateResults"]["G4_FALSIFIABLE_CHARTER"], "FAIL_MONOLITHIC_SCOPE")
+        self.assertEqual(case["disposition"], "NOT_PROPOSAL_READY")
+
+    def test_physical_and_cosmology_are_only_proposal_review_eligible_not_admitted(self) -> None:
+        d = json.loads((ROOT / "reference/owner-gap-project-proposal-gate-dogfood-v0-20260819.json").read_text())
+        for cid in ("OGPP-PHYSICAL", "OGPP-COSMOLOGY-SPACETIME"):
+            x = next(r for r in d["cases"] if r["caseId"] == cid)
+            self.assertEqual(x["disposition"], "PROPOSAL_REVIEW_ELIGIBLE")
+            self.assertEqual(x["ownerAdmission"], "NONE")
+            self.assertIn("NOT_YET_MATERIALIZED", x["gateResults"]["G4_FALSIFIABLE_CHARTER"])
+
+    def test_earth_system_requires_scoping_before_project_proposal(self) -> None:
+        d = json.loads((ROOT / "reference/owner-gap-project-proposal-gate-dogfood-v0-20260819.json").read_text())
+        x = next(r for r in d["cases"] if r["caseId"] == "OGPP-EARTH-SYSTEM")
+        self.assertEqual(x["disposition"], "SCOPING_SURVEY_FIRST")
+        self.assertEqual(x["gateResults"]["G3_EVIDENCE_OR_FRONTIER_BASIS"], "WEAK_BOUNDED_NONFINDING_MORE_THAN_RESIDUAL_CORPUS")
+        self.assertEqual(x["gateResults"]["G4_FALSIFIABLE_CHARTER"], "NOT_YET")
+
+    def test_whole_audit_v17_routes_without_creating_project_owner_or_topology(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v17-project-proposal-routing-20260819.json").read_text())
+        c = a["counts"]
+        self.assertEqual((c["normalizedSpaces"], c["relations"], c["canonicalMajorRegionProjections"]), (122, 263, 10))
+        self.assertEqual((c["crosswalkMappings"], c["mappedUniqueIdentities"], c["noDirectMappingCurrentPilot"]), (26, 25, 97))
+        self.assertEqual((c["proposalDogfoodCases"], c["proposalReviewEligibleCases"], c["scopingSurveyFirstCases"], c["notProposalReadyCases"]), (4, 2, 1, 1))
+        self.assertEqual((c["newProjectsCreated"], c["newOwnersAdmitted"], c["newMappings"], c["newIdentities"], c["newRelations"], c["newMajorRegions"]), (0, 0, 0, 0, 0, 0))
+        self.assertIn("PROPOSAL_REVIEW_ELIGIBLE != PROPOSAL_APPROVED", a["laws"])
+        self.assertIn("ATLAS_ROUTING_CONTROL != RESEARCH_SYSTEM_ADMISSION_AUTHORITY", a["laws"])
+
+
 
 if __name__ == "__main__":
     unittest.main()
