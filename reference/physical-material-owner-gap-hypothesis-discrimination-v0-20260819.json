@@ -1,0 +1,112 @@
+{
+  "auditId": "physical-material-owner-gap:hypothesis-v0:2026-08-19",
+  "findings": [
+    {
+      "claim": "Physical/Material topics are not untouched by Ordivon: World has substantial physical-regime residual/falsifier research.",
+      "id": "PMH-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "That World research does not establish Physics/Chemistry/Materials owner coverage because World explicitly excludes domain-specific mechanisms and treats fundamental-physics regimes as residual/stress corpora.",
+      "id": "PMH-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "No dedicated current Physical/Materials semantic programme was found in the bounded current-corpus scan.",
+      "id": "PMH-3",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "The correct current state is research pressure present, dedicated owner not established; no owner or crosswalk mapping is admitted.",
+      "id": "PMH-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "hypotheses": [
+    {
+      "evidence": [
+        "World contains extensive fundamental-physics, relativity, quantum, gauge/symmetry, effective-field-theory, thermodynamic/non-equilibrium, field/material/chemical-ontology residual and falsifier research.",
+        "Shared Research current corpus targeted search returned no physics/chemistry/materials/thermodynamics/quantum programme hits.",
+        "Finance current research targeted search returned none.",
+        "Human and Runtime programme-name scans returned no dedicated Physics/Chemistry/Materials programme surfaces.",
+        "Computing keyword hits were concentrated in history/methodology source corpora rather than a physical-science semantic owner."
+      ],
+      "id": "H1",
+      "interpretation": "The strong claim NO ORDIVON RESEARCH HERE is falsified by World. A dedicated hidden Physical/Materials programme was not found in this bounded scan, but exhaustive historical/conversation absence is not established.",
+      "name": "HIDDEN_OR_UNPUBLISHED_EXISTING_DEDICATED_PROGRAMME",
+      "standing": "NOT_FOUND_IN_BOUNDED_CURRENT_CORPUS_SCAN"
+    },
+    {
+      "candidateOwner": "research-owner:world",
+      "evidence": [
+        "World current owner first lookup says it owns cross-domain Reality semantics and thin cross-regime grammar where needed, but does not own a complete ontology of Reality and does not absorb domain-specific mechanisms.",
+        "World deep coverage classifies spacetime ontology, quantum foundations, EFT/renormalization/universality and thermodynamics as physical residual/regime-depth burdens rather than already-owned physics-field truth.",
+        "TSAF0 owner-boundary section explicitly assigns physical spacetime geometry/locality/gravitational realization to a Future Spacetime owner, while TSAF0 owns World-level temporal structural target semantics."
+      ],
+      "id": "H2",
+      "interpretation": "World may legitimately use physical theories as stress/falsifier corpora and own generic Reality abstractions extracted from them. That does not authorize World→Physics/Chemistry/Materials field mapping under the direct-scope rule.",
+      "name": "LEGITIMATE_EXTENSION_OF_EXISTING_OWNER",
+      "standing": "CURRENT_WORLD_EXTENSION_REJECTED_BY_OWNER_BOUNDARY"
+    },
+    {
+      "evidence": [
+        "No current published owner mapping candidate reaches Physical & Material.",
+        "Bounded dedicated-programme scan did not find a current owner-native Physics/Chemistry/Materials programme.",
+        "However, legacy conversations, non-current assets and future owner formation are not exhaustively searched or closed."
+      ],
+      "id": "H3",
+      "interpretation": "The strongest admissible conclusion is that a dedicated current semantic owner/programme is not established. Do not upgrade to historical untouchedness or permanent absence.",
+      "name": "GENUINELY_ABSENT_SEMANTIC_PROGRAMME",
+      "standing": "CANDIDATE_NOT_ESTABLISHED"
+    }
+  ],
+  "kind": "ordivon.owner-topology-gap-hypothesis-discrimination",
+  "laws": [
+    "RESEARCH_PRESSURE_PRESENT != DOMAIN_OWNER_PRESENT",
+    "FALSIFIER_USE != DOMAIN_COVERAGE",
+    "GENERIC_ABSTRACTION_FROM_PHYSICS != PHYSICS_OWNER_AUTHORITY",
+    "NO_DEDICATED_OWNER_FOUND != HISTORICALLY_UNTOUCHED",
+    "OWNER_BOUNDARY_BLOCKS_SCOPE_LIFT",
+    "FUTURE_OWNER_PLACEHOLDER != OWNER_ADMISSION",
+    "BOUNDED_CORPUS_SCAN != EXHAUSTIVE_OR_DIVON_HISTORY"
+  ],
+  "next": "Use this result as a template for Earth/Planetary/Space only after independent corpus evidence. Separately, investigate whether World physical residuals are sufficiently coherent to warrant an autonomous research-programme proposal; proposal/admission must be a distinct research act, not an Atlas inference.",
+  "result": {
+    "crosswalkChange": "NONE",
+    "currentDedicatedOwnerStanding": "NOT_ESTABLISHED",
+    "currentState": "RESEARCH_PRESSURE_PRESENT_DEDICATED_OWNER_NOT_ESTABLISHED",
+    "existingOwnerExtension": "NONE",
+    "majorRegionChange": "NONE",
+    "newOwnerAdmission": "NONE",
+    "untouchedStanding": "FALSIFIED_FOR_STRONG_WHOLE_REGION_CLAIM"
+  },
+  "schemaVersion": 1,
+  "sourceFence": {
+    "externalReferenceHeadBase": "36117e705f1331166bd55cea6f49ad52859ffe9c",
+    "ownerGapAudit": "reference/owner-topology-gap-candidate-audit-v0-20260819.json",
+    "worldCurrentSource": "methodology-survival-world-current-20260819@78980cbee6333cf0de0d972913f5a612a77ab357",
+    "worldOwnerFirstLookup": "docs/research/world/README.md"
+  },
+  "state": "RESEARCH_PRESSURE_PRESENT_DEDICATED_OWNER_NOT_ESTABLISHED",
+  "target": {
+    "label": "Physical & Material",
+    "memberCount": 10,
+    "priorState": "NO_CURRENT_PUBLISHED_OWNER_SCOPE_CANDIDATE_FOUND",
+    "regionRef": "navigation-region:physical-material"
+  },
+  "truthRole": "NON_AUTHORITATIVE_FRONTIER_DIAGNOSTIC",
+  "worldResearchPressure": {
+    "examples": [
+      "relativity/spacetime ontology",
+      "quantum foundations",
+      "gauge/symmetry/redundancy",
+      "duality/theoretical equivalence",
+      "effective field theory/renormalization/universality",
+      "thermodynamics/non-equilibrium/active matter",
+      "field/material/chemical ontology"
+    ],
+    "keyBoundary": "Domain-specific physical mechanisms remain outside generic World ownership even when they generate World-native abstractions or falsifiers.",
+    "role": "CROSS_DOMAIN_RESIDUAL_AND_FALSIFIER_RESEARCH_NOT_PHYSICS_OWNER",
+    "standing": "ESTABLISHED"
+  }
+}

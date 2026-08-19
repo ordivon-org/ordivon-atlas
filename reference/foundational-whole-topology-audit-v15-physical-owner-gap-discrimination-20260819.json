@@ -1,0 +1,59 @@
+{
+  "auditId": "foundational-topology-audit:v15-physical-owner-gap-discrimination:2026-08-19",
+  "counts": {
+    "canonicalMajorRegionProjections": 10,
+    "crosswalkMappings": 26,
+    "mappedUniqueIdentities": 25,
+    "newIdentities": 0,
+    "newMajorRegions": 0,
+    "newMappings": 0,
+    "newOwnersAdmitted": 0,
+    "newRelations": 0,
+    "noDirectMappingCurrentPilot": 97,
+    "normalizedSpaces": 122,
+    "ownerTopologyGapCandidateRegions": 2,
+    "physicalMaterialMembers": 10,
+    "relations": 263
+  },
+  "earthPlanetarySpacePosture": "NO_CURRENT_PUBLISHED_OWNER_SCOPE_CANDIDATE_FOUND_UNTESTED_HYPOTHESES",
+  "findings": [
+    {
+      "claim": "Physical & Material is not an untouched-Ordivon region: World contains substantial physical-regime residual and falsifier research.",
+      "id": "FTA15-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "World cannot be lifted into a Physical/Materials domain owner under its current boundary because domain-specific mechanisms remain explicitly outside generic World ownership.",
+      "id": "FTA15-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "A bounded current-corpus scan found no dedicated current Physics/Chemistry/Materials semantic programme.",
+      "id": "FTA15-3",
+      "standing": "SUPPORTED_IN_SCOPE"
+    },
+    {
+      "claim": "Physical & Material is therefore refined from a generic owner-topology gap candidate to RESEARCH_PRESSURE_PRESENT_DEDICATED_OWNER_NOT_ESTABLISHED, with zero new owner/mapping/topology change.",
+      "id": "FTA15-4",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.whole-foundational-topology-audit",
+  "laws": [
+    "RESEARCH_HISTORY_AND_OWNER_TOPOLOGY_ARE_SEPARATE_AXES",
+    "RESEARCH_PRESSURE_PRESENT != DOMAIN_OWNER_PRESENT",
+    "FALSIFIER_USE != DOMAIN_COVERAGE",
+    "OWNER_BOUNDARY_BLOCKS_SCOPE_LIFT",
+    "NO_DEDICATED_OWNER_FOUND != HISTORICALLY_UNTOUCHED",
+    "HYPOTHESIS_DISCRIMINATION != OWNER_ADMISSION"
+  ],
+  "next": "Do not infer the Earth/Planetary/Space result from Physical & Material. Run its own three-hypothesis discrimination if information gain remains high. A possible autonomous Physical Reality/Physics programme, if considered, requires a new project-charter investigation using World residuals as evidence—not Atlas auto-admission.",
+  "physicalMaterialPosture": "RESEARCH_PRESSURE_PRESENT_DEDICATED_OWNER_NOT_ESTABLISHED",
+  "schemaVersion": 15,
+  "sourceFence": {
+    "externalReferenceBranchBase": "36117e705f1331166bd55cea6f49ad52859ffe9c",
+    "physicalDiscrimination": "reference/physical-material-owner-gap-hypothesis-discrimination-v0-20260819.json"
+  },
+  "state": "PHYSICAL_MATERIAL_RESEARCH_PRESENT_OWNER_NOT_ESTABLISHED_NO_ADMISSION",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_AUDIT"
+}

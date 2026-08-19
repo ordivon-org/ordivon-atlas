@@ -1,0 +1,35 @@
+{
+  "closure": "PHYSICAL_MATERIAL_RESEARCH_PRESENT_DEDICATED_OWNER_NOT_ESTABLISHED_ACCEPTED",
+  "controls": [
+    "World physical residual/falsifier research falsifies strong untouchedness",
+    "World owner boundary blocks lifting physical stress corpora into Physics/Materials domain ownership",
+    "Bounded current-corpus scan did not find a dedicated current Physical/Materials programme",
+    "Dedicated programme absence remains bounded and non-historical",
+    "No owner, mapping, identity, relation or MajorRegion is admitted by this diagnostic"
+  ],
+  "counts": {
+    "canonicalMajorRegionProjections": 10,
+    "crosswalkMappings": 26,
+    "mappedUniqueIdentities": 25,
+    "newIdentities": 0,
+    "newMajorRegions": 0,
+    "newMappings": 0,
+    "newOwnersAdmitted": 0,
+    "newRelations": 0,
+    "noDirectMappingCurrentPilot": 97,
+    "normalizedSpaces": 122,
+    "ownerTopologyGapCandidateRegions": 2,
+    "physicalMaterialMembers": 10,
+    "relations": 263
+  },
+  "date": "2026-08-19",
+  "discrimination": "reference/physical-material-owner-gap-hypothesis-discrimination-v0-20260819.json",
+  "kind": "ordivon.physical-material-owner-gap-discrimination-v0-acceptance",
+  "schemaVersion": 1,
+  "state": "PHYSICAL_MATERIAL_RESEARCH_PRESENT_OWNER_NOT_ESTABLISHED_NO_ADMISSION",
+  "verification": {
+    "full": "203 OK; 28 gated skips; 175 deterministic",
+    "reference": "166/166 PASS"
+  },
+  "wholeAudit": "reference/foundational-whole-topology-audit-v15-physical-owner-gap-discrimination-20260819.json"
+}

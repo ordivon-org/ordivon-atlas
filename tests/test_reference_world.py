@@ -1704,6 +1704,56 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
         self.assertIn("NO_NEW_OWNER_ADMISSION", a["state"])
 
 
+    def test_physical_material_hypothesis_discrimination_separates_research_from_owner_presence(self) -> None:
+        a = json.loads((ROOT / "reference/physical-material-owner-gap-hypothesis-discrimination-v0-20260819.json").read_text())
+        self.assertEqual(a["state"], "RESEARCH_PRESSURE_PRESENT_DEDICATED_OWNER_NOT_ESTABLISHED")
+        h = {x["id"]: x for x in a["hypotheses"]}
+        self.assertEqual(h["H1"]["standing"], "NOT_FOUND_IN_BOUNDED_CURRENT_CORPUS_SCAN")
+        self.assertEqual(h["H2"]["standing"], "CURRENT_WORLD_EXTENSION_REJECTED_BY_OWNER_BOUNDARY")
+        self.assertEqual(h["H3"]["standing"], "CANDIDATE_NOT_ESTABLISHED")
+        self.assertEqual(a["result"]["newOwnerAdmission"], "NONE")
+        self.assertEqual(a["result"]["existingOwnerExtension"], "NONE")
+        self.assertEqual(a["result"]["crosswalkChange"], "NONE")
+
+    def test_physical_material_strong_untouched_claim_is_falsified_by_world_residual_research(self) -> None:
+        a = json.loads((ROOT / "reference/physical-material-owner-gap-hypothesis-discrimination-v0-20260819.json").read_text())
+        self.assertEqual(a["result"]["untouchedStanding"], "FALSIFIED_FOR_STRONG_WHOLE_REGION_CLAIM")
+        self.assertEqual(a["worldResearchPressure"]["standing"], "ESTABLISHED")
+        self.assertGreaterEqual(len(a["worldResearchPressure"]["examples"]), 6)
+        self.assertEqual(a["worldResearchPressure"]["role"], "CROSS_DOMAIN_RESIDUAL_AND_FALSIFIER_RESEARCH_NOT_PHYSICS_OWNER")
+        self.assertIn("RESEARCH_PRESSURE_PRESENT != DOMAIN_OWNER_PRESENT", a["laws"])
+        self.assertIn("FALSIFIER_USE != DOMAIN_COVERAGE", a["laws"])
+
+    def test_world_physical_research_cannot_be_lifted_to_physics_owner(self) -> None:
+        a = json.loads((ROOT / "reference/physical-material-owner-gap-hypothesis-discrimination-v0-20260819.json").read_text())
+        h2 = next(x for x in a["hypotheses"] if x["id"] == "H2")
+        self.assertEqual(h2["candidateOwner"], "research-owner:world")
+        self.assertEqual(h2["standing"], "CURRENT_WORLD_EXTENSION_REJECTED_BY_OWNER_BOUNDARY")
+        self.assertIn("does not own a complete ontology of Reality", h2["evidence"][0])
+        self.assertIn("does not absorb domain-specific mechanisms", h2["evidence"][0])
+        self.assertIn("OWNER_BOUNDARY_BLOCKS_SCOPE_LIFT", a["laws"])
+        self.assertIn("FUTURE_OWNER_PLACEHOLDER != OWNER_ADMISSION", a["laws"])
+
+    def test_physical_material_dedicated_programme_absence_remains_bounded_not_historical(self) -> None:
+        a = json.loads((ROOT / "reference/physical-material-owner-gap-hypothesis-discrimination-v0-20260819.json").read_text())
+        h1 = next(x for x in a["hypotheses"] if x["id"] == "H1")
+        h3 = next(x for x in a["hypotheses"] if x["id"] == "H3")
+        self.assertIn("bounded scan", h1["interpretation"])
+        self.assertIn("legacy conversations", h3["evidence"][2])
+        self.assertIn("BOUNDED_CORPUS_SCAN != EXHAUSTIVE_OR_DIVON_HISTORY", a["laws"])
+        self.assertEqual(a["result"]["currentDedicatedOwnerStanding"], "NOT_ESTABLISHED")
+
+    def test_whole_audit_v15_refines_physical_gap_with_zero_structural_change(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v15-physical-owner-gap-discrimination-20260819.json").read_text())
+        c = a["counts"]
+        self.assertEqual((c["normalizedSpaces"], c["relations"], c["canonicalMajorRegionProjections"]), (122, 263, 10))
+        self.assertEqual((c["crosswalkMappings"], c["mappedUniqueIdentities"], c["noDirectMappingCurrentPilot"]), (26, 25, 97))
+        self.assertEqual((c["newOwnersAdmitted"], c["newMappings"], c["newIdentities"], c["newRelations"], c["newMajorRegions"]), (0, 0, 0, 0, 0))
+        self.assertEqual(a["physicalMaterialPosture"], "RESEARCH_PRESSURE_PRESENT_DEDICATED_OWNER_NOT_ESTABLISHED")
+        self.assertIn("UNTESTED_HYPOTHESES", a["earthPlanetarySpacePosture"])
+        self.assertIn("HYPOTHESIS_DISCRIMINATION != OWNER_ADMISSION", a["laws"])
+
+
 
 if __name__ == "__main__":
     unittest.main()
