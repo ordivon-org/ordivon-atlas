@@ -6,7 +6,7 @@ Atlas is deliberately not a second research corpus and not a semantic source of 
 
 ## MVP
 
-The first MVP consumes heterogeneous owner sources. Network lives inside the shared `ordivon-research` durability repository; Runtime lives inside the independent `ordivon-runtime` repository.
+The first MVP consumes heterogeneous owner sources. **Interlocus** (stable identity `research-owner:network`, historical name Network) lives inside the shared `ordivon-research` durability repository; Runtime lives inside the independent `ordivon-runtime` repository.
 
 Each pilot owner exposes a corpus-relative `authority/CURRENT.json` pointer to an immutable `authority/publications/<sha256>.json` payload. The payload SHA-256 is the owner `AuthorityVersionRef`.
 
@@ -58,7 +58,7 @@ Synthesis entries do not replace owner-current publications and must be repaired
 - `projection-health-latest.json`
 - `atlas.json`
 
-Every semantic projection row carries the owner `AuthorityVersionRef` or an explicitly retained last-known source fence. Generated files are projections, never owner truth. The `generated/` directory is intentionally Git-ignored.
+Every semantic projection row carries the owner `AuthorityVersionRef` or an explicitly retained last-known source fence. When an owner publication declares `CANONICAL_NAME`, `CANONICAL_REFERENT`, or `HISTORICAL_NAME`, `owner-map.json` projects those as descriptive metadata while preserving the stable `ownerResearchRef` identity. Generated files are projections, never owner truth. The `generated/` directory is intentionally Git-ignored.
 
 ## Use
 
