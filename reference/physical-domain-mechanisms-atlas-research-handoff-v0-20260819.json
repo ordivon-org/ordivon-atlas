@@ -1,0 +1,32 @@
+{
+  "AtlasCandidateProposalRef": "atlas-candidate:physical-domain-mechanisms:2026-08-19",
+  "admissionFirewall": {
+    "FoundationAdmission": "NONE",
+    "QuestionRef": "NOT_MINTED",
+    "ResearchRef": "NOT_MINTED",
+    "projectAdmission": "NONE",
+    "semanticOwnerAdmission": "NONE"
+  },
+  "discriminants": [
+    "Can the candidate responsibility be stated without duplicating World cross-domain Reality semantics?",
+    "Do relativity/spacetime, quantum foundations, EFT/renormalization, thermodynamics/non-equilibrium and material/field constitution share enough owner-level responsibility for one programme?",
+    "Would splitting physical mechanism families produce clearer non-overlapping owners than one broad programme?",
+    "Can mature external physics theory subtract the apparent Ordivon-specific residue before any novelty/owner claim?"
+  ],
+  "kind": "ordivon.atlas-candidate-proposal-handoff",
+  "ownerBoundaryConstraints": [
+    "World explicitly does not absorb domain-specific mechanisms.",
+    "World residual/falsifier use does not establish Physics field coverage.",
+    "Future Spacetime owner language is a boundary placeholder, not owner admission."
+  ],
+  "routingDisposition": "PROPOSAL_REVIEW_ELIGIBLE",
+  "schemaVersion": 1,
+  "sourceEvidenceRefs": [
+    "reference/physical-material-owner-gap-hypothesis-discrimination-v0-20260819.json",
+    "reference/owner-gap-project-proposal-gate-dogfood-v0-20260819.json"
+  ],
+  "sourceFence": "4b9656f201895979a2ba6e635b54977cd46cc198",
+  "suggestedScope": "Investigate whether the coherent domain-specific physical residual/falsifier family currently externalized by World supports an autonomous research programme boundary distinct from generic World/Reality semantics. Do not scope the intake as all Physical & Material disciplines by default.",
+  "targetIntakeRole": "QUESTION_CHARTER_INTAKE",
+  "truthRole": "NON_AUTHORITATIVE_RESEARCH_INTAKE_ROUTING"
+}

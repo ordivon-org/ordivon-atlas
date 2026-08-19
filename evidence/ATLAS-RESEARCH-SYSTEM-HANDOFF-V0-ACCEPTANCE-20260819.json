@@ -1,0 +1,40 @@
+{
+  "closure": "ATLAS_TO_RESEARCH_SYSTEM_HANDOFF_ACCEPTED_NO_RESEARCH_IDENTITY_MINTED",
+  "contract": "reference/atlas-to-research-system-proposal-handoff-contract-v0-20260819.json",
+  "controls": [
+    "AtlasCandidateProposalRef is not ResearchRef",
+    "No packet mints ResearchRef or QuestionRef",
+    "targetIntakeRole is technology-neutral QUESTION_CHARTER_INTAKE",
+    "Question/Charter full schemas remain downstream native",
+    "Owner-boundary constraints and negative discriminants are preserved",
+    "Downstream reject/defer/split is legal and does not change Atlas coverage",
+    "No project/owner/Foundation admission"
+  ],
+  "counts": {
+    "candidateHandoffPackets": 2,
+    "canonicalMajorRegionProjections": 10,
+    "crosswalkMappings": 26,
+    "mappedUniqueIdentities": 25,
+    "newIdentities": 0,
+    "newMajorRegions": 0,
+    "newMappings": 0,
+    "newOwnersAdmitted": 0,
+    "newProjectsCreated": 0,
+    "newRelations": 0,
+    "noDirectMappingCurrentPilot": 97,
+    "normalizedSpaces": 122,
+    "questionRefsMinted": 0,
+    "relations": 263,
+    "researchRefsMinted": 0
+  },
+  "date": "2026-08-19",
+  "dogfood": "reference/atlas-to-research-system-handoff-dogfood-v0-20260819.json",
+  "kind": "ordivon.atlas-research-system-handoff-v0-acceptance",
+  "schemaVersion": 1,
+  "state": "ATLAS_TO_RESEARCH_SYSTEM_HANDOFF_BOUNDARY_ESTABLISHED_NO_ADMISSION",
+  "verification": {
+    "full": "220 OK; 28 gated skips; 192 deterministic",
+    "reference": "183/183 PASS"
+  },
+  "wholeAudit": "reference/foundational-whole-topology-audit-v18-research-system-handoff-20260819.json"
+}

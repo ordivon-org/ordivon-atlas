@@ -1854,6 +1854,68 @@ class ExternalReferenceFoundationalDisciplinesTests(unittest.TestCase):
         self.assertIn("ATLAS_ROUTING_CONTROL != RESEARCH_SYSTEM_ADMISSION_AUTHORITY", a["laws"])
 
 
+    def test_atlas_research_handoff_contract_does_not_mint_shared_question_or_research_identity(self) -> None:
+        c = json.loads((ROOT / "reference/atlas-to-research-system-proposal-handoff-contract-v0-20260819.json").read_text())
+        self.assertEqual(c["state"], "TECHNOLOGY_NEUTRAL_HANDOFF_SEPARATES_ATLAS_CANDIDATE_FROM_RESEARCH_IDENTITY")
+        self.assertIn("ATLAS_CANDIDATE_PROPOSAL_REF != RESEARCH_REF", c["laws"])
+        self.assertIn("HANDOFF_PACKET != RESEARCH_ADMISSION", c["laws"])
+        self.assertIn("RESEARCH_REF_MINTING_REQUIRES_DOWNSTREAM_ADMISSION", c["laws"])
+        self.assertIn("semanticOwnerRef", c["forbiddenFieldsAsAuthority"])
+        self.assertIn("ResearchRef", c["forbiddenFieldsAsAuthority"])
+        self.assertIn("mandatoryMCPTool", c["forbiddenFieldsAsAuthority"])
+
+    def test_atlas_research_handoff_packets_target_role_not_implementation_endpoint(self) -> None:
+        for name in (
+            "reference/physical-domain-mechanisms-atlas-research-handoff-v0-20260819.json",
+            "reference/cosmology-spacetime-frontier-atlas-research-handoff-v0-20260819.json",
+        ):
+            p = json.loads((ROOT / name).read_text())
+            self.assertEqual(p["targetIntakeRole"], "QUESTION_CHARTER_INTAKE")
+            self.assertEqual(p["admissionFirewall"]["ResearchRef"], "NOT_MINTED")
+            self.assertEqual(p["admissionFirewall"]["QuestionRef"], "NOT_MINTED")
+            self.assertEqual(p["admissionFirewall"]["projectAdmission"], "NONE")
+            self.assertEqual(p["admissionFirewall"]["semanticOwnerAdmission"], "NONE")
+            self.assertEqual(p["admissionFirewall"]["FoundationAdmission"], "NONE")
+            blob = json.dumps(p).lower()
+            self.assertNotIn("mcp://", blob)
+            self.assertNotIn("databaseid", blob)
+            self.assertNotIn("mandatoryrepository", blob)
+
+    def test_atlas_research_handoff_scope_is_narrower_than_major_region(self) -> None:
+        physical = json.loads((ROOT / "reference/physical-domain-mechanisms-atlas-research-handoff-v0-20260819.json").read_text())
+        cosmo = json.loads((ROOT / "reference/cosmology-spacetime-frontier-atlas-research-handoff-v0-20260819.json").read_text())
+        self.assertIn("Do not scope the intake as all Physical & Material disciplines", physical["suggestedScope"])
+        self.assertIn("separate from Earth-system sciences", cosmo["suggestedScope"])
+        self.assertNotEqual(physical["AtlasCandidateProposalRef"], cosmo["AtlasCandidateProposalRef"])
+
+    def test_atlas_research_handoff_preserves_owner_boundary_and_negative_discriminants(self) -> None:
+        physical = json.loads((ROOT / "reference/physical-domain-mechanisms-atlas-research-handoff-v0-20260819.json").read_text())
+        cosmo = json.loads((ROOT / "reference/cosmology-spacetime-frontier-atlas-research-handoff-v0-20260819.json").read_text())
+        self.assertGreaterEqual(len(physical["discriminants"]), 4)
+        self.assertGreaterEqual(len(cosmo["discriminants"]), 4)
+        self.assertGreaterEqual(len(physical["ownerBoundaryConstraints"]), 3)
+        self.assertGreaterEqual(len(cosmo["ownerBoundaryConstraints"]), 3)
+        self.assertTrue(any("negative result" in x.lower() for x in cosmo["discriminants"]))
+
+    def test_atlas_research_system_handoff_dogfood_passes_without_admission(self) -> None:
+        d = json.loads((ROOT / "reference/atlas-to-research-system-handoff-dogfood-v0-20260819.json").read_text())
+        self.assertEqual(d["result"], "PASS")
+        self.assertEqual(len(d["packets"]), 2)
+        self.assertIn("No packet contains a ResearchRef or QuestionRef.", d["controls"])
+        self.assertIn("Downstream rejection/split/defer is legal and does not change Atlas coverage.", d["controls"])
+
+    def test_whole_audit_v18_establishes_handoff_with_zero_research_identity_minting(self) -> None:
+        a = json.loads((ROOT / "reference/foundational-whole-topology-audit-v18-research-system-handoff-20260819.json").read_text())
+        c = a["counts"]
+        self.assertEqual((c["normalizedSpaces"], c["relations"], c["canonicalMajorRegionProjections"]), (122, 263, 10))
+        self.assertEqual((c["crosswalkMappings"], c["mappedUniqueIdentities"], c["noDirectMappingCurrentPilot"]), (26, 25, 97))
+        self.assertEqual(c["candidateHandoffPackets"], 2)
+        self.assertEqual((c["researchRefsMinted"], c["questionRefsMinted"], c["newProjectsCreated"], c["newOwnersAdmitted"]), (0, 0, 0, 0))
+        self.assertEqual((c["newMappings"], c["newIdentities"], c["newRelations"], c["newMajorRegions"]), (0, 0, 0, 0))
+        self.assertEqual(a["state"], "ATLAS_TO_RESEARCH_SYSTEM_HANDOFF_BOUNDARY_ESTABLISHED_NO_ADMISSION")
+        self.assertTrue(any("ResearchQuestion" in x for x in a["researchSystemCompatibility"]))
+
+
 
 if __name__ == "__main__":
     unittest.main()

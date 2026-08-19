@@ -1,0 +1,32 @@
+{
+  "AtlasCandidateProposalRef": "atlas-candidate:cosmology-spacetime-frontier:2026-08-19",
+  "admissionFirewall": {
+    "FoundationAdmission": "NONE",
+    "QuestionRef": "NOT_MINTED",
+    "ResearchRef": "NOT_MINTED",
+    "projectAdmission": "NONE",
+    "semanticOwnerAdmission": "NONE"
+  },
+  "discriminants": [
+    "Is spacetime/cosmology one coherent semantic responsibility or several distinct programmes?",
+    "Which parts are generic World temporal/causal semantics versus domain-specific physical realization?",
+    "Does existing World TSAF0/Reality work already own any candidate responsibility, or only expose interface/falsifier pressure?",
+    "What negative result would show that no autonomous programme is needed and World + external physics theory are sufficient?"
+  ],
+  "kind": "ordivon.atlas-candidate-proposal-handoff",
+  "ownerBoundaryConstraints": [
+    "World records relativity/spacetime/cosmology as unexplored rather than current owned field truth.",
+    "World generic Reality scope cannot be lifted into cosmology coverage.",
+    "Earth-system sciences must remain outside this intake unless later evidence supports a separate bridge."
+  ],
+  "routingDisposition": "PROPOSAL_REVIEW_ELIGIBLE",
+  "schemaVersion": 1,
+  "sourceEvidenceRefs": [
+    "reference/earth-planetary-space-owner-gap-hypothesis-discrimination-v0-20260819.json",
+    "reference/owner-gap-project-proposal-gate-dogfood-v0-20260819.json"
+  ],
+  "sourceFence": "4b9656f201895979a2ba6e635b54977cd46cc198",
+  "suggestedScope": "Investigate the explicitly known-but-unworked relativity/spacetime/cosmology frontier as a bounded programme candidate, separate from Earth-system sciences and from the full Earth/Planetary/Space navigation region.",
+  "targetIntakeRole": "QUESTION_CHARTER_INTAKE",
+  "truthRole": "NON_AUTHORITATIVE_RESEARCH_INTAKE_ROUTING"
+}

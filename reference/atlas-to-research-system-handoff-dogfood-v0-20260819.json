@@ -1,0 +1,43 @@
+{
+  "closure": "ATLAS_RESEARCH_SYSTEM_HANDOFF_DOGFOOD_ACCEPTED_NO_ADMISSION",
+  "contractRef": "reference/atlas-to-research-system-proposal-handoff-contract-v0-20260819.json",
+  "controls": [
+    "No packet contains a ResearchRef or QuestionRef.",
+    "Both packets target a role, not a technology/service endpoint.",
+    "Suggested scope is narrower than the originating MajorRegion.",
+    "Owner-boundary constraints and negative discriminants are carried forward.",
+    "Atlas evidence remains routing evidence only.",
+    "Downstream rejection/split/defer is legal and does not change Atlas coverage."
+  ],
+  "date": "2026-08-19",
+  "findings": [
+    {
+      "claim": "Atlas can hand off proposal-review evidence without minting ResearchRef, QuestionRef, semantic owner or Foundation.",
+      "id": "ARH-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Technology-neutral targetIntakeRole is sufficient for shared routing; no MCP/service/repository/database endpoint belongs in the semantic envelope.",
+      "id": "ARH-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Physical and Cosmology candidate packets preserve different scope/discriminants despite originating from neighboring zero-touch owner-gap diagnostics.",
+      "id": "ARH-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The handoff boundary lets Atlas remain a map/frontier system while Research System retains authority over Question/Charter/Investigation admission.",
+      "id": "ARH-4",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.atlas-to-research-system-handoff-dogfood",
+  "packets": [
+    "reference/physical-domain-mechanisms-atlas-research-handoff-v0-20260819.json",
+    "reference/cosmology-spacetime-frontier-atlas-research-handoff-v0-20260819.json"
+  ],
+  "result": "PASS",
+  "schemaVersion": 1,
+  "truthRole": "HISTORICAL_RESEARCH_ROUTING_EVIDENCE"
+}

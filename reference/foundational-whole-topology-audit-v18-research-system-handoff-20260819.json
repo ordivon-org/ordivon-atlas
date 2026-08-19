@@ -1,0 +1,72 @@
+{
+  "auditId": "foundational-topology-audit:v18-research-system-handoff:2026-08-19",
+  "counts": {
+    "candidateHandoffPackets": 2,
+    "canonicalMajorRegionProjections": 10,
+    "crosswalkMappings": 26,
+    "mappedUniqueIdentities": 25,
+    "newIdentities": 0,
+    "newMajorRegions": 0,
+    "newMappings": 0,
+    "newOwnersAdmitted": 0,
+    "newProjectsCreated": 0,
+    "newRelations": 0,
+    "noDirectMappingCurrentPilot": 97,
+    "normalizedSpaces": 122,
+    "questionRefsMinted": 0,
+    "relations": 263,
+    "researchRefsMinted": 0
+  },
+  "findings": [
+    {
+      "claim": "Atlas can hand off proposal-review evidence without minting ResearchRef, QuestionRef, semantic owner or Foundation.",
+      "id": "ARH-1",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Technology-neutral targetIntakeRole is sufficient for shared routing; no MCP/service/repository/database endpoint belongs in the semantic envelope.",
+      "id": "ARH-2",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "Physical and Cosmology candidate packets preserve different scope/discriminants despite originating from neighboring zero-touch owner-gap diagnostics.",
+      "id": "ARH-3",
+      "standing": "ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "claim": "The handoff boundary lets Atlas remain a map/frontier system while Research System retains authority over Question/Charter/Investigation admission.",
+      "id": "ARH-4",
+      "standing": "SUPPORTED_IN_SCOPE"
+    }
+  ],
+  "kind": "ordivon.whole-foundational-topology-audit",
+  "laws": [
+    "ATLAS_CANDIDATE_PROPOSAL_REF != RESEARCH_REF",
+    "HANDOFF_PACKET != RESEARCH_ADMISSION",
+    "TARGET_INTAKE_ROLE != IMPLEMENTATION_ENDPOINT",
+    "ATLAS_EVIDENCE != OWNER_CONCLUSION",
+    "SUGGESTED_SCOPE != CHARTER_AUTHORITY",
+    "MAJOR_REGION != DEFAULT_CHARTER_SCOPE",
+    "QUESTION_SCHEMA_NOT_SHARED_DOES_NOT_BLOCK_STABLE_QUESTION_REF_DOWNSTREAM",
+    "RESEARCH_REF_MINTING_REQUIRES_DOWNSTREAM_ADMISSION",
+    "HANDOFF_REJECTION != ATLAS_MAPPING_CHANGE",
+    "HANDOFF_SPLIT_MAY_RETURN_MULTIPLE_CANDIDATES_WITHOUT_OWNER_ADMISSION",
+    "MAP != ROADMAP",
+    "ATLAS_PROJECTION != OWNER_TRUTH"
+  ],
+  "next": "Stop Atlas-side project admission design here. The two proposal-review packets may be consumed by a separate Research System intake conversation/task if desired. Atlas should return to map/currentness/frontier maintenance rather than conducting the candidate domain research itself.",
+  "researchSystemCompatibility": [
+    "ResearchRef remains downstream and non-reifying.",
+    "Full ResearchQuestion/ResearchCharter schemas remain owner/Lab-native rather than global shared objects.",
+    "If admitted, downstream NATIVE Investigation must bind a frozen InvestigationContract before evidential work.",
+    "Atlas source evidence/fences may be consumed as provenance/routing input but cannot become owner conclusion authority."
+  ],
+  "schemaVersion": 18,
+  "sourceFence": {
+    "externalReferenceBranchBase": "4b9656f201895979a2ba6e635b54977cd46cc198",
+    "handoffContract": "reference/atlas-to-research-system-proposal-handoff-contract-v0-20260819.json",
+    "researchSystemMinimalContractTask": "task:ordivon-research-system-minimal-contract-materialization-20260818@rev3"
+  },
+  "state": "ATLAS_TO_RESEARCH_SYSTEM_HANDOFF_BOUNDARY_ESTABLISHED_NO_ADMISSION",
+  "truthRole": "NON_AUTHORITATIVE_REFERENCE_AUDIT"
+}

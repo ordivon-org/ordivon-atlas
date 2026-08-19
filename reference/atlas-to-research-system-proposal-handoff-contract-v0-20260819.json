@@ -1,0 +1,55 @@
+{
+  "closure": "ATLAS_TO_RESEARCH_SYSTEM_HANDOFF_MINIMUM_ESTABLISHED_NO_RESEARCH_IDENTITY_MINTED",
+  "contractId": "atlas-research-handoff:v0:2026-08-19",
+  "downstreamResponsibilities": [
+    "Decide whether to admit an intake at all.",
+    "Mint/assign ResearchRef only if a research track is actually admitted.",
+    "Create native QuestionRef/Charter according to owner/Lab policy; no globally standardized Question/Charter schema is required.",
+    "Freeze any InvestigationContract before evidential work begins if the intake proceeds to NATIVE investigation.",
+    "Preserve source authority fences and evidence scope; Atlas evidence is routing evidence, not owner conclusion authority.",
+    "Return rejection/defer/split outcomes without forcing Atlas topology changes."
+  ],
+  "forbiddenFieldsAsAuthority": [
+    "semanticOwnerRef",
+    "ResearchRef",
+    "FoundationRef",
+    "projectStatus=APPROVED",
+    "globalPriorityScore",
+    "mandatoryRepository",
+    "mandatoryMCPTool",
+    "databaseId"
+  ],
+  "kind": "ordivon.atlas-to-research-system-proposal-handoff-contract",
+  "laws": [
+    "ATLAS_CANDIDATE_PROPOSAL_REF != RESEARCH_REF",
+    "HANDOFF_PACKET != RESEARCH_ADMISSION",
+    "TARGET_INTAKE_ROLE != IMPLEMENTATION_ENDPOINT",
+    "ATLAS_EVIDENCE != OWNER_CONCLUSION",
+    "SUGGESTED_SCOPE != CHARTER_AUTHORITY",
+    "MAJOR_REGION != DEFAULT_CHARTER_SCOPE",
+    "QUESTION_SCHEMA_NOT_SHARED_DOES_NOT_BLOCK_STABLE_QUESTION_REF_DOWNSTREAM",
+    "RESEARCH_REF_MINTING_REQUIRES_DOWNSTREAM_ADMISSION",
+    "HANDOFF_REJECTION != ATLAS_MAPPING_CHANGE",
+    "HANDOFF_SPLIT_MAY_RETURN_MULTIPLE_CANDIDATES_WITHOUT_OWNER_ADMISSION",
+    "MAP != ROADMAP",
+    "ATLAS_PROJECTION != OWNER_TRUTH"
+  ],
+  "minimumEnvelope": {
+    "AtlasCandidateProposalRef": "Stable Atlas-local routing identity; explicitly NOT a ResearchRef and does not imply project/owner admission.",
+    "admissionFirewall": "Explicit statement that no ResearchRef, QuestionRef, project, semantic owner or Foundation is admitted by the handoff.",
+    "discriminants": "Questions/rivals/negative routes that downstream Question/Charter should preserve if admitted.",
+    "ownerBoundaryConstraints": "Existing-owner non-absorption and non-duplication constraints discovered by Atlas.",
+    "sourceEvidenceRefs": "Exact Atlas evidence/audit refs supporting proposal-review eligibility.",
+    "sourceFence": "Exact External Reference revision or authority fences used by the routing decision.",
+    "suggestedScope": "Bounded candidate problem family, not a MajorRegion by default.",
+    "targetIntakeRole": "QUESTION_CHARTER_INTAKE only; Atlas does not define the downstream implementation endpoint."
+  },
+  "researchSystemContractSource": {
+    "revision": 3,
+    "standing": "COMPLETED_CONSTITUTION_SUPPORTED",
+    "taskId": "task:ordivon-research-system-minimal-contract-materialization-20260818"
+  },
+  "schemaVersion": 1,
+  "state": "TECHNOLOGY_NEUTRAL_HANDOFF_SEPARATES_ATLAS_CANDIDATE_FROM_RESEARCH_IDENTITY",
+  "truthRole": "NON_AUTHORITATIVE_RESEARCH_INTAKE_ROUTING"
+}
