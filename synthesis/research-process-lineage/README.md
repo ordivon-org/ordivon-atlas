@@ -62,7 +62,7 @@ A destructive/engineering action may enter only when the decision procedure itse
 
 ## Current collection
 
-The manual collection currently preserves six high-value 2026-08-18/19 episodes:
+The manual collection currently preserves eight high-value 2026-08-18/19 episodes:
 
 1. [`episodes/2026-08-18-19-research-understanding-and-anti-rediscovery.md`](episodes/2026-08-18-19-research-understanding-and-anti-rediscovery.md) — why cross-owner semantic compression and anti-rediscovery needed a durable Atlas synthesis layer rather than remaining conversation-only.
 2. [`episodes/2026-08-18-computing-whole-referent-search-a-f.md`](episodes/2026-08-18-computing-whole-referent-search-a-f.md) — how the provisional broad Computing / Programming-Systems umbrella was tested and decomposed into two independent semantic owner lines instead of being declared as a single owner from the start.
@@ -70,6 +70,8 @@ The manual collection currently preserves six high-value 2026-08-18/19 episodes:
 4. [`episodes/2026-08-18-19-media-owner-inversion-and-ompc-formation.md`](episodes/2026-08-18-19-media-owner-inversion-and-ompc-formation.md) — how Studio-first project intuition was inverted into Media ownership, why major candidate concepts remained Derived rather than MF10, how Web/Game boundaries were corrected, and how Host/Studio/Web/Finance dogfood formed OMPC before construction deliberately stopped.
 5. [`episodes/2026-08-18-19-runtime-operational-realization-c1-c10.md`](episodes/2026-08-18-19-runtime-operational-realization-c1-c10.md) — how Runtime post-Foundation dogfood corrected recency/retry/lineage shortcuts, exported Standing/Currentness, established typed support/composition/orthogonality/lifecycle results, and deliberately stopped at C10 saturation rather than continuing by inertia.
 6. [`episodes/2026-08-19-generalization-theory-rejection-and-epistemic-opening.md`](episodes/2026-08-19-generalization-theory-rejection-and-epistemic-opening.md) — how one generalized intuition became a candidate theory, was destructively absorbed/rejected without losing its useful distinctions, then changed Ordivon's model of Research and opened a deeper civilization-relative problem-space inquiry that the Human explicitly prevented from collapsing too early.
+7. [`episodes/2026-08-19-rsi-pal-standing-action-governance.md`](episodes/2026-08-19-rsi-pal-standing-action-governance.md) — how standing/action admission, hidden consequence premises, structural uncertainty, causal reach/gain, conversion-rule governance, plural grounding and procedural finality were hostilely reconstructed before the parent route closed on Agenda Power / Option-Space Governance.
+8. [`episodes/2026-08-19-theory-to-engineering-expansion-contraction-and-rejection.md`](episodes/2026-08-19-theory-to-engineering-expansion-contraction-and-rejection.md) — how a theory-to-engineering question expanded into a broad finite-intelligence candidate, was contracted and destructively dogfooded, gained prospective falsifiability, then lost independent-theory and new-layer standing through prior-art subtraction, deletion tests and a no-duplication audit.
 
 See [`LINEAGE-OVERVIEW.md`](LINEAGE-OVERVIEW.md) for the existing Computing/CP combined continuity and [`SOURCE-INDEX.md`](SOURCE-INDEX.md) for durable source pointers. Individual owner-specific episodes are self-contained where they are not part of that Computing continuity.
 

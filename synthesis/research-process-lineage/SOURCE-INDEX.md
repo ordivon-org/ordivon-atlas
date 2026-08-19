@@ -203,3 +203,46 @@ Key retrieval aliases / pressure terms:
 - plural grounding / ground composition vs aggregation / non-sovereign governance
 - settlement vs resolution / procedural standing / frontier-qualified finality
 - Agenda Power / Option-Space Governance / option generation vs option selection
+
+
+## Episode 8 — Theory-to-Engineering Expansion / Contraction / Rejection
+
+Atlas synthesis:
+
+- `synthesis/2026-08-19-theory-to-engineering-revision-commitment/README.md`
+- `synthesis/2026-08-19-theory-to-engineering-revision-commitment/derivation-genealogy.md`
+- `synthesis/2026-08-19-theory-to-engineering-revision-commitment/destructive-dogfood-and-prospective-triage.md`
+- `synthesis/2026-08-19-theory-to-engineering-revision-commitment/theory-subtraction-and-no-duplication-closeout.md`
+- `synthesis/2026-08-19-theory-to-engineering-revision-commitment/anti-rediscovery.md`
+- `synthesis/2026-08-19-theory-to-engineering-revision-commitment/assimilation-manifest.md`
+- `synthesis/research-process-lineage/episodes/2026-08-19-theory-to-engineering-expansion-contraction-and-rejection.md`
+
+Primary Host source fences:
+
+- `task:finite-intelligence-dynamics-destructive-dogfood-20260819` — rev5, open prospective audit grammar; four-case destructive calibration + v1 leakage/v2 blind protocol.
+- `task:revision-commitment-triage-theory-subtraction-20260819` — rev5 completed; independent Finite Situated Intelligence / Praxis theory rejected.
+- `task:decision-local-typed-mediation-no-duplication-audit-20260819` — rev3 completed; existing contracts semantically sufficient / no new contract-schema-owner.
+- `task:ordivon-research-system-minimal-contract-materialization-20260818` — rev3 completed; shared identity/currentness/provenance grammar and global-Standing rejection.
+- `task:ordivon-research-operating-discipline-v0-20260819` — rev5; E9 contemporaneous-standing/commitment boundary.
+- `task:interlocus-capability-path-explanation-dogfood-20260819` — rev4 completed; source-fenced cross-owner explanation without standing normalization.
+- `task:interlocus-counterfactual-capability-repair-20260819` — rev6 completed; counterfactual warrant/action admission/actual restoration separation.
+- `task:ordivon-atlas-research-process-lineage-requirement-20260819` — rev6 at closeout; process-memory requirements remain source-fenced/manual-v0.
+- Methodology current state observed during this materialization: `task:ordivon-research-methodology-observation-20260819@37`; this is later context, not authority for the historical derivation labels.
+
+Key retrieval aliases / pressure terms:
+
+- theory to engineering / research-to-engineering bridge / theory does not compile to code
+- D1-D9 / K0-K3 / F0-F3 historical contraction genealogy
+- representation escape / epistemic attractor / epistemic permeability
+- unknown-unknown contact surface / deep common-mode blindness
+- bounded epistemic rationality / commitment-appropriate justification
+- FailureLocus != RevisionDepth / Revision Selectivity
+- Network Communicability -> InterLocusCapability representation repair
+- HD8 shallow -> thick contact/evidence-fidelity control
+- HostReady != SemanticCurrent stale-ready control
+- Capability != Admission/Commitment destructive-safety control
+- prospective triage / OWNER-LOCAL-FIRST / blind-input v2
+- theory subtraction / deletion essentiality / no-duplication audit
+- Praxis rejected / Finite Situated Intelligence not admitted
+- DecisionLocalStandingEnvelope rejected / universal Standing schema rejected
+- EXISTING_CONTRACTS_SEMANTICALLY_SUFFICIENT / NO_NEW_CONTRACT / NO_NEW_SCHEMA / NO_NEW_OWNER
