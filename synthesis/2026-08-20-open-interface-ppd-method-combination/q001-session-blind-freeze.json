@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "freeze_type": "session-level-future-record-blind",
+  "warning": "This freeze occurs before reading the released post-cutoff q_001 adjudication record in this session, but pretrained model weights may contain future literature; it is not contamination-proof historical backtesting.",
+  "selection_rule": "Excluding already-inspected q_008, select the highest-ranked ranked_v2 question with signal_type observational_tension.",
+  "selected_case": {
+    "question_id": "q_001",
+    "rank": 2,
+    "signal_type": "observational_tension",
+    "object": "HD 189733 b",
+    "pre_cutoff_source_bibcodes": [
+      "2015A&A...577A..62W",
+      "2016ApJ...817..106B"
+    ],
+    "pre_cutoff_tension": "Optical sodium implied a much larger blueshift/wind than near-infrared CO/H2O; frozen question asks whether vertical shear, temporal variation, line-formation differences, or instrument/analysis systematics explain the discrepancy."
+  },
+  "frozen_method_programs": {
+    "polarity_or_discrepancy_trigger": [
+      "recognize cross-modality wind disagreement as requiring explanation rather than averaging"
+    ],
+    "genealogy_and_measurement_map": [
+      "map each spectral line to altitude/pressure sensitivity and line-formation assumptions",
+      "map optical and near-IR instrument/calibration/systematics lineage",
+      "separate dataset independence from model and epoch independence"
+    ],
+    "analysis_multiverse": [
+      "reanalyze plausible line-profile/wind retrieval assumptions within each modality",
+      "test whether inferred velocity is robust to preprocessing, telluric/systematics treatment, and model choices"
+    ],
+    "countermodels": [
+      "vertical_wind_shear",
+      "temporal_variability_between_epochs",
+      "line_formation_or_altitude_weighting_difference",
+      "instrument_or_analysis_systematic"
+    ],
+    "orthogonal_or_intervention_requests": [
+      "contemporaneous or near-contemporaneous optical and near-IR observations to reduce temporal-variability ambiguity",
+      "multiple species/lines spanning altitude sensitivity under a common wind model to test vertical shear/line formation",
+      "independent instrument or reduction pipeline on overlapping spectral information to test systematics"
+    ]
+  },
+  "pre_reveal_success_criteria": [
+    "future work engages at least one frozen countermodel with a target-preserving discriminator",
+    "stronger hit if future work uses a separator structurally matching one of the frozen orthogonal/intervention requests",
+    "do not count generic future discussion without a discriminating observation/analysis",
+    "preserve unresolved/mixed outcomes; no requirement that one mechanism wins"
+  ]
+}
