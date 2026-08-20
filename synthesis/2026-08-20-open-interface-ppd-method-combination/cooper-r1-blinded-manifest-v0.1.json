@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "fixture_id": "cooper-medchem-diversification-r1-blinded-jcampdx-v0.1",
+  "source": "DATA.zip retained low-field MEDCHEM-DIVERSITY JCAMP-DX entries",
+  "source_data_role": "processed/exported low-field NMR acquisition/spectrum; not used by original late-stage decision policy",
+  "sanitization": [
+    "replace source-specific MEDCHEM-DIVERSITY-XX labels/paths with opaque case IDs",
+    "withhold acquisition timestamps, owner and origin metadata",
+    "preserve all physical acquisition parameters and spectral numeric arrays",
+    "reject output if source-specific label or acquisition timestamp remains"
+  ],
+  "files": [
+    {"opaque_id":"case_ember","bytes":351032,"sha256":"7f1d59a3ca49e49675c141be549dea74cb62f37cdcd157747890776e4eaf9a5e"},
+    {"opaque_id":"case_kite","bytes":346638,"sha256":"8ba850db4b83144a92990b691061a695f05f43733d1ea80858c8ad54cf68171e"},
+    {"opaque_id":"case_lumen","bytes":336559,"sha256":"120cf9012884cacc878e0e8874528c48509d1c776bb72d46634d925c6f9846a6"},
+    {"opaque_id":"case_moss","bytes":351010,"sha256":"a0a24ab7a55083019b8521aff1e2aaf5626509c0122b9e87ecf5e48ed45b3f66"},
+    {"opaque_id":"case_nova","bytes":322058,"sha256":"2020c6d94e0da4aec87f34296b34f6a705eb62e0f3d78475a77500be4343799d"},
+    {"opaque_id":"case_orbit","bytes":331435,"sha256":"a3687b034c3f10abaf26ed26f1d870a268224da1e79d1306cacc71c4b626d59d"},
+    {"opaque_id":"case_quartz","bytes":354487,"sha256":"1c59f71a2e26cf22a8a0edfe005da3319167fc19ee52c9eaa6f3af0a9c65d46d"},
+    {"opaque_id":"case_reed","bytes":327657,"sha256":"1c12263161c6161b8814e0f16e45e9c51764c436169d3cbde362ca1a4fd7775f"},
+    {"opaque_id":"case_slate","bytes":338987,"sha256":"01d002b8e163dda6bdeceba00da8213fdfb087de4e2b68a6f6ec39e8a7226ec7"},
+    {"opaque_id":"case_wren","bytes":321767,"sha256":"99f2ae3ba1d8018c2656db0773ec2fb63ec0069632e3575904b9330b636c916a"}
+  ],
+  "total_bytes": 3381630,
+  "data_bytes_committed_to_atlas": false,
+  "note": "Atlas stores only the source/build/sanitization receipts and expected digests; participant files are reproducibly materialized from the source archive rather than vendored."
+}

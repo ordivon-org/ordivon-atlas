@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "freeze_role": "pre-SUMMARY_NMR-reveal model-free analysis family",
+  "input_contract": {
+    "R0": "cooper-r0-blinded-v0.1.json",
+    "R1": "blinded retained low-field NMR peak summaries and/or scrubbed JCAMP-DX spectra for the exact ten-member cohort",
+    "allowed_metadata": ["opaque_id", "intended_chemistry.urea", "intended_chemistry.reagent", "solvent", "R0 MS_PASS"],
+    "forbidden": ["source experiment id", "target number", "paper anomaly label", "high-field characterization", "XRD", "post-hoc structural identity"]
+  },
+  "analysis_family": [
+    {
+      "id": "A1_peak_count_stratified",
+      "description": "For each sample, score absolute robust deviation of NMR peak count within the same reagent stratum and globally."
+    },
+    {
+      "id": "A2_same_reagent_peakset_nn",
+      "description": "Represent each spectrum by its picked peak positions; use a predeclared 0.10 ppm matching tolerance and score distance to the nearest other sample with the same reagent."
+    },
+    {
+      "id": "A3_global_peakset_nn",
+      "description": "Same 0.10 ppm peak-set distance but nearest neighbour across the full cohort, to avoid assuming reagent stratification is correct."
+    },
+    {
+      "id": "A4_coarse_ppm_occupancy",
+      "description": "Bin picked peaks into fixed 0.25 ppm bins over the observed shared proton-NMR range and score leave-one-out distance to same-reagent and global occupancy centroids."
+    },
+    {
+      "id": "A5_stratum_rank_union",
+      "description": "Combine only ranks (not calibrated scores) from A1-A4 and report Pareto/top-k candidates; do not tune weights after reveal."
+    }
+  ],
+  "distance_contract": {
+    "peakset_distance": "1 - symmetric tolerant match F1: greedily count a peak as matched when an unused counterpart is within 0.10 ppm; precision=matches/|A|, recall=matches/|B|, F1=2PR/(P+R), distance=1-F1.",
+    "robust_deviation": "absolute deviation from stratum median divided by max(MAD,1 peak); report raw counts too.",
+    "occupancy": "binary peak presence per fixed 0.25 ppm bin; use Hamming distance normalized by number of bins."
+  },
+  "success_receipt": {
+    "primary": "Known published anomaly's opaque case is top-3 in at least two independent A1-A4 routes while false-alarm burden remains bounded; exact source label is owner-side only.",
+    "strong": "Anomaly is top-3 in an analysis route that was not structurally guaranteed by its source ID/metadata and a claim-challenge rationale can be stated without exact post-hoc identity.",
+    "negative_is_valid": "Failure to rank the published anomaly is preserved as evidence that simple retained-summary anomaly search is insufficient; no tuning after reveal."
+  },
+  "guards": [
+    "No target-specific templates or hand-selected ppm regions.",
+    "No weights tuned after R1 reveal.",
+    "Peak-summary success does not imply exact structure identification.",
+    "Model-free outlier score is only a pursuit trigger; Reality/orthogonal characterization remains validator."
+  ]
+}

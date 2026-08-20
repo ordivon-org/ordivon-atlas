@@ -1,0 +1,352 @@
+{
+  "cohort_size": 10,
+  "fixture_id": "cooper-medchem-diversification-r0-blinded-v0.1",
+  "information_cut": "R0_POLICY_COUPLED_ONLY",
+  "samples": [
+    {
+      "expected_adduct_mz": {
+        "[M+CH3CN+H]+": 531.2,
+        "[M+H]+": 490.17,
+        "[M+K]+": 528.13,
+        "[M+Na]+": 512.1500000000001
+      },
+      "intended_chemistry": {
+        "reagent": "Zido",
+        "urea": "Am2_Thio"
+      },
+      "opaque_id": "case_slate",
+      "policy_coupled_lcms": {
+        "MS_PASS": true,
+        "peaks": [
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.5217518331614588,
+            "retention_time_min": 1.07
+          },
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.23577935785982707,
+            "retention_time_min": 1.13
+          },
+          {
+            "expected_mass_hit_count": 1,
+            "lc_area": 0.20575033178394186,
+            "retention_time_min": 1.37
+          },
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.03671847719477229,
+            "retention_time_min": 1.64
+          }
+        ]
+      },
+      "solvent": "CH2Cl2"
+    },
+    {
+      "expected_adduct_mz": {
+        "[M+CH3CN+H]+": 429.10999999999996,
+        "[M+H]+": 388.08,
+        "[M+K]+": 426.03999999999996,
+        "[M+Na]+": 410.06
+      },
+      "intended_chemistry": {
+        "reagent": "Pyr",
+        "urea": "Am1_Iso"
+      },
+      "opaque_id": "case_kite",
+      "policy_coupled_lcms": {
+        "MS_PASS": true,
+        "peaks": [
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.9051677802342892,
+            "retention_time_min": 1.33
+          },
+          {
+            "expected_mass_hit_count": 1,
+            "lc_area": 0.09483221976571087,
+            "retention_time_min": 1.45
+          }
+        ]
+      },
+      "solvent": "CH2Cl2"
+    },
+    {
+      "expected_adduct_mz": {
+        "[M+CH3CN+H]+": 633.2,
+        "[M+H]+": 592.1800000000001,
+        "[M+K]+": 630.13,
+        "[M+Na]+": 614.1600000000001
+      },
+      "intended_chemistry": {
+        "reagent": "Zido",
+        "urea": "Am2_Iso"
+      },
+      "opaque_id": "case_nova",
+      "policy_coupled_lcms": {
+        "MS_PASS": true,
+        "peaks": [
+          {
+            "expected_mass_hit_count": 1,
+            "lc_area": 0.8286146845145989,
+            "retention_time_min": 1.79
+          },
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.1713853154854011,
+            "retention_time_min": 2.1
+          }
+        ]
+      },
+      "solvent": "CH2Cl2"
+    },
+    {
+      "expected_adduct_mz": {
+        "[M+CH3CN+H]+": 327.1,
+        "[M+H]+": 286.07,
+        "[M+K]+": 324.03,
+        "[M+Na]+": 308.05999999999995
+      },
+      "intended_chemistry": {
+        "reagent": "Pyr",
+        "urea": "Am1_Thio"
+      },
+      "opaque_id": "case_moss",
+      "policy_coupled_lcms": {
+        "MS_PASS": false,
+        "peaks": [
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.6248463780126241,
+            "retention_time_min": 1.11
+          },
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.3333864083989798,
+            "retention_time_min": 1.32
+          },
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.04176721358839609,
+            "retention_time_min": 2.56
+          }
+        ]
+      },
+      "solvent": "CH2Cl2"
+    },
+    {
+      "expected_adduct_mz": {
+        "[M+CH3CN+H]+": 681.2,
+        "[M+H]+": 640.1800000000001,
+        "[M+K]+": 678.13,
+        "[M+Na]+": 662.1600000000001
+      },
+      "intended_chemistry": {
+        "reagent": "Zido",
+        "urea": "Am3_Iso"
+      },
+      "opaque_id": "case_wren",
+      "policy_coupled_lcms": {
+        "MS_PASS": true,
+        "peaks": [
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.35920164192045917,
+            "retention_time_min": 1.07
+          },
+          {
+            "expected_mass_hit_count": 1,
+            "lc_area": 0.21267627111996049,
+            "retention_time_min": 1.99
+          },
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.4281220869595805,
+            "retention_time_min": 2.34
+          }
+        ]
+      },
+      "solvent": "CH2Cl2"
+    },
+    {
+      "expected_adduct_mz": {
+        "[M+CH3CN+H]+": 443.12,
+        "[M+H]+": 402.09999999999997,
+        "[M+K]+": 440.04999999999995,
+        "[M+Na]+": 424.08
+      },
+      "intended_chemistry": {
+        "reagent": "Pyr",
+        "urea": "Am2_Iso"
+      },
+      "opaque_id": "case_ember",
+      "policy_coupled_lcms": {
+        "MS_PASS": true,
+        "peaks": [
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.44702075676168346,
+            "retention_time_min": 1.33
+          },
+          {
+            "expected_mass_hit_count": 1,
+            "lc_area": 0.3623487757290096,
+            "retention_time_min": 2.09
+          },
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.190630467509307,
+            "retention_time_min": 2.49
+          }
+        ]
+      },
+      "solvent": "CH2Cl2"
+    },
+    {
+      "expected_adduct_mz": {
+        "[M+CH3CN+H]+": 517.1800000000001,
+        "[M+H]+": 476.15000000000003,
+        "[M+K]+": 514.11,
+        "[M+Na]+": 498.14
+      },
+      "intended_chemistry": {
+        "reagent": "Zido",
+        "urea": "Am1_Thio"
+      },
+      "opaque_id": "case_reed",
+      "policy_coupled_lcms": {
+        "MS_PASS": false,
+        "peaks": [
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.8961283147873468,
+            "retention_time_min": 1.09
+          },
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.07094854772324848,
+            "retention_time_min": 1.56
+          },
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.032923137489404626,
+            "retention_time_min": 2.07
+          }
+        ]
+      },
+      "solvent": "CH2Cl2"
+    },
+    {
+      "expected_adduct_mz": {
+        "[M+CH3CN+H]+": 491.12,
+        "[M+H]+": 450.09999999999997,
+        "[M+K]+": 488.04999999999995,
+        "[M+Na]+": 472.08
+      },
+      "intended_chemistry": {
+        "reagent": "Pyr",
+        "urea": "Am3_Iso"
+      },
+      "opaque_id": "case_lumen",
+      "policy_coupled_lcms": {
+        "MS_PASS": true,
+        "peaks": [
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.1871811695763294,
+            "retention_time_min": 1.32
+          },
+          {
+            "expected_mass_hit_count": 2,
+            "lc_area": 0.49625381876866625,
+            "retention_time_min": 2.3
+          },
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.3165650116550044,
+            "retention_time_min": 2.77
+          }
+        ]
+      },
+      "solvent": "CH2Cl2"
+    },
+    {
+      "expected_adduct_mz": {
+        "[M+CH3CN+H]+": 341.12,
+        "[M+H]+": 300.09,
+        "[M+K]+": 338.04999999999995,
+        "[M+Na]+": 322.07
+      },
+      "intended_chemistry": {
+        "reagent": "Pyr",
+        "urea": "Am2_Thio"
+      },
+      "opaque_id": "case_quartz",
+      "policy_coupled_lcms": {
+        "MS_PASS": false,
+        "peaks": [
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.0586146807553464,
+            "retention_time_min": 1.15
+          },
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.3974447915175405,
+            "retention_time_min": 1.32
+          },
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.5439405277271131,
+            "retention_time_min": 1.64
+          }
+        ]
+      },
+      "solvent": "CH2Cl2"
+    },
+    {
+      "expected_adduct_mz": {
+        "[M+CH3CN+H]+": 619.19,
+        "[M+H]+": 578.1600000000001,
+        "[M+K]+": 616.12,
+        "[M+Na]+": 600.1400000000001
+      },
+      "intended_chemistry": {
+        "reagent": "Zido",
+        "urea": "Am1_Iso"
+      },
+      "opaque_id": "case_orbit",
+      "policy_coupled_lcms": {
+        "MS_PASS": true,
+        "peaks": [
+          {
+            "expected_mass_hit_count": 1,
+            "lc_area": 0.8121809519075059,
+            "retention_time_min": 1.78
+          },
+          {
+            "expected_mass_hit_count": 0,
+            "lc_area": 0.18781904809249397,
+            "retention_time_min": 2.04
+          }
+        ]
+      },
+      "solvent": "CH2Cl2"
+    }
+  ],
+  "schema_version": 1,
+  "source_fence": {
+    "DATA.zip": "md5:7844dcfc31b2cc58f70a137bd3274699",
+    "MEDCHEM-DIVERSITY-EXPECTED-MS.json": "sha256:d179785ca37c31f957c1cb5cd9b68b8294e2167b5904b1180a5603ee1842ec29",
+    "MEDCHEM-DIVERSITY.json": "sha256:584b0fa2b3735042957024db992c6bc6ecc8e4c2649610c93b1650bc5f7adae2",
+    "SUMMARY_MS.json": "sha256:a3a992867cc7a583a0c232bbf031b8abf61b3158df956500817769eba3b8da88"
+  },
+  "withheld_at_R0": [
+    "all NMR spectra",
+    "SUMMARY_NMR.json",
+    "NMR characterization",
+    "XRD",
+    "paper outcome labels",
+    "source experiment IDs"
+  ]
+}
