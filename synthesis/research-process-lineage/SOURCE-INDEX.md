@@ -487,3 +487,37 @@ Key retrieval aliases / pressure terms:
 - project registry shadow authority / Studio -> Media packaging
 - StudioHistoricalObservation != MediaCurrentAssimilation
 - local truth + typed relations + bounded carriers + justified bridges
+
+
+## Pending canonical slot — Finite-Intelligence Open Interface Formation (2026-08-20)
+
+Ordinal intentionally not assigned here because delayed canonical integrations may consume the next numbered slot; ordinal is navigation only, not semantic identity.
+
+Atlas synthesis:
+
+- `synthesis/2026-08-20-finite-intelligence-open-interface-formation/README.md`
+- `synthesis/2026-08-20-finite-intelligence-open-interface-formation/anti-rediscovery.md`
+- `synthesis/2026-08-20-finite-intelligence-open-interface-formation/next-conversation-handoff.md`
+- `synthesis/2026-08-20-finite-intelligence-open-interface-formation/assimilation-manifest.md`
+- `synthesis/research-process-lineage/episodes/2026-08-20-finite-intelligence-open-interface-formation.md`
+
+Host continuity:
+
+- `task:finite-intelligence-open-interface-formation-handoff-20260820@2`
+- predecessor only: `task:proactive-pressure-discovery-open-research-20260820@13`
+
+Key retrieval aliases / pressure terms:
+
+- active Reality pressure / basis challenge / monitor-basis bootstrap
+- truth admission vs pursuit admission / challenger evidence starvation
+- cross-basis evidence uptake / validated-but-unassimilated anomaly
+- repair-trajectory morphology / repair potential / programme degeneration
+- problem-space generativity / relevance formation / future importance recoverability
+- candidate distinction / individuation / false merge false split
+- identity drift / scoped invariance / replication as identity test
+- transformation-language formation / transformation grammar support
+- comparability formation / comparison opportunity / remote analogy
+- developmental comparability / relational schema retrieval
+- epistemic stepping stone / search geometry value
+- SearchSpaceChange != SearchProgress
+- do-not-collapse / no universal completeness
