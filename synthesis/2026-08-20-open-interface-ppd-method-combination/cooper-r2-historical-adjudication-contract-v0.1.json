@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "fixture_id": "cooper-medchem-r2-historical-adjudication-v0.1",
+  "role": "historical follow-up adjudication, NOT a prospectively symmetric measurement menu",
+  "pre_reveal_request": {
+    "required": [
+      "opaque_case_id",
+      "unresolved_claim",
+      "requested_characterization_class",
+      "predicted_contrast"
+    ],
+    "commit_before_availability_lookup": true
+  },
+  "currently_source_fenced_characterization_classes": {
+    "HIGH_FIELD_1H_13C_NMR": {
+      "source": "NMR-CHARACTERISATION.zip md5:a48f73833a0b35d1a2a7a658d4697797",
+      "availability_basis": "ZIP central-directory filenames only; no spectrum values inspected",
+      "participant_case_mapping": "OWNER_WITHHELD_UNTIL_COMMITTED_REQUEST",
+      "standing": "HISTORICAL_FOLLOWUP_ONLY"
+    },
+    "SINGLE_CRYSTAL_XRD": {
+      "source": "Nature reports CCDC 2355749 and 2355750 and states the unexpected cyclization was confirmed by single-crystal XRD",
+      "participant_case_mapping": "NOT_YET_SOURCE_FENCED",
+      "standing": "NOT_ADMITTED_UNTIL_EXACT_CASE_MAPPING_IS_FROZEN"
+    }
+  },
+  "availability_response": {
+    "AVAILABLE": "Requested historical characterization exists with an exact source-fenced case mapping; evidence may then be revealed under the committed request.",
+    "UNAVAILABLE": "No matching archived characterization is present in the frozen source. This is missing follow-up, not evidence against the scientific claim.",
+    "NOT_ADMITTED": "The characterization class or exact case mapping is not source-fenced enough to reveal."
+  },
+  "guards": [
+    "ArchivedFollowupAvailability != ProspectivelyReachableMeasurementMenu",
+    "Availability != ScientificEvidence",
+    "MissingFollowup != NegativeResult",
+    "Do not sweep availability across cases before committing a scientific selection.",
+    "Do not substitute a different characterization after an unavailable result within the same frozen request.",
+    "Historical R2 can adjudicate a selected case but cannot by itself estimate prospective selector precision across uncharacterized cases."
+  ]
+}
