@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "freeze_commit": "34a4d87bfc215075431df61dc4c21ec4ed7242b5",
+  "upstream_source_commit": "9690a9cc6cfcb11a168af5c3fefdbb3bbc185e42",
+  "upstream_outcome": "partially_addressed",
+  "upstream_premise": "validated",
+  "future_evidence": [
+    {
+      "bibcode": "2021PhDT.........4S",
+      "mapping": ["vertical_wind_shear", "altitude_or_line_formation_structure"],
+      "standing": "supports lower/intermediate-atmosphere wind differences via resolved line-shape modeling"
+    },
+    {
+      "bibcode": "2021MNRAS.502.4392L",
+      "mapping": ["instrument_or_analysis_systematic"],
+      "standing": "telluric correction/systematics examined while confirming sodium blueshift"
+    },
+    {
+      "bibcode": "2024AJ....167..179B",
+      "mapping": ["analysis_multiverse", "instrument_or_analysis_systematic"],
+      "standing": "near-IR high-resolution reanalysis finds H2O blueshift and pipeline dependence"
+    }
+  ],
+  "frozen_prediction_adjudication": {
+    "vertical_wind_shear": "HIT",
+    "instrument_or_analysis_systematic": "HIT",
+    "analysis_multiverse": "HIT",
+    "line_formation_or_altitude_weighting_difference": "PARTIAL",
+    "temporal_variability_between_epochs": "NOT_OBSERVED_IN_RELEASED_ADJUDICATION",
+    "contemporaneous_optical_near_ir_separator": "NOT_OBSERVED_IN_RELEASED_ADJUDICATION",
+    "independent_instrument_or_reduction_on_overlapping_information": "PARTIAL_AT_BEST"
+  },
+  "derived_guards": [
+    "mechanism_class engagement is not discriminator closure",
+    "candidate coverage is not question resolution",
+    "partial future engagement should not be scored as a full separator success",
+    "future null/non-engagement of a proposed discriminator is not proof the discriminator was bad or impossible"
+  ],
+  "contamination_warning": "The freeze predates reading this released adjudication within the current session, but pretrained model weights may encode post-2020 literature. Treat this as a session-order calibration, not contamination-proof prospective performance."
+}
