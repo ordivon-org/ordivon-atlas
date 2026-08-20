@@ -96,8 +96,19 @@ def explicit_leaks(transcript: dict[str, Any]) -> list[str]:
 def categorical_signature(transcript: dict[str, Any]) -> dict[str, str]:
     out: dict[str, str] = {}
     for key, value in flatten("", transcript):
-        # Exclude actual scientific measurement values. We want metadata-only leakage.
-        if "measurement" in key.lower():
+        # Side-channel prediction must exclude legitimate scientific evidence and
+        # endogenous agent behavior. Otherwise a correct repair choice can predict
+        # the hidden world and be misclassified as controller leakage.
+        kl = key.lower()
+        excluded = (
+            "measurement" in kl
+            or kl == "action"
+            or kl.endswith(".repair")
+            or "budget" in kl
+            or kl == "status"
+            or kl == "channel_id"
+        )
+        if excluded:
             continue
         s = value
         if len(s) > 80:

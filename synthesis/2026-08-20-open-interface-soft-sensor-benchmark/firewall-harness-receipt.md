@@ -24,3 +24,7 @@ Command: `python firewall_harness.py --selftest` through Ordivon Runtime.
 Runtime job: `job-01a01ef1-93dc-7a73-9615-407e5f0dfdb3`; stdout digest `sha256:680327a74d76ec71d2f87f62020227f5e735a00d49346222e60640b1237d15e4`.
 
 This closes only the synthetic controller-integrity self-test. It does not certify a future real controller build, which must rerun the audit over complete actual transcripts including error paths.
+
+## Audit-unit correction from controller integration
+
+When integrated with the controller emulator, the first statistical audit falsely flagged clean output because it treated the agent's own repair choice as metadata. Since successful scientific behavior should become condition-dependent, this is not a hidden-channel leak. The statistical signature now excludes measurements and endogenous action/repair/budget/status fields, while the explicit denylist still scans the entire transcript. Re-run on 1,920 clean controller events gives arm accuracy 0.25 and A/B 0.5 with no explicit leaks; hostile error-path outputs remain fully detected.

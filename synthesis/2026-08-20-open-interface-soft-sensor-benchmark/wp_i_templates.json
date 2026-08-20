@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "ledger_id": "wp-i-c0-v0",
+  "frozen_before_agent_run": true,
+  "physical_parts": [
+    "aux_pad_pair_0",
+    "aux_resistance_readout_0",
+    "diw_printer_0",
+    "conductive_material_0",
+    "neutral_registration_0"
+  ],
+  "templates": [
+    {
+      "template_id": "offset_path_v0",
+      "required_parts": ["aux_pad_pair_0", "aux_resistance_readout_0", "diw_printer_0", "conductive_material_0", "neutral_registration_0"],
+      "parameters": {
+        "offset_norm": {"type": "number", "min": -0.8, "max": 0.8, "forbid": [0.0]},
+        "path_width_norm": {"type": "number", "min": 0.05, "max": 0.25},
+        "serpentine_turns": {"type": "integer", "min": 1, "max": 7}
+      },
+      "readout_contract": "aux_resistance_scalar_v0",
+      "claim": "members are reachable in C0 but not deployed in I0"
+    }
+  ]
+}

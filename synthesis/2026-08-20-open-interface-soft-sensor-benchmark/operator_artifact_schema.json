@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "artifact_type": "wp-g-measurement-operator-v0",
+  "required": [
+    "operator_id",
+    "source",
+    "geometry_recipe",
+    "required_parts",
+    "pad_binding",
+    "fabrication_preconditions",
+    "calibration_procedure",
+    "readout_contract",
+    "output_semantics",
+    "operating_range",
+    "validation_procedure",
+    "rollback_procedure",
+    "evidence_refs"
+  ],
+  "pre_physical_validation_states": ["submitted", "schema_valid", "dependency_valid", "static_boundary_valid", "digest_frozen"],
+  "physical_only_states": ["fabricated", "blinded_physical_valid", "grounded", "registry_admitted", "later_reuse_valid"],
+  "rule": "physical_only_states cannot be entered without external physical receipts"
+}

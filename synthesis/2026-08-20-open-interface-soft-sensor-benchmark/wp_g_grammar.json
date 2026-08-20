@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "grammar_id": "wp-g-mirror-v0",
+  "frozen_before_agent_run": true,
+  "morphology_generators": [
+    {
+      "generator_id": "mirror_pair_path_v0",
+      "invariant": "S_theta == M(S_theta)",
+      "parameters": {
+        "symmetric_offset_abs_norm": {"type": "number", "min": 0.0, "max": 0.8},
+        "path_width_norm": {"type": "number", "min": 0.05, "max": 0.25},
+        "serpentine_turns": {"type": "integer", "min": 1, "max": 7}
+      }
+    }
+  ],
+  "measurement_contracts": ["symmetric_total_resistance_v0", "paired_average_v0", "global_load_v0"],
+  "forbidden_pre_event": ["unilateral_path", "signed_offset", "labeled_left_right_readout", "asymmetric_excitation"],
+  "closure_claim": "all admitted primitives preserve mirror relation R_M"
+}
