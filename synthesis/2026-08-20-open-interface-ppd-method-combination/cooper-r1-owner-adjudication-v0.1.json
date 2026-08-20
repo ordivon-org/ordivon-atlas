@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "fixture_id": "cooper-medchem-diversification-r1-owner-adjudication-v0.1",
+  "analysis_freeze_commit": "91e0d93decdb66a6b37382f206b59557169d6c6b",
+  "R1_source": "SUMMARY_NMR.json sha256:07dbf1347192572c8a935f51433afd413c597518b344eed2fae69092fce24ec3",
+  "participant_result": "cooper-r1-pursuit-result-v0.1.json",
+  "owner_key_disclosure": "WITHHELD_FROM_PARTICIPANT_ARTIFACTS",
+  "published_miss_adjudication": {
+    "known_positive_count": 1,
+    "known_positive_in_broad_candidate_set": true,
+    "known_positive_in_claim_relative_candidate_set": true,
+    "known_positive_top3_route_count": 2,
+    "known_positive_recall": 1.0
+  },
+  "routing": {
+    "complete_cohort_size": 10,
+    "broad_candidate_count": 4,
+    "incumbent_success_claim_count": 7,
+    "claim_relative_candidate_count": 3,
+    "claim_relative_followup_fraction": 0.42857142857142855,
+    "claim_relative_compression_fraction": 0.5714285714285714
+  },
+  "precision_guard": "Do not call the claim-relative candidate-set precision 1/3. Only one published positive is owner-adjudicated here; the other candidates have not yet received orthogonal Reality adjudication and may be ordinary variation, unreported anomalies, or distinct issues.",
+  "standing": [
+    "The pre-frozen retained-NMR analysis family retained the known published miss in a bounded pursuit set.",
+    "The result is pursuit routing, not exact structural identification.",
+    "Claim-relative routing is legitimate because only original MS_PASS cases carry the incumbent successful-product claim being challenged.",
+    "No A1-A4 threshold or weight was changed after SUMMARY_NMR reveal."
+  ]
+}

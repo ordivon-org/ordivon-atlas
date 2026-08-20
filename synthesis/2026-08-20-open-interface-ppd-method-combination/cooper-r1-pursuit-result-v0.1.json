@@ -1,0 +1,185 @@
+{
+  "analysis_freeze_commit": "91e0d93decdb66a6b37382f206b59557169d6c6b",
+  "broad_candidate_set": [
+    "case_lumen",
+    "case_orbit",
+    "case_reed",
+    "case_slate"
+  ],
+  "claim_relative_candidate_set": [
+    "case_lumen",
+    "case_orbit",
+    "case_slate"
+  ],
+  "claim_relative_universe_R0_MS_PASS": [
+    "case_ember",
+    "case_kite",
+    "case_lumen",
+    "case_nova",
+    "case_orbit",
+    "case_slate",
+    "case_wren"
+  ],
+  "fixture_id": "cooper-medchem-diversification-r1-peak-summary-blinded-v0.1",
+  "frozen_parameters": {
+    "minimum_topk_routes": 2,
+    "occupancy_bin_width_ppm": 0.25,
+    "occupancy_range_ppm": [
+      -2.0,
+      20.0
+    ],
+    "peak_match_tolerance_ppm": 0.1,
+    "top_k": 3
+  },
+  "guards": [
+    "No owner anomaly key is present in this participant-side harness.",
+    "Candidate status is pursuit routing, not exact structural identification.",
+    "R0_MS_PASS restriction is claim-relative: only incumbent successful-product claims are being challenged.",
+    "No A1-A4 threshold or weight is tuned after R1 reveal."
+  ],
+  "input_source_fence": {
+    "R0_payload": "sha256:488a40f6b8585e3541cf1896765e3b8c49f2703518a528848de73432bdbf7298",
+    "SUMMARY_NMR.json": "sha256:07dbf1347192572c8a935f51433afd413c597518b344eed2fae69092fce24ec3"
+  },
+  "orders": {
+    "A1": [
+      "case_lumen",
+      "case_slate",
+      "case_kite",
+      "case_reed",
+      "case_quartz",
+      "case_ember",
+      "case_moss",
+      "case_wren",
+      "case_nova",
+      "case_orbit"
+    ],
+    "A2": [
+      "case_slate",
+      "case_reed",
+      "case_orbit",
+      "case_nova",
+      "case_wren",
+      "case_moss",
+      "case_quartz",
+      "case_ember",
+      "case_kite",
+      "case_lumen"
+    ],
+    "A3": [
+      "case_reed",
+      "case_slate",
+      "case_orbit",
+      "case_nova",
+      "case_wren",
+      "case_moss",
+      "case_quartz",
+      "case_ember",
+      "case_kite",
+      "case_lumen"
+    ],
+    "A4": [
+      "case_slate",
+      "case_reed",
+      "case_lumen",
+      "case_quartz",
+      "case_moss",
+      "case_nova",
+      "case_orbit",
+      "case_ember",
+      "case_kite",
+      "case_wren"
+    ]
+  },
+  "peak_counts": {
+    "case_ember": 42,
+    "case_kite": 25,
+    "case_lumen": 21,
+    "case_moss": 39,
+    "case_nova": 7,
+    "case_orbit": 13,
+    "case_quartz": 46,
+    "case_reed": 22,
+    "case_slate": 28,
+    "case_wren": 5
+  },
+  "rank_union": [
+    "case_slate",
+    "case_reed",
+    "case_nova",
+    "case_orbit",
+    "case_quartz",
+    "case_lumen",
+    "case_moss",
+    "case_wren",
+    "case_ember",
+    "case_kite"
+  ],
+  "routing_metrics": {
+    "broad_candidate_fraction": 0.4,
+    "claim_relative_compression_fraction": 0.5714285714285714,
+    "claim_relative_followup_fraction": 0.42857142857142855
+  },
+  "scores": {
+    "A1": {
+      "case_ember": 2.22222222,
+      "case_kite": 4.42857143,
+      "case_lumen": 5.57142857,
+      "case_moss": 1.88888889,
+      "case_nova": 1.5,
+      "case_orbit": 0.85714286,
+      "case_quartz": 2.66666667,
+      "case_reed": 3.0,
+      "case_slate": 4.5,
+      "case_wren": 1.66666667
+    },
+    "A2": {
+      "case_ember": 0.27272727,
+      "case_kite": 0.2173913,
+      "case_lumen": 0.2173913,
+      "case_moss": 0.3125,
+      "case_nova": 0.33333333,
+      "case_orbit": 0.4,
+      "case_quartz": 0.29545455,
+      "case_reed": 0.54285714,
+      "case_slate": 0.68,
+      "case_wren": 0.33333333
+    },
+    "A3": {
+      "case_ember": 0.27272727,
+      "case_kite": 0.2173913,
+      "case_lumen": 0.2173913,
+      "case_moss": 0.3125,
+      "case_nova": 0.33333333,
+      "case_orbit": 0.4,
+      "case_quartz": 0.29545455,
+      "case_reed": 0.54285714,
+      "case_slate": 0.45714286,
+      "case_wren": 0.33333333
+    },
+    "A4": {
+      "case_ember": 0.09090909,
+      "case_kite": 0.07954545,
+      "case_lumen": 0.13636364,
+      "case_moss": 0.125,
+      "case_nova": 0.10227273,
+      "case_orbit": 0.10227273,
+      "case_quartz": 0.13636364,
+      "case_reed": 0.14772727,
+      "case_slate": 0.18181818,
+      "case_wren": 0.07954545
+    }
+  },
+  "top3_route_count": {
+    "case_ember": 0,
+    "case_kite": 1,
+    "case_lumen": 2,
+    "case_moss": 0,
+    "case_nova": 0,
+    "case_orbit": 2,
+    "case_quartz": 0,
+    "case_reed": 3,
+    "case_slate": 4,
+    "case_wren": 0
+  }
+}
