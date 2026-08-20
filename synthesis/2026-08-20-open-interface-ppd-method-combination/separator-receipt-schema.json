@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "receipt_type": "ppd-separator-receipt-v0.1",
+  "required_fields": [
+    "proposal_id",
+    "case_id",
+    "target_claim",
+    "operation",
+    "predicted_contrast",
+    "proposal_source_fence",
+    "P_proposed",
+    "X_exact_separator_executed",
+    "D_discriminating_result_observed",
+    "U_target_claim_updated",
+    "R_target_claim_resolved",
+    "E_mechanism_engaged"
+  ],
+  "closure_chain": [
+    "X_exact_separator_executed implies P_proposed",
+    "D_discriminating_result_observed implies X_exact_separator_executed",
+    "U_target_claim_updated implies D_discriminating_result_observed",
+    "R_target_claim_resolved implies U_target_claim_updated"
+  ],
+  "engagement_guard": "E_mechanism_engaged is an orthogonal future-observation bit and is not a closure-chain stage. E may be true while X/D/U/R are false.",
+  "case_level_guard": "A case can be resolved compositionally even when no single separator receipt has R=true; case resolution must cite the composition of claim updates."
+}

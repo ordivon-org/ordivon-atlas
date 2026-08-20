@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "cases": {
+    "q_008": {
+      "upstream_outcome": "answered_refuted",
+      "case_resolved": true,
+      "receipts": [
+        {
+          "proposal_id": "q008-independent-retrieval",
+          "case_id": "q_008",
+          "target_claim": "strongly subsolar H2O is an atmospheric property",
+          "operation": "apply independent retrieval frameworks / vary retrieval assumptions on same or archival spectra",
+          "predicted_contrast": "stable subsolar abundance across independent assumptions favors property; strong assumption dependence favors retrieval artifact",
+          "proposal_source_fence": "evidence_graph_v1 frozen pre-2021",
+          "P_proposed": true,
+          "X_exact_separator_executed": true,
+          "D_discriminating_result_observed": true,
+          "U_target_claim_updated": true,
+          "R_target_claim_resolved": false,
+          "E_mechanism_engaged": true,
+          "future_evidence": ["2025AJ....170...69V", "2025A&A...700A.105B"]
+        },
+        {
+          "proposal_id": "q008-independent-data",
+          "case_id": "q_008",
+          "target_claim": "strongly subsolar H2O is an atmospheric property",
+          "operation": "obtain an independent high-resolution spectroscopic constraint",
+          "predicted_contrast": "independent at-least-solar H2O disfavors the strongly-subsolar property claim",
+          "proposal_source_fence": "evidence_graph_v1 frozen pre-2021",
+          "P_proposed": true,
+          "X_exact_separator_executed": true,
+          "D_discriminating_result_observed": true,
+          "U_target_claim_updated": true,
+          "R_target_claim_resolved": false,
+          "E_mechanism_engaged": true,
+          "future_evidence": ["2025AJ....170..223F"]
+        }
+      ],
+      "composition_resolution": "Multiple independent claim updates jointly support the upstream answered+refuted standing; no single receipt is credited with sole resolution."
+    },
+    "q_001": {
+      "upstream_outcome": "partially_addressed",
+      "case_resolved": false,
+      "receipts": [
+        {
+          "proposal_id": "q001-vertical-shear-common-model",
+          "case_id": "q_001",
+          "target_claim": "cause of optical-vs-near-IR wind discrepancy",
+          "operation": "use line/altitude-sensitive wind modeling to test vertical shear",
+          "predicted_contrast": "systematic velocity change with atmospheric layer favors vertical shear over a single uniform wind",
+          "proposal_source_fence": "session-blind freeze commit 34a4d87bfc215075431df61dc4c21ec4ed7242b5",
+          "P_proposed": true,
+          "X_exact_separator_executed": false,
+          "D_discriminating_result_observed": false,
+          "U_target_claim_updated": false,
+          "R_target_claim_resolved": false,
+          "E_mechanism_engaged": true,
+          "future_evidence": ["2021PhDT.........4S"],
+          "note": "Released adjudication supports atmospheric-layer wind structure, but does not establish execution of the exact frozen common-model separator."
+        },
+        {
+          "proposal_id": "q001-analysis-systematics-multiverse",
+          "case_id": "q_001",
+          "target_claim": "cause of optical-vs-near-IR wind discrepancy",
+          "operation": "vary telluric/systematics treatment and reanalysis pipeline",
+          "predicted_contrast": "material wind-speed changes across defensible pipelines imply analysis/systematics contribution",
+          "proposal_source_fence": "session-blind freeze commit 34a4d87bfc215075431df61dc4c21ec4ed7242b5",
+          "P_proposed": true,
+          "X_exact_separator_executed": true,
+          "D_discriminating_result_observed": true,
+          "U_target_claim_updated": true,
+          "R_target_claim_resolved": false,
+          "E_mechanism_engaged": true,
+          "future_evidence": ["2021MNRAS.502.4392L", "2024AJ....167..179B"]
+        },
+        {
+          "proposal_id": "q001-contemporaneous-optical-nir",
+          "case_id": "q_001",
+          "target_claim": "cause of optical-vs-near-IR wind discrepancy",
+          "operation": "obtain near-contemporaneous optical and near-IR observations",
+          "predicted_contrast": "persistent discrepancy at matched epochs disfavors temporal variability; disappearance supports temporal variability",
+          "proposal_source_fence": "session-blind freeze commit 34a4d87bfc215075431df61dc4c21ec4ed7242b5",
+          "P_proposed": true,
+          "X_exact_separator_executed": false,
+          "D_discriminating_result_observed": false,
+          "U_target_claim_updated": false,
+          "R_target_claim_resolved": false,
+          "E_mechanism_engaged": false,
+          "future_evidence": []
+        }
+      ]
+    }
+  }
+}

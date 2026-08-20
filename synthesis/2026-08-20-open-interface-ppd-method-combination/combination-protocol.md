@@ -107,3 +107,22 @@ This is a **calibration expectation known from the future**. It is not a prospec
 ## Reopen condition
 
 This local experiment reopens the broad open-interface theory only if a method combination reveals a selective-repair distinction that cannot be represented by existing claim-relative, lineage/common-mode, representation, measurement and validation responsibilities.
+
+## Separator receipt vector
+
+Do **not** encode future mechanism engagement as a monotone lifecycle stage. For each frozen separator proposal record:
+
+`(P, X, D, U, R; E)`
+
+where:
+
+- `P`: proposal existed under the source fence;
+- `X`: the exact target-preserving separator was later executed;
+- `D`: execution produced the predicted contrast/discrimination;
+- `U`: that discrimination changed the target claim standing;
+- `R`: the target claim was resolved by this receipt;
+- `E`: future work engaged the same mechanism class.
+
+The closure chain is `R => U => D => X => P`. `E` is orthogonal. q_001 demonstrates why: vertical-wind-shear work can make `E=true` even when the exact frozen separator has not been shown to satisfy `X/D/U/R`.
+
+Case-level resolution may be compositional: q_008 is upstream `answered+refuted` even though no single separator is credited with sole `R=true`; multiple independent claim updates jointly close the claim.
