@@ -521,3 +521,42 @@ Key retrieval aliases / pressure terms:
 - epistemic stepping stone / search geometry value
 - SearchSpaceChange != SearchProgress
 - do-not-collapse / no universal completeness
+
+
+## Pending canonical slot — Finite Intelligence Open Consequence / Decomposition Increment (2026-08-20)
+
+Ordinal intentionally not assigned here; ordinals are navigation aids and the already-current Open Interface Formation episode is also pending canonical numbering.
+
+Atlas synthesis:
+
+- `synthesis/2026-08-20-finite-intelligence-open-consequence-decomposition/README.md`
+- `synthesis/2026-08-20-finite-intelligence-open-consequence-decomposition/core-results.md`
+- `synthesis/2026-08-20-finite-intelligence-open-consequence-decomposition/anti-rediscovery.md`
+- `synthesis/2026-08-20-finite-intelligence-open-consequence-decomposition/open-frontier-handoff.md`
+- `synthesis/2026-08-20-finite-intelligence-open-consequence-decomposition/assimilation-manifest.md`
+- `synthesis/research-process-lineage/episodes/2026-08-20-finite-intelligence-open-consequence-decomposition.md`
+
+Host continuity:
+
+- `task:finite-intelligence-open-consequence-decomposition-closeout-20260820@2`
+
+Dedup fence:
+
+- `synthesis/2026-08-20-finite-intelligence-open-interface-formation/`
+- `task:finite-intelligence-open-interface-formation-handoff-20260820@2`
+
+Key retrieval aliases / pressure terms:
+
+- future consequence family / unrestricted future task compression
+- open relevance basis / utility-gated relevance closure
+- reveal vs activate vs generate consequence/problem
+- capability-generated epistemic debt / typed requisite challengeability
+- standing compositionality / composition warrant
+- open-world interface challenge / latent seam coupling
+- interface inflation / repair curve / wrong decomposition
+- decomposition plurality / diagnostic decomposition / boundary rotation
+- logarithmic pairwise boundary exposure / k-way diagnostic cuts
+- partition blindness vs locus blindness
+- relation/process reification / object standing / intervention semantics
+- candidate locus operation profile
+- support search `(S,phi)` / locality-sparsity blindness / long-range high-order cross-scale escape
