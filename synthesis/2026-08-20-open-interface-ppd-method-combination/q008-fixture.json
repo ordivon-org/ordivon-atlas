@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "fixture_id": "ppd-q008-hd209458b-v0.1",
+  "source_fence": {
+    "repository": "https://github.com/nonameisready/scientific-question-discovery",
+    "commit": "9690a9cc6cfcb11a168af5c3fefdbb3bbc185e42",
+    "paper": "arXiv:2608.16795",
+    "cutoff_year": 2020
+  },
+  "target": {
+    "object": "HD 209458 b",
+    "claim_level": "terminator H2O abundance",
+    "frozen_question_paraphrase": "Is strongly subsolar terminator water atmospheric, or a retrieval-assumption artifact testable with independent retrievals?"
+  },
+  "pre_cutoff_evidence": [
+    {
+      "bibcode": "2017MNRAS.469.1979M",
+      "year": 2017,
+      "role": "HST retrieval",
+      "standing": "strongly subsolar H2O with inhomogeneous clouds/haze"
+    },
+    {
+      "bibcode": "2019AJ....157..114B",
+      "year": 2019,
+      "role": "VLT/CRIRES high-dispersion retrieval",
+      "standing": "subsolar H2O; reported robustness to several model assumptions"
+    }
+  ],
+  "frozen_generator_output": {
+    "system": "evidence_graph_v1",
+    "question_id": "q_008",
+    "signal_type": "single_dataset_conclusion",
+    "requested_discriminators": [
+      "independent_retrieval_framework_same_or_archival_data",
+      "independent_dataset_or_modality"
+    ]
+  },
+  "future_adjudication": [
+    {
+      "bibcode": "2025A&A...700A.105B",
+      "year": 2025,
+      "role": "reanalysis",
+      "resolution_component": "improved_systematics_and_bayesian_model_averaging",
+      "standing": "solar-consistent H2O"
+    },
+    {
+      "bibcode": "2025AJ....170...69V",
+      "year": 2025,
+      "role": "independent retrieval framework",
+      "resolution_component": "retrieval_assumption_sensitivity",
+      "standing": "free/equilibrium/grid assumptions span subsolar-to-solar solutions"
+    },
+    {
+      "bibcode": "2025AJ....170..223F",
+      "year": 2025,
+      "role": "independent ground high-resolution spectroscopy",
+      "resolution_component": "orthogonal_measurement_grounding",
+      "standing": "at-least-solar H2O; inconsistent with strongly subsolar premise"
+    }
+  ],
+  "method_coordinates": [
+    "temporal_isolation",
+    "evidence_genealogy",
+    "analysis_multiverse",
+    "generator_expansion",
+    "orthogonal_validation",
+    "future_reality_adjudication"
+  ],
+  "guards": [
+    "independent_dataset_is_not_independent_inference_assumption",
+    "same_direction_evidence_is_not_common_mode_exclusion",
+    "historical_replay_is_not_prospective_generator_proof",
+    "future_publication_is_claim_specific_adjudication_not_universal_truth"
+  ]
+}
