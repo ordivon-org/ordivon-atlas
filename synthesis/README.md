@@ -48,6 +48,7 @@ Before adding a synthesis item, classify it as one of:
 
 ## Current collections
 
+- [`2026-08-21-result-achievement-value-materialization/`](2026-08-21-result-achievement-value-materialization/) — bounded B4/R4 recovery synthesis for the orthogonal Result/Achievement/Improvement/Optimality/Value semantics, the dated `26 / 11 / external-benefit NOT_DEMONSTRATED` empirical cut, and the R1–R4 materialization-admission result; explicitly non-authoritative and not a global score, owner Result publication, or Research→Engineering pipeline.
 - [`2026-08-18-19-research-understanding/`](2026-08-18-19-research-understanding/) — manual assimilation of the research-understanding conversation: worldview, owner topology, Agent/work realization, research-method/significance compression, Human–Ordivon learning map, anti-rediscovery, and an explicit assimilation manifest.
 - [`2026-08-18-19-media-reconstruction/`](2026-08-18-19-media-reconstruction/) — Media-specific anti-rediscovery synthesis covering the Studio→Media owner inversion, Derived-vs-Foundation compression, Web/Game boundary corrections, OMPC formation/dogfood and stable-owner Phase-1 closure.
 - [`2026-08-19-runtime-operational-realization/`](2026-08-19-runtime-operational-realization/) — Runtime C1–C10 high-value synthesis and anti-rediscovery guard, source-fenced to the current Runtime programme-saturation owner publication without duplicating the owner corpus.
