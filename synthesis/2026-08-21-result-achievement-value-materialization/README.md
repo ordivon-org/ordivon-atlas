@@ -251,3 +251,82 @@ Reopen this synthesis when one of the following occurs:
 - a fresh Agent still cannot reliably discover these durable synthesis results through the explicit prior-result path, creating evidence for synthesis indexing/search automation.
 
 Do not reopen merely because more Tasks, commits, documents, Foundations, tests, or features exist.
+
+
+## 10. Additional recovered deltas that must remain first-class in this synthesis
+
+The primary reassessment wrapper compresses three additional source families whose independent control value is lost if only the headline `26 / 11 / NOT_DEMONSTRATED` profile is retained.
+
+### 10.1 Disposition and ordinary-path uptake are not one conversion pipeline
+
+Source fence:
+
+- `task:research-outcome-disposition-consumption-census-20260820@5`
+- checkpoint digest: `sha256:c7c16bf4e91a5fb749ae817563387f45e0517463e13c865c004aedab24c30ffd`
+
+The surviving system-level standing is:
+
+```text
+EventualAbsorptionStrong
+TimelyOrdinaryPathUptakeVariable
+GlobalTranslationMechanismNotEarned
+```
+
+Actual downstream disposition is multi-label. Mature research may change engineering, semantic/default judgement, experiment/measurement, product/direction, future-option/reopen retention, or correctly produce explicit `NO_OP`; no one disposition is mandatory.
+
+The independent ordinary-consumer PPD guard falsifier also showed:
+
+```text
+MatureResearchGuard != EffectiveGenericPromptSurface
+```
+
+while current Game work showed a different negative control: existing practice already preserved the relevant option-space consequence, so importing the theory would not change the action. Therefore low visible engineering conversion is not by itself an absorption defect.
+
+### 10.2 Reference standing and decision-bearing standing are different
+
+Source fence:
+
+- `task:ordivon-decision-bearing-standing-audit-20260821@3`
+- checkpoint digest: `sha256:9833726f4186634f5124ef83cc04ef2ce6ca3e089defd577e092f092350e991b`
+
+The audit preserves these control laws:
+
+```text
+Completed != Achievement != Value != Priority != Admission
+CapabilityPresence != ActionAuthority != Relevance != Value
+Navigation / FirstLookup != Ranking / Authority
+QuestionEvidenceMaturity != ProductMaturity != Priority
+Fixture != Executable
+CompletedExperiment != CurrentExecutableSurface
+```
+
+Historical/reference evidence may remain recoverable while losing allocation, reactivation, owner-direction, admission, or executable-attention authority. Computing PR #108 supplied the concrete repair: stale external-owner priorities were demoted without deleting history, and closed OFR runners were removed from the current executable surface while declarative CP fixtures were retained. The repair is current in Computing main `d91b2eaa921779fe28655b2a02d6cd9ba677dd61` at this source cut.
+
+### 10.3 Thin independent external benefit has heterogeneous causes
+
+Source fence:
+
+- `task:ordivon-external-realized-benefit-gap-20260821@5`
+- checkpoint digest: `sha256:b4e0c4be50f98a562b48f16d89a0155bfdb4301156ab5519b696f645681e2b67`
+
+The external-benefit null is not one generic value failure. Retain at least these distinctions:
+
+```text
+ClosedLoopTractabilityBias
+SourceReachable != LowFrictionConsumable
+AcquisitionReady != EvidenceObserved
+Persistence != Pursuit != ExternalContactAcquisition
+ExternalWorldConsequence != OwnerRealizedBenefit != IndependentThirdPartyBenefit
+```
+
+Internally controllable Agent research/engineering loops have much higher feedback bandwidth than human, market, independent-operator, and other external-consequence loops. That can make internal Reality contact compound faster without proving intrinsic low external value.
+
+Some absent external benefit is also stage- or authority-correct: Security is intentionally experimental; Finance effects remain owner-gated; Game Player Value needs a real participant; Human and Media/Web downstream benefit needs human response/outcome evidence. A global growth/adoption/external-value controller remains unearned. Portfolio-level intervention should reopen only after repeated cases satisfy a stronger condition such as:
+
+```text
+ExternalClaimDecisionBearing
+AND AcquisitionReady
+AND RepeatedlyNotPursued
+```
+
+These three source families are preserved as separate deltas because the reassessment wrapper is a closeout/index, not a substitute for their reusable distinctions.

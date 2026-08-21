@@ -81,3 +81,43 @@ New work is justified when a concrete counterexample breaks one of the current d
 - new external evidence changes the dated empirical value profile.
 
 Absent such a breaker, use this synthesis as the prior result rather than restarting the semantics from Task/activity volume.
+
+
+## Do not collapse disposition timing into an absorption mechanism
+
+Retain:
+
+```text
+EventualAbsorptionStrong
+TimelyOrdinaryPathUptakeVariable
+GlobalTranslationMechanismNotEarned
+```
+
+Do not create a permanent Research→Engineering queue because a mature result was not immediately materialized. First identify the exact consumer and whether the missing step is discovery, applicability, representation, executable action, authority, delivery, stale standing, or intentional `NO_OP`.
+
+## Do not turn reference state into decision authority
+
+Before using a historical/currently discoverable item for allocation, admission, reactivation, owner direction, or executable attention, preserve:
+
+```text
+Completed != Achievement != Value != Priority != Admission
+CapabilityPresence != ActionAuthority != Relevance != Value
+Navigation / FirstLookup != Ranking / Authority
+Fixture != Executable
+```
+
+A recoverable historical object may correctly remain non-actionable.
+
+## Do not diagnose thin external benefit as one generic value failure
+
+Check the actual external causal edge first. Preserve:
+
+```text
+ClosedLoopTractabilityBias
+SourceReachable != LowFrictionConsumable
+AcquisitionReady != EvidenceObserved
+Persistence != Pursuit != ExternalContactAcquisition
+ExternalWorldConsequence != OwnerRealizedBenefit != IndependentThirdPartyBenefit
+```
+
+Do not add a growth/adoption KPI or controller merely because independent third-party benefit is currently `NOT_DEMONSTRATED`.

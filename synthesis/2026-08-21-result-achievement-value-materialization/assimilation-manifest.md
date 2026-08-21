@@ -143,3 +143,36 @@ Admission task:
 Atlas source base selected for implementation after remote currentness validation:
 
 - `2c1c51b89931d97f86216bfb218583993c93dd6b`
+
+
+## Additional source families recovered after the initial B4 materialization
+
+A later exact coverage test against the already-materialized collection showed that the reassessment wrapper did not preserve several definition-bearing deltas from three sibling closeouts. They are appended here rather than creating another overlapping synthesis package.
+
+### D. Disposition / consumption / uptake census
+
+- Host source: `task:research-outcome-disposition-consumption-census-20260820@5`
+- checkpoint digest: `sha256:c7c16bf4e91a5fb749ae817563387f45e0517463e13c865c004aedab24c30ffd`
+- classification: `NEW_CROSS_OWNER_SYNTHESIS + EMPIRICAL_CONSUMPTION_CENSUS`
+- retained delta: multi-label disposition; `EventualAbsorptionStrong`; `TimelyOrdinaryPathUptakeVariable`; `GlobalTranslationMechanismNotEarned`; generic prompt exposure is not a generic absorption mechanism.
+
+### E. Decision-bearing standing audit
+
+- Host source: `task:ordivon-decision-bearing-standing-audit-20260821@3`
+- checkpoint digest: `sha256:9833726f4186634f5124ef83cc04ef2ce6ca3e089defd577e092f092350e991b`
+- classification: `NEW_CROSS_OWNER_SYNTHESIS + CONTROL_BOUNDARY_AUDIT`
+- retained delta: lifecycle/capability/navigation/evidence maturity do not mint priority/admission/current executable attention; reference/history standing is separable from decision-bearing currentness.
+- concrete repair fence: Computing main `d91b2eaa921779fe28655b2a02d6cd9ba677dd61` after PR #108.
+
+### F. External realized-benefit gap diagnosis
+
+- Host source: `task:ordivon-external-realized-benefit-gap-20260821@5`
+- checkpoint digest: `sha256:b4e0c4be50f98a562b48f16d89a0155bfdb4301156ab5519b696f645681e2b67`
+- classification: `NEW_CROSS_OWNER_SYNTHESIS + DATED_CAUSAL_DIAGNOSIS`
+- retained delta: `ClosedLoopTractabilityBias`; `SourceReachable != LowFrictionConsumable`; `AcquisitionReady != EvidenceObserved`; `Persistence != Pursuit != ExternalContactAcquisition`; three-locus external-world/owner-benefit/independent-third-party-benefit separation.
+
+## Why this is an append, not a second collection
+
+All six source families answer one bounded recovery problem: how to classify consequential results and their downstream treatment without activity inflation or forced conversion. The initial package already owns the first-lookup identity for that recovery problem. A second collection would create duplicate navigation and shadow decomposition rather than additional semantic coverage.
+
+No owner ResultRef is minted by this append. No consumer/benefit relation is inferred. Current owner facts still require owner-native revalidation.
