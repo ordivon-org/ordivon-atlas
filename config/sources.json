@@ -3,14 +3,14 @@
   "sources": [
     {
       "authorityRef": "authority:ordivon:research-owner:network",
-      "corpusRoot": "owners/network",
+      "corpusRoot": "",
       "ownerResearchRef": "research-owner:network",
       "ref": "refs/heads/main",
-      "remote": "https://github.com/zycxfyh/ordivon-research.git",
+      "remote": "git@github.com:zycxfyh/ordivon-interlocus.git",
       "remoteFallbacks": [
-        "git@github.com:zycxfyh/ordivon-research.git"
+        "https://github.com/zycxfyh/ordivon-interlocus.git"
       ],
-      "repo": "/root/projects/ordivon-research"
+      "repo": "/root/projects/ordivon-interlocus"
     },
     {
       "authorityRef": "authority:ordivon:research-owner:runtime",
@@ -58,36 +58,36 @@
     },
     {
       "authorityRef": "authority:ordivon:research-owner:ordivon-normative",
-      "corpusRoot": "owners/ordivon-normative",
+      "corpusRoot": "",
       "ownerResearchRef": "research-owner:ordivon-normative",
       "ref": "refs/heads/main",
-      "remote": "https://github.com/zycxfyh/ordivon-research.git",
+      "remote": "git@github.com:zycxfyh/ordivon-normative.git",
       "remoteFallbacks": [
-        "git@github.com:zycxfyh/ordivon-research.git"
+        "https://github.com/zycxfyh/ordivon-normative.git"
       ],
-      "repo": "/root/projects/ordivon-research"
+      "repo": "/root/projects/ordivon-normative"
     },
     {
       "authorityRef": "authority:ordivon:research-owner:computational-possibility",
-      "corpusRoot": "research/core/computational-possibility",
+      "corpusRoot": "",
       "ownerResearchRef": "research-owner:computational-possibility",
       "ref": "refs/heads/main",
-      "remote": "https://github.com/zycxfyh/ordivon-computing.git",
+      "remote": "git@github.com:zycxfyh/ordivon-computational-possibility.git",
       "remoteFallbacks": [
-        "git@github.com:zycxfyh/ordivon-computing.git"
+        "https://github.com/zycxfyh/ordivon-computational-possibility.git"
       ],
-      "repo": "/root/projects/ordivon-computing"
+      "repo": "/root/projects/ordivon-computational-possibility"
     },
     {
       "authorityRef": "authority:ordivon:research-owner:semantics-of-computational-descriptions",
-      "corpusRoot": "research/core/semantics-of-computational-descriptions",
+      "corpusRoot": "",
       "ownerResearchRef": "research-owner:semantics-of-computational-descriptions",
-      "ref": "refs/heads/research/scd-applied-dogfood-20260818",
-      "remote": "https://github.com/zycxfyh/ordivon-computing.git",
+      "ref": "refs/heads/main",
+      "remote": "git@github.com:zycxfyh/ordivon-scd.git",
       "remoteFallbacks": [
-        "git@github.com:zycxfyh/ordivon-computing.git"
+        "https://github.com/zycxfyh/ordivon-scd.git"
       ],
-      "repo": "/root/projects/ordivon-computing"
+      "repo": "/root/projects/ordivon-scd"
     },
     {
       "authorityRef": "authority:ordivon:research-owner:human",

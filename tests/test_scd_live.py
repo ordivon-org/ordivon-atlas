@@ -7,7 +7,7 @@ from ordivon_atlas.atlas import Atlas, HealthState
 ROOT = Path(__file__).resolve().parents[1]
 OWNER = "research-owner:semantics-of-computational-descriptions"
 CP = "research-owner:computational-possibility"
-EXPECTED_AUTHORITY = "sha256:3319f37f081908e545c708f79e489c3b2a1c54cb03453fa2ebe32bc6e72cbd4f"
+EXPECTED_AUTHORITY = "sha256:f98fef8a3389b9234d95dc5f1e3ce8a18f34045e117bd7c2cf267ec5351a07ba"
 
 @unittest.skipUnless(os.environ.get("ORDIVON_ATLAS_SCD_LIVE_TESTS") == "1", "set ORDIVON_ATLAS_SCD_LIVE_TESTS=1 for SCD owner publication parity")
 class SCDLiveTests(unittest.TestCase):
@@ -21,7 +21,7 @@ class SCDLiveTests(unittest.TestCase):
         cls.negative = [x for x in cls.projection["negativeAndLineage"] if x["ownerResearchRef"] == OWNER]
         cls.recovery = next(x for x in cls.projection["currentRecovery"] if x["ownerResearchRef"] == OWNER)
 
-    def test_scd_and_cp_are_distinct_current_owners_in_same_repo(self):
+    def test_scd_and_cp_are_distinct_current_owners_in_standalone_repos(self):
         self.assertEqual(self.owners[OWNER]["projectionCurrentness"], HealthState.CURRENT_TO_SOURCE)
         self.assertEqual(self.owners[CP]["projectionCurrentness"], HealthState.CURRENT_TO_SOURCE)
         self.assertEqual(self.owners[OWNER]["authorityVersionRef"], EXPECTED_AUTHORITY)
@@ -29,7 +29,7 @@ class SCDLiveTests(unittest.TestCase):
         self.assertNotEqual(self.owners[OWNER]["sourceTransportRevision"], self.owners[CP]["sourceTransportRevision"])
 
     def test_scd_recovery_is_owner_native(self):
-        self.assertEqual(self.recovery["locator"], "research/core/semantics-of-computational-descriptions/README.md")
+        self.assertEqual(self.recovery["locator"], "README.md")
         self.assertEqual(self.recovery["targetRole"], "OWNER_RESEARCH_CORPUS")
 
     def test_scd_high_control_result_parity(self):

@@ -18,19 +18,22 @@ class SCDRegistryTests(unittest.TestCase):
         self.assertIn(CP, self.by_owner)
         self.assertEqual(len(self.by_owner), len(self.sources))
 
-    def test_shared_repository_does_not_merge_scd_and_cp(self):
+    def test_standalone_repositories_preserve_scd_cp_semantic_distinction(self):
         scd = self.by_owner[SCD]
         cp = self.by_owner[CP]
-        self.assertEqual(scd["repo"], cp["repo"])
-        self.assertEqual(scd["remote"], cp["remote"])
+        self.assertNotEqual(scd["repo"], cp["repo"])
+        self.assertNotEqual(scd["remote"], cp["remote"])
         self.assertNotEqual(scd["authorityRef"], cp["authorityRef"])
-        self.assertNotEqual(scd["corpusRoot"], cp["corpusRoot"])
-        self.assertNotEqual(scd["ref"], cp["ref"])
+        self.assertEqual(scd["corpusRoot"], "")
+        self.assertEqual(cp["corpusRoot"], "")
+        self.assertEqual(scd["ref"], "refs/heads/main")
+        self.assertEqual(cp["ref"], "refs/heads/main")
 
     def test_scd_source_is_owner_native_research_ref(self):
         scd = self.by_owner[SCD]
-        self.assertEqual(scd["corpusRoot"], "research/core/semantics-of-computational-descriptions")
-        self.assertEqual(scd["ref"], "refs/heads/research/scd-applied-dogfood-20260818")
+        self.assertEqual(scd["corpusRoot"], "")
+        self.assertEqual(scd["ref"], "refs/heads/main")
+        self.assertEqual(scd["repo"], "/root/projects/ordivon-scd")
         self.assertEqual(scd["authorityRef"], "authority:ordivon:research-owner:semantics-of-computational-descriptions")
 
 if __name__ == "__main__":

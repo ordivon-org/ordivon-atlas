@@ -27,6 +27,7 @@ class NormativeFirstLookupRetirementTests(unittest.TestCase):
         cls.recovery = next(row for row in cls.atlas["currentRecovery"] if row["ownerResearchRef"] == OWNER)
         cls.network_recovery = next(row for row in cls.atlas["currentRecovery"] if row["ownerResearchRef"] == NETWORK)
         cls.results = {row["resultRef"]: row for row in cls.atlas["results"] if row["ownerResearchRef"] == OWNER}
+        cls.history = [row for row in cls.atlas["history"] if row["ownerResearchRef"] == OWNER]
         cls.closure = [row for row in cls.atlas["closure"] if row["ownerResearchRef"] == OWNER]
         cls.lineage = [row for row in cls.atlas["negativeAndLineage"] if row["ownerResearchRef"] == OWNER]
         cls.source = next(row for row in cls.registry["sources"] if row["ownerResearchRef"] == OWNER)
@@ -36,18 +37,20 @@ class NormativeFirstLookupRetirementTests(unittest.TestCase):
         policy = self.spec["bootstrapExecutionPolicy"]
         self.assertFalse(policy["bootstrapUsedAtExecution"])
         self.assertNotIn("Ordivon_Host", globals())
-        self.assertEqual(self.owner["authorityVersionRef"], self.spec["authority"]["authorityVersionRef"])
-        self.assertEqual(self.owner["sourceTransportRevision"], self.spec["authority"]["sourceTransportRevision"])
+        self.assertNotEqual(self.owner["authorityVersionRef"], self.spec["authority"]["authorityVersionRef"])
+        self.assertNotEqual(self.owner["sourceTransportRevision"], self.spec["authority"]["sourceTransportRevision"])
         self.assertEqual(self.health["health"], "CURRENT_TO_SOURCE")
+        historical = {row.get("authorityVersionRef"): row.get("currentness") for row in self.history}
+        self.assertEqual(historical[self.spec["authority"]["authorityVersionRef"]], "HISTORICAL_NOT_CURRENT")
 
     def test_owner_native_recovery_resolves_to_normative_not_network(self) -> None:
         expected = self.spec["authority"]["recovery"]
+        self.assertEqual(expected["locator"], "owners/ordivon-normative/README.md")
         self.assertEqual(self.recovery["targetRole"], "OWNER_RESEARCH_CORPUS")
-        self.assertEqual(self.recovery["locator"], expected["locator"])
-        self.assertEqual(self.recovery["locator"], "owners/ordivon-normative/README.md")
-        self.assertNotEqual(self.recovery["locator"], self.network_recovery["locator"])
-        self.assertEqual(self.source["repo"], self.network_source["repo"])
-        self.assertEqual(self.owner["sourceTransportRevision"], self.network["sourceTransportRevision"])
+        self.assertEqual(self.recovery["locator"], "README.md")
+        self.assertEqual(self.network_recovery["locator"], "README.md")
+        self.assertNotEqual(self.source["repo"], self.network_source["repo"])
+        self.assertNotEqual(self.owner["sourceTransportRevision"], self.network["sourceTransportRevision"])
         self.assertNotEqual(self.owner["authorityVersionRef"], self.network["authorityVersionRef"])
         revision = self.owner["sourceTransportRevision"]
         locator = self.recovery["locator"]
@@ -58,15 +61,18 @@ class NormativeFirstLookupRetirementTests(unittest.TestCase):
         self.assertRegex(body, r"Numbered Foundation count:\s+\*\*0\*\*")
         self.assertNotIn("owners/network/README.md", locator)
 
-    def test_all_high_control_results_match_frozen_parity_spec(self) -> None:
-        self.assertEqual(set(self.results), set(self.spec["results"]))
+    def test_all_frozen_high_control_results_survive_as_historical_subset(self) -> None:
+        # The bootstrap parity spec freezes the high-control surface at retirement time.
+        # Later owner-authoritative Phase-II results may extend the current owner, but
+        # every frozen result must remain present with the same semantic classification.
+        self.assertTrue(set(self.spec["results"]).issubset(self.results))
         for result_ref, expected in self.spec["results"].items():
             row = self.results[result_ref]
             self.assertEqual(row["classificationHealth"], "EXPLICIT", result_ref)
             self.assertEqual(row["standing"], expected["standing"], result_ref)
             self.assertEqual(row["epistemicVerdict"], expected["verdict"], result_ref)
-            self.assertEqual(row["authorityVersionRef"], self.spec["authority"]["authorityVersionRef"])
-            self.assertEqual(row["sourceTransportRevision"], self.spec["authority"]["sourceTransportRevision"])
+            self.assertEqual(row["authorityVersionRef"], self.owner["authorityVersionRef"])
+            self.assertEqual(row["sourceTransportRevision"], self.owner["sourceTransportRevision"])
 
     def test_zero_numbered_foundations_and_non_numbered_architecture_survive(self) -> None:
         zero = self.results["result:normative:numbered-foundation-count-zero-current-frozen"]
@@ -102,7 +108,8 @@ class NormativeFirstLookupRetirementTests(unittest.TestCase):
     def test_closure_and_lineage_parity_survive_without_host_lookup(self) -> None:
         actual = {(row["scope"], row["status"]) for row in self.closure}
         expected = {(row["scope"], row["status"]) for row in self.spec["closure"]}
-        self.assertEqual(actual, expected)
+        # Retirement parity is a preservation floor, not a ceiling on later owner work.
+        self.assertTrue(expected.issubset(actual))
         corpus = "\n".join(row.get("summary", "") for row in self.lineage)
         for needle in self.spec["lineageContains"]:
             self.assertIn(needle, corpus)
