@@ -16,12 +16,14 @@ RUNTIME_V6 = "sha256:9c67d1b4094ce85a2465579430bb1a941f1923457087fb74cde0642d7b9
 NETWORK_V1 = "sha256:bfadaaaad3b01f9c4388e4e4a75e77c782c2c3111849e5c4598052ec740ee79f"
 NETWORK_V2 = "sha256:dbdbb759b2b86b898a343cbb81646b283c589676989e919537f1a6cbc2b1df91"
 NETWORK_V3 = "sha256:31d78dd22ca73b95fc9a1107ad6a38e884859e94247263d14b916cef67e78e2a"
+NETWORK_V4 = "sha256:61800d2c8679cf37c9b22bd1d38ff420c706b95bdf7e8b590820430e8729c557"
 HOST_V1 = "sha256:4fc9dee669927882337649d19c144d0938ecf3307c461bffd84eedb8fdc27df4"
 GAME_V1 = "sha256:b0e16e2cd6fe40685d7b96f94d78ef89bd55ed7f92db4de1408e33d2539bb2f0"
 WORLD_V1 = "sha256:76f3ebc35cc72a67e65cacbcb899d8ccf0919059577c97191c85dc9aed9ede8f"
 NORMATIVE_V1 = "sha256:6558bc84bb52a3a0ffbff0f683a36d46c28efc0f2ba531d4458bd5aa16a4a56e"
 NORMATIVE_V2 = "sha256:91fe75c4827585487a5aadb8c55816b6628cda314bdbb79bdbe2554246a7b579"
 NORMATIVE_V3 = "sha256:d0a1149b8c0278e5ca53122e9bc053c45ed64c0831e7cdb2616981361e6be9f3"
+NORMATIVE_V4 = "sha256:f05ee2de3ebdf2b47fae3951f652a0e38089d328e0bdeeca563553407b78a78c"
 
 
 @unittest.skipUnless(LIVE, "set ORDIVON_ATLAS_LIVE_TESTS=1 for live remote acceptance")
@@ -35,8 +37,8 @@ class LiveSourceTests(unittest.TestCase):
         spec = self.by_owner["research-owner:network"]
         obs = Atlas([spec]).observe(spec)
         self.assertEqual(obs.health, HealthState.CURRENT_TO_SOURCE)
-        self.assertEqual(obs.authorityVersionRef, NETWORK_V3)
-        for old in (NETWORK_V1, NETWORK_V2):
+        self.assertEqual(obs.authorityVersionRef, NETWORK_V4)
+        for old in (NETWORK_V1, NETWORK_V2, NETWORK_V3):
             self.assertEqual(compare_projected_version(old, obs), HealthState.SOURCE_ADVANCED_STALE)
         self.assertEqual((obs.currentRecovery or {}).get("targetRole"), "OWNER_RESEARCH_CORPUS")
 
@@ -117,12 +119,12 @@ class LiveSourceTests(unittest.TestCase):
         self.assertEqual(normative_obs.health, HealthState.CURRENT_TO_SOURCE)
         self.assertNotEqual(network_spec.repo, normative_spec.repo)
         self.assertNotEqual(network_obs.transportRevision, normative_obs.transportRevision)
-        self.assertEqual(network_obs.authorityVersionRef, NETWORK_V3)
-        self.assertEqual(normative_obs.authorityVersionRef, NORMATIVE_V3)
-        for old in (NORMATIVE_V1, NORMATIVE_V2):
+        self.assertEqual(network_obs.authorityVersionRef, NETWORK_V4)
+        self.assertEqual(normative_obs.authorityVersionRef, NORMATIVE_V4)
+        for old in (NORMATIVE_V1, NORMATIVE_V2, NORMATIVE_V3):
             self.assertEqual(compare_projected_version(old, normative_obs), HealthState.SOURCE_ADVANCED_STALE)
         self.assertNotEqual(network_obs.authorityVersionRef, normative_obs.authorityVersionRef)
-        self.assertEqual(compare_projected_version(NETWORK_V3, network_obs), HealthState.CURRENT_TO_SOURCE)
+        self.assertEqual(compare_projected_version(NETWORK_V4, network_obs), HealthState.CURRENT_TO_SOURCE)
         self.assertEqual((network_obs.currentRecovery or {}).get("locator"), "README.md")
         self.assertEqual((normative_obs.currentRecovery or {}).get("locator"), "README.md")
         projection = Atlas([network_spec, normative_spec]).build()
