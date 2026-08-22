@@ -7,8 +7,8 @@ from ordivon_atlas.atlas import Atlas, HealthState
 ROOT = Path(__file__).resolve().parents[1]
 OWNER = "research-owner:human"
 NORMATIVE = "research-owner:ordivon-normative"
-EXPECTED_AUTHORITY = "sha256:035eaa334ffdfe3ae44236f966176a36ffd772ee8c2e4c4454733ab9699ef392"
-EXPECTED_TRANSPORT = "cc966bf99458949b59c433a5f7bc8fafe3d692b7"
+EXPECTED_AUTHORITY = "sha256:7a7ccd6455de82b141803acc7dce69d2b136fb6f295ac1c68988fad2daf83194"
+EXPECTED_TRANSPORT = "eefa87a7d1123abd54d5e084ae21282e147fd295"
 
 @unittest.skipUnless(os.environ.get("ORDIVON_ATLAS_HUMAN_LIVE_TESTS") == "1", "set ORDIVON_ATLAS_HUMAN_LIVE_TESTS=1 for Human owner publication parity")
 class HumanLiveTests(unittest.TestCase):
