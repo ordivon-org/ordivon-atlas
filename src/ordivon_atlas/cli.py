@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 from .atlas import Atlas
+from .first_look import prior_result_first_look
 
 
 def _parser() -> argparse.ArgumentParser:
@@ -14,6 +15,10 @@ def _parser() -> argparse.ArgumentParser:
     refresh = sub.add_parser("refresh", help="resolve owner sources and regenerate Atlas views")
     refresh.add_argument("--out", default="generated")
     sub.add_parser("check", help="observe source currentness without writing views")
+    first_look = sub.add_parser("first-look", help="bounded non-authoritative prior-result candidate lookup")
+    first_look.add_argument("query")
+    first_look.add_argument("--out", default="generated")
+    first_look.add_argument("--limit", type=int, default=8)
     show = sub.add_parser("show", help="print one generated view")
     show.add_argument("view", choices=["atlas", "owners", "recovery", "results", "closure", "negative", "history", "health"])
     show.add_argument("--out", default="generated")
@@ -22,6 +27,9 @@ def _parser() -> argparse.ArgumentParser:
 
 def main(argv: list[str] | None = None) -> int:
     args = _parser().parse_args(argv)
+    if args.command == "first-look":
+        print(json.dumps(prior_result_first_look(args.query, repository_root=".", generated_dir=args.out, limit=args.limit), indent=2, sort_keys=True, ensure_ascii=False))
+        return 0
     atlas = Atlas.from_registry(args.registry)
     if args.command == "check":
         print(json.dumps([row.public() for row in atlas.observe_all()], indent=2, sort_keys=True, ensure_ascii=False))
