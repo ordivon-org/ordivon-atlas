@@ -27,6 +27,8 @@ _GENERATED_FILES = (
 _CJK_RE = re.compile(r"[\u3400-\u9fff]+")
 _WORD_RE = re.compile(r"[a-z0-9][a-z0-9_.:/+\-]{1,}")
 _MAX_INSPECT_BYTES = 65_536
+_MAX_INSPECT_PROJECTION_BYTES = 12_288
+_MARKDOWN_HEADING_RE = re.compile(r"^(#{1,6})[ \t]+(.+?)[ \t]*$", re.MULTILINE)
 
 
 def _terms(query: str) -> tuple[str, ...]:
@@ -153,6 +155,92 @@ def _projection_health(generated: Path) -> dict[str, Any]:
         "counts": dict(sorted(counts.items())),
     }
 
+
+
+def _markdown_sections(text: str, query_terms: tuple[str, ...]) -> list[dict[str, Any]]:
+    matches = list(_MARKDOWN_HEADING_RE.finditer(text))
+    if not matches:
+        score, matched = _matches(text, query_terms)
+        return (
+            [{
+                "heading": None,
+                "level": 0,
+                "score": score,
+                "matchedTerms": list(matched),
+                "text": text,
+                "sourceStart": 0,
+                "sourceEnd": len(text),
+            }]
+            if score
+            else []
+        )
+
+    sections: list[dict[str, Any]] = []
+    if matches[0].start() > 0:
+        preamble = text[: matches[0].start()]
+        score, matched = _matches(preamble, query_terms)
+        if score:
+            sections.append({
+                "heading": None,
+                "level": 0,
+                "score": score,
+                "matchedTerms": list(matched),
+                "text": preamble,
+                "sourceStart": 0,
+                "sourceEnd": matches[0].start(),
+            })
+    for index, heading_match in enumerate(matches):
+        start = heading_match.start()
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(text)
+        section_text = text[start:end]
+        score, matched = _matches(section_text, query_terms)
+        if not score:
+            continue
+        sections.append({
+            "heading": heading_match.group(2).strip(),
+            "level": len(heading_match.group(1)),
+            "score": score,
+            "matchedTerms": list(matched),
+            "text": section_text,
+            "sourceStart": start,
+            "sourceEnd": end,
+        })
+    return sections
+
+
+def _bounded_markdown_projection(text: str, query_terms: tuple[str, ...]) -> dict[str, Any]:
+    ranked = sorted(
+        enumerate(_markdown_sections(text, query_terms)),
+        key=lambda item: (-int(item[1]["score"]), item[0]),
+    )
+    selected: list[dict[str, Any]] = []
+    selected_bytes = 0
+    omitted_for_size = 0
+    for _ordinal, section in ranked:
+        section_bytes = len(str(section["text"]).encode("utf-8"))
+        if section_bytes > _MAX_INSPECT_PROJECTION_BYTES:
+            omitted_for_size += 1
+            continue
+        if selected_bytes + section_bytes > _MAX_INSPECT_PROJECTION_BYTES:
+            omitted_for_size += 1
+            continue
+        selected.append(section)
+        selected_bytes += section_bytes
+    selected.sort(key=lambda item: int(item["sourceStart"]))
+    encoded = json.dumps(
+        selected, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+    ).encode("utf-8")
+    return {
+        "projection": "query-relative-exact-markdown-sections",
+        "projectedBytes": selected_bytes,
+        "projectionDigest": "sha256:" + hashlib.sha256(encoded).hexdigest(),
+        "sectionCount": len(selected),
+        "matchedSectionCount": len(ranked),
+        "projectionTruncated": len(selected) != len(ranked),
+        "omittedForSize": omitted_for_size,
+        "sections": selected,
+        "fullContentAvailableViaRawEscape": True,
+    }
 
 def prior_result_first_look(
     query: str,
@@ -285,8 +373,8 @@ def inspect_prior_result_candidate(
             raise ValueError(f"candidate content exceeds {_MAX_INSPECT_BYTES} bytes")
         text = payload.decode("utf-8")
         content = {
-            "encoding": "text/markdown; charset=utf-8",
-            "text": text,
+            "encoding": "text/markdown-sections; charset=utf-8",
+            **_bounded_markdown_projection(text, _terms(query)),
         }
     elif source_class == "generated-owner-projection":
         generated = Path(generated_dir)

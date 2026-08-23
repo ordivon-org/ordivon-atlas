@@ -112,11 +112,47 @@ class PriorResultFirstLookTests(unittest.TestCase):
                 repository_root=root,
             )
             self.assertEqual(inspected["candidate"]["sourceClass"], "curated-synthesis")
-            self.assertEqual(inspected["content"]["text"], content)
+            self.assertEqual(inspected["content"]["sectionCount"], 1)
+            self.assertEqual(inspected["content"]["sections"][0]["text"], content)
+            self.assertEqual(
+                inspected["content"]["projection"],
+                "query-relative-exact-markdown-sections",
+            )
+            self.assertFalse(inspected["content"]["projectionTruncated"])
+            self.assertTrue(inspected["content"]["fullContentAvailableViaRawEscape"])
             self.assertEqual(inspected["contentBytes"], len(content.encode("utf-8")))
             self.assertTrue(inspected["contentDigest"].startswith("sha256:"))
             self.assertFalse(inspected["claims"]["semanticEquivalenceInferred"])
             self.assertFalse(inspected["claims"]["researchAdmissionGranted"])
+
+    def test_inspect_curated_candidate_projects_only_query_matching_sections(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            synthesis = root / "synthesis"
+            synthesis.mkdir()
+            content = (
+                "# Prior result\n\n"
+                "## Unrelated\n\nThis section discusses weather only.\n\n"
+                "## Consumption\n\nValue != Consumption != RealizedBenefit.\n\n"
+                "## Another unrelated\n\nNo matching vocabulary here.\n"
+            )
+            (synthesis / "prior.md").write_text(content, encoding="utf-8")
+            inspected = inspect_prior_result_candidate(
+                "consumption benefit",
+                "synthesis/prior.md",
+                "$file",
+                repository_root=root,
+            )
+            sections = inspected["content"]["sections"]
+            self.assertEqual([section["heading"] for section in sections], ["Consumption"])
+            self.assertEqual(
+                sections[0]["text"],
+                "## Consumption\n\nValue != Consumption != RealizedBenefit.\n\n",
+            )
+            self.assertLess(
+                inspected["content"]["projectedBytes"],
+                inspected["contentBytes"],
+            )
 
     def test_inspect_generated_candidate_returns_exact_row(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
