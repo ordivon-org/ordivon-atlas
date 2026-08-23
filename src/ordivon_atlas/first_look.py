@@ -9,6 +9,7 @@ health. It performs no write and mints no new research standing.
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -25,6 +26,7 @@ _GENERATED_FILES = (
 )
 _CJK_RE = re.compile(r"[\u3400-\u9fff]+")
 _WORD_RE = re.compile(r"[a-z0-9][a-z0-9_.:/+\-]{1,}")
+_MAX_INSPECT_BYTES = 65_536
 
 
 def _terms(query: str) -> tuple[str, ...]:
@@ -231,4 +233,109 @@ def prior_result_first_look(
     }
 
 
-__all__ = ["prior_result_first_look"]
+def inspect_prior_result_candidate(
+    query: str,
+    candidate_path: str,
+    candidate_locator: str,
+    *,
+    repository_root: str | Path = ".",
+    generated_dir: str | Path = "generated",
+    limit: int = 8,
+) -> dict[str, Any]:
+    """Read one exact first-look candidate without becoming an arbitrary file reader.
+
+    The candidate must be present in the bounded first-look result for the same query,
+    path, locator, and limit. Atlas returns source bytes/rows but still does not infer
+    semantic equivalence, novelty, research admission, or owner truth.
+    """
+
+    if not isinstance(candidate_path, str) or not candidate_path or candidate_path != candidate_path.strip():
+        raise ValueError("candidate path must be non-empty and trimmed")
+    if not isinstance(candidate_locator, str) or not candidate_locator or candidate_locator != candidate_locator.strip():
+        raise ValueError("candidate locator must be non-empty and trimmed")
+    root = Path(repository_root)
+    result = prior_result_first_look(
+        query,
+        repository_root=root,
+        generated_dir=generated_dir,
+        limit=limit,
+    )
+    candidate = next(
+        (
+            item
+            for item in result["candidates"]
+            if item.get("path") == candidate_path and item.get("locator") == candidate_locator
+        ),
+        None,
+    )
+    if candidate is None:
+        raise ValueError("candidate is not present in the bounded first-look result")
+
+    source_class = candidate.get("sourceClass")
+    content: dict[str, Any]
+    if source_class == "curated-synthesis":
+        if candidate_locator != "$file":
+            raise ValueError("curated synthesis candidate must use $file locator")
+        synthesis_root = (root / "synthesis").resolve()
+        target = (root / candidate_path).resolve()
+        if not target.is_relative_to(synthesis_root) or target.suffix != ".md":
+            raise ValueError("curated synthesis candidate escaped the synthesis root")
+        payload = target.read_bytes()
+        if len(payload) > _MAX_INSPECT_BYTES:
+            raise ValueError(f"candidate content exceeds {_MAX_INSPECT_BYTES} bytes")
+        text = payload.decode("utf-8")
+        content = {
+            "encoding": "text/markdown; charset=utf-8",
+            "text": text,
+        }
+    elif source_class == "generated-owner-projection":
+        generated = Path(generated_dir)
+        if not generated.is_absolute():
+            generated = root / generated
+        generated_root = generated.resolve()
+        target = (root / candidate_path).resolve()
+        if (
+            not target.is_relative_to(generated_root)
+            or target.name not in _GENERATED_FILES
+            or target.parent != generated_root
+        ):
+            raise ValueError("generated candidate escaped the generated projection set")
+        value = json.loads(target.read_text(encoding="utf-8"))
+        row = next(
+            (item for locator, item in _records(value) if _record_locator(locator) == candidate_locator),
+            None,
+        )
+        if row is None:
+            raise ValueError("generated candidate locator no longer resolves")
+        payload = json.dumps(
+            row, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+        ).encode("utf-8")
+        if len(payload) > _MAX_INSPECT_BYTES:
+            raise ValueError(f"candidate content exceeds {_MAX_INSPECT_BYTES} bytes")
+        content = {
+            "encoding": "application/json; charset=utf-8",
+            "json": row,
+        }
+    else:
+        raise ValueError("unsupported first-look candidate source class")
+
+    return {
+        "schemaVersion": 0,
+        "kind": "ordivon.atlas-prior-result-candidate-inspection-experimental",
+        "truthRole": "non-authoritative-first-look-candidate-content",
+        "query": result["query"],
+        "candidate": candidate,
+        "contentBytes": len(payload),
+        "contentDigest": "sha256:" + hashlib.sha256(payload).hexdigest(),
+        "content": content,
+        "projectionHealth": result["projectionHealth"],
+        "claims": {
+            "semanticEquivalenceInferred": False,
+            "noveltyStanding": "UNKNOWN_CALLER_MUST_ADJUDICATE",
+            "researchAdmissionGranted": False,
+            "ownerTruthMinted": False,
+        },
+    }
+
+
+__all__ = ["inspect_prior_result_candidate", "prior_result_first_look"]

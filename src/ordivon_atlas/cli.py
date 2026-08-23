@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 from .atlas import Atlas
-from .first_look import prior_result_first_look
+from .first_look import inspect_prior_result_candidate, prior_result_first_look
 
 
 def _parser() -> argparse.ArgumentParser:
@@ -19,6 +19,15 @@ def _parser() -> argparse.ArgumentParser:
     first_look.add_argument("query")
     first_look.add_argument("--out", default="generated")
     first_look.add_argument("--limit", type=int, default=8)
+    inspect_candidate = sub.add_parser(
+        "inspect-candidate",
+        help="read one exact bounded first-look candidate without inferring equivalence/admission",
+    )
+    inspect_candidate.add_argument("query")
+    inspect_candidate.add_argument("path")
+    inspect_candidate.add_argument("locator")
+    inspect_candidate.add_argument("--out", default="generated")
+    inspect_candidate.add_argument("--limit", type=int, default=8)
     show = sub.add_parser("show", help="print one generated view")
     show.add_argument("view", choices=["atlas", "owners", "recovery", "results", "closure", "negative", "history", "health"])
     show.add_argument("--out", default="generated")
@@ -29,6 +38,23 @@ def main(argv: list[str] | None = None) -> int:
     args = _parser().parse_args(argv)
     if args.command == "first-look":
         print(json.dumps(prior_result_first_look(args.query, repository_root=".", generated_dir=args.out, limit=args.limit), indent=2, sort_keys=True, ensure_ascii=False))
+        return 0
+    if args.command == "inspect-candidate":
+        print(
+            json.dumps(
+                inspect_prior_result_candidate(
+                    args.query,
+                    args.path,
+                    args.locator,
+                    repository_root=".",
+                    generated_dir=args.out,
+                    limit=args.limit,
+                ),
+                indent=2,
+                sort_keys=True,
+                ensure_ascii=False,
+            )
+        )
         return 0
     atlas = Atlas.from_registry(args.registry)
     if args.command == "check":

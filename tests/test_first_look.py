@@ -5,7 +5,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from ordivon_atlas.first_look import prior_result_first_look
+from ordivon_atlas.first_look import inspect_prior_result_candidate, prior_result_first_look
 
 
 class PriorResultFirstLookTests(unittest.TestCase):
@@ -96,6 +96,70 @@ class PriorResultFirstLookTests(unittest.TestCase):
             self.assertEqual(result["candidateCount"], 1)
             self.assertTrue(result["queryTerms"])
             self.assertFalse(result["claims"]["ownerTruthMinted"])
+
+    def test_inspect_curated_candidate_is_bound_to_first_look_result(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            synthesis = root / "synthesis"
+            synthesis.mkdir()
+            content = "result consumer benefit graph full standing\nValue != Consumption != RealizedBenefit\n"
+            path = synthesis / "prior.md"
+            path.write_text(content, encoding="utf-8")
+            inspected = inspect_prior_result_candidate(
+                "result consumer benefit graph",
+                "synthesis/prior.md",
+                "$file",
+                repository_root=root,
+            )
+            self.assertEqual(inspected["candidate"]["sourceClass"], "curated-synthesis")
+            self.assertEqual(inspected["content"]["text"], content)
+            self.assertEqual(inspected["contentBytes"], len(content.encode("utf-8")))
+            self.assertTrue(inspected["contentDigest"].startswith("sha256:"))
+            self.assertFalse(inspected["claims"]["semanticEquivalenceInferred"])
+            self.assertFalse(inspected["claims"]["researchAdmissionGranted"])
+
+    def test_inspect_generated_candidate_returns_exact_row(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            generated = root / "generated"
+            generated.mkdir()
+            row = {
+                "owner": "research-owner:fixture",
+                "title": "result consumer benefit graph",
+                "currentness": "CURRENT_VERIFIED",
+            }
+            (generated / "results.json").write_text(
+                json.dumps([row]), encoding="utf-8"
+            )
+            first = prior_result_first_look(
+                "result consumer benefit graph", repository_root=root
+            )
+            candidate = first["candidates"][0]
+            inspected = inspect_prior_result_candidate(
+                "result consumer benefit graph",
+                candidate["path"],
+                candidate["locator"],
+                repository_root=root,
+            )
+            self.assertEqual(inspected["content"]["json"], row)
+            self.assertEqual(inspected["candidate"]["path"], "generated/results.json")
+
+    def test_inspect_rejects_existing_file_not_returned_by_first_look(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            synthesis = root / "synthesis"
+            synthesis.mkdir()
+            (synthesis / "matching.md").write_text(
+                "result consumer benefit graph", encoding="utf-8"
+            )
+            (synthesis / "secret.md").write_text("unrelated", encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "bounded first-look result"):
+                inspect_prior_result_candidate(
+                    "result consumer benefit graph",
+                    "synthesis/secret.md",
+                    "$file",
+                    repository_root=root,
+                )
 
     def test_limit_is_fail_closed(self) -> None:
         with self.assertRaisesRegex(ValueError, "limit"):
