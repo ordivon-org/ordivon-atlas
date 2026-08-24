@@ -17,11 +17,11 @@ class HumanRegistryTests(unittest.TestCase):
         self.assertEqual(len(self.by_owner), 10)
         self.assertIn(HUMAN, self.by_owner)
 
-    def test_human_uses_owner_native_repair_ref_and_core_root(self):
+    def test_human_uses_owner_native_main_ref_and_core_root(self):
         h = self.by_owner[HUMAN]
         self.assertEqual(h["authorityRef"], "authority:ordivon:research-owner:human")
         self.assertEqual(h["corpusRoot"], "research/core")
-        self.assertEqual(h["ref"], "refs/heads/repair/human-research-core-materialization-20260818")
+        self.assertEqual(h["ref"], "refs/heads/main")
         self.assertEqual(h["repo"], "/root/projects/ordivon-human")
 
     def test_human_and_normative_are_not_authority_conflated(self):

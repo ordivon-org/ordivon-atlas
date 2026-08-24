@@ -93,7 +93,7 @@
       "authorityRef": "authority:ordivon:research-owner:human",
       "corpusRoot": "research/core",
       "ownerResearchRef": "research-owner:human",
-      "ref": "refs/heads/repair/human-research-core-materialization-20260818",
+      "ref": "refs/heads/main",
       "remote": "https://github.com/zycxfyh/ordivon-human.git",
       "remoteFallbacks": [
         "git@github.com:zycxfyh/ordivon-human.git"
