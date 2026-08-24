@@ -51,6 +51,7 @@ def _parser() -> argparse.ArgumentParser:
     inspect_candidate.add_argument("locator")
     inspect_candidate.add_argument("--out", default="generated")
     inspect_candidate.add_argument("--limit", type=int, default=8)
+    inspect_candidate.add_argument("--max-projection-bytes", type=int, default=12_288)
     show = sub.add_parser("show", help="print one generated view")
     show.add_argument("view", choices=["atlas", "owners", "recovery", "results", "closure", "negative", "history", "health"])
     show.add_argument("--out", default="generated")
@@ -114,6 +115,7 @@ def main(argv: list[str] | None = None) -> int:
                     repository_root=".",
                     generated_dir=args.out,
                     limit=args.limit,
+                    max_projection_bytes=args.max_projection_bytes,
                 ),
                 indent=2,
                 sort_keys=True,

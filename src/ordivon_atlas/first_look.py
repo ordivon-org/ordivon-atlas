@@ -15,7 +15,6 @@ import re
 from pathlib import Path
 from typing import Any
 
-
 _GENERATED_FILES = (
     "results.json",
     "closure.json",
@@ -208,7 +207,19 @@ def _markdown_sections(text: str, query_terms: tuple[str, ...]) -> list[dict[str
     return sections
 
 
-def _bounded_markdown_projection(text: str, query_terms: tuple[str, ...]) -> dict[str, Any]:
+def _bounded_markdown_projection(
+    text: str,
+    query_terms: tuple[str, ...],
+    *,
+    max_projection_bytes: int = _MAX_INSPECT_PROJECTION_BYTES,
+) -> dict[str, Any]:
+    if (
+        type(max_projection_bytes) is not int
+        or not 1 <= max_projection_bytes <= _MAX_INSPECT_PROJECTION_BYTES
+    ):
+        raise ValueError(
+            f"max projection bytes must be an integer from 1 to {_MAX_INSPECT_PROJECTION_BYTES}"
+        )
     ranked = sorted(
         enumerate(_markdown_sections(text, query_terms)),
         key=lambda item: (-int(item[1]["score"]), item[0]),
@@ -218,10 +229,10 @@ def _bounded_markdown_projection(text: str, query_terms: tuple[str, ...]) -> dic
     omitted_for_size = 0
     for _ordinal, section in ranked:
         section_bytes = len(str(section["text"]).encode("utf-8"))
-        if section_bytes > _MAX_INSPECT_PROJECTION_BYTES:
+        if section_bytes > max_projection_bytes:
             omitted_for_size += 1
             continue
-        if selected_bytes + section_bytes > _MAX_INSPECT_PROJECTION_BYTES:
+        if selected_bytes + section_bytes > max_projection_bytes:
             omitted_for_size += 1
             continue
         selected.append(section)
@@ -233,6 +244,7 @@ def _bounded_markdown_projection(text: str, query_terms: tuple[str, ...]) -> dic
     return {
         "projection": "query-relative-exact-markdown-sections",
         "projectedBytes": selected_bytes,
+        "projectionByteLimit": max_projection_bytes,
         "projectionDigest": "sha256:" + hashlib.sha256(encoded).hexdigest(),
         "sectionCount": len(selected),
         "matchedSectionCount": len(ranked),
@@ -329,6 +341,7 @@ def inspect_prior_result_candidate(
     repository_root: str | Path = ".",
     generated_dir: str | Path = "generated",
     limit: int = 8,
+    max_projection_bytes: int = _MAX_INSPECT_PROJECTION_BYTES,
 ) -> dict[str, Any]:
     """Read one exact first-look candidate without becoming an arbitrary file reader.
 
@@ -337,6 +350,13 @@ def inspect_prior_result_candidate(
     semantic equivalence, novelty, research admission, or owner truth.
     """
 
+    if (
+        type(max_projection_bytes) is not int
+        or not 1 <= max_projection_bytes <= _MAX_INSPECT_PROJECTION_BYTES
+    ):
+        raise ValueError(
+            f"max projection bytes must be an integer from 1 to {_MAX_INSPECT_PROJECTION_BYTES}"
+        )
     if not isinstance(candidate_path, str) or not candidate_path or candidate_path != candidate_path.strip():
         raise ValueError("candidate path must be non-empty and trimmed")
     if not isinstance(candidate_locator, str) or not candidate_locator or candidate_locator != candidate_locator.strip():
@@ -374,7 +394,9 @@ def inspect_prior_result_candidate(
         text = payload.decode("utf-8")
         content = {
             "encoding": "text/markdown-sections; charset=utf-8",
-            **_bounded_markdown_projection(text, _terms(query)),
+            **_bounded_markdown_projection(
+                text, _terms(query), max_projection_bytes=max_projection_bytes
+            ),
         }
     elif source_class == "generated-owner-projection":
         generated = Path(generated_dir)

@@ -204,6 +204,43 @@ class PriorResultFirstLookTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "limit"):
             prior_result_first_look("query", limit=0)
 
+    def test_inspection_projection_can_be_caller_bounded_below_owner_maximum(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            synthesis = root / "synthesis"
+            synthesis.mkdir()
+            text = "# Target\n\n" + ("needle alpha beta gamma\n" * 150) + "\n## Second\n\n" + ("needle delta\n" * 150)
+            path = synthesis / "target.md"
+            path.write_text(text, encoding="utf-8")
+            first = prior_result_first_look(
+                "needle", repository_root=root, generated_dir="generated", limit=8
+            )
+            candidate = first["candidates"][0]
+            inspected = inspect_prior_result_candidate(
+                "needle",
+                candidate["path"],
+                candidate["locator"],
+                repository_root=root,
+                generated_dir="generated",
+                limit=8,
+                max_projection_bytes=4096,
+            )
+            content = inspected["content"]
+            self.assertEqual(content["projectionByteLimit"], 4096)
+            self.assertLessEqual(content["projectedBytes"], 4096)
+            self.assertTrue(content["fullContentAvailableViaRawEscape"])
+            self.assertTrue(content["projectionTruncated"])
+            with self.assertRaisesRegex(ValueError, "max projection bytes"):
+                inspect_prior_result_candidate(
+                    "needle",
+                    candidate["path"],
+                    candidate["locator"],
+                    repository_root=root,
+                    generated_dir="generated",
+                    limit=8,
+                    max_projection_bytes=12_289,
+                )
+
     def test_repository_ppd_consumption_anchor_precedes_adjacent_pressure_projections(self) -> None:
         root = Path(__file__).resolve().parents[1]
         for query in (
