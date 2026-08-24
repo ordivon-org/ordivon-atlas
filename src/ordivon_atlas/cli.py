@@ -5,7 +5,14 @@ import json
 from pathlib import Path
 
 from .atlas import Atlas
-from .first_look import inspect_prior_result_candidate, prior_result_first_look
+from .first_look import (
+    inspect_prior_result_candidate,
+    prior_result_first_look,
+    prior_result_first_look_many,
+    retrieval_authoring_context,
+    retrieval_coordinate_profile,
+    retrieval_representation_profile,
+)
 
 
 def _parser() -> argparse.ArgumentParser:
@@ -19,6 +26,22 @@ def _parser() -> argparse.ArgumentParser:
     first_look.add_argument("query")
     first_look.add_argument("--out", default="generated")
     first_look.add_argument("--limit", type=int, default=8)
+    first_look_many = sub.add_parser(
+        "first-look-many", help="bounded caller-authored multi-variant prior-result lookup"
+    )
+    first_look_many.add_argument("queries", nargs="+")
+    first_look_many.add_argument("--out", default="generated")
+    first_look_many.add_argument("--limit", type=int, default=8)
+    sub.add_parser(
+        "retrieval-profile", help="mechanical Atlas retrieval-representation profile"
+    )
+    sub.add_parser(
+        "retrieval-coordinates", help="task-neutral owner-curated retrieval-coordinate profile"
+    )
+    sub.add_parser(
+        "retrieval-authoring-context",
+        help="mechanical retrieval environment and coordinates for caller query authoring",
+    )
     inspect_candidate = sub.add_parser(
         "inspect-candidate",
         help="read one exact bounded first-look candidate without inferring equivalence/admission",
@@ -38,6 +61,48 @@ def main(argv: list[str] | None = None) -> int:
     args = _parser().parse_args(argv)
     if args.command == "first-look":
         print(json.dumps(prior_result_first_look(args.query, repository_root=".", generated_dir=args.out, limit=args.limit), indent=2, sort_keys=True, ensure_ascii=False))
+        return 0
+    if args.command == "first-look-many":
+        print(
+            json.dumps(
+                prior_result_first_look_many(
+                    args.queries, repository_root=".", generated_dir=args.out, limit=args.limit
+                ),
+                indent=2,
+                sort_keys=True,
+                ensure_ascii=False,
+            )
+        )
+        return 0
+    if args.command == "retrieval-profile":
+        print(
+            json.dumps(
+                retrieval_representation_profile(repository_root="."),
+                indent=2,
+                sort_keys=True,
+                ensure_ascii=False,
+            )
+        )
+        return 0
+    if args.command == "retrieval-authoring-context":
+        print(
+            json.dumps(
+                retrieval_authoring_context(repository_root="."),
+                indent=2,
+                sort_keys=True,
+                ensure_ascii=False,
+            )
+        )
+        return 0
+    if args.command == "retrieval-coordinates":
+        print(
+            json.dumps(
+                retrieval_coordinate_profile(repository_root="."),
+                indent=2,
+                sort_keys=True,
+                ensure_ascii=False,
+            )
+        )
         return 0
     if args.command == "inspect-candidate":
         print(

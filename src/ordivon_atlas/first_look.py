@@ -426,4 +426,281 @@ def inspect_prior_result_candidate(
     }
 
 
-__all__ = ["inspect_prior_result_candidate", "prior_result_first_look"]
+def prior_result_first_look_many(
+    queries: list[str] | tuple[str, ...],
+    *,
+    repository_root: str | Path = ".",
+    generated_dir: str | Path = "generated",
+    limit: int = 8,
+) -> dict[str, Any]:
+    """Run caller-authored lexical variants as one bounded Atlas owner read.
+
+    Atlas executes the supplied retrieval expressions, deduplicates candidate
+    identity and preserves which variant/rank produced the strongest lexical
+    match. It does not generate variants or infer that variants/candidates are
+    semantically equivalent.
+    """
+    if not isinstance(queries, (list, tuple)) or not 1 <= len(queries) <= 4:
+        raise ValueError("first-look-many requires 1 to 4 query variants")
+    if type(limit) is not int or not 1 <= limit <= 32:
+        raise ValueError("first-look-many limit must be an integer from 1 to 32")
+    normalized: list[str] = []
+    for query in queries:
+        if not isinstance(query, str) or not query.strip() or query != query.strip():
+            raise ValueError("first-look-many queries must be non-empty trimmed strings")
+        if len(query.encode("utf-8")) > 2_048:
+            raise ValueError("first-look-many query exceeds 2048 UTF-8 bytes")
+        if query not in normalized:
+            normalized.append(query)
+    if not normalized:
+        raise ValueError("first-look-many requires at least one distinct query")
+
+    merged: dict[tuple[str, str], dict[str, Any]] = {}
+    projection_health: dict[str, Any] | None = None
+    variant_summaries: list[dict[str, Any]] = []
+    for variant_index, query in enumerate(normalized):
+        result = prior_result_first_look(
+            query,
+            repository_root=repository_root,
+            generated_dir=generated_dir,
+            limit=32,
+        )
+        if projection_health is None:
+            projection_health = dict(result["projectionHealth"])
+        variant_summaries.append(
+            {
+                "index": variant_index,
+                "query": query,
+                "candidateCountBeforeMerge": result["candidateCount"],
+            }
+        )
+        for variant_rank, raw_candidate in enumerate(result["candidates"], start=1):
+            if not isinstance(raw_candidate, dict):
+                continue
+            candidate = dict(raw_candidate)
+            key = (str(candidate.get("path")), str(candidate.get("locator")))
+            current = merged.get(key)
+            if current is None:
+                candidate["matchedVariantIndexes"] = [variant_index]
+                candidate["bestVariantIndex"] = variant_index
+                candidate["bestVariantRank"] = variant_rank
+                merged[key] = candidate
+                continue
+            matched_indexes = list(current.get("matchedVariantIndexes", []))
+            if variant_index not in matched_indexes:
+                matched_indexes.append(variant_index)
+                matched_indexes.sort()
+            if int(candidate.get("score", 0)) > int(current.get("score", 0)):
+                candidate["matchedVariantIndexes"] = matched_indexes
+                candidate["bestVariantIndex"] = variant_index
+                candidate["bestVariantRank"] = variant_rank
+                merged[key] = candidate
+            else:
+                current["matchedVariantIndexes"] = matched_indexes
+
+    candidates = list(merged.values())
+    candidates.sort(
+        key=lambda item: (
+            -int(item.get("score", 0)),
+            str(item.get("path")),
+            str(item.get("locator")),
+        )
+    )
+    bounded = candidates[:limit]
+    return {
+        "schemaVersion": 0,
+        "kind": "ordivon.atlas-prior-result-first-look-many-experimental",
+        "truthRole": "non-authoritative-prior-result-candidate-projection",
+        "queryVariants": normalized,
+        "variantSummaries": variant_summaries,
+        "candidateCount": len(bounded),
+        "candidates": bounded,
+        "projectionHealth": projection_health
+        or {
+            "available": False,
+            "currentness": "UNKNOWN_NO_GENERATED_PROJECTION_HEALTH",
+            "counts": {},
+        },
+        "claims": {
+            "callerIntentTranslated": False,
+            "queryVariantGenerated": False,
+            "queryVariantsSemanticallyEquivalent": False,
+            "semanticEquivalenceInferred": False,
+            "noveltyStanding": "UNKNOWN_CALLER_MUST_ADJUDICATE",
+            "researchAdmissionGranted": False,
+            "ownerTruthMinted": False,
+        },
+    }
+
+
+def retrieval_representation_profile(
+    *,
+    repository_root: str | Path = ".",
+) -> dict[str, Any]:
+    """Return mechanical facts about the current Atlas retrieval representation."""
+    root = Path(repository_root)
+    synthesis = root / "synthesis"
+    markdown_files = sorted(synthesis.rglob("*.md")) if synthesis.exists() else []
+    latin_letters = 0
+    cjk_chars = 0
+    total_bytes = 0
+    files_with_latin = 0
+    files_with_cjk = 0
+    for path in markdown_files:
+        try:
+            text = path.read_text(encoding="utf-8")
+        except OSError:
+            continue
+        latin_count = sum(
+            1
+            for character in text
+            if ("a" <= character <= "z") or ("A" <= character <= "Z")
+        )
+        cjk_count = sum(1 for character in text if "\u3400" <= character <= "\u9fff")
+        total_bytes += len(text.encode("utf-8"))
+        latin_letters += latin_count
+        cjk_chars += cjk_count
+        files_with_latin += int(latin_count > 0)
+        files_with_cjk += int(cjk_count > 0)
+    script_total = latin_letters + cjk_chars
+    dominant_script = None
+    if script_total:
+        dominant_script = "latin" if latin_letters >= cjk_chars else "cjk"
+    dominant_count = max(latin_letters, cjk_chars) if script_total else 0
+    return {
+        "schemaVersion": 0,
+        "kind": "ordivon.atlas-retrieval-representation-profile-experimental",
+        "truthRole": "mechanical-retrieval-environment-profile-not-semantic-truth",
+        "retrieval": {
+            "mode": "lexical-substring-and-path-match",
+            "queryExpansionByAtlas": False,
+            "crossLanguageTranslationByAtlas": False,
+            "semanticSimilarityByAtlas": False,
+            "callerAuthoredQueryVariantsSupported": True,
+            "maxCallerAuthoredQueryVariants": 4,
+        },
+        "curatedSynthesisCorpus": {
+            "root": "synthesis",
+            "markdownFileCount": len(markdown_files),
+            "totalBytes": total_bytes,
+            "latinLetters": latin_letters,
+            "cjkChars": cjk_chars,
+            "filesWithLatin": files_with_latin,
+            "filesWithCjk": files_with_cjk,
+            "dominantObservedScript": dominant_script,
+            "dominantObservedScriptShareOfLatinPlusCjk": (
+                format(dominant_count / script_total, ".12f").rstrip("0").rstrip(".")
+                if script_total
+                else None
+            ),
+        },
+        "claims": {
+            "callerIntentTranslated": False,
+            "queryVariantGenerated": False,
+            "queryVariantsSemanticallyEquivalent": False,
+            "semanticEquivalenceInferred": False,
+            "noveltyStanding": "UNKNOWN_CALLER_MUST_ADJUDICATE",
+            "researchAdmissionGranted": False,
+            "ownerTruthMinted": False,
+        },
+    }
+
+
+def retrieval_coordinate_profile(
+    *,
+    repository_root: str | Path = ".",
+) -> dict[str, Any]:
+    """Project a small task-neutral subset of owner-curated retrieval handles."""
+    root = Path(repository_root)
+    source = root / "synthesis" / "research-process-lineage" / "SOURCE-INDEX.md"
+    payload = source.read_bytes()
+    lines = payload.decode("utf-8").splitlines()
+    coordinates: list[dict[str, str]] = []
+    marker = "Key retrieval aliases / pressure terms:"
+    for index, line in enumerate(lines):
+        if line.strip() != marker:
+            continue
+        heading = None
+        for heading_index in range(index - 1, -1, -1):
+            if lines[heading_index].startswith("## "):
+                heading = lines[heading_index][3:].strip()
+                break
+        first_alias = None
+        for alias_index in range(index + 1, len(lines)):
+            candidate = lines[alias_index]
+            if candidate.startswith("## "):
+                break
+            if candidate.startswith("- "):
+                first_alias = candidate[2:].strip()
+                break
+        if heading and first_alias:
+            coordinates.append(
+                {"sectionHeading": heading, "retrievalAlias": first_alias}
+            )
+    if not coordinates:
+        raise ValueError("Atlas retrieval-coordinate source has no retrieval sections")
+    if len(coordinates) > 32:
+        raise ValueError("Atlas retrieval-coordinate source exceeds bounded section count")
+    return {
+        "schemaVersion": 0,
+        "kind": "ordivon.atlas-retrieval-coordinate-profile-experimental",
+        "truthRole": "mechanical-source-grounded-retrieval-coordinates-not-query-translation",
+        "source": {
+            "path": str(source.relative_to(root)),
+            "contentDigest": "sha256:" + hashlib.sha256(payload).hexdigest(),
+        },
+        "selection": {
+            "method": "first-alias-per-retrieval-section-in-source-order",
+            "taskConditioned": False,
+            "semanticRankingPerformed": False,
+        },
+        "coordinates": coordinates,
+        "claims": {
+            "callerIntentTranslated": False,
+            "queryVariantGenerated": False,
+            "coordinatesSemanticallyEquivalentToIntent": False,
+            "semanticEquivalenceInferred": False,
+            "noveltyStanding": "UNKNOWN_CALLER_MUST_ADJUDICATE",
+            "researchAdmissionGranted": False,
+            "ownerTruthMinted": False,
+        },
+    }
+
+
+def retrieval_authoring_context(
+    *,
+    repository_root: str | Path = ".",
+) -> dict[str, Any]:
+    """Compose static owner retrieval facts for caller query authoring.
+
+    The result is intentionally upstream of query formation: it describes the
+    current retrieval representation and owner-curated retrieval coordinates,
+    but does not translate an intent, generate a query or grant research standing.
+    """
+    representation = retrieval_representation_profile(repository_root=repository_root)
+    coordinates = retrieval_coordinate_profile(repository_root=repository_root)
+    return {
+        "schemaVersion": 0,
+        "kind": "ordivon.atlas-retrieval-authoring-context-experimental",
+        "truthRole": "mechanical-retrieval-authoring-context-not-query-or-semantic-truth",
+        "representationProfile": representation,
+        "coordinateProfile": coordinates,
+        "claims": {
+            "callerIntentTranslated": False,
+            "queryVariantGenerated": False,
+            "semanticEquivalenceInferred": False,
+            "noveltyStanding": "UNKNOWN_CALLER_MUST_ADJUDICATE",
+            "researchAdmissionGranted": False,
+            "ownerTruthMinted": False,
+        },
+    }
+
+
+__all__ = [
+    "inspect_prior_result_candidate",
+    "prior_result_first_look",
+    "prior_result_first_look_many",
+    "retrieval_authoring_context",
+    "retrieval_coordinate_profile",
+    "retrieval_representation_profile",
+]
