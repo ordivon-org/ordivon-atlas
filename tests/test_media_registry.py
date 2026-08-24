@@ -16,11 +16,11 @@ class MediaRegistryTests(unittest.TestCase):
         self.assertEqual(len(self.by_owner), 10)
         self.assertIn(MEDIA, self.by_owner)
 
-    def test_media_uses_dedicated_authority_transport_ref(self):
+    def test_media_follows_owner_main_current_authority(self):
         m = self.by_owner[MEDIA]
         self.assertEqual(m["authorityRef"], "authority:ordivon:research-owner:media")
         self.assertEqual(m["corpusRoot"], "research/media")
-        self.assertEqual(m["ref"], "refs/heads/research/media-authority-publication-20260819")
+        self.assertEqual(m["ref"], "refs/heads/main")
         self.assertEqual(m["remote"], "https://github.com/zycxfyh/ordivon-media.git")
         self.assertEqual(m["repo"], "/root/projects/ordivon-media")
 

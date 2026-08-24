@@ -104,7 +104,7 @@
       "authorityRef": "authority:ordivon:research-owner:media",
       "corpusRoot": "research/media",
       "ownerResearchRef": "research-owner:media",
-      "ref": "refs/heads/research/media-authority-publication-20260819",
+      "ref": "refs/heads/main",
       "remote": "https://github.com/zycxfyh/ordivon-media.git",
       "remoteFallbacks": [
         "git@github.com:zycxfyh/ordivon-media.git"
