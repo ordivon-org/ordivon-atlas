@@ -4,6 +4,27 @@ Ordivon Atlas is the **generated institutional, exploration, history, and recove
 
 Atlas is deliberately not a second research corpus and not a semantic source of truth. Owners publish their own current authority version and recovery surface; Atlas verifies those source fences and produces regenerable views plus Research Observatory health diagnostics.
 
+## Agent first interface
+
+For ordinary prior-work recovery, a fresh Agent should **not** begin by replaying research chronology or regenerating every Atlas view. Start from the smallest retrieval representation that matches the current operation:
+
+```bash
+# See how Atlas currently represents retrieval and which owner-curated coordinates
+# can help the caller author bounded query variants. This does not translate intent.
+PYTHONPATH=src python -m ordivon_atlas retrieval-authoring-context
+
+# Search prior-result candidates. Query variants are caller-authored; Atlas does not
+# infer that they are semantically equivalent or grant novelty/research standing.
+PYTHONPATH=src python -m ordivon_atlas first-look "<query>"
+PYTHONPATH=src python -m ordivon_atlas first-look-many "<variant-1>" "<variant-2>"
+
+# After selecting one bounded candidate, inspect that exact candidate rather than
+# widening immediately to arbitrary repository reads.
+PYTHONPATH=src python -m ordivon_atlas inspect-candidate "<query>" "<path>" "<locator>"
+```
+
+These surfaces return **non-authoritative candidate projections**. The caller still owns semantic equivalence, relevance, novelty/admission, and whether deeper owner inspection is required. Use `check` / `refresh` when the operation actually requires owner-source currentness observation or regenerated Atlas views; do not make whole-Atlas refresh a prerequisite for every research question.
+
 ## MVP
 
 The first MVP consumes heterogeneous owner sources. **Interlocus** (stable identity `research-owner:network`, historical name Network) lives inside the shared `ordivon-research` durability repository; Runtime lives inside the independent `ordivon-runtime` repository.
