@@ -245,6 +245,42 @@ class PriorResultFirstLookTests(unittest.TestCase):
         self.assertIn("hypothesis, candidate or generator spaces", projected)
         self.assertTrue(inspected["content"]["fullContentAvailableViaRawEscape"])
 
+    def test_repository_ppd_chinese_alias_inspection_reaches_generic_semantics(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        for query in (
+            "主动压力发现 表征 生成器",
+            "主动判别压力 搜索几何",
+        ):
+            first = prior_result_first_look(
+                query, repository_root=root, generated_dir="generated", limit=5
+            )
+            candidate = first["candidates"][0]
+            self.assertEqual(
+                candidate["path"],
+                "synthesis/proactive-pressure-discovery-ppd/README.md",
+            )
+            inspected = inspect_prior_result_candidate(
+                query, candidate["path"], candidate["locator"],
+                repository_root=root, generated_dir="generated", limit=5
+            )
+            headings = [
+                section["heading"] for section in inspected["content"]["sections"]
+            ]
+            self.assertIn("Generic referent / 通用指称", headings)
+            projected = "\n".join(
+                section["text"] for section in inspected["content"]["sections"]
+            )
+            self.assertIn("new discriminating pressure", projected)
+            self.assertIn("hypothesis, candidate or generator spaces", projected)
+
+    def test_repository_ppd_anchor_excludes_self_calibration_from_first_object(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        text = (
+            root / "synthesis" / "proactive-pressure-discovery-ppd" / "README.md"
+        ).read_text(encoding="utf-8")
+        self.assertNotIn("Consumption calibration", text)
+        self.assertNotIn("representation experiments recorded", text)
+
     def test_repository_ppd_anchor_does_not_displace_adjacent_owner_specific_queries(self) -> None:
         root = Path(__file__).resolve().parents[1]
         rsi = prior_result_first_look(
