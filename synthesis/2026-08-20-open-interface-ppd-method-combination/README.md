@@ -4,6 +4,8 @@ Owner-local application of `task:proactive-pressure-discovery-open-research-2026
 
 This directory does **not** define a new PPD ontology. It freezes one real historical calibration fixture and a method-combination protocol for asking whether changing multiple epistemic coordinates expands reachable discriminators.
 
+For the compact generic PPD first-look referent and its local-projection guard, use [`../proactive-pressure-discovery-ppd/`](../proactive-pressure-discovery-ppd/) before treating this owner-local method combination as a definition of PPD.
+
 ## Case
 
 Historical-backtesting case `q_008`, HD 209458 b water abundance.

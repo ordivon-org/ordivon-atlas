@@ -1,11 +1,14 @@
 from __future__ import annotations
 
 import json
-from pathlib import Path
 import tempfile
 import unittest
+from pathlib import Path
 
-from ordivon_atlas.first_look import inspect_prior_result_candidate, prior_result_first_look
+from ordivon_atlas.first_look import (
+    inspect_prior_result_candidate,
+    prior_result_first_look,
+)
 
 
 class PriorResultFirstLookTests(unittest.TestCase):
@@ -200,6 +203,70 @@ class PriorResultFirstLookTests(unittest.TestCase):
     def test_limit_is_fail_closed(self) -> None:
         with self.assertRaisesRegex(ValueError, "limit"):
             prior_result_first_look("query", limit=0)
+
+    def test_repository_ppd_consumption_anchor_precedes_adjacent_pressure_projections(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        for query in (
+            "PPD proactive pressure discovery",
+            "proactive pressure discovery",
+            "pressure discovery representation generator countermodel",
+            "主动压力发现 表征 生成器",
+        ):
+            result = prior_result_first_look(
+                query, repository_root=root, generated_dir="generated", limit=5
+            )
+            self.assertGreaterEqual(result["candidateCount"], 1)
+            self.assertEqual(
+                result["candidates"][0]["path"],
+                "synthesis/proactive-pressure-discovery-ppd/README.md",
+            )
+
+    def test_repository_ppd_anchor_projects_generic_scope_under_current_inspect_contract(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        query = "PPD proactive pressure discovery"
+        first = prior_result_first_look(
+            query, repository_root=root, generated_dir="generated", limit=5
+        )
+        candidate = first["candidates"][0]
+        inspected = inspect_prior_result_candidate(
+            query, candidate["path"], candidate["locator"],
+            repository_root=root, generated_dir="generated", limit=5
+        )
+        self.assertEqual(
+            inspected["content"]["projection"],
+            "query-relative-exact-markdown-sections",
+        )
+        projected = "\n".join(
+            section["text"] for section in inspected["content"]["sections"]
+        )
+        self.assertIn("non-authoritative-source-preserving-consumption-anchor", projected)
+        self.assertIn("task:proactive-pressure-discovery-open-research-20260820@59", projected)
+        self.assertIn("new discriminating pressure", projected)
+        self.assertIn("hypothesis, candidate or generator spaces", projected)
+        self.assertTrue(inspected["content"]["fullContentAvailableViaRawEscape"])
+
+    def test_repository_ppd_anchor_does_not_displace_adjacent_owner_specific_queries(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        rsi = prior_result_first_look(
+            "RSI option pressure capability",
+            repository_root=root, generated_dir="generated", limit=5
+        )
+        self.assertTrue(rsi["candidates"])
+        self.assertIn("rsi-pal-option-pressure-capability", rsi["candidates"][0]["path"])
+        self.assertNotEqual(
+            rsi["candidates"][0]["path"],
+            "synthesis/proactive-pressure-discovery-ppd/README.md",
+        )
+        open_interface = prior_result_first_look(
+            "open interface comparability transformation language",
+            repository_root=root, generated_dir="generated", limit=5
+        )
+        self.assertTrue(open_interface["candidates"])
+        self.assertIn("finite-intelligence-open-interface-formation", open_interface["candidates"][0]["path"])
+        self.assertNotEqual(
+            open_interface["candidates"][0]["path"],
+            "synthesis/proactive-pressure-discovery-ppd/README.md",
+        )
 
 
 if __name__ == "__main__":
