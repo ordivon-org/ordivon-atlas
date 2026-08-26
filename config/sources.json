@@ -110,6 +110,17 @@
         "git@github.com:zycxfyh/ordivon-media.git"
       ],
       "repo": "/root/projects/ordivon-media"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:harness",
+      "corpusRoot": "research",
+      "ownerResearchRef": "research-owner:harness",
+      "ref": "refs/heads/main",
+      "remote": "git@github.com:zycxfyh/ordivon-harness.git",
+      "remoteFallbacks": [
+        "https://github.com/zycxfyh/ordivon-harness.git"
+      ],
+      "repo": "/root/projects/ordivon-harness"
     }
   ]
 }

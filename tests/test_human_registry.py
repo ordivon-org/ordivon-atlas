@@ -13,8 +13,8 @@ class HumanRegistryTests(unittest.TestCase):
         cls.by_owner = {x["ownerResearchRef"]: x for x in cls.sources}
 
     def test_human_remains_independent_registered_source(self):
-        self.assertEqual(len(self.sources), 10)
-        self.assertEqual(len(self.by_owner), 10)
+        self.assertEqual(len(self.sources), 11)
+        self.assertEqual(len(self.by_owner), 11)
         self.assertIn(HUMAN, self.by_owner)
 
     def test_human_uses_owner_native_main_ref_and_core_root(self):

@@ -11,9 +11,9 @@ class MediaRegistryTests(unittest.TestCase):
         cls.sources = json.loads((ROOT / "config/sources.json").read_text())["sources"]
         cls.by_owner = {x["ownerResearchRef"]: x for x in cls.sources}
 
-    def test_media_is_tenth_independent_source(self):
-        self.assertEqual(len(self.sources), 10)
-        self.assertEqual(len(self.by_owner), 10)
+    def test_media_remains_an_independent_source_after_harness_admission(self):
+        self.assertEqual(len(self.sources), 11)
+        self.assertEqual(len(self.by_owner), 11)
         self.assertIn(MEDIA, self.by_owner)
 
     def test_media_follows_owner_main_current_authority(self):

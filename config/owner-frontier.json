@@ -37,26 +37,6 @@
       "coverageScope": "DOMAIN_AND_RESEARCH"
     },
     {
-      "subjectRef": "project:harness",
-      "displayName": "Harness",
-      "repo": "/root/projects/ordivon-harness",
-      "disposition": "ADMISSION_DEFERRED",
-      "ownerResearchRef": "research-owner:harness",
-      "authorityRef": "authority:ordivon:research-owner:harness",
-      "corpusRootCandidate": "research",
-      "reason": "Atlas rollout on 2026-08-18 explicitly deferred Harness because a concurrent-active workspace made owner publication/admission unsafe; that operational deferral was never represented as a durable reconsideration frontier.",
-      "evidenceRefs": [
-        "evidence/ATLAS-BOUNDED-OWNER-ROLLOUT-ACCEPTANCE-20260818.json",
-        "/root/projects/ordivon-harness/research/README.md"
-      ],
-      "reconsiderationTriggers": [
-        "no conflicting owner-publication workspace is active",
-        "current Harness research recovery path and publication scope are revalidated",
-        "owner-native immutable publication is available for Atlas source admission"
-      ],
-      "coverageScope": "RESEARCH_AND_OPERATIONAL"
-    },
-    {
       "subjectRef": "project:security",
       "displayName": "Security",
       "repo": "/root/projects/ordivon-security",

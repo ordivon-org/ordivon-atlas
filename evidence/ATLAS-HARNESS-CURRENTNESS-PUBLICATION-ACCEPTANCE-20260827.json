@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "kind": "ordivon.atlas-harness-owner-admission-acceptance-evidence",
+  "classification": "HARNESS_OWNER_PUBLICATION_ATLAS_ADMISSION_AND_COVERAGE_RECONCILIATION_ACCEPTED",
+  "date": "2026-08-27",
+  "truthRole": "acceptance-evidence-not-owner-authority",
+  "nonAuthorityNotice": "Harness research/authority publication and owner corpus remain Harness semantic authority. Atlas source registration, coverage classification and generated projections remain read-only institutional projections.",
+  "startingAtlasRemoteRevision": "c0ba3c7d22e217d3d38553542050aa0360a1e3f8",
+  "harness": {
+    "remoteRevision": "16826692d0cf90cc94a0a4afb199798ae99c520c",
+    "ownerResearchRef": "research-owner:harness",
+    "authorityRef": "authority:ordivon:research-owner:harness",
+    "authorityVersionRef": "sha256:7fa847df5d74a23380b3fa830cf7996382bbdc3f0c29533015588c2b780ab333",
+    "currentRecovery": {
+      "targetRole": "OWNER_RESEARCH_CORPUS",
+      "locator": "research/README.md"
+    },
+    "ownerAdjudicatedSourceRevision": "e41a32621ad1a8fb918aa98f22f40367cb5b7e71",
+    "publicationCommit": "16826692d0cf90cc94a0a4afb199798ae99c520c",
+    "currentEvidenceCensus": {
+      "historical": 77,
+      "verified": 0
+    },
+    "preservedNonAdmissions": [
+      "HaF62 NOT_ADMITTED",
+      "Campaign 7 NOT_SELECTED",
+      "no current next engineering branch selected"
+    ]
+  },
+  "currentnessRepair": {
+    "trigger": "Atlas owner-publication preparation ran Harness owner-local evidence gates before admission.",
+    "baselineRedJob": "job-01a03f88-cf9d-76f1-9644-93413a0aaa73",
+    "focusedRepairAcceptanceJob": "job-01a03f8a-7afe-7043-bda6-7ea410e9edfe",
+    "fullHarnessRegressionJob": "job-01a03f8a-f55c-7fb0-8b73-cd29ad710463",
+    "finding": "Previously verified e983c79 source-reconciliation receipt became stale after HTTPX changed pyproject.toml, deepseek.py and uv.lock.",
+    "repair": "Preserved immutable receipt bytes; demoted verified to historical; census became 77 historical / 0 verified; no replacement verified receipt invented.",
+    "fullHarnessRegression": "538 tests OK, 3 skipped"
+  },
+  "atlasAdmission": {
+    "sourceRegistryCountBefore": 10,
+    "sourceRegistryCountAfter": 11,
+    "deferredHarnessFrontierRetired": true,
+    "hostRuntimeHarnessRemainDistinctAuthorities": true,
+    "focusedRegistryCoverageJob": "job-01a03f90-f07d-7e52-89c4-ac50f2e7af62",
+    "fullRegressionAndRefreshJob": "job-01a03f91-f27e-7551-ab89-2a7c6245c43c",
+    "fullAtlasRegression": "95 tests OK, 45 gated skips",
+    "refresh": {
+      "owners": 11,
+      "unhealthy": 0,
+      "fullyCurrent": true,
+      "harnessResults": 8,
+      "harnessClosures": 6
+    }
+  },
+  "coverageAfterAdmission": {
+    "discoveredRepositories": 18,
+    "registeredResearchOwners": 11,
+    "ownerCandidates": 4,
+    "explicitNonOwners": 2,
+    "specialReview": 1,
+    "reconciliationRequired": 5,
+    "unclassifiedRepositories": 0,
+    "unavailableDiscoveryRoots": 0,
+    "coverageClassificationComplete": true
+  },
+  "conclusion": "The 2026-08-18 operational Harness deferral is closed. Harness first published owner-native current research authority after repairing an independently exposed currentness defect; Atlas then admitted that exact remote publication as the eleventh registered research-owner source without centralizing owner truth. The new owner coverage plane remains separate and retains Finance, Security, Web, Workstation and Atlas-specific review as explicit unresolved topology rather than silent absence."
+}
