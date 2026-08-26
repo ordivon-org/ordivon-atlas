@@ -22,10 +22,11 @@ class SourceSpec:
     ownerResearchRef: str
     authorityRef: str
     repo: str
-    remote: str
+    remote: str | None
     ref: str
     corpusRoot: str
     remoteFallbacks: list[str] | None = None
+    transportMode: str = "remote_git"
 
     @property
     def current_path(self) -> str:
@@ -67,7 +68,7 @@ def _run_git(repo: str, args: list[str], *, timeout: int = 20) -> bytes:
 
 
 def _remote_revision(spec: SourceSpec) -> str:
-    remotes = [spec.remote, *(spec.remoteFallbacks or [])]
+    remotes = [remote for remote in [spec.remote, *(spec.remoteFallbacks or [])] if remote]
     errors: list[str] = []
     for remote in remotes:
         try:
@@ -88,7 +89,25 @@ def _remote_revision(spec: SourceSpec) -> str:
         if len(lines) == 1:
             return lines[0].split("\t", 1)[0]
         errors.append(f"{remote}: expected exactly one ref for {spec.ref}, got {len(lines)}")
-    raise AtlasSourceError(" | ".join(errors) or "no source transport configured")
+    raise AtlasSourceError(" | ".join(errors) or "no remote Git source transport configured")
+
+
+def _local_revision(spec: SourceSpec) -> str:
+    if not spec.ref.startswith("refs/"):
+        raise AtlasSourceError(f"local Git source ref must be explicit: {spec.ref}")
+    raw = _run_git(spec.repo, ["rev-parse", "--verify", f"{spec.ref}^{{commit}}"])
+    revision = raw.decode("utf-8", errors="strict").strip()
+    if len(revision) != 40 or any(ch not in "0123456789abcdef" for ch in revision):
+        raise AtlasSourceError(f"local Git source ref did not resolve to one commit: {spec.ref}")
+    return revision
+
+
+def _transport_revision(spec: SourceSpec) -> str:
+    if spec.transportMode == "remote_git":
+        return _remote_revision(spec)
+    if spec.transportMode == "local_git":
+        return _local_revision(spec)
+    raise AtlasSourceError(f"unsupported source transport mode: {spec.transportMode}")
 
 
 def _git_show(repo: str, revision: str, path: str) -> bytes:
@@ -215,9 +234,9 @@ class Atlas:
 
     def observe(self, spec: SourceSpec) -> SourceObservation:
         try:
-            transport_revision = _remote_revision(spec)
+            transport_revision = _transport_revision(spec)
         except Exception as exc:
-            return SourceObservation(spec.ownerResearchRef, spec.authorityRef, None, None, HealthState.CURRENTNESS_UNKNOWN, f"REMOTE_UNRESOLVED: {exc}", None, None, None)
+            return SourceObservation(spec.ownerResearchRef, spec.authorityRef, None, None, HealthState.CURRENTNESS_UNKNOWN, f"SOURCE_TRANSPORT_UNRESOLVED: {exc}", None, None, None)
 
         try:
             current_bytes = _git_show(spec.repo, transport_revision, spec.current_path)

@@ -252,3 +252,87 @@ class ResultClassificationTests(unittest.TestCase):
         self.assertEqual(row["standing"], [])
         self.assertIsNone(row["epistemicVerdict"])
         self.assertIsNone(row["evidenceScope"])
+
+
+class LocalGitTransportTests(unittest.TestCase):
+    def fixture_repo(self) -> tuple[tempfile.TemporaryDirectory[str], Path]:
+        td = tempfile.TemporaryDirectory()
+        work = Path(td.name) / "private-owner"
+        run("git", "init", "-b", "main", str(work))
+        run("git", "config", "user.email", "atlas-local@example.invalid", cwd=work)
+        run("git", "config", "user.name", "Atlas Local Fixture", cwd=work)
+        return td, work
+
+    def write_local_publication(self, work: Path) -> tuple[str, SourceSpec]:
+        root = work / "research"
+        (root / "authority/publications").mkdir(parents=True, exist_ok=True)
+        (root / "README.md").write_text("private owner recovery\n")
+        owner = "research-owner:private"
+        authority = "authority:ordivon:research-owner:private"
+        payload = {
+            "schemaVersion": 1,
+            "kind": "ordivon.research-owner-publication",
+            "profile": "NATIVE",
+            "authorityRef": authority,
+            "ownerResearchRef": owner,
+            "source": {
+                "kind": "git",
+                "repository": str(work),
+                "authorityBranch": "refs/heads/main",
+                "sourceRevision": "fixture",
+                "corpusRoot": "research",
+            },
+            "currentRecovery": {"targetRole": "OWNER_RESEARCH_CORPUS", "locator": "research/README.md"},
+            "statements": [],
+            "closeouts": [],
+        }
+        content = json.dumps(payload, indent=2, sort_keys=True) + "\n"
+        digest = hashlib.sha256(content.encode()).hexdigest()
+        (root / f"authority/publications/{digest}.json").write_text(content)
+        current = {
+            "schemaVersion": 1,
+            "kind": "ordivon.research-owner-current",
+            "authorityRef": authority,
+            "ownerResearchRef": owner,
+            "currentAuthorityVersionRef": "sha256:" + digest,
+            "publication": f"authority/publications/{digest}.json",
+        }
+        (root / "authority/CURRENT.json").write_text(json.dumps(current, indent=2, sort_keys=True) + "\n")
+        run("git", "add", ".", cwd=work)
+        run("git", "commit", "-m", "private-owner-publication", cwd=work)
+        spec = SourceSpec(owner, authority, str(work), None, "refs/heads/main", "research", transportMode="local_git")
+        return "sha256:" + digest, spec
+
+    def test_local_git_transport_observes_private_owner_without_remote(self) -> None:
+        td, work = self.fixture_repo(); self.addCleanup(td.cleanup)
+        version, spec = self.write_local_publication(work)
+        self.assertEqual(run("git", "remote", cwd=work), "")
+        obs = Atlas([spec]).observe(spec)
+        self.assertEqual(obs.health, HealthState.CURRENT_TO_SOURCE)
+        self.assertEqual(obs.authorityVersionRef, version)
+        self.assertEqual(obs.transportRevision, run("git", "rev-parse", "HEAD", cwd=work))
+
+    def test_local_git_transport_reads_exact_ref_not_dirty_worktree(self) -> None:
+        td, work = self.fixture_repo(); self.addCleanup(td.cleanup)
+        version, spec = self.write_local_publication(work)
+        (work / "research/authority/CURRENT.json").write_text("{broken worktree bytes\n")
+        self.assertTrue(run("git", "status", "--porcelain", cwd=work))
+        obs = Atlas([spec]).observe(spec)
+        self.assertEqual(obs.health, HealthState.CURRENT_TO_SOURCE)
+        self.assertEqual(obs.authorityVersionRef, version)
+
+    def test_local_git_transport_missing_ref_fails_closed(self) -> None:
+        td, work = self.fixture_repo(); self.addCleanup(td.cleanup)
+        _version, spec = self.write_local_publication(work)
+        missing = SourceSpec(
+            spec.ownerResearchRef,
+            spec.authorityRef,
+            spec.repo,
+            None,
+            "refs/heads/does-not-exist",
+            spec.corpusRoot,
+            transportMode="local_git",
+        )
+        obs = Atlas([missing]).observe(missing)
+        self.assertEqual(obs.health, HealthState.CURRENTNESS_UNKNOWN)
+        self.assertIn("SOURCE_TRANSPORT_UNRESOLVED", obs.reason or "")
