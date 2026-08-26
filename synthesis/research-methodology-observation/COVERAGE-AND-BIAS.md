@@ -46,3 +46,15 @@ Revisit this manifest when:
 5. a controlled comparison with a simpler workflow becomes available.
 
 Do not compensate for bias by inventing a global methodology-quality score.
+
+
+## Post-M0 review note — 2026-08-26
+
+Aug24–26 evidence materially improves two coverage gaps in the original M0 corpus:
+
+1. **Positive future-consumer consequence.** ACS9 includes pre/post owner-surface comparisons and fresh-Agent consumption rather than only document/promotion evidence.
+2. **Fixed-window positive solution absorption.** A 20-Task fixed window separates origin/mechanism-relevant work from N/A closeout/sedimentation work and finds recurrent mature external/source-neutral challenge without a current recurrent internal-origin preference.
+
+The same review also adds a negative representation control: on eight source-derived default/placement cases, current M0 alone and M0 plus a candidate `Challengeable Environmentalization` mechanism both reached 16/16 exact judgments with zero protected-boundary errors. Therefore the new evidence should **not** be read as proof that the number of methodology mechanisms must grow with every newly named capability pattern.
+
+Long-horizon S6 benefit/harm, owner-unknown discovery, zero-trace loss and ordinary low-salience work remain undercovered.
