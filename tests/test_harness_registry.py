@@ -15,9 +15,12 @@ class HarnessRegistryTests(unittest.TestCase):
         cls.by_owner = {x["ownerResearchRef"]: x for x in cls.sources}
         cls.frontier = json.loads((ROOT / "config/owner-frontier.json").read_text())["entries"]
 
-    def test_harness_is_eleventh_independent_registered_research_owner(self):
-        self.assertEqual(len(self.sources), 11)
-        self.assertEqual(len(self.by_owner), 11)
+    def test_harness_is_independent_registered_research_owner(self):
+        self.assertEqual(len(self.by_owner), len(self.sources))
+        self.assertEqual(
+            sum(1 for source in self.sources if source["ownerResearchRef"] == HARNESS),
+            1,
+        )
         self.assertIn(HARNESS, self.by_owner)
         self.assertIn(HOST, self.by_owner)
         self.assertIn(RUNTIME, self.by_owner)

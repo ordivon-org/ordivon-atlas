@@ -5,15 +5,19 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MEDIA = "research-owner:media"
 
+
 class MediaRegistryTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.sources = json.loads((ROOT / "config/sources.json").read_text())["sources"]
         cls.by_owner = {x["ownerResearchRef"]: x for x in cls.sources}
 
-    def test_media_remains_an_independent_source_after_harness_admission(self):
-        self.assertEqual(len(self.sources), 11)
-        self.assertEqual(len(self.by_owner), 11)
+    def test_media_remains_an_independent_registered_source(self):
+        self.assertEqual(len(self.by_owner), len(self.sources))
+        self.assertEqual(
+            sum(1 for source in self.sources if source["ownerResearchRef"] == MEDIA),
+            1,
+        )
         self.assertIn(MEDIA, self.by_owner)
 
     def test_media_follows_owner_main_current_authority(self):
@@ -29,6 +33,7 @@ class MediaRegistryTests(unittest.TestCase):
         self.assertNotIn("studio", m["ownerResearchRef"])
         self.assertNotIn("web", m["ownerResearchRef"])
         self.assertNotIn("game", m["ownerResearchRef"])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -6,6 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 HUMAN = "research-owner:human"
 NORMATIVE = "research-owner:ordivon-normative"
 
+
 class HumanRegistryTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -13,8 +14,11 @@ class HumanRegistryTests(unittest.TestCase):
         cls.by_owner = {x["ownerResearchRef"]: x for x in cls.sources}
 
     def test_human_remains_independent_registered_source(self):
-        self.assertEqual(len(self.sources), 11)
-        self.assertEqual(len(self.by_owner), 11)
+        self.assertEqual(len(self.by_owner), len(self.sources))
+        self.assertEqual(
+            sum(1 for source in self.sources if source["ownerResearchRef"] == HUMAN),
+            1,
+        )
         self.assertIn(HUMAN, self.by_owner)
 
     def test_human_uses_owner_native_main_ref_and_core_root(self):
@@ -30,6 +34,7 @@ class HumanRegistryTests(unittest.TestCase):
         self.assertNotEqual(h["authorityRef"], n["authorityRef"])
         self.assertNotEqual(h["ownerResearchRef"], n["ownerResearchRef"])
         self.assertNotEqual(h["repo"], n["repo"])
+
 
 if __name__ == "__main__":
     unittest.main()

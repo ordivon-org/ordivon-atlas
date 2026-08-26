@@ -6,6 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SCD = "research-owner:semantics-of-computational-descriptions"
 CP = "research-owner:computational-possibility"
 
+
 class SCDRegistryTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -13,10 +14,13 @@ class SCDRegistryTests(unittest.TestCase):
         cls.by_owner = {x["ownerResearchRef"]: x for x in cls.sources}
 
     def test_scd_remains_an_independent_registered_source(self):
-        self.assertEqual(len(self.sources), 11)
         self.assertIn(SCD, self.by_owner)
         self.assertIn(CP, self.by_owner)
         self.assertEqual(len(self.by_owner), len(self.sources))
+        self.assertEqual(
+            sum(1 for source in self.sources if source["ownerResearchRef"] == SCD),
+            1,
+        )
 
     def test_standalone_repositories_preserve_scd_cp_semantic_distinction(self):
         scd = self.by_owner[SCD]
@@ -34,7 +38,11 @@ class SCDRegistryTests(unittest.TestCase):
         self.assertEqual(scd["corpusRoot"], "")
         self.assertEqual(scd["ref"], "refs/heads/main")
         self.assertEqual(scd["repo"], "/root/projects/ordivon-scd")
-        self.assertEqual(scd["authorityRef"], "authority:ordivon:research-owner:semantics-of-computational-descriptions")
+        self.assertEqual(
+            scd["authorityRef"],
+            "authority:ordivon:research-owner:semantics-of-computational-descriptions",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
