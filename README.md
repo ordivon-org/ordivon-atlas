@@ -22,6 +22,33 @@ Atlas uses read-only source transports and checks:
 
 A source may define multiple read transports. Atlas tries them in order and still fails closed if none can establish the current remote ref.
 
+## Owner coverage frontier
+
+The admitted source registry is deliberately **not** the complete owner topology. `config/sources.json` contains only owners that already expose an owner-native immutable research authority publication. Atlas must not manufacture owner standing merely because a repository exists or another owner mentions it.
+
+To prevent the opposite failure — a real or deferred owner disappearing from institutional representation — Atlas keeps a separate non-authoritative coverage ledger in `config/owner-frontier.json`. This plane can classify repositories as `OWNER_CANDIDATE`, `OWNER_RECOGNIZED_NO_PUBLICATION`, `PUBLICATION_READY`, `ADMISSION_DEFERRED`, `NON_OWNER`, or `SPECIAL_REVIEW`. None of those states is owner truth and none auto-promotes into `sources.json`.
+
+```bash
+# Classify the current repository universe without remote owner observation.
+PYTHONPATH=src python -m ordivon_atlas coverage-check
+
+# refresh also writes generated/owner-coverage.json alongside owner projections.
+PYTHONPATH=src python -m ordivon_atlas refresh --out generated
+PYTHONPATH=src python -m ordivon_atlas show coverage --out generated
+```
+
+The coverage audit scans configured local discovery roots and reports any repository that is neither a registered research-owner source nor explicitly classified in the frontier as `UNCLASSIFIED_REPOSITORY`. Missing discovery roots fail closed rather than being interpreted as an empty repository universe. A temporary admission deferral must carry reconsideration triggers. The key separation is:
+
+```text
+repository discovery / cross-owner recognition
+        -> non-authoritative coverage frontier
+        -> owner-side boundary adjudication
+        -> owner-native immutable publication
+        -> explicit Atlas source admission
+```
+
+Thus `absence from sources.json` no longer means `absence from Reality`, while Atlas still cannot create semantic authority.
+
 ## Federated refresh semantics
 
 Projection health is **per owner**, not one global all-or-nothing bit. A healthy owner may advance even while another owner is temporarily unavailable.
@@ -49,6 +76,7 @@ Synthesis entries do not replace owner-current publications and must be repaired
 `ordivon-atlas refresh` produces:
 
 - `owner-map.json`
+- `owner-coverage.json`
 - `current-recovery.json`
 - `results.json`
 - `closure.json`

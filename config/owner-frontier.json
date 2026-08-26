@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "kind": "ordivon.atlas-owner-coverage-frontier",
+  "truthRole": "non-authoritative-owner-coverage-ledger",
+  "discoveryRoots": [
+    {
+      "path": "/root/projects",
+      "namePrefixes": [
+        "ordivon-"
+      ]
+    },
+    {
+      "path": "/root",
+      "names": [
+        "workstation-lab"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "subjectRef": "project:finance",
+      "displayName": "Finance",
+      "repo": "/root/projects/ordivon-finance",
+      "disposition": "OWNER_CANDIDATE",
+      "ownerResearchRef": "research-owner:finance",
+      "authorityRef": "authority:ordivon:research-owner:finance",
+      "corpusRootCandidate": "research",
+      "reason": "Finance is already treated across Ordivon as the owner of capital reality, research, decision, execution/reconciliation and accounting, but Atlas has not yet adjudicated a research-owner publication boundary or admitted a source.",
+      "evidenceRefs": [
+        "/root/projects/ordivon-computing/projects/README.md",
+        "/root/projects/ordivon-harness/evidence/harness-first-interface-owner-bridges-v3.json"
+      ],
+      "reconsiderationTriggers": [
+        "adjudicate the Finance research-owner corpus boundary and recovery root",
+        "publish an owner-native immutable research authority surface before Atlas admission"
+      ],
+      "coverageScope": "DOMAIN_AND_RESEARCH"
+    },
+    {
+      "subjectRef": "project:harness",
+      "displayName": "Harness",
+      "repo": "/root/projects/ordivon-harness",
+      "disposition": "ADMISSION_DEFERRED",
+      "ownerResearchRef": "research-owner:harness",
+      "authorityRef": "authority:ordivon:research-owner:harness",
+      "corpusRootCandidate": "research",
+      "reason": "Atlas rollout on 2026-08-18 explicitly deferred Harness because a concurrent-active workspace made owner publication/admission unsafe; that operational deferral was never represented as a durable reconsideration frontier.",
+      "evidenceRefs": [
+        "evidence/ATLAS-BOUNDED-OWNER-ROLLOUT-ACCEPTANCE-20260818.json",
+        "/root/projects/ordivon-harness/research/README.md"
+      ],
+      "reconsiderationTriggers": [
+        "no conflicting owner-publication workspace is active",
+        "current Harness research recovery path and publication scope are revalidated",
+        "owner-native immutable publication is available for Atlas source admission"
+      ],
+      "coverageScope": "RESEARCH_AND_OPERATIONAL"
+    },
+    {
+      "subjectRef": "project:security",
+      "displayName": "Security",
+      "repo": "/root/projects/ordivon-security",
+      "disposition": "OWNER_CANDIDATE",
+      "ownerResearchRef": "research-owner:security",
+      "authorityRef": "authority:ordivon:research-owner:security",
+      "corpusRootCandidate": "research",
+      "reason": "Multiple current owners preserve Security as an external source-domain authority, but Security does not yet expose an Atlas-compatible research-owner publication surface and its exact research recovery root still requires owner-side adjudication.",
+      "evidenceRefs": [
+        "/root/projects/ordivon-scd/ENVIRONMENT-HABITAT-CENSUS.md",
+        "/root/projects/ordivon-host/docs/STATUS.md",
+        "/root/projects/ordivon-computational-possibility/CROSS-OWNER-BOUNDARIES.md"
+      ],
+      "reconsiderationTriggers": [
+        "Security owner boundary and current research recovery surface are owner-native and explicit",
+        "immutable publication is available without importing Security truth into Atlas"
+      ],
+      "coverageScope": "DOMAIN_AND_RESEARCH"
+    },
+    {
+      "subjectRef": "project:web",
+      "displayName": "Web",
+      "repo": "/root/projects/ordivon-web",
+      "disposition": "OWNER_CANDIDATE",
+      "reason": "Web explicitly owns public orientation, editorial public-consequence judgment, design context, static publication and correction policy, but this is not automatically identical to a research-owner authority and must not be coerced into research-owner semantics merely to satisfy Atlas symmetry.",
+      "evidenceRefs": [
+        "/root/projects/ordivon-web/README.md",
+        "/root/projects/ordivon-media/README.md"
+      ],
+      "reconsiderationTriggers": [
+        "decide whether Atlas should represent non-research institutional owners directly or whether Web needs a separate owner-native research publication",
+        "preserve Web publication authority without manufacturing research standing"
+      ],
+      "coverageScope": "INSTITUTIONAL_PUBLICATION"
+    },
+    {
+      "subjectRef": "project:workstation",
+      "displayName": "Workstation",
+      "repo": "/root/workstation-lab",
+      "disposition": "OWNER_CANDIDATE",
+      "reason": "Workstation explicitly defines itself as the execution-node substrate and physical realization/binding authority, but that operational owner identity is not automatically a research-owner identity under the current Atlas publication protocol.",
+      "evidenceRefs": [
+        "/root/workstation-lab/docs/responsibility-map.md",
+        "/root/workstation-lab/README.md"
+      ],
+      "reconsiderationTriggers": [
+        "decide whether Atlas owner coverage should include operational owners independently of research-owner publication",
+        "if a research-owner surface is needed, publish it owner-natively rather than deriving it from workstation implementation state"
+      ],
+      "coverageScope": "INSTITUTIONAL_PHYSICAL_SUBSTRATE"
+    },
+    {
+      "subjectRef": "project:computing",
+      "displayName": "Computing",
+      "repo": "/root/projects/ordivon-computing",
+      "disposition": "NON_OWNER",
+      "reason": "Broad Computing is a historical/discovery umbrella and cross-project synthesis environment; current research explicitly rejects a single Broad Computing semantic owner and preserves decomposed owner authority.",
+      "evidenceRefs": [
+        "/root/projects/ordivon-computational-possibility/GENEALOGY-AND-CURRENTNESS.md",
+        "/root/projects/ordivon-computing/projects/README.md"
+      ],
+      "reconsiderationTriggers": [
+        "only reopen if a genuinely new residual semantic responsibility survives owner decomposition and earns independent authority"
+      ],
+      "coverageScope": "NON_OWNER_SYNTHESIS_CONTAINER"
+    },
+    {
+      "subjectRef": "project:research",
+      "displayName": "Ordivon Research durability repository",
+      "repo": "/root/projects/ordivon-research",
+      "disposition": "NON_OWNER",
+      "reason": "The repository is durability, migration and retained-history substrate; semantic authority remains owner-native and a generic research-owner would incorrectly re-centralize authority.",
+      "evidenceRefs": [
+        "/root/projects/ordivon-research/README.md",
+        "/root/projects/ordivon-research/PROVENANCE.md"
+      ],
+      "reconsiderationTriggers": [
+        "reopen only if the repository acquires a distinct semantic responsibility rather than storage/migration responsibility"
+      ],
+      "coverageScope": "NON_OWNER_DURABILITY_CONTAINER"
+    },
+    {
+      "subjectRef": "project:atlas",
+      "displayName": "Atlas",
+      "repo": "/root/projects/ordivon-atlas",
+      "disposition": "SPECIAL_REVIEW",
+      "reason": "Atlas is projection and observatory infrastructure, not owner truth. Its implementation has source ownership, but self-registering a research-owner:atlas merely for symmetry would create an unnecessary self-referential semantic owner unless independent Atlas research authority is established.",
+      "evidenceRefs": [
+        "README.md"
+      ],
+      "reconsiderationTriggers": [
+        "distinguish Atlas implementation/source ownership from any future independent Atlas research semantics",
+        "do not self-register without an owner-native authority boundary independent of the generated projection"
+      ],
+      "coverageScope": "PROJECTION_INFRASTRUCTURE"
+    }
+  ]
+}
