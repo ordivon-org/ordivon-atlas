@@ -60,3 +60,13 @@ P3 standing ResultRefs =
 ```
 
 This owner fence supports the historical dogfood decision. Future Human currentness must still be re-resolved before domain use.
+
+
+## Post-M0 manual review fence — 2026-08-26
+
+| Source | Exact fence | Role |
+|---|---|---|
+| Computing post-M0 sedimentation subtraction | `ordivon-computing@a4af03a37af54ae6d77e5ce0a2e250858e87ab35` | Aug24–26 mechanism subtraction, 32-trial M0 additivity falsifier, candidate dispositions and current Computing evidence pointers |
+| Current Atlas review base | `ordivon-atlas@47dfb9b476ffa54914def99e9e808bbf9f2ad3b3` | exact M0 bytes evaluated before this manual review |
+
+This review does not make Computing owner truth for Atlas or for any domain. Computing supplies the cross-owner methodology comparison; owner-native claims cited by its audit remain source-relative and must be re-resolved when current domain truth matters.

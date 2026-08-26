@@ -11,6 +11,7 @@ Allowed relation vocabulary at M0:
 | `MO-M01` Permissive Exploration | `ENABLES` | `MO-M02` Representation Challenge | Low-cost inquiry keeps alternative framings alive before durable promotion. |
 | `MO-M02` Representation Challenge | `EXPOSES` | `MO-F01` Representation Failure | Fresh whole-space or evaluator challenge can reveal that the frame, not merely a hypothesis, was wrong. |
 | `MO-M03` Typed Negative Knowledge | `COMPENSATES_FOR` | `MO-F07` Anti-Rediscovery Failure | Preserved why-not/reopen lineage reduces rediscovery only when future discovery paths exist. |
+| `MO-M03` Typed Negative Knowledge | `ENABLES` | `MO-M04` Typed Standing | Preserving the surviving solved/application content of an absorbed novelty claim allows novelty or scope standing to fall without deleting useful solution-domain standing. |
 | `MO-M04` Typed Standing | `INHIBITS` | `MO-F02` Premature Promotion | Explicit separation of usefulness/currentness/Foundation/effect standing creates places to withhold promotion. |
 | `MO-M05` SMC | `DEPENDS_ON` | `MO-M04` Typed Standing | Commitment cannot be bounded by standing if the relevant standing dimension is collapsed or unavailable. |
 | `MO-M05` SMC | `INHIBITS` | `MO-F04` Silent Escalation | Contemporaneous promotion/effect checks reduce implicit acquisition of stronger commitment. |

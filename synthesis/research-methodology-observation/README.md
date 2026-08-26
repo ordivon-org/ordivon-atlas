@@ -64,3 +64,10 @@ M1 is admissible only if repeated real use exposes a material failure in at leas
 - coverage/bias auditing;
 
 and that failure cannot be handled cleanly by this curated layer + Process Lineage + existing owner Atlas views.
+
+
+## 2026-08-26 post-M0 review
+
+The Aug24–26 research-method audit was manually reconciled into this projection without changing the mechanism/failure-family count. `MO-M03` now explicitly preserves positive solved-subspace/application content when mature prior art absorbs a stronger novelty/scope claim. New evidence episodes cover consumer/environment sedimentation and source-neutral solution absorption.
+
+A pre-frozen fresh-consumer additivity falsifier did **not** earn `MO-M11 Challengeable Environmentalization`: current M0 alone and M0 plus the candidate both made 16/16 exact placement judgments with zero protected-boundary errors, while the candidate added ~7.1% tokens. Treat challengeable environmentalization as a useful cross-mechanism explanatory pattern over existing M03/M04/M07/M08, not a new mandatory methodology primitive. `MO-F11` and M1 remain unadmitted. See [`PROJECTION-HEALTH.md`](PROJECTION-HEALTH.md), [`EVIDENCE-EPISODES.md`](EVIDENCE-EPISODES.md), and [`SOURCE-INDEX.md`](SOURCE-INDEX.md).

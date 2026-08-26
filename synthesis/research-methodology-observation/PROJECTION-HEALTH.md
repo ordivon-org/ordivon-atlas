@@ -53,3 +53,23 @@ Reopen only after repeated real use demonstrates a material failure in manual:
 that existing `synthesis/` + Process Lineage + owner Atlas views cannot solve without repeated ambiguity or loss.
 
 A desire for symmetry, automation, a database or a cleaner schema is not a reopen condition.
+
+
+## Post-M0 manual review — 2026-08-26
+
+The broader Ordivon research-method corpus advanced materially after the original Aug19 materialization. A manual review was therefore performed before presenting M0 as complete current observation.
+
+```text
+reviewSource = ordivon-computing@a4af03a37af54ae6d77e5ce0a2e250858e87ab35
+reviewedAtlasBase = 47dfb9b476ffa54914def99e9e808bbf9f2ad3b3
+newMechanismCount = 0
+newFailureFamilyCount = 0
+M03 = refined for positive solved-subspace / solution-domain preservation
+ChallengeableEnvironmentalization = interaction/evidence pattern, not MO-M11
+SolutionDomainAbsorption = M03/M04/M08 refinement, not independent mechanism
+M1 = NOT_ADMITTED
+```
+
+The discriminating fresh-consumer test compared exact current M0 with M0 plus the candidate environmentalization observation across eight source-derived placement cases, two DeepSeek V4 Flash replicates per arm. Both arms were 16/16 exact with zero over-default, under-default, authority-mint or stale-persistence errors; the candidate arm consumed about 7.1% more tokens. The predeclared M0-addition rule therefore failed.
+
+Interpretation: the original M0 mechanism set remains compositionally sufficient for the tested placement decisions once relevant episode facts are available. The review updates evidence/currentness and one M03 observation; it does not justify a generated projection, new methodology service, new failure taxonomy or stronger semantic authority.

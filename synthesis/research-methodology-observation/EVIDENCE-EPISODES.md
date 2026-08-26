@@ -34,3 +34,15 @@ These counts are **not methodology metrics**. Their evidential value is qualitat
 ## Evidence-use rule
 
 When an episode is used to justify a domain claim, leave this collection and resolve the corresponding owner-current authority. A historical methodology episode can remain useful evidence about research process after the linked owner has advanced, but it does not freeze the owner's present semantic standing.
+
+
+## Post-M0 manual review episodes — 2026-08-26
+
+These additions update the evidence surface without adding `MO-M11` or `MO-F11`.
+
+| Episode ref | Role | Domain / context | Sampling type | Observed transition | Source fence / pointer |
+|---|---|---|---|---|---|
+| `MO-E11` | positive consumer consequence + negative additivity control | Standing → future consumer environment | cross-owner retrospective + pre-frozen fresh-consumer falsifier | Aug22 method content survived historically but disappeared from current first-look and the same error recurred; Aug24 repair restored current method/default guards; ACS9 independently showed real owner-surface/default changes with fresh-Agent benefit. However an 8-case M0-only vs M0+`Challengeable Environmentalization` campaign was 16/16 vs 16/16 with zero over/under-default, authority-mint or stale-persistence errors, so the phenomenon is retained as a cross-mechanism interaction pattern rather than a new M0 mechanism. | `ordivon-computing@a4af03a37af54ae6d77e5ce0a2e250858e87ab35`; `research/POST-M0-SEDIMENTATION-SUBTRACTION-MATRIX-20260826.md`; `research/experiments/agent-consumption-surface-v0/ACS9-CLOSEOUT.md` |
+| `MO-E12` | positive-solution preservation recurrence | mature external/internal solution absorption | fixed-window + heterogeneous later research lines | After the Aug24 method repair, Assimilation, Laboratory, COJC and pressure-selection work repeatedly treat mature external/source-neutral results as positive solution-domain content, test applicability/transport/composition, and research only the residual. A fixed-window audit of 20 immediately preceding Tasks found 11 origin/mechanism-relevant cases with mature external/source-neutral challenge and zero current cases where a known stronger mature substitute was ignored solely to preserve Ordivon origin. This refines M03 rather than creating a new assimilation mechanism. | `ordivon-computing@a4af03a37af54ae6d77e5ce0a2e250858e87ab35`; `research/experiments/assimilation-relation-deletion-v0/FIXED-WINDOW-INTERNAL-ORIGIN-AUDIT.md`; `research/PRESSURE-SELECTION-VALUE-OF-INFORMATION-AUDIT-20260826.md` |
+
+The post-M0 additivity result has a narrow interpretation: current M0 already composes M03/M04/M07/M08 well enough for the tested placement judgments **when the episode facts are present**. It does not show that discoverability, consumer binding or long-horizon consequence are solved system-wide.
