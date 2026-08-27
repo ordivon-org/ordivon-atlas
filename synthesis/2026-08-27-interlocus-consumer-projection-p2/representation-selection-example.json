@@ -1,0 +1,24 @@
+{
+  "kind": "ordivon.atlas-representation-selection-request-v0",
+  "operationRef": "example:owner-currentness-preflight",
+  "requiredDistinctions": ["owner-identity", "authority-fence", "currentness", "recovery-locator"],
+  "costMetric": "bytes",
+  "maxCost": 2000,
+  "consumerConstraintRef": "measurement:natural-currentness-benchmark-20260827",
+  "profiles": [
+    {
+      "id": "SCOPED_CURRENTNESS_CAPSULE",
+      "preserves": ["owner-identity", "authority-fence", "currentness", "recovery-locator"],
+      "measuredCost": 827,
+      "evidenceRefs": ["measurement:p1-check-owner-interlocus-compact"],
+      "truthRole": "measured-consumer-projection"
+    },
+    {
+      "id": "FULL_OWNER_PUBLICATION",
+      "preserves": ["owner-identity", "authority-fence", "currentness", "recovery-locator", "owner-publication"],
+      "measuredCost": 27429,
+      "evidenceRefs": ["measurement:p1-check-owner-interlocus-expanded"],
+      "truthRole": "measured-consumer-projection"
+    }
+  ]
+}

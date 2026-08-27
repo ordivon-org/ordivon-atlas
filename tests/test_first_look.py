@@ -356,6 +356,22 @@ class PriorResultFirstLookTests(unittest.TestCase):
         )
         self.assertFalse(result["claims"]["ownerTruthMinted"])
 
+    def test_interlocus_p2_protocol_assimilation_and_selection_are_first_look_discoverable(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        result = prior_result_first_look(
+            "MCP A2A SPIFFE Kubernetes Interlocus representation selection currentness",
+            repository_root=root,
+            generated_dir="generated",
+            limit=5,
+        )
+        self.assertTrue(result["candidates"])
+        self.assertEqual(
+            result["candidates"][0]["path"],
+            "synthesis/2026-08-27-interlocus-consumer-projection-p2/README.md",
+        )
+        self.assertFalse(result["claims"]["semanticEquivalenceInferred"])
+        self.assertFalse(result["claims"]["researchAdmissionGranted"])
+
 
 if __name__ == "__main__":
     unittest.main()

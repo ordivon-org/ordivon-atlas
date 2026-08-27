@@ -1,0 +1,108 @@
+{
+  "claims": {
+    "executionAdmissionGranted": false,
+    "llmBehaviorMeasured": false,
+    "mechanicalReadCostMeasured": true,
+    "semanticCorrectnessMeasured": false
+  },
+  "date": "2026-08-27",
+  "derived": {
+    "compactVsExpandedByteReductionFraction": 0.969849,
+    "compactVsWholeRegistryByteReductionFraction": 0.997528
+  },
+  "kind": "ordivon.atlas-natural-currentness-consumer-benchmark-v0",
+  "repeats": 3,
+  "truthRole": "read-only-mechanical-consumer-measurement",
+  "workflows": [
+    {
+      "allExitZero": true,
+      "args": [
+        "check-owner",
+        "Interlocus"
+      ],
+      "label": "owner-scoped-compact",
+      "medianElapsedMs": 4831.675,
+      "medianStdoutBytes": 827,
+      "runs": [
+        {
+          "elapsedMs": 5106.639,
+          "exitCode": 0,
+          "stderrBytes": 0,
+          "stdoutBytes": 827
+        },
+        {
+          "elapsedMs": 4831.675,
+          "exitCode": 0,
+          "stderrBytes": 0,
+          "stdoutBytes": 827
+        },
+        {
+          "elapsedMs": 4555.702,
+          "exitCode": 0,
+          "stderrBytes": 0,
+          "stdoutBytes": 827
+        }
+      ]
+    },
+    {
+      "allExitZero": true,
+      "args": [
+        "check-owner",
+        "Interlocus",
+        "--include-publication"
+      ],
+      "label": "owner-scoped-expanded",
+      "medianElapsedMs": 5302.884,
+      "medianStdoutBytes": 27429,
+      "runs": [
+        {
+          "elapsedMs": 5302.884,
+          "exitCode": 0,
+          "stderrBytes": 0,
+          "stdoutBytes": 27429
+        },
+        {
+          "elapsedMs": 6420.599,
+          "exitCode": 0,
+          "stderrBytes": 0,
+          "stdoutBytes": 27429
+        },
+        {
+          "elapsedMs": 4640.825,
+          "exitCode": 0,
+          "stderrBytes": 0,
+          "stdoutBytes": 27429
+        }
+      ]
+    },
+    {
+      "allExitZero": true,
+      "args": [
+        "check"
+      ],
+      "label": "whole-registry",
+      "medianElapsedMs": 40987.072,
+      "medianStdoutBytes": 334495,
+      "runs": [
+        {
+          "elapsedMs": 40987.072,
+          "exitCode": 0,
+          "stderrBytes": 0,
+          "stdoutBytes": 334495
+        },
+        {
+          "elapsedMs": 45102.139,
+          "exitCode": 0,
+          "stderrBytes": 0,
+          "stdoutBytes": 334495
+        },
+        {
+          "elapsedMs": 38307.54,
+          "exitCode": 0,
+          "stderrBytes": 0,
+          "stdoutBytes": 334495
+        }
+      ]
+    }
+  ]
+}

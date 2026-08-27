@@ -15,6 +15,7 @@ from .first_look import (
 )
 from .owner_coverage import build_owner_coverage, load_coverage_config, write_owner_coverage
 from .institutional_topology import load_institutional_registry, write_institutional_topology, build_institutional_topology
+from .representation_selection import RepresentationSelectionError, select_representation
 
 
 def _parser() -> argparse.ArgumentParser:
@@ -74,6 +75,11 @@ def _parser() -> argparse.ArgumentParser:
     inspect_candidate.add_argument("--out", default="generated")
     inspect_candidate.add_argument("--limit", type=int, default=8)
     inspect_candidate.add_argument("--max-projection-bytes", type=int, default=12_288)
+    select_rep = sub.add_parser(
+        "select-representation",
+        help="mechanically select the cheapest caller-declared adequate consumer representation",
+    )
+    select_rep.add_argument("request_json")
     show = sub.add_parser("show", help="print one generated view")
     show.add_argument(
         "view",
@@ -163,6 +169,15 @@ def main(argv: list[str] | None = None) -> int:
             )
         )
         return 0
+    if args.command == "select-representation":
+        try:
+            request = json.loads(Path(args.request_json).read_text(encoding="utf-8"))
+            result = select_representation(request)
+        except (OSError, json.JSONDecodeError, RepresentationSelectionError) as error:
+            print(json.dumps({"kind": "ordivon.atlas-representation-selection-error", "error": str(error)}, indent=2, ensure_ascii=False))
+            return 2
+        print(json.dumps(result, indent=2, sort_keys=True, ensure_ascii=False))
+        return 0 if result["selectedProfileId"] is not None else 2
 
     atlas = Atlas.from_registry(args.registry)
     if args.command == "check-owner":
