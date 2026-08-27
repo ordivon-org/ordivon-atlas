@@ -14,3 +14,6 @@ ordivon-atlas = "ordivon_atlas.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.uv]
+package = true

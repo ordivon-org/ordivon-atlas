@@ -124,11 +124,15 @@ Every semantic projection row carries the owner `AuthorityVersionRef` or an expl
 ## Use
 
 ```bash
-PYTHONPATH=src python -m ordivon_atlas check
-PYTHONPATH=src python -m ordivon_atlas refresh --out generated
-PYTHONPATH=src python -m unittest discover -s tests -v
-ORDIVON_ATLAS_LIVE_TESTS=1 PYTHONPATH=src python -m unittest tests.test_live -v
+scripts/owner-environment bootstrap
+scripts/owner-environment doctor
+scripts/owner-environment test
+.venv/bin/ordivon-atlas check
+.venv/bin/ordivon-atlas refresh --out generated
+ORDIVON_ATLAS_LIVE_TESTS=1 .venv/bin/python -m unittest tests.test_live -v
 ```
+
+`scripts/owner-environment` is the canonical repository-owned environment entrypoint. `cold-start` uses a fresh temporary venv, so passing it proves Atlas does not depend on an ambient `PYTHONPATH` or previously warmed Workspace.
 
 Default tests are deterministic local destructive fixtures. Live remote acceptance is explicit so temporary public-network failure is not misreported as a code regression.
 
