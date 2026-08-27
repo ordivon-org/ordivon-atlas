@@ -18,6 +18,7 @@ NETWORK_V2 = "sha256:dbdbb759b2b86b898a343cbb81646b283c589676989e919537f1a6cbc2b
 NETWORK_V3 = "sha256:31d78dd22ca73b95fc9a1107ad6a38e884859e94247263d14b916cef67e78e2a"
 NETWORK_V4 = "sha256:61800d2c8679cf37c9b22bd1d38ff420c706b95bdf7e8b590820430e8729c557"
 HOST_V1 = "sha256:4fc9dee669927882337649d19c144d0938ecf3307c461bffd84eedb8fdc27df4"
+HOST_V2 = "sha256:aeff16b1bfe5ca0b6e2fdc203f608ef56576e65b705ddf87e0daeaf525b1ca67"
 GAME_V1 = "sha256:b0e16e2cd6fe40685d7b96f94d78ef89bd55ed7f92db4de1408e33d2539bb2f0"
 WORLD_V1 = "sha256:76f3ebc35cc72a67e65cacbcb899d8ccf0919059577c97191c85dc9aed9ede8f"
 WORLD_V2 = "sha256:5e560a45711b33c7202390b0ec0c1cba5db37694759ce2d00122a499881f4878"
@@ -77,13 +78,20 @@ class LiveSourceTests(unittest.TestCase):
     def test_rollout_host_and_game_are_current_with_negative_history_intact(self) -> None:
         projection = Atlas(self.specs).build()
         owners = {row["ownerResearchRef"]: row for row in projection["owners"]}
-        self.assertEqual(owners["research-owner:host"]["authorityVersionRef"], HOST_V1)
+        self.assertEqual(owners["research-owner:host"]["authorityVersionRef"], HOST_V2)
         self.assertEqual(owners["research-owner:host"]["projectionHealth"], HealthState.CURRENT_TO_SOURCE)
+        host_spec = self.by_owner["research-owner:host"]
+        host_obs = Atlas([host_spec]).observe(host_spec)
+        self.assertEqual(compare_projected_version(HOST_V1, host_obs), HealthState.SOURCE_ADVANCED_STALE)
         self.assertEqual(owners["research-owner:game"]["authorityVersionRef"], GAME_V1)
         self.assertEqual(owners["research-owner:game"]["projectionHealth"], HealthState.CURRENT_TO_SOURCE)
         rows = {row["resultRef"]: row for row in projection["results"]}
         self.assertEqual(rows["result:host:hdf44-not-admitted"]["standing"], ["CURRENT", "NOT_ADMITTED"])
         self.assertEqual(rows["result:host:generic-coordination-owner-not-admitted"]["standing"], ["CURRENT", "NOT_ADMITTED"])
+        self.assertEqual(rows["result:host:native-v5-extension-boundary-current"]["standing"], ["CURRENT"])
+        self.assertEqual(rows["result:host:native-v5-extension-boundary-current"]["epistemicVerdict"], "ESTABLISHED_IN_SCOPE")
+        self.assertEqual(rows["result:host:legacy-extension-recovery-retired"]["epistemicVerdict"], "REJECTED_FOR_PRODUCTION")
+        self.assertEqual(rows["result:host:deployed-source-lineage-reconciled"]["epistemicVerdict"], "ESTABLISHED_IN_SCOPE")
         self.assertEqual(rows["result:game:gdf3-authoritative-case-determination-current"]["standing"], ["CURRENT", "FROZEN"])
         self.assertEqual(rows["result:game:gdf3-game-feel-historical-cancelled"]["standing"], ["ABANDONED", "HISTORICAL_PRESERVED"])
         self.assertEqual(rows["result:game:c1-strong-survivor-unadmitted"]["standing"], ["CURRENT", "NOT_ADMITTED"])
