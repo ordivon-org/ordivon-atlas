@@ -1,0 +1,84 @@
+{
+  "adjudication": {
+    "coverage": "substantial",
+    "decision": "consume_prior",
+    "noveltyEstablished": false,
+    "researchAdmissionGranted": false,
+    "semanticEquivalenceEstablished": false
+  },
+  "claims": {
+    "externalWritePerformed": false,
+    "noveltyEstablished": false,
+    "ownerTruthMinted": false,
+    "productionServiceAdmissionGranted": false,
+    "prospectiveFreshAgentConsumerMeasured": true,
+    "researchAdmissionGranted": false,
+    "semanticEquivalenceEstablished": false
+  },
+  "date": "2026-08-27",
+  "disposition": "P2_PRIOR_WORK_RECOVERABLE_WITHOUT_AUTHORITY_INFLATION",
+  "intent": "When an Agent needs to verify whether Interlocus is current before deeper owner inspection, what minimum representation should it consume, and do MCP, A2A, SPIFFE, or Kubernetes justify a replacement Interlocus protocol or a production Capability Path service?",
+  "kind": "ordivon.atlas-interlocus-p2-fresh-agent-consumer-evidence",
+  "provider": {
+    "effectiveModelIds": [
+      "deepseek-v4-flash"
+    ],
+    "requestedModelId": "deepseek-v4-flash"
+  },
+  "queryAuthorship": {
+    "applicationGeneratedQueryVariant": false,
+    "atlasGeneratedQueryVariant": false,
+    "crossLanguageTranslationByAtlas": false,
+    "queries": [
+      "Interlocus minimal representation current verification Capability Path production service",
+      "MCP A2A SPIFFE Kubernetes replacement Interlocus protocol Capability Path service",
+      "Interlocus freshness check minimum representation before owner inspection",
+      "MCP A2A SPIFFE Kubernetes Interlocus protocol substitution Capability Path production deployment"
+    ],
+    "semanticSimilarityUsed": false,
+    "source": "fresh-agent"
+  },
+  "retrieval": {
+    "candidateCount": 4,
+    "inspectionProjectedBytes": 7566,
+    "inspectionProjectionTruncated": false,
+    "ownerReadCount": 3,
+    "selectedPath": "synthesis/2026-08-27-interlocus-consumer-projection-p2/README.md",
+    "selectedRank": 1,
+    "selectedScore": 64
+  },
+  "runtimeOwnerJobIds": [
+    "job-01a043fa-13fb-7062-8038-55084a6e8bde",
+    "job-01a043fa-2cd2-7341-b7fa-6aeb0680b5ab",
+    "job-01a043fa-4107-7483-9907-839b187396b2"
+  ],
+  "schemaVersion": 1,
+  "sourceFences": {
+    "atlasRevision": "1a8920e549617d5b88b45c34763e143416f35814",
+    "harnessRevision": "6b35b4e1778fc8d8b012178eccc56b02af2fadf9",
+    "interlocusRevision": "3ee823f8f3ce83722a0abe25960cf04f3db6fb4d",
+    "runnerPath": "scripts/atlas_multilingual_current_dogfood.py",
+    "runtimeAttemptId": "attempt-01a043fa-1131-7bc0-b62c-74ec5da8dd41",
+    "runtimeJobId": "job-01a043fa-1131-7bc0-b62c-74dfa54133a2",
+    "stdoutArtifactDigest": "sha256:fa47ea9d709fbca70f7a60205dad510a1549a6c065c952fd8d717e3021dd4f37"
+  },
+  "truthRole": "non-authoritative-prospective-consumer-dogfood-evidence",
+  "usage": {
+    "commandElapsedMs": 19758,
+    "conclusionCorrections": 0,
+    "phaseTokens": {
+      "adjudication": 4785,
+      "candidateSelection": 2534,
+      "queryAuthorship": 2323
+    },
+    "phaseWallTimeMs": {
+      "adjudication": 6834,
+      "candidateSelection": 4331,
+      "queryAuthorship": 5502
+    },
+    "providerDomainToolCallCount": 0,
+    "providerModelCallCount": 3,
+    "toolCorrections": 0,
+    "totalTokens": 9642
+  }
+}

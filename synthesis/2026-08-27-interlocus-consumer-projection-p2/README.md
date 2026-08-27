@@ -34,6 +34,37 @@ Derived mechanical reductions for the compact scoped path:
 
 The time ratio is environment/network dependent and is not a protocol law. The output-size result is specific to the current owner publications. Both are consumer evidence, not semantic authority.
 
+## Prospective fresh-Agent dogfood
+
+A real supported Harness run then tested the P2 surface as a fresh consumer rather than as a repository test. Source fences:
+
+- Atlas: `1a8920e549617d5b88b45c34763e143416f35814`;
+- Interlocus: `3ee823f8f3ce83722a0abe25960cf04f3db6fb4d`;
+- Harness: `6b35b4e1778fc8d8b012178eccc56b02af2fadf9`;
+- Runtime Job: `job-01a043fa-1131-7bc0-b62c-74dfa54133a2`;
+- retained stdout digest: `sha256:fa47ea9d709fbca70f7a60205dad510a1549a6c065c952fd8d717e3021dd4f37`.
+
+The DeepSeek v4 Flash consumer performed the existing Harness-supported sequence `fresh query authorship -> bounded Atlas first-look -> caller-side candidate selection -> exact candidate inspection -> caller adjudication`. It authored four lexical query variants itself; neither Atlas nor the application generated a semantic translation. P2 was selected at rank 1 with bounded score 64 and exact inspection stayed within 7,566 projected bytes.
+
+Final caller adjudication:
+
+- decision: `consume_prior`;
+- coverage: `substantial`;
+- semantic equivalence established: `false`;
+- novelty established: `false`;
+- research admission granted: `false`.
+
+Measured usage:
+
+- Provider model calls: **3**;
+- total Provider tokens: **9,642** (`2,323 + 2,534 + 4,785`);
+- owner reads: **3**;
+- domain Tool calls from the model: **0**;
+- conclusion/tool corrections: **0 / 0**;
+- outer command elapsed time: **19,758 ms**.
+
+This supplies the prospective natural-consumer evidence that the earlier Interlocus closeout lacked. It does **not** prove universal model benefit or production-service necessity. Its narrower result is that a fresh finite consumer can recover the P2 currentness/assimilation/validator conclusions through the bounded Atlas path without Atlas minting semantic equivalence, novelty or research admission. Full structured evidence is retained in `natural-fresh-agent-dogfood.json`.
+
 ## J1 representation-cost evidence
 
 Source fence: `ordivon-computing@90b7bc351495323b4d0cab7636470e90cd7fd384`, `research/experiments/joint-capability-j1-adversarial-interlocus-v0/J1-CLOSEOUT.md`.
