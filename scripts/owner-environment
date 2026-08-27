@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)
+mode=${1:-}
+uv_bin=${UV_BIN:-$(command -v uv || true)}
+env_dir=${ORDIVON_OWNER_ENV_DIR:-"$repo/.venv"}
+python_bin="$env_dir/bin/python"
+python_version=${ORDIVON_OWNER_PYTHON:-3.12.13}
+
+usage() {
+  cat <<'TXT'
+usage: scripts/owner-environment bootstrap|doctor|test|cold-start
+
+bootstrap   materialize Atlas from its locked repository environment
+doctor      verify Python and the installed Atlas package
+test        bootstrap, doctor, and run the default offline test suite
+cold-start  prove the same test contract in a fresh temporary environment
+
+Environment:
+  UV_BIN                    optional uv executable override
+  ORDIVON_OWNER_ENV_DIR     optional environment directory override
+  ORDIVON_OWNER_PYTHON      optional Python override (default 3.12.13)
+TXT
+}
+
+require_uv() {
+  [[ -n "$uv_bin" ]] || { echo 'Atlas owner environment requires uv' >&2; exit 1; }
+}
+
+bootstrap() {
+  require_uv
+  UV_PROJECT_ENVIRONMENT="$env_dir" "$uv_bin" sync --frozen --python "$python_version"
+}
+
+doctor() {
+  [[ -x "$python_bin" ]] || { echo "Atlas owner environment is not materialized: $python_bin" >&2; exit 1; }
+  "$python_bin" - <<'PY'
+import sys
+import ordivon_atlas
+if sys.version_info[:2] != (3, 12):
+    raise SystemExit(f"Atlas development environment requires Python 3.12, got {sys.version.split()[0]}")
+print("owner environment doctor: valid profile=test")
+PY
+}
+
+run_tests() {
+  bootstrap
+  doctor
+  cd "$repo"
+  "$python_bin" -m unittest discover -s tests -v
+}
+
+case "$mode" in
+  bootstrap) bootstrap ;;
+  doctor) doctor ;;
+  test) run_tests ;;
+  cold-start)
+    tmp=$(mktemp -d -t ordivon-atlas-owner-env-XXXXXX)
+    trap 'rm -rf "$tmp"' EXIT
+    ORDIVON_OWNER_ENV_DIR="$tmp/.venv" "$0" test
+    ;;
+  --help|-h) usage ;;
+  *) usage >&2; exit 2 ;;
+esac
