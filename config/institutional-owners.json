@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "kind": "ordivon.atlas-institutional-owner-reference-registry",
+  "truthRole": "non-authoritative-owner-reference-registry",
+  "entries": [
+    {
+      "institutionalOwnerRef": "institutional-owner:web",
+      "ownerNativeRef": "ordivon-web",
+      "displayName": "Web",
+      "repo": "/root/projects/ordivon-web",
+      "authorityClass": "PUBLIC_ORIENTATION_AND_PUBLICATION",
+      "scope": "ORDIVON_PUBLIC_ENCOUNTER_AND_PUBLICATION_LAYER",
+      "cardinality": "SINGLETON",
+      "recoveryRef": "content/editorial/authority.md",
+      "entryRef": "README.md",
+      "transportMode": "remote_git",
+      "remote": "git@github.com:zycxfyh/ordivon-web.git",
+      "remoteFallbacks": [
+        "https://github.com/zycxfyh/ordivon-web.git"
+      ],
+      "ref": "refs/heads/main",
+      "sourceBoundary": "OWNER_BOUNDARY_SOURCE_ONLY; WEB_PUBLICATION_ADMISSION_REMAINS_PROMOTION_RECEIPT_TAG_AUTHORITY",
+      "nonClaims": [
+        "research-owner authority",
+        "underlying project fact authority",
+        "main branch equals published site"
+      ]
+    },
+    {
+      "institutionalOwnerRef": "institutional-owner:workstation-node:local",
+      "ownerNativeRef": "Workstation owner",
+      "displayName": "Workstation",
+      "repo": "/root/workstation-lab",
+      "authorityClass": "EXECUTION_NODE_SUBSTRATE_AND_PHYSICAL_REALIZATION_BINDING",
+      "scope": "THIS_ATTACHED_EXECUTION_NODE",
+      "cardinality": "PER_EXECUTION_NODE",
+      "recoveryRef": "docs/responsibility-map.md",
+      "entryRef": "README.md",
+      "transportMode": "local_git",
+      "remote": null,
+      "ref": "refs/heads/main",
+      "sourceBoundary": "COMMITTED_OWNER_BOUNDARY_SOURCE_ONLY; LIVE_PHYSICAL_CURRENTNESS_REMAINS_OPERATION_RELATIVE",
+      "nonClaims": [
+        "research-owner authority",
+        "Runtime Job/Attempt authority",
+        "domain semantic authority",
+        "global cross-locus capability authority"
+      ]
+    },
+    {
+      "institutionalOwnerRef": "institutional-owner:atlas",
+      "ownerNativeRef": "ordivon-atlas",
+      "displayName": "Atlas",
+      "repo": "/root/projects/ordivon-atlas",
+      "authorityClass": "PROJECTION_OBSERVATORY_INFRASTRUCTURE",
+      "scope": "ORDIVON_CROSS_OWNER_PROJECTION_AND_DISCOVERABILITY",
+      "cardinality": "SINGLETON",
+      "recoveryRef": "README.md",
+      "entryRef": "README.md",
+      "transportMode": "remote_git",
+      "remote": "git@github.com:zycxfyh/ordivon-atlas.git",
+      "remoteFallbacks": [
+        "https://github.com/zycxfyh/ordivon-atlas.git"
+      ],
+      "ref": "refs/heads/main",
+      "sourceBoundary": "ATLAS_IMPLEMENTATION_AND_PROJECTION_ROLE_ONLY; GENERATED_PROJECTION_IS_NOT OWNER TRUTH",
+      "nonClaims": [
+        "research-owner authority",
+        "semantic authority over projected owners",
+        "generated projection as source of truth"
+      ]
+    }
+  ]
+}

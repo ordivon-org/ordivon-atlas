@@ -16,6 +16,7 @@ class CoverageDisposition(StrEnum):
     ADMISSION_DEFERRED = "ADMISSION_DEFERRED"
     NON_OWNER = "NON_OWNER"
     SPECIAL_REVIEW = "SPECIAL_REVIEW"
+    INSTITUTIONAL_OWNER_REPRESENTED = "INSTITUTIONAL_OWNER_REPRESENTED"
 
 
 @dataclass(frozen=True)
@@ -175,7 +176,10 @@ def build_owner_coverage(sources: Iterable[SourceSpec], config: CoverageConfig) 
         }
         row.pop("disposition", None)
         rows.append(row)
-        if entry.disposition not in {CoverageDisposition.NON_OWNER}:
+        if entry.disposition not in {
+            CoverageDisposition.NON_OWNER,
+            CoverageDisposition.INSTITUTIONAL_OWNER_REPRESENTED,
+        }:
             reconciliation.append({
                 "subjectRef": entry.subjectRef,
                 "coverageScope": entry.coverageScope,
@@ -206,6 +210,22 @@ def build_owner_coverage(sources: Iterable[SourceSpec], config: CoverageConfig) 
         disposition_counts[disposition] = disposition_counts.get(disposition, 0) + 1
 
     classification_complete = not unclassified and not errors and not unavailable_roots
+    research_reconciliation = [
+        row for row in reconciliation
+        if row.get("coverageDisposition") in {
+            CoverageDisposition.OWNER_CANDIDATE,
+            CoverageDisposition.OWNER_RECOGNIZED_NO_PUBLICATION,
+            CoverageDisposition.PUBLICATION_READY,
+            CoverageDisposition.ADMISSION_DEFERRED,
+        } and any(
+            entry.subjectRef == row.get("subjectRef") and entry.ownerResearchRef
+            for entry in config.entries
+        )
+    ]
+    represented_institutional = sum(
+        1 for row in rows
+        if row.get("coverageDisposition") == CoverageDisposition.INSTITUTIONAL_OWNER_REPRESENTED
+    )
     return {
         "schemaVersion": 1,
         "kind": "ordivon.atlas-owner-coverage-projection",
@@ -218,6 +238,7 @@ def build_owner_coverage(sources: Iterable[SourceSpec], config: CoverageConfig) 
         "configurationErrors": errors,
         "summary": {
             "registeredResearchOwners": len(source_list),
+            "recognizedNonResearchInstitutionalOwners": represented_institutional,
             "frontierEntries": len(config.entries),
             "discoveredRepositories": len(discovered),
             "unavailableDiscoveryRoots": len(unavailable_roots),
@@ -226,7 +247,8 @@ def build_owner_coverage(sources: Iterable[SourceSpec], config: CoverageConfig) 
             "publicationSurfacePresentButUnregistered": len(ready_but_unregistered),
             "dispositionCounts": dict(sorted(disposition_counts.items())),
             "coverageClassificationComplete": classification_complete,
-            "researchOwnerAdmissionComplete": not reconciliation and not errors and not unavailable_roots,
+            "institutionalCoverageReconciled": not reconciliation and not errors and not unavailable_roots,
+            "researchOwnerAdmissionComplete": not research_reconciliation and not errors and not unavailable_roots,
         },
     }
 

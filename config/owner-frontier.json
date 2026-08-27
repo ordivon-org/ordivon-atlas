@@ -21,15 +21,15 @@
       "subjectRef": "project:web",
       "displayName": "Web",
       "repo": "/root/projects/ordivon-web",
-      "disposition": "OWNER_CANDIDATE",
-      "reason": "Web explicitly owns public orientation, editorial public-consequence judgment, design context, static publication and correction policy, but this is not automatically identical to a research-owner authority and must not be coerced into research-owner semantics merely to satisfy Atlas symmetry.",
+      "disposition": "INSTITUTIONAL_OWNER_REPRESENTED",
+      "reason": "Web is owner-natively established as Ordivon public orientation/editorial/publication authority. Atlas represents that institutional facet separately from research-owner authority; Web publication admission remains receipt/tag-bound and is not reduced to repository main.",
       "evidenceRefs": [
         "/root/projects/ordivon-web/README.md",
         "/root/projects/ordivon-media/README.md"
       ],
       "reconsiderationTriggers": [
-        "decide whether Atlas should represent non-research institutional owners directly or whether Web needs a separate owner-native research publication",
-        "preserve Web publication authority without manufacturing research standing"
+        "reopen research-owner admission only if Web independently establishes a distinct owner-native research authority surface",
+        "reopen topology class only if Web owner boundary materially changes"
       ],
       "coverageScope": "INSTITUTIONAL_PUBLICATION"
     },
@@ -37,15 +37,15 @@
       "subjectRef": "project:workstation",
       "displayName": "Workstation",
       "repo": "/root/workstation-lab",
-      "disposition": "OWNER_CANDIDATE",
-      "reason": "Workstation explicitly defines itself as the execution-node substrate and physical realization/binding authority, but that operational owner identity is not automatically a research-owner identity under the current Atlas publication protocol.",
+      "disposition": "INSTITUTIONAL_OWNER_REPRESENTED",
+      "reason": "Workstation is owner-natively established as the per-execution-node substrate and physical realization/binding authority. Atlas represents that institutional facet without manufacturing research or domain authority and without treating committed source as live physical currentness.",
       "evidenceRefs": [
         "/root/workstation-lab/docs/responsibility-map.md",
         "/root/workstation-lab/README.md"
       ],
       "reconsiderationTriggers": [
-        "decide whether Atlas owner coverage should include operational owners independently of research-owner publication",
-        "if a research-owner surface is needed, publish it owner-natively rather than deriving it from workstation implementation state"
+        "reopen research-owner admission only if Workstation independently establishes distinct owner-native research authority",
+        "reopen topology class when a second execution node forces explicit instance identity"
       ],
       "coverageScope": "INSTITUTIONAL_PHYSICAL_SUBSTRATE"
     },
@@ -83,14 +83,14 @@
       "subjectRef": "project:atlas",
       "displayName": "Atlas",
       "repo": "/root/projects/ordivon-atlas",
-      "disposition": "SPECIAL_REVIEW",
-      "reason": "Atlas is projection and observatory infrastructure, not owner truth. Its implementation has source ownership, but self-registering a research-owner:atlas merely for symmetry would create an unnecessary self-referential semantic owner unless independent Atlas research authority is established.",
+      "disposition": "INSTITUTIONAL_OWNER_REPRESENTED",
+      "reason": "Atlas is owner-natively established as projection/observatory/discoverability infrastructure. Representing that institutional facet does not self-register research-owner:atlas and does not make generated Atlas projections owner truth.",
       "evidenceRefs": [
         "README.md"
       ],
       "reconsiderationTriggers": [
-        "distinguish Atlas implementation/source ownership from any future independent Atlas research semantics",
-        "do not self-register without an owner-native authority boundary independent of the generated projection"
+        "reopen research-owner admission only if Atlas establishes independent owner-native research semantics outside generated projection",
+        "reopen topology class if projection infrastructure splits into independently owned services"
       ],
       "coverageScope": "PROJECTION_INFRASTRUCTURE"
     }

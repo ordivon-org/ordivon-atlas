@@ -165,6 +165,27 @@ class OwnerCoverageTests(unittest.TestCase):
             self.assertEqual(projection["unavailableDiscoveryRoots"], [str(missing.resolve())])
 
 
+    def test_represented_institutional_owner_closes_coverage_without_becoming_research_owner(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            registered = git_repo(root / "ordivon-registered")
+            institutional = git_repo(root / "ordivon-web")
+            config = CoverageConfig(
+                discoveryRoots=[DiscoveryRoot(path=str(root), namePrefixes=["ordivon-"])],
+                entries=[FrontierEntry(
+                    subjectRef="project:web", displayName="Web", repo=str(institutional),
+                    disposition="INSTITUTIONAL_OWNER_REPRESENTED", reason="publication owner represented separately",
+                    coverageScope="INSTITUTIONAL_PUBLICATION",
+                )],
+            )
+            projection = build_owner_coverage([source(registered)], config)
+            self.assertTrue(projection["summary"]["coverageClassificationComplete"])
+            self.assertTrue(projection["summary"]["institutionalCoverageReconciled"])
+            self.assertTrue(projection["summary"]["researchOwnerAdmissionComplete"])
+            self.assertEqual(projection["summary"]["recognizedNonResearchInstitutionalOwners"], 1)
+            self.assertEqual(projection["summary"]["reconciliationRequired"], 0)
+
+
 
 if __name__ == "__main__":
     unittest.main()

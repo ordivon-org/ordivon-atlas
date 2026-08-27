@@ -24,19 +24,28 @@ A source may define multiple read transports. Remote-backed sources use `remote_
 
 `local_git` is a currentness transport, not a claim of public release, cross-machine distribution, or backup durability. Source distribution topology remains owner/source metadata; whether Atlas can prove currentness is an Atlas consumer capability. For declared `git-multi-ref-aggregate` publications, Atlas additionally verifies the aggregate-manifest digest and every exact revision/path/byte/SHA anchor mechanically before returning `CURRENT_TO_SOURCE`.
 
-## Owner coverage frontier
+## Owner coverage and institutional topology
 
-The admitted source registry is deliberately **not** the complete owner topology. `config/sources.json` contains only owners that already expose an owner-native immutable research authority publication. Atlas must not manufacture owner standing merely because a repository exists or another owner mentions it.
+The admitted research source registry is deliberately **not** the complete owner topology. `config/sources.json` contains only owners that expose an owner-native immutable **research authority** publication. Atlas must not manufacture research standing merely because a repository has another legitimate institutional responsibility.
 
-To prevent the opposite failure — a real or deferred owner disappearing from institutional representation — Atlas keeps a separate non-authoritative coverage ledger in `config/owner-frontier.json`. This plane can classify repositories as `OWNER_CANDIDATE`, `OWNER_RECOGNIZED_NO_PUBLICATION`, `PUBLICATION_READY`, `ADMISSION_DEFERRED`, `NON_OWNER`, or `SPECIAL_REVIEW`. None of those states is owner truth and none auto-promotes into `sources.json`.
+To prevent the opposite failure — a real, deferred, or non-research owner disappearing from institutional representation — Atlas keeps two separate non-authoritative planes:
+
+- `config/owner-frontier.json` classifies the discovered repository universe for coverage/reconciliation. `INSTITUTIONAL_OWNER_REPRESENTED` is a terminal coverage state distinct from `NON_OWNER` and from research-owner admission states.
+- `config/institutional-owners.json` records source-fenced references for non-research institutional owner facets. It points back to owner-native recovery surfaces and never becomes semantic authority itself.
+
+`institutional-owner-topology.json` merges registered research-authority facets with represented non-research facets without pretending the facets are mutually exclusive repository types. A future Host, Runtime, or other repository may expose additional institutional facets without losing its research-owner identity. Verification levels remain explicit: research rows are backed by immutable owner publications; non-research rows prove exact Git source plus owner-native recovery presence.
 
 ```bash
 # Classify the current repository universe without remote owner observation.
 PYTHONPATH=src python -m ordivon_atlas coverage-check
 
-# refresh also writes generated/owner-coverage.json alongside owner projections.
+# Verify non-research institutional source fences independently of research authority currentness.
+PYTHONPATH=src python -m ordivon_atlas topology-check
+
+# refresh writes both coverage and topology projections alongside research views.
 PYTHONPATH=src python -m ordivon_atlas refresh --out generated
 PYTHONPATH=src python -m ordivon_atlas show coverage --out generated
+PYTHONPATH=src python -m ordivon_atlas show topology --out generated
 ```
 
 The coverage audit scans configured local discovery roots and reports any repository that is neither a registered research-owner source nor explicitly classified in the frontier as `UNCLASSIFIED_REPOSITORY`. Missing discovery roots fail closed rather than being interpreted as an empty repository universe. A temporary admission deferral must carry reconsideration triggers. The key separation is:
@@ -45,11 +54,11 @@ The coverage audit scans configured local discovery roots and reports any reposi
 repository discovery / cross-owner recognition
         -> non-authoritative coverage frontier
         -> owner-side boundary adjudication
-        -> owner-native immutable publication
-        -> explicit Atlas source admission
+        -> research authority? -> owner-native immutable publication -> sources.json
+        -> non-research institutional authority? -> source-fenced owner recovery -> institutional topology
 ```
 
-Thus `absence from sources.json` no longer means `absence from Reality`, while Atlas still cannot create semantic authority.
+Thus `absence from sources.json` no longer means `absence from Reality`, and `institutional owner` no longer implies `research owner`. Atlas still cannot create semantic authority. Source-fenced recovery proves only that the referenced owner boundary exists at an exact source revision; Web publication admission, Workstation live physical currentness, and projected-owner semantics remain with their actual authorities.
 
 ## Federated refresh semantics
 
@@ -79,6 +88,7 @@ Synthesis entries do not replace owner-current publications and must be repaired
 
 - `owner-map.json`
 - `owner-coverage.json`
+- `institutional-owner-topology.json`
 - `current-recovery.json`
 - `results.json`
 - `closure.json`
