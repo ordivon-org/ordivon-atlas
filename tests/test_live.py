@@ -20,6 +20,7 @@ NETWORK_V4 = "sha256:61800d2c8679cf37c9b22bd1d38ff420c706b95bdf7e8b590820430e872
 HOST_V1 = "sha256:4fc9dee669927882337649d19c144d0938ecf3307c461bffd84eedb8fdc27df4"
 GAME_V1 = "sha256:b0e16e2cd6fe40685d7b96f94d78ef89bd55ed7f92db4de1408e33d2539bb2f0"
 WORLD_V1 = "sha256:76f3ebc35cc72a67e65cacbcb899d8ccf0919059577c97191c85dc9aed9ede8f"
+WORLD_V2 = "sha256:5e560a45711b33c7202390b0ec0c1cba5db37694759ce2d00122a499881f4878"
 NORMATIVE_V1 = "sha256:6558bc84bb52a3a0ffbff0f683a36d46c28efc0f2ba531d4458bd5aa16a4a56e"
 NORMATIVE_V2 = "sha256:91fe75c4827585487a5aadb8c55816b6628cda314bdbb79bdbe2554246a7b579"
 NORMATIVE_V3 = "sha256:d0a1149b8c0278e5ca53122e9bc053c45ed64c0831e7cdb2616981361e6be9f3"
@@ -95,7 +96,8 @@ class LiveSourceTests(unittest.TestCase):
         spec = self.by_owner["research-owner:world"]
         obs = Atlas([spec]).observe(spec)
         self.assertEqual(obs.health, HealthState.CURRENT_TO_SOURCE)
-        self.assertEqual(obs.authorityVersionRef, WORLD_V1)
+        self.assertEqual(obs.authorityVersionRef, WORLD_V2)
+        self.assertEqual(compare_projected_version(WORLD_V1, obs), HealthState.SOURCE_ADVANCED_STALE)
         self.assertEqual((obs.currentRecovery or {}).get("locator"), "docs/research/world/README.md")
         projection = Atlas([spec]).build()
         rows = {row["resultRef"]: row for row in projection["results"]}
@@ -109,6 +111,10 @@ class LiveSourceTests(unittest.TestCase):
         self.assertEqual(rows["result:world:tsaf1-not-admitted"]["epistemicVerdict"], "UNDERDETERMINED")
         self.assertEqual(rows["result:world:whole-world-closure-not-established"]["standing"], ["CURRENT"])
         self.assertEqual(rows["result:world:next-world-route-unknown"]["epistemicVerdict"], "UNDERDETERMINED")
+        self.assertEqual(rows["result:world:minimal-world-2-boundary-current"]["standing"], ["CURRENT"])
+        self.assertEqual(rows["result:world:minimal-world-2-boundary-current"]["epistemicVerdict"], "ESTABLISHED_IN_SCOPE")
+        self.assertEqual(rows["result:world:replacement-readiness-verdict-retired"]["epistemicVerdict"], "REJECTED_FOR_PRODUCTION")
+        self.assertEqual(rows["result:world:legacy-flat-auto-upgrader-retired"]["epistemicVerdict"], "REJECTED_FOR_PRODUCTION")
 
     def test_standalone_network_and_normative_preserve_distinct_semantic_authority(self) -> None:
         network_spec = self.by_owner["research-owner:network"]
