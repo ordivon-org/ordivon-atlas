@@ -130,6 +130,17 @@
       "remote": null,
       "repo": "/root/projects/ordivon-finance",
       "transportMode": "local_git"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:security",
+      "corpusRoot": "research/security",
+      "ownerResearchRef": "research-owner:security",
+      "ref": "refs/heads/main",
+      "remote": "git@github.com:zycxfyh/ordivon-security.git",
+      "remoteFallbacks": [
+        "https://github.com/zycxfyh/ordivon-security.git"
+      ],
+      "repo": "/root/projects/ordivon-security"
     }
   ]
 }

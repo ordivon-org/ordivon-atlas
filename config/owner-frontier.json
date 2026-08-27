@@ -18,26 +18,6 @@
   ],
   "entries": [
     {
-      "subjectRef": "project:security",
-      "displayName": "Security",
-      "repo": "/root/projects/ordivon-security",
-      "disposition": "OWNER_CANDIDATE",
-      "ownerResearchRef": "research-owner:security",
-      "authorityRef": "authority:ordivon:research-owner:security",
-      "corpusRootCandidate": "research",
-      "reason": "Multiple current owners preserve Security as an external source-domain authority, but Security does not yet expose an Atlas-compatible research-owner publication surface and its exact research recovery root still requires owner-side adjudication.",
-      "evidenceRefs": [
-        "/root/projects/ordivon-scd/ENVIRONMENT-HABITAT-CENSUS.md",
-        "/root/projects/ordivon-host/docs/STATUS.md",
-        "/root/projects/ordivon-computational-possibility/CROSS-OWNER-BOUNDARIES.md"
-      ],
-      "reconsiderationTriggers": [
-        "Security owner boundary and current research recovery surface are owner-native and explicit",
-        "immutable publication is available without importing Security truth into Atlas"
-      ],
-      "coverageScope": "DOMAIN_AND_RESEARCH"
-    },
-    {
       "subjectRef": "project:web",
       "displayName": "Web",
       "repo": "/root/projects/ordivon-web",
