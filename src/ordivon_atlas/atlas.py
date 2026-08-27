@@ -137,6 +137,69 @@ def _sha256_ref(payload: bytes) -> str:
     return "sha256:" + hashlib.sha256(payload).hexdigest()
 
 
+def _verify_declared_source_integrity(
+    spec: SourceSpec, transport_revision: str, publication: dict[str, Any]
+) -> None:
+    source = publication.get("source")
+    if not isinstance(source, dict) or source.get("kind") != "git-multi-ref-aggregate":
+        return
+
+    manifest_ref = source.get("aggregateManifest")
+    expected_manifest_digest = source.get("aggregateManifestDigest")
+    if not isinstance(manifest_ref, str) or not manifest_ref:
+        raise AtlasSourceError("aggregate publication missing aggregateManifest")
+    if not isinstance(expected_manifest_digest, str) or not expected_manifest_digest.startswith("sha256:"):
+        raise AtlasSourceError("aggregate publication missing aggregateManifestDigest")
+
+    manifest_path = _join_repo_path("", manifest_ref)
+    manifest_bytes = _git_show(spec.repo, transport_revision, manifest_path)
+    observed_manifest_digest = _sha256_ref(manifest_bytes)
+    if observed_manifest_digest != expected_manifest_digest:
+        raise AtlasSourceError(
+            f"aggregate manifest digest mismatch: expected {expected_manifest_digest}, observed {observed_manifest_digest}"
+        )
+    try:
+        manifest = json.loads(manifest_bytes)
+    except Exception as exc:
+        raise AtlasSourceError(f"aggregate manifest invalid JSON: {exc}") from exc
+    if manifest.get("authorityRef") != spec.authorityRef or manifest.get("ownerResearchRef") != spec.ownerResearchRef:
+        raise AtlasSourceError("aggregate manifest identity mismatch")
+
+    anchors = manifest.get("anchors")
+    if not isinstance(anchors, list) or not anchors:
+        raise AtlasSourceError("aggregate manifest has no exact anchors")
+    for index, anchor in enumerate(anchors):
+        if not isinstance(anchor, dict):
+            raise AtlasSourceError(f"aggregate anchor {index} is not an object")
+        revision = anchor.get("revision")
+        relative_path = anchor.get("path")
+        expected_bytes = anchor.get("bytes")
+        expected_digest = anchor.get("sha256")
+        if (
+            not isinstance(revision, str)
+            or len(revision) != 40
+            or any(ch not in "0123456789abcdef" for ch in revision)
+        ):
+            raise AtlasSourceError(f"aggregate anchor {index} does not carry an exact commit revision")
+        if not isinstance(relative_path, str) or not relative_path:
+            raise AtlasSourceError(f"aggregate anchor {index} has no path")
+        if not isinstance(expected_bytes, int) or expected_bytes < 0:
+            raise AtlasSourceError(f"aggregate anchor {index} has invalid byte length")
+        if not isinstance(expected_digest, str) or not expected_digest.startswith("sha256:"):
+            raise AtlasSourceError(f"aggregate anchor {index} has invalid digest")
+        safe_path = _join_repo_path("", relative_path)
+        payload = _git_show(spec.repo, revision, safe_path)
+        if len(payload) != expected_bytes:
+            raise AtlasSourceError(
+                f"aggregate anchor {index} byte mismatch: expected {expected_bytes}, observed {len(payload)}"
+            )
+        observed_digest = _sha256_ref(payload)
+        if observed_digest != expected_digest:
+            raise AtlasSourceError(
+                f"aggregate anchor {index} digest mismatch: expected {expected_digest}, observed {observed_digest}"
+            )
+
+
 def load_registry(path: str | Path) -> list[SourceSpec]:
     data = json.loads(Path(path).read_text(encoding="utf-8"))
     if data.get("schemaVersion") != 1 or not isinstance(data.get("sources"), list):
@@ -271,6 +334,11 @@ class Atlas:
 
         if publication.get("authorityRef") != spec.authorityRef or publication.get("ownerResearchRef") != spec.ownerResearchRef:
             return SourceObservation(spec.ownerResearchRef, spec.authorityRef, transport_revision, authority_version, HealthState.AUTHORITY_CHANGED_UNRESOLVED, "PUBLICATION_IDENTITY_MISMATCH", None, publication, publication_path)
+
+        try:
+            _verify_declared_source_integrity(spec, transport_revision, publication)
+        except Exception as exc:
+            return SourceObservation(spec.ownerResearchRef, spec.authorityRef, transport_revision, authority_version, HealthState.BROKEN_POINTER, f"DECLARED_SOURCE_INTEGRITY_INVALID: {exc}", None, publication, publication_path)
 
         recovery = publication.get("currentRecovery")
         if not isinstance(recovery, dict) or not recovery.get("targetRole") or not recovery.get("locator"):

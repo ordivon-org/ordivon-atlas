@@ -20,7 +20,9 @@ Atlas uses read-only source transports and checks:
 6. current-recovery target role and locator;
 7. source advancement relative to a previous projection.
 
-A source may define multiple read transports. Atlas tries them in order and still fails closed if none can establish the current remote ref.
+A source may define multiple read transports. Remote-backed sources use `remote_git`; private canonical repositories may use `local_git`, which resolves an explicit local Git ref to one exact commit and reads committed bytes rather than the working tree. Atlas fails closed when the selected transport cannot establish an exact source revision.
+
+`local_git` is a currentness transport, not a claim of public release, cross-machine distribution, or backup durability. Source distribution topology remains owner/source metadata; whether Atlas can prove currentness is an Atlas consumer capability. For declared `git-multi-ref-aggregate` publications, Atlas additionally verifies the aggregate-manifest digest and every exact revision/path/byte/SHA anchor mechanically before returning `CURRENT_TO_SOURCE`.
 
 ## Owner coverage frontier
 

@@ -18,25 +18,6 @@
   ],
   "entries": [
     {
-      "subjectRef": "project:finance",
-      "displayName": "Finance",
-      "repo": "/root/projects/ordivon-finance",
-      "disposition": "OWNER_CANDIDATE",
-      "ownerResearchRef": "research-owner:finance",
-      "authorityRef": "authority:ordivon:research-owner:finance",
-      "corpusRootCandidate": "research",
-      "reason": "Finance is already treated across Ordivon as the owner of capital reality, research, decision, execution/reconciliation and accounting, but Atlas has not yet adjudicated a research-owner publication boundary or admitted a source.",
-      "evidenceRefs": [
-        "/root/projects/ordivon-computing/projects/README.md",
-        "/root/projects/ordivon-harness/evidence/harness-first-interface-owner-bridges-v3.json"
-      ],
-      "reconsiderationTriggers": [
-        "adjudicate the Finance research-owner corpus boundary and recovery root",
-        "publish an owner-native immutable research authority surface before Atlas admission"
-      ],
-      "coverageScope": "DOMAIN_AND_RESEARCH"
-    },
-    {
       "subjectRef": "project:security",
       "displayName": "Security",
       "repo": "/root/projects/ordivon-security",

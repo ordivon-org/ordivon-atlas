@@ -121,6 +121,15 @@
         "https://github.com/zycxfyh/ordivon-harness.git"
       ],
       "repo": "/root/projects/ordivon-harness"
+    },
+    {
+      "authorityRef": "authority:ordivon:research-owner:finance",
+      "corpusRoot": "research/finance",
+      "ownerResearchRef": "research-owner:finance",
+      "ref": "refs/heads/main",
+      "remote": null,
+      "repo": "/root/projects/ordivon-finance",
+      "transportMode": "local_git"
     }
   ]
 }
