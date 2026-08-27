@@ -35,8 +35,8 @@ Computing:
 
 Current successors:
 
-- `research/core/semantics-of-computational-descriptions/`
-- `research/core/computational-possibility/`
+- Semantics of Computational Descriptions: standalone `ordivon-scd` repository; the former Computing subtree is historical recovery.
+- Computational Possibility: standalone `ordivon-computational-possibility` repository; the former `research/core/computational-possibility/` subtree is historical recovery.
 
 ## Episode 3 — Computational Possibility
 
@@ -49,11 +49,20 @@ Formation lineage:
 - P4 `6636f6ce82db6a0a38b8b04dd1512b157686cd8e`
 - P5 `a169730c8dcba121014076db6dc22e41a488e2ff`
 
-Owner publication:
+Historical formation-fence owner publication (2026-08-18):
 
 - transport commit `ad1bd73d91fa1a2d2a59cac4726b74ac171c457d`
 - AuthorityVersionRef `sha256:5e12e043b14b57894cc0fffa85ed23821c36d491868c38555a0072cff4e263f9`
 - recovery `research/core/computational-possibility/README.md`
+
+Current CP owner recovery (2026-08-27):
+
+- repository `/root/projects/ordivon-computational-possibility`;
+- remote `git@github.com:zycxfyh/ordivon-computational-possibility.git`;
+- main / source transport revision `11901fb5b53b8de3ddc335ce310242a3b8cf0346`;
+- AuthorityVersionRef `sha256:0eec4ed7787518c16edf62ddd75053aa49709a9e66182b3a58b152e76e6ceae9`;
+- recovery `README.md` -> `CURRENT-RECOVERY.md`;
+- current result exposure includes `derived-transport-capability-calculus-current`, `research-product-topology-current`, `applicability-conformance-entry-current`, and `standalone-current-recovery-current`.
 
 Atlas admission:
 
@@ -436,7 +445,7 @@ Harness dogfood source:
 
 Key retrieval aliases / pressure terms:
 
-- CP re-understanding / second reconstruction / post-formation audit
+- Computational Possibility / CP / 计算可能性 / 计算可达性 / second reconstruction
 - guarded strategy normal form / quantifier opacity
 - claim formation / Underconstituted != Impossible
 - possibility structure / C -> Poss(C)

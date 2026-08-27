@@ -4,7 +4,7 @@
 
 This Atlas collection is non-authoritative synthesis/process memory.
 
-Owner-specific semantic truth remains in `ordivon-computing` under `research/core/computational-possibility/` and its owner publication/currentness surfaces.
+Owner-specific semantic truth is currently published from the standalone `ordivon-computational-possibility` repository. The `ordivon-computing/research/core/computational-possibility/` paths recorded in this 2026-08-19 manifest remain historical source fences after the 2026-08-22 physical cutover.
 
 Host Task checkpoints preserve semantic working continuity; they are not a replacement for owner Git authority.
 
@@ -28,9 +28,9 @@ Historical prerequisite:
 
 - `task:computational-possibility-project-formation-20260818@8` completed.
 
-## CP owner source pointers
+## CP owner source pointers at the 2026-08-19 closeout
 
-Primary current first-reading surfaces after this conversation:
+Historical first-reading surfaces at that conversation fence:
 
 - `research/core/computational-possibility/CORE-THEORY.md`
 - `research/core/computational-possibility/DERIVED-TRANSPORT-CAPABILITY-CALCULUS.md`
@@ -53,6 +53,19 @@ At conversation closeout:
 - no remote push performed in this conversation.
 
 The older owner-native CP AuthorityVersionRef remains historical/currentness provenance for the prior publication cycle; this Atlas synthesis does not silently mint a new AuthorityVersionRef for the later local commits.
+
+### Current owner recovery after 2026-08-27 realization
+
+Current source-fenced recovery is:
+
+- repository: `/root/projects/ordivon-computational-possibility`;
+- remote: `git@github.com:zycxfyh/ordivon-computational-possibility.git`;
+- main: `11901fb5b53b8de3ddc335ce310242a3b8cf0346`;
+- current AuthorityVersionRef: `sha256:0eec4ed7787518c16edf62ddd75053aa49709a9e66182b3a58b152e76e6ceae9`;
+- first recovery: `README.md` -> `CURRENT-RECOVERY.md`;
+- current owner-native theory paths are repository-root `CORE-THEORY.md`, `DERIVED-TRANSPORT-CAPABILITY-CALCULUS.md`, `RESEARCH-PRODUCTS.md`, `APPLICABILITY-SUBSYSTEM.md`, and related root surfaces.
+
+The old Computing commits remain material genealogy. They are not rewritten into the standalone topology.
 
 ## Consumer evidence pointers
 
@@ -83,7 +96,7 @@ That earlier episode owns the formation/supersession/currentness story. The new 
 
 ## Key retrieval aliases
 
-- Computational Possibility re-understanding / CP second reconstruction
+- Computational Possibility / CP / 计算可能性 / 计算可达性 / CP second reconstruction
 - Achievable guarded strategy normal form
 - claim formation / Underconstituted != Impossible
 - possibility structure / `C -> Poss(C)`

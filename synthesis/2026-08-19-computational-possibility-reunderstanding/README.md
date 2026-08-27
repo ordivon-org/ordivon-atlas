@@ -11,11 +11,25 @@
 
 This collection preserves the high-value second-stage reconstruction of Computational Possibility (CP) performed after Project Formation v0.1 was already complete.
 
-It does **not** replace CP owner-native authority. Current semantic claims remain owned by the CP corpus in `ordivon-computing`. This Atlas collection records why the project was re-read, what destructive attacks changed the explanatory model, which candidate primitives were rejected, what survived into owner-native materialization, and how two real Ordivon consumers established CP's independent practical niche.
+It does **not** replace CP owner-native authority. Current semantic claims are now owned by the standalone `ordivon-computational-possibility` repository; the `ordivon-computing/research/core/computational-possibility/` paths and commits recorded below remain valid **2026-08-19 historical source fences**, not current physical locators. This Atlas collection records why the project was re-read, what destructive attacks changed the explanatory model, which candidate primitives were rejected, what survived into owner-native materialization, and how two real Ordivon consumers established CP's independent practical niche.
 
 Core boundary:
 
 `CPReunderstandingSynthesis != CPOwnerTruth`.
+
+## Current recovery update — 2026-08-27
+
+The current CP owner recovery fence is now:
+
+- repository: `ordivon-computational-possibility`;
+- remote main / transport revision: `11901fb5b53b8de3ddc335ce310242a3b8cf0346`;
+- AuthorityVersionRef: `sha256:0eec4ed7787518c16edf62ddd75053aa49709a9e66182b3a58b152e76e6ceae9`;
+- current recovery: owner-root `README.md`, with operation-relative entry in `CURRENT-RECOVERY.md`;
+- newly exposed current results: Derived Transport & Capability Calculus, explanatory Research Product topology, Applicability conformance reproducibility, and standalone physical recovery.
+
+This update does **not** rewrite the 2026-08-19 process record. Formation-era and re-understanding-era `ordivon-computing` paths below remain historical provenance.
+
+Non-authoritative retrieval aliases for caller-authored query variants include: `Computational Possibility / CP / 计算可能性 / 计算可达性`, `capability substitution / 能力替换`, `theorem transport / 定理迁移`, and `applicability / 形式结论到现实目标的适用性`. These aliases aid lexical recovery; Atlas does not assert that translations are semantically equivalent.
 
 ## Why this synthesis exists
 
