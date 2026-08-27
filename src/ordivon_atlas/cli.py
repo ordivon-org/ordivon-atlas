@@ -31,6 +31,11 @@ def _parser() -> argparse.ArgumentParser:
         help="observe one registry-resolved owner source currentness without whole-Atlas hydration",
     )
     check_owner.add_argument("selector")
+    check_owner.add_argument(
+        "--include-publication",
+        action="store_true",
+        help="include the full owner publication; default output is a bounded currentness capsule",
+    )
     sub.add_parser(
         "coverage-check",
         help="classify admitted, represented, candidate, deferred and non-owner repositories without minting owner truth",
@@ -76,6 +81,21 @@ def _parser() -> argparse.ArgumentParser:
     )
     show.add_argument("--out", default="generated")
     return parser
+
+
+def _owner_observation_payload(observation, selector: str, aliases: list[str], *, include_publication: bool) -> dict:
+    payload = observation.public()
+    if not include_publication:
+        payload.pop("publication", None)
+    payload.update(
+        {
+            "kind": "ordivon.atlas-owner-currentness-observation",
+            "selector": selector,
+            "selectorAliases": aliases,
+            "publicationIncluded": include_publication,
+        }
+    )
+    return payload
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -163,13 +183,11 @@ def main(argv: list[str] | None = None) -> int:
             )
             return 2
         observation = atlas.observe(spec)
-        payload = observation.public()
-        payload.update(
-            {
-                "kind": "ordivon.atlas-owner-currentness-observation",
-                "selector": args.selector,
-                "selectorAliases": list(source_selector_aliases(spec)),
-            }
+        payload = _owner_observation_payload(
+            observation,
+            args.selector,
+            list(source_selector_aliases(spec)),
+            include_publication=args.include_publication,
         )
         print(json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False))
         return 0 if observation.health == HealthState.CURRENT_TO_SOURCE else 2

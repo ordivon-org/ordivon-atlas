@@ -25,9 +25,11 @@ PYTHONPATH=src python -m ordivon_atlas inspect-candidate "<query>" "<path>" "<lo
 # When the operation needs a current owner-source fence, hydrate only that owner.
 # Selectors are mechanical registry/locator aliases, not semantic query translation.
 PYTHONPATH=src python -m ordivon_atlas check-owner Interlocus
+# Expand owner bytes only when the operation actually needs them:
+PYTHONPATH=src python -m ordivon_atlas check-owner Interlocus --include-publication
 ```
 
-These surfaces return **non-authoritative candidate projections**. The caller still owns semantic equivalence, relevance, novelty/admission, and whether deeper owner inspection is required. Use `check-owner <selector>` for owner-scoped currentness, `check` for an explicit whole-registry observation, and `refresh` only when regenerated Atlas views are required; do not make whole-Atlas hydration a prerequisite for every research question.
+`check-owner` defaults to a bounded currentness capsule (identity, source/authority fence, recovery locator and health) rather than echoing the full owner publication into Agent context. These surfaces return **non-authoritative candidate projections**. The caller still owns semantic equivalence, relevance, novelty/admission, and whether deeper owner inspection is required. Use `check-owner <selector>` for owner-scoped currentness, `check` for an explicit whole-registry observation, and `refresh` only when regenerated Atlas views are required; do not make whole-Atlas hydration a prerequisite for every research question.
 
 ## MVP
 
