@@ -7,7 +7,14 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from ordivon_atlas.atlas import Atlas, HealthState, SourceSpec, compare_projected_version
+from ordivon_atlas.atlas import (
+    Atlas,
+    HealthState,
+    SourceSpec,
+    compare_projected_version,
+    select_source,
+    source_selector_aliases,
+)
 
 
 def run(*args: str, cwd: Path | None = None) -> str:
@@ -47,6 +54,48 @@ class AtlasTests(unittest.TestCase):
         run("git", "config", "user.name", "Atlas Fixture", cwd=work)
         run("git", "remote", "add", "origin", str(remote), cwd=work)
         return td, work
+
+    def test_source_selector_uses_registry_locators_without_renaming_owner_identity(self) -> None:
+        spec = SourceSpec(
+            "research-owner:network",
+            "authority:ordivon:research-owner:network",
+            "/root/projects/ordivon-interlocus",
+            "git@github.com:zycxfyh/ordivon-interlocus.git",
+            "refs/heads/main",
+            "",
+            ["https://github.com/zycxfyh/ordivon-interlocus.git"],
+        )
+        aliases = source_selector_aliases(spec)
+        self.assertIn("interlocus", {alias.casefold() for alias in aliases})
+        self.assertIn("network", {alias.casefold() for alias in aliases})
+        for selector in ("Interlocus", "network", "research-owner:network"):
+            self.assertIs(select_source([spec], selector), spec)
+        self.assertEqual(spec.ownerResearchRef, "research-owner:network")
+
+    def test_source_selector_fails_closed_when_unknown(self) -> None:
+        spec = SourceSpec(
+            "research-owner:network",
+            "authority:ordivon:research-owner:network",
+            "/root/projects/ordivon-interlocus",
+            "git@github.com:zycxfyh/ordivon-interlocus.git",
+            "refs/heads/main",
+            "",
+        )
+        with self.assertRaisesRegex(ValueError, "did not match Atlas registry"):
+            select_source([spec], "not-a-real-owner")
+
+    def test_source_selector_supports_local_git_sources_without_remote_locator(self) -> None:
+        spec = SourceSpec(
+            "research-owner:finance",
+            "authority:ordivon:research-owner:finance",
+            "/root/projects/ordivon-finance",
+            None,
+            "refs/heads/main",
+            "research",
+            transportMode="local_git",
+        )
+        self.assertIs(select_source([spec], "finance"), spec)
+        self.assertIn("ordivon-finance", source_selector_aliases(spec))
 
     def test_current_and_stale_comparison(self) -> None:
         td, work = self.fixture_repo(); self.addCleanup(td.cleanup)

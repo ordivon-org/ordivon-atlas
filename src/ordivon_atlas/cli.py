@@ -4,7 +4,7 @@ import argparse
 import json
 from pathlib import Path
 
-from .atlas import Atlas
+from .atlas import Atlas, HealthState, select_source, source_selector_aliases
 from .first_look import (
     inspect_prior_result_candidate,
     prior_result_first_look,
@@ -25,7 +25,12 @@ def _parser() -> argparse.ArgumentParser:
     sub = parser.add_subparsers(dest="command", required=True)
     refresh = sub.add_parser("refresh", help="resolve owner sources and regenerate Atlas views")
     refresh.add_argument("--out", default="generated")
-    sub.add_parser("check", help="observe source currentness without writing views")
+    sub.add_parser("check", help="observe all configured source currentness without writing views")
+    check_owner = sub.add_parser(
+        "check-owner",
+        help="observe one registry-resolved owner source currentness without whole-Atlas hydration",
+    )
+    check_owner.add_argument("selector")
     sub.add_parser(
         "coverage-check",
         help="classify admitted, represented, candidate, deferred and non-owner repositories without minting owner truth",
@@ -140,6 +145,34 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     atlas = Atlas.from_registry(args.registry)
+    if args.command == "check-owner":
+        try:
+            spec = select_source(atlas.sources, args.selector)
+        except ValueError as error:
+            print(
+                json.dumps(
+                    {
+                        "kind": "ordivon.atlas-owner-currentness-observation-error",
+                        "selector": args.selector,
+                        "error": str(error),
+                    },
+                    indent=2,
+                    sort_keys=True,
+                    ensure_ascii=False,
+                )
+            )
+            return 2
+        observation = atlas.observe(spec)
+        payload = observation.public()
+        payload.update(
+            {
+                "kind": "ordivon.atlas-owner-currentness-observation",
+                "selector": args.selector,
+                "selectorAliases": list(source_selector_aliases(spec)),
+            }
+        )
+        print(json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False))
+        return 0 if observation.health == HealthState.CURRENT_TO_SOURCE else 2
     if args.command == "coverage-check":
         coverage = build_owner_coverage(atlas.sources, load_coverage_config(args.frontier))
         print(json.dumps(coverage, indent=2, sort_keys=True, ensure_ascii=False))

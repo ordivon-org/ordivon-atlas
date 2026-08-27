@@ -207,6 +207,51 @@ def load_registry(path: str | Path) -> list[SourceSpec]:
     return [SourceSpec(**item) for item in data["sources"]]
 
 
+def source_selector_aliases(spec: SourceSpec) -> tuple[str, ...]:
+    """Return mechanical registry/locator aliases for one source.
+
+    These aliases do not infer semantic equivalence. They expose only stable IDs and
+    repository/remote locator names already present in Atlas configuration.
+    """
+    aliases: set[str] = {spec.ownerResearchRef, spec.authorityRef, Path(spec.repo).name}
+    remotes = [remote for remote in [spec.remote, *(spec.remoteFallbacks or [])] if remote]
+    for remote in remotes:
+        tail = remote.rstrip("/").rsplit("/", 1)[-1]
+        if tail.endswith(".git"):
+            tail = tail[:-4]
+        if tail:
+            aliases.add(tail)
+    for value in tuple(aliases):
+        lowered = value.casefold()
+        prefixes = (
+            "authority:ordivon:research-owner:",
+            "research-owner:",
+            "ordivon-",
+        )
+        for prefix in prefixes:
+            if lowered.startswith(prefix):
+                aliases.add(value[len(prefix):])
+    return tuple(sorted(aliases, key=lambda item: (item.casefold(), item)))
+
+
+def select_source(sources: Iterable[SourceSpec], selector: str) -> SourceSpec:
+    """Resolve one exact mechanical source selector and fail closed on ambiguity."""
+    if not isinstance(selector, str) or not selector.strip() or selector != selector.strip():
+        raise ValueError("source selector must be a non-empty trimmed string")
+    needle = selector.casefold()
+    matches = [
+        spec
+        for spec in sources
+        if needle in {alias.casefold() for alias in source_selector_aliases(spec)}
+    ]
+    if not matches:
+        raise ValueError(f"source selector did not match Atlas registry: {selector}")
+    if len(matches) != 1:
+        refs = sorted(spec.ownerResearchRef for spec in matches)
+        raise ValueError(f"source selector is ambiguous: {selector}: {refs}")
+    return matches[0]
+
+
 def compare_projected_version(projected: str | None, observation: SourceObservation) -> str:
     if observation.health != HealthState.CURRENT_TO_SOURCE:
         return observation.health

@@ -32,5 +32,10 @@ class FourOwnerPhysicalSplitTests(unittest.TestCase):
         self.assertEqual(row["authorityRef"], "authority:ordivon:research-owner:network")
         self.assertTrue(row["repo"].endswith("/ordivon-interlocus"))
 
+    def test_readme_first_contact_matches_current_interlocus_physical_home(self):
+        readme = (ROOT / "README.md").read_text()
+        self.assertIn("standalone current physical home `ordivon-interlocus`", readme)
+        self.assertNotIn("lives inside the shared `ordivon-research` durability repository", readme)
+
 if __name__ == "__main__":
     unittest.main()

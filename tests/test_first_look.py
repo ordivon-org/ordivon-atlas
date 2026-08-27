@@ -341,6 +341,21 @@ class PriorResultFirstLookTests(unittest.TestCase):
             "synthesis/proactive-pressure-discovery-ppd/README.md",
         )
 
+    def test_interlocus_j1_successor_evidence_precedes_historical_closeout_for_j1_query(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        result = prior_result_first_look(
+            "Interlocus Security J1 epoch currentness error shaping",
+            repository_root=root,
+            generated_dir="generated",
+            limit=5,
+        )
+        self.assertTrue(result["candidates"])
+        self.assertEqual(
+            result["candidates"][0]["path"],
+            "synthesis/2026-08-25-interlocus-security-j1-successor-evidence/README.md",
+        )
+        self.assertFalse(result["claims"]["ownerTruthMinted"])
+
 
 if __name__ == "__main__":
     unittest.main()

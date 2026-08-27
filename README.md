@@ -21,13 +21,17 @@ PYTHONPATH=src python -m ordivon_atlas first-look-many "<variant-1>" "<variant-2
 # After selecting one bounded candidate, inspect that exact candidate rather than
 # widening immediately to arbitrary repository reads.
 PYTHONPATH=src python -m ordivon_atlas inspect-candidate "<query>" "<path>" "<locator>"
+
+# When the operation needs a current owner-source fence, hydrate only that owner.
+# Selectors are mechanical registry/locator aliases, not semantic query translation.
+PYTHONPATH=src python -m ordivon_atlas check-owner Interlocus
 ```
 
-These surfaces return **non-authoritative candidate projections**. The caller still owns semantic equivalence, relevance, novelty/admission, and whether deeper owner inspection is required. Use `check` / `refresh` when the operation actually requires owner-source currentness observation or regenerated Atlas views; do not make whole-Atlas refresh a prerequisite for every research question.
+These surfaces return **non-authoritative candidate projections**. The caller still owns semantic equivalence, relevance, novelty/admission, and whether deeper owner inspection is required. Use `check-owner <selector>` for owner-scoped currentness, `check` for an explicit whole-registry observation, and `refresh` only when regenerated Atlas views are required; do not make whole-Atlas hydration a prerequisite for every research question.
 
 ## MVP
 
-The first MVP consumes heterogeneous owner sources. **Interlocus** (stable identity `research-owner:network`, historical name Network) lives inside the shared `ordivon-research` durability repository; Runtime lives inside the independent `ordivon-runtime` repository.
+The first MVP consumes heterogeneous owner sources. **Interlocus** (stable identity `research-owner:network`, historical name Network) has the standalone current physical home `ordivon-interlocus`; Runtime has the independent `ordivon-runtime` repository. Atlas configuration binds physical source locators separately from semantic owner identity, so the Network → Interlocus name/physical transition does not rename `research-owner:network`.
 
 Each pilot owner exposes a corpus-relative `authority/CURRENT.json` pointer to an immutable `authority/publications/<sha256>.json` payload. The payload SHA-256 is the owner `AuthorityVersionRef`.
 
@@ -127,6 +131,7 @@ Every semantic projection row carries the owner `AuthorityVersionRef` or an expl
 scripts/owner-environment bootstrap
 scripts/owner-environment doctor
 scripts/owner-environment test
+.venv/bin/ordivon-atlas check-owner Interlocus
 .venv/bin/ordivon-atlas check
 .venv/bin/ordivon-atlas refresh --out generated
 ORDIVON_ATLAS_LIVE_TESTS=1 .venv/bin/python -m unittest tests.test_live -v
