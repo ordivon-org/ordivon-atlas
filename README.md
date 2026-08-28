@@ -147,4 +147,4 @@ ORDIVON_ATLAS_LIVE_TESTS=1 .venv/bin/python -m unittest tests.test_live -v
 
 Default tests are deterministic local destructive fixtures. Live remote acceptance is explicit so temporary public-network failure is not misreported as a code regression.
 
-The MVP intentionally has no database, daemon, web UI, or MCP. Those are consumer/materialization options to consider only after generated whole-owner projection exposes concrete interaction pressure.
+The MVP intentionally has no database, daemon, web UI, or MCP. Those remain consumer/materialization options, not roadmap items. Reopen them only when a real consumer exposes interaction pressure that the current bounded first-look, owner-scoped currentness, regenerable views, and ordinary library/CLI composition cannot resolve; whole-owner hydration is not a prerequisite for discovering that pressure.
