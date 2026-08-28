@@ -1,0 +1,85 @@
+{
+  "all_suppress_carrier_closed": true,
+  "all_unique_shortest_len4": true,
+  "instances": [
+    {
+      "index": 0,
+      "instance_digest": "bb8e9456cd3b6dc05fc09a39da0662e3ceb299d3c89cd58315e9cb7b998a19a9",
+      "selected_program_digest": "781661d130e210a7eb6498af8ebee853e8c15e1116296bdf0e45e449d8af35d0",
+      "suppress_carrier_closed": true,
+      "suppress_provider_surface_closed": true,
+      "unique_shortest_count": 1,
+      "unique_shortest_len": 4
+    },
+    {
+      "index": 1,
+      "instance_digest": "4fb12a6c2381ca2b38f7303cbda6da53d67a5ca503f98ef80984af294db7ed54",
+      "selected_program_digest": "6e3a72effb80b1da0486325f1b73be3cdbb657ebe0667e009ad2612bf30cc408",
+      "suppress_carrier_closed": true,
+      "suppress_provider_surface_closed": true,
+      "unique_shortest_count": 1,
+      "unique_shortest_len": 4
+    },
+    {
+      "index": 2,
+      "instance_digest": "42d68ca52cad1659d44bfef31144af417ff5d821a8f9ac9e38dafed79841dfd5",
+      "selected_program_digest": "a3160f8b123f536d7b2a09b2a1a3258b17260b24d56991a83cb9f8d25b28d691",
+      "suppress_carrier_closed": true,
+      "suppress_provider_surface_closed": true,
+      "unique_shortest_count": 1,
+      "unique_shortest_len": 4
+    },
+    {
+      "index": 3,
+      "instance_digest": "823517b45521791f3cc8ed8eacd22c6beb87548dc755afdbf3bd6c850dbe3759",
+      "selected_program_digest": "55623aa90aead5ccb76c79673f7c54eadd4cd4050ceddfc94ff6e04c2d22921b",
+      "suppress_carrier_closed": true,
+      "suppress_provider_surface_closed": true,
+      "unique_shortest_count": 1,
+      "unique_shortest_len": 4
+    },
+    {
+      "index": 4,
+      "instance_digest": "e3c745c3472a17888f6e87936c3fd14d0d47f06819de8b617e3d0051a11eb8fd",
+      "selected_program_digest": "e8073a8dd0949ae1b17d26c5d8fdaba638d9c84b1854d228468d66bae7b5f6af",
+      "suppress_carrier_closed": true,
+      "suppress_provider_surface_closed": true,
+      "unique_shortest_count": 1,
+      "unique_shortest_len": 4
+    },
+    {
+      "index": 5,
+      "instance_digest": "5e8cf582fa73e3ab1d55638b86ef700f879ea674a438de55f0298eaf74ae94d0",
+      "selected_program_digest": "775859e0f7055a51917ec82963df5a50f84e57aef957effe1cf5f1261a778216",
+      "suppress_carrier_closed": true,
+      "suppress_provider_surface_closed": true,
+      "unique_shortest_count": 1,
+      "unique_shortest_len": 4
+    },
+    {
+      "index": 6,
+      "instance_digest": "ab5b5e3f7160e603d9af2f797bca88a5255adeffe978b64a9fac46b0ddfc4915",
+      "selected_program_digest": "79ebefe3f4d03d91f0f3a02476ed7acf4f771188e45d014bbb985d2c0630a28e",
+      "suppress_carrier_closed": true,
+      "suppress_provider_surface_closed": true,
+      "unique_shortest_count": 1,
+      "unique_shortest_len": 4
+    },
+    {
+      "index": 7,
+      "instance_digest": "6f98daf79c0389244c6d663c74c71a98b647700a5c969faaf44a9c3cd75097f9",
+      "selected_program_digest": "02a8f950452c70c43080e197e954b131501318d8a39d566ce4f841d44a96c5ec",
+      "suppress_carrier_closed": true,
+      "suppress_provider_surface_closed": true,
+      "unique_shortest_count": 1,
+      "unique_shortest_len": 4
+    }
+  ],
+  "n_instances": 8,
+  "pilot1_overlap_count": 0,
+  "run_order_covers_all": true,
+  "schema": "ordivon.c3.e1b-materialization-audit.v1",
+  "suppress_count": 4,
+  "unique_instance_digests": true,
+  "use_count": 4
+}

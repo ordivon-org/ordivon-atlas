@@ -1,0 +1,22 @@
+{
+  "commitment": {
+    "derivation": "sha256 domain-separated from frozen E1 Host checkpoint digest",
+    "execution_order_master": "acbac97c0885dc17cd23b78cd97b4a75f10dfb9347fa74ebd8c0fc6c3e3da5c9",
+    "instance_seed_commitments": [
+      "6b56bf77e8d62b3da5348f94afc426821f1dce51812e2b4884b6732353b8fada",
+      "352485bbc15bb81cacb378466289ebe517308af335be80e28295d9852617a2c6",
+      "8715c475c92212e9b9ac416aa608bbd4812964497799ead197901e0559c6e875",
+      "16169d2b9f92668d71e47f568f2a8c15d17c7df0df57ec3be9f1cd2e828b9ce2",
+      "43d6df1b186e0f5f7d68d08b2ab48a1ddc3370d19dbc8d2ffc79def33ad84534",
+      "c07bc750e86cc424d9792ee02a953ee349b4d17ad0180862aa9726fffe12f7fa",
+      "52bca5a4bef9ce9e5a3aa078c164c9c0cdab3135f6b313cb211239d3b96cacab",
+      "0d83b106dc47d84bf8bf08dfb178c2ee5e2bdc6e9e6405f8d3cd19dc33508212"
+    ],
+    "n_instances": 8,
+    "schema": "ordivon.c3.e1-efficacy-seed-commitment.v1",
+    "treatment_master": "311ca5964f910099c29565a46e46e2eef1195daa792c1b1e021ac0fb9055db09"
+  },
+  "generator_sha256": "1dd9dd3dee2299ca5a1e5cc6757f0d946265d84dc35a9e2d928e9ac8528d8b73",
+  "protocol_seal_checkpoint_digest": "sha256:23f12ae5c5e32571be43d2c2f87cf573b2c8818f42fce626fa697efffb0844cd",
+  "schema": "ordivon.c3.e1b-seed-commitment-record.v1"
+}

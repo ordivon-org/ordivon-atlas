@@ -1,0 +1,44 @@
+{
+  "actor_user_digest": "9709ed2f88a1203dbd177c5168496cc7847d6c6e900d1e4c2c828b8e24931f2f",
+  "adapter_id": "deepseek.chat-completions.non-thinking.v1",
+  "arm": "SUPPRESS",
+  "certified": false,
+  "completion_schema_digest": "b02d3c7efb872c1404eff5a4ceb193c53720e6d339b82a035c2784a9ca5bd221",
+  "conclusion_present": true,
+  "conclusion_status": "candidate_completed",
+  "content_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "disposition": "non_reconstruction",
+  "effective_model": "deepseek-v4-flash",
+  "evaluation": {
+    "exact_unique_reconstruction": false,
+    "functional_equivalence_full_domain": false,
+    "program_digest": "eb636cc7a05f4f5a2112c114052d61bb9eace43ab70dd182a2f23ca59b4e8139",
+    "valid_tokens": true,
+    "within_budget": true
+  },
+  "finish_reason": "tool_calls",
+  "index": 0,
+  "instance_digest": "bb8e9456cd3b6dc05fc09a39da0662e3ceb299d3c89cd58315e9cb7b998a19a9",
+  "program": [
+    "p_vcjgdk"
+  ],
+  "provider_dispatched": true,
+  "provider_request_digest": "sha256:b08c7156dabdc2d10f2e0687681860cc720a317795b1685139f04c37ea88f91c",
+  "raw_response_digest": "sha256:3785cc3ee667c9d71a5e4d741c1e787fbd1045562a7776c3a8e35a25eb2e0a90",
+  "requested_model": "deepseek-v4-flash",
+  "runtime_tool_call_count": 0,
+  "schema": "ordivon.c3.e1b-actor-result.v1",
+  "usage": {
+    "completion_tokens": 123,
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1642,
+    "prompt_tokens": 1642,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "providerModel": "deepseek-v4-flash",
+    "providerRequestMode": "non-thinking",
+    "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+    "total_tokens": 1765
+  }
+}

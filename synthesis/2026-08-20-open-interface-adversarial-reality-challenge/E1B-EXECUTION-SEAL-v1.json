@@ -1,0 +1,146 @@
+{
+  "actor": {
+    "adapterId": "deepseek.chat-completions.non-thinking.v1",
+    "baseUrl": "https://api.deepseek.com",
+    "credentialScopeId": "credential-scope:deepseek:flash:0",
+    "maxOutputTokens": 512,
+    "requestedModel": "deepseek-v4-flash",
+    "timeoutSeconds": 30.0
+  },
+  "currentnessCanary": {
+    "acceptedJobId": "job-01a04733-e4bc-71e2-9cdc-3bc4c92fe607",
+    "conclusionStatus": "candidate_completed",
+    "decodedOk": true,
+    "effectiveModel": "deepseek-v4-flash",
+    "excludedEarlierCanaryJobId": "job-01a04733-3a47-7523-a3f6-7d172e2adfb9",
+    "excludedReason": "post-response local assertion required a conformancePolicy E1b does not declare",
+    "finishReason": "tool_calls",
+    "rawResponseDigest": "sha256:1b1cd26f140423ec7126345571d415423faf1673d4bc091bbd5823d380195ca0",
+    "runtimeToolCallCount": 0,
+    "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e"
+  },
+  "efficacyCallsBeforeSeal": 0,
+  "frozenHarness": {
+    "completionSha256": "863a7a0692bf444a3f888f07c74d69aca92d9452a6d57f31b9a6d29db15d6c6d",
+    "deepseekSha256": "b9b8f144beb0186e3524bb36ea34af1428ae615b45b44e920d02d057795bfbf1",
+    "head": "09414f06a622397cdfd95dda4d52484f8ef0e9a1",
+    "modelSha256": "6f9609080f425879ca294506c42e632f3fa69069bdc121b46e4284f0bae082dc",
+    "protocolDependency": {
+      "distributionVersion": "0.3.0",
+      "subdirectory": "packages/ordivon-protocol",
+      "vcsCommit": "420dc356cb664d75db0f34f356156baebe5843db",
+      "vcsUrl": "https://github.com/zycxfyh/ordivon-computing.git"
+    },
+    "sourceStateDigest": "sha256:377ed4c3bc028f5552e82ff8732b2891f4215c4ede9fa8262116762f0d588645",
+    "workspaceId": "e1b-harness-frozen-actor-20260828"
+  },
+  "generatorSha256": "1dd9dd3dee2299ca5a1e5cc6757f0d946265d84dc35a9e2d928e9ac8528d8b73",
+  "hostPreSealRevision": 5,
+  "manifestSha256": "7043285a7ce1e18d450a0c5d42bdfd994dbf3e9433ee76070c911b5410caef26",
+  "materializationAuditSha256": "c58b20c9207283e096db6b2cc309b045a45f7ee92b45515193daad02f595c9e4",
+  "oneShotPolicy": {
+    "aggregateInspectionBeforeAllTerminal": false,
+    "providerCallsPerInstanceMax": 1,
+    "repairs": 0,
+    "requests": 8,
+    "retries": 0
+  },
+  "orderedRequests": [
+    {
+      "actorUserDigest": "f3492d0106a477bebe8163cd419ce210dc37ae4addf0a0b19138d8a570e9bc4c",
+      "arm": "SUPPRESS",
+      "completionSchemaDigest": "d6d8e9cb89af60e2775ffc2d1b98fd869898e6f084a6b38218119e08de415468",
+      "index": 2,
+      "instanceDigest": "42d68ca52cad1659d44bfef31144af417ff5d821a8f9ac9e38dafed79841dfd5",
+      "providerRequestDigest": "sha256:7f16f9b449ff5386a7ffb0ef6286a732051ca38ad8d1162c6452507eff1a92dc",
+      "runOrder": 0,
+      "structuredCompletionContractDigest": "sha256:d0194311b752334eeb48aebc3242dd33150b4c2611183b2935eca36ac6e003ca"
+    },
+    {
+      "actorUserDigest": "9709ed2f88a1203dbd177c5168496cc7847d6c6e900d1e4c2c828b8e24931f2f",
+      "arm": "SUPPRESS",
+      "completionSchemaDigest": "b02d3c7efb872c1404eff5a4ceb193c53720e6d339b82a035c2784a9ca5bd221",
+      "index": 0,
+      "instanceDigest": "bb8e9456cd3b6dc05fc09a39da0662e3ceb299d3c89cd58315e9cb7b998a19a9",
+      "providerRequestDigest": "sha256:b08c7156dabdc2d10f2e0687681860cc720a317795b1685139f04c37ea88f91c",
+      "runOrder": 1,
+      "structuredCompletionContractDigest": "sha256:c72c71eb3c338776b84d7a01b3310fba4d65dba685636bfbd420ea046b8d6d93"
+    },
+    {
+      "actorUserDigest": "b15231df78e9885f59b306d6a691f4ccd684f6d8cb045347fec808403ab2d8fa",
+      "arm": "SUPPRESS",
+      "completionSchemaDigest": "19e8676e0146616e03d4e0581b33d00e050943278695abc7abc68c3bbd5d3508",
+      "index": 1,
+      "instanceDigest": "4fb12a6c2381ca2b38f7303cbda6da53d67a5ca503f98ef80984af294db7ed54",
+      "providerRequestDigest": "sha256:6022f121cdedfd4037e112e7ab3bf10ef13bffae0453f124d403c9d3773cc2ae",
+      "runOrder": 2,
+      "structuredCompletionContractDigest": "sha256:3200c564cf6b5eef77e9a90c5b22d3c7be64c9499594072f4a3dd7965156eea0"
+    },
+    {
+      "actorUserDigest": "2b2c7b3878d3d173f2ee08d9abd002a84dbf63a7ad0345e1f0ae1923de813c49",
+      "arm": "USE",
+      "completionSchemaDigest": "e1d6966dac4129e63bf78fe7aa1c15b81d62ad76c6353430166467a0886c2ca3",
+      "index": 4,
+      "instanceDigest": "e3c745c3472a17888f6e87936c3fd14d0d47f06819de8b617e3d0051a11eb8fd",
+      "providerRequestDigest": "sha256:ba6621d9afd692821c816e5bfbe8e8cb5b4d0d37969ee6b7083995cdbecf8e71",
+      "runOrder": 3,
+      "structuredCompletionContractDigest": "sha256:edd4f3dd67c4353886d216769a779044dbeece7ef970a0c6efff287ebc3e13bd"
+    },
+    {
+      "actorUserDigest": "b32671d713d219e83ab90e71304a341534febc6ceb1da14ba8d89e4b1f24c559",
+      "arm": "USE",
+      "completionSchemaDigest": "a69415e14c3e51f72629be0fdaeab218804d848b1e337bd6185f6f4051b54eee",
+      "index": 5,
+      "instanceDigest": "5e8cf582fa73e3ab1d55638b86ef700f879ea674a438de55f0298eaf74ae94d0",
+      "providerRequestDigest": "sha256:a8dc1843975508080f86884b3636a9fe7a36f3e1dd21556ae8ae0111b4409e4f",
+      "runOrder": 4,
+      "structuredCompletionContractDigest": "sha256:fb45ac75cb85d4961dc28d89e2d2f7989e0f25ba4cf3dee1f4aa1c071e5fed7a"
+    },
+    {
+      "actorUserDigest": "d128106986f91b0a5ec0c1bdbf3e2f46a7c3043083de69001b734b61864aa0d2",
+      "arm": "USE",
+      "completionSchemaDigest": "69a5c4a28c65ff90a272f0167b21f27fc092b1b339648fdc7743abfc40226f3f",
+      "index": 3,
+      "instanceDigest": "823517b45521791f3cc8ed8eacd22c6beb87548dc755afdbf3bd6c850dbe3759",
+      "providerRequestDigest": "sha256:08d27f910cf311e18595e5a6284f55c6e5503fb4e90f2a5656095ac174a83c5f",
+      "runOrder": 5,
+      "structuredCompletionContractDigest": "sha256:2588383ea4449401156b545e6c61a0a84f32b00f95f688d132ced7b94a7ea90e"
+    },
+    {
+      "actorUserDigest": "677e8742fba29ba9a586f3139239413ac347f1387ce88caf85b91dce56fc56f2",
+      "arm": "SUPPRESS",
+      "completionSchemaDigest": "b29256976831cbd668f2a07623c1063b2e16c7c90944d8e3accb5e5dbb4f9021",
+      "index": 7,
+      "instanceDigest": "6f98daf79c0389244c6d663c74c71a98b647700a5c969faaf44a9c3cd75097f9",
+      "providerRequestDigest": "sha256:093ef83f0fbfb9e497a9267bfe154461566f5a37629b26691191fbda4c511bea",
+      "runOrder": 6,
+      "structuredCompletionContractDigest": "sha256:58c67c6742983a994db493f9fd71149caa28a3258e776508549b128875cd8044"
+    },
+    {
+      "actorUserDigest": "50d8c61dce098f86ba26bf2dd8854c242e524cbd566b3aa204cd51083c53b816",
+      "arm": "USE",
+      "completionSchemaDigest": "d80ca17c25059d6c33bf34ecd421c335d704d3360fc8c16fa5eb3c95ac4cba0e",
+      "index": 6,
+      "instanceDigest": "ab5b5e3f7160e603d9af2f797bca88a5255adeffe978b64a9fac46b0ddfc4915",
+      "providerRequestDigest": "sha256:5491c58ff4dcaa218cad1e16d2da55638e5502225ad7003546e9f12fd008468b",
+      "runOrder": 7,
+      "structuredCompletionContractDigest": "sha256:ad3b4587c90f88d9bae331c6307e082b026ab02298edb9567d273a9659129269"
+    }
+  ],
+  "preflight": {
+    "adapter": "deepseek.chat-completions.non-thinking.v1",
+    "instances": 8,
+    "manifest_sha256": "7043285a7ce1e18d450a0c5d42bdfd994dbf3e9433ee76070c911b5410caef26",
+    "model": "deepseek-v4-flash",
+    "status": "E1B_ACTOR_PREFLIGHT_PASS",
+    "suppress": 4,
+    "use": 4
+  },
+  "preregSha256": "d1789258434559daeadca90a5e04720087d87366c7b4302ef6500a48cd0ab84f",
+  "protocolSealCheckpointDigest": "sha256:23f12ae5c5e32571be43d2c2f87cf573b2c8818f42fce626fa697efffb0844cd",
+  "resultDirectoryExistsBeforeSeal": false,
+  "runnerSha256": "1ba7d0325765f364965d90a1381d1f4869ad8005a74b98eb01c0d30a7b4f7847",
+  "schema": "ordivon.c3.e1b-execution-seal.v1",
+  "seedCommitmentSha256": "0cfc32aea6ab03c965d53b0f05e5fc4b094ec02fc16533b26e9deb82ae1be597",
+  "taskId": "task:c3-e1b-corrected-structured-regeneration-pilot-20260822"
+}

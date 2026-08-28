@@ -1,0 +1,167 @@
+{
+  "all_eight_present": true,
+  "counts": {
+    "SUPPRESS": {
+      "certified": 0,
+      "dispositions": {
+        "provider_or_adapter_failure": 4
+      },
+      "n": 4
+    },
+    "USE": {
+      "certified": 0,
+      "dispositions": {
+        "malformed_conclusion": 1,
+        "provider_or_adapter_failure": 3
+      },
+      "n": 4
+    }
+  },
+  "effective_models": [
+    "deepseek-v4-flash"
+  ],
+  "manifest_sha256": "2ba6f0e4acdb82dcbf6cfacddcc95bcd6c13645ccd9e85e90a6bf12e876e48ad",
+  "rows": [
+    {
+      "arm": "SUPPRESS",
+      "certified": false,
+      "disposition": "provider_or_adapter_failure",
+      "effective_model": null,
+      "exact_unique_reconstruction": null,
+      "finish_reason": null,
+      "functional_equivalence_full_domain": null,
+      "index": 4,
+      "program_digest": null,
+      "program_length": null,
+      "provider_model": null,
+      "raw_response_digest": null,
+      "result_file_sha256": "1f13d6196e36be3f03345cfc5d0b021d8f54e83be483daf6031b0223e81288c5",
+      "run_order": 0,
+      "system_fingerprint": null
+    },
+    {
+      "arm": "SUPPRESS",
+      "certified": false,
+      "disposition": "provider_or_adapter_failure",
+      "effective_model": null,
+      "exact_unique_reconstruction": null,
+      "finish_reason": null,
+      "functional_equivalence_full_domain": null,
+      "index": 6,
+      "program_digest": null,
+      "program_length": null,
+      "provider_model": null,
+      "raw_response_digest": null,
+      "result_file_sha256": "c8f8faf39b9c3b851f0fcdbc97a4f66e00255a3ed6ad8ea6b89340f697318d6e",
+      "run_order": 1,
+      "system_fingerprint": null
+    },
+    {
+      "arm": "USE",
+      "certified": false,
+      "disposition": "provider_or_adapter_failure",
+      "effective_model": null,
+      "exact_unique_reconstruction": null,
+      "finish_reason": null,
+      "functional_equivalence_full_domain": null,
+      "index": 1,
+      "program_digest": null,
+      "program_length": null,
+      "provider_model": null,
+      "raw_response_digest": null,
+      "result_file_sha256": "1f170bd8110c198a0d9e9bb55c87a9332c0849b425945c005a5762e18b075153",
+      "run_order": 2,
+      "system_fingerprint": null
+    },
+    {
+      "arm": "USE",
+      "certified": false,
+      "disposition": "provider_or_adapter_failure",
+      "effective_model": null,
+      "exact_unique_reconstruction": null,
+      "finish_reason": null,
+      "functional_equivalence_full_domain": null,
+      "index": 3,
+      "program_digest": null,
+      "program_length": null,
+      "provider_model": null,
+      "raw_response_digest": null,
+      "result_file_sha256": "e6973a6d85da5f28655fcb2fc3432874843ee325b38fdfa7e65bc382df2ee6a3",
+      "run_order": 3,
+      "system_fingerprint": null
+    },
+    {
+      "arm": "SUPPRESS",
+      "certified": false,
+      "disposition": "provider_or_adapter_failure",
+      "effective_model": null,
+      "exact_unique_reconstruction": null,
+      "finish_reason": null,
+      "functional_equivalence_full_domain": null,
+      "index": 5,
+      "program_digest": null,
+      "program_length": null,
+      "provider_model": null,
+      "raw_response_digest": null,
+      "result_file_sha256": "7878ede5361e95dbacea0c990fbf5899c8300410d7436b85c93fdb7504062a69",
+      "run_order": 4,
+      "system_fingerprint": null
+    },
+    {
+      "arm": "SUPPRESS",
+      "certified": false,
+      "disposition": "provider_or_adapter_failure",
+      "effective_model": null,
+      "exact_unique_reconstruction": null,
+      "finish_reason": null,
+      "functional_equivalence_full_domain": null,
+      "index": 2,
+      "program_digest": null,
+      "program_length": null,
+      "provider_model": null,
+      "raw_response_digest": null,
+      "result_file_sha256": "064d0512571aac8854a3bbc8df35db71a94d98c8c2f6c2401edb25f296346201",
+      "run_order": 5,
+      "system_fingerprint": null
+    },
+    {
+      "arm": "USE",
+      "certified": false,
+      "disposition": "provider_or_adapter_failure",
+      "effective_model": null,
+      "exact_unique_reconstruction": null,
+      "finish_reason": null,
+      "functional_equivalence_full_domain": null,
+      "index": 7,
+      "program_digest": null,
+      "program_length": null,
+      "provider_model": null,
+      "raw_response_digest": null,
+      "result_file_sha256": "a65b4594a35396ec524d90f8d3d0b40ea97d3b0fc121c7a29046c27000aa9d24",
+      "run_order": 6,
+      "system_fingerprint": null
+    },
+    {
+      "arm": "USE",
+      "certified": false,
+      "disposition": "malformed_conclusion",
+      "effective_model": "deepseek-v4-flash",
+      "exact_unique_reconstruction": null,
+      "finish_reason": "tool_calls",
+      "functional_equivalence_full_domain": null,
+      "index": 0,
+      "program_digest": null,
+      "program_length": null,
+      "provider_model": "deepseek-v4-flash",
+      "raw_response_digest": "sha256:9c35fdd18b01c5143296eddc3174bde2852d21fc16880cdb586cc27167ba936d",
+      "result_file_sha256": "5ac8f86b2c919c88f69993714adc459b6f739413f3acb9a0079d145333070043",
+      "run_order": 7,
+      "system_fingerprint": "a26a7955944dc5c60445bff77fac9c8e"
+    }
+  ],
+  "runner_sha256": "853dbd3673457f0209eaa61588477e9f93c0d9cdc952ee32a79f9dde85c7ad70",
+  "schema": "ordivon.c3.e1-efficacy-summary.v1",
+  "system_fingerprints": [
+    "a26a7955944dc5c60445bff77fac9c8e"
+  ]
+}

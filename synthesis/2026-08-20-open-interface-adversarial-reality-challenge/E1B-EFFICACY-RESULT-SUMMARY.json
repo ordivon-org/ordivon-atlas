@@ -1,0 +1,277 @@
+{
+  "claimCeiling": "fixed unchanged actor + fresh finite environment + coherent external-skill suppression -> same-episode exact reconstruction of a functionally equivalent primitive strategy; no open-interface/basis-escape or population-frequency claim",
+  "executionSealSha256": "58e8d1807f4a2c3b20a8240df48efdad59d63ff1ecd0787557de76fa82504bb1",
+  "n": 8,
+  "postsealIntegrityAuditSha256": "c431cd3ca7cb543b743f65acb8f6dd00c70fc0c3581d450e4cbe9989189abd15",
+  "primaryEndpoint": "certified B_spontaneous reconstructions among 4 prospectively assigned SUPPRESS instances",
+  "primaryEndpointValue": 0,
+  "rows": [
+    {
+      "arm": "SUPPRESS",
+      "certified": false,
+      "conclusionStatus": "candidate_completed",
+      "disposition": "non_reconstruction",
+      "effectiveModel": "deepseek-v4-flash",
+      "exactUniqueReconstruction": false,
+      "finishReason": "tool_calls",
+      "functionalEquivalenceFullDomain": false,
+      "index": 2,
+      "instanceDigest": "42d68ca52cad1659d44bfef31144af417ff5d821a8f9ac9e38dafed79841dfd5",
+      "programDigest": "a2057718fff65bb1b43d98e503bc614c1290e7d60a0c422edb3bdc8df97c91c4",
+      "providerRequestDigest": "sha256:7f16f9b449ff5386a7ffb0ef6286a732051ca38ad8d1162c6452507eff1a92dc",
+      "resultFileSha256": "a74304a5cad369ade06074d1b2345d2225b1580dc21bf90b4f43d058ffdae98c",
+      "runOrder": 0,
+      "runtimeToolCallCount": 0,
+      "usage": {
+        "completion_tokens": 130,
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1644,
+        "prompt_tokens": 1644,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "providerModel": "deepseek-v4-flash",
+        "providerRequestMode": "non-thinking",
+        "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+        "total_tokens": 1774
+      },
+      "validTokens": true,
+      "withinBudget": true
+    },
+    {
+      "arm": "SUPPRESS",
+      "certified": false,
+      "conclusionStatus": "candidate_completed",
+      "disposition": "non_reconstruction",
+      "effectiveModel": "deepseek-v4-flash",
+      "exactUniqueReconstruction": false,
+      "finishReason": "tool_calls",
+      "functionalEquivalenceFullDomain": false,
+      "index": 0,
+      "instanceDigest": "bb8e9456cd3b6dc05fc09a39da0662e3ceb299d3c89cd58315e9cb7b998a19a9",
+      "programDigest": "eb636cc7a05f4f5a2112c114052d61bb9eace43ab70dd182a2f23ca59b4e8139",
+      "providerRequestDigest": "sha256:b08c7156dabdc2d10f2e0687681860cc720a317795b1685139f04c37ea88f91c",
+      "resultFileSha256": "665a75a1ae214181c7102abc6c462961709a0fc083f39fffabaac1fd6593e1b9",
+      "runOrder": 1,
+      "runtimeToolCallCount": 0,
+      "usage": {
+        "completion_tokens": 123,
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1642,
+        "prompt_tokens": 1642,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "providerModel": "deepseek-v4-flash",
+        "providerRequestMode": "non-thinking",
+        "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+        "total_tokens": 1765
+      },
+      "validTokens": true,
+      "withinBudget": true
+    },
+    {
+      "arm": "SUPPRESS",
+      "certified": false,
+      "conclusionStatus": "candidate_completed",
+      "disposition": "non_reconstruction",
+      "effectiveModel": "deepseek-v4-flash",
+      "exactUniqueReconstruction": false,
+      "finishReason": "tool_calls",
+      "functionalEquivalenceFullDomain": false,
+      "index": 1,
+      "instanceDigest": "4fb12a6c2381ca2b38f7303cbda6da53d67a5ca503f98ef80984af294db7ed54",
+      "programDigest": "4f0e25c44f625cbe7ad7b82e8ac079543c03a4da8953dc5854db5449b2698d32",
+      "providerRequestDigest": "sha256:6022f121cdedfd4037e112e7ab3bf10ef13bffae0453f124d403c9d3773cc2ae",
+      "resultFileSha256": "4be620638ce8d3198092b070d0ff2663bad446769ab2fb61febc1fd27497a443",
+      "runOrder": 2,
+      "runtimeToolCallCount": 0,
+      "usage": {
+        "completion_tokens": 130,
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 1288,
+        "prompt_tokens": 1672,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "providerModel": "deepseek-v4-flash",
+        "providerRequestMode": "non-thinking",
+        "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+        "total_tokens": 1802
+      },
+      "validTokens": true,
+      "withinBudget": true
+    },
+    {
+      "arm": "USE",
+      "certified": true,
+      "conclusionStatus": "candidate_completed",
+      "disposition": "certified_reconstruction",
+      "effectiveModel": "deepseek-v4-flash",
+      "exactUniqueReconstruction": true,
+      "finishReason": "tool_calls",
+      "functionalEquivalenceFullDomain": true,
+      "index": 4,
+      "instanceDigest": "e3c745c3472a17888f6e87936c3fd14d0d47f06819de8b617e3d0051a11eb8fd",
+      "programDigest": "e8073a8dd0949ae1b17d26c5d8fdaba638d9c84b1854d228468d66bae7b5f6af",
+      "providerRequestDigest": "sha256:ba6621d9afd692821c816e5bfbe8e8cb5b4d0d37969ee6b7083995cdbecf8e71",
+      "resultFileSha256": "c3db7968fbc5c75de8f60728719644d920e5e4b7b1848aaa393e686a14561f20",
+      "runOrder": 3,
+      "runtimeToolCallCount": 0,
+      "usage": {
+        "completion_tokens": 145,
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 1310,
+        "prompt_tokens": 1694,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "providerModel": "deepseek-v4-flash",
+        "providerRequestMode": "non-thinking",
+        "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+        "total_tokens": 1839
+      },
+      "validTokens": true,
+      "withinBudget": true
+    },
+    {
+      "arm": "USE",
+      "certified": true,
+      "conclusionStatus": "candidate_completed",
+      "disposition": "certified_reconstruction",
+      "effectiveModel": "deepseek-v4-flash",
+      "exactUniqueReconstruction": true,
+      "finishReason": "tool_calls",
+      "functionalEquivalenceFullDomain": true,
+      "index": 5,
+      "instanceDigest": "5e8cf582fa73e3ab1d55638b86ef700f879ea674a438de55f0298eaf74ae94d0",
+      "programDigest": "775859e0f7055a51917ec82963df5a50f84e57aef957effe1cf5f1261a778216",
+      "providerRequestDigest": "sha256:a8dc1843975508080f86884b3636a9fe7a36f3e1dd21556ae8ae0111b4409e4f",
+      "resultFileSha256": "af4a074d38a1c2ffdee45e77c621e58750a15a27ef72e3172d73d3c7ef30cdbd",
+      "runOrder": 4,
+      "runtimeToolCallCount": 0,
+      "usage": {
+        "completion_tokens": 143,
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 1292,
+        "prompt_tokens": 1676,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "providerModel": "deepseek-v4-flash",
+        "providerRequestMode": "non-thinking",
+        "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+        "total_tokens": 1819
+      },
+      "validTokens": true,
+      "withinBudget": true
+    },
+    {
+      "arm": "USE",
+      "certified": true,
+      "conclusionStatus": "candidate_completed",
+      "disposition": "certified_reconstruction",
+      "effectiveModel": "deepseek-v4-flash",
+      "exactUniqueReconstruction": true,
+      "finishReason": "tool_calls",
+      "functionalEquivalenceFullDomain": true,
+      "index": 3,
+      "instanceDigest": "823517b45521791f3cc8ed8eacd22c6beb87548dc755afdbf3bd6c850dbe3759",
+      "programDigest": "55623aa90aead5ccb76c79673f7c54eadd4cd4050ceddfc94ff6e04c2d22921b",
+      "providerRequestDigest": "sha256:08d27f910cf311e18595e5a6284f55c6e5503fb4e90f2a5656095ac174a83c5f",
+      "resultFileSha256": "bbb1811af30097e4c3187b0ef2d8ce0c7f1b25b8d124fded1b840754d5184e7d",
+      "runOrder": 5,
+      "runtimeToolCallCount": 0,
+      "usage": {
+        "completion_tokens": 145,
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 1293,
+        "prompt_tokens": 1677,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "providerModel": "deepseek-v4-flash",
+        "providerRequestMode": "non-thinking",
+        "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+        "total_tokens": 1822
+      },
+      "validTokens": true,
+      "withinBudget": true
+    },
+    {
+      "arm": "SUPPRESS",
+      "certified": false,
+      "conclusionStatus": "candidate_completed",
+      "disposition": "non_reconstruction",
+      "effectiveModel": "deepseek-v4-flash",
+      "exactUniqueReconstruction": false,
+      "finishReason": "tool_calls",
+      "functionalEquivalenceFullDomain": false,
+      "index": 7,
+      "instanceDigest": "6f98daf79c0389244c6d663c74c71a98b647700a5c969faaf44a9c3cd75097f9",
+      "programDigest": "9f419481bdb73825741a67c62b9be9581fd2df462db5ef5a210c59960ccb603b",
+      "providerRequestDigest": "sha256:093ef83f0fbfb9e497a9267bfe154461566f5a37629b26691191fbda4c511bea",
+      "resultFileSha256": "5d80a9cc316a90922a296122624217c98f56659da2dec5d3aba333e2323fd374",
+      "runOrder": 6,
+      "runtimeToolCallCount": 0,
+      "usage": {
+        "completion_tokens": 124,
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 1305,
+        "prompt_tokens": 1689,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "providerModel": "deepseek-v4-flash",
+        "providerRequestMode": "non-thinking",
+        "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+        "total_tokens": 1813
+      },
+      "validTokens": true,
+      "withinBudget": true
+    },
+    {
+      "arm": "USE",
+      "certified": true,
+      "conclusionStatus": "candidate_completed",
+      "disposition": "certified_reconstruction",
+      "effectiveModel": "deepseek-v4-flash",
+      "exactUniqueReconstruction": true,
+      "finishReason": "tool_calls",
+      "functionalEquivalenceFullDomain": true,
+      "index": 6,
+      "instanceDigest": "ab5b5e3f7160e603d9af2f797bca88a5255adeffe978b64a9fac46b0ddfc4915",
+      "programDigest": "79ebefe3f4d03d91f0f3a02476ed7acf4f771188e45d014bbb985d2c0630a28e",
+      "providerRequestDigest": "sha256:5491c58ff4dcaa218cad1e16d2da55638e5502225ad7003546e9f12fd008468b",
+      "resultFileSha256": "805b8e51c3caa81458253dea8d97e39a9396761899421922464000400c37c245",
+      "runOrder": 7,
+      "runtimeToolCallCount": 0,
+      "usage": {
+        "completion_tokens": 146,
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 1299,
+        "prompt_tokens": 1683,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "providerModel": "deepseek-v4-flash",
+        "providerRequestMode": "non-thinking",
+        "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+        "total_tokens": 1829
+      },
+      "validTokens": true,
+      "withinBudget": true
+    }
+  ],
+  "schema": "ordivon.c3.e1b-efficacy-result-summary.v1",
+  "standing": "NO_CERTIFIED_B_SPONTANEOUS_IN_PILOT",
+  "suppress": {
+    "certifiedBSpontaneous": 0,
+    "n": 4
+  },
+  "use": {
+    "certified": 4,
+    "n": 4
+  },
+  "useRole": "ceiling/sanity arm only"
+}

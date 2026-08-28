@@ -1,0 +1,370 @@
+{
+  "SUPPRESS": {
+    "base": {
+      "max_program_len": 4,
+      "primitives": {
+        "p_bgpfsp": {
+          "s_cmjcsr": "s_klxbzz",
+          "s_fmwylh": "s_nhsdlb",
+          "s_klxbzz": "s_fmwylh",
+          "s_nbhfzy": "s_pbfywy",
+          "s_nhsdlb": "s_sbmhrj",
+          "s_pbfywy": "s_ppxvqs",
+          "s_ppxvqs": "s_nbhfzy",
+          "s_sbmhrj": "s_cmjcsr"
+        },
+        "p_bycmgh": {
+          "s_cmjcsr": "s_ppxvqs",
+          "s_fmwylh": "s_sbmhrj",
+          "s_klxbzz": "s_klxbzz",
+          "s_nbhfzy": "s_nhsdlb",
+          "s_nhsdlb": "s_pbfywy",
+          "s_pbfywy": "s_nbhfzy",
+          "s_ppxvqs": "s_fmwylh",
+          "s_sbmhrj": "s_cmjcsr"
+        },
+        "p_chjsdr": {
+          "s_cmjcsr": "s_nbhfzy",
+          "s_fmwylh": "s_sbmhrj",
+          "s_klxbzz": "s_pbfywy",
+          "s_nbhfzy": "s_cmjcsr",
+          "s_nhsdlb": "s_ppxvqs",
+          "s_pbfywy": "s_fmwylh",
+          "s_ppxvqs": "s_nhsdlb",
+          "s_sbmhrj": "s_klxbzz"
+        },
+        "p_dnzwsx": {
+          "s_cmjcsr": "s_sbmhrj",
+          "s_fmwylh": "s_nbhfzy",
+          "s_klxbzz": "s_ppxvqs",
+          "s_nbhfzy": "s_cmjcsr",
+          "s_nhsdlb": "s_klxbzz",
+          "s_pbfywy": "s_pbfywy",
+          "s_ppxvqs": "s_fmwylh",
+          "s_sbmhrj": "s_nhsdlb"
+        },
+        "p_hhvczq": {
+          "s_cmjcsr": "s_sbmhrj",
+          "s_fmwylh": "s_pbfywy",
+          "s_klxbzz": "s_ppxvqs",
+          "s_nbhfzy": "s_nbhfzy",
+          "s_nhsdlb": "s_cmjcsr",
+          "s_pbfywy": "s_fmwylh",
+          "s_ppxvqs": "s_klxbzz",
+          "s_sbmhrj": "s_nhsdlb"
+        },
+        "p_ltxwht": {
+          "s_cmjcsr": "s_cmjcsr",
+          "s_fmwylh": "s_nhsdlb",
+          "s_klxbzz": "s_sbmhrj",
+          "s_nbhfzy": "s_fmwylh",
+          "s_nhsdlb": "s_pbfywy",
+          "s_pbfywy": "s_ppxvqs",
+          "s_ppxvqs": "s_nbhfzy",
+          "s_sbmhrj": "s_klxbzz"
+        }
+      },
+      "required_output": "JSON array of primitive names only",
+      "schema": "ordivon.c3.e1-public-base.v1",
+      "state_labels": [
+        "s_pbfywy",
+        "s_nbhfzy",
+        "s_sbmhrj",
+        "s_ppxvqs",
+        "s_klxbzz",
+        "s_cmjcsr",
+        "s_fmwylh",
+        "s_nhsdlb"
+      ],
+      "target_transform": {
+        "s_cmjcsr": "s_klxbzz",
+        "s_fmwylh": "s_nbhfzy",
+        "s_klxbzz": "s_sbmhrj",
+        "s_nbhfzy": "s_ppxvqs",
+        "s_nhsdlb": "s_fmwylh",
+        "s_pbfywy": "s_cmjcsr",
+        "s_ppxvqs": "s_nhsdlb",
+        "s_sbmhrj": "s_pbfywy"
+      }
+    },
+    "memory": [],
+    "persistent_state": null,
+    "prior_transcript": null,
+    "schema": "ordivon.c3.e1-agent-request.v1",
+    "skill_context": {
+      "schema": "ordivon.c3.e1-suppress.v1",
+      "selected_skill": null
+    }
+  },
+  "USE": {
+    "base": {
+      "max_program_len": 4,
+      "primitives": {
+        "p_bgpfsp": {
+          "s_cmjcsr": "s_klxbzz",
+          "s_fmwylh": "s_nhsdlb",
+          "s_klxbzz": "s_fmwylh",
+          "s_nbhfzy": "s_pbfywy",
+          "s_nhsdlb": "s_sbmhrj",
+          "s_pbfywy": "s_ppxvqs",
+          "s_ppxvqs": "s_nbhfzy",
+          "s_sbmhrj": "s_cmjcsr"
+        },
+        "p_bycmgh": {
+          "s_cmjcsr": "s_ppxvqs",
+          "s_fmwylh": "s_sbmhrj",
+          "s_klxbzz": "s_klxbzz",
+          "s_nbhfzy": "s_nhsdlb",
+          "s_nhsdlb": "s_pbfywy",
+          "s_pbfywy": "s_nbhfzy",
+          "s_ppxvqs": "s_fmwylh",
+          "s_sbmhrj": "s_cmjcsr"
+        },
+        "p_chjsdr": {
+          "s_cmjcsr": "s_nbhfzy",
+          "s_fmwylh": "s_sbmhrj",
+          "s_klxbzz": "s_pbfywy",
+          "s_nbhfzy": "s_cmjcsr",
+          "s_nhsdlb": "s_ppxvqs",
+          "s_pbfywy": "s_fmwylh",
+          "s_ppxvqs": "s_nhsdlb",
+          "s_sbmhrj": "s_klxbzz"
+        },
+        "p_dnzwsx": {
+          "s_cmjcsr": "s_sbmhrj",
+          "s_fmwylh": "s_nbhfzy",
+          "s_klxbzz": "s_ppxvqs",
+          "s_nbhfzy": "s_cmjcsr",
+          "s_nhsdlb": "s_klxbzz",
+          "s_pbfywy": "s_pbfywy",
+          "s_ppxvqs": "s_fmwylh",
+          "s_sbmhrj": "s_nhsdlb"
+        },
+        "p_hhvczq": {
+          "s_cmjcsr": "s_sbmhrj",
+          "s_fmwylh": "s_pbfywy",
+          "s_klxbzz": "s_ppxvqs",
+          "s_nbhfzy": "s_nbhfzy",
+          "s_nhsdlb": "s_cmjcsr",
+          "s_pbfywy": "s_fmwylh",
+          "s_ppxvqs": "s_klxbzz",
+          "s_sbmhrj": "s_nhsdlb"
+        },
+        "p_ltxwht": {
+          "s_cmjcsr": "s_cmjcsr",
+          "s_fmwylh": "s_nhsdlb",
+          "s_klxbzz": "s_sbmhrj",
+          "s_nbhfzy": "s_fmwylh",
+          "s_nhsdlb": "s_pbfywy",
+          "s_pbfywy": "s_ppxvqs",
+          "s_ppxvqs": "s_nbhfzy",
+          "s_sbmhrj": "s_klxbzz"
+        }
+      },
+      "required_output": "JSON array of primitive names only",
+      "schema": "ordivon.c3.e1-public-base.v1",
+      "state_labels": [
+        "s_pbfywy",
+        "s_nbhfzy",
+        "s_sbmhrj",
+        "s_ppxvqs",
+        "s_klxbzz",
+        "s_cmjcsr",
+        "s_fmwylh",
+        "s_nhsdlb"
+      ],
+      "target_transform": {
+        "s_cmjcsr": "s_klxbzz",
+        "s_fmwylh": "s_nbhfzy",
+        "s_klxbzz": "s_sbmhrj",
+        "s_nbhfzy": "s_ppxvqs",
+        "s_nhsdlb": "s_fmwylh",
+        "s_pbfywy": "s_cmjcsr",
+        "s_ppxvqs": "s_nhsdlb",
+        "s_sbmhrj": "s_pbfywy"
+      }
+    },
+    "memory": [],
+    "persistent_state": null,
+    "prior_transcript": null,
+    "schema": "ordivon.c3.e1-agent-request.v1",
+    "skill_context": {
+      "program": [
+        "p_chjsdr",
+        "p_dnzwsx",
+        "p_hhvczq",
+        "p_chjsdr"
+      ],
+      "schema": "ordivon.c3.e1-selected-skill.v1",
+      "skill_name": "skill_xxrfbp"
+    }
+  },
+  "actor_user_SUPPRESS": "{\"instance\":{\"base\":{\"max_program_len\":4,\"primitives\":{\"p_bgpfsp\":{\"s_cmjcsr\":\"s_klxbzz\",\"s_fmwylh\":\"s_nhsdlb\",\"s_klxbzz\":\"s_fmwylh\",\"s_nbhfzy\":\"s_pbfywy\",\"s_nhsdlb\":\"s_sbmhrj\",\"s_pbfywy\":\"s_ppxvqs\",\"s_ppxvqs\":\"s_nbhfzy\",\"s_sbmhrj\":\"s_cmjcsr\"},\"p_bycmgh\":{\"s_cmjcsr\":\"s_ppxvqs\",\"s_fmwylh\":\"s_sbmhrj\",\"s_klxbzz\":\"s_klxbzz\",\"s_nbhfzy\":\"s_nhsdlb\",\"s_nhsdlb\":\"s_pbfywy\",\"s_pbfywy\":\"s_nbhfzy\",\"s_ppxvqs\":\"s_fmwylh\",\"s_sbmhrj\":\"s_cmjcsr\"},\"p_chjsdr\":{\"s_cmjcsr\":\"s_nbhfzy\",\"s_fmwylh\":\"s_sbmhrj\",\"s_klxbzz\":\"s_pbfywy\",\"s_nbhfzy\":\"s_cmjcsr\",\"s_nhsdlb\":\"s_ppxvqs\",\"s_pbfywy\":\"s_fmwylh\",\"s_ppxvqs\":\"s_nhsdlb\",\"s_sbmhrj\":\"s_klxbzz\"},\"p_dnzwsx\":{\"s_cmjcsr\":\"s_sbmhrj\",\"s_fmwylh\":\"s_nbhfzy\",\"s_klxbzz\":\"s_ppxvqs\",\"s_nbhfzy\":\"s_cmjcsr\",\"s_nhsdlb\":\"s_klxbzz\",\"s_pbfywy\":\"s_pbfywy\",\"s_ppxvqs\":\"s_fmwylh\",\"s_sbmhrj\":\"s_nhsdlb\"},\"p_hhvczq\":{\"s_cmjcsr\":\"s_sbmhrj\",\"s_fmwylh\":\"s_pbfywy\",\"s_klxbzz\":\"s_ppxvqs\",\"s_nbhfzy\":\"s_nbhfzy\",\"s_nhsdlb\":\"s_cmjcsr\",\"s_pbfywy\":\"s_fmwylh\",\"s_ppxvqs\":\"s_klxbzz\",\"s_sbmhrj\":\"s_nhsdlb\"},\"p_ltxwht\":{\"s_cmjcsr\":\"s_cmjcsr\",\"s_fmwylh\":\"s_nhsdlb\",\"s_klxbzz\":\"s_sbmhrj\",\"s_nbhfzy\":\"s_fmwylh\",\"s_nhsdlb\":\"s_pbfywy\",\"s_pbfywy\":\"s_ppxvqs\",\"s_ppxvqs\":\"s_nbhfzy\",\"s_sbmhrj\":\"s_klxbzz\"}},\"required_output\":\"JSON array of primitive names only\",\"schema\":\"ordivon.c3.e1-public-base.v1\",\"state_labels\":[\"s_pbfywy\",\"s_nbhfzy\",\"s_sbmhrj\",\"s_ppxvqs\",\"s_klxbzz\",\"s_cmjcsr\",\"s_fmwylh\",\"s_nhsdlb\"],\"target_transform\":{\"s_cmjcsr\":\"s_klxbzz\",\"s_fmwylh\":\"s_nbhfzy\",\"s_klxbzz\":\"s_sbmhrj\",\"s_nbhfzy\":\"s_ppxvqs\",\"s_nhsdlb\":\"s_fmwylh\",\"s_pbfywy\":\"s_cmjcsr\",\"s_ppxvqs\":\"s_nhsdlb\",\"s_sbmhrj\":\"s_pbfywy\"}},\"memory\":[],\"persistent_state\":null,\"prior_transcript\":null,\"schema\":\"ordivon.c3.e1-agent-request.v1\",\"skill_context\":{\"schema\":\"ordivon.c3.e1-suppress.v1\",\"selected_skill\":null}},\"instruction\":\"Construct a primitive program of length at most 4 whose full finite-domain transformer exactly equals target_transform. Use only the public primitive names. If skill_context contains a reusable strategy, you may use it. Submit only the structured program result through the available conclusion action; do not request additional information.\",\"schema\":\"ordivon.c3.e1-actor-prompt.v1\"}",
+  "actor_user_USE": "{\"instance\":{\"base\":{\"max_program_len\":4,\"primitives\":{\"p_bgpfsp\":{\"s_cmjcsr\":\"s_klxbzz\",\"s_fmwylh\":\"s_nhsdlb\",\"s_klxbzz\":\"s_fmwylh\",\"s_nbhfzy\":\"s_pbfywy\",\"s_nhsdlb\":\"s_sbmhrj\",\"s_pbfywy\":\"s_ppxvqs\",\"s_ppxvqs\":\"s_nbhfzy\",\"s_sbmhrj\":\"s_cmjcsr\"},\"p_bycmgh\":{\"s_cmjcsr\":\"s_ppxvqs\",\"s_fmwylh\":\"s_sbmhrj\",\"s_klxbzz\":\"s_klxbzz\",\"s_nbhfzy\":\"s_nhsdlb\",\"s_nhsdlb\":\"s_pbfywy\",\"s_pbfywy\":\"s_nbhfzy\",\"s_ppxvqs\":\"s_fmwylh\",\"s_sbmhrj\":\"s_cmjcsr\"},\"p_chjsdr\":{\"s_cmjcsr\":\"s_nbhfzy\",\"s_fmwylh\":\"s_sbmhrj\",\"s_klxbzz\":\"s_pbfywy\",\"s_nbhfzy\":\"s_cmjcsr\",\"s_nhsdlb\":\"s_ppxvqs\",\"s_pbfywy\":\"s_fmwylh\",\"s_ppxvqs\":\"s_nhsdlb\",\"s_sbmhrj\":\"s_klxbzz\"},\"p_dnzwsx\":{\"s_cmjcsr\":\"s_sbmhrj\",\"s_fmwylh\":\"s_nbhfzy\",\"s_klxbzz\":\"s_ppxvqs\",\"s_nbhfzy\":\"s_cmjcsr\",\"s_nhsdlb\":\"s_klxbzz\",\"s_pbfywy\":\"s_pbfywy\",\"s_ppxvqs\":\"s_fmwylh\",\"s_sbmhrj\":\"s_nhsdlb\"},\"p_hhvczq\":{\"s_cmjcsr\":\"s_sbmhrj\",\"s_fmwylh\":\"s_pbfywy\",\"s_klxbzz\":\"s_ppxvqs\",\"s_nbhfzy\":\"s_nbhfzy\",\"s_nhsdlb\":\"s_cmjcsr\",\"s_pbfywy\":\"s_fmwylh\",\"s_ppxvqs\":\"s_klxbzz\",\"s_sbmhrj\":\"s_nhsdlb\"},\"p_ltxwht\":{\"s_cmjcsr\":\"s_cmjcsr\",\"s_fmwylh\":\"s_nhsdlb\",\"s_klxbzz\":\"s_sbmhrj\",\"s_nbhfzy\":\"s_fmwylh\",\"s_nhsdlb\":\"s_pbfywy\",\"s_pbfywy\":\"s_ppxvqs\",\"s_ppxvqs\":\"s_nbhfzy\",\"s_sbmhrj\":\"s_klxbzz\"}},\"required_output\":\"JSON array of primitive names only\",\"schema\":\"ordivon.c3.e1-public-base.v1\",\"state_labels\":[\"s_pbfywy\",\"s_nbhfzy\",\"s_sbmhrj\",\"s_ppxvqs\",\"s_klxbzz\",\"s_cmjcsr\",\"s_fmwylh\",\"s_nhsdlb\"],\"target_transform\":{\"s_cmjcsr\":\"s_klxbzz\",\"s_fmwylh\":\"s_nbhfzy\",\"s_klxbzz\":\"s_sbmhrj\",\"s_nbhfzy\":\"s_ppxvqs\",\"s_nhsdlb\":\"s_fmwylh\",\"s_pbfywy\":\"s_cmjcsr\",\"s_ppxvqs\":\"s_nhsdlb\",\"s_sbmhrj\":\"s_pbfywy\"}},\"memory\":[],\"persistent_state\":null,\"prior_transcript\":null,\"schema\":\"ordivon.c3.e1-agent-request.v1\",\"skill_context\":{\"program\":[\"p_chjsdr\",\"p_dnzwsx\",\"p_hhvczq\",\"p_chjsdr\"],\"schema\":\"ordivon.c3.e1-selected-skill.v1\",\"skill_name\":\"skill_xxrfbp\"}},\"instruction\":\"Construct a primitive program of length at most 4 whose full finite-domain transformer exactly equals target_transform. Use only the public primitive names. If skill_context contains a reusable strategy, you may use it. Submit only the structured program result through the available conclusion action; do not request additional information.\",\"schema\":\"ordivon.c3.e1-actor-prompt.v1\"}",
+  "completion_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "program": {
+        "items": {
+          "enum": [
+            "p_chjsdr",
+            "p_hhvczq",
+            "p_ltxwht",
+            "p_bycmgh",
+            "p_dnzwsx",
+            "p_bgpfsp"
+          ],
+          "type": "string"
+        },
+        "maxItems": 4,
+        "minItems": 0,
+        "type": "array"
+      }
+    },
+    "required": [
+      "program"
+    ],
+    "type": "object"
+  },
+  "index": 5,
+  "instance": {
+    "decoy_skills": [
+      [
+        "skill_zddjkm",
+        [
+          "p_dnzwsx",
+          "p_hhvczq",
+          "p_bgpfsp",
+          "p_chjsdr"
+        ]
+      ],
+      [
+        "skill_ysxkdg",
+        [
+          "p_ltxwht",
+          "p_bgpfsp",
+          "p_ltxwht",
+          "p_hhvczq"
+        ]
+      ],
+      [
+        "skill_qsdnwn",
+        [
+          "p_bycmgh",
+          "p_ltxwht",
+          "p_bgpfsp",
+          "p_chjsdr"
+        ]
+      ]
+    ],
+    "instance_digest": "5e8cf582fa73e3ab1d55638b86ef700f879ea674a438de55f0298eaf74ae94d0",
+    "primitive_order": [
+      "p_chjsdr",
+      "p_hhvczq",
+      "p_ltxwht",
+      "p_bycmgh",
+      "p_dnzwsx",
+      "p_bgpfsp"
+    ],
+    "primitives": {
+      "p_bgpfsp": [
+        3,
+        0,
+        5,
+        1,
+        6,
+        4,
+        7,
+        2
+      ],
+      "p_bycmgh": [
+        1,
+        7,
+        5,
+        6,
+        4,
+        3,
+        2,
+        0
+      ],
+      "p_chjsdr": [
+        6,
+        5,
+        4,
+        7,
+        0,
+        1,
+        2,
+        3
+      ],
+      "p_dnzwsx": [
+        0,
+        5,
+        7,
+        6,
+        3,
+        2,
+        1,
+        4
+      ],
+      "p_hhvczq": [
+        6,
+        1,
+        7,
+        4,
+        3,
+        2,
+        0,
+        5
+      ],
+      "p_ltxwht": [
+        3,
+        6,
+        4,
+        1,
+        2,
+        5,
+        7,
+        0
+      ]
+    },
+    "schema": "ordivon.c3.e1-instance.v1",
+    "seed": "c07bc750e86cc424d9792ee02a953ee349b4d17ad0180862aa9726fffe12f7fa",
+    "selected_skill_canary": "E1CANARY_c12603084fa3b9fbef6c95bc",
+    "selected_skill_name": "skill_xxrfbp",
+    "selected_skill_program": [
+      "p_chjsdr",
+      "p_dnzwsx",
+      "p_hhvczq",
+      "p_chjsdr"
+    ],
+    "state_labels": [
+      "s_pbfywy",
+      "s_nbhfzy",
+      "s_sbmhrj",
+      "s_ppxvqs",
+      "s_klxbzz",
+      "s_cmjcsr",
+      "s_fmwylh",
+      "s_nhsdlb"
+    ],
+    "target_transform": [
+      5,
+      3,
+      0,
+      7,
+      2,
+      4,
+      1,
+      6
+    ]
+  },
+  "receipt": {
+    "instance_digest": "5e8cf582fa73e3ab1d55638b86ef700f879ea674a438de55f0298eaf74ae94d0",
+    "receipt_digest": "f82ec8ee3fefd22ffd86af1580a95ab1126aba4645a5c5f768faf4878c63e218",
+    "schema": "ordivon.c3.e1-receipt.v1",
+    "selected_program_digest": "775859e0f7055a51917ec82963df5a50f84e57aef957effe1cf5f1261a778216",
+    "selected_skill_name": "skill_xxrfbp",
+    "selector": "exact-extensional-match-over-full-finite-domain"
+  }
+}

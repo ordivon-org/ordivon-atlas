@@ -1,0 +1,47 @@
+{
+  "actor_user_digest": "50d8c61dce098f86ba26bf2dd8854c242e524cbd566b3aa204cd51083c53b816",
+  "adapter_id": "deepseek.chat-completions.non-thinking.v1",
+  "arm": "USE",
+  "certified": true,
+  "completion_schema_digest": "d80ca17c25059d6c33bf34ecd421c335d704d3360fc8c16fa5eb3c95ac4cba0e",
+  "conclusion_present": true,
+  "conclusion_status": "candidate_completed",
+  "content_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "disposition": "certified_reconstruction",
+  "effective_model": "deepseek-v4-flash",
+  "evaluation": {
+    "exact_unique_reconstruction": true,
+    "functional_equivalence_full_domain": true,
+    "program_digest": "79ebefe3f4d03d91f0f3a02476ed7acf4f771188e45d014bbb985d2c0630a28e",
+    "valid_tokens": true,
+    "within_budget": true
+  },
+  "finish_reason": "tool_calls",
+  "index": 6,
+  "instance_digest": "ab5b5e3f7160e603d9af2f797bca88a5255adeffe978b64a9fac46b0ddfc4915",
+  "program": [
+    "p_mhrknc",
+    "p_gnjqxs",
+    "p_hywqvy",
+    "p_fxyjms"
+  ],
+  "provider_dispatched": true,
+  "provider_request_digest": "sha256:5491c58ff4dcaa218cad1e16d2da55638e5502225ad7003546e9f12fd008468b",
+  "raw_response_digest": "sha256:65d366af5758e79ee0b84a1440485b5b2bd2adfbd8d573d517f0d4fa667af974",
+  "requested_model": "deepseek-v4-flash",
+  "runtime_tool_call_count": 0,
+  "schema": "ordivon.c3.e1b-actor-result.v1",
+  "usage": {
+    "completion_tokens": 146,
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1299,
+    "prompt_tokens": 1683,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "providerModel": "deepseek-v4-flash",
+    "providerRequestMode": "non-thinking",
+    "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+    "total_tokens": 1829
+  }
+}
