@@ -46,6 +46,16 @@ class OwnerCurrentnessCliTests(unittest.TestCase):
         self.assertNotIn("retrieval-coordinates", cli)
         self.assertIn("retrieval-authoring-context", cli)
 
+    def test_atlas_source_integration_currentness_is_separate_from_owner_currentness(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        readme = (root / "README.md").read_text(encoding="utf-8")
+        self.assertIn("Atlas repository source-integration currentness", readme)
+        self.assertIn("canonical upstream repository `main`", readme)
+        self.assertIn("after explicitly observing remote freshness", readme)
+        self.assertIn("`origin/main`", readme)
+        self.assertIn("does not by itself prove", readme)
+        self.assertIn("does not replace the owner-native authority that Atlas observes with `check-owner`", readme)
+        self.assertIn("remain distinct relations", readme)
 
 
 if __name__ == "__main__":

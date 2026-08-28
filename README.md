@@ -4,6 +4,14 @@ Ordivon Atlas is the **generated institutional, exploration, history, and recove
 
 Atlas is deliberately not a second research corpus and not a semantic source of truth. Owners publish their own current authority version and recovery surface; Atlas verifies those source fences and produces regenerable views plus Research Observatory health diagnostics.
 
+### Atlas repository source-integration currentness
+
+For a present-tense claim about the **Atlas implementation or Agent interface itself**, resolve the canonical upstream repository `main` after explicitly observing remote freshness. In the current repository topology this is the fetched commit corresponding to `origin/main`. A local `refs/heads/main`, worktree `HEAD`, detached Runtime Workspace, or a Workspace name can bind exact source bytes, but does not by itself prove that those bytes are the current source-integrated Atlas implementation.
+
+Exact historical or experiment work may intentionally use another commit and should describe its standing as `current-to-this-source` (or an equivalent bounded claim) unless source-integration currentness has separately been resolved. A local/upstream mismatch is therefore an attention signal rather than automatic semantic staleness; if the operation depends only on an unchanged load-bearing carrier, an exact-source result may remain valid without becoming a claim about current Atlas.
+
+This rule is about **Atlas's own repository source integration**. It does not replace the owner-native authority that Atlas observes with `check-owner`, and it does not make Git recency an owner-research truth rule. Owner `AuthorityVersionRef`, generated projection health, and any future Atlas release/deployment identity remain distinct relations.
+
 ## Agent first interface
 
 For ordinary prior-work recovery, a fresh Agent should **not** begin by replaying research chronology or regenerating every Atlas view. Start from the smallest retrieval representation that matches the current operation:
