@@ -42,6 +42,9 @@ class OwnerCurrentnessCliTests(unittest.TestCase):
         self.assertFalse((root / "src/ordivon_atlas/representation_selection.py").exists())
         cli = (root / "src/ordivon_atlas/cli.py").read_text(encoding="utf-8")
         self.assertNotIn("select-representation", cli)
+        self.assertNotIn("retrieval-profile", cli)
+        self.assertNotIn("retrieval-coordinates", cli)
+        self.assertIn("retrieval-authoring-context", cli)
 
 
 

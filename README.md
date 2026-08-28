@@ -33,6 +33,8 @@ PYTHONPATH=src python -m ordivon_atlas check-owner Interlocus --include-publicat
 
 Representation adequacy remains consumer-owned. Atlas previously exposed an experimental generic `select-representation` helper that accepted caller-declared distinctions, costs and profiles and then chose the cheapest adequate row. A destructive consumer census found no current external/source consumer: the real P2 pressure had already been satisfied by bounded owner-scoped projections such as `check-owner`, while the generic selector merely re-expressed caller policy inside Atlas. The helper is therefore retired; historical P2 evidence and its example remain recoverable as provenance, not as a current Atlas command.
 
+The same surface audit keeps `retrieval_representation_profile()` and `retrieval_coordinate_profile()` as implementation components of the consumed `retrieval-authoring-context`, but retires their standalone CLI commands. No current consumer invoked the components independently, so exposing them as separate Agent operations only duplicated internal decomposition.
+
 ## MVP
 
 The first MVP consumes heterogeneous owner sources. **Interlocus** (stable identity `research-owner:network`, historical name Network) has the standalone current physical home `ordivon-interlocus`; Runtime has the independent `ordivon-runtime` repository. Atlas configuration binds physical source locators separately from semantic owner identity, so the Network → Interlocus name/physical transition does not rename `research-owner:network`.

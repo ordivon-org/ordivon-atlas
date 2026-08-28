@@ -10,8 +10,6 @@ from .first_look import (
     prior_result_first_look,
     prior_result_first_look_many,
     retrieval_authoring_context,
-    retrieval_coordinate_profile,
-    retrieval_representation_profile,
 )
 from .owner_coverage import build_owner_coverage, load_coverage_config, write_owner_coverage
 from .institutional_topology import load_institutional_registry, write_institutional_topology, build_institutional_topology
@@ -54,12 +52,6 @@ def _parser() -> argparse.ArgumentParser:
     first_look_many.add_argument("queries", nargs="+")
     first_look_many.add_argument("--out", default="generated")
     first_look_many.add_argument("--limit", type=int, default=8)
-    sub.add_parser(
-        "retrieval-profile", help="mechanical Atlas retrieval-representation profile"
-    )
-    sub.add_parser(
-        "retrieval-coordinates", help="task-neutral owner-curated retrieval-coordinate profile"
-    )
     sub.add_parser(
         "retrieval-authoring-context",
         help="mechanical retrieval environment and coordinates for caller query authoring",
@@ -115,30 +107,10 @@ def main(argv: list[str] | None = None) -> int:
             )
         )
         return 0
-    if args.command == "retrieval-profile":
-        print(
-            json.dumps(
-                retrieval_representation_profile(repository_root="."),
-                indent=2,
-                sort_keys=True,
-                ensure_ascii=False,
-            )
-        )
-        return 0
     if args.command == "retrieval-authoring-context":
         print(
             json.dumps(
                 retrieval_authoring_context(repository_root="."),
-                indent=2,
-                sort_keys=True,
-                ensure_ascii=False,
-            )
-        )
-        return 0
-    if args.command == "retrieval-coordinates":
-        print(
-            json.dumps(
-                retrieval_coordinate_profile(repository_root="."),
                 indent=2,
                 sort_keys=True,
                 ensure_ascii=False,
